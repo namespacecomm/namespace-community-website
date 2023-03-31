@@ -30,7 +30,7 @@ const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-   
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,6 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
-    height: 100%;
   }
 `;
 
@@ -64,7 +63,6 @@ const WhatWeDo = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-
 `;
 
 const Line = styled.img`
@@ -72,13 +70,17 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.p`
-font-size:84px;
-font-weight: bold;
-  background: #3530CF;
-background: repeating-radial-gradient(circle farthest-side at center center, #3530CF 0%, #44CFCF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-@media only screen and (max-width: 768px) {
+  font-size: 84px;
+  font-weight: bold;
+  background: #3530cf;
+  background: repeating-radial-gradient(
+    circle farthest-side at center center,
+    #3530cf 0%,
+    #44cfcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media only screen and (max-width: 768px) {
     font-size: 64px;
   }
 `;
@@ -107,12 +109,12 @@ const Right = styled.div`
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
+    flex:1;
+    
   }
 `;
 
-const Img = styled.img`
+const Img = styled.iframe`
   width: 800px;
   height: 600px;
   object-fit: contain;
@@ -122,7 +124,7 @@ const Img = styled.img`
   left: 0;
   right: 0;
   margin: auto;
-  ${'' /* animation: animate 2s infinite ease alternate; */}
+  ${"" /* animation: animate 2s infinite ease alternate; */}
 
   @media only screen and (max-width: 768px) {
     width: 300px;
@@ -140,32 +142,30 @@ const Hero = () => {
   return (
     <>
       <Section>
-      <Navbar />
+        <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>
             <WhatWeDo>
               <Subtitle>Coding Club</Subtitle>
             </WhatWeDo>
-            <Desc>
-              Bhagwan Parshuram Institute of Technology,Delhi
-            </Desc>
+            <Desc>Bhagwan Parshuram Institute of Technology,Delhi</Desc>
           </Left>
           <Right>
-            <Img src="./img/logo.png" />
+            {/* <Img src="./img/logo.png" /> */}
+            <Img src="https://embed.lottiefiles.com/animation/84832"></Img>
           </Right>
-
         </Container>
       </Section>
       <div className="container">
-            <Canvas camera={{ position: [0, 0, 1] }}>
-              <Suspense fallback={null}>
-                <Stars />
-              </Suspense>
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Suspense fallback={null}>
+            <Stars />
+          </Suspense>
 
-              <Preload all />
-            </Canvas>
-          </div>
+          <Preload all />
+        </Canvas>
+      </div>
     </>
   );
 };

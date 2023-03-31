@@ -1,7 +1,6 @@
 import styled from "styled-components";
+import About from "./components/About/About";
 import Hero from "./components/Hero";
-import NavBar from "./components/Navbar/Navbar";
-
 
 const Container = styled.div`
   height: 100vh;
@@ -24,6 +23,9 @@ function App() {
      <div>
       <Hero />
      </div>
+    </Container>
+    <Container>
+    <About />
     </Container>
     </>
   );

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Section = styled.div`
   display: flex;
   justify-content: center;
-  z-index: 9999;
+  z-index: 99999;
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
@@ -15,6 +15,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding: 10px 0px;
 
   @media only screen and (max-width: 768px) {
