@@ -1,16 +1,18 @@
-import React, { Suspense } from "react";
+import React from "react";
 import styled from "styled-components";
 import ImageCarousel from "../../utils/ImageCrousel";
+import { images } from "../../constants/constants";
 
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  ${'' /* background: rgb(2,0,36); */}
 `;
 
 const Container = styled.div`
-  height: 100vh;
+ 
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
@@ -22,6 +24,7 @@ const Left = styled.div`
   flex: 1.5;
   align-items: center;
   justify-content: center;
+ 
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -55,16 +58,6 @@ const Right = styled.div`
   }
 `;
 
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Subtitle = styled.h2`
-  color: #da4ea2;
-`;
-
 const Desc = styled.p`
   font-size: 24px;
   text-align: justify;
@@ -72,34 +65,28 @@ const Desc = styled.p`
 `;
 
 const About = () => {
-  const images = [
-    { src: "./img/2.jpg", alt: "Image 1" },
-    { src: "./img/3.jpg", alt: "Image 2" },
-    { src: "./img/4.jpg", alt: "Image 3" },
-    { src: "./img/5.jpg", alt: "Image 4" },
-  ];
   return (
-    <Section>
-      <Container>
-        <Left>
-          <ImageCarousel images={images} />
-        </Left>
-        <Right>
-          <Title>About NSCC BPIT</Title>
-          {/* <WhatWeDo>
-            <Subtitle>Who we Are</Subtitle>
-          </WhatWeDo> */}
-          <Desc>
-            NSCC BPIT is a community of like-minded individuals who share a
-            passion for technology and are committed to helping each other
-            become the best developers they can be. Whether you're just starting
-            out in your coding journey or you're a seasoned pro, our society is
-            a place where you can connect with other tech enthusiasts, share
-            your knowledge, and grow your skills.
-          </Desc>
-        </Right>
-      </Container>
-    </Section>
+    <>
+      <Section>
+        <Container>
+          <Left>
+            <ImageCarousel images={images} />
+          </Left>
+          <Right>
+            <Title>About NSCC BPIT</Title>
+            <Desc>
+              NSCC BPIT is a community of like-minded individuals who share a
+              passion for technology and are committed to helping each other
+              become the best developers they can be. Whether you're just
+              starting out in your coding journey or you're a seasoned pro, our
+              society is a place where you can connect with other tech
+              enthusiasts, share your knowledge, and grow your skills.
+            </Desc>
+          </Right>
+        </Container>
+        
+      </Section>
+    </>
   );
 };
 

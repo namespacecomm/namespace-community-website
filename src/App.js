@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import About from "./components/About/About";
 import Hero from "./components/Hero";
+import Teams from "./components/Teams/Teams";
+import Navbar from "./components/Navbar/Navbar";
 
 const Container = styled.div`
-  height: 100vh;
+  ${'' /* height: 100vh; */}
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -23,9 +25,8 @@ function App() {
      <div>
       <Hero />
      </div>
-    </Container>
-    <Container>
     <About />
+    <Teams />
     </Container>
     </>
   );
