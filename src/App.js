@@ -11,8 +11,7 @@ const Container = styled.div`
   scroll-behavior: smooth;
   scrollbar-width: none;
   color: white;
-  background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg");
+  
   &::-webkit-scrollbar{
     display: none;
   }

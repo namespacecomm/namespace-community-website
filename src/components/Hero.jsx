@@ -11,6 +11,8 @@ import Navbar from "./Navbar/Navbar.jsx";
 
 const Section = styled.div`
   height: 100vh;
+  background-repeat: no-repeat;
+  background: no-repeat url("./img/bg.jpg");
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
