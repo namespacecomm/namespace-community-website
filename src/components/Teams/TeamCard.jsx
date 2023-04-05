@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   width: 300px;
-  height: 300px;
+  height: 350px;
   position: relative;
   perspective: 1000px;
 `;
@@ -11,10 +11,14 @@ const CardWrapper = styled.div`
 const Card = styled.div`
   width: 100%;
   height: 100%;
+  background: linear-gradient(to left bottom,#1c51ba,#191938);
   position: relative;
-  margin-bottom:20px;
+  margin-bottom: 30px;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  &:hover {
+    background: linear-gradient(to left bottom,#225dd4,#022669);
+  }
   ${({ flipped }) =>
     flipped &&
     `
@@ -50,13 +54,13 @@ const CardBack = styled.div`
 `;
 
 const CardTitle = styled.h2`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: 600;
 `;
 
 const CardSubtitle = styled.h3`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
 `;
@@ -73,18 +77,9 @@ const IconLink = styled.a`
 `;
 
 function TeamCard({ image, name, position, linkedin, github }) {
-  const [flipped, setFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setFlipped(!flipped);
-  };
-
   return (
-    <CardWrapper onClick={handleFlip}>
-    <Card flipped={flipped}>
-    {
-      flipped === false ? 
-      <>
+    <CardWrapper>
+    <Card>
       <CardFront>
       <img
           className="w-40 h-40 rounded-full mb-3 shadow-lg"
@@ -93,17 +88,7 @@ function TeamCard({ image, name, position, linkedin, github }) {
         />
         <CardTitle>{name}</CardTitle>
         <CardSubtitle>{position}</CardSubtitle>
-      </CardFront>
-      </>
-       :
-      <CardBack> 
-      <h1>
-        👋 Hey !
-      </h1>
-      <h1>
-        connect with me
-      </h1>
-      <IconWrapper>
+        <IconWrapper>
           <IconLink href={github} >
             <i className="fab fa-github"></i>
           </IconLink>
@@ -111,8 +96,8 @@ function TeamCard({ image, name, position, linkedin, github }) {
             <i className="fab fa-linkedin"></i>
           </IconLink>
         </IconWrapper>
-      </CardBack>
-    }
+      </CardFront>
+     
     </Card>
   </CardWrapper>
   );

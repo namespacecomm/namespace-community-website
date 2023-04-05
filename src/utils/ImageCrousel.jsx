@@ -19,13 +19,13 @@ const ImageCarouselSlide = styled.img`
 
 const ImageCarouselArrow = styled.button`
   position: absolute;
-  ${'' /* top: 50%; */}
+  top: 50%;
   transform: translateY(-50%);
   width: 50px;
-  display:none;
+  ${'' /* display: flex; */}
   height: 50px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  
   color: #fff;
   border: none;
   outline: none;
@@ -34,6 +34,7 @@ const ImageCarouselArrow = styled.button`
 
   &:hover {
     transform: translateY(-50%) scale(1.1);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   &.left {
