@@ -8,6 +8,7 @@ import Card from "../../utils/Card";
 import { testimonials } from "../../constants/constants";
 
 const Section = styled.div`
+  height:100vh;
    background: rgb(9,9,121);
 background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%);  
   display: flex;
@@ -43,7 +44,7 @@ const Carousal = styled.div`
   flex-direction: column;
   justify-content: center;
   @media only Screen and (max-width: 40em) {
-    width: 100vw;
+    width: 80vw;
     .slick-slider .slick-arrow {
       display: none;
     }
@@ -80,6 +81,17 @@ const Testimonials = () => {
     cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 844,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (

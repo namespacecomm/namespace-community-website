@@ -11,11 +11,7 @@ const CARD = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media only Screen and (max-width: 40em) {
-    background: rgb(9,9,121);
-background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%);
-color:white;
-  }
+ 
 `;
 
 const Image = styled.div`
@@ -40,18 +36,14 @@ const TEXT = styled.h4`
 
   text-align: center;
   font-size: calc(0.6rem + 0.5vw);
-  @media only Screen and (max-width: 40em) {
-    color: white;
-  }
+ 
 `;
 
 const NAME = styled.h3`
   color: black;
   padding-top: 1rem;
   font-size: calc(0.5rem + 1vw);
-  @media only Screen and (max-width: 40em) {
-    color: white;
-  }
+ 
 `;
 
 const Card = ({ name, text, image,postion }) => {

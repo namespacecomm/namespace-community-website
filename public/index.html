@@ -34,7 +34,13 @@
       * {
         padding: 0;
         margin: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        ::-webkit-scrollbar {
+          display: none;
+        }
       }
     </style>
     <title>NSCC BPIT</title>

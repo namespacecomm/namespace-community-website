@@ -1,20 +1,20 @@
 import styled from "styled-components";
-import About from "./components/About/About";
-import Hero from "./components/Hero";
-import Teams from "./components/Teams/Teams";
-import Events from "./components/Events/Events";
-import Navbar from "./components/Navbar/Navbar";
-import Testimonials from "./components/Testimonials/Testimonials";
+import About from "./Sections/About/About";
+import Hero from "./Sections/Hero/Hero";
+import Teams from "./Sections/Teams/Teams";
+import Events from "./Sections/Events/Events";
+import Testimonials from "./Sections/Testimonials/Testimonials";
+import Contact from "./Sections/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Container = styled.div`
-  ${'' /* height: 100vh; */}
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-  scroll-behavior: smooth;
   scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
   color: white;
-  
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
 `;
@@ -22,15 +22,15 @@ const Container = styled.div`
 function App() {
   return (
     <>
-    <Container>
-     <div>
-      <Hero />
-     </div>
-    <About />
-    <Teams />
-    <Events />
-    <Testimonials />
-    </Container>
+      <Container>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Hero />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Container>
     </>
   );
 }

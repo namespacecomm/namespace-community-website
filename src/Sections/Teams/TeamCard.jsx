@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
+import './team.css';
 
 const CardWrapper = styled.div`
   width: 300px;
@@ -11,19 +12,14 @@ const CardWrapper = styled.div`
 const Card = styled.div`
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left bottom,#1c51ba,#191938);
+  background: linear-gradient(to left bottom, #1c51ba, #191938);
   position: relative;
   margin-bottom: 30px;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   &:hover {
-    background: linear-gradient(to left bottom,#225dd4,#022669);
+    background: linear-gradient(to left bottom, #225dd4, #022669);
   }
-  ${({ flipped }) =>
-    flipped &&
-    `
-      transform: rotateY(180deg) ;
-    `}
 `;
 
 const CardFront = styled.div`
@@ -34,22 +30,6 @@ const CardFront = styled.div`
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
-  cursor: pointer;
-`;
-
-const CardBack = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size : 24px;
-  color: white;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
   cursor: pointer;
 `;
 
@@ -79,31 +59,64 @@ const IconLink = styled.a`
 function TeamCard({ image, name, position, linkedin, github }) {
   return (
     <CardWrapper>
-    <Card>
-      <CardFront>
-      <img
-          className="w-40 h-40 rounded-full mb-3 shadow-lg"
+      <div class="card">
+        <img
           src={image}
-          alt="Bonnie image"
+          alt="Person"
+          class="card__image"
         />
-        <CardTitle>{name}</CardTitle>
-        <CardSubtitle>{position}</CardSubtitle>
-        <IconWrapper>
-          <IconLink href={github} >
-            <i className="fab fa-github"></i>
-          </IconLink>
-          <IconLink href={linkedin} >
-            <i className="fab fa-linkedin"></i>
-          </IconLink>
-        </IconWrapper>
-      </CardFront>
-     
-    </Card>
-  </CardWrapper>
+        <p class="card__name">{name}</p>
+        <p class="card__name">{position}</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </CardWrapper>
   );
 }
 
 export default TeamCard;
+
+{
+  /* <Card>
+        <CardFront>
+          <img
+            className="w-40 h-40 rounded-full mb-3 shadow-lg"
+            src={image}
+            alt="Bonnie image"
+          />
+          <CardTitle>{name}</CardTitle>
+          <CardSubtitle>{position}</CardSubtitle>
+          <IconWrapper>
+            <IconLink href={github}>
+              <i className="fab fa-github"></i>
+            </IconLink>
+            <IconLink href={linkedin}>
+              <i className="fab fa-linkedin"></i>
+            </IconLink>
+          </IconWrapper>
+        </CardFront>
+      </Card> */
+}
 
 {
   /* <div className="mb-12 lg:mb-5 hover:scale-110 cursor-pointer">
@@ -156,8 +169,8 @@ export default TeamCard;
     </div>  */
 }
 
-
-{/* <div className="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
+{
+  /* <div className="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
       <div className="flex flex-col items-center p-5">
         <img
           className="w-40 h-40 rounded-full mb-3 shadow-lg"
@@ -197,4 +210,29 @@ export default TeamCard;
         </a>
         </div>
       </div>
-    </div> */}
+    </div> */
+}
+
+{
+  /* <CardWrapper>
+      <Card>
+        <CardFront>
+          <img
+            className="w-40 h-40 rounded-full mb-3 shadow-lg"
+            src={image}
+            alt="Bonnie image"
+          />
+          <CardTitle>{name}</CardTitle>
+          <CardSubtitle>{position}</CardSubtitle>
+          <IconWrapper>
+            <IconLink href={github}>
+              <i className="fab fa-github"></i>
+            </IconLink>
+            <IconLink href={linkedin}>
+              <i className="fab fa-linkedin"></i>
+            </IconLink>
+          </IconWrapper>
+        </CardFront>
+      </Card>
+    </CardWrapper> */
+}

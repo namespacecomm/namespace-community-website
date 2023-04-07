@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Section = styled.div`
   background: rgb(9, 9, 121);
+  widht:100%;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
@@ -29,7 +30,7 @@ function Events() {
           <section className="mb-3 text-center">
             <h2 className="text-5xl font-bold mb-12">
               <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-                Our Events
+                Our Timeline
               </span>
             </h2>
             <VerticalTimeline>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -80,7 +81,6 @@ const Navbar = () => {
             <ListItem>Projects</ListItem>
             <ListItem>Events</ListItem>
             <ListItem>Team</ListItem>
-            <ListItem>Contact</ListItem>
           </List>
         </Links>
         <Icons>

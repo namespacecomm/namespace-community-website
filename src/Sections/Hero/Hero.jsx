@@ -1,30 +1,38 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-
 import { Canvas } from "@react-three/fiber";
 import { useState, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "./hero.css";
-import Navbar from "./Navbar/Navbar.jsx";
+import Navbar from "../../components/Navbar/Navbar.jsx";
+import About from "../About/About";
+import Teams from "../Teams/Teams";
+import Testimonials from "../Testimonials/Testimonials";
+import Events from "../Events/Events";
+import Contact from "../Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
-  height: 100vh;
   background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg");
   scroll-snap-align: center;
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
@@ -67,10 +75,6 @@ const WhatWeDo = styled.div`
   gap: 10px;
 `;
 
-const Line = styled.img`
-  height: 5px;
-`;
-
 const Subtitle = styled.p`
   font-size: 84px;
   font-weight: bold;
@@ -96,23 +100,12 @@ const Desc = styled.p`
   }
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
-
 const Right = styled.div`
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex:1;
-    
+    ${"" /* flex: 1; */}
+    display: none;
   }
 `;
 
@@ -169,6 +162,12 @@ const Hero = () => {
           <Preload all />
         </Canvas>
       </div>
+      <About />
+        <Teams />
+        <Events />
+        <Testimonials />
+        <Contact />
+        <Footer />
     </>
   );
 };

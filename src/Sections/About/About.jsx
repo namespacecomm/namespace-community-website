@@ -5,15 +5,19 @@ import { images } from "../../constants/constants";
 
 const Section = styled.div`
   height: 100vh;
+  width: 100%;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-  background: rgb(9,9,121);
-background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%);
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    262deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 1%
+  );
 `;
 
 const Container = styled.div`
- 
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
@@ -25,7 +29,7 @@ const Left = styled.div`
   flex: 1.5;
   align-items: center;
   justify-content: center;
- 
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -75,17 +79,16 @@ const About = () => {
           </Left>
           <Right>
             <Title>About NSCC BPIT</Title>
-            <Desc>
-              NSCC BPIT is a community of like-minded individuals who share a
-              passion for technology and are committed to helping each other
-              become the best developers they can be. Whether you're just
-              starting out in your coding journey or you're a seasoned pro, our
-              society is a place where you can connect with other tech
-              enthusiasts, share your knowledge, and grow your skills.
-            </Desc>
+              <Desc>
+                NSCC BPIT is a community of like-minded individuals who share a
+                passion for technology and are committed to helping each other
+                become the best developers they can be. Whether you're just
+                starting out in your coding journey or you're a seasoned pro,
+                our society is a place where you can connect with other tech
+                enthusiasts, share your knowledge, and grow your skills.
+              </Desc>
           </Right>
         </Container>
-        
       </Section>
     </>
   );
