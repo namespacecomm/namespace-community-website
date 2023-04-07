@@ -1,12 +1,7 @@
 import styled from "styled-components";
-import About from "./Sections/About/About";
 import Hero from "./Sections/Hero/Hero";
-import Teams from "./Sections/Teams/Teams";
-import Events from "./Sections/Events/Events";
-import Testimonials from "./Sections/Testimonials/Testimonials";
-import Contact from "./Sections/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AllTeams from "./Pages/AllTeams/AllTeams";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -27,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Hero />} />
+              <Route path='team' element={<AllTeams />} />
             </Route>
           </Routes>
         </BrowserRouter>

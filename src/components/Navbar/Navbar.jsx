@@ -77,10 +77,14 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo2.png" />
           <List>
+          <Link to = '/'>
             <ListItem>Home</ListItem>
+            </Link>
             <ListItem>Projects</ListItem>
             <ListItem>Events</ListItem>
+            <Link to = 'team'>
             <ListItem>Team</ListItem>
+            </Link>
           </List>
         </Links>
         <Icons>

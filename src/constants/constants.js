@@ -68,9 +68,13 @@ export const members = [
     github: "",
     linkedin: "",
   },
+];
+
+export const allmembers = [
   {
     image: "https://avatars.githubusercontent.com/u/50446690?v=4",
     name: "Pradeepto Sarkar",
+    team: "SC",
     position: "President",
     github: "",
     linkedin: "",
@@ -79,6 +83,7 @@ export const members = [
     image: "https://avatars.githubusercontent.com/u/50446690?v=4",
     name: "Pradeepto Sarkar",
     position: "President",
+    team: "SC",
     github: "",
     linkedin: "",
   },
@@ -86,6 +91,23 @@ export const members = [
     image: "https://avatars.githubusercontent.com/u/50446690?v=4",
     name: "Pradeepto Sarkar",
     position: "President",
+    team: "JC",
+    github: "",
+    linkedin: "",
+  },
+  {
+    image: "https://avatars.githubusercontent.com/u/50446690?v=4",
+    name: "Pradeepto Sarkar",
+    position: "President",
+    team: "JTM",
+    github: "",
+    linkedin: "",
+  },
+  {
+    image: "https://avatars.githubusercontent.com/u/50446690?v=4",
+    name: "Pradeepto Sarkar",
+    position: "President",
+    team: "STM",
     github: "",
     linkedin: "",
   },
