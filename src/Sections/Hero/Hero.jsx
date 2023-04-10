@@ -14,29 +14,46 @@ import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 
+// const Section = styled.div`
+//   background-repeat: no-repeat;
+//   background: no-repeat url("./img/bg.jpg");
+//   ${'' /* scroll-snap-align: center;
+//   scroll-behavior: smooth; */}
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-between;
+//   @media only screen and (max-width: 768px) {
+//     height: 100vh;
+//     width: 100%;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
+
 const Section = styled.div`
-  background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg");
-  scroll-snap-align: center;
-  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @media only screen and (max-width: 768px) {
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  ${'' /* background-color: rgb(9, 9, 121);
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    262deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 1%
+  ); */}
+  background-repeat: no-repeat;
+  background: no-repeat url("./img/bg.jpg");
 `;
 
 const Container = styled.div`
-  height: 100vh;
+  height: 90vh;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -102,6 +119,7 @@ const Desc = styled.p`
 
 const Right = styled.div`
   flex: 3;
+  justify-content:center;
   position: relative;
   @media only screen and (max-width: 768px) {
     ${"" /* flex: 1; */}
@@ -137,7 +155,7 @@ const Hero = () => {
   return (
     <>
       <Section>
-        <Navbar />
+      <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>

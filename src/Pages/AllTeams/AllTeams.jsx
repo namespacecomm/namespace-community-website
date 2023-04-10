@@ -10,13 +10,15 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${'' /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
+  background-repeat: no-repeat;
+  background: no-repeat url("./img/bg.jpg");
 `;
 
 const Container = styled.div`
@@ -32,16 +34,18 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
+  const [activeFilter, setActiveFilter] = useState('');
   const [filterTeam, setFilterTeam] = useState(allmembers);
 
   const handleTeamFilter = (item) => {
+    setActiveFilter(item);
     setFilterTeam(allmembers.filter((member) => member.team.includes(item)));
   };
 
   return (
     <Section>
-      <Container>
         <Navbar />
+      <Container>
         <div className=" px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
             our team
@@ -55,19 +59,34 @@ function AllTeams() {
 
           <div className="flex items-center justify-center">
             <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+            <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("")}
+              >
+                All
+              </button>
               <button
-                className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12"
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "SC" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("SC")}
               >
                 Senior Council
               </button>
-              <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12" onClick={() => handleTeamFilter("JC")}>
+              <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JC" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("JC")}
+              >
                 Junior Council
               </button>
-              <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" onClick={() => handleTeamFilter("JTM")}>
+              <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JTM" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("JTM")}
+              >
                 Junior Team
               </button>
-              <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" onClick={() => handleTeamFilter("STM")}>
+              <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "STM" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("STM")}
+              >
                 Senior Team
               </button>
             </div>

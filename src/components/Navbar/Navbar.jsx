@@ -1,98 +1,137 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Section = styled.div`
+const NavbarContainer = styled.nav`
+  width: 100%;
+  height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
+  ${'' /* background-color: black; */}
   display: flex;
-  justify-content: center;
-  z-index: 9999999;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
+  z-index:99999999;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+  @media (min-width: 700px) {
+    height: 80px;
   }
 `;
 
-const Container = styled.div`
-  width: 1400px;
+const LeftContainer = styled.div`
+   flex: 30%;
   display: flex;
-  justify-content: space-between;
+  align-items:center;
+  justify-content: flex-start;
+  padding-right: 50px;
+
+`;
+
+const RightContainer = styled.div`
+  flex: 70%;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  
-  padding: 10px 0px;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    padding: 10px;
-  }
+  padding-left: 5%;
 `;
 
-const Links = styled.div`
+const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 80px;
   display: flex;
-  align-items: center;
-  gap: 50px;
 `;
 
-const Logo = styled.img`
-  height: 50px;
-`;
-
-const List = styled.ul`
+const NavbarLinkContainer = styled.div`
   display: flex;
-  gap: 30px;
-  list-style: none;
-  @media only screen and (max-width: 768px) {
+`;
+
+const NavbarLink = styled(Link)`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+
+  @media (max-width: 700px) {
     display: none;
   }
 `;
 
-const ListItem = styled.li`
-  cursor: pointer;
-  font-size: 20px;
-`;
-
-const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
-
-const Icon = styled.img`
-  width: 20px;
-  cursor: pointer;
-`;
-
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #1d28f2;
+const NavbarLinkExtended = styled(Link)`
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
 `;
 
-const Navbar = () => {
+const Logo = styled.img`
+  margin: 10px;
+  max-width: 180px;
+  height: 50px;
+  align-self:center;
+`;
+
+const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+const NavbarExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    display: none;
+    align-items:center;
+  }
+`;
+
+function Navbar() {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
   return (
-    <Section>
-      <Container>
-        <Links>
-          <Logo src="./img/logo2.png" />
-          <List>
-          <Link to = '/'>
-            <ListItem>Home</ListItem>
-            </Link>
-            <ListItem>Projects</ListItem>
-            <ListItem>Events</ListItem>
-            <Link to = 'team'>
-            <ListItem>Team</ListItem>
-            </Link>
-          </List>
-        </Links>
-        <Icons>
-          <Button>Join Us</Button>
-        </Icons>
-      </Container>
-    </Section>
+    <NavbarContainer extendNavbar={extendNavbar}>
+      <NavbarInnerContainer>
+        <LeftContainer>
+        <Logo src="./img/logo2.png"></Logo>
+        <NavbarLink to="/">NSCC</NavbarLink>
+        </LeftContainer>
+        <RightContainer>
+        <NavbarLinkContainer>
+            <NavbarLink to="/"> Home</NavbarLink>
+            <NavbarLink to="/projects">Projects</NavbarLink>
+            <NavbarLink to="/events">Events</NavbarLink>
+            <NavbarLink to="/team">Team</NavbarLink>
+            <OpenLinksButton
+              onClick={() => {
+                setExtendNavbar((curr) => !curr);
+              }}
+            >
+              {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+            </OpenLinksButton>
+          </NavbarLinkContainer>
+        </RightContainer>
+      </NavbarInnerContainer>
+      {extendNavbar && (
+        <NavbarExtendedContainer>
+          <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
+          <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
+        </NavbarExtendedContainer>
+      )}
+    </NavbarContainer>
   );
-};
+}
 
 export default Navbar;
