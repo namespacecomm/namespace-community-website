@@ -5,30 +5,43 @@ export const images = [
   { src: "./img/5.jpg", alt: "Image 4" },
 ];
 
+export const Galleryimages = [
+  { src: "./img/1.jfif", alt: "Image 1" },
+  { src: "./img/4.jpg", alt: "Image 2" },
+  { src: "./img/events/nscc8.png", alt: "Image 3" },
+  { src: "./img/events/nscc4.jpeg", alt: "Image 4" },
+  { src: "./img/events/nscc5.png", alt: "Image 5" },
+  { src: "./img/events/nscc6.png", alt: "Image 6" }
+];
+
 export const testimonials = [
-  { 
-    text:"Apki bar Pradeepto Sarkar",
-    name:"Saitama",
-    image:"https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
-    position:"president"
+  {
+    text: "Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing.",
+    name: "Saitama",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "president",
   },
-  { 
-    text:"Apki bar Pradeepto Sarkar",
-    name:"Saitama",
-    image:"https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
-    position:"president"
+  {
+    text: "Apki bar Pradeepto Sarkar",
+    name: "Saitama",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "president",
   },
-  { 
-    text:"Apki bar Pradeepto Sarkar",
-    name:"Saitama",
-    image:"https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
-    position:"president"
+  {
+    text: "Apki bar Pradeepto Sarkar",
+    name: "Saitama",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "president",
   },
-  { 
-    text:"Apki bar Pradeepto Sarkar",
-    name:"Saitama",
-    image:"https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
-    position:"president"
+  {
+    text: "Apki bar Pradeepto Sarkar",
+    name: "Saitama",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "president",
   },
 ];
 

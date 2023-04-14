@@ -1,10 +1,9 @@
-
 import styled from "styled-components";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.nav`
-  width: 100%;
+  width: 95%;
   height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
   ${'' /* background-color: black; */}
   display: flex;
@@ -18,7 +17,7 @@ const NavbarContainer = styled.nav`
 `;
 
 const LeftContainer = styled.div`
-   flex: 30%;
+   flex: 70%;
   display: flex;
   align-items:center;
   justify-content: flex-start;
@@ -27,7 +26,7 @@ const LeftContainer = styled.div`
 `;
 
 const RightContainer = styled.div`
-  flex: 70%;
+  flex: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -46,7 +45,7 @@ const NavbarLinkContainer = styled.div`
 
 const NavbarLink = styled(Link)`
   color: white;
-  font-size: x-large;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
@@ -58,7 +57,7 @@ const NavbarLink = styled(Link)`
 
 const NavbarLinkExtended = styled(Link)`
   color: white;
-  font-size: x-large;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
@@ -77,11 +76,12 @@ const OpenLinksButton = styled.button`
   background: none;
   border: none;
   color: white;
-  font-size: 45px;
+  font-size: 50px;
   cursor: pointer;
 
   @media (min-width: 700px) {
     display: none;
+    align-self:center;
   }
 `;
 
@@ -96,6 +96,19 @@ const NavbarExtendedContainer = styled.div`
   }
 `;
 
+const Button = styled.button`
+  width: 100%;
+  padding: 10px;
+  background-color: #1d28f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
@@ -104,14 +117,15 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
         <Logo src="./img/logo2.png"></Logo>
-        <NavbarLink to="/">NSCC</NavbarLink>
-        </LeftContainer>
-        <RightContainer>
-        <NavbarLinkContainer>
-            <NavbarLink to="/"> Home</NavbarLink>
+        {/* <NavbarLink to="/">NSCC</NavbarLink> */}
+        <NavbarLink to="/"> Home</NavbarLink>
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
+        </LeftContainer>
+        <RightContainer>
+        <NavbarLinkContainer>
+        <Button>Join Coderush</Button>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);

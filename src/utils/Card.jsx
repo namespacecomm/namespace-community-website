@@ -11,7 +11,6 @@ const CARD = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 `;
 
 const Image = styled.div`
@@ -33,21 +32,18 @@ const Image = styled.div`
 const TEXT = styled.h4`
   color: black;
   padding: 0 calc(1rem + 1vw);
-
   text-align: center;
   font-size: calc(0.6rem + 0.5vw);
- 
 `;
 
 const NAME = styled.h3`
   color: black;
-  padding-top: 1rem;
+  ${'' /* padding-top: 1rem; */}
   font-size: calc(0.5rem + 1vw);
- 
 `;
 
-const Card = ({ name, text, image,postion }) => {
- // const Avatar = require(`../../assets/${image}.jpg`).default;
+const Card = ({ name, text, image, postion }) => {
+  // const Avatar = require(`../../assets/${image}.jpg`).default;
 
   return (
     <CARD>
