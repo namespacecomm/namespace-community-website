@@ -125,7 +125,7 @@ function Navbar() {
         </LeftContainer>
         <RightContainer>
         <NavbarLinkContainer>
-        <Button>Join Coderush</Button>
+        <Button>Connect with us</Button>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);

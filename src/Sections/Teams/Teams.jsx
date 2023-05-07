@@ -77,7 +77,7 @@ function Teams() {
     speed: 1000,
     cssEase: "linear",
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 844,
@@ -112,6 +112,8 @@ function Teams() {
                       position={member.position}
                       linkedin={member.linkedin}
                       github={member.github}
+                      instagram={member.instagram}
+                      twitter={member.twitter}
                     />
                   );
                 })}

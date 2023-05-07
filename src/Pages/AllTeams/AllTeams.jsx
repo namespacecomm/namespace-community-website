@@ -59,12 +59,12 @@ function AllTeams() {
 
           <div className="flex items-center justify-center">
             <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-            <button
+            {/* <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("")}
               >
                 All
-              </button>
+              </button> */}
               <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "SC" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("SC")}
@@ -81,13 +81,19 @@ function AllTeams() {
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JTM" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("JTM")}
               >
-                Junior Team
+                Junior Tech
               </button>
               <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "STM" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("STM")}
               >
-                Senior Team
+                Senior Tech
+              </button>
+              <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "FTM" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("FTM")}
+              >
+                Freshers Tech
               </button>
             </div>
           </div>
@@ -99,6 +105,8 @@ function AllTeams() {
                   image={member.image}
                   name={member.name}
                   position={member.position}
+                  instagram={member.instagram}
+                  twitter={member.twitter}
                   linkedin={member.linkedin}
                   github={member.github}
                 />

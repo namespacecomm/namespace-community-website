@@ -33,6 +33,7 @@
   height: 160px;
   width: 160px;
   border-radius: 50%;
+  object-fit: cover;
   border: 5px solid #272133;
   margin-top: 20px;
 }

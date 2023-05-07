@@ -56,7 +56,7 @@ const IconLink = styled.a`
   margin: 0 10px;
 `;
 
-function TeamCard({ image, name, position, linkedin, github }) {
+function TeamCard({ image, name, position,github,linkedin, instagram ,twitter }) {
   return (
     <CardWrapper>
       <div className="card">
@@ -69,22 +69,22 @@ function TeamCard({ image, name, position, linkedin, github }) {
         <p className="card__name">{position}</p>
         <ul className="social-icons">
           <li>
-            <a href="#">
+            <a href={instagram}>
               <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={github}>
               <i className="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={linkedin}>
               <i className="fab fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={twitter}>
               <i className="fab fa-twitter"></i>
             </a>
           </li>
