@@ -9,12 +9,13 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-  background: rgb(9, 9, 121);
+  ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
+  background: no-repeat url("./img/bg.jpg");
 `;
 
 const Container = styled.div`

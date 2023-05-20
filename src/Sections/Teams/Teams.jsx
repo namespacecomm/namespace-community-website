@@ -97,7 +97,7 @@ function Teams() {
           <section className="mb-5 text-white text-center">
             <h2 className="text-5xl sm:text-xl md:text-5xl font-bold mb-12 italic">
               Meet the{" "}
-              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
                 Team
               </span>
             </h2>
@@ -122,7 +122,7 @@ function Teams() {
 
             <button
               type="button"
-              class="text-white mt-10 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white mt-10 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
               View all the members
             </button>

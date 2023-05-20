@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Section = styled.div`
  background: rgb(9,9,121);
 background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%); 
-  height: 100vh;
+  height: 100vh; 
   width:100%;
   scroll-snap-align: center;
 `;
@@ -61,9 +61,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background: #00B4DB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #1d28f2;  /* fallback for old browsers */
 
   color: white;
   border: none;
@@ -74,11 +72,11 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 `;
 
 const Img = styled.img`
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   object-fit: contain;
   position: relative;
-  top: 0;
+  top: 20;
   bottom: 0;
   left: 0;
   right: 0;

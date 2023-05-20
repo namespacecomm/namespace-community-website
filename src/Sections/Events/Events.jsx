@@ -29,7 +29,7 @@ function Events() {
         <div className=" px-6 mx-auto">
           <section className="mb-3 text-center">
             <h2 className="text-5xl font-bold mb-12">
-              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
                 Our Timeline
               </span>
             </h2>
@@ -37,14 +37,14 @@ function Events() {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{
-                  background: "rgb(33, 150, 243)",
+                  background: "#1d28f2",
                   color: "#ffffff",
                 }}
                 contentArrowStyle={{
-                  borderRight: "7px solid  rgb(33, 150, 243)",
+                  borderRight: "7px solid #1d28f2",
                 }}
                 date="28/12/2022"
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#ffffff" }}
+                iconStyle={{ background: "#1d28f2", color: "#fff" }}
                 icon=<svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
@@ -62,14 +62,14 @@ function Events() {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{
-                  background: "#f87171",
+                  background: "#f96167",
                   color: "#ffffff",
                 }}
                 contentArrowStyle={{
-                  borderRight: "7px solid #f87171",
+                  borderRight: "7px solid #f96167",
                 }}
                 date="28/12/2022"
-                iconStyle={{ background: "#f87171", color: "#ffffff" }}
+                iconStyle={{ background: "#f96167", color: "#ffffff" }}
                 icon=<svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
@@ -87,14 +87,14 @@ function Events() {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{
-                  background: "rgb(33, 150, 243)",
+                  background: "#1d28f2",
                   color: "#ffffff",
                 }}
                 contentArrowStyle={{
-                  borderRight: "7px solid  rgb(33, 150, 243)",
+                  borderRight: "7px solid #1d28f2",
                 }}
                 date="28/12/2022"
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#ffffff" }}
+                iconStyle={{ background: "#1d28f2", color: "#ffffff" }}
                 icon=<svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
