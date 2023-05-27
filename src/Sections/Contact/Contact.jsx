@@ -7,7 +7,7 @@ const Section = styled.div`
 background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%); 
   height: 100vh; 
   width:100%;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 `;
 
 const Container = styled.div`
