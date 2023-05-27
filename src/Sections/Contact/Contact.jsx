@@ -3,10 +3,14 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const Section = styled.div`
- background: rgb(9,9,121);
-background: linear-gradient(262deg, rgba(9,9,121,1) 0%, rgba(2,0,36,1) 1%); 
-  height: 100vh; 
-  width:100%;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    262deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 1%
+  );
+  height: 100vh;
+  width: 100%;
   scroll-snap-align: center;
 `;
 
@@ -23,8 +27,9 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1030px) {
     justify-content: center;
+    margin-bottom: 20px;
   }
 `;
 
@@ -34,7 +39,7 @@ const Title = styled.h1`
 `;
 
 const Form = styled.form`
-  width: 500px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -61,7 +66,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background-color: #1d28f2;  /* fallback for old browsers */
+  background-color: #1d28f2; /* fallback for old browsers */
 
   color: white;
   border: none;
@@ -97,10 +102,10 @@ const Img = styled.img`
 
 const Right = styled.div`
   flex: 1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  @media only screen and (max-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 1030px) {
     display: none;
   }
 `;
@@ -114,8 +119,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_l0qpaje',
-        'template_n9fnp6i',
+        "service_l0qpaje",
+        "template_n9fnp6i",
         ref.current,
         process.env.REACT_APP_API
       )
@@ -149,8 +154,8 @@ const Contact = () => {
           </Form>
         </Left>
         <Right>
-        {/* <Img src="https://lottie.host/?file=296dc031-e4f0-41d3-b9ee-6099c53fbd8b/tfupnzO1qe.json"></Img> */}
-        <Img src="./img/contact.svg"></Img>
+          {/* <Img src="https://lottie.host/?file=296dc031-e4f0-41d3-b9ee-6099c53fbd8b/tfupnzO1qe.json"></Img> */}
+          <Img src="./img/contact.svg"></Img>
         </Right>
       </Container>
     </Section>

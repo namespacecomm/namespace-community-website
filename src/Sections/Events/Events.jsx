@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Section = styled.div`
   background: rgb(9, 9, 121);
-  widht:100%;
+  widht: 100%;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
@@ -17,7 +17,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
 `;
