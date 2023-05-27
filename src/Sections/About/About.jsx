@@ -39,7 +39,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 52px;
   font-weight: bold;
   margin: auto 10%;
   background: #3530cf;
@@ -91,9 +91,11 @@ const About = () => {
               NSCC BPIT is a community of like-minded individuals who share a
               passion for technology and are committed to helping each other
               become the best developers they can be. Whether you're just
-              starting out in your coding journey or you're a seasoned pro, our
+              starting out in your coding journey or a seasoned pro, our
               society is a place where you can connect with other tech
-              enthusiasts, share your knowledge, and grow your skills.
+              enthusiasts, share your knowledge, and grow your skills. Founded
+              in 2022, NSCC BPIT has quickly grown to become one of the leading 
+              NSCC chapters in India.
             </Desc>
           </Right>
         </Container>
