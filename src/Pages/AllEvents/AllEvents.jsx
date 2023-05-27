@@ -46,9 +46,7 @@ function AllEvents() {
             </h1>
 
             <p className="max-w-2xl mx-auto my-6 text-center ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              incidunt ex placeat modi magni quia error alias, adipisci rem
-              similique, at omnis eligendi optio eos harum.
+              NSCC BPIT conducts various events and initiatives all year round for the betterment and growth of the community. Given below are some of the selected events conducted in the current tenure.
             </p>
             <Gallery images={Galleryimages} />
           </div>
