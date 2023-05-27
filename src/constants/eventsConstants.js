@@ -139,4 +139,85 @@ export const PastEvents = [
         name: "TechXcelerate 2023",
         image: "./img/events/NSCC_28-39_main-poster.jpg",
     },
+    {
+        date: "14/04/2023",
+        name: "TechX'23 - DSA",
+        image: "./img/events/techx1.jpg",
+    },
+    {
+        date: "14/04/2023",
+        name: "TechX'23 - CP",
+        image: "./img/events/techx2.jpg",
+    },
+    {
+        date: "15/04/2023",
+        name: "TechX'23 - Cyber Security",
+        image: "./img/events/techx3.jpg",
+    },
+    {
+        date: "15/04/2023",
+        name: "TechX'23 - Blockchain and Web3.0",
+        image: "./img/events/techx4.jpg",
+    },
+    {
+        date: "16/04/2023",
+        name: "TechX'23 - AI and ML",
+        image: "./img/events/techx5.jpg",
+    },
+    {
+        date: "14/04/2023",
+        name: "TechX'23 - DS",
+        image: "./img/events/techx6.jpg",
+    },
+    {
+        date: "21/04/2023",
+        name: "TechX'23 - Cloud and DevOps",
+        image: "./img/events/techx7.jpg",
+    },
+    {
+        date: "21/04/2023",
+        name: "TechX'23 - Open Source",
+        image: "./img/events/techx8.jpg",
+    },
+    {
+        date: "22/04/2023",
+        name: "TechX'23 - Web Development",
+        image: "./img/events/techx9.jpg",
+    },
+    {
+        date: "22/04/2023",
+        name: "TechX'23 - UI/UX",
+        image: "./img/events/techx10.jpg",
+    },
+    {
+        date: "23/04/2023",
+        name: "TechX'23 - Mobile App Development",
+        image: "./img/events/techx11.jpg",
+    },
+    {
+        date: "23/04/2023",
+        name: "TechX'23 - AR?VR/XR",
+        image: "./img/events/techx12.jpg",
+    },
+    {
+        date: "25/04/2023",
+        name: "Webinar on Google Generation Scholarship",
+        image: "./img/events/NSCC_41_Poster.jpg",
+    },
+    {
+        date: "29/04/2023",
+        name: "Introduction to Web Development",
+        image: "./img/events/NSCC_42_Poster.jpeg",
+    },
+    {
+        date: "01/05/2023 - 02/05/2023",
+        name: "Freshers' Placement Talk",
+        image: "./img/events/NSCC_43-44_Poster.jpg",
+    },
+    {
+        date: "04/05/2023",
+        name: "Seminar by Miss Purva Aggarwal",
+        image: "./img/events/NSCC_45_Poster.jpg",
+    },
+    
 ]

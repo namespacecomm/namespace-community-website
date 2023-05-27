@@ -182,7 +182,8 @@ const Hero = () => {
             <WhatWeDo>
               <Subtitle>Coding Club</Subtitle>
             </WhatWeDo>
-            <Desc>Bhagwan Parshuram Institute of Technology,Delhi</Desc>
+            <Desc>Bhagwan Parshuram Institute of Technology</Desc>
+            <Desc>GGS Indraprastha University, New Delhi</Desc>
           </Left>
           <Right>
             {/* <Img src="./img/logo.png" /> */}
