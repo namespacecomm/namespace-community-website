@@ -106,17 +106,37 @@ export const PastEvents = [
     },
     {
         date: "06/01/2023",
-        name: "HackNitr",
+        name: "HackNitr 4.0 Community Partnership",
         image: "./img/events/nsev22.jpg",
     },
     {
-        date: "01/01/2023",
+        date: "07/01/2023",
         name: "Web Dev Bootcamp",
         image: "./img/events/nsev23.png",
+    },
+    {
+        date: "11/01/2023",
+        name: "Podcast on Competitive Programming",
+        image: "./img/events/nsev24.png",
     },
     {
         date: "28/01/2023",
         name: "Coderush",
         image: "./img/events/nsev25.jpg",
+    },
+    {
+        date: "22/03/2023",
+        name: "Coderush March Edition",
+        image: "./img/events/NSCC_26_Poster.jpg",
+    },
+    {
+        date: "04/04/2023",
+        name: "Interview Preparation Bootcamp",
+        image: "./img/events/NSCC_27_Poster.jpeg",
+    },
+    {
+        date: "14/04/2023",
+        name: "TechXcelerate 2023",
+        image: "./img/events/NSCC_28-39_main-poster.jpg",
     },
 ]

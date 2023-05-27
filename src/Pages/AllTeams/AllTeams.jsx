@@ -77,23 +77,26 @@ function AllTeams() {
               >
                 Junior Council
               </button>
-              <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JTM" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("JTM")}
-              >
-                Junior Tech
-              </button>
+              
               <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "STM" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("STM")}
               >
-                Senior Tech
+                Senior Tech Team
               </button>
+
+              <button
+                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JTM" ? 'bg-blue-600 text-white':'' }`}
+                onClick={() => handleTeamFilter("JTM")}
+              >
+                Junior Tech Team
+              </button>
+
               <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "FTM" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("FTM")}
               >
-                Freshers Tech
+                Freshers Tech Team
               </button>
             </div>
           </div>

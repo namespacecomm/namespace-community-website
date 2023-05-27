@@ -125,7 +125,7 @@ function Navbar() {
         </LeftContainer>
         <RightContainer>
         <NavbarLinkContainer>
-        <Button>Connect with us</Button>
+        <Button onclick="window.location='https://linktr.ee/nscc_bpit';">Connect with us</Button>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);

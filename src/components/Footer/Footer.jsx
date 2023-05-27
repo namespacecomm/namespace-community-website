@@ -26,6 +26,7 @@ const Section = styled.footer`
 const RightText = styled.div`
   display: flex;
   align-items: center;
+  width:25rem;
   img {
     width: 1.5rem;
     height: 1.5rem;
@@ -45,32 +46,48 @@ const RightText = styled.div`
 `;
 const LeftText = styled.div`
   text-align: left;
+  width: 25rem;
+`;
+
+const CenterText = styled.div`
+text-align: center:
 `;
 
 const Footer = () => {
   return (
     <Section>
       <LeftText>
-        © 2023
-        <a href="">
-          @NSCC BPIT
-        </a>
+        © 2023 Newton School Coding Club BPIT
       </LeftText>
+
+      <CenterText>
+        Made with ❤️ by Team NSCC BPIT
+      </CenterText>
+    
       <RightText>
         Reach out to us via 😉
-        <a href="">
-          <img src="./img/twit.svg" alt="Twitter" />
+        
+        <a href="http://www.linkedin.com/company/nsccbpit/://twitter.com/nscc_bpit">
+          <img src="./img/linkedin.svg" alt="LinkedIn" />
         </a>
         &nbsp;
-        <a href="">
+        <a href="http://instagram.com/nscc_bpit">
           <img src="./img/insta.svg" alt="Instagram" />
         </a>
         &nbsp;
-        <a href="mailto:Apna_mail?subject=Email From Your Website">
+        <a href="https://github.com/NSCC-BPIT">
+          <img src="./img/github.svg" alt="GitHub" />
+        </a>
+        &nbsp;
+        <a href="https://twitter.com/nscc_bpit">
+          <img src="./img/twit.svg" alt="Twitter" />
+        </a>
+        &nbsp;
+        <a href="mailto:nscc@bpitindia.com">
           <img src="./img/email.svg" alt="Gmail" />
         </a>
       </RightText>
-    </Section>
+      </Section>
   );
 };
 
