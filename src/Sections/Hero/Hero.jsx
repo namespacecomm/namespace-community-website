@@ -37,13 +37,15 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  ${'' /* background-color: rgb(9, 9, 121);
+  ${
+    "" /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg");
 `;
@@ -75,6 +77,10 @@ const Left = styled.div`
     flex: 1;
     align-items: center;
   }
+  @media only screen and (max-width: 1030px) {
+    flex: 1;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h1`
@@ -83,6 +89,10 @@ const Title = styled.h1`
   @media only screen and (max-width: 768px) {
     text-align: center;
     font-size: 40px;
+  }
+  @media only screen and (max-width: 1030px) {
+    text-align: center;
+    font-size: 50px;
   }
 `;
 
@@ -104,7 +114,12 @@ const Subtitle = styled.p`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
+    display: flex;
     font-size: 64px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 1030px) {
+    font-size: 80px;
   }
 `;
 
@@ -115,13 +130,18 @@ const Desc = styled.p`
     padding: 20px;
     text-align: center;
   }
+  @media only screen and (max-width: 1030px) {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
 `;
 
 const Right = styled.div`
   flex: 3;
-  justify-content:center;
+  justify-content: center;
   position: relative;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1030px) {
     ${"" /* flex: 1; */}
     display: none;
   }
@@ -155,7 +175,7 @@ const Hero = () => {
   return (
     <>
       <Section>
-      <Navbar />
+        <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>
@@ -181,11 +201,11 @@ const Hero = () => {
         </Canvas>
       </div>
       <About />
-        <Teams />
-        <Events />
-        <Testimonials />
-        <Contact />
-        <Footer />
+      <Teams />
+      <Events />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 };
