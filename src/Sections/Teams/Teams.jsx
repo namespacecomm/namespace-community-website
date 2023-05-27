@@ -8,7 +8,7 @@ import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const Section = styled.div`
   height: 100vh;
-  width:100%;
+  width: 100%;
   background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
@@ -20,9 +20,9 @@ const Section = styled.div`
 const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  justify-content:center;
-  display:flex;
-  align-items:center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   padding: 2rem;
 `;
 
@@ -39,6 +39,9 @@ const Carousal = styled.div`
       display: none;
     }
   }
+  @media only Screen and (max-width: 1030px) {
+    margin-bottom: 40px;
+  }
   .slick-slider .slick-arrow:before {
     color: white;
     font-size: 1.5rem;
@@ -48,7 +51,7 @@ const Carousal = styled.div`
   }
   .slick-slider .slick-dots button:before {
     color: white;
-    margin-top:10px;
+    margin-top: 20px;
     font-size: 1rem;
     @media only Screen and (max-width: 40em) {
       display: none;
@@ -85,15 +88,24 @@ function Teams() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1030,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <Section>
       <Container>
-        <div className=" mb-5 px-6 mx-auto">
+        <div className="px-6 mx-auto">
           <section className="mb-5 text-white text-center">
             <h2 className="text-5xl sm:text-xl md:text-5xl font-bold mb-12 italic">
               Meet the{" "}

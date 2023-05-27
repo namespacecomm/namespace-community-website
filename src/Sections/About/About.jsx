@@ -9,12 +9,14 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-  ${'' /* background: rgb(9, 9, 121);
+  ${
+    "" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   background: no-repeat url("./img/bg.jpg");
 `;
 
@@ -31,7 +33,7 @@ const Left = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1030px) {
     display: none;
   }
 `;
@@ -39,6 +41,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 74px;
   font-weight: bold;
+  margin: auto 10%;
   background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
@@ -49,6 +52,9 @@ const Title = styled.h1`
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
     font-size: 60px;
+  }
+  @media only screen and (max-width: 1030px) {
+    font-size: 70px;
   }
 `;
 
@@ -68,6 +74,7 @@ const Desc = styled.p`
   font-size: 24px;
   text-align: justify;
   color: lightgray;
+  margin: auto 10%;
 `;
 
 const About = () => {
@@ -80,14 +87,14 @@ const About = () => {
           </Left>
           <Right>
             <Title>About NSCC BPIT</Title>
-              <Desc>
-                NSCC BPIT is a community of like-minded individuals who share a
-                passion for technology and are committed to helping each other
-                become the best developers they can be. Whether you're just
-                starting out in your coding journey or you're a seasoned pro,
-                our society is a place where you can connect with other tech
-                enthusiasts, share your knowledge, and grow your skills.
-              </Desc>
+            <Desc>
+              NSCC BPIT is a community of like-minded individuals who share a
+              passion for technology and are committed to helping each other
+              become the best developers they can be. Whether you're just
+              starting out in your coding journey or you're a seasoned pro, our
+              society is a place where you can connect with other tech
+              enthusiasts, share your knowledge, and grow your skills.
+            </Desc>
           </Right>
         </Container>
       </Section>

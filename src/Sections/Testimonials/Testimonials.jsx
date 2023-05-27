@@ -95,6 +95,15 @@ const Testimonials = () => {
           dots: true,
         },
       },
+      {
+        breakpoint: 1030,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
     ],
   };
 
@@ -120,8 +129,9 @@ const Testimonials = () => {
                   </svg>
                   <blockquote>
                     <p class="text-2xl font-medium text-gray-900 dark:text-white">
-                      "or bhai kya haal chal sab badiya m to badiya bhai sab aap bataiye bhabhiji kesi hai arey ban
-                      sahab sab badiya upar wale ki kripya hai"
+                      "or bhai kya haal chal sab badiya m to badiya bhai sab aap
+                      bataiye bhabhiji kesi hai arey ban sahab sab badiya upar
+                      wale ki kripya hai"
                     </p>
                   </blockquote>
                   <figcaption class="flex items-center justify-center mt-6 space-x-3">
