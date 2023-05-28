@@ -140,12 +140,7 @@ function Teams() {
               </Slider>
             </Carousal>
 
-            <button
-              type="button"
-              className="text-white mt-2 md:mt-10 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-            >
-              View all the members
-            </button>
+            
           </section>
         </div>
       </Container>

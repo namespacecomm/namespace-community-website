@@ -62,15 +62,18 @@ function AllTeams() {
             Given below are few of the club members who make the community amazing.
           </p>
 
-          <div className="flex items-center justify-center">
-            <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-            {/* <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("")}
-              >
-                All
-              </button> */}
-              <button
+           <div className="flex items-center justify-center">
+           <a href="https://drive.google.com/file/d/1A-VyrV37sfBCl9OJ_0FYSlwMsYM-sBvG/view?usp=sharing">
+           <button
+              type="button"
+              className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              View all the members
+            </button>
+           </a>
+            {/* <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"> */}
+
+              {/* <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "SC" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("SC")}
               >
@@ -82,7 +85,7 @@ function AllTeams() {
               >
                 Junior Council
               </button>
-              
+
               <button
                 className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "STM" ? 'bg-blue-600 text-white':'' }`}
                 onClick={() => handleTeamFilter("STM")}
@@ -102,9 +105,11 @@ function AllTeams() {
                 onClick={() => handleTeamFilter("FTM")}
               >
                 Freshers Tech Team
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
           </div>
+
+          
 
           <div className="grid grid-cols-1 gap-10 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4 xl:gap-20">
             {filterTeam.map((member) => {
