@@ -18,6 +18,9 @@ const Section = styled.div`
   ); */
   }
   background: no-repeat url("./img/bg.jpg");
+  @media only screen and (max-width: 768px) {
+    height: 120vh;
+  }
 `;
 
 const Container = styled.div`
@@ -26,6 +29,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 `;
 
 const Left = styled.div`

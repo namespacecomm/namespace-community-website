@@ -15,6 +15,9 @@ const Section = styled.div`
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
   );
+  @media only screen and (max-width: 768px) {
+    height: 90vh;
+  }
 `;
 
 const Container = styled.div`
@@ -24,6 +27,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   padding: 2rem;
+  @media only screen and (max-width: 768px) {
+    padding: 4rem;
+  }
 `;
 
 const Carousal = styled.div`
@@ -39,6 +45,7 @@ const Carousal = styled.div`
       display: none;
     }
   }
+  
   @media only Screen and (max-width: 1030px) {
     margin-bottom: 40px;
   }
@@ -65,6 +72,7 @@ const Carousal = styled.div`
     margin: 0;
     padding: 0;
     margin-bottom: 3rem;
+    
   }
 `;
 
@@ -134,7 +142,7 @@ function Teams() {
 
             <button
               type="button"
-              className="text-white mt-10 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white mt-2 md:mt-10 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
               View all the members
             </button>

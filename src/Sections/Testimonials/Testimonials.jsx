@@ -21,6 +21,9 @@ const Section = styled.div`
   align-items: center;
   width: 100%;
   padding: 5rem 0;
+  @media only Screen and (max-width: 40em) {
+      height: 50vh;
+    }
 `;
 
 const Title = styled.h1`

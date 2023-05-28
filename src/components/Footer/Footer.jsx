@@ -21,6 +21,7 @@ const Section = styled.footer`
       }
     }
   }
+  
 `;
 
 const RightText = styled.div`
