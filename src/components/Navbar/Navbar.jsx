@@ -122,6 +122,7 @@ function Navbar() {
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
+            
         </LeftContainer>
         <RightContainer>
         <NavbarLinkContainer>

@@ -82,6 +82,12 @@ export const testimonials = [
       "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
     position: "Junior Council",
   },
+  {
+    text:"Being part of the content team of NSCC helped me flourish. Society’s fidelity for technical support and development helped students choose a new field in the technical domain. Seniors shared their expertise and helped the students explore the new domain in the computer science field, society helps me by guiding me in every way possible. Not only in the technical domain but also in the field of creativity, NSCC BPIT has always encouraged everyone in overall growth and development.",
+    name: "Smriddhi Lau",
+    image: "https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241535176-9b9f912f-1bd8-4d77-9606-2e99e6511af3.jpg",
+    position: "Tech Team and Content Team",
+  },
 ];
 
 export const members = [
