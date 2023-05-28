@@ -62,7 +62,7 @@ const Footer = () => {
       </LeftText>
 
       <CenterText>
-        Made with ❤️ by Team NSCC BPIT
+        Made with ❤️ and 🧠 by Team NSCC BPIT
       </CenterText>
     
       <RightText>

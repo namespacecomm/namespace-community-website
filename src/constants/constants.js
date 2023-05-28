@@ -20,49 +20,45 @@ export const testimonials = [
     text: "It is great to be a part of such a great society. Here I got to work with many different individuals and learnt a lot of new skills both technical and non-technical such as how to manage a huge event like GeekTalk and knowing how much management and planning really goes into when organizing a event. The best society I have ever been a part of.",
     name: "Prasuk Jain",
     image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+      "https://user-images.githubusercontent.com/75252077/236657135-1edb8cab-c347-4be5-ae9c-506555c699eb.jpeg",
     position: "Organization Head, NSCC",
   },
   {
     text: "Nscc for me is a society which I could never dream of ...   First of all, when I enter society, it welcomes me with open arms... I was able to come in contact with like-minded tech geeks... Every member of society is so friendly, especially seniors.. They are helping  me in every doubt I have, either academic or personal. Society organises coding challenges every week to enhance our grasp on coding concepts. And the event organised by nscc is something else like interaction with geeks for geeks founder and techXlerate coding competition. They are just amazing. I am glad I chose nscc to be my first tech guidance adviser and hope to gain many more things in future  from them.",
     name: "Piyush Gupta",
-    image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    image:"https://i.postimg.cc/9F3byfGk/pi2.jpg",
+      
     position: "Tech Team and Marketing Team",
   },
   {
     text: "The NSCC College Tech Society has been a game-changer for me. From the moment I joined, I was surrounded by a community of passionate and driven individuals who share my love for technology. The society has provided me with invaluable networking opportunities, skill-building workshops, and a supportive environment to explore and grow in my field. Being part of this society has not only expanded my knowledge but also connected me with like-minded peers and opened doors to exciting opportunities. I am grateful for the College Tech Society and the incredible impact it has had on my college experience.",
     name: "Nikhil Kumar",
-    image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    image: "https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241532037-e77697e9-77e6-48be-b432-2d2cb1188133.jpg",
     position: "Tech Team and Social Media Team",
   },
   {
     text: "As a senior tech team member at NSCC BPIT designing and developing our website was a rewarding experience, and the positive feedback received from users was overwhelming. Additionally, conducting a web development session for the society's members allowed me to share my expertise and witness their newfound knowledge and enthusiasm. The society's commitment to innovation and the supportive environment fostered personal and professional growth. I highly recommend NSCC BPIT as a platform for aspiring tech enthusiasts to excel and connect with like-minded individuals.",
     name: "Manan Khandelwal",
-    image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    image: "https://i.postimg.cc/50g3J5HQ/me.jpg",
     position: "Senior Tech Team",
   },
   {
     text: "To be honest, joining NSCC BPIT has been a life changing moment for me. All the Seniors and Heads in the Community are extremely Supportive and Generous. All the Skills that I possess today are because of the Mentorship, Guidance, and Help provided to me by the seniors. All the members are really kind and supportive to help each other, making it a really inclusive community. Thank you NSCC BPIT for each and every thing.",
     name: "Shivank Kapur",
-    image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    image:"https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241532133-d2ad0f3e-88a0-4034-aeaa-86cceacc6d0c.jpg",
     position: "Tech Team and Outreach Team",
   },
   {
     text:"Newton School Coding Club has been a transformative experience for me at BPIT. The club's impact goes beyond being just a tech club. It has provided a positive and enriching environment where I've met incredible individuals who have shaped my college journey. I appreciate how NSCC at BPIT focuses on not only technical skills but also emphasizes the development of soft skills and personal growth. From engaging weekly sessions to the invaluable guidance of seniors, this club has been instrumental in driving my personal and professional growth.I highly recommend nscc to anyone passionate about technology and seeking a vibrant community to thrive in!",
     name: "Vaibhav Bhardwaj",
-    image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    image: "https://user-images.githubusercontent.com/75252077/236659081-d0dff70f-522d-4bad-bb67-2ab050ec8802.jpg",
     position: "Junior Council",
   },
   {
     text:"I consider Newton School coding club to be more than just a tech club; it's like a second family to me. I've met amazing people who have influenced my college career in this uplifting and enriching environment. I like how the NSCC  spotlights both the development of soft skills and personal development in addition to technical skills. To anyone who is passionate about technology and looking for a healthy community, I wholeheartedly suggest the NSCC!",
     name: "Rupal Rastogi",
     image:
-      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+      "https://i.postimg.cc/CMqmQ877/Rupal.jpg",
     position: "Tech Team and Logistics Team",
   },
   {
@@ -71,6 +67,20 @@ export const testimonials = [
     image:
       "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
     position: "Tech Team and Graphics Team",
+  },
+  {
+    text:"I am elated to express my gratitude to the Newton School of Coding Club BPIT and the enormous impact it has had on my personal and professional growth. From the very beginning, the club provided a nurturing and friendly environment where I felt encouraged to explore various fields. The seniors and the teammates were not only knowledgeable but also passionate about teaching, which made the learning process incredibly engaging and enjoyable. As I continue to participate actively in the club's events, I witnessed my growth not only as a coder but also in terms of public speaking and soft skills.I am immensely grateful and I wholeheartedly recommend NSCC BPIT to anyone looking to embark on a fulfilling coding journey and unlock their full potential .",
+    name: "Khushi Kulshreshtha",
+    image:
+      "https://i.postimg.cc/66vvXLD7/IMG-20230124-161335.jpg",
+    position: "Tech Team and Content Team",
+  },
+  {
+    text:"I am writing to express my sincere gratitude for the cherishing experience I had as a part of the Junior Council at NSCC. I am confident that the skills and knowledge I gained during my time on the council will help me to achieve my goals in the tech industry I am particularly grateful to my seniors at Nscc, who were constant support in my journey, and the peer group I got, which helped me in my learning journey. I also found the sessions conducted by NSCC to be very useful. These sessions covered a wide range of topics, including blockchain and other in- demand technologies, scholarships, and interview skills. I found the information in these sessions to be very helpful.  Thus I can say that Nscc will be one of the most memorable parts of my college life.",
+    name: "Anushka Singh",
+    image:
+      "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
+    position: "Junior Council",
   },
 ];
 
