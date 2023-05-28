@@ -39,13 +39,11 @@ function Projects() {
       <Navbar />
       <Container>
         <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
-          Projects we are proud of
+          Awesome projects loading super soon.......
         </h1>
 
         <p className="max-w-2xl mx-auto my-6 text-center ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
-          ex placeat modi magni quia error alias, adipisci rem similique, at
-          omnis eligendi optio eos harum.
+                                    
         </p>
         
       </Container>
