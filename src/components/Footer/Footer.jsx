@@ -48,7 +48,10 @@ const RightText = styled.div`
       }
     }
     @media only Screen and (max-width: 40em) {
-     
+     text-align:right;
+     align-self:center;
+     padding: 15px;
+     justify-self:center;
   }
   }
 
@@ -81,7 +84,7 @@ const Footer = () => {
       </CenterText>
    
       <RightText>
-      reach out to us via 😊     
+     
         <a href="http://www.linkedin.com/company/nsccbpit/://twitter.com/nscc_bpit">
           <img src="./img/linkedin.svg" alt="LinkedIn" />
         </a>

@@ -7,6 +7,10 @@ const CardWrapper = styled.div`
   height: 350px;
   position: relative;
   perspective: 1000px;
+  @media only screen and (max-width: 768px) {
+    width: 350px;
+    height: 400px;
+  }
 `;
 
 const Card = styled.div`
