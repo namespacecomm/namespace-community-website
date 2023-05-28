@@ -58,7 +58,7 @@ function AllTeams() {
 
           <p className="max-w-2xl mx-auto my-6 text-center ">
             In the last one year NSCC BPIT has grown on to become a vibrant 
-            and thriving collection of tech enthusiasts and prblem solvers. 
+            and thriving collection of tech enthusiasts and problem solvers. 
             Given below are few of the club members who make the community amazing.
           </p>
 
