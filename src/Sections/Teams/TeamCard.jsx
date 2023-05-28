@@ -8,8 +8,8 @@ const CardWrapper = styled.div`
   position: relative;
   perspective: 1000px;
   @media only screen and (max-width: 768px) {
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
   }
 `;
 
