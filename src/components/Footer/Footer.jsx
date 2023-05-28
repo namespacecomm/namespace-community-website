@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.footer`
-  padding: 1.2rem calc(2.5rem + 2.5vw);
+  padding: 1.2rem;
   font-size: 1rem;
   background: rgb(9, 9, 121);
   background: linear-gradient(
@@ -30,7 +30,7 @@ const Section = styled.footer`
 
 const RightText = styled.div`
   display: flex;
-  align-self: flex-end;
+  align-items: center;
   width:25rem;
   img {
     width: 1.5rem;
@@ -75,9 +75,9 @@ text-align: right;
 const Footer = () => {
   return (
     <Section>
-      <LeftText>
+      {/* <LeftText>
         © 2023 Newton School Coding Club BPIT
-      </LeftText>
+      </LeftText> */}
 
       <CenterText>
         Made with ❤️ and 🧠 by Team NSCC BPIT
