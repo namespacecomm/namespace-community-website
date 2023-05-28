@@ -22,7 +22,7 @@ const Section = styled.div`
   width: 100%;
   padding: 5rem 0;
   @media only Screen and (max-width: 40em) {
-      height: 50vh;
+      height: 80vh;
     }
 `;
 
@@ -59,13 +59,13 @@ const Carousal = styled.div`
   .slick-slider .slick-arrow:before {
     color: white;
     font-size: 1.5rem;
-    @media only Screen and (max-width: 40em) {
-      display: none;
-    }
   }
   .slick-slider .slick-dots button:before {
     color: white;
     font-size: 1rem;
+    @media only Screen and (max-width: 1068px) {
+    display:none;
+  }
   }
   .slick-slide.slick-active {
     display: flex;
@@ -131,7 +131,7 @@ const Testimonials = () => {
                     />
                   </svg>
                   <blockquote>
-                    <p class="dark:text-white">
+                    <p class="dark:text-white text-justify">
                       " {person.text} "
                     </p>
                   </blockquote>
