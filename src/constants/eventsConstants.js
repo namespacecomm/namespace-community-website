@@ -219,5 +219,4 @@ export const PastEvents = [
         name: "Seminar by Miss Purva Aggarwal",
         image: "./img/events/NSCC_45_Poster.jpg",
     },
-    
 ]
