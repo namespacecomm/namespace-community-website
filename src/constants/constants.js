@@ -16,7 +16,6 @@ export const Galleryimages = [
 ];
 
 export const testimonials = [
-  // add one space after name and one space before position
   {
     text: "It is great to be a part of such a great society. Here I got to work with many different individuals and learnt a lot of new skills both technical and non-technical such as how to manage a huge event like GeekTalk and knowing how much management and planning really goes into when organizing a event. The best society I have ever been a part of.",
     name: "Prasuk Jain",
@@ -51,6 +50,27 @@ export const testimonials = [
     image:
       "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
     position: "Tech Team and Outreach Team",
+  },
+  {
+    text:"Newton School Coding Club has been a transformative experience for me at BPIT. The club's impact goes beyond being just a tech club. It has provided a positive and enriching environment where I've met incredible individuals who have shaped my college journey. I appreciate how NSCC at BPIT focuses on not only technical skills but also emphasizes the development of soft skills and personal growth. From engaging weekly sessions to the invaluable guidance of seniors, this club has been instrumental in driving my personal and professional growth.I highly recommend nscc to anyone passionate about technology and seeking a vibrant community to thrive in!",
+    name: "Vaibhav Bhardwaj",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "Junior Council",
+  },
+  {
+    text:"I consider Newton School coding club to be more than just a tech club; it's like a second family to me. I've met amazing people who have influenced my college career in this uplifting and enriching environment. I like how the NSCC  spotlights both the development of soft skills and personal development in addition to technical skills. To anyone who is passionate about technology and looking for a healthy community, I wholeheartedly suggest the NSCC!",
+    name: "Rupal Rastogi",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "Tech Team and Logistics Team",
+  },
+  {
+    text:"I am writing this testimonial to express my heartfelt appreciation and respect for the incredible work carried out by NSCC BPIT in our college. As a student actively involved in the tech community, I have had the privilege of witnessing firsthand the exceptional initiatives, events, and opportunities created by this society. Really glad to be here and want to be a part in the future too.",
+    name: "Daksh Sardana",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "Tech Team and Graphics Team",
   },
 ];
 
@@ -115,7 +135,7 @@ export const members = [
     twitter: "https://www.instagram.com/Deepika01907",
   },
 
-  {
+  /* {
     image: "https://user-images.githubusercontent.com/75252077/236657078-11b60175-3b36-4809-ac07-d46dd55e267a.jpg",
     name: "Kirti Singh",
     position: "Creative Head",
@@ -153,7 +173,7 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/surbhi-sinha-554902176/",
     instagram: "https://www.instagram.com/surbhisinha23/",
     twitter: "",
-  },
+  }, */
 
   {
     image: "https://user-images.githubusercontent.com/75252077/236657406-e6b46519-5a51-4be0-ac68-1ead8f42b56c.jpg",
