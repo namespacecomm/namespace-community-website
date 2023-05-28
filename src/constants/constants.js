@@ -65,6 +65,13 @@ export const testimonials = [
       "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
     position: "Tech Team and Logistics Team",
   },
+  {
+    text:"I am writing this testimonial to express my heartfelt appreciation and respect for the incredible work carried out by NSCC BPIT in our college. As a student actively involved in the tech community, I have had the privilege of witnessing firsthand the exceptional initiatives, events, and opportunities created by this society. Really glad to be here and want to be a part in the future too.",
+    name: "Daksh Sardana",
+    image:
+      "https://static.republika.co.id/uploads/member/images/news/bor6mn3jnr.jpg",
+    position: "Tech Team and Graphics Team",
+  },
 ];
 
 export const members = [
