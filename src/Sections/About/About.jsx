@@ -19,7 +19,7 @@ const Section = styled.div`
   }
   background: no-repeat url("./img/bg.jpg");
   @media only screen and (max-width: 768px) {
-    height: 130vh;
+    height: 180vh;
   }
 `;
 
@@ -55,7 +55,8 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 52px;
+
   }
   @media only screen and (max-width: 1030px) {
     font-size: 70px;

@@ -48,6 +48,9 @@ const Section = styled.div`
   }
   background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg");
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 const Container = styled.div`
