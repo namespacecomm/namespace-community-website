@@ -131,21 +131,21 @@ const Testimonials = () => {
                     />
                   </svg>
                   <blockquote>
-                    <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                    <p class="dark:text-white">
                       " {person.text} "
                     </p>
                   </blockquote>
-                  <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                  <figcaption class="flex items-center justify-center mt-6 space-x-9">
                     <img
-                      class="w-6 h-6 rounded-full"
+                      class="w-10 h-10 rounded-full"
                       src={person.image}
                       alt="profile picture"
                     />
-                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                      <div class="pr-3 font-medium text-gray-900 dark:text-white">
+                    <div>
+                      <div class="dark:text-white">
                         {person.name}
                       </div>
-                      <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                      <div class="dark:text-gray-400">
                         {person.position}
                       </div>
                     </div>

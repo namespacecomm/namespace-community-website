@@ -57,9 +57,9 @@ function AllTeams() {
           </h1>
 
           <p className="max-w-2xl mx-auto my-6 text-center ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            incidunt ex placeat modi magni quia error alias, adipisci rem
-            similique, at omnis eligendi optio eos harum.
+            In the last one year NSCC BPIT has grown on to become a vibrant 
+            and thriving collection of tech enthusiasts and prblem solvers. 
+            Given below are few of the club members who make the community amazing.
           </p>
 
            <div className="flex items-center justify-center">
