@@ -347,7 +347,7 @@ export const allmembers = [
   {
     image: "https://i.postimg.cc/50g3J5HQ/me.jpg",
     name: "Manan Khandelwal",
-    position: "Mene bnai hai ye website",
+    position: "WebDev Head",
     team: "SC",
     github: "https://github.com/mnnkhndlwl",
     linkedin: "https://www.linkedin.com/in/mnnkhndlwl",

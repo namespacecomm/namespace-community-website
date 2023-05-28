@@ -118,7 +118,7 @@ const Testimonials = () => {
           {testimonials.map((person) => {
             return (
               <div class="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4">
-                <figure class=" mx-auto">
+                <figure class="h-80 mx-auto">
                   <svg
                     class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
                     viewBox="0 0 24 27"

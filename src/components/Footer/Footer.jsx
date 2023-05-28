@@ -30,7 +30,7 @@ const Section = styled.footer`
 
 const RightText = styled.div`
   display: flex;
-  align-items: center;
+  align-self: flex-end;
   width:25rem;
   img {
     width: 1.5rem;
@@ -48,8 +48,8 @@ const RightText = styled.div`
       }
     }
     @media only Screen and (max-width: 40em) {
-     text-align:right;
-     align-self:center;
+     text-align: right;
+     align-self: end;
      padding: 15px;
      justify-self:center;
   }
