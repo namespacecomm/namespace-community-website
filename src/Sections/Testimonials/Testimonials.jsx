@@ -22,7 +22,7 @@ const Section = styled.div`
   width: 100%;
   padding: 5rem 0;
   @media only Screen and (max-width: 40em) {
-      height: 80vh;
+      height: 120vh;
     }
 `;
 

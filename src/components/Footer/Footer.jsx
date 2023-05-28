@@ -13,13 +13,17 @@ const Section = styled.footer`
   align-items: center;
   justify-content: space-between;
   @media only Screen and (max-width: 48em) {
+    width: 100vw;
     flex-direction: column;
-    align-items: center;
-    div {
+    align-items:center;
+    padding: 0;
+    font-size: 16px;
+    justify-content: center;
+    ${'' /* div {
       &:first-child {
         margin-bottom: 1rem;
       }
-    }
+    } */}
   }
   
 `;
@@ -43,15 +47,26 @@ const RightText = styled.div`
           brightness(100%) contrast(97%);
       }
     }
+    @media only Screen and (max-width: 40em) {
+     
   }
+  }
+
 `;
 const LeftText = styled.div`
   text-align: left;
   width: 25rem;
+  @media only Screen and (max-width: 48em) {
+    text-align:center;
+  }
 `;
 
 const CenterText = styled.div`
-text-align: center:
+text-align: right;
+@media only Screen and (max-width: 48em) {
+    text-align: center;
+    
+  }
 `;
 
 const Footer = () => {
@@ -64,10 +79,9 @@ const Footer = () => {
       <CenterText>
         Made with ❤️ and 🧠 by Team NSCC BPIT
       </CenterText>
-    
+   
       <RightText>
-        Reach out to us via 😉
-        
+      reach out to us via 😊     
         <a href="http://www.linkedin.com/company/nsccbpit/://twitter.com/nscc_bpit">
           <img src="./img/linkedin.svg" alt="LinkedIn" />
         </a>

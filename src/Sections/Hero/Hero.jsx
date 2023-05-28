@@ -81,6 +81,9 @@ const Left = styled.div`
     flex: 1;
     align-items: center;
   }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+     flex: 1; 
+  }
 `;
 
 const Title = styled.h1`
@@ -94,12 +97,21 @@ const Title = styled.h1`
     text-align: center;
     font-size: 50px;
   }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    text-align: center;
+    font-size: 50px;
+  }
 `;
 
 const WhatWeDo = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    text-align: center;
+    font-size: 50px;
+    justify-content:center;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -121,6 +133,10 @@ const Subtitle = styled.p`
   @media only screen and (max-width: 1030px) {
     font-size: 80px;
   }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    text-align: center;
+    font-size: 50px;
+  }
 `;
 
 const Desc = styled.p`
@@ -135,6 +151,10 @@ const Desc = styled.p`
     text-align: center;
     font-size: 30px;
   }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    text-align: center;
+    font-size: 50px;
+  }
 `;
 
 const Right = styled.div`
@@ -142,6 +162,10 @@ const Right = styled.div`
   justify-content: center;
   position: relative;
   @media only screen and (max-width: 1030px) {
+    ${"" /* flex: 1; */}
+    display: none;
+  }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     ${"" /* flex: 1; */}
     display: none;
   }
