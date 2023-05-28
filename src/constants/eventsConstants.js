@@ -196,7 +196,7 @@ export const PastEvents = [
     },
     {
         date: "23/04/2023",
-        name: "TechX'23 - AR?VR/XR",
+        name: "TechX'23 - AR/VR/XR",
         image: "./img/events/techx12.jpg",
     },
     {
