@@ -32,6 +32,11 @@ const Container = styled.div`
 
     justify-content: space-between;
   }
+  @media only screen and (max-width: 1030px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 function AllEvents() {
@@ -58,7 +63,7 @@ function AllEvents() {
               Past Events
             </h1>
             <div class="px-5 mx-auto flex flex-wrap">
-            <div className="grid grid-cols-1 gap-6 mt-8 xl:mt-16 md:grid-cols-1 xl:grid-cols-4 xl:gap-3">
+            <div className="grid grid-cols-1 gap-6 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4 xl:gap-3">
             {
               PastEvents.map((event) => {
                 return <EventCard name={event.name} date={event.date} img={event.image} />

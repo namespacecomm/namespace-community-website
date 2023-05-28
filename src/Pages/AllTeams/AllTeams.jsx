@@ -31,6 +31,11 @@ const Container = styled.div`
 
     justify-content: space-between;
   }
+  @media only screen and (max-width: 1030px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 function AllTeams() {
@@ -101,7 +106,7 @@ function AllTeams() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 mt-8 xl:mt-16 md:grid-cols-1 xl:grid-cols-4 xl:gap-20">
+          <div className="grid grid-cols-1 gap-10 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4 xl:gap-20">
             {filterTeam.map((member) => {
               return (
                 <TeamCard
