@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import Projects from "./Pages/Projects/Projects";
+import Resources from "./Pages/Resources/Resources";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -27,6 +28,7 @@ function App() {
               <Route path='team' element={<AllTeams />} />
               <Route path='events' element={<AllEvents />} />
               <Route path='projects' element={ <Projects /> } />
+              <Route path='resources' element={ <Resources /> } />
             </Route>
           </Routes>
         </BrowserRouter>

@@ -122,6 +122,8 @@ function Navbar() {
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
+            <NavbarLink to="/resources">Resources</NavbarLink>
+
             
         </LeftContainer>
         <RightContainer>
@@ -145,6 +147,7 @@ function Navbar() {
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
+          <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
