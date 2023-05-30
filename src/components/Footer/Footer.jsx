@@ -13,7 +13,7 @@ const Section = styled.footer`
   align-items: center;
   justify-content: space-between;
   @media only Screen and (max-width: 48em) {
-    width: 100vw;
+    width: 100vw ;
     flex-direction: column;
     align-items:center;
     padding: 0;
@@ -28,7 +28,7 @@ const Section = styled.footer`
   
 `;
 
-const RightText = styled.div`
+/* const RightText = styled.div`
   display: flex;
   align-items: center;
   width:25rem;
@@ -47,25 +47,27 @@ const RightText = styled.div`
           brightness(100%) contrast(97%);
       }
     }
-    @media only Screen and (max-width: 40em) {
-     text-align: right;
+    @media only Screen and (max-width: 48em) {
+     text-align: center;
      align-self: end;
-     padding: 15px;
+     
      justify-self:center;
   }
   }
 
-`;
+`; */
 const LeftText = styled.div`
   text-align: left;
-  width: 25rem;
+  width: 20rem;
   @media only Screen and (max-width: 48em) {
     text-align:center;
   }
 `;
 
 const CenterText = styled.div`
-text-align: right;
+text-align: center;
+align-items: center;
+width: 25 rem;
 @media only Screen and (max-width: 48em) {
     text-align: center;
     
@@ -75,15 +77,17 @@ text-align: right;
 const Footer = () => {
   return (
     <Section>
-      {/* <LeftText>
+      <LeftText>
         © 2023 Newton School Coding Club BPIT
-      </LeftText> */}
+      </LeftText>
 
       <CenterText>
         Made with ❤️ and 🧠 by Team NSCC BPIT
       </CenterText>
    
-      <RightText>
+      {/* <RightText>
+
+        <p>Reach out to us via </p>
      
         <a href="http://www.linkedin.com/company/nsccbpit/://twitter.com/nscc_bpit">
           <img src="./img/linkedin.svg" alt="LinkedIn" />
@@ -104,7 +108,7 @@ const Footer = () => {
         <a href="mailto:nscc@bpitindia.com">
           <img src="./img/email.svg" alt="Gmail" />
         </a>
-      </RightText>
+      </RightText> */}
       </Section>
   );
 };
