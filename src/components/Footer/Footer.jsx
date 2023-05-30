@@ -82,7 +82,7 @@ const Footer = () => {
       </LeftText>
 
       <CenterText>
-        Made with ❤️ and 🧠 by Team NSCC BPIT
+        Made with ❤️ and 🧠 by <a style={{ color: 'pink' }} href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website">Team NSCC BPIT</a>
       </CenterText>
    
       {/* <RightText>
