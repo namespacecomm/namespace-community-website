@@ -12,13 +12,14 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${'' /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); 
+  );  */}
+  background-color: #010116;
   ${'' /* background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg"); */}
 `;

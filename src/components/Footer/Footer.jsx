@@ -3,12 +3,13 @@ import styled from "styled-components";
 const Section = styled.footer`
   padding: 1.2rem;
   font-size: 1rem;
-  background: rgb(9, 9, 121);
+  ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
+  background-color: #010116;
   display: flex;
   align-items: center;
   justify-content: space-between;

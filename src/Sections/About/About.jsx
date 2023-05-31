@@ -17,9 +17,10 @@ const Section = styled.div`
     rgba(2, 0, 36, 1) 1%
   ); */
   }
-  background: no-repeat url("./img/bg.jpg");
+  ${'' /* background: no-repeat url("./img/bg.jpg"); */}
+  background-color: #010116;
   @media only screen and (max-width: 768px) {
-    height: 180vh;
+    height: 160vh;
   }
 `;
 

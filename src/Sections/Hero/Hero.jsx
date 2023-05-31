@@ -46,8 +46,9 @@ const Section = styled.div`
     rgba(2, 0, 36, 1) 1%
   ); */
   }
-  background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg");
+  ${'' /* background-repeat: no-repeat;
+  background: no-repeat url("./img/bg.jpg"); */}
+  background-color: #010116;
   @media only screen and (max-width: 768px) {
     height: 100vh;
   }

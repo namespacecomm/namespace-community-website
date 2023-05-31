@@ -9,12 +9,13 @@ import { testimonials } from "../../constants/constants";
 
 const Section = styled.div`
   height: 100vh;
-  background: rgb(9, 9, 121);
+  background-color: #010116;
+  ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
   display: flex;
   flex-direction: column;
   justify-content: center;

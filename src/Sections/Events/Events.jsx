@@ -7,13 +7,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Section = styled.div`
-  background: rgb(9, 9, 121);
+  ${'' /* background: rgb(9, 9, 121); */}
   width:100%;
-  background: linear-gradient(
+  background-color: #010116;
+  ${'' /* background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
 `;
 
 const Container = styled.div`

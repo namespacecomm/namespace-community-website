@@ -9,12 +9,13 @@ import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 const Section = styled.div`
   height: 100vh;
   width: 100%;
-  background: rgb(9, 9, 121);
+  background-color: #010116;
+  ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
   @media only screen and (max-width: 768px) {
     height: 100vh;
   }

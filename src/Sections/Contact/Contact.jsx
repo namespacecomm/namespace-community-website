@@ -3,12 +3,13 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const Section = styled.div`
-  background: rgb(9, 9, 121);
+  ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */}
+  background-color: #010116;
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
