@@ -119,8 +119,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_l0qpaje",
-        "template_n9fnp6i",
+        "nscc_website_contactpage",
+        "template_o142frd",
         ref.current,
         process.env.REACT_APP_API
       )
