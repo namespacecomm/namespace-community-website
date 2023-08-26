@@ -165,7 +165,7 @@ export const members = [
   {
 		image: "https://user-images.githubusercontent.com/75252077/236658980-c59934e8-c9db-4a9d-82a3-93ebb76c5156.jpg",
 		name: "Ayush Jaswal",
-    position: "Graphics Head",
+    position: "Design & Graphics Head",
 		github: "https://github.com/ayushjaswal",
 		linkedin: "https://www.linkedin.com/in/ayushjaswal",
 		instagram: "https://instagram.com/ayujaswal?igshid=ZDdkNTZiNTM=",
@@ -175,7 +175,7 @@ export const members = [
   {
      "name": "Vibhuti Gupta",
      "image": "https://i.postimg.cc/zv4m8YMQ/IMG-20230507-WA0038.jpg",
-     "position": "Graphics Co-Head",
+     "position": "Design & Graphics Co-Head",
      "github": "https:\/\/github.com\/Vibhuti270",
      "linkedin": "https:\/\/www.linkedin.com\/in\/vibhuti-gupta-ab841522b",
      "instagram": "https:\/\/www.instagram.com\/N\/A",
@@ -185,7 +185,7 @@ export const members = [
   {
 	  	image: "./img/tanish.jpg",
 	 	  name: "Tanish Saini",
-      position: "PR Head",
+      position: "PR & Marketing Head",
 	 	  github: "https://github.com/TaniKroos",
 	 	  linkedIn: "https://www.linkedin.com/in/tanish-saini-90410822a/",
 	  	instagram: "",
@@ -195,7 +195,7 @@ export const members = [
   {
       "name": "Lavanshi Bansal",
       "image": "./img/Lavanshi.jpg",
-      "position": "PR Co-Head",
+      "position": "PR & Marketing Co-Head",
       "github": "https:\/\/github.com\/lavanshi295",
       "linkedin": "https:\/\/www.linkedin.com\/in\/lavanshi-bansal-52525722a",
       "instagram": "https:\/\/www.instagram.com\/its.girlygirl_",
