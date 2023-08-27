@@ -94,7 +94,7 @@ export const testimonials = [
 export const members = [
 
   {
-		image: "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
+		image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693144357/WhatsApp_Image_2023-08-27_at_19.22.07_aar0ka.jpg",
 		name: "Anushka Singh",
     position: "President",
 		github: "https://github.com/anu30singh",
@@ -453,7 +453,7 @@ export const allmembers = [
   },
 
   {
-		image: "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
+		image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693144357/WhatsApp_Image_2023-08-27_at_19.22.07_aar0ka.jpg",
 		name: "Anushka Singh",
     position: "President",
 		github: "https://github.com/anu30singh",
