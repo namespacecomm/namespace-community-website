@@ -165,7 +165,7 @@ export const members = [
   {
 		image: "https://user-images.githubusercontent.com/75252077/236658980-c59934e8-c9db-4a9d-82a3-93ebb76c5156.jpg",
 		name: "Ayush Jaswal",
-    position: "Design & Graphics Head",
+    position: "Graphics Head",
 		github: "https://github.com/ayushjaswal",
 		linkedin: "https://www.linkedin.com/in/ayushjaswal",
 		instagram: "https://instagram.com/ayujaswal?igshid=ZDdkNTZiNTM=",
@@ -175,7 +175,7 @@ export const members = [
   {
      "name": "Vibhuti Gupta",
      "image": "https://i.postimg.cc/zv4m8YMQ/IMG-20230507-WA0038.jpg",
-     "position": "Design & Graphics Co-Head",
+     "position": "Graphics Co-Head",
      "github": "https:\/\/github.com\/Vibhuti270",
      "linkedin": "https:\/\/www.linkedin.com\/in\/vibhuti-gupta-ab841522b",
      "instagram": "https:\/\/www.instagram.com\/N\/A",
