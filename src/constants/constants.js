@@ -104,7 +104,7 @@ export const members = [
 	},
 
   {
-		image: "https://user-images.githubusercontent.com/75252077/236658852-9df7d052-1fdf-43cb-99f0-efba6809643d.JPG",
+		image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
 		name: "Daxh khatreja",
     position: "Vice President",
 		github: "https://github.com/khatrejadaxh04",
@@ -223,7 +223,7 @@ export const members = [
 	},
 
   {
-      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141777/Sneha_e4wknh.jpg",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143933/WhatsApp_Image_2023-08-27_at_19.15.17_xg2f0b.jpg",
       "name": "Sneha Nautiyal",
       "position": "Social Media Co-Head",
       "github": "https:\/\/github.com\/Klynweto",
@@ -463,7 +463,7 @@ export const allmembers = [
 	},
 
   {
-		image: "https://user-images.githubusercontent.com/75252077/236658852-9df7d052-1fdf-43cb-99f0-efba6809643d.JPG",
+		image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
 		name: "Daxh khatreja",
     position: "Vice President",
 		github: "https://github.com/khatrejadaxh04",
@@ -582,7 +582,7 @@ export const allmembers = [
 	},
 
   {
-      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141777/Sneha_e4wknh.jpg",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143933/WhatsApp_Image_2023-08-27_at_19.15.17_xg2f0b.jpg",
       "name": "Sneha Nautiyal",
       "position": "Social Media Co-Head",
       "github": "https:\/\/github.com\/Klynweto",
