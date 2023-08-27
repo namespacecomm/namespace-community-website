@@ -363,7 +363,7 @@ export const allmembers = [
 
 
   {
-    image: "https://user-images.githubusercontent.com/75252077/236656948-0a073ed7-0489-4173-a24d-8aad6ee3beb4.jpg",
+    image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141355/WhatsApp_Image_2023-08-27_at_18.31.44_bcdpq4.jpg",
     name: "Pradeepto Sarkar",
     position: "Founder",
     team: "SC",
