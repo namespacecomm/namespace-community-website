@@ -183,7 +183,7 @@ export const members = [
   },
 
   {
-	  	image: "./img/tanish.jpg",
+	  	image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141782/Tanish_uevbku.jpg",
 	 	  name: "Tanish Saini",
       position: "PR & Marketing Head",
 	 	  github: "https://github.com/TaniKroos",
@@ -223,7 +223,7 @@ export const members = [
 	},
 
   {
-      "image": "./img/sneha.jpg",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141777/Sneha_e4wknh.jpg",
       "name": "Sneha Nautiyal",
       "position": "Social Media Co-Head",
       "github": "https:\/\/github.com\/Klynweto",
@@ -542,7 +542,7 @@ export const allmembers = [
   },
 
   {
-	  	image: "./img/tanish.jpg",
+	  	image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141782/Tanish_uevbku.jpg",
 	 	  name: "Tanish Saini",
       position: "PR Head",
 	 	  github: "https://github.com/TaniKroos",
@@ -582,7 +582,7 @@ export const allmembers = [
 	},
 
   {
-      "image": "./img/sneha.jpg",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141777/Sneha_e4wknh.jpg",
       "name": "Sneha Nautiyal",
       "position": "Social Media Co-Head",
       "github": "https:\/\/github.com\/Klynweto",
