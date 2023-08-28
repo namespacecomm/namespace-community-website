@@ -601,7 +601,7 @@ export const allmembers = [
 
     {
       "name": "Aryan Pillai",
-      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238093/aryan_cwtlgr.jpg",
+      "image": "",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/aryanpillai103",
       "linkedin": "https:\/\/www.linkedin.com\/in\/aryanpillai\/",
@@ -628,7 +628,7 @@ export const allmembers = [
 
     {
       "name": "Mokshit",
-      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693237985/mokshit_mf8xx7.jpg",
+      "image": "",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/Mokshit-123",
       "linkedin": "https:\/\/www.linkedin.com\/in\/mokshit-garg-283b27247",
@@ -654,7 +654,6 @@ export const allmembers = [
 
     {
       "name": "Shivank Kapur",
-      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238094/shivank_hglloc.jpg",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/ShivankK26",
       "linkedin": "https:\/\/www.linkedin.com\/in\/shivankkapur",
@@ -674,7 +673,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657358-d761716b-349d-4f04-9197-bc87ea7d080d.jpg",
     name: "Tushar Rai",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "https://github.com/Tushar1619",
     linkedin: "https://www.linkedin.com/in/tushar-rai-b94a79214",
@@ -685,7 +684,7 @@ export const allmembers = [
   {
     image: "https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241371327-1a87696e-c729-441b-a3ef-1059f63b56c2.jpg",
     name: "Surbhi Sinha",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "https://github.com/Surbhi-sinha?tab=overview&from=2022-12-01&to=2022-12-31",
     linkedin: "https://www.linkedin.com/in/surbhi-sinha-554902176/",
@@ -696,7 +695,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657397-ba7cb27a-62f8-48c9-bd1c-d6e048350aa5.jpg",
     name: "Dhruv Chandhok",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "https://github.com/Dhruv682",
     linkedin: "https://www.linkedin.com/in/dhruv-chandhok-b8a0841b5",
@@ -706,7 +705,7 @@ export const allmembers = [
   {
     image: "https://i.postimg.cc/50g3J5HQ/me.jpg",
     name: "Manan Khandelwal",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "https://github.com/mnnkhndlwl",
     linkedin: "https://www.linkedin.com/in/mnnkhndlwl",
@@ -717,7 +716,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657078-11b60175-3b36-4809-ac07-d46dd55e267a.jpg",
     name: "Kirti Singh",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/kirti-singh-3b5b4b209/",
@@ -728,7 +727,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657311-33327d52-57e2-4ca4-ad1d-8471a27f5d52.png",
     name: "Ishaan Sharma",
-    position: "Ex- Senior Council",
+    position: "",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/ishaan09/",
@@ -736,65 +735,55 @@ export const allmembers = [
     twitter: "",
   },
   
-
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236658954-0ace632b-cdb7-470d-a50c-d474f1ab32ce.jpg",
 		name: "Rishi Jha",
-    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/rishi2025",
 		linkedin: "https://www.linkedin.com/in/rishi--jha",
 		instagram: "https://www.instagram.com/rishi_jha2520/",
 		twitter: "",
 	},
-	/* {
-		image: "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
-		name: "Anushka Singh",
-    team: "JC",
-		github: "https://github.com/anu30singh",
-		linkedin: "https://www.linkedin.com/in/anushka30singh/",
-		instagram: "https://instagram.com/anu_30singh?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/Anushka3007",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236658980-c59934e8-c9db-4a9d-82a3-93ebb76c5156.jpg",
-		name: "Ayush Jaswal",
-    team: "JC",
-		github: "https://github.com/ayushjaswal",
-		linkedin: "https://www.linkedin.com/in/ayushjaswal",
-		instagram: "https://instagram.com/ayujaswal?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/ayujas",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236659017-3bdddc9a-1494-4d65-b48d-1a0fa07596df.jpg",
-		name: "Gracy Dhamija",
-    team: "JC",
-		github: "https://github.com/gracy27",
-		linkedIn: " https://www.linkedin.com/in/gracy-dhamija-4b2261239     ",
-		instagram: "https://instagram.com/dhamijagracy?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/dhamija_gracy?t=y0V-IH-0CrxhI-ZybbYc2w&s=09",
-	}, */
+	
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236659046-c3449307-bed6-4419-b28f-db75499506b6.jpg",
 		name: "Smriti Grover",
-    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/smritig26",
-		linkedIn: "https://www.linkedin.com/in/smriti-grover-016b8122a",
+		linkedin: "https://www.linkedin.com/in/smriti-grover-016b8122a",
 		instagram: "https://instagram.com/smriti.g26?igshid=ZDdkNTZiNTM=",
 		twitter: "",
 	},
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236659070-1efe8a79-9b6d-4134-9bcc-af7eddc56f6d.jpg",
 		name: "Smarth Malik",
-    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/SMARTHMALIK",
-		linkedIn: "https://www.linkedin.com/in/smarth-malik-728bb6228",
+		linkedin: "https://www.linkedin.com/in/smarth-malik-728bb6228",
 		instagram: "https://instagram.com/smarthmalik2307?igshid=ZDdkNTZiNTM=",
 		twitter: "https://twitter.com/MalikSmarth?t=WLSkszCe2-JPaa9pX8lajA&s=09",
 	},
 	
+  {
+		image: "https://user-images.githubusercontent.com/75252077/236660056-aa95e6ce-ca16-44f3-8fab-45737f1c0c56.jpg",
+		name:"Nishant Mittal", 
+    team: "STM",
+		github:"https://github.com/nishant4820/", 
+		linkedin:"https://www.linkedin.com/in/nishant4820/", 
+		instagram: "https://www.instagram.com/nishant4820/", 
+    twitter: ""
+	},
+  {
+		image: "https://i.postimg.cc/4NHSnT29/profile.jpg",
+		name:"Keshav Garg", 
+    team: "STM",
+		github:"https://github.com/keshav39", 
+		linkedin:"https://www.linkedin.com/in/keshav-garg-269484189/", 
+		instagram: "https://www.instagram.com/keshav030902/", 
+	},
+  
+
+  
    
 ];
 
