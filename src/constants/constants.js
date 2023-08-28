@@ -185,7 +185,7 @@ export const members = [
   {
 	  	image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141782/Tanish_uevbku.jpg",
 	 	  name: "Tanish Saini",
-      position: "PR & Marketing Head",
+      position: "Marketing Head",
 	 	  github: "https://github.com/TaniKroos",
 	 	  linkedIn: "https://www.linkedin.com/in/tanish-saini-90410822a/",
 	  	instagram: "",
@@ -195,7 +195,7 @@ export const members = [
   {
       "name": "Lavanshi Bansal",
       "image": "./img/Lavanshi.jpg",
-      "position": "PR & Marketing Co-Head",
+      "position": "Marketing Co-Head",
       "github": "https:\/\/github.com\/lavanshi295",
       "linkedin": "https:\/\/www.linkedin.com\/in\/lavanshi-bansal-52525722a",
       "instagram": "https:\/\/www.instagram.com\/its.girlygirl_",
@@ -544,7 +544,7 @@ export const allmembers = [
   {
 	  	image: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141782/Tanish_uevbku.jpg",
 	 	  name: "Tanish Saini",
-      position: "PR Head",
+      position: "Marketing Head",
 	 	  github: "https://github.com/TaniKroos",
 	 	  linkedIn: "https://www.linkedin.com/in/tanish-saini-90410822a/",
 	  	instagram: "",
@@ -554,7 +554,7 @@ export const allmembers = [
   {
       "name": "Lavanshi Bansal",
       "image": "./img/Lavanshi.jpg",
-      "position": "PR Co-Head",
+      "position": "Marketing Co-Head",
       "github": "https:\/\/github.com\/lavanshi295",
       "linkedin": "https:\/\/www.linkedin.com\/in\/lavanshi-bansal-52525722a",
       "instagram": "https:\/\/www.instagram.com\/its.girlygirl_",
