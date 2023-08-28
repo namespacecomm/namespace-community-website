@@ -601,7 +601,7 @@ export const allmembers = [
 
     {
       "name": "Aryan Pillai",
-      "image": "",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238093/aryan_cwtlgr.jpg",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/aryanpillai103",
       "linkedin": "https:\/\/www.linkedin.com\/in\/aryanpillai\/",
@@ -628,7 +628,7 @@ export const allmembers = [
 
     {
       "name": "Mokshit",
-      "image": "",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693237985/mokshit_mf8xx7.jpg",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/Mokshit-123",
       "linkedin": "https:\/\/www.linkedin.com\/in\/mokshit-garg-283b27247",
@@ -654,6 +654,7 @@ export const allmembers = [
 
     {
       "name": "Shivank Kapur",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238094/shivank_hglloc.jpg",
       "position": "Junior Council",
       "github": "https:\/\/github.com\/ShivankK26",
       "linkedin": "https:\/\/www.linkedin.com\/in\/shivankkapur",
@@ -673,7 +674,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657358-d761716b-349d-4f04-9197-bc87ea7d080d.jpg",
     name: "Tushar Rai",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "https://github.com/Tushar1619",
     linkedin: "https://www.linkedin.com/in/tushar-rai-b94a79214",
@@ -684,7 +685,7 @@ export const allmembers = [
   {
     image: "https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241371327-1a87696e-c729-441b-a3ef-1059f63b56c2.jpg",
     name: "Surbhi Sinha",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "https://github.com/Surbhi-sinha?tab=overview&from=2022-12-01&to=2022-12-31",
     linkedin: "https://www.linkedin.com/in/surbhi-sinha-554902176/",
@@ -695,7 +696,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657397-ba7cb27a-62f8-48c9-bd1c-d6e048350aa5.jpg",
     name: "Dhruv Chandhok",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "https://github.com/Dhruv682",
     linkedin: "https://www.linkedin.com/in/dhruv-chandhok-b8a0841b5",
@@ -705,7 +706,7 @@ export const allmembers = [
   {
     image: "https://i.postimg.cc/50g3J5HQ/me.jpg",
     name: "Manan Khandelwal",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "https://github.com/mnnkhndlwl",
     linkedin: "https://www.linkedin.com/in/mnnkhndlwl",
@@ -716,7 +717,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657078-11b60175-3b36-4809-ac07-d46dd55e267a.jpg",
     name: "Kirti Singh",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/kirti-singh-3b5b4b209/",
@@ -727,7 +728,7 @@ export const allmembers = [
   {
     image: "https://user-images.githubusercontent.com/75252077/236657311-33327d52-57e2-4ca4-ad1d-8471a27f5d52.png",
     name: "Ishaan Sharma",
-    position: "",
+    position: "Ex- Senior Council",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/ishaan09/",
@@ -795,6 +796,7 @@ export const allmembers = [
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236658954-0ace632b-cdb7-470d-a50c-d474f1ab32ce.jpg",
 		name: "Rishi Jha",
+    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/rishi2025",
 		linkedin: "https://www.linkedin.com/in/rishi--jha",
@@ -831,6 +833,7 @@ export const allmembers = [
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236659046-c3449307-bed6-4419-b28f-db75499506b6.jpg",
 		name: "Smriti Grover",
+    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/smritig26",
 		linkedin: "https://www.linkedin.com/in/smriti-grover-016b8122a",
@@ -840,6 +843,7 @@ export const allmembers = [
 	{
 		image: "https://user-images.githubusercontent.com/75252077/236659070-1efe8a79-9b6d-4134-9bcc-af7eddc56f6d.jpg",
 		name: "Smarth Malik",
+    position: "Ex- Junior Council",
     team: "JC",
 		github: "https://github.com/SMARTHMALIK",
 		linkedin: "https://www.linkedin.com/in/smarth-malik-728bb6228",
