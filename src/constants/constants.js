@@ -735,6 +735,7 @@ export const allmembers = [
     instagram: "https://www.instagram.com/_ishaanxsharma/",
     twitter: "",
   },
+  
   /* {
 		image: "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
 		name: "Rishav Raj",
@@ -868,7 +869,7 @@ export const allmembers = [
 	// 	linkedIn:"https://www.linkedin.com/in/muskan arora/", 
 	// 	instagram: "https://instagram.com/minniemx5?igshid=ZDdkNTZiNTM=", 
 	// },
-  {
+  /* {
 		image: "https://user-images.githubusercontent.com/75252077/236660056-aa95e6ce-ca16-44f3-8fab-45737f1c0c56.jpg",
 		name:"Nishant Mittal", 
     team: "STM",
@@ -884,7 +885,7 @@ export const allmembers = [
 		github:"https://github.com/keshav39", 
 		linkedin:"https://www.linkedin.com/in/keshav-garg-269484189/", 
 		instagram: "https://www.instagram.com/keshav030902/", 
-	},
+	}, */
   
 
   ///////////////////////////////////////////
@@ -986,14 +987,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/ashutosh-kumar-325353218",
     //  "instagram": "https:\/\/www.instagram.com\/ashutosh_k22860"
     // },
-    {
+    /* {
      "name": "Ashwary Pratap",
      "image": "https://i.postimg.cc/0Nzy15Lx/Ashwary.jpg",
      "team": "STM",
      "github": "https:\/\/github.com\/ash1418",
      "linkedin": "https:\/\/www.linkedin.com\/in\/ashwary-pratap-b48185205",
      "instagram": "https:\/\/www.instagram.com\/ashwary_pratap"
-    },
+    }, */
     // {
     //  "name": "Ayush Gola",
     //  "team": "STM",
@@ -1006,14 +1007,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/deepanshu-dua-0119b2202\/",
     //  "instagram": "https:\/\/www.instagram.com\/deepanshu.dua.55"
     // },
-    {
+    /* {
      "name": "Deepti Mittal",
      "image": "https://i.postimg.cc/kMW5JMhk/profile-Pic.jpg",
      "team": "STM",
      "github": "https:\/\/github.com\/Deepti0512",
      "linkedin": "https:\/\/www.linkedin.com\/in\/deepti-mittal-5b1917216\/",
      "instagram": "https:\/\/www.instagram.com\/deeptimittal9"
-    },
+    }, */
     // {
     //  "name": "Dishita",
     //  "team": "STM",
@@ -1234,21 +1235,21 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/akkul-gautam-32b19422a\/",
     //  "instagram": "https:\/\/www.instagram.com\/akkul911"
     // },
-    {
+    /* {
      "name": "Akshit Shroff",
      "image": "https:\/\/i.postimg.cc\/XJdDGgNC\/main.jpg",
      "team": "JTM",
      "github": "https:\/\/github.com\/Akay-Code",
      "linkedin": "https:\/\/www.linkedin.com\/in\/akshit-shroff-91393a237",
      "instagram": "https:\/\/www.instagram.com\/akshit_shroff"
-    },
+    }, */
     // {
     //  "name": "Amisha Gupta",
     //  "team": "JTM",
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/amisha-gupta-b2462a229",
     //  "instagram": "https:\/\/www.instagram.com\/amisha.gupta157"
     // },
-    {
+    /* {
      "name": "Anand Mohan",
      "image": "https:\/\/i.postimg.cc\/NjgdVcvV\/unnamed.jpg",
      "team": "JTM",
@@ -1256,14 +1257,14 @@ export const allmembers = [
      "linkedin": "https:\/\/www.linkedin.com\/in\/anand-mohan-50324118b\/",
      "instagram": "https:\/\/www.instagram.com\/anand18mohan",
      "twitter": "https:\/\/twitter.com\/Anand18m"
-    },
+    }, */
     // {
     //  "name": "Anant Bhardwaj",
     //  "team": "JTM",
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/anantbhardwaj21",
     //  "instagram": "https:\/\/www.instagram.com\/sun_dried_potato"
     // },
-    {
+    /* {
      "name": "Arjun Bhardwaj",
      "image": "https://i.postimg.cc/6q3HYS8H/20201202-132827.jpg",
      "team": "JTM",
@@ -1278,7 +1279,7 @@ export const allmembers = [
      "github": "https:\/\/github.com\/ASaryansharma",
      "linkedin": "https:\/\/www.linkedin.com\/in\/aryan-sharma07",
      "instagram": "https:\/\/www.instagram.com\/i.aryansharma07"
-    },
+    }, */
     // {
     //  "name": "Ataf Ali",
     //  "team": "JTM",
@@ -1322,14 +1323,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/gautam-kumar-mishra-9b7a0522a",
     //  "instagram": "https:\/\/www.instagram.com\/gautam_today"
     // },
-    {
+    /* {
      "name": "Hemant Singh",
      "image": "https://i.postimg.cc/htxRcmCw/IMG-9992.jpg",
      "team": "JTM",
      "github": "https:\/\/github.com\/Hemxnt",
      "linkedin": "https:\/\/www.linkedin.com\/in\/hemant2104",
      "instagram": "https:\/\/www.instagram.com\/hemxnt21"
-    },
+    }, */
     // {
     //  "name": "Jaskirat Singh",
     //  "team": "JTM",
@@ -1342,7 +1343,7 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/jasmin-bajaj-9559b5224",
     //  "instagram": "https:\/\/www.instagram.com\/jasminbajaj24"
     // },
-    {
+    /* {
      "name": "Khushi",
      "image": "https://i.postimg.cc/ZqGTXC43/Screenshot-20230508-000904.png",
      "team": "JTM",
@@ -1350,7 +1351,7 @@ export const allmembers = [
      "linkedin": "https:\/\/www.linkedin.com\/mwlite\/in\/khushi-jha-085902228",
      "instagram": "https:\/\/www.instagram.com\/rrrrathernotsay",
      "twitter": "https:\/\/twitter.com\/imkhushitheone"
-    },
+    }, */
     /* {
      "name": "Khushi Kulshreshtha",
      "image": "https://i.postimg.cc/66vvXLD7/IMG-20230124-161335.jpg",
@@ -1386,14 +1387,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/mishita-arora-520331227",
     //  "instagram": "https:\/\/www.instagram.com\/mishita.arora"
     // },
-    {
+    /* {
      "name": "Moksh Aggarwal",
      "image": "https:\/\/i.postimg.cc\/yNwzkPQt\/Screenshot-2023-02-20-19-45-49-252-com-miui-gallery-edit.jpg",
      "team": "JTM",
      "github": "https:\/\/github.com\/Moksh-Aggarwal",
      "linkedin": "https:\/\/www.linkedin.com\/mwlite\/in\/mokshaggarwal",
      "instagram": "https:\/\/www.instagram.com\/moksh__aggarwal"
-    },
+    }, */
     // {
     //  "name": "Nakul Singh",
     //  "team": "JTM",
@@ -1412,7 +1413,7 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/priyanshu-thakur-6a5716227",
     //  "instagram": "https:\/\/www.instagram.com\/_gaudz_"
     // },
-    {
+    /* {
      "name": "Rakesh Kumar",
      "image": "https://i.postimg.cc/gcD0Pz0N/Pngrk-edited.png",
      "team": "JTM",
@@ -1438,7 +1439,7 @@ export const allmembers = [
      "linkedin": "https:\/\/www.linkedin.com\/in\/rupesh-dembla-31aa69222",
      "instagram": "https:\/\/www.instagram.com\/rupeshdembla",
      "twitter": "https:\/\/twitter.com\/RupeshDembla"
-    },
+    }, */
     // {
     //  "name": "Sakshi Goyal",
     //  "team": "JTM",
@@ -1451,7 +1452,7 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/smriddhi-lau-8837b3256",
     //  "instagram": "https:\/\/www.instagram.com\/smriddhilau"
     // },
-    {
+    /* {
      "name": "Saransh Khandelwal",
      "image": "https://i.postimg.cc/tT0VZs6R/myimg.jpg",
      "team": "JTM",
@@ -1459,7 +1460,7 @@ export const allmembers = [
      "linkedin": "https:\/\/www.linkedin.com\/in\/saransh-khandelwal-31866b1b0",
      "instagram": "https:\/\/www.instagram.com\/saransh_977",
      "twitter": "https:\/\/twitter.com\/Saransh977"
-    },
+    }, */
     // {
     //  "name": "Shreyash",
     //  "team": "JTM",
@@ -1474,14 +1475,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/sneha-nautiyal-8b8a13242",
     //  "instagram": "https:\/\/www.instagram.com\/klynweto"
     // },
-    {
+    /* {
      "name": "Sumeet Singh",
      "image": "https:\/\/i.postimg.cc\/SNWj2MQt\/pic.jpg",
      "team": "JTM",
      "github": "https:\/\/github.com\/Sumit710",
      "linkedin": "https:\/\/www.linkedin.com\/in\/sumeet-singh-8a4091141",
      "instagram": "https:\/\/www.instagram.com\/sumit_710"
-    },
+    }, */
     // {
     //  "name": "Sumit Bhardwaj",
     //  "team": "JTM",
@@ -1495,14 +1496,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/suraj-singh-461303252",
     //  "instagram": "https:\/\/www.instagram.com\/__siii_nu"
     // },
-    {
+    /* {
      "name": "Tushar Sethi",
      "image": "https:\/\/i.postimg.cc\/44jJ73sd\/ns.jpg",
      "team": "JTM",
      "github": "https:\/\/github.com\/tusharsethi747",
      "linkedin": "https:\/\/www.linkedin.com\/in\/tushar-sethi-b1074822a\/",
      "instagram": "https:\/\/www.instagram.com\/tushar__sethi"
-    },
+    }, */
     // {
     //  "name": "V V Anup Sreeram",
     //  "team": "JTM",
@@ -1553,7 +1554,7 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/anand-mohan-jha-788507256",
     //  "instagram": "https:\/\/www.instagram.com\/anandsenpai"
     // },
-    {
+    /* {
      "name": "Anas Nadeem",
      "image": "https://i.postimg.cc/6pWsKc1t/2023-01-23-19-47-54-143-org-videolan-vlc-2.jpg",
      "team": "FTM",
@@ -1561,7 +1562,7 @@ export const allmembers = [
      "linkedin": "https:\/\/www.linkedin.com\/in\/anas-nadeem-8888bb223",
      "instagram": "https:\/\/www.instagram.com\/anas.ndm32",
      "twitter": "https:\/\/twitter.com\/AnasNad50405828?t=kZ0XFHRiEv1iFF7_vd7vZg&amp;s=09"
-    },
+    }, */
     // {
     //  "name": "Ankit Singh Bisht",
     //  "image": "https:\/\/drive.google.com\/drive\/folders\/1ykPxhtRqKXkmq_lulxXeILzO2XkSICK1?usp=share_link",
@@ -1592,13 +1593,13 @@ export const allmembers = [
     //  "instagram": "https:\/\/www.instagram.com\/a.pillai_19",
     //  "twitter": "https:\/\/twitter.com\/a_pillai103"
     // },
-    {
+    /* {
      "name": "Bhanu Goel",
      "image": "https://i.ibb.co/SPnBD0H/stampsize.jpg",
      "team": "FTM",
      "linkedin": "https:\/\/www.linkedin.com\/in\/bhanu-goel-10619225b",
      "instagram": "https:\/\/www.instagram.com\/bhanu.13122004"
-    },
+    }, */
     // {
     //  "name": "Devansh Garg",
     //  "team": "FTM",
@@ -1612,13 +1613,13 @@ export const allmembers = [
     //  "linkedin": "www.linkedin.com\/in\/devanshi-jain-606ba826a",
     //  "instagram": "https:\/\/www.instagram.com\/devan_shii"
     // },
-    {
+    /* {
      "name": "Dhruv Gaba",
      "image": "https://i.ibb.co/YQ7Gy08/Screenshot-2023-05-07-17-22-11-66-92460851df6f172a4592fca41cc2d2e6.jpg",
      "team": "FTM",
      "linkedin": "https:\/\/www.linkedin.com\/in\/dhruv-gaba-aa7441274",
      "instagram": "https:\/\/www.instagram.com\/dhruv._.gaba"
-    },
+    }, */
     // {
     //  "name": "Diksha Sharma",
     //  "team": "FTM",
@@ -1631,14 +1632,14 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/divyank-miyan-02452b243",
     //  "instagram": "https:\/\/www.instagram.com\/divyank_132"
     // },
-    {
+    /* {
      "name": "Faiz Uddin",
      "image": "https://i.ibb.co/q9TtLFy/Whats-App-Image-2023-05-07-at-23-22-06.jpg",
      "team": "FTM",
      "github": "https:\/\/github.com\/Faizuddinq",
      "linkedin": "linkedin.com\/in\/faiz-uddin-68670826a",
      "instagram": "https:\/\/www.instagram.com\/faizuddin_q"
-    },
+    }, */
     // {
     //  "name": "Garvit",
     //  "team": "FTM",
@@ -1654,13 +1655,13 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/harsh-sharma-027468201",
     //  "instagram": "https:\/\/www.instagram.com\/mr.cyclotron"
     // },
-    {
+    /* {
      "name": "Ishika Singhal",
      "image": "https://i.postimg.cc/mZ3BGP23/IMG-20221228-201256.jpg",
      "team": "FTM",
      "linkedin": "www.linkedin.com\/in\/ ishika-singhal-97677926a",
      "instagram": "https:\/\/www.instagram.com\/ishika26singhal"
-    },
+    }, */
     
     // {
     //  "name": "Jyoti Saha",
@@ -1674,7 +1675,7 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/lovely-pandey-528511259",
     //  "instagram": "https:\/\/www.instagram.com\/Cheese_pizza07"
     // },
-    {
+    /* {
      "name": "Madhur Gupta",
      "image": "https://i.postimg.cc/8cpmJk5V/Madhur-Photo.jpg",
      "team": "FTM",
@@ -1690,7 +1691,7 @@ export const allmembers = [
      "linkedin": "www.linkedin.com\/in\/manjeet-kumar-895756256",
      "instagram": "https:\/\/www.instagram.com\/MANJEETMLA",
      "twitter": "https:\/\/twitter.com\/manjeetkumarmla?t=gr0OOf27Wj0pt504SgOQWQ&amp;s=08"
-    },
+    }, */
     // 
     // {
     //  "name": "Mudita Khar",
@@ -1713,13 +1714,13 @@ export const allmembers = [
     //  "linkedin": "https:\/\/www.linkedin.com\/in\/nikhil-kumar-088860257",
     //  "instagram": "https:\/\/www.instagram.com\/me.nikhiil"
     // },
-    {
+    /* {
      "name": "Piyush gupta",
      "image": "https://i.postimg.cc/9F3byfGk/pi2.jpg",
      "team": "FTM",
      "linkedin": "https:\/\/www.linkedin.com\/in\/piyush-gupta-375a5025b",
      "instagram": "https:\/\/www.instagram.com\/Piyush2246"
-    },
+    }, */
     
     // {
     //  "name": "Ranjan kumar verma",
@@ -1785,7 +1786,7 @@ export const allmembers = [
     //  "instagram": "https:\/\/www.instagram.com\/be_sharma__"
     // },
     
-    {
+    /* {
      "name": "Sumit joshi",
      "image": "https://i.postimg.cc/jSnRmZW2/pi2.jpg",
      "team": "FTM",
@@ -1799,7 +1800,7 @@ export const allmembers = [
      "github": "https:\/\/github.com\/tanmayGypt",
      "linkedin": "https:\/\/www.linkedin.com\/in\/tanmay-gupta-b24452163",
      "instagram": "https:\/\/www.instagram.com\/tanmay3836"
-    },
+    }, */
     // {
     //  "name": "Vijay Kumar",
     //  "team": "FTM",
