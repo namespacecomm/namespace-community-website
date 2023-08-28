@@ -23,14 +23,18 @@ const Section = styled.div`
 
 const Container = styled.div`
   scroll-snap-align: center;
-  width: 1400px;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-
-    flex-direction: column;
-
-    justify-content: space-between;
+  
+  @media only screen and (max-width: 738px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
+  @media only screen and (max-width: 1030px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media only screen and (max-width: 1030px) {
     width: 100vw;
     justify-content: center;
@@ -51,12 +55,12 @@ function AllTeams() {
     <Section>
         <Navbar />
       <Container>
-        <div className=" px-6 py-10">
-          <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
+        <div className=" px-0 py-10 ">
+          <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl flex justify-center items-center">
             our team
           </h1>
 
-          <p className="max-w-2xl mx-auto my-6 text-center ">
+          <p className="max-w-2xl mx-auto my-6 text-center flex justify-center items-center">
             In the last one year NSCC BPIT has grown on to become a vibrant 
             and thriving collection of tech enthusiasts and problem solvers. 
             Given below are few of the club members who make the community amazing.
@@ -66,52 +70,16 @@ function AllTeams() {
            <a href="https://drive.google.com/file/d/1A-VyrV37sfBCl9OJ_0FYSlwMsYM-sBvG/view?usp=sharing">
            <button
               type="button"
-              className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
             >
               View all the members
             </button>
            </a>
-            {/* <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"> */}
-
-              {/* <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "SC" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("SC")}
-              >
-                Senior Council
-              </button>
-              <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JC" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("JC")}
-              >
-                Junior Council
-              </button>
-
-              <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "STM" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("STM")}
-              >
-                Senior Tech Team
-              </button>
-
-              <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "JTM" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("JTM")}
-              >
-                Junior Tech Team
-              </button>
-
-              <button
-                className={`px-4 py-2 text-sm font-medium capitalize hover:bg-blue-600 md:py-3 rounded-xl md:px-12 ${activeFilter === "FTM" ? 'bg-blue-600 text-white':'' }`}
-                onClick={() => handleTeamFilter("FTM")}
-              >
-                Freshers Tech Team
-              </button> */}
-            {/* </div> */}
           </div>
 
           
-
-          <div className="grid grid-cols-1 gap-16 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4 xl:gap-16">
+<div className="flex justify-center items-center">
+<div className="my-grid">
             {filterTeam.map((member) => {
               return (
                 <TeamCard
@@ -126,6 +94,8 @@ function AllTeams() {
               );
             })}
           </div>
+</div>
+          
         </div>
       </Container>
     </Section>
