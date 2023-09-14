@@ -123,6 +123,7 @@ function Navbar() {
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
             <NavbarLink to="/resources">Resources</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
 
             
         </LeftContainer>
@@ -148,6 +149,7 @@ function Navbar() {
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
+          <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
