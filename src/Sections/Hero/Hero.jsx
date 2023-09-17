@@ -215,7 +215,8 @@ const Hero = () => {
           <Right>
             {/* <Img src="./img/logo.png" /> */}
             {/* <Img src="https://embed.lottiefiles.com/animation/109119"></Img> */}
-            <Img src="https://embed.lottiefiles.com/animation/115734"></Img>
+            {/* <Img src="https://embed.lottiefiles.com/animation/115734"></Img> */}
+            
           </Right>
         </Container>
       </Section>

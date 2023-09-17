@@ -149,7 +149,7 @@ function Navbar() {
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/">Blog</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
