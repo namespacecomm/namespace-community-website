@@ -99,7 +99,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 ## Overview of Project
 
-<p align="center">   The goal of this project is to help the beginners with their contributions in Open Source. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
+<p align="center">   The goal of this project is to help beginners with their contributions to Open Source. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
 </p>
 
 <!--  .............................................................................................................................................  -->
@@ -154,7 +154,7 @@ it is an Issue or a Pull Request.
 ### How to Contribute: 
 
 
-- Before Contribute Please read [CONTRIBUTING.md](https://github.com/mnnkhndlwl/mern_youtube_clone/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/mnnkhndlwl/mern_youtube_clone/blob/master/CODE_OF_CONDUCT.md)
+- Before Contribute Please read [CONTRIBUTING.md](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/blob/master/CODE_OF_CONDUCT.md)
 - Fork the repo to your Github.<br/>
 
 - Clone the Forked Repository to your local machine.
