@@ -5,6 +5,8 @@ import AllTeams from "./Pages/AllTeams/AllTeams";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
+import { Web } from "./Pages/AllResources/Web";
+import { Javascript } from "./Pages/AllResources/webALL/javascript";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -29,6 +31,8 @@ function App() {
               <Route path='events' element={<AllEvents />} />
               <Route path='projects' element={ <Projects /> } />
               <Route path='resources' element={ <Resources /> } />
+              <Route path='webd' element={<Web /> } />
+              <Route path='js' element={ <Javascript /> } />
             </Route>
           </Routes>
         </BrowserRouter>
