@@ -30,6 +30,7 @@ const Section = styled.div`
 const Container = styled.div`
   scroll-snap-align: center;
   width: 1440px;
+  padding-top: 100px;
   @media only screen and (max-width: 738px) {
     width: 100vw;
     justify-content: center;
