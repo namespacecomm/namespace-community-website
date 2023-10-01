@@ -105,7 +105,7 @@ export const members = [
   {
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
-    name: "Daxh khatreja",
+    name: "Daxh Khatreja",
     position: "Vice President",
     github: "https://github.com/khatrejadaxh04",
     linkedIn: "https://linkedin.com/in/daxh-khatreja-885641227",
@@ -475,7 +475,7 @@ export const allmembers = [
   {
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
-    name: "Daxh khatreja",
+    name: "Daxh Khatreja",
     position: "Vice President",
     github: "https://github.com/khatrejadaxh04",
     linkedIn: "https://linkedin.com/in/daxh-khatreja-885641227",
