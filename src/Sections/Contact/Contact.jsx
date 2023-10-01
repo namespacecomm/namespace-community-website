@@ -120,11 +120,19 @@ const Right = styled.div`
 
 const Contact = () => {
   const ref = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if(!name || !email || !message) {
+      console.log("Fields cannot be empty :(");
+      setSuccess(false);
+      return;
+    }
     emailjs
       .sendForm(
         "nscc_website_contactpage",
@@ -149,16 +157,18 @@ const Contact = () => {
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
+            <Input placeholder="Name" name="name" onChange={(e) => setName(e.target.value)}/>
+            <Input placeholder="Email" name="email" type="email" onChange={(e) => setEmail(e.target.value)}/>
             <TextArea
               placeholder="Write your message"
               name="message"
               rows={10}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <Button type="submit">Send</Button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+            {success
+              ? "Your message has been sent. We'll get back to you soon :)"
+              : "Fields cannot be empty :("}
           </Form>
         </Left>
         <Right>
