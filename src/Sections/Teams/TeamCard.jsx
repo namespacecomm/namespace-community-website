@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import './team.css';
 
@@ -13,7 +13,7 @@ const CardWrapper = styled.div`
   }
 `;
 
-const Card = styled.div`
+/*const Card = styled.div`
   width: 100%;
   height: 100%;
   background: linear-gradient(to left bottom, #1c51ba, #191938);
@@ -58,7 +58,7 @@ const IconWrapper = styled.div`
 
 const IconLink = styled.a`
   margin: 0 10px;
-`;
+`;*/
 
 function TeamCard({ image, name, position,github,linkedin, instagram ,twitter }) {
   return (
@@ -100,8 +100,8 @@ function TeamCard({ image, name, position,github,linkedin, instagram ,twitter })
 
 export default TeamCard;
 
-{
-  /* <Card>
+/*{
+   <Card>
         <CardFront>
           <img
             classNameName="w-40 h-40 rounded-full mb-3 shadow-lg"
@@ -119,11 +119,11 @@ export default TeamCard;
             </IconLink>
           </IconWrapper>
         </CardFront>
-      </Card> */
-}
+      </Card> 
+}*/
 
-{
-  /* <div classNameName="mb-12 lg:mb-5 hover:scale-110 cursor-pointer">
+/*{
+   <div classNameName="mb-12 lg:mb-5 hover:scale-110 cursor-pointer">
       <img
         classNameName="rounded-lg shadow-lg mb-6 mx-auto object-cover"
         src={image}
@@ -170,11 +170,11 @@ export default TeamCard;
           </svg>
         </a>
       </ul>
-    </div>  */
-}
+    </div>  
+}*/
 
-{
-  /* <div classNameName="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
+/*{
+   <div classNameName="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
       <div classNameName="flex flex-col items-center p-5">
         <img
           classNameName="w-40 h-40 rounded-full mb-3 shadow-lg"
@@ -214,11 +214,11 @@ export default TeamCard;
         </a>
         </div>
       </div>
-    </div> */
-}
+    </div> 
+}*/
 
-{
-  /* <CardWrapper>
+/*{
+   <CardWrapper>
       <Card>
         <CardFront>
           <img
@@ -238,5 +238,5 @@ export default TeamCard;
           </IconWrapper>
         </CardFront>
       </Card>
-    </CardWrapper> */
-}
+    </CardWrapper> 
+}*/

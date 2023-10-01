@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import Card from "../../utils/Card";
+// import Card from "../../utils/Card";
 import { testimonials } from "../../constants/constants";
 
 const Section = styled.div`
@@ -23,8 +23,8 @@ const Section = styled.div`
   width: 100%;
   padding: 5rem 0;
   @media only Screen and (max-width: 40em) {
-      height: 120vh;
-    }
+    height: 120vh;
+  }
 `;
 
 const Title = styled.h1`
@@ -65,8 +65,8 @@ const Carousal = styled.div`
     color: white;
     font-size: 1rem;
     @media only Screen and (max-width: 1068px) {
-    display:none;
-  }
+      display:none;
+    }
   }
   .slick-slide.slick-active {
     display: flex;
@@ -118,10 +118,10 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((person) => {
             return (
-              <div class="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4">
-                <figure class="h-80 mx-auto">
+              <div className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4" key={person.name}>
+                <figure className="h-80 mx-auto">
                   <svg
-                    class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                    className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
                     viewBox="0 0 24 27"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -132,23 +132,19 @@ const Testimonials = () => {
                     />
                   </svg>
                   <blockquote>
-                    <p class="dark:text-white text-justify">
+                    <p className="dark:text-white text-justify">
                       " {person.text} "
                     </p>
                   </blockquote>
-                  <figcaption class="flex items-center justify-center mt-6 space-x-9">
+                  <figcaption className="flex items-center justify-center mt-6 space-x-9">
                     <img
-                      class="w-10 h-10 rounded-full"
+                      className="w-10 h-10 rounded-full"
                       src={person.image}
-                      alt="profile picture"
+                      alt={`Testimonial author ${person.name}`}
                     />
                     <div>
-                      <div class="dark:text-white">
-                        {person.name}
-                      </div>
-                      <div class="dark:text-gray-400">
-                        {person.position}
-                      </div>
+                      <div className="dark:text-white">{person.name}</div>
+                      <div className="dark:text-gray-400">{person.position}</div>
                     </div>
                   </figcaption>
                 </figure>
@@ -163,6 +159,6 @@ const Testimonials = () => {
 
 export default Testimonials;
 
-{
-  /* <Card name={person.name} text={person.text} image={person.image} postion={person.position} /> */
-}
+// {
+//   <Card name={person.name} text={person.text} image={person.image} postion={person.position} /> 
+// }

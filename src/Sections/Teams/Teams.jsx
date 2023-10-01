@@ -130,6 +130,7 @@ function Teams() {
                 {members.map((member) => {
                   return (
                     <TeamCard
+                      key={member.name}
                       image={member.image}
                       name={member.name}
                       position={member.position}
