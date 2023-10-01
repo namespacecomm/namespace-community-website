@@ -8,6 +8,7 @@ import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
+import NotFound from "./Pages/Error/NotFound";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -35,6 +36,7 @@ function App() {
               <Route path='webd' element={<Web /> } />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
         </BrowserRouter>
