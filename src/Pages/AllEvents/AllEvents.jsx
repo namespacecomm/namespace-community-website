@@ -61,6 +61,18 @@ function AllEvents() {
               for the betterment and growth of the community. Given below are
               some of the selected events conducted in the current tenure.
             </p>
+
+            <div className="flex items-center justify-center pb-12">
+              <a href="https://drive.google.com/file/d/1A-VyrV37sfBCl9OJ_0FYSlwMsYM-sBvG/view?usp=sharing">
+                <button
+                  type="button"
+                  className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
+                >
+                  View all events
+                </button>
+              </a>
+            </div>
+
             <Gallery images={Galleryimages} />
           </div>
         </Container>
