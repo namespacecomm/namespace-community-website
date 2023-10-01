@@ -124,13 +124,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(null);
+  const [formMessage, setFormMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if(!name || !email || !message) {
-      console.log("Fields cannot be empty :(");
       setSuccess(false);
+      setFormMessage("Fields cannot be empty :(");
       return;
     }
     emailjs
@@ -144,6 +145,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setSuccess(true);
+          setFormMessage("Your message has been sent. We'll get back to you soon :)");
         },
         (error) => {
           console.log(error.text);
@@ -166,9 +168,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <Button type="submit">Send</Button>
-            {success
-              ? "Your message has been sent. We'll get back to you soon :)"
-              : "Fields cannot be empty :("}
+            {formMessage}
           </Form>
         </Left>
         <Right>
