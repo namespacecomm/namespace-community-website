@@ -1,12 +1,13 @@
-import styled from "styled-components";
-import Hero from "./Sections/Hero/Hero";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AllTeams from "./Pages/AllTeams/AllTeams";
+import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
+import { Web } from "./Pages/AllResources/Web";
+import { HTML } from "./Pages/AllResources/webALL/html";
+import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
-import { Web } from "./Pages/AllResources/Web";
-import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import Hero from "./Sections/Hero/Hero";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -32,6 +33,7 @@ function App() {
               <Route path='projects' element={ <Projects /> } />
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
+              <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
             </Route>
           </Routes>
