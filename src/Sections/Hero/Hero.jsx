@@ -46,8 +46,10 @@ const Section = styled.div`
     rgba(2, 0, 36, 1) 1%
   ); */
   }
-  ${'' /* background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg"); */}
+  ${
+    "" /* background-repeat: no-repeat;
+  background: no-repeat url("./img/bg.jpg"); */
+  }
   background-color: #010116;
   @media only screen and (max-width: 768px) {
     height: 100vh;
@@ -86,7 +88,7 @@ const Left = styled.div`
     align-items: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-     flex: 1; 
+    flex: 1;
   }
 `;
 
@@ -114,7 +116,7 @@ const WhatWeDo = styled.div`
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     text-align: center;
     font-size: 50px;
-    justify-content:center;
+    justify-content: center;
   }
 `;
 
@@ -216,9 +218,8 @@ const Hero = () => {
           <Right>
             {/* <Img src="./img/logo.png" /> */}
             {/* <Img src="https://embed.lottiefiles.com/animation/109119"></Img> */}
-            
+
             <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
-            
           </Right>
         </Container>
       </Section>

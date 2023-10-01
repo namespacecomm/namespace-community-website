@@ -3,30 +3,35 @@ import styled from "styled-components";
 const Section = styled.footer`
   padding: 1.2rem;
   font-size: 1rem;
-  ${'' /* background: rgb(9, 9, 121);
+  ${
+    "" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   background-color: #010116;
   display: flex;
+  padding: 30px 60px;
   align-items: center;
   justify-content: space-between;
   @media only Screen and (max-width: 48em) {
-    width: 100vw ;
+    width: 100vw;
     flex-direction: column;
-    align-items:center;
-    padding: 0;
+    align-items: center;
+    padding: 30px 5px;
+    line-height: 30px;
     font-size: 16px;
     justify-content: center;
-    ${'' /* div {
+    ${
+      "" /* div {
       &:first-child {
         margin-bottom: 1rem;
       }
-    } */}
+    } */
+    }
   }
-  
 `;
 
 /* const RightText = styled.div`
@@ -61,31 +66,34 @@ const LeftText = styled.div`
   text-align: left;
   width: 20rem;
   @media only Screen and (max-width: 48em) {
-    text-align:center;
+    text-align: center;
   }
 `;
 
 const CenterText = styled.div`
-text-align: center;
-align-items: center;
-width: 25 rem;
-@media only Screen and (max-width: 48em) {
+  text-align: center;
+  align-items: center;
+  width: 25 rem;
+  @media only Screen and (max-width: 48em) {
     text-align: center;
-    
   }
 `;
 
 const Footer = () => {
   return (
     <Section>
-      <LeftText>
-        © 2023 Newton School Coding Club BPIT
-      </LeftText>
+      <LeftText>© 2023 Newton School Coding Club BPIT</LeftText>
 
       <CenterText>
-        Made with ❤️ and 🧠 by <a style={{ color: 'pink' }} href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website">Team NSCC BPIT</a>
+        Made with ❤️ and 🧠 by{" "}
+        <a
+          style={{ color: "pink" }}
+          href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+        >
+          Team NSCC BPIT
+        </a>
       </CenterText>
-   
+
       {/* <RightText>
 
         <p>Reach out to us via </p>
@@ -110,7 +118,7 @@ const Footer = () => {
           <img src="./img/email.svg" alt="Gmail" />
         </a>
       </RightText> */}
-      </Section>
+    </Section>
   );
 };
 

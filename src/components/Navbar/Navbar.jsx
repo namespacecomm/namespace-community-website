@@ -5,24 +5,24 @@ import { Link } from "react-router-dom";
 const NavbarContainer = styled.nav`
   width: 95%;
   height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
-  ${'' /* background-color: black; */}
+  ${"" /* background-color: black; */}
   display: flex;
-  z-index:99999999;
+  z-index: 99999999;
+  padding: 15px 5px;
   flex-direction: column;
-  align-items:center;
-  justify-content:space-between;
+  align-items: center;
+  justify-content: space-between;
   @media (min-width: 700px) {
     height: 80px;
   }
 `;
 
 const LeftContainer = styled.div`
-   flex: 70%;
+  flex: 70%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: flex-start;
   padding-right: 50px;
-
 `;
 
 const RightContainer = styled.div`
@@ -67,7 +67,7 @@ const Logo = styled.img`
   margin: 10px;
   max-width: 180px;
   height: 50px;
-  align-self:center;
+  align-self: center;
 `;
 
 const OpenLinksButton = styled.button`
@@ -81,7 +81,7 @@ const OpenLinksButton = styled.button`
 
   @media (min-width: 700px) {
     display: none;
-    align-self:center;
+    align-self: center;
   }
 `;
 
@@ -92,7 +92,7 @@ const NavbarExtendedContainer = styled.div`
 
   @media (min-width: 700px) {
     display: none;
-    align-items:center;
+    align-items: center;
   }
 `;
 
@@ -116,22 +116,20 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-        <Logo src="./img/logo2.png"></Logo>
-        {/* <NavbarLink to="/">NSCC</NavbarLink> */}
-        <NavbarLink to="/"> Home</NavbarLink>
-            <NavbarLink to="/projects">Projects</NavbarLink>
-            <NavbarLink to="/events">Events</NavbarLink>
-            <NavbarLink to="/team">Team</NavbarLink>
-            <NavbarLink to="/resources">Resources</NavbarLink>
-            <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
-
-            
+          <Logo src="./img/logo2.png"></Logo>
+          {/* <NavbarLink to="/">NSCC</NavbarLink> */}
+          <NavbarLink to="/"> Home</NavbarLink>
+          <NavbarLink to="/projects">Projects</NavbarLink>
+          <NavbarLink to="/events">Events</NavbarLink>
+          <NavbarLink to="/team">Team</NavbarLink>
+          <NavbarLink to="/resources">Resources</NavbarLink>
+          <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
         </LeftContainer>
         <RightContainer>
-        <NavbarLinkContainer>
-        <a href="https://linktr.ee/nscc_bpit">
-        <Button>Connect with us</Button>
-        </a>
+          <NavbarLinkContainer>
+            <a href="https://linktr.ee/nscc_bpit">
+              <Button>Connect with us</Button>
+            </a>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
@@ -149,7 +147,9 @@ function Navbar() {
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/">Blog</NavbarLinkExtended>
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/">
+            Blog
+          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
