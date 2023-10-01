@@ -7,14 +7,16 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Section = styled.div`
-  ${'' /* background: rgb(9, 9, 121); */}
+  ${"" /* background: rgb(9, 9, 121); */}
   width:100%;
   background-color: #010116;
-  ${'' /* background: linear-gradient(
+  ${
+    "" /* background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
 `;
 
 const Container = styled.div`
@@ -31,7 +33,7 @@ function Events() {
           <section className="mb-3 text-center">
             <h2 className="text-5xl font-bold mb-12">
               <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
-                Our Timeline
+                <a href="/events">Our Timeline</a>
               </span>
             </h2>
             <VerticalTimeline>
@@ -54,7 +56,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  Project Ideation to Start-up Success by Miss Purva Aggarwal, Founder and CEO, Good Good Piggy
+                  Project Ideation to Start-up Success by Miss Purva Aggarwal,
+                  Founder and CEO, Good Good Piggy
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -79,7 +82,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  Freshers' Placement Talk by Prof. Abhishek Swaroop and Mr. Sanjay Dureja
+                  Freshers' Placement Talk by Prof. Abhishek Swaroop and Mr.
+                  Sanjay Dureja
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -104,7 +108,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  TechXcelerate 2023 - Series of 12 power-packed sessions aimed at fresher students
+                  TechXcelerate 2023 - Series of 12 power-packed sessions aimed
+                  at fresher students
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -129,7 +134,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  Interview Preparation Bootcamp covering DSA, Web Dev and System Design for third and fourth year students.
+                  Interview Preparation Bootcamp covering DSA, Web Dev and
+                  System Design for third and fourth year students.
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -182,7 +188,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  Month long Web Development Bootcamp by P K Purushottaman and Adarsha Halder
+                  Month long Web Development Bootcamp by P K Purushottaman and
+                  Adarsha Halder
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -207,7 +214,8 @@ function Events() {
                 </svg>
               >
                 <h3 className="vertical-timeline-element-title font-bold">
-                  Data Structures and Algorithms Bootcamp January 2023 by Mr. Abhinav Awasthi
+                  Data Structures and Algorithms Bootcamp January 2023 by Mr.
+                  Abhinav Awasthi
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   Bhagwan Parshuram Institute of Technology
@@ -289,7 +297,6 @@ function Events() {
                 </h4>
               </VerticalTimelineElement>
             </VerticalTimeline>
-            
           </section>
         </div>
       </Container>

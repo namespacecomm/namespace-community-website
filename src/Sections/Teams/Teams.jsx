@@ -10,12 +10,14 @@ const Section = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #010116;
-  ${'' /* background: rgb(9, 9, 121);
+  ${
+    "" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   @media only screen and (max-width: 768px) {
     height: 100vh;
   }
@@ -46,7 +48,7 @@ const Carousal = styled.div`
       display: none;
     }
   }
-  
+
   @media only Screen and (max-width: 1030px) {
     margin-bottom: 40px;
   }
@@ -73,7 +75,6 @@ const Carousal = styled.div`
     margin: 0;
     padding: 0;
     margin-bottom: 3rem;
-    
   }
 `;
 
@@ -119,9 +120,9 @@ function Teams() {
             <h2 className="text-5xl sm:text-xl md:text-5xl font-bold mb-12 mt-12 italic">
               Meet the{" "}
               <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-                Team
-              </span>
-              {" "}2023-24
+                <a href="/team">Team</a>
+              </span>{" "}
+              2023-24
             </h2>
             {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 lg:gap-xl-10"> */}
             <Carousal>
@@ -141,8 +142,6 @@ function Teams() {
                 })}
               </Slider>
             </Carousal>
-
-            
           </section>
         </div>
       </Container>
