@@ -18,8 +18,7 @@ const Section = styled.div`
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
   );
-  ${
-    "" /* background-repeat: no-repeat;
+  ${"" /* background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -49,8 +48,7 @@ function Resources() {
                   RESOURCES
                 </h2>
                 <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis.
+                  Explore our valuable resources, including articles, guides, videos, and tools, designed to help you succeed and stay informed.
                 </p>
               </div>
 
