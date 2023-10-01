@@ -13,6 +13,11 @@ const Section = styled.div`
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
+  @media only screen and (min-width: 1080px) {
+    margin-top:2rem 0;
+  }
+  
+  
 `;
 
 const Container = styled.div`
@@ -21,6 +26,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  
+  
 `;
 
 const Left = styled.div`
@@ -138,7 +145,7 @@ const Contact = () => {
   };
   return (
     <Section>
-      <Container>
+      <Container >
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>

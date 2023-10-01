@@ -30,11 +30,13 @@
 }
 
 .card__name {
-  margin-top: 15px;
-
+  margin-top: 10px;
   font-size: 1.5em;
 }
-
+.card__role{
+  font-size: medium;
+  color: #9ca3af;
+}
 .card__image {
   height: 160px;
   width: 160px;
