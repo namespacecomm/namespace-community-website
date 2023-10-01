@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NavbarContainer = styled.nav`
   width: 95%;
   height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
-  ${"" /* background-color: black; */}
+  ${"" /* background-color: black;  */}
   display: flex;
   z-index: 99999999;
   padding: 15px 5px;
@@ -72,7 +72,7 @@ const Logo = styled.img`
 
 const OpenLinksButton = styled.button`
   width: 70px;
-  height: 50px;
+  height: 70px;
   background: none;
   border: none;
   color: white;
