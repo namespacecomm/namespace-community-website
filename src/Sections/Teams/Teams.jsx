@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { members } from "../../constants/constants";
 import TeamCard from "./TeamCard";
 import Slider from "react-slick";
+import { useInView } from "react-intersection-observer";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
@@ -79,12 +80,26 @@ const Carousal = styled.div`
 `;
 
 function Teams() {
+  //used ref to use slick methods
+  const sliderRef = useRef(null);
+  //used intersection observer api to monitor carousel
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      sliderRef.current.slickPlay(); // Start autoplay when in viewport
+    } else {
+      sliderRef.current.slickPause(); // Pause autoplay when not in viewport
+    }
+  }, [inView]);
   const settings = {
     pauseOnHover: true,
     // className: "center",
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     focusOnSelect: true,
     autoplaySpeed: 4000,
     speed: 1000,
@@ -120,13 +135,13 @@ function Teams() {
             <h2 className="text-5xl sm:text-xl md:text-5xl font-bold mb-12 mt-12 italic">
               Meet the{" "}
               <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-                <a href="/team">Team</a>
-              </span>{" "}
-              2023-24
+                Team
+              </span>
+              {" "}2023-24
             </h2>
             {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 lg:gap-xl-10"> */}
-            <Carousal>
-              <Slider {...settings}>
+            <Carousal ref={ref}>
+              <Slider ref={sliderRef} {...settings}>
                 {members.map((member) => {
                   return (
                     <TeamCard
