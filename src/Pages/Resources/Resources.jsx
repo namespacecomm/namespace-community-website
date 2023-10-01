@@ -38,6 +38,7 @@ const Container = styled.div`
 `;
 
 function Resources() {
+  console.log(ResourceMain);
   return (
     <>
       <Section>
@@ -57,7 +58,7 @@ function Resources() {
               </div>
 
               <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                {ResourceMain.map((item) => {
+                {ResourceMain?.map((item) => {
                   return (
                     <div className="overflow-hidden bg-white rounded shadow">
                       <div className="p-8">
@@ -75,7 +76,7 @@ function Resources() {
                         Direct Integration
                       </p> */}
                           </div>
-                          <Link to={item.to}>
+                          <Link to={`/${item?.to}`}>
                             <svg
                               className="block w-6 h-6 text-blue-600 cursor-pointer"
                               xmlns="http://www.w3.org/2000/svg"
