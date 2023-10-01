@@ -17,8 +17,7 @@ const Section = styled.div`
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
   );
-  ${
-    "" /* background-repeat: no-repeat;
+  ${"" /* background-repeat: no-repeat;
     background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -69,6 +68,14 @@ export const Web = () => {
           <h1 className="text-3xl text-center font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             WEB DEVELOPMENT
           </h1>
+        {/* --------------------------------SUB HEADING------------------------------------------------------ */}
+
+          <div className="mx-auto p-5">
+            <h3 className="text-lg font-light text-gray-400 text-center">
+            Web development is a dynamic and rapidly evolving field that plays a crucial role in shaping the digital landscape. Whether you're a beginner looking to get started or an experienced developer aiming to expand your skills, there are a plethora of resources available to help you navigate the world of web development.
+
+In this guide, we will provide you with a comprehensive roadmap to kickstart your journey in web development. This roadmap will take you through the essential steps, technologies, and skills you need to become a proficient web developer.            </h3>
+          </div>          
           {/* <************************************MAIN SECTION*******************************************> */}
           <section class="text-gray-600 body-font">
             <div class="px-5 py-24 mx-auto flex flex-wrap">
@@ -225,11 +232,11 @@ export const Web = () => {
                           src={front.image}
                         />
                         <div class="flex-grow">
-                        <Link to={front.to} >
-                          <h2 class="text-white title-font font-bold underline text-xl">
-                            {front.title}
-                          </h2>
-                        </Link>
+                          <Link to={front.to} >
+                            <h2 class="text-white title-font font-bold underline text-xl">
+                              {front.title}
+                            </h2>
+                          </Link>
                           <p class="text-white">{front.des}</p>
                           <input
                             type="checkbox"
