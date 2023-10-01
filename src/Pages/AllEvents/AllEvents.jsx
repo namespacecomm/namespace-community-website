@@ -65,7 +65,11 @@ function AllEvents() {
             </p>
 
             <div className="flex items-center justify-center pb-12">
-              <a href="https://drive.google.com/file/d/1CcTMB0-GI-5iLARLcG-HRfxNrxp2m8jC/view?usp=sharing">
+              <a
+                href="https://drive.google.com/file/d/1CcTMB0-GI-5iLARLcG-HRfxNrxp2m8jC/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button
                   type="button"
                   className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
