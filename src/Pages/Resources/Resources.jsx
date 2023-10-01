@@ -38,7 +38,7 @@ const Container = styled.div`
 `;
 
 function Resources() {
-  console.log(ResourceMain);
+ 
   return (
     <>
       <Section>
