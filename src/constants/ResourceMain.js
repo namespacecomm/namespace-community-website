@@ -33,4 +33,10 @@ export const ResourceMain = [
         "to" : "webd",
         "image" : require("./ResourceIcons/web.png"),
     },
+    {
+        "name" : "Competitive Programming",
+        "description" : " Explore the world of competitive programming with our comprehensive resources. From beginner guides to advanced techniques, we offer insights, tutorials, and datasets to fuel your journey into competitive programming. Unlock the potential of CP today.",
+        "to" : "webd",
+        "image" : require("./ResourceIcons/web.png"),
+    }
 ];
