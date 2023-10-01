@@ -62,7 +62,7 @@ const IconLink = styled.a`
 
 function TeamCard({ image, name, position,github,linkedin, instagram ,twitter }) {
   return (
-    <CardWrapper>
+    <CardWrapper className="mb-4">
       <div className="card">
         <img
           src={image}
