@@ -1,5 +1,25 @@
 export const PastEvents = [
     {
+        "date": "24/09/2023",
+        "name": "NSCC BPIT Orientation",
+        "image": "./img/events/NSCC_49_Poster.jpg"
+    },
+    {
+        "date": "17/09/2023",
+        "name": "SIH Guidance Session",
+        "image": "./img/events/NSCC_48_Poster.jpg"
+    },
+    {
+        "date": "11/08/2023",
+        "name": "Webinar: MBA as a career choice",
+        "image": "./img/events/NSCC_47_Poster.jpg"
+    },
+    {
+        "date": "03/06/2023",
+        "name": "Game of Codes 2.0",
+        "image": "./img/events/NSCC_46_Poster.jpg"
+    },
+    {
         "date": "04/05/2023",
         "name": "Seminar by Miss Purva Aggarwal",
         "image": "./img/events/NSCC_45_Poster.jpg"
