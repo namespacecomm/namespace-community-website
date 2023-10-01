@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+    background-color: #010116 ;
+}
 .my-grid {
     
       @apply grid grid-cols-1 gap-0 mt-8 xl:mt-8;
