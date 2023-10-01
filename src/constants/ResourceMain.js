@@ -33,4 +33,10 @@ export const ResourceMain = [
         "to" : "webd",
         "image" : require("./ResourceIcons/web.png"),
     },
+    {
+        "name" : "competitive programming",
+        "description" : "Competitive programming is a sport where contestants solve algorithmic problems within a time limit using a programming language of their choice. It tests problem-solving skills, knowledge of algorithms, and ability to write efficient code.",
+        "to" : "webd",
+        "image" : require("./ResourceIcons/web.png"),
+    },
 ];
