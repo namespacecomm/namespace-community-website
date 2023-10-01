@@ -136,8 +136,8 @@ function Teams() {
               Meet the{" "}
               <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
                 Team
-              </span>{" "}
-              2023-24
+              </span>
+              {" "}2023-24
             </h2>
             {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 lg:gap-xl-10"> */}
             <Carousal ref={ref}>
