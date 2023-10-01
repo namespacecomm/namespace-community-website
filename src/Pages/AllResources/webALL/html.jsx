@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Footer from '../../../components/Footer/Footer';
-import Navbar from '../../../components/Navbar/Navbar';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Footer from "../../../components/Footer/Footer";
+import Navbar from "../../../components/Navbar/Navbar";
 
 const Section = styled.div`
   display: flex;
@@ -9,15 +9,18 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${
+    "" /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */
+  }
+  background-color: #010116;
   ${
-    '' /* background-repeat: no-repeat;
+    "" /* background-repeat: no-repeat;
     background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -46,22 +49,22 @@ export const HTML = () => {
     classes: false,
     array: false,
     hoisting: false,
-    closure: false
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
     setJsTopicsChecked({
       ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic]
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem('jstopicsChecked', JSON.stringify(jstopicsChecked));
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
   }, [jstopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem('jstopicsChecked');
+    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
       setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
@@ -183,32 +186,32 @@ export const HTML = () => {
 
 const resources = [
   {
-    title: 'MDN Documentation',
+    title: "MDN Documentation",
     image:
-      'https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png',
-    type: 'Documentation',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    type: "Documentation",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    title: 'W3Schools - Introduction to HTML',
+    title: "W3Schools - Introduction to HTML",
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png',
-    type: 'Documentation',
-    link: 'https://www.w3schools.com/html/html_intro.asp'
-  }
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+    type: "Documentation",
+    link: "https://www.w3schools.com/html/html_intro.asp",
+  },
 ];
 
 const topics = [
-  { title: 'HTML Structure', storage: 'html-structure' },
-  { title: 'HTML Elements', storage: 'html-elements' },
-  { title: 'Attributes', storage: 'html-attributes' },
-  { title: 'Text Formatting', storage: 'text-formatting' },
-  { title: 'Images', storage: 'html-images' },
-  { title: 'Links', storage: 'html-links' },
-  { title: 'Lists', storage: 'html-lists' },
-  { title: 'Forms', storage: 'html-forms' },
-  { title: 'Semantic Elements', storage: 'semantic-html' },
-  { title: 'Headings and Document Structure', storage: 'document-structure' },
-  { title: 'HTML Comments', storage: 'html-comments' },
-  { title: 'Browser Developer Tools', storage: 'dev-tools' }
+  { title: "HTML Structure", storage: "html-structure" },
+  { title: "HTML Elements", storage: "html-elements" },
+  { title: "Attributes", storage: "html-attributes" },
+  { title: "Text Formatting", storage: "text-formatting" },
+  { title: "Images", storage: "html-images" },
+  { title: "Links", storage: "html-links" },
+  { title: "Lists", storage: "html-lists" },
+  { title: "Forms", storage: "html-forms" },
+  { title: "Semantic Elements", storage: "semantic-html" },
+  { title: "Headings and Document Structure", storage: "document-structure" },
+  { title: "HTML Comments", storage: "html-comments" },
+  { title: "Browser Developer Tools", storage: "dev-tools" },
 ];

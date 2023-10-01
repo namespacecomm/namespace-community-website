@@ -10,14 +10,18 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${
+    "" /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
-  ${"" /* background-repeat: no-repeat;
+  ); */
+  }
+  background-color: #010116;
+  ${
+    "" /* background-repeat: no-repeat;
     background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -177,7 +181,7 @@ const resources = [
     title: "JavaScript Roadmap",
     image: "https://roadmap.sh/roadmaps/javascript.png",
     type: "Roadmap",
-    link: "https://roadmap.sh/javascript"
+    link: "https://roadmap.sh/javascript",
   },
   {
     title: "MDN Documentation",
@@ -190,30 +194,34 @@ const resources = [
     title: "Learn-js Javascript Tutorials",
     image: "https://i.ibb.co/RSPv3KV/download-removebg-preview.jpg",
     type: "Collection Of Tutorials",
-    link: "https://www.learn-js.org/"
+    link: "https://www.learn-js.org/",
   },
   {
     title: "W3Schools Javascript Tutorials",
-    image: "https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj",
+    image:
+      "https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj",
     type: "Collection Of Tutorials",
-    link: "https://www.w3schools.com/js/default.asp"
+    link: "https://www.w3schools.com/js/default.asp",
   },
 
   {
     title: "JavaScript for Beginners Specialization (Free)",
-    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/0d/e2553478254970977ae6126a54d7af/GettyImages-172778145_600x600.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50",
+    image:
+      "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/0d/e2553478254970977ae6126a54d7af/GettyImages-172778145_600x600.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50",
     type: "Course",
     link: "https://www.coursera.org/specializations/javascript-beginner",
   },
   {
     title: "Javascript Fundamentals by Microsoft (Free)",
-    image: "https://learn.microsoft.com/en-us/media/learn/tv/shows/show_image_default.svg?branch=main",
+    image:
+      "https://learn.microsoft.com/en-us/media/learn/tv/shows/show_image_default.svg?branch=main",
     type: "Course",
     link: "https://learn.microsoft.com/en-us/shows/javascript-fundamentals-development-for-absolute-beginners/",
   },
   {
     title: "W3C JavaScript Introduction by EdX (Free)",
-    image: "https://prod-discovery.edx-cdn.org/media/course/image/c50943b5-3375-4d50-9f91-911930551603-5703bb2a02c8.png",
+    image:
+      "https://prod-discovery.edx-cdn.org/media/course/image/c50943b5-3375-4d50-9f91-911930551603-5703bb2a02c8.png",
     type: "Course",
     link: "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction",
   },
@@ -221,14 +229,15 @@ const resources = [
     title: "JavaScript Crash Course on Udemy (Free)",
     image: "https://img-b.udemycdn.com/course/240x135/3865140_cf11.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/javascript-crash-course-for-beginners/"
+    link: "https://www.udemy.com/course/javascript-crash-course-for-beginners/",
   },
-  
+
   {
     title: "HTML, CSS and JS by GA Dash (Free)",
-    image: "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/10/Screen-Shot-2013-10-14-at-8.42.35-PM.png",
+    image:
+      "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/10/Screen-Shot-2013-10-14-at-8.42.35-PM.png",
     type: "Course",
-    link: "https://dash.generalassemb.ly/"
+    link: "https://dash.generalassemb.ly/",
   },
   {
     title: "Javascript in 1 shot",
