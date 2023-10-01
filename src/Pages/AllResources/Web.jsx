@@ -248,6 +248,49 @@ export const Web = () => {
                     );
                   })}
                 </div>
+
+                
+
+<br />
+                <div class="flex flex-col text-left w-full mb-10">
+                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                    2. Backend Development
+                  </h1>
+                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                    Below are the topics that you need to complete to become a
+                    rockstar backend developer
+                  </p>
+                </div>
+                <div class="flex flex-wrap -m-2">
+                  {back.map((back) => {
+                    return (
+                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                          <img
+                            alt="team"
+                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            src={back.image}
+                          />
+                          <div class="flex-grow">
+                            <Link to={back.to}>
+                              <h2 class="text-white title-font font-bold underline text-xl">
+                                {back.title}
+                              </h2>
+                            </Link>
+                            <p class="text-white">{back.des}</p>
+                            <input
+                              type="checkbox"
+                              id={back.title}
+                              checked={checkedTopics[back.title]}
+                              onChange={() => handleCheckboxChange(back.title)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
               </div>
             </section>
           </div>
@@ -280,4 +323,67 @@ const front = [
     to: "/js",
     des: "Javascript gives functionality and behaviour to our websites / webapps",
   },
+  {
+    title: "Tailwind-CSS",
+    image:
+      "https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8193.jpg?w=740&t=st=1696143700~exp=1696144300~hmac=e30b598983507067bf52afb462064a73e9d146faba6d60c17f3a7c6f28407b8a",
+    to: "/tailwindcss",
+    des: "Tailwind CSS is a utility-first CSS framework that simplifies web development.",
+  },
+  {
+    title: "React",
+    image:
+       "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696144399~exp=1696144999~hmac=195c28ce31c3416fef0bf6c03be63223ff723eac2833047ee7d39496578d2155",
+    to: "/react",
+    des: "A single page focused JavaScript library with a component-based approach.", 
+   },
+   {
+    title: "Github",
+    image:"https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
+    to: "/git",
+    des:"GitHub: Web platform for collaborative code management and version control.",
+  },
+   {
+   title: "Netlify",
+   image: "https://img.freepik.com/premium-vector/software-development-programming-coding-vector-concept_123447-266.jpg?w=740",
+   to: "/netlify",
+   des: "Netlify is a platform for hosting websites and web applications.",
+   }
+];
+
+ {/* <------------------------------------Backend Development-------------------------------------------------------> */}
+ const back = [
+  {
+    title: "PHP",
+    image:
+      "https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?w=740&t=st=1696148044~exp=1696148644~hmac=2b1042d454d6cdbd63028a652692402e729bd54defc1d62dea7ee48ab21335a0",
+    to: "/php",
+    des: "PHP is a versatile server-side scripting language for web development.",
+  },
+  {
+    title: "MySQL",
+    image:
+    "https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=740&t=st=1696148496~exp=1696149096~hmac=6f53e263b59fc15c3a1a068504ca95ed27e28c1280bbf16e1e5b802a4a2a650c",
+    to: "/mysql",
+    des: "MySQL: Popular RDBMS for web databases.",
+  },
+  {
+    title: "MongoDB",
+    image:
+    "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
+    to: "/mongodb",
+    des: "MongoDB: NoSQL database for modern applications.",
+  },
+  {
+    title: "Django",
+    image:"https://media.licdn.com/dms/image/D4D12AQE-VEYeJbkang/article-cover_image-shrink_720_1280/0/1685546933475?e=2147483647&v=beta&t=4yE6W6cW91SZtqOR2x-_EH2ztyRctpRiWMJPZdRCQOM",  
+    to: "/django",
+    des: "Django: High-level Python web framework for rapid, secure site development.",
+  },
+  {
+    title: "Node.js",
+    image:"https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    to: "/nodejs",
+    des: "Node.js: JavaScript runtime for building scalable server-side applications.", 
+   },
 ];

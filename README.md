@@ -147,7 +147,7 @@ it is an Issue or a Pull Request.
 7. Don't create issues that are **already listed**.
 8. Please don't pick up an issue already assigned to someone else. Work on the issues after it gets **assigned to you**.
 9. Create your file in an appropriate folder with appropriate name and extension.
-10. Pull requests will be merged after being **reviewed** by  maintainers5.
+10. Pull requests will be merged after being **reviewed** by  maintainers.
 11. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
 ```
 
