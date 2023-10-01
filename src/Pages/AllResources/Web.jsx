@@ -11,13 +11,16 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${
+    "" /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
+  ); */
+  }
+  background-color: #010116;
   ${
     "" /* background-repeat: no-repeat;
     background: no-repeat url("./img/bg.jpg"); */
@@ -249,9 +252,7 @@ export const Web = () => {
                   })}
                 </div>
 
-                
-
-<br />
+                <br />
                 <div class="flex flex-col text-left w-full mb-10">
                   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     2. Backend Development
@@ -290,7 +291,6 @@ export const Web = () => {
                     );
                   })}
                 </div>
-
               </div>
             </section>
           </div>
@@ -333,26 +333,30 @@ const front = [
   {
     title: "React",
     image:
-       "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696144399~exp=1696144999~hmac=195c28ce31c3416fef0bf6c03be63223ff723eac2833047ee7d39496578d2155",
+      "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696144399~exp=1696144999~hmac=195c28ce31c3416fef0bf6c03be63223ff723eac2833047ee7d39496578d2155",
     to: "/react",
-    des: "A single page focused JavaScript library with a component-based approach.", 
-   },
-   {
-    title: "Github",
-    image:"https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
-    to: "/git",
-    des:"GitHub: Web platform for collaborative code management and version control.",
+    des: "A single page focused JavaScript library with a component-based approach.",
   },
-   {
-   title: "Netlify",
-   image: "https://img.freepik.com/premium-vector/software-development-programming-coding-vector-concept_123447-266.jpg?w=740",
-   to: "/netlify",
-   des: "Netlify is a platform for hosting websites and web applications.",
-   }
+  {
+    title: "Github",
+    image:
+      "https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
+    to: "/git",
+    des: "GitHub: Web platform for collaborative code management and version control.",
+  },
+  {
+    title: "Netlify",
+    image:
+      "https://img.freepik.com/premium-vector/software-development-programming-coding-vector-concept_123447-266.jpg?w=740",
+    to: "/netlify",
+    des: "Netlify is a platform for hosting websites and web applications.",
+  },
 ];
 
- {/* <------------------------------------Backend Development-------------------------------------------------------> */}
- const back = [
+{
+  /* <------------------------------------Backend Development-------------------------------------------------------> */
+}
+const back = [
   {
     title: "PHP",
     image:
@@ -363,27 +367,29 @@ const front = [
   {
     title: "MySQL",
     image:
-    "https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=740&t=st=1696148496~exp=1696149096~hmac=6f53e263b59fc15c3a1a068504ca95ed27e28c1280bbf16e1e5b802a4a2a650c",
+      "https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=740&t=st=1696148496~exp=1696149096~hmac=6f53e263b59fc15c3a1a068504ca95ed27e28c1280bbf16e1e5b802a4a2a650c",
     to: "/mysql",
     des: "MySQL: Popular RDBMS for web databases.",
   },
   {
     title: "MongoDB",
     image:
-    "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
+      "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
     to: "/mongodb",
     des: "MongoDB: NoSQL database for modern applications.",
   },
   {
     title: "Django",
-    image:"https://media.licdn.com/dms/image/D4D12AQE-VEYeJbkang/article-cover_image-shrink_720_1280/0/1685546933475?e=2147483647&v=beta&t=4yE6W6cW91SZtqOR2x-_EH2ztyRctpRiWMJPZdRCQOM",  
+    image:
+      "https://media.licdn.com/dms/image/D4D12AQE-VEYeJbkang/article-cover_image-shrink_720_1280/0/1685546933475?e=2147483647&v=beta&t=4yE6W6cW91SZtqOR2x-_EH2ztyRctpRiWMJPZdRCQOM",
     to: "/django",
     des: "Django: High-level Python web framework for rapid, secure site development.",
   },
   {
     title: "Node.js",
-    image:"https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    image:
+      "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
     to: "/nodejs",
-    des: "Node.js: JavaScript runtime for building scalable server-side applications.", 
-   },
+    des: "Node.js: JavaScript runtime for building scalable server-side applications.",
+  },
 ];
