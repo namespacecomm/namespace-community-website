@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Footer from "../../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Section = styled.div`
   display: flex;
@@ -16,8 +17,7 @@ const Section = styled.div`
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
   );
-  ${
-    "" /* background-repeat: no-repeat;
+  ${"" /* background-repeat: no-repeat;
     background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -108,7 +108,7 @@ export const Javascript = () => {
               {topics.map((front) => {
                 return (
                   <div class="p-2 lg:w-max md:w-1/2 ">
-                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                    <div class="h-full flex items-center border-gray-200 border rounded-lg">
                       <div class="flex-row flex gap-16">
                         <h2 class="text-white title-font font-bold text-xl">
                           {front.title}
@@ -133,10 +133,10 @@ export const Javascript = () => {
                     Resources
                   </h1>
                 </div>
-                <div class="flex flex-wrap -m-4">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <div class="p-4 lg:w-1/2">
+                      <div class="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out">
                         <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -144,9 +144,12 @@ export const Javascript = () => {
                             src={resource.image}
                           />
                           <div class="text-left flex-grow sm:pl-8">
-                            <h2 class="title-font font-medium text-lg text-white">
-                              {resource.title}
-                            </h2>
+                            <Link to={resource.link} target={"_blank"}>
+                              <h2 class="title-font font-medium text-xl pb-1 text-white underline underline-offset-2">
+                                {resource.title}
+                              </h2>
+                            </Link>
+
                             <h3 class="text-white mb-3">{resource.type}</h3>
                             <a href={resource.link} class="mb-4">
                               Link
@@ -170,11 +173,61 @@ export const Javascript = () => {
 
 const resources = [
   {
+    title: "JavaScript Roadmap",
+    image: "https://roadmap.sh/roadmaps/javascript.png",
+    type: "Roadmap",
+    link: "https://roadmap.sh/javascript"
+  },
+  {
     title: "MDN Documentation",
     image:
       "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    title: "Learn-js Javascript Tutorials",
+    image: "https://i.ibb.co/RSPv3KV/download-removebg-preview.jpg",
+    type: "Collection Of Tutorials",
+    link: "https://www.learn-js.org/"
+  },
+  {
+    title: "W3Schools Javascript Tutorials",
+    image: "https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj",
+    type: "Collection Of Tutorials",
+    link: "https://www.w3schools.com/js/default.asp"
+  },
+
+  {
+    title: "JavaScript for Beginners Specialization (Free)",
+    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/0d/e2553478254970977ae6126a54d7af/GettyImages-172778145_600x600.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50",
+    type: "Course",
+    link: "https://www.coursera.org/specializations/javascript-beginner",
+  },
+  {
+    title: "Javascript Fundamentals by Microsoft (Free)",
+    image: "https://learn.microsoft.com/en-us/media/learn/tv/shows/show_image_default.svg?branch=main",
+    type: "Course",
+    link: "https://learn.microsoft.com/en-us/shows/javascript-fundamentals-development-for-absolute-beginners/",
+  },
+  {
+    title: "W3C JavaScript Introduction by EdX (Free)",
+    image: "https://prod-discovery.edx-cdn.org/media/course/image/c50943b5-3375-4d50-9f91-911930551603-5703bb2a02c8.png",
+    type: "Course",
+    link: "https://www.edx.org/learn/javascript/the-world-wide-web-consortium-w3c-javascript-introduction",
+  },
+  {
+    title: "JavaScript Crash Course on Udemy (Free)",
+    image: "https://img-b.udemycdn.com/course/240x135/3865140_cf11.jpg",
+    type: "Course",
+    link: "https://www.udemy.com/course/javascript-crash-course-for-beginners/"
+  },
+  
+  {
+    title: "HTML, CSS and JS by GA Dash (Free)",
+    image: "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/10/Screen-Shot-2013-10-14-at-8.42.35-PM.png",
+    type: "Course",
+    link: "https://dash.generalassemb.ly/"
   },
   {
     title: "Javascript in 1 shot",
