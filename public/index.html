@@ -38,10 +38,19 @@
         margin: 0;
         font-family: "Roboto", sans-serif;
         scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        ::-webkit-scrollbar {
-          display: none;
+        scroll-behavior: smooth;       
+        ::-webkit-scrollbar{
+          width: 0.5rem;
+        }
+        ::-webkit-scrollbar-track {
+          background: rgb(1, 1, 22);
+        }
+        ::-webkit-scrollbar-thumb {
+          background: rgb(108, 178, 211);
+          border-radius: 0.3rem;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgb(90, 168, 151);
         }
       }
       section {
