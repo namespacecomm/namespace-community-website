@@ -25,6 +25,7 @@ const Section = styled.div`
 const Container = styled.div`
   scroll-snap-align: center;
   width: 1400px;
+  padding-top: 100px;
   @media only screen and (max-width: 768px) {
     width: 90vw;
     overflow-y: scroll;
