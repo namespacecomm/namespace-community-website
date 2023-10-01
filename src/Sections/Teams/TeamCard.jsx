@@ -70,7 +70,7 @@ function TeamCard({ image, name, position,github,linkedin, instagram ,twitter })
           className="card__image"
         />
         <p className="card__name">{name}</p>
-        <p className="card__name">{position}</p>
+        <p className="card__role">{position}</p>
         <ul className="social-icons">
           <li>
             <a href={instagram}>

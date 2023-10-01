@@ -9,7 +9,7 @@ import { testimonials } from "../../constants/constants";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: #010116;
+  background-color: #010116 ;
   ${'' /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
@@ -21,10 +21,12 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5rem 0;
+  margin:5rem 0 ;
+  
   @media only Screen and (max-width: 40em) {
-    height: 120vh;
-  }
+      height: 120vh;
+      margin:0 auto;
+    }
 `;
 
 const Title = styled.h1`
