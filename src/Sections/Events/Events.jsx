@@ -32,7 +32,7 @@ function Events() {
         <div className=" px-6 mx-auto">
           <section className="mb-3 text-center">
             <h2 className="text-5xl font-bold mb-12">
-              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 italic">
                 <a href="/events">Our Timeline</a>
               </span>
             </h2>

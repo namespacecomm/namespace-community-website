@@ -3,21 +3,21 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const Section = styled.div`
-  ${'' /* background: rgb(9, 9, 121);
+  ${
+    "" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   background-color: #010116;
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
   @media only screen and (min-width: 1080px) {
-    margin-top:2rem 0;
+    margin-top: 2rem 0;
   }
-  
-  
 `;
 
 const Container = styled.div`
@@ -26,8 +26,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  
-  
 `;
 
 const Left = styled.div`
@@ -44,6 +42,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 50px;
   font-weight: 200;
+  font-style: italic;
 `;
 
 const Form = styled.form`
@@ -145,7 +144,7 @@ const Contact = () => {
   };
   return (
     <Section>
-      <Container >
+      <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
