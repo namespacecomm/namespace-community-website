@@ -122,7 +122,7 @@ function Navbar() {
           <NavbarLink to="/"> Home</NavbarLink>
           <NavbarLink to="/projects">Projects</NavbarLink>
           <NavbarLink to="/events">Events</NavbarLink>
-          <NavbarLink to="/">Programs</NavbarLink>
+          <NavbarLink to="/programs">Programs</NavbarLink>
           <NavbarLink to="/team">Team</NavbarLink>
           <NavbarLink to="/resources">Resources</NavbarLink>
           <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
@@ -147,7 +147,7 @@ function Navbar() {
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
-          <NavbarLinkExtended to="/">Programs</NavbarLinkExtended>
+          <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="http://blog.nsccbpit.tech/">
