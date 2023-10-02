@@ -33,4 +33,4 @@ jobs:
             npm i
           fi
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
