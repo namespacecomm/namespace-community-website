@@ -1,15 +1,14 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Card = (props) => {
     console.log(props)
-    
+
   return (
     <div className='flex lg:flex-row items-center p-4 border-2 border-white rounded-lg gap-4 xs:flex-col xs:items-center  '>
         <div className='w-1/2 xs:w-full '>
             <img src={props.image} className='h-[300px] w-[300px] object-contain mx-auto' alt="" />
-            
+
         </div>
         <div className='w-1/2 flex flex-col items-center p-2 rounded-xl gap-4 xs:w-full'>
             <span className='text-4xl font-bold text-blue-600 '>{props.name}</span>
@@ -22,9 +21,9 @@ export const Card = (props) => {
                     })}
                 </ul>
             </div>
-     
+
         </div>
     </div>
-  
+
   )
 }

@@ -13,7 +13,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     height: 80px;
   }
 `;
@@ -24,6 +24,9 @@ const LeftContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 50px;
+  @media (max-width: 900px) {
+    flex: 30%;
+  }
 `;
 
 const RightContainer = styled.div`
@@ -43,14 +46,16 @@ const NavbarLinkContainer = styled.div`
   display: flex;
 `;
 
+const NavLinks = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
 const NavbarLink = styled(Link)`
   color: white;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  margin: 10px;
-
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -79,7 +84,7 @@ const OpenLinksButton = styled.button`
   font-size: 50px;
   cursor: pointer;
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: none;
     align-self: center;
   }
@@ -90,7 +95,7 @@ const NavbarExtendedContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: none;
     align-items: center;
   }
@@ -104,8 +109,9 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  @media (max-width: 700px) {
-    display: none;
+  @media (max-width: 900px) {
+    margin: 17px 10px 10px 5px;
+    ${"" /* display: none; */}
   }
 `;
 
@@ -118,17 +124,21 @@ function Navbar() {
         <LeftContainer>
           <Logo src="./img/logo2.png"></Logo>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
-          <NavbarLink to="/"> Home</NavbarLink>
-          <NavbarLink to="/projects">Projects</NavbarLink>
-          <NavbarLink to="/events">Events</NavbarLink>
-          <NavbarLink to="/programs">Programs</NavbarLink>
-          <NavbarLink to="/team">Team</NavbarLink>
-          <NavbarLink to="/resources">Resources</NavbarLink>
-          <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+          <NavLinks>
+            <NavbarLink to="/"> Home</NavbarLink>
+            <NavbarLink to="/projects">Projects</NavbarLink>
+            <NavbarLink to="/events">Events</NavbarLink>
+            <NavbarLink to="/programs">Programs</NavbarLink>
+            <NavbarLink to="/team">Team</NavbarLink>
+            <NavbarLink to="/resources">Resources</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
+              Blog
+            </NavbarLink>
+          </NavLinks>
         </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
-            <a href="https://linktr.ee/nscc_bpit">
+            <a href="https://linktr.ee/nscc_bpit" className="mr-4">
               <Button>Connect with us</Button>
             </a>
             <OpenLinksButton

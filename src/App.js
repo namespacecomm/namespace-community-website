@@ -3,13 +3,9 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
-
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
-
 import { NodeJS } from "./Pages/AllResources/webALL/NodeJS";
-
 import { FrontEndFramework} from "./Pages/AllResources/webALL/frontend-framework";
-
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -18,7 +14,9 @@ import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
+import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
+import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -47,9 +45,9 @@ function App() {
               <Route path='webd' element={<Web /> } />
               <Route path='arvr' element={<ARVR/>} />
               <Route path='android' element={<Android/>} />
+              <Route path='aiml' element={<AIML/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
-
               <Route path='NodeJS' element={ <NodeJS /> } />
               <Route path='frontend-framework' element={ < FrontEndFramework/> } />
               <Route path='devops' element={ <DevOps /> } />
