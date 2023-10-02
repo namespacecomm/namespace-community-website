@@ -54,9 +54,9 @@ function AllEvents() {
         <Navbar />
         <Container>
           <div className=" px-6 py-10 mx-auto">
-            <h1 className="text-4xl font-semibold text-center text-white capitalize lg:text-4xl ">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
               Our Events
-            </h1>
+            </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center ">
               NSCC BPIT conducts various events and initiatives all year round
