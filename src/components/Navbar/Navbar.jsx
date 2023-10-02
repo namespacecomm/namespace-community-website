@@ -24,6 +24,9 @@ const LeftContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 50px;
+  @media (max-width: 900px) {
+    flex: 30%;
+  }
 `;
 
 const RightContainer = styled.div`
@@ -41,14 +44,12 @@ const NavbarInnerContainer = styled.div`
 
 const NavbarLinkContainer = styled.div`
   display: flex;
- 
 `;
-
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 20px
- `;
+  gap: 20px;
+`;
 
 const NavbarLink = styled(Link)`
   color: white;
@@ -57,8 +58,6 @@ const NavbarLink = styled(Link)`
   @media (max-width: 900px) {
     display: none;
   }
- 
-
 `;
 
 const NavbarLinkExtended = styled(Link)`
@@ -67,7 +66,6 @@ const NavbarLinkExtended = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
-  
 `;
 
 const Logo = styled.img`
@@ -112,7 +110,8 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   @media (max-width: 900px) {
-    display: none;
+    margin: 17px 10px 10px 5px;
+    ${"" /* display: none; */}
   }
 `;
 
@@ -137,7 +136,7 @@ function Navbar() {
         </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
-            <a href="https://linktr.ee/nscc_bpit">
+            <a href="https://linktr.ee/nscc_bpit" className="mr-4">
               <Button>Connect with us</Button>
             </a>
             <OpenLinksButton
