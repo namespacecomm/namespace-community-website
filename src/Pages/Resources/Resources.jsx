@@ -11,14 +11,18 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  background-color: rgb(9, 9, 121);
+  ${
+    "" /* background-color: rgb(9, 9, 121);
   background-repeat: no-repeat;
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  );
-  ${"" /* background-repeat: no-repeat;
+  ); */
+  }
+  background-color: #010116;
+  ${
+    "" /* background-repeat: no-repeat;
   background: no-repeat url("./img/bg.jpg"); */
   }
 `;
@@ -26,6 +30,7 @@ const Section = styled.div`
 const Container = styled.div`
   scroll-snap-align: center;
   width: 1400px;
+  padding-top: 100px;
   @media only screen and (max-width: 768px) {
     width: 100%;
 
@@ -48,7 +53,9 @@ function Resources() {
                   RESOURCES
                 </h2>
                 <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white-600">
-                  Explore our valuable resources, including articles, guides, videos, and tools, designed to help you succeed and stay informed.
+                  Explore our valuable resources, including articles, guides,
+                  videos, and tools, designed to help you succeed and stay
+                  informed.
                 </p>
               </div>
 

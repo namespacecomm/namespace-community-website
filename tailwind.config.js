@@ -21,8 +21,13 @@ module.exports = {
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
+      fontFamily :{
+        Inter : ['Inter', 'sans-serif'],
+        Inter : ['Plus Jakarta Sans', 'sans-serif'],
+      },
       screens: {
-        xs: "450px",
+        xs:'250px',
+       
       },
     },
   },

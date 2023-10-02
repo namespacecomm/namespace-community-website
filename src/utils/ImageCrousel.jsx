@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const ImageCarouselContainer = styled.div`
   position: relative;
   width: 100%;
-  overflow: hidden;
-
+  overflow: hidden; 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }

@@ -17,7 +17,7 @@ const Section = styled.div`
     rgba(2, 0, 36, 1) 1%
   ); */
   }
-  ${'' /* background: no-repeat url("./img/bg.jpg"); */}
+  ${"" /* background: no-repeat url("./img/bg.jpg"); */}
   background-color: #010116;
   @media only screen and (max-width: 768px) {
     height: 160vh;
@@ -30,7 +30,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 `;
 
 const Left = styled.div`
@@ -44,8 +43,9 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 52px;
+font-size:40px;
   font-weight: bold;
+  border-bottom:3px solid #F5F5F5;
   margin: auto 10%;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -56,11 +56,10 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
-    font-size: 52px;
-
+    font-size: 30px;
   }
   @media only screen and (max-width: 1030px) {
-    font-size: 70px;
+    font-size: 30px;
   }
 `;
 
@@ -77,7 +76,7 @@ const Right = styled.div`
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 22px;
   text-align: justify;
   color: lightgray;
   margin: auto 10%;
@@ -97,11 +96,11 @@ const About = () => {
               NSCC BPIT is a community of like-minded individuals who share a
               passion for technology and are committed to helping each other
               become the best developers they can be. Whether you're just
-              starting out in your coding journey or a seasoned pro, our
-              society is a place where you can connect with other tech
-              enthusiasts, share your knowledge, and grow your skills. Founded
-              in 2022, NSCC BPIT has quickly grown to become one of the leading 
-              NSCC chapters in India.
+              starting out in your coding journey or a seasoned pro, our society
+              is a place where you can connect with other tech enthusiasts,
+              share your knowledge, and grow your skills. Founded in 2022, NSCC
+              BPIT has quickly grown to become one of the leading NSCC chapters
+              in India.
             </Desc>
           </Right>
         </Container>

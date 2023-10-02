@@ -31,6 +31,8 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 1440px;
+  padding-top: 100px;
+  scroll-snap-align: center;
   @media only screen and (max-width: 768px) {
     width: 100%;
 
@@ -52,9 +54,9 @@ function AllEvents() {
         <Navbar />
         <Container>
           <div className=" px-6 py-10 mx-auto">
-            <h1 className="text-4xl font-semibold text-center text-white capitalize lg:text-4xl ">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
               Our Events
-            </h1>
+            </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center ">
               NSCC BPIT conducts various events and initiatives all year round
@@ -63,7 +65,11 @@ function AllEvents() {
             </p>
 
             <div className="flex items-center justify-center pb-12">
-              <a href="https://drive.google.com/file/d/1CcTMB0-GI-5iLARLcG-HRfxNrxp2m8jC/view?usp=sharing">
+              <a
+                href="https://drive.google.com/file/d/1CcTMB0-GI-5iLARLcG-HRfxNrxp2m8jC/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button
                   type="button"
                   className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
@@ -79,9 +85,9 @@ function AllEvents() {
       </Section>
       <Section>
         <Container>
-          <h1 className="text-4xl mt-12 font-semibold text-center text-white capitalize lg:text-4xl ">
+          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
             Past Events
-          </h1>
+          </h2>
           <div class="px-5 mx-auto flex flex-wrap">
             <div className="grid grid-cols-1 gap-6 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4 xl:gap-3">
               {PastEvents.map((event) => {
