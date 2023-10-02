@@ -6,8 +6,6 @@ import framework from '../../../assets/framework.json'
 import Lottie from 'lottie-react'
 import { Card } from "../../../components/Resources/Card";
 
-
-
 const Section = styled.div`
   display: flex;
   flex-direction: column;

@@ -13,6 +13,7 @@ import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
+import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
@@ -43,6 +44,7 @@ function App() {
               <Route path='webd' element={<Web /> } />
               <Route path='arvr' element={<ARVR/>} />
               <Route path='android' element={<Android/>} />
+              <Route path='aiml' element={<AIML/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
