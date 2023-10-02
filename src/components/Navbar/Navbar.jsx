@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.nav`
-  width: 95%;
-  height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
+  width: 100%;
+  height: fit-content;
   background-color: #010116;
   display: flex;
   z-index: 99999999;
@@ -22,16 +22,15 @@ const LeftContainer = styled.div`
   flex: 70%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-right: 50px;
 `;
 
 const RightContainer = styled.div`
-  flex: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 5%;
+  padding-right: 2%;
 `;
 
 const NavbarInnerContainer = styled.div`
@@ -122,6 +121,7 @@ function Navbar() {
           <NavbarLink to="/"> Home</NavbarLink>
           <NavbarLink to="/projects">Projects</NavbarLink>
           <NavbarLink to="/events">Events</NavbarLink>
+          <NavbarLink to="/programs">Programs</NavbarLink>
           <NavbarLink to="/team">Team</NavbarLink>
           <NavbarLink to="/resources">Resources</NavbarLink>
           <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
@@ -146,6 +146,7 @@ function Navbar() {
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="http://blog.nsccbpit.tech/">

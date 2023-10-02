@@ -9,30 +9,33 @@ import { testimonials } from "../../constants/constants";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: #010116 ;
-  ${'' /* background: rgb(9, 9, 121);
+  background-color: #010116;
+  ${
+    "" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
     rgba(2, 0, 36, 1) 1%
-  ); */}
+  ); */
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin:5rem 0 ;
-  
+  margin: 5rem 0;
+
   @media only Screen and (max-width: 40em) {
-      height: 120vh;
-      margin:0 auto;
-    }
+    height: 120vh;
+    margin: 0 auto;
+  }
 `;
 
 const Title = styled.h1`
   color: white;
   display: inline-block;
   font-size: calc(1rem + 1.5vw);
+  font-style: italic;
   margin-top: 1.5rem;
   position: relative;
   &::before {
@@ -67,7 +70,7 @@ const Carousal = styled.div`
     color: white;
     font-size: 1rem;
     @media only Screen and (max-width: 1068px) {
-      display:none;
+      display: none;
     }
   }
   .slick-slide.slick-active {
@@ -120,7 +123,10 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((person) => {
             return (
-              <div className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4" key={person.name}>
+              <div
+                className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4"
+                key={person.name}
+              >
                 <figure className="h-80 mx-auto">
                   <svg
                     className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
@@ -146,7 +152,9 @@ const Testimonials = () => {
                     />
                     <div>
                       <div className="dark:text-white">{person.name}</div>
-                      <div className="dark:text-gray-400">{person.position}</div>
+                      <div className="dark:text-gray-400">
+                        {person.position}
+                      </div>
                     </div>
                   </figcaption>
                 </figure>
@@ -162,5 +170,5 @@ const Testimonials = () => {
 export default Testimonials;
 
 // {
-//   <Card name={person.name} text={person.text} image={person.image} postion={person.position} /> 
+//   <Card name={person.name} text={person.text} image={person.image} postion={person.position} />
 // }

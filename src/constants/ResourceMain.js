@@ -55,5 +55,11 @@ export const ResourceMain = [
     to: "/devops",
     image: require("./ResourceIcons/devops.png"),
   },
-  
+  {
+    name: "BlockChain",
+    description:
+      " Explore the limitless world of blockchain innovation. Whether you're a beginner or an experienced blockchain enthusiast, our comprehensive resources will empower you to unlock the full potential of blockchain.",
+    to: "/blockchain",
+    image: require("./ResourceIcons/blockchain.png"),
+  },
 ];

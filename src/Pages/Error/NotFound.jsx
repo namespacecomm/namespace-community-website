@@ -28,7 +28,7 @@ export default function NotFound() {
   const navigate = useNavigate();
 
   const handleRedirection = () => {
-    navigate("/");
+    navigate(-1);
   };
   return (
     <Section>
