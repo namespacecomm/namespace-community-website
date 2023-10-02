@@ -1,5 +1,4 @@
-import React , { useState } from 'react';
-import { Link } from "react-router-dom";
+import React  from 'react';
 import styled from "styled-components";
 
 import Navbar from '../../components/Navbar/Navbar';
@@ -54,7 +53,6 @@ const DataScience = () => {
           <div className="md:w-1/2">
             <img
               src="https://cdn1.expresscomputer.in/wp-content/uploads/2022/11/21123050/EC_Data_Science_Technology_750.jpg"
-              alt="Card Image"
               className="w-full h-auto object-cover"
             />
           </div>
@@ -81,7 +79,7 @@ const DataScience = () => {
           
             <div className="mt-4">
               <a
-                href="#"
+                href="/dataScience"
                 className="text-blue-500 hover:text-blue-700 underline"
               >
                 Read more
@@ -193,7 +191,6 @@ const DataScience = () => {
         <div className="md:w-1/2 p-4 mt-4">
           <img
             src="https://static.vecteezy.com/system/resources/previews/004/578/651/non_2x/cloud-data-analysis-and-server-investment-free-vector.jpg"
-            alt="Data Science Image"
             className="w-full h-auto"
           />
         </div>
