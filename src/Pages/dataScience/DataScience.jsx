@@ -54,6 +54,7 @@ const DataScience = () => {
             <img
               src="https://cdn1.expresscomputer.in/wp-content/uploads/2022/11/21123050/EC_Data_Science_Technology_750.jpg"
               className="w-full h-auto object-cover"
+              alt=''
             />
           </div>
 
@@ -192,6 +193,7 @@ const DataScience = () => {
           <img
             src="https://static.vecteezy.com/system/resources/previews/004/578/651/non_2x/cloud-data-analysis-and-server-investment-free-vector.jpg"
             className="w-full h-auto"
+            alt=''
           />
         </div>
       </div>
