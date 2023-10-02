@@ -60,12 +60,13 @@ function Programs() {
                                 {programsList.map((item) => {
                                     return (
                                         <div className="overflow-hidden bg-white rounded shadow-lg text-black p-4">
-                                            <h2 className="text-center text-xl font-semibold mb-4">{item.name}</h2>
-                                            <div className="program-content flex flex-col-reverse md:flex-row">
+                                            <div className="text-center text-xl md:text-2xl lg:text-5xl font-semibold mb-12 mt-8">{item.name}</div>
+                                            
+                                            <div className="program-content flex flex-col md:flex-row">
                                                 <div className="program-image md:w-1/2 pr-4">
                                                     <img src={item.image} alt={item.name} className="w-full rounded-md" />
                                                 </div>
-                                                <div className="program-description md:w-1/2 mt-4 md:mt-0 h-48 md:h-auto">
+                                                <div className="program-description md:w-1/2 mt-4 md:mt-0 h-48 md:h-auto md:text-2xl lg:text-3xl">
                                                     <p>{item.description}</p>
                                                 </div>
                                             </div>
