@@ -9,11 +9,13 @@ import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
+import DataScience from "./Pages/dataScience/DataScience";
 import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
 import AIML from "./Pages/AllResources/AIML";
+import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
@@ -43,9 +45,14 @@ function App() {
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
               <Route path='cp' element={<CompProg /> } />
+
+              <Route path='dataScience' element={<DataScience /> } />
+
               <Route path='arvr' element={<ARVR/>} />
               <Route path='android' element={<Android/>} />
+              <Route path="flutter" element={<Flutter/>} />
               <Route path='aiml' element={<AIML/>} />
+
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />

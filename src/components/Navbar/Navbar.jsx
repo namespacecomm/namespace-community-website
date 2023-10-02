@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -117,20 +118,68 @@ const Button = styled.button`
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveTab(location.pathname);
+    return () => {};
+  }, [location]);
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <Logo src="./img/logo2.png"></Logo>
+          <Logo src="./img/logo2.png" alt="logo"></Logo>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavLinks>
-            <NavbarLink to="/"> Home</NavbarLink>
-            <NavbarLink to="/projects">Projects</NavbarLink>
-            <NavbarLink to="/events">Events</NavbarLink>
-            <NavbarLink to="/programs">Programs</NavbarLink>
-            <NavbarLink to="/team">Team</NavbarLink>
-            <NavbarLink to="/resources">Resources</NavbarLink>
+            <NavbarLink to="/">
+              {" "}
+              <span className={`${activeTab === "/" ? "text-blue-600" : ""}`}>
+                Home
+              </span>
+            </NavbarLink>
+            <NavbarLink to="/projects">
+              <p
+                className={`${
+                  activeTab === "/projects" ? "text-blue-600" : ""
+                }`}
+              >
+                Projects
+              </p>
+            </NavbarLink>
+            <NavbarLink to="/events">
+              <span
+                className={`${activeTab === "/events" ? "text-blue-600" : ""}`}
+              >
+                Events
+              </span>
+            </NavbarLink>
+            <NavbarLink to="/programs">
+              <span
+                className={`${
+                  activeTab === "/programs" ? "text-blue-600" : ""
+                }`}
+              >
+                Programs
+              </span>
+            </NavbarLink>
+            <NavbarLink to="/team">
+              <span
+                className={`${activeTab === "/team" ? "text-blue-600" : ""}`}
+              >
+                Team
+              </span>
+            </NavbarLink>
+            <NavbarLink to="/resources">
+              <span
+                className={`${
+                  activeTab === "/resources" ? "text-blue-600" : ""
+                }`}
+              >
+                Resources
+              </span>
+            </NavbarLink>
             <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
               Blog
             </NavbarLink>
