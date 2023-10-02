@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
-import { ResourceMain } from "../../constants/ResourceMain";
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import { programsList } from "../../constants/programs";
 
