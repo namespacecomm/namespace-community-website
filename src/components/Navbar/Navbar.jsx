@@ -41,14 +41,12 @@ const NavbarInnerContainer = styled.div`
 
 const NavbarLinkContainer = styled.div`
   display: flex;
- 
 `;
-
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 20px
- `;
+  gap: 20px;
+`;
 
 const NavbarLink = styled(Link)`
   color: white;
@@ -57,8 +55,6 @@ const NavbarLink = styled(Link)`
   @media (max-width: 900px) {
     display: none;
   }
- 
-
 `;
 
 const NavbarLinkExtended = styled(Link)`
@@ -67,7 +63,6 @@ const NavbarLinkExtended = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
-  
 `;
 
 const Logo = styled.img`
@@ -132,7 +127,9 @@ function Navbar() {
             <NavbarLink to="/programs">Programs</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
             <NavbarLink to="/resources">Resources</NavbarLink>
-            <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
+              Blog
+            </NavbarLink>
           </NavLinks>
         </LeftContainer>
         <RightContainer>
