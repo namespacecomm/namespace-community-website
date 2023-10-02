@@ -122,10 +122,9 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <Logo src="./img/logo2.png"></Logo>
+          <NavbarLink to = "/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavLinks>
-            <NavbarLink to="/"> Home</NavbarLink>
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/programs">Programs</NavbarLink>

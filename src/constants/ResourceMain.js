@@ -62,4 +62,11 @@ export const ResourceMain = [
     to: "/blockchain",
     image: require("./ResourceIcons/blockchain.png"),
   },
+  {
+    name: "Flutter",
+    to: "/flutter",
+    description:
+      "Stay at the forefront of Flutter app development with insights into the latest trends, cutting-edge techniques, and innovative tools. Explore informative tutorials and powerful frameworks to elevate your skills and craft captivating mobile applications that delight and captivate users. Keep ahead in the world of Flutter development.",
+    image: require("./ResourceIcons/flutter1.png"),
+  },
 ];

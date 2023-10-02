@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
@@ -90,23 +90,6 @@ export const FrontEndFramework = () => {
     </>
   );
 };
-
-const resources = [
-  {
-    title: "MDN Documentation",
-    image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
-    type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    title: "W3Schools - Introduction to HTML",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
-    type: "Documentation",
-    link: "https://www.w3schools.com/html/html_intro.asp",
-  },
-];
 
 const FrameWorks=[
   {
