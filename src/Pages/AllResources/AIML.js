@@ -96,7 +96,7 @@ export default function AIML() {
                             <img
                                 className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
                                 src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/01/AI-ML-AIM.jpeg"
-                                alt="AI/ML Image"
+                                alt="AI/ML"
                             />
                         </div>
                     </div>

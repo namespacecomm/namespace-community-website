@@ -25,7 +25,8 @@ module.exports = {
         Inter : ['Inter', 'sans-serif'],
       },
       screens: {
-        xs: "450px",
+        xs:'250px',
+       
       },
     },
   },
