@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.nav`
-  width: 95%;
+  width: 100%;
   height: fit-content;
   background-color: #010116;
   display: flex;
@@ -22,16 +22,15 @@ const LeftContainer = styled.div`
   flex: 70%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-right: 50px;
 `;
 
 const RightContainer = styled.div`
-  flex: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 5%;
+  padding-right: 2%;
 `;
 
 const NavbarInnerContainer = styled.div`
