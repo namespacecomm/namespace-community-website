@@ -1,7 +1,8 @@
 {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2021": true,
+		"jest/globals": true
 	},
 	"extends": ["standard", "plugin:react/recommended", "prettier"],
 	"parserOptions": {
@@ -11,6 +12,14 @@
 			"jsx": true
 		}
 	},
-	"plugins": ["react"],
-	"rules": {}
+	"plugins": ["react", "jest"],
+
+	"rules": {
+		"react/react-in-jsx-scope": "off"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
 }
