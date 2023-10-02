@@ -43,9 +43,9 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 52px;
+font-size:40px;
   font-weight: bold;
-  font-style: italic;
+  border-bottom:3px solid #F5F5F5;
   margin: auto 10%;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -56,10 +56,10 @@ const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
-    font-size: 52px;
+    font-size: 30px;
   }
   @media only screen and (max-width: 1030px) {
-    font-size: 70px;
+    font-size: 30px;
   }
 `;
 
@@ -76,7 +76,7 @@ const Right = styled.div`
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 22px;
   text-align: justify;
   color: lightgray;
   margin: auto 10%;

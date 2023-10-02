@@ -41,18 +41,24 @@ const NavbarInnerContainer = styled.div`
 
 const NavbarLinkContainer = styled.div`
   display: flex;
+ 
 `;
+
+
+const NavLinks = styled.div`
+  display: flex;
+  gap: 20px
+ `;
 
 const NavbarLink = styled(Link)`
   color: white;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  margin: 10px;
-
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     display: none;
   }
+ 
+
 `;
 
 const NavbarLinkExtended = styled(Link)`
@@ -61,6 +67,7 @@ const NavbarLinkExtended = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+  
 `;
 
 const Logo = styled.img`
@@ -79,7 +86,7 @@ const OpenLinksButton = styled.button`
   font-size: 50px;
   cursor: pointer;
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: none;
     align-self: center;
   }
@@ -104,7 +111,7 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -118,13 +125,15 @@ function Navbar() {
         <LeftContainer>
           <Logo src="./img/logo2.png"></Logo>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
-          <NavbarLink to="/"> Home</NavbarLink>
-          <NavbarLink to="/projects">Projects</NavbarLink>
-          <NavbarLink to="/events">Events</NavbarLink>
-          <NavbarLink to="/programs">Programs</NavbarLink>
-          <NavbarLink to="/team">Team</NavbarLink>
-          <NavbarLink to="/resources">Resources</NavbarLink>
-          <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+          <NavLinks>
+            <NavbarLink to="/"> Home</NavbarLink>
+            <NavbarLink to="/projects">Projects</NavbarLink>
+            <NavbarLink to="/events">Events</NavbarLink>
+            <NavbarLink to="/programs">Programs</NavbarLink>
+            <NavbarLink to="/team">Team</NavbarLink>
+            <NavbarLink to="/resources">Resources</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+          </NavLinks>
         </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
