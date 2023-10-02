@@ -10,9 +10,9 @@ export const Card = (props) => {
             <img src={props.image} className='h-[300px] w-[300px] object-contain mx-auto' alt="" />
 
         </div>
-        <div className='w-1/2 flex flex-col items-center p-2 rounded-xl gap-4 xs:w-full'>
-            <span className='text-4xl font-bold text-blue-600 '>{props.name}</span>
-            <span>{props.description}</span>
+        <div className='w-1/2 flex flex-col items-center lg:items-start p-2 rounded-xl gap-4 xs:w-full'>
+            <span className='text-4xl font-bold text-blue-600'>{props.name}</span>
+            <span className='lg:text-left'>{props.description}</span>
             <div className='flex flex-col lg:items-start gap-4  rounded-lg w-full xs:items-center '>
                 <span className='text-3xl font-bold text-blue-600'>Beginner Resources</span>
                 <ul className='flex flex-col lg:items-start xs:items-center '>
@@ -21,7 +21,6 @@ export const Card = (props) => {
                     })}
                 </ul>
             </div>
-
         </div>
     </div>
 
