@@ -105,9 +105,6 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  @media (max-width: 700px) {
-    display: none;
-  }
 `;
 
 function Navbar() {
