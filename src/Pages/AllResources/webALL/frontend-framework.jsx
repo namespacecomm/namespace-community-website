@@ -5,7 +5,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import framework from '../../../assets/framework.json'
 import Lottie from 'lottie-react'
 import { Card } from "../../../components/Resources/Card";
-import Fade from 'react-reveal/Fade'
+
 
 
 const Section = styled.div`
@@ -72,9 +72,9 @@ export const FrontEndFramework = () => {
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Popular front end frameworks</h1>
                 <div className="grid grid-cols-1 w-full gap-x-4 gap-y-4">
                   {FrameWorks?.map((ele,ind)=>{
-                    return <Fade duration={750} delay={250} left>
+                    return 
                       <Card key={ind} {...ele}/>
-                    </Fade>
+                   
                   })}
                 </div>
               </div>
