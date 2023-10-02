@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import styled from "styled-components";
-import "./Main.css";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import "./Main.css";
 
 const Section = styled.div`
   display: flex;
@@ -76,132 +76,132 @@ export const DevOps = () => {
               Dev Ops
             </h1>
             {/* <************************************MAIN SECTION*******************************************> */}
-            <section class="text-gray-600 body-font">
-              <div class="px-5 py-24 mx-auto flex flex-wrap">
-                <div class="flex flex-wrap w-full">
-                  <div class="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
-                    <div class="flex relative pb-12">
-                      <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            <section className="text-gray-600 body-font">
+              <div className="px-5 py-24 mx-auto flex flex-wrap">
+                <div className="flex flex-wrap w-full">
+                  <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
                           <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
                         </svg>
                       </div>
-                      <div class="flex-grow pl-4">
-                        <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                         Infrastructure as Code (IaC)
                         </h2>
-                        <p class="leading-relaxed text-white text-justify">
+                        <p className="leading-relaxed text-white text-justify">
                         In DevOps, managing infrastructure becomes code. Tools like Terraform or Ansible are widely used. It involves defining and managing your infrastructure as code, enabling version control, and ensuring consistency in deployment.
                         </p>
                       </div>
                     </div>
-                    <div class="flex relative pb-12">
-                      <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
                           <path d="M21 18v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1m18-2H3a2 2 0 00-2 2v4a2 2 0 002 2h18a2 2 0 002-2v-4a2 2 0 00-2-2zM6 12v-2a2 2 0 012-2h8a2 2 0 012 2v2"></path>
                         </svg>
                       </div>
-                      <div class="flex-grow pl-4">
-                        <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                         CI/CD Automation
                         </h2>
-                        <p class="leading-relaxed text-white text-justify">
+                        <p className="leading-relaxed text-white text-justify">
                         Automate code integration (CI) with tools like Jenkins, GitLab CI, or Travis CI, addressing integration issues early. Implement continuous deployment/delivery (CD) for automated testing and streamlined production releases.
                         </p>
                       </div>
                     </div>
-                    <div class="flex relative pb-12">
-                      <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
-                      <svg width="19px" height="19px" viewBox="0 0 0.57 0.57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.487 0.173 0.285 0.285m0 0L0.083 0.173M0.285 0.285v0.226m0.214 -0.129V0.188c0 -0.008 0 -0.012 -0.001 -0.016a0.024 0.024 0 0 0 -0.005 -0.009 0.052 0.052 0 0 0 -0.013 -0.009L0.304 0.057C0.297 0.054 0.293 0.052 0.29 0.051a0.024 0.024 0 0 0 -0.01 0 0.057 0.057 0 0 0 -0.014 0.006L0.091 0.155a0.052 0.052 0 0 0 -0.013 0.009 0.024 0.024 0 0 0 -0.005 0.009C0.071 0.176 0.071 0.18 0.071 0.188v0.193c0 0.008 0 0.012 0.001 0.016a0.024 0.024 0 0 0 0.005 0.009 0.052 0.052 0 0 0 0.013 0.009l0.176 0.098a0.057 0.057 0 0 0 0.014 0.006 0.02 0.02 0 0 0 0.01 0 0.057 0.057 0 0 0 0.014 -0.006l0.176 -0.098a0.052 0.052 0 0 0 0.013 -0.009 0.024 0.024 0 0 0 0.005 -0.009c0.001 -0.003 0.001 -0.008 0.001 -0.016Z" stroke="#fff" stroke-width="0.0475" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                      <svg width="19px" height="19px" viewBox="0 0 0.57 0.57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.487 0.173 0.285 0.285m0 0L0.083 0.173M0.285 0.285v0.226m0.214 -0.129V0.188c0 -0.008 0 -0.012 -0.001 -0.016a0.024 0.024 0 0 0 -0.005 -0.009 0.052 0.052 0 0 0 -0.013 -0.009L0.304 0.057C0.297 0.054 0.293 0.052 0.29 0.051a0.024 0.024 0 0 0 -0.01 0 0.057 0.057 0 0 0 -0.014 0.006L0.091 0.155a0.052 0.052 0 0 0 -0.013 0.009 0.024 0.024 0 0 0 -0.005 0.009C0.071 0.176 0.071 0.18 0.071 0.188v0.193c0 0.008 0 0.012 0.001 0.016a0.024 0.024 0 0 0 0.005 0.009 0.052 0.052 0 0 0 0.013 0.009l0.176 0.098a0.057 0.057 0 0 0 0.014 0.006 0.02 0.02 0 0 0 0.01 0 0.057 0.057 0 0 0 0.014 -0.006l0.176 -0.098a0.052 0.052 0 0 0 0.013 -0.009 0.024 0.024 0 0 0 0.005 -0.009c0.001 -0.003 0.001 -0.008 0.001 -0.016Z" stroke="#fff" strokeWidth="0.0475" strokeLinecap="round" strokeLinejoin="round"/></svg>
                       </div>
-                      <div class="flex-grow pl-4">
-                        <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                         Containerization and Orchestration
                         </h2>
-                        <p class="leading-relaxed text-white text-justify">
+                        <p className="leading-relaxed text-white text-justify">
                         Embrace Docker for containerization, packaging applications into containers. Use Kubernetes for orchestration, managing and scaling containerized applications.
                         </p>
                       </div>
                     </div>
-                    <div class="flex relative pb-12">
-                      <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
-                      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
                         </svg>
                       </div>
-                      <div class="flex-grow pl-4">
-                        <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                         Monitoring, Security, and Collaboration
                         </h2>
-                        <p class="leading-relaxed text-white text-justify">
+                        <p className="leading-relaxed text-white text-justify">
                         Implement monitoring tools (e.g., Prometheus, Grafana) for system health and logging. Integrate security practices (e.g., SonarQube) throughout the development lifecycle. Foster collaboration through communication tools (e.g., Slack, Microsoft Teams).
                         </p>
                       </div>
                     </div>
 
-                    <div class="flex relative">
-                      <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                    <div className="flex relative">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
                           <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                           <path d="M22 4L12 14.01l-3-3"></path>
                         </svg>
                       </div>
-                      <div class="flex-grow pl-4">
-                        <h2 class="font-bold title-font text-xl text-white mb-1 tracking-wider">
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
                         Build Projects with Cloud Services and Continuous Improvement
                         </h2>
-                        <p class="leading-relaxed text-white text-justify">
+                        <p className="leading-relaxed text-white text-justify">
                         Leverage cloud services (AWS, Azure, Google Cloud) for scalability and flexibility. Cultivate a culture of continuous improvement in DevOps, regularly assessing processes, embracing feedback, and engaging in hands-on projects for mastery.
                         </p>
                       </div>
                     </div>
                   </div>
                   <img
-                    class="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
+                    className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
                     src="https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
                     alt="step"
                   />
@@ -210,33 +210,33 @@ export const DevOps = () => {
             </section>
             {/* <-----------------------------------------------END OF MAIN SECTION-------------------------------------------------> */}
             {/* <------------------------------------Frontend Development-------------------------------------------------------> */}
-            <section class="text-white body-font">
-              <div class="px-5 py-0 mx-auto">
-                <div class="flex flex-col text-left w-full mb-10">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+            <section className="text-white body-font">
+              <div className="px-5 py-0 mx-auto">
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     1. IaC
                   </h1>
-                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
                     Below are the topics that you need to complete to understand Infrastructure As Code (IaC)
                   </p>
                 </div>
-                <div class="flex flex-wrap -m-2">
-                  {iac.map((front) => {
+                <div className="flex flex-wrap -m-2">
+                  {iac.map((front,index) => {
                     return (
-                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                      <div key={index} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
-                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                             src={front.image}
                           />
-                          <div class="flex-grow">
+                          <div className="flex-grow">
                             <Link to={front.to}>
-                              <h2 class="text-white title-font font-bold underline text-xl">
+                              <h2 className="text-white title-font font-bold underline text-xl">
                                 {front.title}
                               </h2>
                             </Link>
-                            <p class="text-white">{front.des}</p>
+                            <p className="text-white">{front.des}</p>
                             <input
                               type="checkbox"
                               id={front.title}
@@ -251,31 +251,31 @@ export const DevOps = () => {
                 </div>
                 <br />
 
-                <div class="flex flex-col text-left w-full mb-10">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     2. CI/CD Automation
                   </h1>
-                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
                     Below are the topics that you need to complete to learn CI/CD Automation
                   </p>
                 </div>
-                <div class="flex flex-wrap -m-2">
-                  {cicd.map((back) => {
+                <div className="flex flex-wrap -m-2">
+                  {cicd.map((back,index) => {
                     return (
-                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                      <div key={index} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
-                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                             src={back.image}
                           />
-                          <div class="flex-grow">
+                          <div className="flex-grow">
                             <Link to={back.to}>
-                              <h2 class="text-white title-font font-bold underline text-xl">
+                              <h2 className="text-white title-font font-bold underline text-xl">
                                 {back.title}
                               </h2>
                             </Link>
-                            <p class="text-white">{back.des}</p>
+                            <p className="text-white">{back.des}</p>
                             <input
                               type="checkbox"
                               id={back.title}
@@ -292,31 +292,31 @@ export const DevOps = () => {
 
 
 
-                <div class="flex flex-col text-left w-full mb-10">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     3. Containerization And Orchestration
                   </h1>
-                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
                     Below are the topics that you need to complete to learn about Containerization And Orchestration
                   </p>
                 </div>
-                <div class="flex flex-wrap -m-2">
-                  {container.map((back) => {
+                <div className="flex flex-wrap -m-2">
+                  {container.map((back,index) => {
                     return (
-                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                      <div key={index} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
-                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                             src={back.image}
                           />
-                          <div class="flex-grow">
+                          <div className="flex-grow">
                             <Link to={back.to}>
-                              <h2 class="text-white title-font font-bold underline text-xl">
+                              <h2 className="text-white title-font font-bold underline text-xl">
                                 {back.title}
                               </h2>
                             </Link>
-                            <p class="text-white">{back.des}</p>
+                            <p className="text-white">{back.des}</p>
                             <input
                               type="checkbox"
                               id={back.title}
@@ -332,31 +332,31 @@ export const DevOps = () => {
                 <br />
 
 
-                <div class="flex flex-col text-left w-full mb-10">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     4. Monitoring, Security, And Collaboration
                   </h1>
-                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
                     Below are the topics that you need to complete to understand Monitoring, Security, And Collaboration
                   </p>
                 </div>
-                <div class="flex flex-wrap -m-2">
-                  {monitoring.map((back) => {
+                <div className="flex flex-wrap -m-2">
+                  {monitoring.map((back,index) => {
                     return (
-                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                      <div key={index} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
-                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                             src={back.image}
                           />
-                          <div class="flex-grow">
+                          <div className="flex-grow">
                             <Link to={back.to}>
-                              <h2 class="text-white title-font font-bold underline text-xl">
+                              <h2 className="text-white title-font font-bold underline text-xl">
                                 {back.title}
                               </h2>
                             </Link>
-                            <p class="text-white">{back.des}</p>
+                            <p className="text-white">{back.des}</p>
                             <input
                               type="checkbox"
                               id={back.title}
@@ -372,31 +372,31 @@ export const DevOps = () => {
                 <br />
 
 
-                <div class="flex flex-col text-left w-full mb-10">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     5. Cloud Services and Continuous Improvement
                   </h1>
-                  <p class="w-full text-left mx-auto leading-relaxed text-base">
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
                     Below are the topics that you need to complete to complete the devops journey
                   </p>
                 </div>
-                <div class="flex flex-wrap -m-2">
-                  {cloud.map((back) => {
+                <div className="flex flex-wrap -m-2">
+                  {cloud.map((back,index) => {
                     return (
-                      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                      <div key={index} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
-                            class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                             src={back.image}
                           />
-                          <div class="flex-grow">
+                          <div className="flex-grow">
                             <Link to={back.to}>
-                              <h2 class="text-white title-font font-bold underline text-xl">
+                              <h2 className="text-white title-font font-bold underline text-xl">
                                 {back.title}
                               </h2>
                             </Link>
-                            <p class="text-white">{back.des}</p>
+                            <p className="text-white">{back.des}</p>
                             <input
                               type="checkbox"
                               id={back.title}
