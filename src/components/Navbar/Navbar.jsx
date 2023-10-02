@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.nav`
   width: 95%;
-  height: ${(props) => (props.extendNavbar ? "50vh" : "80px")};
+  height: fit-content;
   background-color: #010116;
   display: flex;
   z-index: 99999999;
@@ -122,6 +122,7 @@ function Navbar() {
           <NavbarLink to="/"> Home</NavbarLink>
           <NavbarLink to="/projects">Projects</NavbarLink>
           <NavbarLink to="/events">Events</NavbarLink>
+          <NavbarLink to="/programs">Programs</NavbarLink>
           <NavbarLink to="/team">Team</NavbarLink>
           <NavbarLink to="/resources">Resources</NavbarLink>
           <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
@@ -146,6 +147,7 @@ function Navbar() {
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="http://blog.nsccbpit.tech/">
