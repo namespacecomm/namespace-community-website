@@ -13,6 +13,7 @@ import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
+import { DevOps } from "./Pages/AllResources/Devops";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -43,6 +44,7 @@ function App() {
               <Route path='android' element={<Android/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='devops' element={ <DevOps /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
