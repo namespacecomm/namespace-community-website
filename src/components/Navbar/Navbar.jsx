@@ -116,7 +116,7 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <Logo src="./img/logo2.png"></Logo>
+          <Logo src="./img/logo2.png" alt="logo"></Logo>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavbarLink to="/"> Home</NavbarLink>
           <NavbarLink to="/projects">Projects</NavbarLink>

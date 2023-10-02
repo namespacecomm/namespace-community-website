@@ -8,6 +8,7 @@ import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
+import DataScience from "./Pages/dataScience/DataScience";
 import NotFound from "./Pages/Error/NotFound";
 
 const Container = styled.div`
@@ -34,6 +35,7 @@ function App() {
               <Route path='projects' element={ <Projects /> } />
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
+              <Route path='dataScience' element={<DataScience /> } />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='*' element={ <NotFound /> } />
