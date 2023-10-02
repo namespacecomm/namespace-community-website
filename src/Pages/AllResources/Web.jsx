@@ -335,7 +335,7 @@ const front = [
     image:
       "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696144399~exp=1696144999~hmac=195c28ce31c3416fef0bf6c03be63223ff723eac2833047ee7d39496578d2155",
     to: "/frontend-framework",
-    des: "A single page focused JavaScript library with a component-based approach.",
+    des: "FrontEnd Framework based on JS Industry Level Standards eg:React,Svelte,Angular",
   },
   {
     title: "Github",
