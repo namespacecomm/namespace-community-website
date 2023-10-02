@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { ResourceMain } from "../../constants/ResourceMain";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import { programsList } from "../../constants/programs";
 
 const Section = styled.div`
   display: flex;
