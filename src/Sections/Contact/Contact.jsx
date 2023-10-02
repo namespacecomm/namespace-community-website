@@ -41,8 +41,8 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-size: 50px;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 600;
+  
 `;
 
 const Form = styled.form`
