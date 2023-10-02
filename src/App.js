@@ -3,6 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
@@ -46,18 +47,16 @@ function App() {
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
               <Route path='cp' element={<CompProg /> } />
-
               <Route path='dataScience' element={<DataScience /> } />
-
               <Route path='arvr' element={<ARVR/>} />
               <Route path='android' element={<Android/>} />
               <Route path="flutter" element={<Flutter/>} />
               <Route path='aiml' element={<AIML/>} />
-
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
+              <Route path='docker' element={<DOCKER/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
