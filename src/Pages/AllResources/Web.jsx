@@ -324,11 +324,11 @@ const front = [
     des: "Javascript gives functionality and behaviour to our websites / webapps",
   },
   {
-    title: "Tailwind-CSS",
+    title: "CSS Framework",
     image:
       "https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8193.jpg?w=740&t=st=1696143700~exp=1696144300~hmac=e30b598983507067bf52afb462064a73e9d146faba6d60c17f3a7c6f28407b8a",
-    to: "/tailwindcss",
-    des: "Tailwind CSS is a utility-first CSS framework that simplifies web development.",
+    to: "/css-framework",
+    des: "Learn a CSS framework that simplifies web development.",
   },
   {
     title: "FrontEnd Framework",
