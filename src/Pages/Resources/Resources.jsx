@@ -65,7 +65,7 @@ function Resources() {
               <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {ResourceMain.map((item) => {
                   return (
-                    <div className="overflow-hidden bg-white rounded shadow">
+                    <div className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow">
                       <div className="p-8">
                         <div className="flex items-center">
                           <img
