@@ -15,12 +15,12 @@
     "@types/three": "^0.149.0",
     "dotenv": "^16.0.1",
     "framer-motion": "^10.0.1",
+    "lottie-react": "^2.4.0",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.2",
     "react-responsive": "^9.0.2",
-    
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
