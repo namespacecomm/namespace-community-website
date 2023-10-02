@@ -18,6 +18,7 @@ import AIML from "./Pages/AllResources/AIML";
 import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
+
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;

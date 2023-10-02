@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily :{
         Inter : ['Inter', 'sans-serif'],
+        Inter : ['Plus Jakarta Sans', 'sans-serif'],
       },
       screens: {
         xs:'250px',
