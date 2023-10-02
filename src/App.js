@@ -15,7 +15,7 @@ import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
 import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
-import { Blockchain } from "./Pages/AllResources/Blockchain";
+import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
 const Container = styled.div`
