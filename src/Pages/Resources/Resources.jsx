@@ -79,7 +79,7 @@ function Resources() {
                         Direct Integration
                       </p> */}
                           </div>
-                          <Link to={`/${item?.to}`}>
+                          <Link to={`${item?.to}`}>
                             <svg
                               className="block w-6 h-6 text-blue-600 cursor-pointer"
                               xmlns="http://www.w3.org/2000/svg"
