@@ -95,7 +95,7 @@ export default function Blockchain() {
                             </div>
                             <img
                                 className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
-                                src="https://cdn.pixabay.com/photo/2018/01/05/14/25/bitcoin-3069434_1280.png"
+                                src="https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg"
                                 alt="Blockchain Image"
                             />
                         </div>
@@ -179,19 +179,19 @@ export default function Blockchain() {
 const blockchainUseCases = [
     {
         title: 'Cryptocurrency',
-        image: 'https://www.pngitem.com/pimgs/m/168-1688516_bitcoin-png-image-bitcoin.png',
+        image: 'https://cdn3.iconfinder.com/data/icons/object-emoji/50/BitCoin-128.png',
         description: 'Cryptocurrencies like Bitcoin and Ethereum are some of the most well-known blockchain use cases. Learn about digital currencies, wallets, and transactions.',
         to: '/cryptocurrency',
     },
     {
         title: 'Supply Chain Management',
-        image: 'https://www.pngkey.com/png/full/363-3633200_global-supply-chain-logistics-clipart.png',
+        image: 'https://media.istockphoto.com/id/1339299049/vector/add-chain-icon.jpg?b=1&s=170x170&k=20&c=Y4h-5Di4EswUqkO-U6xNeQfdRuyQ3c2oW_45XnoV58w=',
         description: 'Blockchain is used for transparent and efficient supply chain management. Explore how its used to trace products and verify authenticity.',
         to: '/supply-chain-management',
     },
     {
         title: 'Decentralized Finance (DeFi)',
-        image: 'https://png.pngitem.com/pimgs/s/321-3215436_transparent-defi-png-defi-logo-png-png-download.png',
+        image: 'https://cdn2.iconfinder.com/data/icons/cryptocurrency-51/512/Dao_decentralized_autonomous_organization_crypto-512.png',
         description: 'DeFi applications leverage blockchain to create decentralized financial services, including lending, borrowing, and trading without intermediaries.',
         to: '/defi',
     },
@@ -200,13 +200,13 @@ const blockchainUseCases = [
 const blockchainTools = [
     {
         title: 'Ethereum',
-        image: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
+        image: 'https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-128.png',
         description: 'Ethereum is a popular blockchain platform for building decentralized applications (DApps) and smart contracts using Solidity.',
         to: '/ethereum',
     },
     {
         title: 'Hyperledger Fabric',
-        image: 'https://www.hyperledger.org/wp-content/uploads/2019/03/Hyperledger-Fabric-Color-RGB.png',
+        image: 'https://chainstack.com/wp-content/uploads/2020/07/fabric.png',
         description: 'Hyperledger Fabric is an open-source framework for enterprise blockchain solutions, offering modularity and privacy features.',
         to: '/hyperledger-fabric',
     },
