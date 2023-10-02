@@ -37,6 +37,7 @@ const Title = styled.h1`
   font-size: calc(1rem + 1.5vw);
   font-style: italic;
   margin-top: 1.5rem;
+  border-bottom:3px solid #F5F5F5;
   position: relative;
   &::before {
     content: "";
