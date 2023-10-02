@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
-
+import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
@@ -44,6 +44,7 @@ function App() {
               <Route path='projects' element={ <Projects /> } />
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
+              <Route path='cp' element={<CompProg /> } />
 
               <Route path='dataScience' element={<DataScience /> } />
 
