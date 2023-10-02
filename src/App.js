@@ -15,6 +15,7 @@ import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
 import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
+import { Blockchain } from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
 const Container = styled.div`
@@ -49,6 +50,7 @@ function App() {
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
+              <Route path='Blockchain' element={ <Blockchain /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
