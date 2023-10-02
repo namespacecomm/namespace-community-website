@@ -4,6 +4,7 @@ import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import { NodeJS } from "./Pages/AllResources/webALL/NodeJS";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -36,6 +37,7 @@ function App() {
               <Route path='webd' element={<Web /> } />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='NodeJS' element={ <NodeJS /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
