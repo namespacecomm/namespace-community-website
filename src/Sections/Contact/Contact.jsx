@@ -167,7 +167,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <Button type="submit">Send</Button>
-            {formMessage}
+            { sucess && formMessage}
           </Form>
         </Left>
         <Right>
