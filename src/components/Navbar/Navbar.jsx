@@ -13,7 +13,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     height: 80px;
   }
 `;
@@ -95,7 +95,7 @@ const NavbarExtendedContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: none;
     align-items: center;
   }
