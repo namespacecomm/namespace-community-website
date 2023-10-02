@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -117,14 +118,22 @@ const Button = styled.button`
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveTab(location.pathname);
+    return () => {};
+  }, [location]);
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLink to = "/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
+          <Logo src="./img/logo2.png"></Logo>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavLinks>
+            <NavbarLink to="/"> Home</NavbarLink>
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/programs">Programs</NavbarLink>
