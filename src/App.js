@@ -14,7 +14,6 @@ import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
 import { DevOps } from "./Pages/AllResources/Devops";
-import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -45,7 +44,6 @@ function App() {
               <Route path='android' element={<Android/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
-              <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
