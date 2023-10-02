@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
-
+import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
@@ -49,6 +49,7 @@ function App() {
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
+              <Route path='docker' element={<DOCKER/>} />
               <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
