@@ -26,6 +26,7 @@ module.exports = {
         Inter : ['Plus Jakarta Sans', 'sans-serif'],
       },
       screens: {
+        xs:'250px',
        
       },
     },
