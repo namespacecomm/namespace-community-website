@@ -85,7 +85,7 @@ function AllTeams() {
 
             <div className="flex justify-center items-center">
               <div className="my-grid">
-                {filterTeam.map((member) => {
+                {allmembers.map((member) => {
                   return (
                     <TeamCard
                       image={member.image}
