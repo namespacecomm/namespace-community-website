@@ -5,6 +5,7 @@ import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import { FrontEndFramework} from "./Pages/AllResources/webALL/frontend-framework";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -44,6 +45,7 @@ function App() {
               <Route path='android' element={<Android/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='frontend-framework' element={ < FrontEndFramework/> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
