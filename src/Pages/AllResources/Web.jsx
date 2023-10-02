@@ -388,7 +388,7 @@ const back = [
     title: "Node.js",
     image:
       "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
-    to: "/nodejs",
+    to: "/NodeJS",
     des: "Node.js: JavaScript runtime for building scalable server-side applications.",
   },
 ];
