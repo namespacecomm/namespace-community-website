@@ -131,7 +131,9 @@ function Navbar() {
             <NavbarLink to="/programs">Programs</NavbarLink>
             <NavbarLink to="/team">Team</NavbarLink>
             <NavbarLink to="/resources">Resources</NavbarLink>
-            <NavbarLink to="http://blog.nsccbpit.tech/">Blog</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
+              Blog
+            </NavbarLink>
           </NavLinks>
         </LeftContainer>
         <RightContainer>
