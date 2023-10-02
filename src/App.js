@@ -3,12 +3,14 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
 import NotFound from "./Pages/Error/NotFound";
+import Android from "./Pages/AllResources/Android";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -34,6 +36,8 @@ function App() {
               <Route path='projects' element={ <Projects /> } />
               <Route path='resources' element={ <Resources /> } />
               <Route path='webd' element={<Web /> } />
+
+              <Route path='android' element={<Android/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='*' element={ <NotFound /> } />
