@@ -3,9 +3,8 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
-import { NodeJS } from "./Pages/AllResources/webALL/NodeJS";
-import { FrontEndFramework} from "./Pages/AllResources/webALL/frontend-framework";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -48,8 +47,7 @@ function App() {
               <Route path='aiml' element={<AIML/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
-              <Route path='NodeJS' element={ <NodeJS /> } />
-              <Route path='frontend-framework' element={ < FrontEndFramework/> } />
+              <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
