@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -37,7 +38,7 @@ const Container = styled.div`
   }
 `;
 
-export const DOCKER = () => {
+export const JENKINS = () => {
   const [jstopicsChecked, setJsTopicsChecked] = useState({
     syntax: false,
     dom: false,
@@ -72,39 +73,38 @@ export const DOCKER = () => {
   return (
     <>
       <Section>
+        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="hero"
-                src="https://img.freepik.com/free-vector/port-concept-illustration_114360-7335.jpg?w=1480&t=st=1696258059~exp=1696258659~hmac=449086836074036e755fbc9c803c7e04d489da420cab2125f416cc76e1ffbc9f"
+                src="https://www.jenkins.io/images/logos/jenkins/Jenkins-stop-the-war.svg"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  DOCKER
+                  JENKINS
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Docker is a platform that utilizes containers, lightweight and
-                  self-contained packages, to develop, package, and run
-                  applications consistently across different environments. It
-                  comprises components like Docker containers (isolated runtime
-                  instances), Docker images (snapshots of containers), a Docker
-                  Engine (core management tool), Dockerfiles (instructions for
-                  building images), Docker registries (storage and sharing), and
-                  Docker Compose (multi-container app management). Docker
-                  simplifies deployment, making it popular in DevOps for its
-                  consistent, portable, and efficient application management
-                  capabilities, although it's worth noting that alternative
-                  containerization technologies like Kubernetes and containerd
-                  also exist and can be used in conjunction with or instead of
-                  Docker, depending on specific needs. Docker's popularity has
-                  led to a vast ecosystem of pre-built images and tools that
-                  extend its functionality, making it easier to integrate Docker
-                  into various development and deployment workflows. It has
-                  become a standard tool for many software development and IT
-                  operations teams and is widely used in industries ranging from
-                  web development to data science.
+                  Jenkins is an open-source automation server widely used for
+                  continuous integration and continuous delivery (CI/CD)
+                  pipelines. It plays a crucial role in software development by
+                  automating various tasks like building, testing, and deploying
+                  code, enabling teams to quickly and reliably deliver software
+                  updates. Jenkins provides a user-friendly interface for
+                  configuring and managing automation workflows, which are
+                  defined as code in the form of pipeline scripts. It supports a
+                  vast ecosystem of plugins, making it highly extensible and
+                  adaptable to various development environments and tools.
+                  Jenkins is known for its flexibility, scalability, and
+                  community support, making it a cornerstone of modern software
+                  development practices. Jenkins acts as a central hub for
+                  orchestrating the entire software development lifecycle. It
+                  can be integrated with version control systems (such as Git),
+                  build tools (like Maven or Gradle), testing frameworks, and
+                  deployment platforms, making it a versatile tool for managing
+                  complex and customized automation workflows.
                 </p>
               </div>
             </div>
@@ -183,79 +183,73 @@ export const DOCKER = () => {
 
 const resources = [
   {
-    title: "DOCKER - Docs",
-    image:
-      "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
+    title: "Jenkins Handbook",
+    image: "https://www.jenkins.io/images/logo-title-opengraph.png",
     type: "Documentation",
-    link: "https://docs.docker.com/",
+    link: "https://www.jenkins.io/doc/book/",
   },
   {
-    title: "DockerLabs - Getting Started with Docker",
+    title: "Jenkins Tutorial For Beginners: 21+ Practical Guides",
     image:
-      "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
+      "https://devopscube.com/wp-content/uploads/2019/01/jenkins-beginner-tutorials-1160x468.png.webp",
     type: "Documentation",
-    link: "https://dockerlabs.collabnix.com/",
+    link: "https://devopscube.com/jenkins-2-tutorials-getting-started-guide/",
   },
   {
-    title: "DOCKER in 100 seconds",
-    image: "https://i.ytimg.com/vi/Gjnup-PuquQ/maxresdefault.jpg",
+    title: "Learn Jenkins! Complete Jenkins Course - Zero to Hero",
+    image: "https://i.ytimg.com/vi/6YZvp2GwT0A/mqdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=Gjnup-PuquQ",
+    link: "https://www.youtube.com/watch?v=6YZvp2GwT0A",
   },
   {
-    title: "Docker Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=pTFZFxd4hOI",
-  },
-  {
-    title: "DOCKER - Cheat Sheet",
+    title: "Learn Jenkins by Building a CI/CD Pipeline ",
     image:
-      "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
+      "https://www.freecodecamp.org/news/content/images/2022/09/jenkins.png",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=f4idgaq2VqA",
+  },
+  {
+    title: "Jenkins Cheat Sheet ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1280/format:webp/1*HcWQYQFB3FttTJScpkn4Qw.jpeg",
     type: "Cheat Sheet",
-    link: "https://dockerlabs.collabnix.com/docker/cheatsheet/",
+    link: "https://medium.com/edureka/jenkins-cheat-sheet-e0f7e25558a3",
   },
   {
-    title: "The DOCKER Handbook",
+    title: "Jenkins Pipeline Tutorial",
     image:
-      "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
+      "https://devopscube.com/wp-content/uploads/2020/04/jenkins-pipeline-as-code-min-1160x468.png.webp",
     type: "Documentation",
-    link: "https://www.freecodecamp.org/news/the-docker-handbook/",
+    link: "https://devopscube.com/jenkins-pipeline-as-code/",
   },
   {
-    title: "Introduction to Docker",
-    image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
-  },
-  {
-    title: "Docker for the Absolute Beginner - Hands On - DevOps",
-    image: "https://img-c.udemycdn.com/course/750x422/3490000_d298_2.jpg",
+    title: "Build+Deploy+Test with Jenkins 2.0",
+    image: "https://img-c.udemycdn.com/course/750x422/1141808_f32f_5.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/learn-docker/",
+    link: "https://www.udemy.com/course/working-with-jenkins/",
+  },
+  {
+    title: "Jenkins Tutorial For Beginners (DevOps and Developers)",
+    image: "https://img-c.udemycdn.com/course/750x422/1825202_d640_3.jpg",
+    type: "Course",
+    link: "https://www.udemy.com/course/jenkins-tutorial-for-beginners-devops-and-developers/",
   },
 ];
 
 const topics = [
+  { title: "Introduction to Jenkins", storage: "intro-jenkins" },
+  { title: "Jenkins Basics", storage: "jenkins-basic" },
+  { title: "Working with Jenkins Jobs", storage: "jenkins-jobs" },
+  { title: "Version Control Integration", storage: "ver-control-intergrate" },
+  { title: "Plugins and Extensions", storage: "plugins-extensions" },
+  { title: "Pipeline as Code (Jenkins Pipeline)", storage: "jenkins-pipline" },
+  { title: "Security and Access Control", storage: "security-access-control" },
+  { title: "Storage", storage: "storage" },
+  { title: "Security and RBAC", storage: "security-rbac" },
   {
-    title: "Introduction to Containers",
-    storage: "introduction-to-containers",
+    title: "Integration with Other Tools",
+    storage: "integration with other tools",
   },
-  { title: "Docker Architecture", storage: "docker-architecture" },
-  { title: "Docker Installation", storage: "install-docker" },
-  { title: "Docker Images", storage: "docker-images" },
-  { title: "Docker Containers", storage: "docker-containers" },
-  { title: "Docker Compose", storage: "docekr-compose" },
-  { title: "Container Orchestration", storage: "container-orchestration" },
-  { title: "Docker Networking", storage: "docker-networking" },
-  { title: "Docker Volumes and Storage", storage: "docker-volume-storage" },
-  { title: "Docker Security", storage: "docker-security" },
-  {
-    title: "Docker Registry and Repository",
-    storage: "docker-registry-repository",
-  },
-  { title: "Docker in CI/CD", storage: "docker-ci-cd" },
-  { title: "Monitoring and Logging", storage: "docker-monitor-log" },
-  { title: "Scaling and Load Balancing", storage: "docker-scale-load-balance" },
+  { title: "Monitoring", storage: "jenkins-monitor" },
+  { title: "Scaling Jenkins", storage: "scale-jenkins" },
 ];

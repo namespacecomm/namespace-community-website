@@ -26,12 +26,19 @@
   flex-direction: column;
   align-items: center;
   /* box-shadow: rgba(0, 0, 0, 0.7); */
-  color: white;
+}
+.card:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8) !important;
+}
+
+.card:not(:hover) {
+  box-shadow: none;
 }
 
 .card__name {
   margin-top: 10px;
   font-size: 1.5em;
+  color: white;
 }
 .card__role{
   font-size: medium;
