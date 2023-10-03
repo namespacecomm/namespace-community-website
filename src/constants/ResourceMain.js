@@ -62,4 +62,25 @@ export const ResourceMain = [
     to: "/blockchain",
     image: require("./ResourceIcons/blockchain.png"),
   },
+  {
+    name: "DSA",
+    description:
+      " Mastering DSA is fundamental in software development, providing the backbone for efficient problem-solving and algorithmic optimization, crucial for building robust and scalable applications.",
+    to: "/dsa",
+    image: require("./ResourceIcons/dsa.jpg"),
+  },
+  {
+    name: "Cyber Security",
+    description:
+      " Cybersecurity involves protecting digital systems, networks, and data from cyber threats. It includes measures like encryption, firewalls, and vulnerability assessments to ensure data integrity and confidentiality against evolving cyber risks.",
+    to: "/cybersecurity",
+    image: require("./ResourceIcons/Cyber-Security.png"),
+  },
+  {
+    name: "UI/UX Designing",
+    description:
+      " UI/UX Designing focuses on creating engaging and intuitive user interfaces and experiences. It blends aesthetics with usability, aiming to enhance user satisfaction by crafting designs that are visually appealing and functionally effective for optimal user interaction.",
+    to: "/uiux",
+    image: require("./ResourceIcons/uiux.png"),
+  },
 ];
