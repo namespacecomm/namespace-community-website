@@ -44,20 +44,19 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Hero />} />
-              <Route path='team' element={<AllTeams />} />
-              <Route path='events' element={<AllEvents />} />
-              <Route path='programs' element={ <Programs /> } />
-              <Route path='projects' element={ <Projects /> } />
-              <Route path='resources' element={ <Resources /> } />
-              <Route path='webd' element={<Web /> } />
-              <Route path='cp' element={<CompProg /> } />
-              <Route path='dataScience' element={<DataScience /> } />
-              <Route path='arvr' element={<ARVR/>} />
-              <Route path='android' element={<Android/>} />
-              <Route path="flutter" element={<Flutter/>} />
-              <Route path='aiml' element={<AIML/>} />
-              <Route path='aws' element={<Aws/>} />
-
+              <Route path="team" element={<AllTeams />} />
+              <Route path="events" element={<AllEvents />} />
+              <Route path="programs" element={<Programs />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="resources" element={<Resources />} />
+              <Route path="webd" element={<Web />} />
+              <Route path="cp" element={<CompProg />} />
+              <Route path="dataScience" element={<DataScience />} />
+              <Route path="arvr" element={<ARVR />} />
+              <Route path="android" element={<Android />} />
+              <Route path="flutter" element={<Flutter />} />
+              <Route path="aiml" element={<AIML />} />
+              <Route path="aws" element={<Aws />} />
               <Route path="css" element={ <CSS /> } />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
@@ -67,6 +66,7 @@ function App() {
               <Route path='docker' element={<DOCKER/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
               <Route path='*' element={ <NotFound /> } />
+
             </Route>
           </Routes>
         </BrowserRouter>
