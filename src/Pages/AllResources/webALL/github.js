@@ -27,34 +27,39 @@ const Container = styled.div`
 `;
 
 export const Github = () => {
-  const [jstopicsChecked, setJsTopicsChecked] = useState({
-    syntax: false,
-    dom: false,
-    fetch: false,
-    async: false,
-    event: false,
-    promises: false,
-    classes: false,
-    array: false,
-    hoisting: false,
-    closure: false,
+  const [githubtopicsChecked, setGithubTopicsChecked] = useState({
+    opensource: false,
+    git: false,
+    gitHub: false,
+    gitfork: false,
+    gitclone: false,
+    remoteorigin: false,
+    gitupstream: false,
+    branches: false,
+    commit: false,
+    gitpush: false,
+    pullrequests: false,
+    resolvingconflits: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setJsTopicsChecked({
-      ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic],
+    setGithubTopicsChecked({
+      ...githubtopicsChecked,
+      [topic]: !githubtopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
-  }, [jstopicsChecked]);
+    localStorage.setItem(
+      "githubtopicsChecked",
+      JSON.stringify(githubtopicsChecked)
+    );
+  }, [githubtopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("githubtopicsChecked");
     if (storedTopicsChecked) {
-      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
+      setGithubTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -75,10 +80,21 @@ export const Github = () => {
                   Github: Cloud based version control service
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                    Git is a specific open-source version control system created by Linus Torvalds in 2005.  Specifically, Git is a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging.  According to a Stack Overflow developer survey, over 87% of developers use Git.
-                    GitHub essentials are:Repositories, Branches, Commits, Pull Requests, Git (the version control software GitHub is built on).
-                    <br/>
-                    It makes it easy for developers to share code files and collaborate with fellow developers on open-source projects. GitHub also serves as a social networking site where developers can openly network, collaborate, and pitch their work.
+                  Git is a specific open-source version control system created
+                  by Linus Torvalds in 2005. Specifically, Git is a distributed
+                  version control system, which means that the entire codebase
+                  and history is available on every developer’s computer, which
+                  allows for easy branching and merging. According to a Stack
+                  Overflow developer survey, over 87% of developers use Git.
+                  GitHub essentials are:Repositories, Branches, Commits, Pull
+                  Requests, Git (the version control software GitHub is built
+                  on).
+                  <br />
+                  It makes it easy for developers to share code files and
+                  collaborate with fellow developers on open-source projects.
+                  GitHub also serves as a social networking site where
+                  developers can openly network, collaborate, and pitch their
+                  work.
                 </p>
               </div>
             </div>
@@ -92,11 +108,16 @@ export const Github = () => {
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
+                        <label
+                          htmlFor={front.storage}
+                          className="text-white title-font font-bold text-xl cursor-pointer"
+                        >
+                          {front.title}
+                        </label>
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={jstopicsChecked[front.storage]}
+                          checked={githubtopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -117,7 +138,10 @@ export const Github = () => {
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
+                      <li
+                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
+                        key={resource.title}
+                      >
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -150,13 +174,15 @@ export const Github = () => {
 const resources = [
   {
     title: "MDN Documentation",
-    image: "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    image:
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
     link: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
   },
   {
     title: "W3Schools - Git Tutorial",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
     link: "https://www.w3schools.com/git/",
   },
@@ -187,16 +213,16 @@ const resources = [
 ];
 
 const topics = [
-  { title: "Open source", storage: "Open-source" },
-  { title: "Git", storage: "Git" },
-  { title: "GitHub", storage: "GitHub" },
-  { title: "Git fork", storage: "Git-fork" },
-  { title: "Git clone", storage: "Git-clone" },
-  { title: "Remote origin", storage: "Remote-origin" },
-  { title: "Git upstream", storage: "Git-upstream" },
-  { title: "Branches", storage: "Branches" },
-  { title: "Commit", storage: "Commit" },
-  { title: "Git push", storage: "Git-push" },
-  { title: "Pull requests", storage: "Pull-requests" },
-  { title: "Resolving conflits", storage: "Resolving-conflits" },
+  { title: "Open source", storage: "opensource" },
+  { title: "Git", storage: "git" },
+  { title: "GitHub", storage: "gitHub" },
+  { title: "Git fork", storage: "gitfork" },
+  { title: "Git clone", storage: "gitclone" },
+  { title: "Remote origin", storage: "remoteorigin" },
+  { title: "Git upstream", storage: "gitupstream" },
+  { title: "Branches", storage: "branches" },
+  { title: "Commit", storage: "commit" },
+  { title: "Git push", storage: "gitpush" },
+  { title: "Pull requests", storage: "pullrequests" },
+  { title: "Resolving conflits", storage: "resolvingconflits" },
 ];
