@@ -32,7 +32,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import { Netlify } from "./Pages/AllResources/webALL/netlify";
+import Netlify  from "./Pages/AllResources/webALL/netlify";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -68,18 +68,6 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
-<<<<<<< HEAD
-              <Route path="css" element={ <CSS /> } />
-              <Route path='html' element={ <HTML /> } />
-              <Route path='js' element={ <Javascript /> } />
-              <Route path='frontend-framework' element={ <FrontEndFramework /> } />
-              <Route path='css-framework' element={ <CSSFramework /> } />
-              <Route path='devops' element={ <DevOps /> } />
-              <Route path='docker' element={<DOCKER/>} />
-              <Route path='Blockchain' element={ <Blockchain /> } />
-              <Route path='netlify' element={<Netlify/>} />
-              <Route path='*' element={ <NotFound /> } />
-=======
               <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
@@ -96,8 +84,8 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="Blockchain" element={<Blockchain />} />
+              <Route path="netlify" element={<Netlify/>} />
               <Route path="*" element={<NotFound />} />
->>>>>>> 067a7ff8c96d53e4b0e4a5580ad4bb05fb090abc
             </Route>
           </Routes>
           <Footer />

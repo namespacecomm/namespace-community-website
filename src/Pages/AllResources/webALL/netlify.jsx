@@ -28,7 +28,7 @@ const Container = styled.div`
   }
 `;
 
-export const Netlify = () => {
+export default function Netlify() {
   return (
     <>
       <Section>
