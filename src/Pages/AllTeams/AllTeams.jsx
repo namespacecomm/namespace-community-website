@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import React from "react";
 import styled from "styled-components";
-import { allmembers, members } from "../../constants/constants";
+import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -50,23 +48,14 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
-  const [activeFilter, setActiveFilter] = useState("");
-  const [filterTeam, setFilterTeam] = useState(allmembers);
-
-  const handleTeamFilter = (item) => {
-    setActiveFilter(item);
-    setFilterTeam(allmembers.filter((member) => member.team.includes(item)));
-  };
-
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <div className=" px-6 py-10 ">
-            <h1 className="text-4xl font-semibold text-center text-white capitalize lg:text-4xl flex justify-center items-center">
-              our team
-            </h1>
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
+              Our Team
+            </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center flex justify-center items-center">
               In the last one year NSCC BPIT has grown on to become a vibrant
@@ -92,9 +81,10 @@ function AllTeams() {
 
             <div className="flex justify-center items-center">
               <div className="my-grid">
-                {filterTeam.map((member) => {
+                {allmembers.map((member) => {
                   return (
                     <TeamCard
+                      key={member.name}
                       image={member.image}
                       name={member.name}
                       position={member.position}
@@ -110,7 +100,6 @@ function AllTeams() {
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 }

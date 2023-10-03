@@ -29,9 +29,6 @@ const Container = styled.div`
   scroll-snap-align: center;
   width: 1400px;
   padding-top: 100px;
-  @media only screen and (max-width: 1024px) {
-    width: 100vw;
-  }
   @media only screen and (max-width: 768px) {
     width: 90vw;
     overflow-y: scroll;
@@ -41,7 +38,7 @@ const Container = styled.div`
   }
 `;
 
-export const Web = () => {
+export const CompProg = () => {
   const [checkedTopics, setCheckedTopics] = useState({
     HTML: false,
     CSS: false,
@@ -73,7 +70,7 @@ export const Web = () => {
           {/* --------------------------------MAIN HEADING------------------------------------------------------ */}
           <div className=" px-0 py-10 ">
             <h1 className="text-3xl text-center font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              WEB DEVELOPMENT
+              COMPETITIVE PROGRAMMING
             </h1>
             {/* <************************************MAIN SECTION*******************************************> */}
             <section className="text-gray-600 body-font">
@@ -99,15 +96,14 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Choose a Technology
+                          Understand the Basics
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                          A full-stack development comprises front-end,
-                          back-end, and database management. Choosing a
-                          technology on which you want to work depends on
-                          individuals, requirements, and applications. Few
-                          technologies on which you can work and are trending :-
-                          MERN AND MEAN
+                          Competitive Programming involves solving algorithmic
+                          and data structure problems efficiently. Start by
+                          understanding fundamental concepts like data
+                          structures (arrays, linked lists, trees, graphs) and
+                          algorithms (sorting, searching, dynamic programming).
                         </p>
                       </div>
                     </div>
@@ -130,13 +126,14 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Frontend Development
+                          Practice Regularly
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                          Front-End is the UI (User Interface), it deals with
-                          the website’s overall appearance, on how interactive
-                          and dynamic it is. For mastering it, get clear with
-                          all the elements of HTML, CSS, and JavaScript.
+                          Just like in sports, regular practice is essential in
+                          competitive programming. Solve a variety of problems
+                          on online platforms like Codeforces, LeetCode, and
+                          HackerRank to improve your problem-solving skills and
+                          speed.
                         </p>
                       </div>
                     </div>
@@ -159,20 +156,50 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Backend Development
+                          Learn Advanced Algorithms
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                          The code that runs on the server, has logic to send
-                          the appropriate data from the client and receive it
-                          from the server. Also, it includes the database which
-                          stores all of the data of the application. It consists
-                          of three parts: a server, an application, and a
-                          database.
+                          Dive deeper into complex algorithms such as graph
+                          algorithms (Dijkstra's, Floyd-Warshall), dynamic
+                          programming, and number theory. Understanding and
+                          implementing advanced algorithms is crucial for
+                          solving challenging problems efficiently.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex relative">
+                    <div className="flex relative pb-12">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-5 h-5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+                        </svg>
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                          Participate in Contests
+                        </h2>
+                        <p className="leading-relaxed text-white text-justify">
+                          Engage in coding contests on platforms like CodeChef,
+                          AtCoder, and Topcoder. Competing in contests exposes
+                          you to a variety of problem types and improves your
+                          ability to think critically and optimize solutions
+                          under time constraints.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex relative pb-12">
                       <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                         <svg
                           fill="none"
@@ -189,64 +216,65 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-                          Build Projects
+                          Analyse and Learn
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                          When you’re all done with the theory part, do build
-                          some projects to be well-versed with full-stack
-                          development. You implement all the front-end, and
-                          back-end sides of a project along with database
-                          handling, then you get perfect in web development.
+                          After contests, thoroughly analyze your solutions and
+                          editorials for problems you couldn't solve. Understand
+                          different approaches, optimizations, and coding
+                          styles. Learning from mistakes is an integral part of
+                          improving in competitive programming.
                         </p>
                       </div>
                     </div>
                   </div>
                   <img
                     className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
-                    src="https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
+                    src="https://i.ibb.co/RyJZwg8/cp.png"
                     alt="step"
                   />
                 </div>
               </div>
             </section>
+
             {/* <-----------------------------------------------END OF MAIN SECTION-------------------------------------------------> */}
-            {/* <------------------------------------Frontend Development-------------------------------------------------------> */}
+            {/* <------------------------------------Basic Algo-------------------------------------------------------> */}
             <section className="text-white body-font">
               <div className="px-5 py-0 mx-auto">
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                    1. Frontend Development
+                    1. Algorithmic Foundations
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to become a
-                    rockstar frontend developer
+                    Below are the topics that you need to master to excel in
+                    competitive programming.
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
-                  {front.map((front) => {
+                  {algorithmicFoundations.map((topic) => {
                     return (
                       <div
                         className="p-2 lg:w-1/3 md:w-1/2 w-full"
-                        key={front.title}
+                        key={topic.title}
                       >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
-                            alt="team"
+                            alt="topic"
                             className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
-                            src={front.image}
+                            src={topic.image}
                           />
                           <div className="flex-grow">
-                            <Link to={front.to}>
+                            <Link to={topic.to}>
                               <h2 className="text-white title-font font-bold underline text-xl">
-                                {front.title}
+                                {topic.title}
                               </h2>
                             </Link>
-                            <p className="text-white">{front.des}</p>
+                            <p className="text-white">{topic.des}</p>
                             <input
                               type="checkbox"
-                              id={front.title}
-                              checked={checkedTopics[front.title]}
-                              onChange={() => handleCheckboxChange(front.title)}
+                              id={topic.title}
+                              checked={checkedTopics[topic.title]}
+                              onChange={() => handleCheckboxChange(topic.title)}
                             />
                           </div>
                         </div>
@@ -254,42 +282,42 @@ export const Web = () => {
                     );
                   })}
                 </div>
-
+                {/* <------------------------------------Advanced Algo-------------------------------------------------------> */}
                 <br />
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                    2. Backend Development
+                    2. Advanced Data Structures
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to become a
-                    rockstar backend developer
+                    Below are the topics that you need to master to become
+                    proficient in competitive programming.
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
-                  {back.map((back) => {
+                  {advancedDataStructures.map((topic) => {
                     return (
                       <div
                         className="p-2 lg:w-1/3 md:w-1/2 w-full"
-                        key={back.title}
+                        key={topic.title}
                       >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
-                            alt="team"
+                            alt="topic"
                             className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
-                            src={back.image}
+                            src={topic.image}
                           />
                           <div className="flex-grow">
-                            <Link to={back.to}>
+                            <Link to={topic.to}>
                               <h2 className="text-white title-font font-bold underline text-xl">
-                                {back.title}
+                                {topic.title}
                               </h2>
                             </Link>
-                            <p className="text-white">{back.des}</p>
+                            <p className="text-white">{topic.des}</p>
                             <input
                               type="checkbox"
-                              id={back.title}
-                              checked={checkedTopics[back.title]}
-                              onChange={() => handleCheckboxChange(back.title)}
+                              id={topic.title}
+                              checked={checkedTopics[topic.title]}
+                              onChange={() => handleCheckboxChange(topic.title)}
                             />
                           </div>
                         </div>
@@ -306,94 +334,80 @@ export const Web = () => {
   );
 };
 
-const front = [
+const algorithmicFoundations = [
   {
-    title: "HTML",
-    image:
-      "https://img.freepik.com/free-photo/html-http-web-design-hompage-icon_53876-120700.jpg?w=740&t=st=1696093727~exp=1696094327~hmac=e936282eb24ddee35d111d16f401b909ac384b9d41951250fc14f4c92536de1a",
-    to: "/html",
-    des: "HTML is the standard markup language for Web pages",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic1",
+    title: "Sorting Algorithms",
+    des: "Understand various sorting algorithms such as quicksort, mergesort, etc.",
   },
   {
-    title: "CSS",
-    image:
-      "https://img.freepik.com/free-vector/java-developer-smartphone-software-javascript-coding-writing-application-css-programming-html-source-code-tampering-mobile-program-vector-isolated-concept-metaphor-illustration_335657-1994.jpg?w=740&t=st=1696093820~exp=1696094420~hmac=6aba683f215bd2f25d083045363b99880c4e9328faedc25fa920c6d42d45f15b",
-    to: "/css",
-    des: "CSS is used to style web pages and making your websites look awesome",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic2",
+    title: "Searching Algorithms",
+    des: "Learn different searching algorithms like binary search, linear search, etc.",
   },
   {
-    title: "Javascript",
-    image:
-      "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg?w=1060&t=st=1696093913~exp=1696094513~hmac=72afb722e8869c28f844193e8f7ca0dc4d74d7e40d429d4ec7a725bb26164862",
-    to: "/js",
-    des: "Javascript gives functionality and behaviour to our websites / webapps",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic3",
+    title: "Dynamic Programming",
+    des: "Master the technique of breaking down complex problems into simpler, more manageable subproblems.",
   },
   {
-    title: "CSS Framework",
-    image:
-      "https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8193.jpg?w=740&t=st=1696143700~exp=1696144300~hmac=e30b598983507067bf52afb462064a73e9d146faba6d60c17f3a7c6f28407b8a",
-    to: "/css-framework",
-    des: "Learn a CSS framework that simplifies web development.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic4",
+    title: "Graph Algorithms",
+    des: "Explore algorithms to solve problems related to graphs, such as shortest paths, minimum spanning tree, etc.",
   },
   {
-    title: "FrontEnd Framework",
-    image:
-      "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1696144399~exp=1696144999~hmac=195c28ce31c3416fef0bf6c03be63223ff723eac2833047ee7d39496578d2155",
-    to: "/frontend-framework",
-    des: "FrontEnd Framework based on JS Industry Level Standards eg:React,Svelte,Angular",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic5",
+    title: "Bit Manipulation",
+    des: "Understand operations on individual bits of numbers, often used in competitive programming.",
   },
   {
-    title: "Github",
-    image:
-      "https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
-    to: "/git",
-    des: "GitHub: Web platform for collaborative code management and version control.",
-  },
-  {
-    title: "Netlify",
-    image:
-      "https://img.freepik.com/premium-vector/software-development-programming-coding-vector-concept_123447-266.jpg?w=740",
-    to: "/netlify",
-    des: "Netlify is a platform for hosting websites and web applications.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/algorithmic-topic6",
+    title: "Divide and Conquer",
+    des: "Learn the approach of breaking a problem into subproblems, solving them independently, and combining solutions.",
   },
 ];
 
-/* <------------------------------------Backend Development-------------------------------------------------------> */
-
-const back = [
+const advancedDataStructures = [
   {
-    title: "PHP",
-    image:
-      "https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?w=740&t=st=1696148044~exp=1696148644~hmac=2b1042d454d6cdbd63028a652692402e729bd54defc1d62dea7ee48ab21335a0",
-    to: "/php",
-    des: "PHP is a versatile server-side scripting language for web development.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic1",
+    title: "Graph Data Structures",
+    des: "Explore different graph representations and algorithms like DFS, BFS, etc.",
   },
   {
-    title: "MySQL",
-    image:
-      "https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=740&t=st=1696148496~exp=1696149096~hmac=6f53e263b59fc15c3a1a068504ca95ed27e28c1280bbf16e1e5b802a4a2a650c",
-    to: "/mysql",
-    des: "MySQL: Popular RDBMS for web databases.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic2",
+    title: "Tree Data Structures",
+    des: "Understand tree-based data structures like BST, AVL tree, etc.",
   },
   {
-    title: "MongoDB",
-    image:
-      "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
-    to: "/mongodb",
-    des: "MongoDB: NoSQL database for modern applications.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic3",
+    title: "Trie Data Structure",
+    des: "Learn about the trie data structure, useful for efficient string operations.",
   },
   {
-    title: "Django",
-    image:
-      "https://media.licdn.com/dms/image/D4D12AQE-VEYeJbkang/article-cover_image-shrink_720_1280/0/1685546933475?e=2147483647&v=beta&t=4yE6W6cW91SZtqOR2x-_EH2ztyRctpRiWMJPZdRCQOM",
-    to: "/django",
-    des: "Django: High-level Python web framework for rapid, secure site development.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic4",
+    title: "Heap Data Structure",
+    des: "Understand the heap data structure and its applications in priority queues and heapsort.",
   },
   {
-    title: "Node.js",
-    image:
-      "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
-    to: "/nodejs",
-    des: "Node.js: JavaScript runtime for building scalable server-side applications.",
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic5",
+    title: "Hash Table",
+    des: "Learn about the hash table data structure and its efficient data retrieval operations.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "/data-structure-topic6",
+    title: "Disjoint Set (Union-Find)",
+    des: "Explore the disjoint-set data structure and its applications, such as in Kruskal's algorithm for minimum spanning trees.",
   },
 ];

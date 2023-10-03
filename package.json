@@ -18,6 +18,7 @@
     "lottie-react": "^2.4.0",
     "maath": "^0.5.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.2",
     "react-responsive": "^9.0.2",

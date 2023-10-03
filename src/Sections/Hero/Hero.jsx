@@ -6,13 +6,11 @@ import { useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "./hero.css";
-import Navbar from "../../components/Navbar/Navbar.jsx";
 import About from "../About/About";
 import Teams from "../Teams/Teams";
 import Testimonials from "../Testimonials/Testimonials";
 import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
-import Footer from "../../components/Footer/Footer";
 
 // const Section = styled.div`
 //   background-repeat: no-repeat;
@@ -59,11 +57,11 @@ const Section = styled.div`
 const Container = styled.div`
   height: 90vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
-  justify-content:space-between;
-  margin-top:100px;
-  padding:9% 14% ;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 9% 14%;
   @media only screen and (max-width: 1030px) {
     width: 100%;
     height: 100vh;
@@ -80,23 +78,21 @@ const Left = styled.div`
   justify-content: center;
   @media only screen and (max-width: 768px) {
     flex: 1;
-    
   }
   @media only screen and (max-width: 1030px) {
     flex: 1;
-    
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     flex: 1;
+    width: 50%;
   }
 `;
 
 const Title = styled.h1`
   font-size: 40px;
-  font-weight:700;
-  
+  font-weight: 700;
 
-  @media only screen and (max-width: 768px) {  
+  @media only screen and (max-width: 768px) {
     font-size: 40px;
   }
   @media only screen and (max-width: 1030px) {
@@ -108,34 +104,32 @@ const Title = styled.h1`
 `;
 
 const WhatWeDo = styled.div`
-@media only screen and (min-width: 1030px) and (max-width: 1400px) {
-  font-size: 50px;
-}
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    font-size: 50px;
+  }
 `;
 
 const Subtitle = styled.p`
-font-size: 84px;
-font-weight: bold;
-background: #3530cf;
-background: repeating-radial-gradient(
-  circle farthest-side at center center,
-  #3530cf 0%,
-  #44cfcf 100%
-);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-@media only screen and (max-width: 768px) {
-  font-size: 40px;
-}
-}
-@media only screen and (max-width: 1030px) {
-  
-  font-size: 50px;
-  
-}
-@media only screen and (min-width: 1030px) and (max-width: 1400px) {
-  font-size: 50px;
-}
+  font-size: 84px;
+  font-weight: bold;
+  background: #3530cf;
+  background: repeating-radial-gradient(
+    circle farthest-side at center center,
+    #3530cf 0%,
+    #44cfcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media only screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    font-size: 50px;
+  }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    font-size: 50px;
+  }
 `;
 
 const Desc = styled.p`
@@ -151,15 +145,14 @@ const Desc = styled.p`
 const ShortDesc = styled.p`
   font-size: 16px;
   color: lightgray;
-  padding-top:4px;
-  
+  padding-top: 4px;
+
   @media only screen and (max-width: 1030px) {
     font-size: 16px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 24px;
   }
- 
 `;
 
 const Right = styled.div`
@@ -167,11 +160,11 @@ const Right = styled.div`
   justify-content: center;
   position: relative;
   @media only screen and (max-width: 1030px) {
-    display:none;
+    display: none;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-      flex: 1; 
-      
+    flex: 1;
+    width: 50%;
   }
 `;
 
@@ -185,9 +178,9 @@ const Img = styled.iframe`
   left: 0;
   right: 0;
   margin: auto;
-  ${"" /* animation: animate 2s infinite ease alternate; */}
-
-  // @media only screen and (max-width: 768px) {
+  ${
+    "" /* animation: animate 2s infinite ease alternate; */
+  }// @media only screen and (max-width: 768px) {
   //   width: 300px;
   //   height: 300px;
   // }
@@ -203,7 +196,6 @@ const Hero = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>
@@ -235,7 +227,6 @@ const Hero = () => {
       <Events />
       <Testimonials />
       <Contact />
-      <Footer />
     </>
   );
 };
