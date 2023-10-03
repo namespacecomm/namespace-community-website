@@ -66,13 +66,27 @@ const NavbarLink = styled(Link)`
     font-weight: bold;
   }
 `;
-
+const LogoLink = styled(Link)`
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  :hover{
+    color:deepskyblue;
+  }
+  &.active {
+    color: #3a60cf;
+    font-weight: bold;
+  }
+`;
 const NavbarLinkExtended = styled(Link)`
   color: white;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+  :hover{
+    color:deepskyblue;
+  }
 `;
 
 const Logo = styled.img`
@@ -141,7 +155,7 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLink to="/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
+        <LogoLink to="/"><Logo src="./img/logo2.png"></Logo></LogoLink>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavLinks>
             <NavbarLink
