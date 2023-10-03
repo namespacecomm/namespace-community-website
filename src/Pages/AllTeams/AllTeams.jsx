@@ -1,9 +1,7 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -50,11 +48,9 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
-
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <div className=" px-6 py-10 ">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
@@ -88,6 +84,7 @@ function AllTeams() {
                 {allmembers.map((member) => {
                   return (
                     <TeamCard
+                      key={member.name}
                       image={member.image}
                       name={member.name}
                       position={member.position}
@@ -103,7 +100,6 @@ function AllTeams() {
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 }

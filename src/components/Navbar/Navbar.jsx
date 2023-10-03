@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { color } from "framer-motion";
+
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -10,13 +12,13 @@ const NavbarContainer = styled.nav`
   background-color: #010116;
   display: flex;
   z-index: 99999999;
-  padding: 15px 5px;
+  padding: 5px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   @media (min-width: 900px) {
-    height: 80px;
+    height: 90px;
   }
 `;
 
@@ -61,6 +63,13 @@ const NavbarLink = styled(Link)`
      {
       display: none;
     }
+  }
+  :hover {
+    color: deepskyblue;
+  }
+  &.active {
+    color: #3a60cf;
+    font-weight: bold;
   }
 `;
 
@@ -117,15 +126,28 @@ const Button = styled.button`
     margin: 17px 10px 10px 5px;
     ${"" /* display: none; */}
   }
+  :hover {
+    -webkit-box-shadow: 0 0 10px cyan;
+    box-shadow: 0 0 10px cyan;
+  }
 `;
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
+  const [activeNavLink, setActiveNavLink] = useState(null);
+
+  const location = useLocation();
+
+  React.useEffect(() => {
+    setExtendNavbar(false);
+    setActiveNavLink(location.pathname);
+  }, [location]);
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
+
           <Logo src="./img/logo2.png"></Logo>
           {/* <NavbarLink to="/">
             <Logo src="./img/logo2.png"></Logo>
@@ -138,6 +160,49 @@ function Navbar() {
             <NavbarLink to="/team">Team</NavbarLink>
             <NavbarLink to="/resources">Resources</NavbarLink>
             <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
+              
+          <NavbarLink to="/">
+            <Logo src="./img/logo2.png"></Logo>
+          </NavbarLink>
+          <NavLinks>
+            <NavbarLink
+              to="/projects"
+              // onClick={handlememu}
+              className={activeNavLink === "/projects" ? "active" : ""}
+            >
+              Projects
+            </NavbarLink>
+            <NavbarLink
+              to="/events"
+              className={activeNavLink === "/events" ? "active" : ""}
+            >
+              Events
+            </NavbarLink>
+            <NavbarLink
+              to="/programs"
+              className={activeNavLink === "/programs" ? "active" : ""}
+            >
+              Programs
+            </NavbarLink>
+            <NavbarLink
+              to="/team"
+              className={activeNavLink === "/team" ? "active" : ""}
+            >
+              Team
+            </NavbarLink>
+            <NavbarLink
+              to="/resources"
+              className={activeNavLink === "/resources" ? "active" : ""}
+            >
+              Resources
+            </NavbarLink>
+            <NavbarLink
+              to="http://blog.nsccbpit.tech/"
+              target="_blank"
+              className={
+                activeNavLink === "/http://blog.nsccbpit.tech/" ? "active" : ""
+              }
+            >
               Blog
             </NavbarLink>
           </NavLinks>

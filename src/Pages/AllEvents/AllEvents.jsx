@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Gallery from "../../components/Gallery/Gallery";
 import { Galleryimages } from "../../constants/constants";
 import { PastEvents } from "../../constants/eventsConstants";
 import EventCard from "../../utils/EventCard";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -51,7 +49,6 @@ function AllEvents() {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <div className=" px-6 py-10 mx-auto">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
@@ -88,11 +85,12 @@ function AllEvents() {
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
             Past Events
           </h2>
-          <div class="px-5 mx-auto flex flex-wrap">
+          <div className="px-5 mx-auto flex flex-wrap">
             <div className="grid grid-cols-1 gap-6 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4 xl:gap-3">
               {PastEvents.map((event) => {
                 return (
                   <EventCard
+                    key={event.name}
                     name={event.name}
                     date={event.date}
                     img={event.image}
@@ -103,7 +101,6 @@ function AllEvents() {
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 }

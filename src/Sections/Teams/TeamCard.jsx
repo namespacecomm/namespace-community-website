@@ -7,6 +7,11 @@ const CardWrapper = styled.div`
   height: 350px;
   position: relative;
   perspective: 1000px;
+  transition:transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 350px;
@@ -104,7 +109,7 @@ export default TeamCard;
    <Card>
         <CardFront>
           <img
-            classNameName="w-40 h-40 rounded-full mb-3 shadow-lg"
+            className="w-40 h-40 rounded-full mb-3 shadow-lg"
             src={image}
             alt="Bonnie image"
           />
@@ -112,10 +117,10 @@ export default TeamCard;
           <CardSubtitle>{position}</CardSubtitle>
           <IconWrapper>
             <IconLink href={github}>
-              <i classNameName="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </IconLink>
             <IconLink href={linkedin}>
-              <i classNameName="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </IconLink>
           </IconWrapper>
         </CardFront>
@@ -123,21 +128,21 @@ export default TeamCard;
 }*/
 
 /*{
-   <div classNameName="mb-12 lg:mb-5 hover:scale-110 cursor-pointer">
+   <div className="mb-12 lg:mb-5 hover:scale-110 cursor-pointer">
       <img
-        classNameName="rounded-lg shadow-lg mb-6 mx-auto object-cover"
+        className="rounded-lg shadow-lg mb-6 mx-auto object-cover"
         src={image}
         alt="avatar"
         style={{ width: "150px" }}
       />
-      <h5 classNameNameName="text-lg font-bold mb-4">{name}</h5>
-      <p classNameName="mb-6">{position}</p>
-      <ul classNameName="list-inside flex mx-auto justify-center">
-        <a href={github} classNameName="px-2">
+      <h5 className="text-lg font-bold mb-4">{name}</h5>
+      <p className="mb-6">{position}</p>
+      <ul className="list-inside flex mx-auto justify-center">
+        <a href={github} className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            classNameName="w-4 h-4 text-white-600 hover:text-blue-600"
+            className="w-4 h-4 text-white-600 hover:text-blue-600"
           >
             <path
               fill="currentColor"
@@ -145,11 +150,11 @@ export default TeamCard;
             />
           </svg>
         </a>
-        <a href="#!" classNameName="px-2">
+        <a href="#!" className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            classNameName="w-4 h-4 text-blue-600"
+            className="w-4 h-4 text-blue-600"
           >
             <path
               fill="currentColor"
@@ -157,11 +162,11 @@ export default TeamCard;
             />
           </svg>
         </a> 
-        <a href={linkedin} classNameName="px-2">
+        <a href={linkedin} className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            classNameName="w-4 h-4 text-white-600 hover:text-blue-600"
+            className="w-4 h-4 text-white-600 hover:text-blue-600"
           >
             <path
               fill="currentColor"
@@ -174,25 +179,25 @@ export default TeamCard;
 }*/
 
 /*{
-   <div classNameName="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
-      <div classNameName="flex flex-col items-center p-5">
+   <div className="mb-5 w-full max-w-sm bg-slate-700 rounded-lg shadow text-white hover:scale-105 cursor-pointer">
+      <div className="flex flex-col items-center p-5">
         <img
-          classNameName="w-40 h-40 rounded-full mb-3 shadow-lg"
+          className="w-40 h-40 rounded-full mb-3 shadow-lg"
           src={image}
           alt="Bonnie image"
         />
-        <h5 classNameName="mb-1 text-xl font-medium text-white">
+        <h5 className="mb-1 text-xl font-medium text-white">
           {name}
         </h5>
-        <span classNameName="text-sm text-gray-500 dark:text-gray-400">
+        <span className="text-sm text-gray-500 dark:text-gray-400">
           {position}
         </span>
-        <div classNameName="flex mt-4 space-x-3 md:mt-6">
-        <a href={github} classNameName="px-2">
+        <div className="flex mt-4 space-x-3 md:mt-6">
+        <a href={github} className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            classNameName="w-4 h-4 text-white-600 hover:text-blue-600"
+            className="w-4 h-4 text-white-600 hover:text-blue-600"
           >
             <path
               fill="currentColor"
@@ -200,11 +205,11 @@ export default TeamCard;
             />
           </svg>
         </a>
-        <a href={linkedin} classNameName="px-2">
+        <a href={linkedin} className="px-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            classNameName="w-4 h-4 text-white-600 hover:text-blue-600"
+            className="w-4 h-4 text-white-600 hover:text-blue-600"
           >
             <path
               fill="currentColor"
@@ -222,7 +227,7 @@ export default TeamCard;
       <Card>
         <CardFront>
           <img
-            classNameName="w-40 h-40 rounded-full mb-3 shadow-lg"
+            className="w-40 h-40 rounded-full mb-3 shadow-lg"
             src={image}
             alt="Bonnie image"
           />
@@ -230,10 +235,10 @@ export default TeamCard;
           <CardSubtitle>{position}</CardSubtitle>
           <IconWrapper>
             <IconLink href={github}>
-              <i classNameName="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </IconLink>
             <IconLink href={linkedin}>
-              <i classNameName="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </IconLink>
           </IconWrapper>
         </CardFront>
