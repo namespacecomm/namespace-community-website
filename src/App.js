@@ -32,6 +32,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ReactNative from "./Pages/AllResources/ReactNative";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -65,6 +66,7 @@ function App() {
               <Route path="arvr" element={<ARVR />} />
               <Route path="android" element={<Android />} />
               <Route path="flutter" element={<Flutter />} />
+              <Route path="reactnative" element={<ReactNative />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
               <Route path="css" element={<CSS />} />
