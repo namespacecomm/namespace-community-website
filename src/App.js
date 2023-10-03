@@ -27,6 +27,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -65,6 +66,7 @@ function App() {
               <Route path="css" element={ <CSS /> } />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='nlp' element={ <NLP /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='css-framework' element={ <CSSFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
