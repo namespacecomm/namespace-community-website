@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
-import { ResourceMain } from "../../constants/ResourceMain";
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import { programsList } from "../../constants/programs";
 
@@ -59,7 +57,7 @@ function Programs() {
                             <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-1 lg:grid-cols-1">
                                 {programsList.map((item) => {
                                     return (
-                                        <div className="overflow-hidden bg-white rounded shadow-lg text-black p-4">
+                                        <div className="overflow-hidden bg-white rounded shadow-lg text-black p-4" key={item.name}>
                                             <div className="text-center text-xl md:text-2xl lg:text-5xl font-semibold mb-12 mt-8">{item.name}</div>
                                             
                                             <div className="program-content flex flex-col md:flex-row">

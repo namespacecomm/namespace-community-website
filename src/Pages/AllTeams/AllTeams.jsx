@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
-import { allmembers, members } from "../../constants/constants";
+import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
 import Footer from "../../components/Footer/Footer";
 
@@ -50,13 +50,6 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
-  const [activeFilter, setActiveFilter] = useState("");
-  const [filterTeam, setFilterTeam] = useState(allmembers);
-
-  const handleTeamFilter = (item) => {
-    setActiveFilter(item);
-    setFilterTeam(allmembers.filter((member) => member.team.includes(item)));
-  };
 
   return (
     <>
@@ -92,9 +85,10 @@ function AllTeams() {
 
             <div className="flex justify-center items-center">
               <div className="my-grid">
-                {filterTeam.map((member) => {
+                {allmembers.map((member) => {
                   return (
                     <TeamCard
+                      key={member.name}
                       image={member.image}
                       name={member.name}
                       position={member.position}
