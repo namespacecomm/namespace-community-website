@@ -69,7 +69,6 @@ function App() {
               <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
-              <Route path="mongodb" element={<MongoDB />} />
               <Route path="js" element={<Javascript />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route
@@ -83,6 +82,7 @@ function App() {
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="Blockchain" element={<Blockchain />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="mongodb" element={<MongoDB />} />
             </Route>
           </Routes>
           <Footer />
