@@ -37,6 +37,7 @@ const Title = styled.h1`
   font-size: calc(1rem + 1.5vw);
   font-style: italic;
   margin-top: 1.5rem;
+  border-bottom:3px solid #F5F5F5;
   position: relative;
   &::before {
     content: "";
@@ -124,39 +125,47 @@ const Testimonials = () => {
           {testimonials.map((person) => {
             return (
               <div
-                className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4"
+                className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4 h-[38rem]"
                 key={person.name}
               >
-                <figure className="h-80 mx-auto">
-                  <svg
-                    className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-                    viewBox="0 0 24 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <blockquote>
-                    <p className="dark:text-white text-justify">
-                      " {person.text} "
-                    </p>
-                  </blockquote>
-                  <figcaption className="flex items-center justify-center mt-6 space-x-9">
-                    <img
-                      className="w-10 h-10 rounded-full"
-                      src={person.image}
-                      alt={`Testimonial author ${person.name}`}
-                    />
-                    <div>
-                      <div className="dark:text-white">{person.name}</div>
-                      <div className="dark:text-gray-400">
-                        {person.position}
+                <figure className="h-full mx-auto">
+                  <div className="h-[10%]">  
+                    <svg
+                      className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div className="h-[70%] overflow-hidden">
+                    <blockquote>
+                      <p className="dark:text-white text-justify">
+                        " {person.text} "
+                      </p>
+                    </blockquote>
+                  </div>
+                  <div className="h-[20%]">
+
+                  
+                    <figcaption className="flex items-center justify-center mt-6 space-x-9">
+                      <img
+                        className="w-10 h-10 rounded-full"
+                        src={person.image}
+                        alt={`Testimonial author ${person.name}`}
+                      />
+                      <div>
+                        <div className="dark:text-white">{person.name}</div>
+                        <div className="dark:text-gray-400">
+                          {person.position}
+                        </div>
                       </div>
-                    </div>
-                  </figcaption>
+                    </figcaption>
+                  </div>
                 </figure>
               </div>
             );

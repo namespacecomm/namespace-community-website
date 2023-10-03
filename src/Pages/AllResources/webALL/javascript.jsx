@@ -76,18 +76,18 @@ export const Javascript = () => {
       <Section>
         <Navbar />
         <Container>
-          <section class="text-white body-font">
-            <div class="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
+          <section className="text-white body-font">
+            <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
-                class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
+                className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="hero"
                 src="https://img.freepik.com/free-vector/javascript-frameworks-concept-illustration_114360-743.jpg?w=1060&t=st=1696096333~exp=1696096933~hmac=edaa5f833257356433e278024ea7c526b8820db7887da3a6e2d602d3c0239294"
               />
-              <div class="text-center lg:w-full w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+              <div className="text-center lg:w-full w-full">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                   JavaScript
                 </h1>
-                <p class="mb-8 leading-relaxed text-justify">
+                <p className="mb-8 leading-relaxed text-justify">
                   JavaScript (JS) is a lightweight interpreted (or just-in-time
                   compiled) programming language with first-class functions.
                   While it is most well-known as the scripting language for Web
@@ -106,23 +106,22 @@ export const Javascript = () => {
               </div>
             </div>
             {/* <-------------------------------Topics Section ----------------------------------------------> */}
-            <h2 class="mb-2 text-lg font-semiboldtext-white">
+            <h2 className="mb-2 text-lg font-semibold text-white">
               Topics you need to cover:
             </h2>
-            <div class="flex flex-wrap m-2">
+            <div className="flex flex-wrap m-2">
               {topics.map((front) => {
                 return (
-                  <div class="p-2 lg:w-max md:w-1/2 ">
-                    <div class="h-full flex items-center border-gray-200 border rounded-lg">
-                      <div class="flex-row flex gap-16">
-                        <h2 class="text-white title-font font-bold text-xl">
-                          {front.title}
-                        </h2>
+                  <div className="p-2 lg:w-max md:w-1/2" key={front.title}>
+                    <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
+                      <div className="flex items-center gap-3">
+                      <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
                         <input
                           type="checkbox"
                           id={front.storage}
                           checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
+                          className="w-4 h-4"
                         />
                       </div>
                     </div>
@@ -131,41 +130,37 @@ export const Javascript = () => {
               })}
             </div>
             {/* <-----------------------------------------------RESOURCES SECTION---------------------------------------------------> */}
-            <section class="text-white body-font">
-              <div class=" px-0 py-14 mx-auto">
-                <div class="flex flex-col text-left w-full mb-2">
-                  <h1 class="text-xl font-bold title-font mb-4 text-white-900 tracking-widest">
+            <section className="text-white body-font">
+              <div className=" px-0 py-14 mx-auto">
+                <div className="flex flex-col text-left w-full mb-2">
+                  <h1 className="text-xl font-bold title-font mb-4 text-white-900 tracking-widest">
                     Resources
                   </h1>
                 </div>
-                <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <div class="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out">
-                        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
+                        <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
-                            class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                            className="flex-shrink-0 rounded-lg w-48 h-48 object-contain sm:mb-0 mb-4"
                             src={resource.image}
                           />
-                          <div class="text-left flex-grow sm:pl-8">
+                          <div className="text-left flex-grow sm:pl-8">
                             <Link to={resource.link} target={"_blank"}>
-                              <h2 class="title-font font-medium text-xl pb-1 text-white underline underline-offset-2">
+                              <h2 className="title-font font-medium text-xl pb-1 text-white underline underline-offset-2">
                                 {resource.title}
                               </h2>
                             </Link>
 
-                            <h3 class="text-white mb-3">{resource.type}</h3>
-                            <a href={resource.link} class="mb-4">
-                              Link
-                            </a>
-                            <span class="inline-flex"></span>
+                            <h3 className="text-white mb-3">{resource.type}</h3>
                           </div>
                         </div>
-                      </div>
+                      </li>
                     );
                   })}
-                </div>
+                </ul>
               </div>
             </section>
           </section>
@@ -245,6 +240,18 @@ const resources = [
       "https://i.ytimg.com/vi/2md4HQNRqJA/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDUNbouTmTaBmovUWv0Qd3My_hCLw",
     type: "Youtube Video",
     link: "https://www.youtube.com/watch?v=sscX432bMZo&pp=ygUKamF2YXNjcmlwdA%3D%3D",
+  },
+  {
+    title: "JavaScript in 100 seconds",
+    image: "https://i.ytimg.com/vi_webp/DHjqpvDnNGE/maxresdefault.webp",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
+  },
+  {
+    title: "100+ JavaScript Concepts you Need to Know",
+    image: "https://i.ytimg.com/vi/lkIFF4maKMU/maxresdefault.jpg",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=lkIFF4maKMU",
   },
 ];
 

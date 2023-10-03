@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Section = styled.footer`
@@ -80,9 +81,14 @@ const CenterText = styled.div`
 `;
 
 const Footer = () => {
+  const [year, setYear] = useState(2023);
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  },[])
+
   return (
     <Section>
-      <LeftText>© 2023 Newton School Coding Club BPIT</LeftText>
+      <LeftText>© {year} Newton School Coding Club BPIT</LeftText>
 
       <CenterText>
         Made with ❤️ and 🧠 by{" "}

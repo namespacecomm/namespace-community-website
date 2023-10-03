@@ -128,7 +128,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
     name: "Pawas Goyal",
-    position: "Technical Head",
+    position: "Technical Council",
     github: "https://github.com/pawas108ram",
     linkedin: "https://www.linkedin.com/in/pawas-goyal/",
     instagram: "https://www.instagram.com/pawas_licht03/",
@@ -139,7 +139,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
     name: "Rishav Raj",
-    position: "Technical Co-Head",
+    position: "Technical Council",
     github: "https://github.com/Rishav-01",
     linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
     instagram: "https://www.instagram.com/rishav_th9/",
@@ -149,7 +149,7 @@ export const members = [
   {
     name: "Khushi Kulshreshtha",
     image: "https://i.postimg.cc/66vvXLD7/IMG-20230124-161335.jpg",
-    position: "Content Head",
+    position: "Senior Council",
     github: "khushi1712 (Khushi Kulshreshtha) (github.com)",
     linkedin: "https://www.linkedin.com/in/khushi-kulshreshtha-79439422b",
     instagram: "https://www.instagram.com/Khushi.kulshreshtha",
@@ -159,7 +159,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658902-912d6d6c-6790-41ee-b65b-5ccd4e2eea40.jpeg",
     name: "Raj Verma",
-    position: "Content Co-Head",
+    position: "Senior Council",
     github: "https://github.com/raj18verma",
     linkedIn: "https://www.linkedin.com/in/raj-verma-a68356255/",
     instagram: "https://www.instagram.com/raj18verma/",
@@ -170,7 +170,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658980-c59934e8-c9db-4a9d-82a3-93ebb76c5156.jpg",
     name: "Ayush Jaswal",
-    position: "Graphics Head",
+    position: "Senior Council",
     github: "https://github.com/ayushjaswal",
     linkedin: "https://www.linkedin.com/in/ayushjaswal",
     instagram: "https://instagram.com/ayujaswal?igshid=ZDdkNTZiNTM=",
@@ -180,7 +180,7 @@ export const members = [
   {
     name: "Vibhuti Gupta",
     image: "https://i.postimg.cc/zv4m8YMQ/IMG-20230507-WA0038.jpg",
-    position: "Graphics Co-Head",
+    position: "Senior Council",
     github: "https://github.com/Vibhuti270",
     linkedin: "https://www.linkedin.com/in/vibhuti-gupta-ab841522b",
     instagram: "https://www.instagram.com/N/A",
@@ -191,7 +191,7 @@ export const members = [
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141782/Tanish_uevbku.jpg",
     name: "Tanish Saini",
-    position: "Marketing Head",
+    position: "Senior Council",
     github: "https://github.com/TaniKroos",
     linkedIn: "https://www.linkedin.com/in/tanish-saini-90410822a/",
     instagram: "",
@@ -201,7 +201,7 @@ export const members = [
   {
     name: "Lavanshi Bansal",
     image: "./img/Lavanshi.jpg",
-    position: "Marketing Co-Head",
+    position: "Senior Council",
     github: "https://github.com/lavanshi295",
     linkedin: "https://www.linkedin.com/in/lavanshi-bansal-52525722a",
     instagram: "https://www.instagram.com/its.girlygirl_",
@@ -212,7 +212,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236659081-d0dff70f-522d-4bad-bb67-2ab050ec8802.jpg",
     name: "Vaibhav Bhardwaj",
-    position: "Logistics Head",
+    position: "Senior Council",
     github: "https://github.com/vaibhavx42",
     linkedIn: "https://www.linkedin.com/in/bhardwajvaibhav42/",
     instagram: "null",
@@ -223,7 +223,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236659017-3bdddc9a-1494-4d65-b48d-1a0fa07596df.jpg",
     name: "Gracy Dhamija",
-    position: "Social Media Head",
+    position: "Senior Council",
     github: "https://github.com/gracy27",
     linkedIn: " https://www.linkedin.com/in/gracy-dhamija-4b2261239     ",
     instagram: "https://instagram.com/dhamijagracy?igshid=ZDdkNTZiNTM=",
@@ -234,7 +234,7 @@ export const members = [
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143933/WhatsApp_Image_2023-08-27_at_19.15.17_xg2f0b.jpg",
     name: "Sneha Nautiyal",
-    position: "Social Media Co-Head",
+    position: "Senior Council",
     github: "https://github.com/Klynweto",
     linkedin: "https://www.linkedin.com/in/sneha-nautiyal-8b8a13242",
     instagram: "https://www.instagram.com/klynweto",

@@ -41,8 +41,8 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-size: 50px;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 600;
+  
 `;
 
 const Form = styled.form`
@@ -128,11 +128,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(!name || !email || !message) {
+    if (!name || !email || !message) {
       setSuccess(false);
       setFormMessage("Fields cannot be empty :(");
       return;
     }
+
     emailjs
       .sendForm(
         "nscc_website_contactpage",
@@ -145,6 +146,14 @@ const Contact = () => {
           console.log(result.text);
           setSuccess(true);
           setFormMessage("Your message has been sent. We'll get back to you soon :)");
+          setName('');
+          setEmail('');
+          setMessage('');
+
+          setTimeout(() => {
+            setSuccess(null);
+            setFormMessage('');
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -167,7 +176,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <Button type="submit">Send</Button>
-            {formMessage}
+            { success && formMessage}
           </Form>
         </Left>
         <Right>
