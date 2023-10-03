@@ -11,6 +11,7 @@ import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
 import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import { Nodejs } from "./Pages/AllResources/webALL/nodejs";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -77,6 +78,7 @@ function App() {
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
               <Route path='nlp' element={ <NLP /> } />
+              <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route path="frontend-framework" element={<FrontEndFramework />} />
