@@ -16,6 +16,7 @@ import Programs from "./Pages/Programs/Programs";
 import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
+import { DeepLearning } from "./Pages/AllResources/Deeplearning";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -47,6 +48,7 @@ function App() {
               <Route path='aiml' element={<AIML/>} />
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='deeplearning' element={ <DeepLearning/>} />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='*' element={ <NotFound /> } />
