@@ -9,8 +9,20 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
+  ${
+    "" /* background-color: rgb(9, 9, 121);
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    262deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 1%
+  ); */
   }
   background-color: #010116;
+  ${
+    "" /* background-repeat: no-repeat;
+    background: no-repeat url("./img/bg.jpg"); */
+  }
 `;
 
 const Container = styled.div`
@@ -26,40 +38,39 @@ const Container = styled.div`
   }
 `;
 
-export const Github = () => {
-  const [githubtopicsChecked, setGithubTopicsChecked] = useState({
-    opensource: false,
-    git: false,
-    gitHub: false,
-    gitfork: false,
-    gitclone: false,
-    remoteorigin: false,
-    gitupstream: false,
-    branches: false,
-    commit: false,
-    gitpush: false,
-    pullrequests: false,
-    resolvingconflits: false,
+export const PHP = () => {
+  const [phptopicsChecked, setPhpTopicsChecked] = useState({
+    variablesdatatypes: false,
+    phpoperators: false,
+    phpconditional: false,
+    phploops: false,
+    phpfunctions: false,
+    phparrays: false,
+    phpforms: false,
+    includerequire: false,
+    phpcookiessessions: false,
+    phpfilehandling: false,
+    phpoops: false,
+    phpmysql: false,
+    phpxmp: false,
+    phpajax: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setGithubTopicsChecked({
-      ...githubtopicsChecked,
-      [topic]: !githubtopicsChecked[topic],
+    setPhpTopicsChecked({
+      ...phptopicsChecked,
+      [topic]: !phptopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "githubtopicsChecked",
-      JSON.stringify(githubtopicsChecked)
-    );
-  }, [githubtopicsChecked]);
+    localStorage.setItem("phptopicsChecked", JSON.stringify(phptopicsChecked));
+  }, [phptopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("githubtopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("phptopicsChecked");
     if (storedTopicsChecked) {
-      setGithubTopicsChecked(JSON.parse(storedTopicsChecked));
+      setPhpTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -72,29 +83,27 @@ export const Github = () => {
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
-                src="https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
+                alt="css"
+                src="https://img.freepik.com/premium-photo/browser-window-with-php-programming-language-icon-code-elements-background-3d_327483-939.jpg?size=626&ext=jpg&ga=GA1.1.613098439.1696317950&semt=sph"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  Github: Cloud based version control service
+                  PHP: Hypertext PreProcessor
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Git is a specific open-source version control system created
-                  by Linus Torvalds in 2005. Specifically, Git is a distributed
-                  version control system, which means that the entire codebase
-                  and history is available on every developer’s computer, which
-                  allows for easy branching and merging. According to a Stack
-                  Overflow developer survey, over 87% of developers use Git.
-                  GitHub essentials are:Repositories, Branches, Commits, Pull
-                  Requests, Git (the version control software GitHub is built
-                  on).
-                  <br />
-                  It makes it easy for developers to share code files and
-                  collaborate with fellow developers on open-source projects.
-                  GitHub also serves as a social networking site where
-                  developers can openly network, collaborate, and pitch their
-                  work.
+                  The PHP Hypertext Preprocessor (PHP) is a programming language
+                  that allows web developers to create dynamic content that
+                  interacts with databases. PHP is basically used for developing
+                  web based software applications. This tutorial helps you to
+                  build your base with PHP.PHP started out as a small open
+                  source project that evolved as more and more people found out
+                  how useful it was. Rasmus Lerdorf unleashed the first version
+                  of PHP way back in 1994. PHP is a MUST for students and
+                  working professionals to become a great Software Engineer
+                  specially when they are working in Web Development Domain.
+                  Before proceeding with this tutorial you should have at least
+                  basic understanding of computer programming, Internet,
+                  Database, and MySQL etc is very helpful.
                 </p>
               </div>
             </div>
@@ -117,7 +126,7 @@ export const Github = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={githubtopicsChecked[front.storage]}
+                          checked={phptopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -173,56 +182,73 @@ export const Github = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
-    image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
-    type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
-  },
-  {
-    title: "W3Schools - Git Tutorial",
+    title: "W3Schools - PHP Introduction",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://www.w3schools.com/git/",
+    link: "https://www.w3schools.com/php/php_intro.asp",
   },
   {
-    title: "Git for Beginners",
-    image: "https://i.ytimg.com/vi/vwj89i2FmG0/hq720.jpg",
+    title: "CSS Tutorial Full Course",
+    image:
+      "https://i.ytimg.com/vi/OK_JCtrrv-c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJFYYIVzU6x7-B_W7kDJtxUrUz4Q",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=vwj89i2FmG0&pp=ygUMZ2l0IHR1dG9yaWFs",
+    link: "https://www.youtube.com/watch?v=OK_JCtrrv-c",
   },
   {
-    title: "Complete Git and Github Tutorial",
-    image: "https://i.ytimg.com/vi/apGV9Kg7ics/hq720.jpg",
+    title: "Learn PHP in 100 Seconds",
+    image:
+      "https://i.ytimg.com/vi/a7_WFUlFS94/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXSNWkEq-Us989MAC6AeQmk_03UA",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=apGV9Kg7ics&pp=ygUPZ2l0aHViIHR1dG9yaWFs",
+    link: "https://www.youtube.com/watch?v=a7_WFUlFS94",
   },
   {
-    title: "Git Complete: The definitive, step-by-step guide to Git",
-    image: "https://img-c.udemycdn.com/course/240x135/221674_1411_4.jpg",
-    type: "Course",
-    link: "https://www.udemy.com/course/git-complete/",
+    title: "PHP Glossary",
+    image:
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    type: "Documentation",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/PHP",
   },
   {
-    title: "Git Going Fast: One Hour Git Crash Course",
-    image: "https://img-c.udemycdn.com/course/240x135/221696_d05a_4.jpg",
+    title: "PHP in 15 Minutes",
+    image:
+      "https://i.ytimg.com/vi/ZdP0KM49IVk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZhwdXuPRa6T4jBRpQEur-cVdJvA",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=ZdP0KM49IVk",
+  },
+  {
+    title: "The PHP Handbook",
+    image: "https://flaviocopes.com/bootcamp.jpg",
+    type: "Documentation",
+    link: "https://flaviocopes.com/book/php/",
+  },
+  {
+    title: "Practical PHP: Master the Basics",
+    image: "https://img-b.udemycdn.com/course/240x135/130064_22b3_12.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/git-going-fast/",
+    link: "https://www.udemy.com/course/code-dynamic-websites/",
+  },
+  {
+    title: "Beginner PHP and MySQL Tutorial",
+    image: "https://img-b.udemycdn.com/course/240x135/9711_452b_8.jpg",
+    type: "Course",
+    link: "https://www.udemy.com/course/php-mysql-tutorial/",
   },
 ];
 
 const topics = [
-  { title: "Open source", storage: "opensource" },
-  { title: "Git", storage: "git" },
-  { title: "GitHub", storage: "gitHub" },
-  { title: "Git fork", storage: "gitfork" },
-  { title: "Git clone", storage: "gitclone" },
-  { title: "Remote origin", storage: "remoteorigin" },
-  { title: "Git upstream", storage: "gitupstream" },
-  { title: "Branches", storage: "branches" },
-  { title: "Commit", storage: "commit" },
-  { title: "Git push", storage: "gitpush" },
-  { title: "Pull requests", storage: "pullrequests" },
-  { title: "Resolving conflits", storage: "resolvingconflits" },
+  { title: "Variables & Data Types", storage: "variablesdatatypes" },
+  { title: "Operators", storage: "phpoperators" },
+  { title: "Conditional Statements", storage: "phpconditional" },
+  { title: "Loops", storage: "phploops" },
+  { title: "Functions", storage: "phpfunctions" },
+  { title: "Arrays", storage: "phparrays" },
+  { title: "Form Handling", storage: "phpforms" },
+  { title: "Include & Require", storage: "includerequire" },
+  { title: "Cookies & Sessions", storage: "phpcookiessessions" },
+  { title: "File Handling", storage: "phpfilehandling" },
+  { title: "OOP", storage: "phpoops" },
+  { title: "MySQL Database", storage: "phpmysql" },
+  { title: "PHP XMP", storage: "phpxmp" },
+  { title: "PHP AJAX", storage: "phpajax" },
 ];
