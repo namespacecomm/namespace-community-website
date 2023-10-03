@@ -37,40 +37,35 @@ const Container = styled.div`
   }
 `;
 
-export const HTML = () => {
-  const [htmltopicsChecked, setHtmlTopicsChecked] = useState({
-    htmlstructure: false,
-    htmlelements: false,
-    htmlattributes: false,
-    textformatting: false,
-    htmlimages: false,
-    htmllinks: false,
-    htmllists: false,
-    htmlforms: false,
-    semantichtml: false,
-    documentstructure: false,
-    htmlcomments: false,
-    devtools: false,
+export const DOCKER = () => {
+  const [jstopicsChecked, setJsTopicsChecked] = useState({
+    syntax: false,
+    dom: false,
+    fetch: false,
+    async: false,
+    event: false,
+    promises: false,
+    classes: false,
+    array: false,
+    hoisting: false,
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setHtmlTopicsChecked({
-      ...htmltopicsChecked,
-      [topic]: !htmltopicsChecked[topic],
+    setJsTopicsChecked({
+      ...jstopicsChecked,
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "htmltopicsChecked",
-      JSON.stringify(htmltopicsChecked)
-    );
-  }, [htmltopicsChecked]);
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
+  }, [jstopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setHtmlTopicsChecked(JSON.parse(storedTopicsChecked));
+      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -83,39 +78,33 @@ export const HTML = () => {
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="hero"
-                src="https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-1161.jpg?w=826&t=st=1696142260~exp=1696142860~hmac=0023559da96b5349b1452cf23667ac25b74a8e365a5d0b4074c1f9847b911e85"
+                src="https://img.freepik.com/free-vector/port-concept-illustration_114360-7335.jpg?w=1480&t=st=1696258059~exp=1696258659~hmac=449086836074036e755fbc9c803c7e04d489da420cab2125f416cc76e1ffbc9f"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  HTML: HyperText Markup Language
+                  DOCKER
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  HTML (HyperText Markup Language) is the most basic building
-                  block of the Web. It defines the meaning and structure of web
-                  content. Other technologies besides HTML are generally used to
-                  describe a web page's appearance/presentation (CSS) or
-                  functionality/behavior (JavaScript). "Hypertext" refers to
-                  links that connect web pages to one another, either within a
-                  single website or between websites. Links are a fundamental
-                  aspect of the Web. By uploading content to the Internet and
-                  linking it to pages created by other people, you become an
-                  active participant in the World Wide Web. HTML uses "markup"
-                  to annotate text, images, and other content for display in a
-                  Web browser. HTML markup includes special "elements" such as
-                  &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
-                  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
-                  &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
-                  &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
-                  &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;,
-                  &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;,
-                  &lt;ol&gt;, &lt;li&gt; and many others. An HTML element is set
-                  off from other text in a document by "tags", which consist of
-                  the element name surrounded by "&lt;" and "&gt;". The name of
-                  an element inside a tag is case-insensitive. That is, it can
-                  be written in uppercase, lowercase, or a mixture. For example,
-                  the &lt;title&gt; tag can be written as &lt;Title&gt;,
-                  &lt;TITLE&gt;, or in any other way. However, the convention
-                  and recommended practice are to write tags in lowercase.
+                  Docker is a platform that utilizes containers, lightweight and
+                  self-contained packages, to develop, package, and run
+                  applications consistently across different environments. It
+                  comprises components like Docker containers (isolated runtime
+                  instances), Docker images (snapshots of containers), a Docker
+                  Engine (core management tool), Dockerfiles (instructions for
+                  building images), Docker registries (storage and sharing), and
+                  Docker Compose (multi-container app management). Docker
+                  simplifies deployment, making it popular in DevOps for its
+                  consistent, portable, and efficient application management
+                  capabilities, although it's worth noting that alternative
+                  containerization technologies like Kubernetes and containerd
+                  also exist and can be used in conjunction with or instead of
+                  Docker, depending on specific needs. Docker's popularity has
+                  led to a vast ecosystem of pre-built images and tools that
+                  extend its functionality, making it easier to integrate Docker
+                  into various development and deployment workflows. It has
+                  become a standard tool for many software development and IT
+                  operations teams and is widely used in industries ranging from
+                  web development to data science.
                 </p>
               </div>
             </div>
@@ -138,7 +127,7 @@ export const HTML = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={htmltopicsChecked[front.storage]}
+                          checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -194,68 +183,79 @@ export const HTML = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
+    title: "DOCKER - Docs",
     image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+      "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
     type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    link: "https://docs.docker.com/",
   },
   {
-    title: "W3Schools - Introduction to HTML",
+    title: "DockerLabs - Getting Started with Docker",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+      "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
     type: "Documentation",
-    link: "https://www.w3schools.com/html/html_intro.asp",
+    link: "https://dockerlabs.collabnix.com/",
   },
   {
-    title: "HTML in 100 seconds",
-    image: "https://i.ytimg.com/vi_webp/ok-plXXHlWw/maxresdefault.webp",
+    title: "DOCKER in 100 seconds",
+    image: "https://i.ytimg.com/vi/Gjnup-PuquQ/maxresdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=ok-plXXHlWw",
+    link: "https://www.youtube.com/watch?v=Gjnup-PuquQ",
   },
   {
-    title: "HTML Tutorial for Beginners: HTML Crash Course",
-    image: "https://i.ytimg.com/vi/qz0aGYrrlhU/maxresdefault.jpg",
+    title: "Docker Tutorial for Beginners",
+    image: "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=qz0aGYrrlhU",
+    link: "https://www.youtube.com/watch?v=pTFZFxd4hOI",
   },
   {
-    title: "Learn HTML - Full Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi_webp/kUMe1FH4CHE/maxresdefault.webp",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=kUMe1FH4CHE",
+    title: "DOCKER - Cheat Sheet",
+    image:
+      "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
+    type: "Cheat Sheet",
+    link: "https://dockerlabs.collabnix.com/docker/cheatsheet/",
   },
   {
-    title: "The HTML Handbook",
-    image: "https://flaviocopes.com/bootcamp.jpg",
+    title: "The DOCKER Handbook",
+    image:
+      "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
     type: "Documentation",
-    link: "https://flaviocopes.com/book/html/",
+    link: "https://www.freecodecamp.org/news/the-docker-handbook/",
   },
   {
-    title: "Web Development by Doing:HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
-    type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    title: "Introduction to Docker",
+    image:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
   },
   {
-    title: "HTML for Beginners",
-    image: "https://img-c.udemycdn.com/course/240x135/59535_1f48_6.jpg",
+    title: "Docker for the Absolute Beginner - Hands On - DevOps",
+    image: "https://img-c.udemycdn.com/course/750x422/3490000_d298_2.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/hmtl5-training/",
+    link: "https://www.udemy.com/course/learn-docker/",
   },
 ];
 
 const topics = [
-  { title: "HTML Structure", storage: "htmlstructure" },
-  { title: "HTML Elements", storage: "htmlelements" },
-  { title: "Attributes", storage: "htmlattributes" },
-  { title: "Text Formatting", storage: "textformatting" },
-  { title: "Images", storage: "htmlimages" },
-  { title: "Links", storage: "htmllinks" },
-  { title: "Lists", storage: "htmllists" },
-  { title: "Forms", storage: "htmlforms" },
-  { title: "Semantic Elements", storage: "semantichtml" },
-  { title: "Headings and Document Structure", storage: "documentstructure" },
-  { title: "HTML Comments", storage: "htmlcomments" },
-  { title: "Browser Developer Tools", storage: "devtools" },
+  {
+    title: "Introduction to Containers",
+    storage: "introduction-to-containers",
+  },
+  { title: "Docker Architecture", storage: "docker-architecture" },
+  { title: "Docker Installation", storage: "install-docker" },
+  { title: "Docker Images", storage: "docker-images" },
+  { title: "Docker Containers", storage: "docker-containers" },
+  { title: "Docker Compose", storage: "docekr-compose" },
+  { title: "Container Orchestration", storage: "container-orchestration" },
+  { title: "Docker Networking", storage: "docker-networking" },
+  { title: "Docker Volumes and Storage", storage: "docker-volume-storage" },
+  { title: "Docker Security", storage: "docker-security" },
+  {
+    title: "Docker Registry and Repository",
+    storage: "docker-registry-repository",
+  },
+  { title: "Docker in CI/CD", storage: "docker-ci-cd" },
+  { title: "Monitoring and Logging", storage: "docker-monitor-log" },
+  { title: "Scaling and Load Balancing", storage: "docker-scale-load-balance" },
 ];

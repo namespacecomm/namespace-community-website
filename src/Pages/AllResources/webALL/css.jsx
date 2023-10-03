@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -37,85 +38,77 @@ const Container = styled.div`
   }
 `;
 
-export const HTML = () => {
-  const [htmltopicsChecked, setHtmlTopicsChecked] = useState({
-    htmlstructure: false,
-    htmlelements: false,
-    htmlattributes: false,
-    textformatting: false,
-    htmlimages: false,
-    htmllinks: false,
-    htmllists: false,
-    htmlforms: false,
-    semantichtml: false,
-    documentstructure: false,
-    htmlcomments: false,
-    devtools: false,
+export const CSS = () => {
+  const [csstopicsChecked, setCssTopicsChecked] = useState({
+    boxmodel: false,
+    cssselectors: false,
+    cascadespeficity: false,
+    cssinheritance: false,
+    csscolors: false,
+    csssizing: false,
+    layoutgrid: false,
+    flexbox: false,
+    psuedoclasseselements: false,
+    cssborder: false,
+    csszindex: false,
+    gradientanimation: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setHtmlTopicsChecked({
-      ...htmltopicsChecked,
-      [topic]: !htmltopicsChecked[topic],
+    setCssTopicsChecked({
+      ...csstopicsChecked,
+      [topic]: !csstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "htmltopicsChecked",
-      JSON.stringify(htmltopicsChecked)
-    );
-  }, [htmltopicsChecked]);
+    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
+  }, [csstopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setHtmlTopicsChecked(JSON.parse(storedTopicsChecked));
+      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
   return (
     <>
       <Section>
+        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
-                src="https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-1161.jpg?w=826&t=st=1696142260~exp=1696142860~hmac=0023559da96b5349b1452cf23667ac25b74a8e365a5d0b4074c1f9847b911e85"
+                alt="css"
+                src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-2323.jpg?w=740&t=st=1696318168~exp=1696318768~hmac=a3467593274ad7d563a0303bb9a0c3bc8b660a580f94bbc3498f4677eae72213"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  HTML: HyperText Markup Language
+                  CSS: Cascading Style Sheets
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  HTML (HyperText Markup Language) is the most basic building
-                  block of the Web. It defines the meaning and structure of web
-                  content. Other technologies besides HTML are generally used to
-                  describe a web page's appearance/presentation (CSS) or
-                  functionality/behavior (JavaScript). "Hypertext" refers to
-                  links that connect web pages to one another, either within a
-                  single website or between websites. Links are a fundamental
-                  aspect of the Web. By uploading content to the Internet and
-                  linking it to pages created by other people, you become an
-                  active participant in the World Wide Web. HTML uses "markup"
-                  to annotate text, images, and other content for display in a
-                  Web browser. HTML markup includes special "elements" such as
-                  &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
-                  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
-                  &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
-                  &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
-                  &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;,
-                  &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;,
-                  &lt;ol&gt;, &lt;li&gt; and many others. An HTML element is set
-                  off from other text in a document by "tags", which consist of
-                  the element name surrounded by "&lt;" and "&gt;". The name of
-                  an element inside a tag is case-insensitive. That is, it can
-                  be written in uppercase, lowercase, or a mixture. For example,
-                  the &lt;title&gt; tag can be written as &lt;Title&gt;,
-                  &lt;TITLE&gt;, or in any other way. However, the convention
-                  and recommended practice are to write tags in lowercase.
+                  Cascading Style Sheets (CSS) is a stylesheet language used to
+                  describe the presentation of a document written in HTML or XML
+                  (including XML dialects such as SVG, MathML or XHTML). CSS
+                  describes how elements should be rendered on screen, on paper,
+                  in speech, or on other media. CSS is among the core languages
+                  of the open web and is standardized across Web browsers
+                  according to W3C specifications. Previously, the development
+                  of various parts of CSS specification was done synchronously,
+                  which allowed the versioning of the latest recommendations.
+                  You might have heard about CSS1, CSS2.1, or even CSS3. There
+                  will never be a CSS3 or a CSS4; rather, everything is now CSS
+                  without a version number. After CSS 2.1, the scope of the
+                  specification increased significantly and the progress on
+                  different CSS modules started to differ so much, that it
+                  became more effective to develop and release recommendations
+                  separately per module. Instead of versioning the CSS
+                  specification, W3C now periodically takes a snapshot of the
+                  latest stable state of the CSS specification and individual
+                  modules progress. CSS modules now have version numbers, or
+                  levels, such as CSS Color Module Level 5.
                 </p>
               </div>
             </div>
@@ -138,7 +131,7 @@ export const HTML = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={htmltopicsChecked[front.storage]}
+                          checked={csstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -198,64 +191,67 @@ const resources = [
     image:
       "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    title: "W3Schools - Introduction to HTML",
+    title: "W3Schools - CSS Introduction",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://www.w3schools.com/html/html_intro.asp",
+    link: "https://www.w3schools.com/css/css_intro.asp",
   },
   {
-    title: "HTML in 100 seconds",
-    image: "https://i.ytimg.com/vi_webp/ok-plXXHlWw/maxresdefault.webp",
+    title: "CSS Tutorial for Beginers",
+    image:
+      "https://i.ytimg.com/vi/I9XRrlOOazo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBpmdn90a5heB5tKwledvuXdJQp6Q",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=ok-plXXHlWw",
+    link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
   },
   {
-    title: "HTML Tutorial for Beginners: HTML Crash Course",
-    image: "https://i.ytimg.com/vi/qz0aGYrrlhU/maxresdefault.jpg",
+    title: "Learn CSS in 20 Minutes",
+    image:
+      "https://i.ytimg.com/vi/1PnVor36_40/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4tJ7kbGq-1Vv0pz8nIkiwF5xyQg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=qz0aGYrrlhU",
+    link: "https://www.youtube.com/watch?v=1PnVor36_40",
   },
   {
-    title: "Learn HTML - Full Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi_webp/kUMe1FH4CHE/maxresdefault.webp",
+    title: "CSS in 100 Seconds",
+    image:
+      "https://i.ytimg.com/vi/OEV8gMkCHXQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn8dqDCfy2BjSRSrGCmP2AjR_YDg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=kUMe1FH4CHE",
+    link: "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
   },
   {
-    title: "The HTML Handbook",
+    title: "The CSS Handbook",
     image: "https://flaviocopes.com/bootcamp.jpg",
     type: "Documentation",
-    link: "https://flaviocopes.com/book/html/",
+    link: "https://flaviocopes.com/book/css/",
   },
   {
-    title: "Web Development by Doing:HTML/CSS From Scratch",
+    title: "Web Development by Doing: HTML/CSS From Scratch",
     image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
     type: "Course",
     link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
   },
   {
-    title: "HTML for Beginners",
-    image: "https://img-c.udemycdn.com/course/240x135/59535_1f48_6.jpg",
+    title: "CSS: Zero to Hero in CSS",
+    image: "https://img-c.udemycdn.com/course/480x270/2089476_55a6.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/hmtl5-training/",
+    link: "https://www.udemy.com/course/css-zero-to-hero/",
   },
 ];
 
 const topics = [
-  { title: "HTML Structure", storage: "htmlstructure" },
-  { title: "HTML Elements", storage: "htmlelements" },
-  { title: "Attributes", storage: "htmlattributes" },
-  { title: "Text Formatting", storage: "textformatting" },
-  { title: "Images", storage: "htmlimages" },
-  { title: "Links", storage: "htmllinks" },
-  { title: "Lists", storage: "htmllists" },
-  { title: "Forms", storage: "htmlforms" },
-  { title: "Semantic Elements", storage: "semantichtml" },
-  { title: "Headings and Document Structure", storage: "documentstructure" },
-  { title: "HTML Comments", storage: "htmlcomments" },
-  { title: "Browser Developer Tools", storage: "devtools" },
+  { title: "Box Model", storage: "boxmodel" },
+  { title: "Selectors", storage: "cssselectors" },
+  { title: "Cascade & Specificity", storage: "cascadespeficity" },
+  { title: "Inheritance", storage: "cssinheritance" },
+  { title: "Colors", storage: "csscolors" },
+  { title: "Sizing Units", storage: "csssizing" },
+  { title: "Layout & Grid", storage: "layoutgrid" },
+  { title: "Flex Box", storage: "flexbox" },
+  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
+  { title: "Border", storage: "cssborder" },
+  { title: "Z-Index", storage: "csszindex" },
+  { title: "Gradients & Animation", storage: "gradientanimation" },
 ];

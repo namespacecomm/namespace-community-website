@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -37,85 +38,73 @@ const Container = styled.div`
   }
 `;
 
-export const HTML = () => {
-  const [htmltopicsChecked, setHtmlTopicsChecked] = useState({
-    htmlstructure: false,
-    htmlelements: false,
-    htmlattributes: false,
-    textformatting: false,
-    htmlimages: false,
-    htmllinks: false,
-    htmllists: false,
-    htmlforms: false,
-    semantichtml: false,
-    documentstructure: false,
-    htmlcomments: false,
-    devtools: false,
+export const JENKINS = () => {
+  const [jstopicsChecked, setJsTopicsChecked] = useState({
+    syntax: false,
+    dom: false,
+    fetch: false,
+    async: false,
+    event: false,
+    promises: false,
+    classes: false,
+    array: false,
+    hoisting: false,
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setHtmlTopicsChecked({
-      ...htmltopicsChecked,
-      [topic]: !htmltopicsChecked[topic],
+    setJsTopicsChecked({
+      ...jstopicsChecked,
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "htmltopicsChecked",
-      JSON.stringify(htmltopicsChecked)
-    );
-  }, [htmltopicsChecked]);
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
+  }, [jstopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setHtmlTopicsChecked(JSON.parse(storedTopicsChecked));
+      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
   return (
     <>
       <Section>
+        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="hero"
-                src="https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-1161.jpg?w=826&t=st=1696142260~exp=1696142860~hmac=0023559da96b5349b1452cf23667ac25b74a8e365a5d0b4074c1f9847b911e85"
+                src="https://www.jenkins.io/images/logos/jenkins/Jenkins-stop-the-war.svg"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  HTML: HyperText Markup Language
+                  JENKINS
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  HTML (HyperText Markup Language) is the most basic building
-                  block of the Web. It defines the meaning and structure of web
-                  content. Other technologies besides HTML are generally used to
-                  describe a web page's appearance/presentation (CSS) or
-                  functionality/behavior (JavaScript). "Hypertext" refers to
-                  links that connect web pages to one another, either within a
-                  single website or between websites. Links are a fundamental
-                  aspect of the Web. By uploading content to the Internet and
-                  linking it to pages created by other people, you become an
-                  active participant in the World Wide Web. HTML uses "markup"
-                  to annotate text, images, and other content for display in a
-                  Web browser. HTML markup includes special "elements" such as
-                  &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
-                  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
-                  &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
-                  &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
-                  &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;,
-                  &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;,
-                  &lt;ol&gt;, &lt;li&gt; and many others. An HTML element is set
-                  off from other text in a document by "tags", which consist of
-                  the element name surrounded by "&lt;" and "&gt;". The name of
-                  an element inside a tag is case-insensitive. That is, it can
-                  be written in uppercase, lowercase, or a mixture. For example,
-                  the &lt;title&gt; tag can be written as &lt;Title&gt;,
-                  &lt;TITLE&gt;, or in any other way. However, the convention
-                  and recommended practice are to write tags in lowercase.
+                  Jenkins is an open-source automation server widely used for
+                  continuous integration and continuous delivery (CI/CD)
+                  pipelines. It plays a crucial role in software development by
+                  automating various tasks like building, testing, and deploying
+                  code, enabling teams to quickly and reliably deliver software
+                  updates. Jenkins provides a user-friendly interface for
+                  configuring and managing automation workflows, which are
+                  defined as code in the form of pipeline scripts. It supports a
+                  vast ecosystem of plugins, making it highly extensible and
+                  adaptable to various development environments and tools.
+                  Jenkins is known for its flexibility, scalability, and
+                  community support, making it a cornerstone of modern software
+                  development practices. Jenkins acts as a central hub for
+                  orchestrating the entire software development lifecycle. It
+                  can be integrated with version control systems (such as Git),
+                  build tools (like Maven or Gradle), testing frameworks, and
+                  deployment platforms, making it a versatile tool for managing
+                  complex and customized automation workflows.
                 </p>
               </div>
             </div>
@@ -138,7 +127,7 @@ export const HTML = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={htmltopicsChecked[front.storage]}
+                          checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -194,68 +183,73 @@ export const HTML = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
+    title: "Jenkins Handbook",
+    image: "https://www.jenkins.io/images/logo-title-opengraph.png",
+    type: "Documentation",
+    link: "https://www.jenkins.io/doc/book/",
+  },
+  {
+    title: "Jenkins Tutorial For Beginners: 21+ Practical Guides",
     image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+      "https://devopscube.com/wp-content/uploads/2019/01/jenkins-beginner-tutorials-1160x468.png.webp",
     type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    link: "https://devopscube.com/jenkins-2-tutorials-getting-started-guide/",
   },
   {
-    title: "W3Schools - Introduction to HTML",
+    title: "Learn Jenkins! Complete Jenkins Course - Zero to Hero",
+    image: "https://i.ytimg.com/vi/6YZvp2GwT0A/mqdefault.jpg",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=6YZvp2GwT0A",
+  },
+  {
+    title: "Learn Jenkins by Building a CI/CD Pipeline ",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+      "https://www.freecodecamp.org/news/content/images/2022/09/jenkins.png",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=f4idgaq2VqA",
+  },
+  {
+    title: "Jenkins Cheat Sheet ",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1280/format:webp/1*HcWQYQFB3FttTJScpkn4Qw.jpeg",
+    type: "Cheat Sheet",
+    link: "https://medium.com/edureka/jenkins-cheat-sheet-e0f7e25558a3",
+  },
+  {
+    title: "Jenkins Pipeline Tutorial",
+    image:
+      "https://devopscube.com/wp-content/uploads/2020/04/jenkins-pipeline-as-code-min-1160x468.png.webp",
     type: "Documentation",
-    link: "https://www.w3schools.com/html/html_intro.asp",
+    link: "https://devopscube.com/jenkins-pipeline-as-code/",
   },
   {
-    title: "HTML in 100 seconds",
-    image: "https://i.ytimg.com/vi_webp/ok-plXXHlWw/maxresdefault.webp",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=ok-plXXHlWw",
-  },
-  {
-    title: "HTML Tutorial for Beginners: HTML Crash Course",
-    image: "https://i.ytimg.com/vi/qz0aGYrrlhU/maxresdefault.jpg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=qz0aGYrrlhU",
-  },
-  {
-    title: "Learn HTML - Full Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi_webp/kUMe1FH4CHE/maxresdefault.webp",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=kUMe1FH4CHE",
-  },
-  {
-    title: "The HTML Handbook",
-    image: "https://flaviocopes.com/bootcamp.jpg",
-    type: "Documentation",
-    link: "https://flaviocopes.com/book/html/",
-  },
-  {
-    title: "Web Development by Doing:HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
+    title: "Build+Deploy+Test with Jenkins 2.0",
+    image: "https://img-c.udemycdn.com/course/750x422/1141808_f32f_5.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    link: "https://www.udemy.com/course/working-with-jenkins/",
   },
   {
-    title: "HTML for Beginners",
-    image: "https://img-c.udemycdn.com/course/240x135/59535_1f48_6.jpg",
+    title: "Jenkins Tutorial For Beginners (DevOps and Developers)",
+    image: "https://img-c.udemycdn.com/course/750x422/1825202_d640_3.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/hmtl5-training/",
+    link: "https://www.udemy.com/course/jenkins-tutorial-for-beginners-devops-and-developers/",
   },
 ];
 
 const topics = [
-  { title: "HTML Structure", storage: "htmlstructure" },
-  { title: "HTML Elements", storage: "htmlelements" },
-  { title: "Attributes", storage: "htmlattributes" },
-  { title: "Text Formatting", storage: "textformatting" },
-  { title: "Images", storage: "htmlimages" },
-  { title: "Links", storage: "htmllinks" },
-  { title: "Lists", storage: "htmllists" },
-  { title: "Forms", storage: "htmlforms" },
-  { title: "Semantic Elements", storage: "semantichtml" },
-  { title: "Headings and Document Structure", storage: "documentstructure" },
-  { title: "HTML Comments", storage: "htmlcomments" },
-  { title: "Browser Developer Tools", storage: "devtools" },
+  { title: "Introduction to Jenkins", storage: "intro-jenkins" },
+  { title: "Jenkins Basics", storage: "jenkins-basic" },
+  { title: "Working with Jenkins Jobs", storage: "jenkins-jobs" },
+  { title: "Version Control Integration", storage: "ver-control-intergrate" },
+  { title: "Plugins and Extensions", storage: "plugins-extensions" },
+  { title: "Pipeline as Code (Jenkins Pipeline)", storage: "jenkins-pipline" },
+  { title: "Security and Access Control", storage: "security-access-control" },
+  { title: "Storage", storage: "storage" },
+  { title: "Security and RBAC", storage: "security-rbac" },
+  {
+    title: "Integration with Other Tools",
+    storage: "integration with other tools",
+  },
+  { title: "Monitoring", storage: "jenkins-monitor" },
+  { title: "Scaling Jenkins", storage: "scale-jenkins" },
 ];

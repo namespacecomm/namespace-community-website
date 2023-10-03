@@ -6,13 +6,11 @@ import { useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "./hero.css";
-import Navbar from "../../components/Navbar/Navbar.jsx";
 import About from "../About/About";
 import Teams from "../Teams/Teams";
 import Testimonials from "../Testimonials/Testimonials";
 import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
-import Footer from "../../components/Footer/Footer";
 
 // const Section = styled.div`
 //   background-repeat: no-repeat;
@@ -59,12 +57,12 @@ const Section = styled.div`
 const Container = styled.div`
   height: 90vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
-  padding-top: 100px;
-  justify-content: center;
-
-  @media only screen and (max-width: 768px) {
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 9% 14%;
+  @media only screen and (max-width: 1030px) {
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -78,46 +76,36 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-
   @media only screen and (max-width: 768px) {
     flex: 1;
-    align-items: center;
   }
   @media only screen and (max-width: 1030px) {
     flex: 1;
-    align-items: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     flex: 1;
+    width: 50%;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 700;
 
   @media only screen and (max-width: 768px) {
-    text-align: center;
     font-size: 40px;
   }
   @media only screen and (max-width: 1030px) {
-    text-align: center;
-    font-size: 50px;
+    font-size: 60px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    text-align: center;
-    font-size: 50px;
+    font-size: 60px;
   }
 `;
 
 const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    text-align: center;
     font-size: 50px;
-    justify-content: center;
   }
 `;
 
@@ -133,15 +121,13 @@ const Subtitle = styled.p`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media only screen and (max-width: 768px) {
-    display: flex;
-    font-size: 64px;
-    text-align: center;
+    font-size: 40px;
   }
+
   @media only screen and (max-width: 1030px) {
-    font-size: 80px;
+    font-size: 50px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    text-align: center;
     font-size: 50px;
   }
 `;
@@ -149,18 +135,23 @@ const Subtitle = styled.p`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-  }
   @media only screen and (max-width: 1030px) {
-    padding: 20px;
-    text-align: center;
     font-size: 30px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+  }
+`;
+const ShortDesc = styled.p`
+  font-size: 16px;
+  color: lightgray;
+  padding-top: 4px;
+
+  @media only screen and (max-width: 1030px) {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
+    font-size: 24px;
   }
 `;
 
@@ -169,18 +160,17 @@ const Right = styled.div`
   justify-content: center;
   position: relative;
   @media only screen and (max-width: 1030px) {
-    ${"" /* flex: 1; */}
     display: none;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    ${"" /* flex: 1; */}
-    display: none;
+    flex: 1;
+    width: 50%;
   }
 `;
 
 const Img = styled.iframe`
-  width: 800px;
-  height: 600px;
+  width: 600px;
+  height: 500px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -188,25 +178,24 @@ const Img = styled.iframe`
   left: 0;
   right: 0;
   margin: auto;
-  ${"" /* animation: animate 2s infinite ease alternate; */}
+  ${
+    "" /* animation: animate 2s infinite ease alternate; */
+  }// @media only screen and (max-width: 768px) {
+  //   width: 300px;
+  //   height: 300px;
+  // }
 
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @keyframes animate {
-    to {
-      transform: translateY(20px);
-    }
-  }
+  // @keyframes animate {
+  //   to {
+  //     transform: translateY(20px);
+  //   }
+  // }
 `;
 
 const Hero = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>
@@ -214,7 +203,7 @@ const Hero = () => {
               <Subtitle>Coding Club</Subtitle>
             </WhatWeDo>
             <Desc>Bhagwan Parshuram Institute of Technology</Desc>
-            <Desc>GGSIPU, New Delhi, India</Desc>
+            <ShortDesc>GGSIPU, New Delhi, India</ShortDesc>
           </Left>
           <Right>
             {/* <Img src="./img/logo.png" /> */}
@@ -238,7 +227,6 @@ const Hero = () => {
       <Events />
       <Testimonials />
       <Contact />
-      <Footer />
     </>
   );
 };
