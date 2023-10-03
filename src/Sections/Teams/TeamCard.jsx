@@ -7,6 +7,11 @@ const CardWrapper = styled.div`
   height: 350px;
   position: relative;
   perspective: 1000px;
+  transition:transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 350px;

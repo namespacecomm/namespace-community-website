@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -37,7 +38,7 @@ const Container = styled.div`
   }
 `;
 
-export const DOCKER = () => {
+export const KUBERNETES = () => {
   const [jstopicsChecked, setJsTopicsChecked] = useState({
     syntax: false,
     dom: false,
@@ -72,39 +73,21 @@ export const DOCKER = () => {
   return (
     <>
       <Section>
+        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="hero"
-                src="https://img.freepik.com/free-vector/port-concept-illustration_114360-7335.jpg?w=1480&t=st=1696258059~exp=1696258659~hmac=449086836074036e755fbc9c803c7e04d489da420cab2125f416cc76e1ffbc9f"
+                src="https://spaceliftio.wpcomstaging.com/wp-content/uploads/2022/07/90.kubernetes-cluster.png"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  DOCKER
+                  KUBERNETES
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Docker is a platform that utilizes containers, lightweight and
-                  self-contained packages, to develop, package, and run
-                  applications consistently across different environments. It
-                  comprises components like Docker containers (isolated runtime
-                  instances), Docker images (snapshots of containers), a Docker
-                  Engine (core management tool), Dockerfiles (instructions for
-                  building images), Docker registries (storage and sharing), and
-                  Docker Compose (multi-container app management). Docker
-                  simplifies deployment, making it popular in DevOps for its
-                  consistent, portable, and efficient application management
-                  capabilities, although it's worth noting that alternative
-                  containerization technologies like Kubernetes and containerd
-                  also exist and can be used in conjunction with or instead of
-                  Docker, depending on specific needs. Docker's popularity has
-                  led to a vast ecosystem of pre-built images and tools that
-                  extend its functionality, making it easier to integrate Docker
-                  into various development and deployment workflows. It has
-                  become a standard tool for many software development and IT
-                  operations teams and is widely used in industries ranging from
-                  web development to data science.
+                Kubernetes is an open-source container orchestration platform that simplifies the deployment, scaling, and management of containerized applications. Originally developed by Google and now maintained by the CNCF, Kubernetes automates tasks such as load balancing, scaling, and updates. It organizes containers into pods, the smallest deployable units, ensuring application resilience and scalability. With a master-worker architecture, declarative configurations, and extensions like Helm and Istio, Kubernetes offers improved resource utilization, application isolation, and portability across diverse environments. It has become the industry standard for container orchestration, empowering organizations to efficiently build, deploy, and scale container-based applications. Developers use Docker to containerize their applications during development, and then Kubernetes is used to manage and orchestrate those containers in production environments. This combination leverages the strengths of each tool to create a robust containerization and orchestration solution.
                 </p>
               </div>
             </div>
@@ -118,12 +101,7 @@ export const DOCKER = () => {
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label
-                          htmlFor={front.storage}
-                          className="text-white title-font font-bold text-xl cursor-pointer"
-                        >
-                          {front.title}
-                        </label>
+                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
                         <input
                           type="checkbox"
                           id={front.storage}
@@ -148,10 +126,7 @@ export const DOCKER = () => {
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li
-                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
-                        key={resource.title}
-                      >
+                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -183,79 +158,66 @@ export const DOCKER = () => {
 
 const resources = [
   {
-    title: "DOCKER - Docs",
-    image:
-      "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
+    title: "Kubernetes - Docs",
+    image: "https://kubernetes.io/images/favicon.png",
     type: "Documentation",
-    link: "https://docs.docker.com/",
+    link: "https://kubernetes.io/docs/home/",
   },
   {
-    title: "DockerLabs - Getting Started with Docker",
-    image:
-      "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
+    title: "Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers",
+    image: "https://cdn-media-1.freecodecamp.org/images/1*0ju9JOPACF90yXSi-s2gwQ.jpeg",
     type: "Documentation",
-    link: "https://dockerlabs.collabnix.com/",
+    link: "https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/",
   },
   {
-    title: "DOCKER in 100 seconds",
-    image: "https://i.ytimg.com/vi/Gjnup-PuquQ/maxresdefault.jpg",
+    title: "Kubernetes in 100 seconds",
+    image: "https://i.ytimg.com/vi/PziYflu8cB8/maxresdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=Gjnup-PuquQ",
+    link: "https://www.youtube.com/watch?v=PziYflu8cB8",
   },
   {
-    title: "Docker Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
+    title: "Kubernetes Tutorial for Beginners ",
+    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--Mf4oAsZ2--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/z0jd5imjjfti53lfbmb8.png",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=pTFZFxd4hOI",
+    link: "https://www.youtube.com/watch?v=X48VuDVv0do",
   },
   {
-    title: "DOCKER - Cheat Sheet",
-    image:
-      "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
+    title: "Kubectl Cheat Sheet ",
+    image: "https://spacelift.io/_next/image?url=https%3A%2F%2Fspaceliftio.wpcomstaging.com%2Fwp-content%2Fuploads%2F2022%2F08%2F91.kubernetes-cheat-sheet.png&w=3840&q=100",
     type: "Cheat Sheet",
-    link: "https://dockerlabs.collabnix.com/docker/cheatsheet/",
+    link: "https://spacelift.io/blog/kubernetes-cheat-sheet",
   },
   {
-    title: "The DOCKER Handbook",
-    image:
-      "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
+    title: "The Kubernetes Handbook",
+    image: "https://www.freecodecamp.org/news/content/images/size/w2000/2023/07/Kubernetes-Handbook-Mockup.png",
     type: "Documentation",
-    link: "https://www.freecodecamp.org/news/the-docker-handbook/",
+    link: "https://www.freecodecamp.org/news/the-kubernetes-handbook/",
   },
   {
-    title: "Introduction to Docker",
-    image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
+    title: "Kubernetes Crash Course for Absolute Beginners ",
+    image: "https://i.ytimg.com/vi/s_o8dwzRlu4/maxresdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
+    link: "https://www.youtube.com/watch?v=s_o8dwzRlu4",
   },
   {
-    title: "Docker for the Absolute Beginner - Hands On - DevOps",
-    image: "https://img-c.udemycdn.com/course/750x422/3490000_d298_2.jpg",
+    title: "Learn DevOps: The Complete Kubernetes Course",
+    image: "https://img-c.udemycdn.com/course/750x422/1007250_9e3c_5.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/learn-docker/",
+    link: "https://www.udemy.com/course/learn-devops-the-complete-kubernetes-course/",
   },
 ];
 
 const topics = [
-  {
-    title: "Introduction to Containers",
-    storage: "introduction-to-containers",
-  },
-  { title: "Docker Architecture", storage: "docker-architecture" },
-  { title: "Docker Installation", storage: "install-docker" },
+  { title: "Kubernetes Fundamentals", storage: "kubernetes-fundamentals" },
+  { title: "Kubectl and CLI", storage: "kubectl-cli" },
+  { title: "Pods and Containers", storage: "pods-and-containers" },
   { title: "Docker Images", storage: "docker-images" },
-  { title: "Docker Containers", storage: "docker-containers" },
-  { title: "Docker Compose", storage: "docekr-compose" },
-  { title: "Container Orchestration", storage: "container-orchestration" },
-  { title: "Docker Networking", storage: "docker-networking" },
-  { title: "Docker Volumes and Storage", storage: "docker-volume-storage" },
-  { title: "Docker Security", storage: "docker-security" },
-  {
-    title: "Docker Registry and Repository",
-    storage: "docker-registry-repository",
-  },
-  { title: "Docker in CI/CD", storage: "docker-ci-cd" },
-  { title: "Monitoring and Logging", storage: "docker-monitor-log" },
+  { title: "Deployments and Scaling", storage: "deployments-and-scaling" },
+  { title: "Services and Networking", storage: "services-and-networking" },
+  { title: "Configurations and Secrets", storage: "config-secrets" },
+  { title: "Storage", storage: "storage" },
+  { title: "Security and RBAC", storage: "security-rbac" },
+  { title: "Cluster Management and CI/CD", storage: "cluster-management-ci-cd" },
+  { title: "Monitoring and Logging", storage: "monitor-log" },
   { title: "Scaling and Load Balancing", storage: "docker-scale-load-balance" },
 ];
