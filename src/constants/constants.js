@@ -239,6 +239,71 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/sneha-nautiyal-8b8a13242",
     instagram: "https://www.instagram.com/klynweto",
   },
+
+  {
+    image:
+      "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
+    name: "Pawas Goyal",
+    position: "Technical Council",
+    github: "https://github.com/pawas108ram",
+    linkedin: "https://www.linkedin.com/in/pawas-goyal/",
+    instagram: "https://www.instagram.com/pawas_licht03/",
+    twitter: "",
+  },
+
+  {
+    image:
+      "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
+    name: "Rishav Raj",
+    position: "Technical Council",
+    github: "https://github.com/Rishav-01",
+    linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
+    instagram: "https://www.instagram.com/rishav_th9/",
+    twitter: "",
+  },
+
+  {
+    "name": "Arjun Bhardwaj",
+    "image": "https://i.postimg.cc/6q3HYS8H/20201202-132827.jpg",
+    position: "Technical Council",
+    "github": "https://github.com//Arjun-Y-Bhardwaj",
+    "linkedin": "https://www.linkedin.com//in//arjun-bhardwaj-93a4a31a6",
+    "instagram": "https://www.instagram.com//N//A"
+   },
+
+   {
+      "name": "Gautam Gupta",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.38_9b68ab3a_pdkmkv.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//in//gautam-gupta-8a039022a",
+      "instagram": "https://www.instagram.com//_gautam.gupta"
+   },
+
+   {
+      "name": "Bhawansh Baleja",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696348115/WhatsApp_Image_2023-10-03_at_21.18.13_3bd7fcc4_dgtpwq.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//mwlite//in//bhawansh-baleja-a05450146",
+      "instagram": "https://www.instagram.com//bhawansh_"
+  },
+
+  {
+    "name": "Anand Mohan",
+    "image": "https://i.postimg.cc//NjgdVcvV//unnamed.jpg",
+    position: "Technical Council",
+    "github": "https://github.com//Anand18m",
+    "linkedin": "https://www.linkedin.com//in//anand-mohan-50324118b//",
+    "instagram": "https://www.instagram.com//anand18mohan",
+    "twitter": "https://twitter.com//Anand18m"
+   },
+
+   {
+      "name": "Aakash Gupta",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.37_f778fcc2_m1gihp.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//in//aakashgupta46",
+      "instagram": "https://www.instagram.com//itss_aakash_"
+  },
 ];
 
 // members is the array of people to be displayed on the home page carousel!
@@ -495,28 +560,6 @@ export const allmembers = [
   },
 
   {
-    image:
-      "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
-    name: "Pawas Goyal",
-    position: "Technical Council",
-    github: "https://github.com/pawas108ram",
-    linkedin: "https://www.linkedin.com/in/pawas-goyal/",
-    instagram: "https://www.instagram.com/pawas_licht03/",
-    twitter: "",
-  },
-
-  {
-    image:
-      "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
-    name: "Rishav Raj",
-    position: "Technical Council",
-    github: "https://github.com/Rishav-01",
-    linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
-    instagram: "https://www.instagram.com/rishav_th9/",
-    twitter: "",
-  },
-
-  {
     name: "Khushi Kulshreshtha",
     image: "https://i.postimg.cc/66vvXLD7/IMG-20230124-161335.jpg",
     position: "Senior Council",
@@ -613,9 +656,74 @@ export const allmembers = [
   },
 
   {
+    image:
+      "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
+    name: "Pawas Goyal",
+    position: "Technical Council",
+    github: "https://github.com/pawas108ram",
+    linkedin: "https://www.linkedin.com/in/pawas-goyal/",
+    instagram: "https://www.instagram.com/pawas_licht03/",
+    twitter: "",
+  },
+
+  {
+    image:
+      "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
+    name: "Rishav Raj",
+    position: "Technical Council",
+    github: "https://github.com/Rishav-01",
+    linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
+    instagram: "https://www.instagram.com/rishav_th9/",
+    twitter: "",
+  },
+
+  {
+    "name": "Arjun Bhardwaj",
+    "image": "https://i.postimg.cc/6q3HYS8H/20201202-132827.jpg",
+    position: "Technical Council",
+    "github": "https://github.com//Arjun-Y-Bhardwaj",
+    "linkedin": "https://www.linkedin.com//in//arjun-bhardwaj-93a4a31a6",
+    "instagram": "https://www.instagram.com//N//A"
+   },
+
+   {
+      "name": "Gautam Gupta",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.38_9b68ab3a_pdkmkv.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//in//gautam-gupta-8a039022a",
+      "instagram": "https://www.instagram.com//_gautam.gupta"
+   },
+
+   {
+      "name": "Bhawansh Baleja",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696348115/WhatsApp_Image_2023-10-03_at_21.18.13_3bd7fcc4_dgtpwq.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//mwlite//in//bhawansh-baleja-a05450146",
+      "instagram": "https://www.instagram.com//bhawansh_"
+  },
+
+  {
+    "name": "Anand Mohan",
+    "image": "https://i.postimg.cc//NjgdVcvV//unnamed.jpg",
+    position: "Technical Council",
+    "github": "https://github.com//Anand18m",
+    "linkedin": "https://www.linkedin.com//in//anand-mohan-50324118b//",
+    "instagram": "https://www.instagram.com//anand18mohan",
+    "twitter": "https://twitter.com//Anand18m"
+   },
+
+   {
+      "name": "Aakash Gupta",
+      "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.37_f778fcc2_m1gihp.jpg",
+      position: "Technical Council",
+      "linkedin": "https://www.linkedin.com//in//aakashgupta46",
+      "instagram": "https://www.instagram.com//itss_aakash_"
+  },
+
+  {
     name: "Aanya Sharma",
     image: "https://i.postimg.cc/hGsHhd6T/IMG-20221027-120758.jpg",
-    position: "Senior Council",
+    position: "Junior Council",
     github: "https://github.com/Aanyaa26",
     linkedin: "https://www.linkedin.com/in/aanya-sharma-2841b2248",
     instagram: "https://www.instagram.com/aannyaasharma",
@@ -1252,12 +1360,7 @@ export const allmembers = [
   //  "linkedin": "https:\/\/www.linkedin.com\/in\/zardam-hussain-a0a919216",
   //  "instagram": "https:\/\/www.instagram.com\/zardam_hussain"
   // },
-  // {
-  //  "name": "Aakash Gupta",
-  //  "team": "JTM",
-  //  "linkedin": "https:\/\/www.linkedin.com\/in\/aakashgupta46",
-  //  "instagram": "https:\/\/www.instagram.com\/itss_aakash_"
-  // },
+  // 
   // {
   //  "name": "Aditya Gupta",
   //  "team": "JTM",
@@ -1284,29 +1387,14 @@ export const allmembers = [
   //  "linkedin": "https:\/\/www.linkedin.com\/in\/amisha-gupta-b2462a229",
   //  "instagram": "https:\/\/www.instagram.com\/amisha.gupta157"
   // },
-  /* {
-     "name": "Anand Mohan",
-     "image": "https:\/\/i.postimg.cc\/NjgdVcvV\/unnamed.jpg",
-     "team": "JTM",
-     "github": "https:\/\/github.com\/Anand18m",
-     "linkedin": "https:\/\/www.linkedin.com\/in\/anand-mohan-50324118b\/",
-     "instagram": "https:\/\/www.instagram.com\/anand18mohan",
-     "twitter": "https:\/\/twitter.com\/Anand18m"
-    }, */
+  /*  */
   // {
   //  "name": "Anant Bhardwaj",
   //  "team": "JTM",
   //  "linkedin": "https:\/\/www.linkedin.com\/in\/anantbhardwaj21",
   //  "instagram": "https:\/\/www.instagram.com\/sun_dried_potato"
   // },
-  /* {
-     "name": "Arjun Bhardwaj",
-     "image": "https://i.postimg.cc/6q3HYS8H/20201202-132827.jpg",
-     "team": "JTM",
-     "github": "https:\/\/github.com\/Arjun-Y-Bhardwaj",
-     "linkedin": "https:\/\/www.linkedin.com\/in\/arjun-bhardwaj-93a4a31a6",
-     "instagram": "https:\/\/www.instagram.com\/N\/A"
-    },
+  /* 
     {
      "name": "Aryan Sharma",
      "image": "https://i.postimg.cc/j5qvS94s/PXL-20230503-102204183.jpg",
@@ -1321,12 +1409,7 @@ export const allmembers = [
   //  "linkedin": "https:\/\/www.linkedin.com\/in\/ataf-ali-774320229",
   //  "instagram": "https:\/\/www.instagram.com\/i_ataf_ali"
   // },
-  // {
-  //  "name": "Bhawansh",
-  //  "team": "JTM",
-  //  "linkedin": "https:\/\/www.linkedin.com\/mwlite\/in\/bhawansh-baleja-a05450146",
-  //  "instagram": "https:\/\/www.instagram.com\/bhawansh_"
-  // },
+  // 
   // {
   //  "name": "Daksh Sardana",
   //  "team": "JTM",
@@ -1346,12 +1429,7 @@ export const allmembers = [
   //  "linkedin": "https:\/\/www.linkedin.com\/in\/dhruv-a-a815a9254\/",
   //  "instagram": "https:\/\/www.instagram.com\/dhruv_372024"
   // },
-  // {
-  //  "name": "Gautam Gupta",
-  //  "team": "JTM",
-  //  "linkedin": "https:\/\/www.linkedin.com\/in\/gautam-gupta-8a039022a",
-  //  "instagram": "https:\/\/www.instagram.com\/_gautam.gupta"
-  // },
+  // 
   // {
   //  "name": "Gautam Kumar Mishra",
   //  "team": "JTM",
