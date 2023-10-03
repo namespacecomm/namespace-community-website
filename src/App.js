@@ -3,6 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
@@ -59,18 +60,15 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
-
-              <Route path="html" element={<HTML />} />
-              <Route path="js" element={<Javascript />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
-              <Route path="css-framework" element={<CSSFramework />} />
-              <Route path="devops" element={<DevOps />} />
-              <Route path="docker" element={<DOCKER />} />
-              <Route path="Blockchain" element={<Blockchain />} />
-              <Route path="*" element={<NotFound />} />
+              <Route path="css" element={ <CSS /> } />
+              <Route path='html' element={ <HTML /> } />
+              <Route path='js' element={ <Javascript /> } />
+              <Route path='frontend-framework' element={ <FrontEndFramework /> } />
+              <Route path='css-framework' element={ <CSSFramework /> } />
+              <Route path='devops' element={ <DevOps /> } />
+              <Route path='docker' element={<DOCKER/>} />
+              <Route path='Blockchain' element={ <Blockchain /> } />
+              <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
           <Footer />

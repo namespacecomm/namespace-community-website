@@ -57,7 +57,7 @@ const Section = styled.div`
 const Container = styled.div`
   height: 90vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
@@ -84,6 +84,7 @@ const Left = styled.div`
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     flex: 1;
+    width: 50%;
   }
 `;
 
@@ -163,6 +164,7 @@ const Right = styled.div`
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     flex: 1;
+    width: 50%;
   }
 `;
 
