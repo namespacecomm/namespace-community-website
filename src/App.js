@@ -4,10 +4,11 @@ import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Github } from "./Pages/AllResources/webALL/github";
-import { PHP } from "./Pages/AllResources/webALL/php"
+import { PHP } from "./Pages/AllResources/webALL/php";
 import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
+import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
@@ -48,7 +49,7 @@ function App() {
     <>
       <Container>
         <BrowserRouter>
-        <ScrollToTop />
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/">
@@ -66,19 +67,23 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
-              <Route path="css" element={ <CSS /> } />
-              <Route path='html' element={ <HTML /> } />
-              <Route path='git' element={ <Github /> } />
-              <Route path='js' element={ <Javascript /> } />
-              <Route path='php' element={ <PHP /> } />
-              <Route path='deeplearning' element={ <DeepLearning/>} />
-              <Route path='frontend-framework' element={ <FrontEndFramework /> } />
-              <Route path='css-framework' element={ <CSSFramework /> } />
-              <Route path='devops' element={ <DevOps /> } />
-              <Route path='docker' element={<DOCKER/>} />
-              <Route path='kubernetes' element={<KUBERNETES/>} />
-              <Route path='Blockchain' element={ <Blockchain /> } />
-              <Route path='*' element={ <NotFound /> } />
+              <Route path="css" element={<CSS />} />
+              <Route path="html" element={<HTML />} />
+              <Route path="git" element={<Github />} />
+              <Route path="js" element={<Javascript />} />
+              <Route path="php" element={<PHP />} />
+              <Route path="deeplearning" element={<DeepLearning />} />
+              <Route
+                path="frontend-framework"
+                element={<FrontEndFramework />}
+              />
+              <Route path="css-framework" element={<CSSFramework />} />
+              <Route path="devops" element={<DevOps />} />
+              <Route path="docker" element={<DOCKER />} />
+              <Route path="kubernetes" element={<KUBERNETES />} />
+              <Route path="jenkins" element={<JENKINS />} />
+              <Route path="Blockchain" element={<Blockchain />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
           <Footer />
