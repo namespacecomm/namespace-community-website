@@ -28,7 +28,7 @@ import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 import { DeepLearning } from "./Pages/AllResources/Deeplearning";
 import { CSSFramework } from "./Pages/AllResources/CSSFramework";
-
+import { MongoDB } from "./Pages/AllResources/webALL/mongodb";
 import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -87,6 +87,7 @@ function App() {
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="Blockchain" element={<Blockchain />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="mongodb" element={<MongoDB />} />
             </Route>
           </Routes>
           <Footer />
