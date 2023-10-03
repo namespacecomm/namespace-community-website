@@ -6,13 +6,11 @@ import { useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "./hero.css";
-import Navbar from "../../components/Navbar/Navbar.jsx";
 import About from "../About/About";
 import Teams from "../Teams/Teams";
 import Testimonials from "../Testimonials/Testimonials";
 import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
-import Footer from "../../components/Footer/Footer";
 
 // const Section = styled.div`
 //   background-repeat: no-repeat;
@@ -196,7 +194,6 @@ const Hero = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <Left>
             <Title>Newton School</Title>
@@ -228,7 +225,6 @@ const Hero = () => {
       <Events />
       <Testimonials />
       <Contact />
-      <Footer />
     </>
   );
 };
@@ -241,7 +237,7 @@ const Stars = (props) => {
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
-  useFrame(( state,delta) => {
+  useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });

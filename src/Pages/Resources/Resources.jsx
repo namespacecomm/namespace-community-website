@@ -1,9 +1,7 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import { ResourceMain } from "../../constants/ResourceMain";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -47,7 +45,6 @@ function Resources() {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <section className="py-10 bg-blue sm:py-16 lg:py-12">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -65,7 +62,10 @@ function Resources() {
               <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {ResourceMain.map((item) => {
                   return (
-                    <div className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow" key={item.name}>
+                    <div
+                      className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow"
+                      key={item.name}
+                    >
                       <div className="p-8">
                         <div className="flex items-center">
                           <img
@@ -110,7 +110,6 @@ function Resources() {
           </section>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 }

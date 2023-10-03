@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -21,7 +19,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
@@ -31,7 +29,6 @@ function Projects() {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl">
             Awesome projects loading super soon.......
@@ -39,7 +36,6 @@ function Projects() {
 
           <p className="max-w-2xl mx-auto my-6 text-center "></p>
         </Container>
-        <Footer />
       </Section>
     </>
   );

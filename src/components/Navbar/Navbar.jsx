@@ -8,13 +8,13 @@ const NavbarContainer = styled.nav`
   background-color: #010116;
   display: flex;
   z-index: 99999999;
-  padding: 15px 5px;
+  padding: 5px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   @media (min-width: 900px) {
-    height: 80px;
+    height: 90px;
   }
 `;
 
@@ -40,7 +40,7 @@ const NavbarInnerContainer = styled.div`
   width: 100%;
   height: 80px;
   display: flex;
-`;
+  `;
 
 const NavbarLinkContainer = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ const NavbarLinkContainer = styled.div`
 const NavLinks = styled.div`
   display: flex;
   gap: 20px;
-`;
+  `;
 
 const NavbarLink = styled(Link)`
   color: white;
