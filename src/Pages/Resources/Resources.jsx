@@ -65,7 +65,7 @@ function Resources() {
               <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {ResourceMain.map((item) => {
                   return (
-                    <div className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow">
+                    <div className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow" key={item.name}>
                       <div className="p-8">
                         <div className="flex items-center">
                           <img
@@ -90,9 +90,9 @@ function Resources() {
                               stroke="currentColor"
                             >
                               <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M14 5l7 7m0 0l-7 7m7-7H3"
                               />
                             </svg>

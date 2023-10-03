@@ -96,7 +96,7 @@ export default function Blockchain() {
                             <img
                                 className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
                                 src="https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg"
-                                alt="Blockchain Image"
+                                alt="Blockchain"
                             />
                         </div>
                     </div>
