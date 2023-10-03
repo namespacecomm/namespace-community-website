@@ -22,6 +22,7 @@ import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
 import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
+import { DeepLearning } from "./Pages/AllResources/Deeplearning";
 import { CSSFramework } from "./Pages/AllResources/CSSFramework";
 
 import Aws from "./Pages/AllResources/Aws";
@@ -67,6 +68,7 @@ function App() {
               <Route path='html' element={ <HTML /> } />
               <Route path='git' element={ <Github /> } />
               <Route path='js' element={ <Javascript /> } />
+              <Route path='deeplearning' element={ <DeepLearning/>} />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='css-framework' element={ <CSSFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
