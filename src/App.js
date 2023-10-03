@@ -3,6 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+import { MongoDB } from "./Pages/AllResources/webALL/mongodb";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
@@ -56,7 +57,7 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
-
+              <Route path="mongodb" element={<MongoDB />} />
               <Route path="html" element={<HTML />} />
               <Route path="js" element={<Javascript />} />
               <Route
