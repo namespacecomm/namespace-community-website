@@ -38,37 +38,35 @@ const Container = styled.div`
   }
 `;
 
-export const CSS = () => {
-  const [csstopicsChecked, setCssTopicsChecked] = useState({
-    boxmodel: false,
-    cssselectors: false,
-    cascadespeficity: false,
-    cssinheritance: false,
-    csscolors: false,
-    csssizing: false,
-    layoutgrid: false,
-    flexbox: false,
-    psuedoclasseselements: false,
-    cssborder: false,
-    csszindex: false,
-    gradientanimation: false,
+export const JENKINS = () => {
+  const [jstopicsChecked, setJsTopicsChecked] = useState({
+    syntax: false,
+    dom: false,
+    fetch: false,
+    async: false,
+    event: false,
+    promises: false,
+    classes: false,
+    array: false,
+    hoisting: false,
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setCssTopicsChecked({
-      ...csstopicsChecked,
-      [topic]: !csstopicsChecked[topic],
+    setJsTopicsChecked({
+      ...jstopicsChecked,
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
-  }, [csstopicsChecked]);
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
+  }, [jstopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
+      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -81,34 +79,32 @@ export const CSS = () => {
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="css"
-                src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-2323.jpg?w=740&t=st=1696318168~exp=1696318768~hmac=a3467593274ad7d563a0303bb9a0c3bc8b660a580f94bbc3498f4677eae72213"
+                alt="hero"
+                src="https://www.jenkins.io/images/logos/jenkins/Jenkins-stop-the-war.svg"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  CSS: Cascading Style Sheets
+                  JENKINS
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Cascading Style Sheets (CSS) is a stylesheet language used to
-                  describe the presentation of a document written in HTML or XML
-                  (including XML dialects such as SVG, MathML or XHTML). CSS
-                  describes how elements should be rendered on screen, on paper,
-                  in speech, or on other media. CSS is among the core languages
-                  of the open web and is standardized across Web browsers
-                  according to W3C specifications. Previously, the development
-                  of various parts of CSS specification was done synchronously,
-                  which allowed the versioning of the latest recommendations.
-                  You might have heard about CSS1, CSS2.1, or even CSS3. There
-                  will never be a CSS3 or a CSS4; rather, everything is now CSS
-                  without a version number. After CSS 2.1, the scope of the
-                  specification increased significantly and the progress on
-                  different CSS modules started to differ so much, that it
-                  became more effective to develop and release recommendations
-                  separately per module. Instead of versioning the CSS
-                  specification, W3C now periodically takes a snapshot of the
-                  latest stable state of the CSS specification and individual
-                  modules progress. CSS modules now have version numbers, or
-                  levels, such as CSS Color Module Level 5.
+                  Jenkins is an open-source automation server widely used for
+                  continuous integration and continuous delivery (CI/CD)
+                  pipelines. It plays a crucial role in software development by
+                  automating various tasks like building, testing, and deploying
+                  code, enabling teams to quickly and reliably deliver software
+                  updates. Jenkins provides a user-friendly interface for
+                  configuring and managing automation workflows, which are
+                  defined as code in the form of pipeline scripts. It supports a
+                  vast ecosystem of plugins, making it highly extensible and
+                  adaptable to various development environments and tools.
+                  Jenkins is known for its flexibility, scalability, and
+                  community support, making it a cornerstone of modern software
+                  development practices. Jenkins acts as a central hub for
+                  orchestrating the entire software development lifecycle. It
+                  can be integrated with version control systems (such as Git),
+                  build tools (like Maven or Gradle), testing frameworks, and
+                  deployment platforms, making it a versatile tool for managing
+                  complex and customized automation workflows.
                 </p>
               </div>
             </div>
@@ -131,7 +127,7 @@ export const CSS = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={csstopicsChecked[front.storage]}
+                          checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -187,71 +183,73 @@ export const CSS = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
-    image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    title: "Jenkins Handbook",
+    image: "https://www.jenkins.io/images/logo-title-opengraph.png",
     type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    link: "https://www.jenkins.io/doc/book/",
   },
   {
-    title: "W3Schools - CSS Introduction",
+    title: "Jenkins Tutorial For Beginners: 21+ Practical Guides",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+      "https://devopscube.com/wp-content/uploads/2019/01/jenkins-beginner-tutorials-1160x468.png.webp",
     type: "Documentation",
-    link: "https://www.w3schools.com/css/css_intro.asp",
+    link: "https://devopscube.com/jenkins-2-tutorials-getting-started-guide/",
   },
   {
-    title: "CSS Tutorial for Beginers",
-    image:
-      "https://i.ytimg.com/vi/I9XRrlOOazo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBpmdn90a5heB5tKwledvuXdJQp6Q",
+    title: "Learn Jenkins! Complete Jenkins Course - Zero to Hero",
+    image: "https://i.ytimg.com/vi/6YZvp2GwT0A/mqdefault.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
+    link: "https://www.youtube.com/watch?v=6YZvp2GwT0A",
   },
   {
-    title: "Learn CSS in 20 Minutes",
+    title: "Learn Jenkins by Building a CI/CD Pipeline ",
     image:
-      "https://i.ytimg.com/vi/1PnVor36_40/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4tJ7kbGq-1Vv0pz8nIkiwF5xyQg",
+      "https://www.freecodecamp.org/news/content/images/2022/09/jenkins.png",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=1PnVor36_40",
+    link: "https://www.youtube.com/watch?v=f4idgaq2VqA",
   },
   {
-    title: "CSS in 100 Seconds",
+    title: "Jenkins Cheat Sheet ",
     image:
-      "https://i.ytimg.com/vi/OEV8gMkCHXQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn8dqDCfy2BjSRSrGCmP2AjR_YDg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
+      "https://miro.medium.com/v2/resize:fit:1280/format:webp/1*HcWQYQFB3FttTJScpkn4Qw.jpeg",
+    type: "Cheat Sheet",
+    link: "https://medium.com/edureka/jenkins-cheat-sheet-e0f7e25558a3",
   },
   {
-    title: "The CSS Handbook",
-    image: "https://flaviocopes.com/bootcamp.jpg",
+    title: "Jenkins Pipeline Tutorial",
+    image:
+      "https://devopscube.com/wp-content/uploads/2020/04/jenkins-pipeline-as-code-min-1160x468.png.webp",
     type: "Documentation",
-    link: "https://flaviocopes.com/book/css/",
+    link: "https://devopscube.com/jenkins-pipeline-as-code/",
   },
   {
-    title: "Web Development by Doing: HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
+    title: "Build+Deploy+Test with Jenkins 2.0",
+    image: "https://img-c.udemycdn.com/course/750x422/1141808_f32f_5.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    link: "https://www.udemy.com/course/working-with-jenkins/",
   },
   {
-    title: "CSS: Zero to Hero in CSS",
-    image: "https://img-c.udemycdn.com/course/480x270/2089476_55a6.jpg",
+    title: "Jenkins Tutorial For Beginners (DevOps and Developers)",
+    image: "https://img-c.udemycdn.com/course/750x422/1825202_d640_3.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/css-zero-to-hero/",
+    link: "https://www.udemy.com/course/jenkins-tutorial-for-beginners-devops-and-developers/",
   },
 ];
 
 const topics = [
-  { title: "Box Model", storage: "boxmodel" },
-  { title: "Selectors", storage: "cssselectors" },
-  { title: "Cascade & Specificity", storage: "cascadespeficity" },
-  { title: "Inheritance", storage: "cssinheritance" },
-  { title: "Colors", storage: "csscolors" },
-  { title: "Sizing Units", storage: "csssizing" },
-  { title: "Layout & Grid", storage: "layoutgrid" },
-  { title: "Flex Box", storage: "flexbox" },
-  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
-  { title: "Border", storage: "cssborder" },
-  { title: "Z-Index", storage: "csszindex" },
-  { title: "Gradients & Animation", storage: "gradientanimation" },
+  { title: "Introduction to Jenkins", storage: "intro-jenkins" },
+  { title: "Jenkins Basics", storage: "jenkins-basic" },
+  { title: "Working with Jenkins Jobs", storage: "jenkins-jobs" },
+  { title: "Version Control Integration", storage: "ver-control-intergrate" },
+  { title: "Plugins and Extensions", storage: "plugins-extensions" },
+  { title: "Pipeline as Code (Jenkins Pipeline)", storage: "jenkins-pipline" },
+  { title: "Security and Access Control", storage: "security-access-control" },
+  { title: "Storage", storage: "storage" },
+  { title: "Security and RBAC", storage: "security-rbac" },
+  {
+    title: "Integration with Other Tools",
+    storage: "integration with other tools",
+  },
+  { title: "Monitoring", storage: "jenkins-monitor" },
+  { title: "Scaling Jenkins", storage: "scale-jenkins" },
 ];

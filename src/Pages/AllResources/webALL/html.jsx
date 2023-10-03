@@ -38,34 +38,39 @@ const Container = styled.div`
 `;
 
 export const HTML = () => {
-  const [jstopicsChecked, setJsTopicsChecked] = useState({
-    syntax: false,
-    dom: false,
-    fetch: false,
-    async: false,
-    event: false,
-    promises: false,
-    classes: false,
-    array: false,
-    hoisting: false,
-    closure: false,
+  const [htmltopicsChecked, setHtmlTopicsChecked] = useState({
+    htmlstructure: false,
+    htmlelements: false,
+    htmlattributes: false,
+    textformatting: false,
+    htmlimages: false,
+    htmllinks: false,
+    htmllists: false,
+    htmlforms: false,
+    semantichtml: false,
+    documentstructure: false,
+    htmlcomments: false,
+    devtools: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setJsTopicsChecked({
-      ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic],
+    setHtmlTopicsChecked({
+      ...htmltopicsChecked,
+      [topic]: !htmltopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
-  }, [jstopicsChecked]);
+    localStorage.setItem(
+      "htmltopicsChecked",
+      JSON.stringify(htmltopicsChecked)
+    );
+  }, [htmltopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
+      setHtmlTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -124,11 +129,16 @@ export const HTML = () => {
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
+                        <label
+                          htmlFor={front.storage}
+                          className="text-white title-font font-bold text-xl cursor-pointer"
+                        >
+                          {front.title}
+                        </label>
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={jstopicsChecked[front.storage]}
+                          checked={htmltopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -149,7 +159,10 @@ export const HTML = () => {
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
+                      <li
+                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
+                        key={resource.title}
+                      >
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -182,13 +195,15 @@ export const HTML = () => {
 const resources = [
   {
     title: "MDN Documentation",
-    image: "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    image:
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
     link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     title: "W3Schools - Introduction to HTML",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
     link: "https://www.w3schools.com/html/html_intro.asp",
   },
@@ -231,16 +246,16 @@ const resources = [
 ];
 
 const topics = [
-  { title: "HTML Structure", storage: "html-structure" },
-  { title: "HTML Elements", storage: "html-elements" },
-  { title: "Attributes", storage: "html-attributes" },
-  { title: "Text Formatting", storage: "text-formatting" },
-  { title: "Images", storage: "html-images" },
-  { title: "Links", storage: "html-links" },
-  { title: "Lists", storage: "html-lists" },
-  { title: "Forms", storage: "html-forms" },
-  { title: "Semantic Elements", storage: "semantic-html" },
-  { title: "Headings and Document Structure", storage: "document-structure" },
-  { title: "HTML Comments", storage: "html-comments" },
-  { title: "Browser Developer Tools", storage: "dev-tools" },
+  { title: "HTML Structure", storage: "htmlstructure" },
+  { title: "HTML Elements", storage: "htmlelements" },
+  { title: "Attributes", storage: "htmlattributes" },
+  { title: "Text Formatting", storage: "textformatting" },
+  { title: "Images", storage: "htmlimages" },
+  { title: "Links", storage: "htmllinks" },
+  { title: "Lists", storage: "htmllists" },
+  { title: "Forms", storage: "htmlforms" },
+  { title: "Semantic Elements", storage: "semantichtml" },
+  { title: "Headings and Document Structure", storage: "documentstructure" },
+  { title: "HTML Comments", storage: "htmlcomments" },
+  { title: "Browser Developer Tools", storage: "devtools" },
 ];
