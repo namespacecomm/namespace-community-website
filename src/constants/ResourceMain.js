@@ -83,6 +83,7 @@ export const ResourceMain = [
     to: "/uiux",
     image: require("./ResourceIcons/uiux.png"),
   },
+  {
     name: "Flutter",
     to: "/flutter",
     description:
