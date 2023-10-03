@@ -18,6 +18,8 @@ import AIML from "./Pages/AllResources/AIML";
 import { DevOps } from "./Pages/AllResources/Devops";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
+import Aws from "./Pages/AllResources/Aws";
+
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -49,6 +51,7 @@ function App() {
               <Route path='arvr' element={<ARVR/>} />
               <Route path='android' element={<Android/>} />
               <Route path='aiml' element={<AIML/>} />
+              <Route path='aws' element={<Aws/>} />
 
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
