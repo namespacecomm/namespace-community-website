@@ -74,136 +74,136 @@ export const CompProg = () => {
                             COMPETITIVE PROGRAMMING
                         </h1>
                         {/* <************************************MAIN SECTION*******************************************> */}
-                        <section class="text-gray-600 body-font">
-                            <div class="px-5 py-24 mx-auto flex flex-wrap">
-                                <div class="flex flex-wrap w-full">
-                                    <div class="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
-                                        <div class="flex relative pb-12">
-                                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        <section className="text-gray-600 body-font">
+                            <div className="px-5 py-24 mx-auto flex flex-wrap">
+                                <div className="flex flex-wrap w-full">
+                                    <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
+                                        <div className="flex relative pb-12">
+                                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                             </div>
-                                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
                                                 </svg>
                                             </div>
-                                            <div class="flex-grow pl-4">
-                                                <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                                            <div className="flex-grow pl-4">
+                                                <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                                                     Understand the Basics
                                                 </h2>
-                                                <p class="leading-relaxed text-white text-justify">
+                                                <p className="leading-relaxed text-white text-justify">
                                                     Competitive Programming involves solving algorithmic and data structure problems efficiently. Start by understanding fundamental concepts like data structures (arrays, linked lists, trees, graphs) and algorithms (sorting, searching, dynamic programming).
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="flex relative pb-12">
-                                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        <div className="flex relative pb-12">
+                                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                             </div>
-                                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M21 18v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1m18-2H3a2 2 0 00-2 2v4a2 2 0 002 2h18a2 2 0 002-2v-4a2 2 0 00-2-2zM6 12v-2a2 2 0 012-2h8a2 2 0 012 2v2"></path>
                                                 </svg>
                                             </div>
-                                            <div class="flex-grow pl-4">
-                                                <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                                            <div className="flex-grow pl-4">
+                                                <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                                                     Practice Regularly
                                                 </h2>
-                                                <p class="leading-relaxed text-white text-justify">
+                                                <p className="leading-relaxed text-white text-justify">
                                                     Just like in sports, regular practice is essential in competitive programming. Solve a variety of problems on online platforms like Codeforces, LeetCode, and HackerRank to improve your problem-solving skills and speed.
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="flex relative pb-12">
-                                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        <div className="flex relative pb-12">
+                                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                             </div>
-                                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
                                                 </svg>
                                             </div>
-                                            <div class="flex-grow pl-4">
-                                                <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                                            <div className="flex-grow pl-4">
+                                                <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                                                     Learn Advanced Algorithms
                                                 </h2>
-                                                <p class="leading-relaxed text-white text-justify">
+                                                <p className="leading-relaxed text-white text-justify">
                                                     Dive deeper into complex algorithms such as graph algorithms (Dijkstra's, Floyd-Warshall), dynamic programming, and number theory. Understanding and implementing advanced algorithms is crucial for solving challenging problems efficiently.
                                                 </p>
                                             </div>
                                         </div>
 
-                                        <div class="flex relative pb-12">
-                                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        <div className="flex relative pb-12">
+                                            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                             </div>
-                                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
                                                 </svg>
                                             </div>
-                                            <div class="flex-grow pl-4">
-                                                <h2 class="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
+                                            <div className="flex-grow pl-4">
+                                                <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
                                                     Participate in Contests
                                                 </h2>
-                                                <p class="leading-relaxed text-white text-justify">
+                                                <p className="leading-relaxed text-white text-justify">
                                                     Engage in coding contests on platforms like CodeChef, AtCoder, and Topcoder. Competing in contests exposes you to a variety of problem types and improves your ability to think critically and optimize solutions under time constraints.
                                                 </p>
                                             </div>
                                         </div>
 
-                                        <div class="flex relative pb-12">
-                                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
+                                        <div className="flex relative pb-12">
+                                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                                                 <svg
                                                     fill="none"
                                                     stroke="currentColor"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                                                     <path d="M22 4L12 14.01l-3-3"></path>
                                                 </svg>
                                             </div>
-                                            <div class="flex-grow pl-4">
-                                                <h2 class="font-bold title-font text-xl text-white mb-1 tracking-wider">
+                                            <div className="flex-grow pl-4">
+                                                <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
                                                     Analyse and Learn
                                                 </h2>
-                                                <p class="leading-relaxed text-white text-justify">
+                                                <p className="leading-relaxed text-white text-justify">
                                                     After contests, thoroughly analyze your solutions and editorials for problems you couldn't solve. Understand different approaches, optimizations, and coding styles. Learning from mistakes is an integral part of improving in competitive programming.
                                                 </p>
                                             </div>
@@ -211,7 +211,7 @@ export const CompProg = () => {
 
                                     </div>
                                     <img
-                                        class="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
+                                        className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
                                         src="https://i.ibb.co/RyJZwg8/cp.png"
                                         alt="step"
                                     />
@@ -221,31 +221,31 @@ export const CompProg = () => {
 
                         {/* <-----------------------------------------------END OF MAIN SECTION-------------------------------------------------> */}
                         {/* <------------------------------------Basic Algo-------------------------------------------------------> */}
-                        <section class="text-white body-font">
-                            <div class="px-5 py-0 mx-auto">
-                                <div class="flex flex-col text-left w-full mb-10">
-                                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                        <section className="text-white body-font">
+                            <div className="px-5 py-0 mx-auto">
+                                <div className="flex flex-col text-left w-full mb-10">
+                                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                                         1. Algorithmic Foundations
                                     </h1>
-                                    <p class="w-full text-left mx-auto leading-relaxed text-base">
+                                    <p className="w-full text-left mx-auto leading-relaxed text-base">
                                         Below are the topics that you need to master to excel in competitive programming.
                                     </p>
                                 </div>
-                                <div class="flex flex-wrap -m-2">
+                                <div className="flex flex-wrap -m-2">
                                     {algorithmicFoundations.map((topic) => {
                                         return (
-                                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={topic.title}>
+                                                <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                                                     <img
                                                         alt="topic"
-                                                        class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                                                        className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                                                         src={topic.image}
                                                     />
-                                                    <div class="flex-grow">
+                                                    <div className="flex-grow">
                                                         <Link to={topic.to}>
-                                                            <h2 class="text-white title-font font-bold underline text-xl">{topic.title}</h2>
+                                                            <h2 className="text-white title-font font-bold underline text-xl">{topic.title}</h2>
                                                         </Link>
-                                                        <p class="text-white">{topic.des}</p>
+                                                        <p className="text-white">{topic.des}</p>
                                                         <input
                                                             type="checkbox"
                                                             id={topic.title}
@@ -260,29 +260,29 @@ export const CompProg = () => {
                                 </div>
                         {/* <------------------------------------Advanced Algo-------------------------------------------------------> */}
                                 <br />
-                                <div class="flex flex-col text-left w-full mb-10">
-                                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                                <div className="flex flex-col text-left w-full mb-10">
+                                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                                         2. Advanced Data Structures
                                     </h1>
-                                    <p class="w-full text-left mx-auto leading-relaxed text-base">
+                                    <p className="w-full text-left mx-auto leading-relaxed text-base">
                                         Below are the topics that you need to master to become proficient in competitive programming.
                                     </p>
                                 </div>
-                                <div class="flex flex-wrap -m-2">
+                                <div className="flex flex-wrap -m-2">
                                     {advancedDataStructures.map((topic) => {
                                         return (
-                                            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                                                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={topic.title}>
+                                                <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                                                     <img
                                                         alt="topic"
-                                                        class="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                                                        className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                                                         src={topic.image}
                                                     />
-                                                    <div class="flex-grow">
+                                                    <div className="flex-grow">
                                                         <Link to={topic.to}>
-                                                            <h2 class="text-white title-font font-bold underline text-xl">{topic.title}</h2>
+                                                            <h2 className="text-white title-font font-bold underline text-xl">{topic.title}</h2>
                                                         </Link>
-                                                        <p class="text-white">{topic.des}</p>
+                                                        <p className="text-white">{topic.des}</p>
                                                         <input
                                                             type="checkbox"
                                                             id={topic.title}

@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Card = (props) => {
-    console.log(props)
-
   return (
     <div className='flex lg:flex-row items-center p-4 border-2 border-white rounded-lg gap-4 xs:flex-col xs:items-center  '>
         <div className='w-1/2 xs:w-full '>

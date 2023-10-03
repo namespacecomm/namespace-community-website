@@ -55,19 +55,19 @@ export const FrontEndFramework = () => {
       <Section>
         <Navbar />
         <Container>
-          <section class="text-white body-font">
-            <div class="mx-auto flex px-2 items-center justify-center flex-col">
+          <section className="text-white body-font">
+            <div className="mx-auto flex px-2 items-center justify-center flex-col">
               <Lottie animationData={framework} className="h-[500px] "/>
-              <div class="text-center lg:w-full w-full">
+              <div className="text-center lg:w-full w-full">
                 
-                  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                  <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                    Front-End FrameWorks
                   </h1>
                 
-                <p class="mb-8 leading-relaxed text-lg text-center">
+                <p className="mb-8 leading-relaxed text-lg text-center">
                 A JavaScript frontend framework is a collection of JavaScript code libraries that helps developers with standard programming features and tasks. In addition, it offers reusable code components, a universal development environment, compilers, toolsets, code libraries, APIs, etc., to facilitate the app.
                 </p>
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Popular front end frameworks</h1>
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Popular front end frameworks</h1>
                 <div className="grid grid-cols-1 w-full gap-x-4 gap-y-4">
                   {FrameWorks?.map((ele,ind)=>{
                     return <Card key={ind} {...ele}/>
@@ -78,7 +78,7 @@ export const FrontEndFramework = () => {
             </div>
             {/* <-------------------------------Topics Section ----------------------------------------------> */}
             
-            <div class="flex flex-wrap m-2">
+            <div className="flex flex-wrap m-2">
              
             </div>
             {/* <-----------------------------------------------RESOURCES SECTION---------------------------------------------------> */}
