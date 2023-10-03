@@ -4,6 +4,7 @@ import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Github } from "./Pages/AllResources/webALL/github";
+import { PHP } from "./Pages/AllResources/webALL/php";
 import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
@@ -19,6 +20,7 @@ import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
+import Iot from "./Pages/AllResources/Iot";
 import AIML from "./Pages/AllResources/AIML";
 import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
@@ -31,6 +33,8 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ReactNative from "./Pages/AllResources/ReactNative";
+import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -63,13 +67,17 @@ function App() {
               <Route path="dataScience" element={<DataScience />} />
               <Route path="arvr" element={<ARVR />} />
               <Route path="android" element={<Android />} />
+              <Route path="iot" element={<Iot />} />
               <Route path="flutter" element={<Flutter />} />
+              <Route path="reactnative" element={<ReactNative />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
               <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
+              <Route path="nlp" element={<NLP />} />
+              <Route path="php" element={<PHP />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route
                 path="frontend-framework"

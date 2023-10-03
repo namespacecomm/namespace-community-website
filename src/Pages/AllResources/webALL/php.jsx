@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -37,74 +38,72 @@ const Container = styled.div`
   }
 `;
 
-export const DOCKER = () => {
-  const [jstopicsChecked, setJsTopicsChecked] = useState({
-    syntax: false,
-    dom: false,
-    fetch: false,
-    async: false,
-    event: false,
-    promises: false,
-    classes: false,
-    array: false,
-    hoisting: false,
-    closure: false,
+export const PHP = () => {
+  const [phptopicsChecked, setPhpTopicsChecked] = useState({
+    variablesdatatypes: false,
+    phpoperators: false,
+    phpconditional: false,
+    phploops: false,
+    phpfunctions: false,
+    phparrays: false,
+    phpforms: false,
+    includerequire: false,
+    phpcookiessessions: false,
+    phpfilehandling: false,
+    phpoops: false,
+    phpmysql: false,
+    phpxmp: false,
+    phpajax: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setJsTopicsChecked({
-      ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic],
+    setPhpTopicsChecked({
+      ...phptopicsChecked,
+      [topic]: !phptopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
-  }, [jstopicsChecked]);
+    localStorage.setItem("phptopicsChecked", JSON.stringify(phptopicsChecked));
+  }, [phptopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("phptopicsChecked");
     if (storedTopicsChecked) {
-      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
+      setPhpTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
   return (
     <>
       <Section>
+        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
-                src="https://img.freepik.com/free-vector/port-concept-illustration_114360-7335.jpg?w=1480&t=st=1696258059~exp=1696258659~hmac=449086836074036e755fbc9c803c7e04d489da420cab2125f416cc76e1ffbc9f"
+                alt="css"
+                src="https://img.freepik.com/premium-photo/browser-window-with-php-programming-language-icon-code-elements-background-3d_327483-939.jpg?size=626&ext=jpg&ga=GA1.1.613098439.1696317950&semt=sph"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  DOCKER
+                  PHP: Hypertext PreProcessor
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Docker is a platform that utilizes containers, lightweight and
-                  self-contained packages, to develop, package, and run
-                  applications consistently across different environments. It
-                  comprises components like Docker containers (isolated runtime
-                  instances), Docker images (snapshots of containers), a Docker
-                  Engine (core management tool), Dockerfiles (instructions for
-                  building images), Docker registries (storage and sharing), and
-                  Docker Compose (multi-container app management). Docker
-                  simplifies deployment, making it popular in DevOps for its
-                  consistent, portable, and efficient application management
-                  capabilities, although it's worth noting that alternative
-                  containerization technologies like Kubernetes and containerd
-                  also exist and can be used in conjunction with or instead of
-                  Docker, depending on specific needs. Docker's popularity has
-                  led to a vast ecosystem of pre-built images and tools that
-                  extend its functionality, making it easier to integrate Docker
-                  into various development and deployment workflows. It has
-                  become a standard tool for many software development and IT
-                  operations teams and is widely used in industries ranging from
-                  web development to data science.
+                  The PHP Hypertext Preprocessor (PHP) is a programming language
+                  that allows web developers to create dynamic content that
+                  interacts with databases. PHP is basically used for developing
+                  web based software applications. This tutorial helps you to
+                  build your base with PHP.PHP started out as a small open
+                  source project that evolved as more and more people found out
+                  how useful it was. Rasmus Lerdorf unleashed the first version
+                  of PHP way back in 1994. PHP is a MUST for students and
+                  working professionals to become a great Software Engineer
+                  specially when they are working in Web Development Domain.
+                  Before proceeding with this tutorial you should have at least
+                  basic understanding of computer programming, Internet,
+                  Database, and MySQL etc is very helpful.
                 </p>
               </div>
             </div>
@@ -127,7 +126,7 @@ export const DOCKER = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={jstopicsChecked[front.storage]}
+                          checked={phptopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -183,79 +182,73 @@ export const DOCKER = () => {
 
 const resources = [
   {
-    title: "DOCKER - Docs",
+    title: "W3Schools - PHP Introduction",
     image:
-      "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://docs.docker.com/",
+    link: "https://www.w3schools.com/php/php_intro.asp",
   },
   {
-    title: "DockerLabs - Getting Started with Docker",
+    title: "CSS Tutorial Full Course",
     image:
-      "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
+      "https://i.ytimg.com/vi/OK_JCtrrv-c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJFYYIVzU6x7-B_W7kDJtxUrUz4Q",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=OK_JCtrrv-c",
+  },
+  {
+    title: "Learn PHP in 100 Seconds",
+    image:
+      "https://i.ytimg.com/vi/a7_WFUlFS94/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXSNWkEq-Us989MAC6AeQmk_03UA",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=a7_WFUlFS94",
+  },
+  {
+    title: "PHP Glossary",
+    image:
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
-    link: "https://dockerlabs.collabnix.com/",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/PHP",
   },
   {
-    title: "DOCKER in 100 seconds",
-    image: "https://i.ytimg.com/vi/Gjnup-PuquQ/maxresdefault.jpg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=Gjnup-PuquQ",
-  },
-  {
-    title: "Docker Tutorial for Beginners",
-    image: "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=pTFZFxd4hOI",
-  },
-  {
-    title: "DOCKER - Cheat Sheet",
+    title: "PHP in 15 Minutes",
     image:
-      "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
-    type: "Cheat Sheet",
-    link: "https://dockerlabs.collabnix.com/docker/cheatsheet/",
+      "https://i.ytimg.com/vi/ZdP0KM49IVk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZhwdXuPRa6T4jBRpQEur-cVdJvA",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=ZdP0KM49IVk",
   },
   {
-    title: "The DOCKER Handbook",
-    image:
-      "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
+    title: "The PHP Handbook",
+    image: "https://flaviocopes.com/bootcamp.jpg",
     type: "Documentation",
-    link: "https://www.freecodecamp.org/news/the-docker-handbook/",
+    link: "https://flaviocopes.com/book/php/",
   },
   {
-    title: "Introduction to Docker",
-    image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
-  },
-  {
-    title: "Docker for the Absolute Beginner - Hands On - DevOps",
-    image: "https://img-c.udemycdn.com/course/750x422/3490000_d298_2.jpg",
+    title: "Practical PHP: Master the Basics",
+    image: "https://img-b.udemycdn.com/course/240x135/130064_22b3_12.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/learn-docker/",
+    link: "https://www.udemy.com/course/code-dynamic-websites/",
+  },
+  {
+    title: "Beginner PHP and MySQL Tutorial",
+    image: "https://img-b.udemycdn.com/course/240x135/9711_452b_8.jpg",
+    type: "Course",
+    link: "https://www.udemy.com/course/php-mysql-tutorial/",
   },
 ];
 
 const topics = [
-  {
-    title: "Introduction to Containers",
-    storage: "introduction-to-containers",
-  },
-  { title: "Docker Architecture", storage: "docker-architecture" },
-  { title: "Docker Installation", storage: "install-docker" },
-  { title: "Docker Images", storage: "docker-images" },
-  { title: "Docker Containers", storage: "docker-containers" },
-  { title: "Docker Compose", storage: "docekr-compose" },
-  { title: "Container Orchestration", storage: "container-orchestration" },
-  { title: "Docker Networking", storage: "docker-networking" },
-  { title: "Docker Volumes and Storage", storage: "docker-volume-storage" },
-  { title: "Docker Security", storage: "docker-security" },
-  {
-    title: "Docker Registry and Repository",
-    storage: "docker-registry-repository",
-  },
-  { title: "Docker in CI/CD", storage: "docker-ci-cd" },
-  { title: "Monitoring and Logging", storage: "docker-monitor-log" },
-  { title: "Scaling and Load Balancing", storage: "docker-scale-load-balance" },
+  { title: "Variables & Data Types", storage: "variablesdatatypes" },
+  { title: "Operators", storage: "phpoperators" },
+  { title: "Conditional Statements", storage: "phpconditional" },
+  { title: "Loops", storage: "phploops" },
+  { title: "Functions", storage: "phpfunctions" },
+  { title: "Arrays", storage: "phparrays" },
+  { title: "Form Handling", storage: "phpforms" },
+  { title: "Include & Require", storage: "includerequire" },
+  { title: "Cookies & Sessions", storage: "phpcookiessessions" },
+  { title: "File Handling", storage: "phpfilehandling" },
+  { title: "OOP", storage: "phpoops" },
+  { title: "MySQL Database", storage: "phpmysql" },
+  { title: "PHP XMP", storage: "phpxmp" },
+  { title: "PHP AJAX", storage: "phpajax" },
 ];

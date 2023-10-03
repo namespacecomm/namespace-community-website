@@ -8,13 +8,13 @@ const NavbarContainer = styled.nav`
   background-color: #010116;
   display: flex;
   z-index: 99999999;
-  padding: 15px 5px;
+  padding: 5px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   @media (min-width: 900px) {
-    height: 80px;
+    height: 90px;
   }
 `;
 
@@ -58,8 +58,8 @@ const NavbarLink = styled(Link)`
   @media (max-width: 900px) {
     display: none;
   }
-  :hover{
-    color:deepskyblue;
+  :hover {
+    color: deepskyblue;
   }
   &.active {
     color: #3a60cf;
@@ -120,7 +120,7 @@ const Button = styled.button`
     margin: 17px 10px 10px 5px;
     ${"" /* display: none; */}
   }
-  :hover{
+  :hover {
     -webkit-box-shadow: 0 0 10px cyan;
     box-shadow: 0 0 10px cyan;
   }
@@ -133,36 +133,55 @@ function Navbar() {
   const location = useLocation();
 
   React.useEffect(() => {
+    setExtendNavbar(false);
     setActiveNavLink(location.pathname);
   }, [location]);
-
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLink to="/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
-          {/* <NavbarLink to="/">NSCC</NavbarLink> */}
+          <NavbarLink to="/">
+            <Logo src="./img/logo2.png"></Logo>
+          </NavbarLink>
           <NavLinks>
             <NavbarLink
               to="/projects"
-              className={activeNavLink === '/projects' ? 'active' : ''}
-            >Projects
+              // onClick={handlememu}
+              className={activeNavLink === "/projects" ? "active" : ""}
+            >
+              Projects
             </NavbarLink>
-            <NavbarLink to="/events"
-              className={activeNavLink === '/events' ? 'active' : ''}
-            >Events</NavbarLink>
-            <NavbarLink to="/programs"
-              className={activeNavLink === '/programs' ? 'active' : ''}
-            >Programs</NavbarLink>
-            <NavbarLink to="/team"
-              className={activeNavLink === '/team' ? 'active' : ''}
-            >Team</NavbarLink>
-            <NavbarLink to="/resources"
-              className={activeNavLink === '/resources' ? 'active' : ''}
-            >Resources</NavbarLink>
-            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank"
-              className={activeNavLink === '/http://blog.nsccbpit.tech/' ? 'active' : ''}
+            <NavbarLink
+              to="/events"
+              className={activeNavLink === "/events" ? "active" : ""}
+            >
+              Events
+            </NavbarLink>
+            <NavbarLink
+              to="/programs"
+              className={activeNavLink === "/programs" ? "active" : ""}
+            >
+              Programs
+            </NavbarLink>
+            <NavbarLink
+              to="/team"
+              className={activeNavLink === "/team" ? "active" : ""}
+            >
+              Team
+            </NavbarLink>
+            <NavbarLink
+              to="/resources"
+              className={activeNavLink === "/resources" ? "active" : ""}
+            >
+              Resources
+            </NavbarLink>
+            <NavbarLink
+              to="http://blog.nsccbpit.tech/"
+              target="_blank"
+              className={
+                activeNavLink === "/http://blog.nsccbpit.tech/" ? "active" : ""
+              }
             >
               Blog
             </NavbarLink>

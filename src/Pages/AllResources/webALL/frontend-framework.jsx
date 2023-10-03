@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Footer from "../../../components/Footer/Footer";
-import Navbar from "../../../components/Navbar/Navbar";
 import framework from '../../../assets/framework.json'
 import Lottie from 'lottie-react'
 import { Card } from "../../../components/Resources/Card";
@@ -53,7 +51,6 @@ export const FrontEndFramework = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 items-center justify-center flex-col">
@@ -86,7 +83,6 @@ export const FrontEndFramework = () => {
           </section>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
