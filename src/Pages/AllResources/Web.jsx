@@ -228,7 +228,10 @@ export const Web = () => {
                 <div className="flex flex-wrap -m-2">
                   {front.map((front) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={front.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={front.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -268,7 +271,10 @@ export const Web = () => {
                 <div className="flex flex-wrap -m-2">
                   {back.map((back) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={back.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={back.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
