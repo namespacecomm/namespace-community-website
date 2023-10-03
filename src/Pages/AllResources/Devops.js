@@ -510,7 +510,43 @@ const cloud = [
         "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg",
       to: "/aws",
       des: "AWS provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis",
-    }
+    },
+    {
+      "title": "Microsoft Azure",
+      "image": "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg",
+      "to": "/azure",
+      "des": "Microsoft Azure provides on-demand cloud computing platforms and APIs for individuals, businesses, and governments."
+  },
+  {
+      "title": "Google Cloud Platform (GCP)",
+      "image": "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg",
+      "to": "/gcp",
+      "des": "Google Cloud Platform is Google's cloud computing offering, providing services for computing, storage, databases, machine learning, and data analytics."
+  },
+  {
+      "title": "IBM Cloud",
+      "image": "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-ar21.svg",
+      "to": "/ibm-cloud",
+      "des": "IBM Cloud offers a comprehensive suite of cloud services, including cloud infrastructure, AI and machine learning, blockchain, and more."
+  },
+  {
+      "title": "Oracle Cloud",
+      "image": "https://cd.foundation/wp-content/uploads/sites/78/2021/05/oraclecloud.png",
+      "to": "/oracle-cloud",
+      "des": "Oracle Cloud provides cloud services for databases, computing, analytics, and applications. It caters to businesses and offers a variety of cloud solutions."
+  },
+  {
+      "title": "DigitalOcean",
+      "image": "https://www.vectorlogo.zone/logos/digitalocean/digitalocean-ar21.svg",
+      "to": "/digitalocean",
+      "des": "DigitalOcean is a developer-friendly cloud infrastructure provider known for its simplicity. It offers virtual private servers (known as Droplets)"
+  },
+  {
+      "title": "Heroku",
+      "image": "https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg",
+      "to": "/heroku",
+      "des": "Heroku is a platform as a service (PaaS) that simplifies application deployment and management. It is particularly popular for web application hosting."
+  }
 ];
 
 
