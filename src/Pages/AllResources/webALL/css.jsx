@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
@@ -40,34 +39,36 @@ const Container = styled.div`
 `;
 
 export const CSS = () => {
-  const [jstopicsChecked, setJsTopicsChecked] = useState({
-    syntax: false,
-    dom: false,
-    fetch: false,
-    async: false,
-    event: false,
-    promises: false,
-    classes: false,
-    array: false,
-    hoisting: false,
-    closure: false,
+  const [csstopicsChecked, setCssTopicsChecked] = useState({
+    boxmodel: false,
+    cssselectors: false,
+    cascadespeficity: false,
+    cssinheritance: false,
+    csscolors: false,
+    csssizing: false,
+    layoutgrid: false,
+    flexbox: false,
+    psuedoclasseselements: false,
+    cssborder: false,
+    csszindex: false,
+    gradientanimation: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setJsTopicsChecked({
-      ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic],
+    setCssTopicsChecked({
+      ...csstopicsChecked,
+      [topic]: !csstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
-  }, [jstopicsChecked]);
+    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
+  }, [csstopicsChecked]);
 
   useEffect(() => {
     const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
+      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -130,7 +131,7 @@ export const CSS = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={jstopicsChecked[front.storage]}
+                          checked={csstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -241,16 +242,16 @@ const resources = [
 ];
 
 const topics = [
-  { title: "Box Model", storage: "box-model" },
-  { title: "Selectors", storage: "css-selectors" },
-  { title: "Cascade & Specificity", storage: "cascade-speficity" },
-  { title: "Inheritance", storage: "css-inheritance" },
-  { title: "Colors", storage: "css-colors" },
-  { title: "Sizing Units", storage: "css-sizing" },
-  { title: "Layout & Grid", storage: "layout-grid" },
-  { title: "Flex Box", storage: "flex-box" },
-  { title: "Psuedo-Classes & Elements", storage: "psuedoclasses-elements" },
-  { title: "Border", storage: "css-border" },
-  { title: "Z-Index", storage: "css-z-index" },
-  { title: "Gradients & Animation", storage: "gradient-animation" },
+  { title: "Box Model", storage: "boxmodel" },
+  { title: "Selectors", storage: "cssselectors" },
+  { title: "Cascade & Specificity", storage: "cascadespeficity" },
+  { title: "Inheritance", storage: "cssinheritance" },
+  { title: "Colors", storage: "csscolors" },
+  { title: "Sizing Units", storage: "csssizing" },
+  { title: "Layout & Grid", storage: "layoutgrid" },
+  { title: "Flex Box", storage: "flexbox" },
+  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
+  { title: "Border", storage: "cssborder" },
+  { title: "Z-Index", storage: "csszindex" },
+  { title: "Gradients & Animation", storage: "gradientanimation" },
 ];
