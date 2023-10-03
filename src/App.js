@@ -20,6 +20,7 @@ import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
+import Iot from "./Pages/AllResources/Iot";
 import AIML from "./Pages/AllResources/AIML";
 import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
@@ -64,6 +65,7 @@ function App() {
               <Route path="dataScience" element={<DataScience />} />
               <Route path="arvr" element={<ARVR />} />
               <Route path="android" element={<Android />} />
+              <Route path='iot' element={<Iot/>} />
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
