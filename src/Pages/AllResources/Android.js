@@ -180,6 +180,7 @@ const androidDevelopmentPaths = [
 	},
 	{
 		title: 'React Native',
+		to: '/react-native',
 		image: 'https://www.vhv.rs/dpng/d/22-221315_react-native-logo-hd-png-download.png',
 		description:
 			'React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android , Android TV, iOS , macOS, tvOS, Web, Windows.',
