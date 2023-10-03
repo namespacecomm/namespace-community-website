@@ -3,8 +3,11 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
-import { MongoDB } from "./Pages/AllResources/webALL/mongodb";
+import { Github } from "./Pages/AllResources/webALL/github";
+import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
+import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
+import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
@@ -21,9 +24,13 @@ import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
 import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
+import { DeepLearning } from "./Pages/AllResources/Deeplearning";
 import { CSSFramework } from "./Pages/AllResources/CSSFramework";
-
+import { MongoDB } from "./Pages/AllResources/webALL/mongodb";
 import Aws from "./Pages/AllResources/Aws";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -41,6 +48,8 @@ function App() {
     <>
       <Container>
         <BrowserRouter>
+          <ScrollToTop />
+          <Navbar />
           <Routes>
             <Route path="/">
               <Route index element={<Hero />} />
@@ -57,9 +66,12 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
-              <Route path="mongodb" element={<MongoDB />} />
+              <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
+              <Route path="git" element={<Github />} />
+              <Route path="mongodb" element={<MongoDB />} />
               <Route path="js" element={<Javascript />} />
+              <Route path="deeplearning" element={<DeepLearning />} />
               <Route
                 path="frontend-framework"
                 element={<FrontEndFramework />}
@@ -67,10 +79,13 @@ function App() {
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="docker" element={<DOCKER />} />
+              <Route path="kubernetes" element={<KUBERNETES />} />
+              <Route path="jenkins" element={<JENKINS />} />
               <Route path="Blockchain" element={<Blockchain />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
       </Container>
     </>
