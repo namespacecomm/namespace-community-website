@@ -76,10 +76,7 @@ function App() {
               <Route path="nlp" element={<NLP />} />
               <Route path="php" element={<PHP />} />
               <Route path="deeplearning" element={<DeepLearning />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
+              <Route path="frontend-framework" element={<FrontEndFramework />}/>
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="docker" element={<DOCKER />} />
