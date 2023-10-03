@@ -27,6 +27,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { Netlify } from "./Pages/AllResources/webALL/netlify";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -70,6 +71,7 @@ function App() {
               <Route path='devops' element={ <DevOps /> } />
               <Route path='docker' element={<DOCKER/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
+              <Route path='netlify' element={<Netlify/>} />
               <Route path='*' element={ <NotFound /> } />
             </Route>
           </Routes>
