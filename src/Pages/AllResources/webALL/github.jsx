@@ -9,20 +9,8 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  ${
-    "" /* background-color: rgb(9, 9, 121);
-  background-repeat: no-repeat;
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
   }
   background-color: #010116;
-  ${
-    "" /* background-repeat: no-repeat;
-    background: no-repeat url("./img/bg.jpg"); */
-  }
 `;
 
 const Container = styled.div`
@@ -38,37 +26,40 @@ const Container = styled.div`
   }
 `;
 
-export const CSS = () => {
-  const [csstopicsChecked, setCssTopicsChecked] = useState({
-    boxmodel: false,
-    cssselectors: false,
-    cascadespeficity: false,
-    cssinheritance: false,
-    csscolors: false,
-    csssizing: false,
-    layoutgrid: false,
-    flexbox: false,
-    psuedoclasseselements: false,
-    cssborder: false,
-    csszindex: false,
-    gradientanimation: false,
+export const Github = () => {
+  const [githubtopicsChecked, setGithubTopicsChecked] = useState({
+    opensource: false,
+    git: false,
+    gitHub: false,
+    gitfork: false,
+    gitclone: false,
+    remoteorigin: false,
+    gitupstream: false,
+    branches: false,
+    commit: false,
+    gitpush: false,
+    pullrequests: false,
+    resolvingconflits: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setCssTopicsChecked({
-      ...csstopicsChecked,
-      [topic]: !csstopicsChecked[topic],
+    setGithubTopicsChecked({
+      ...githubtopicsChecked,
+      [topic]: !githubtopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
-  }, [csstopicsChecked]);
+    localStorage.setItem(
+      "githubtopicsChecked",
+      JSON.stringify(githubtopicsChecked)
+    );
+  }, [githubtopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("githubtopicsChecked");
     if (storedTopicsChecked) {
-      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
+      setGithubTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -81,34 +72,29 @@ export const CSS = () => {
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="css"
-                src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-2323.jpg?w=740&t=st=1696318168~exp=1696318768~hmac=a3467593274ad7d563a0303bb9a0c3bc8b660a580f94bbc3498f4677eae72213"
+                alt="hero"
+                src="https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  CSS: Cascading Style Sheets
+                  Github: Cloud based version control service
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Cascading Style Sheets (CSS) is a stylesheet language used to
-                  describe the presentation of a document written in HTML or XML
-                  (including XML dialects such as SVG, MathML or XHTML). CSS
-                  describes how elements should be rendered on screen, on paper,
-                  in speech, or on other media. CSS is among the core languages
-                  of the open web and is standardized across Web browsers
-                  according to W3C specifications. Previously, the development
-                  of various parts of CSS specification was done synchronously,
-                  which allowed the versioning of the latest recommendations.
-                  You might have heard about CSS1, CSS2.1, or even CSS3. There
-                  will never be a CSS3 or a CSS4; rather, everything is now CSS
-                  without a version number. After CSS 2.1, the scope of the
-                  specification increased significantly and the progress on
-                  different CSS modules started to differ so much, that it
-                  became more effective to develop and release recommendations
-                  separately per module. Instead of versioning the CSS
-                  specification, W3C now periodically takes a snapshot of the
-                  latest stable state of the CSS specification and individual
-                  modules progress. CSS modules now have version numbers, or
-                  levels, such as CSS Color Module Level 5.
+                  Git is a specific open-source version control system created
+                  by Linus Torvalds in 2005. Specifically, Git is a distributed
+                  version control system, which means that the entire codebase
+                  and history is available on every developer’s computer, which
+                  allows for easy branching and merging. According to a Stack
+                  Overflow developer survey, over 87% of developers use Git.
+                  GitHub essentials are:Repositories, Branches, Commits, Pull
+                  Requests, Git (the version control software GitHub is built
+                  on).
+                  <br />
+                  It makes it easy for developers to share code files and
+                  collaborate with fellow developers on open-source projects.
+                  GitHub also serves as a social networking site where
+                  developers can openly network, collaborate, and pitch their
+                  work.
                 </p>
               </div>
             </div>
@@ -131,7 +117,7 @@ export const CSS = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={csstopicsChecked[front.storage]}
+                          checked={githubtopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -191,67 +177,52 @@ const resources = [
     image:
       "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
     type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    link: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
   },
   {
-    title: "W3Schools - CSS Introduction",
+    title: "W3Schools - Git Tutorial",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://www.w3schools.com/css/css_intro.asp",
+    link: "https://www.w3schools.com/git/",
   },
   {
-    title: "CSS Tutorial for Beginers",
-    image:
-      "https://i.ytimg.com/vi/I9XRrlOOazo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBpmdn90a5heB5tKwledvuXdJQp6Q",
+    title: "Git for Beginners",
+    image: "https://i.ytimg.com/vi/vwj89i2FmG0/hq720.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
+    link: "https://www.youtube.com/watch?v=vwj89i2FmG0&pp=ygUMZ2l0IHR1dG9yaWFs",
   },
   {
-    title: "Learn CSS in 20 Minutes",
-    image:
-      "https://i.ytimg.com/vi/1PnVor36_40/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4tJ7kbGq-1Vv0pz8nIkiwF5xyQg",
+    title: "Complete Git and Github Tutorial",
+    image: "https://i.ytimg.com/vi/apGV9Kg7ics/hq720.jpg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=1PnVor36_40",
+    link: "https://www.youtube.com/watch?v=apGV9Kg7ics&pp=ygUPZ2l0aHViIHR1dG9yaWFs",
   },
   {
-    title: "CSS in 100 Seconds",
-    image:
-      "https://i.ytimg.com/vi/OEV8gMkCHXQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn8dqDCfy2BjSRSrGCmP2AjR_YDg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
-  },
-  {
-    title: "The CSS Handbook",
-    image: "https://flaviocopes.com/bootcamp.jpg",
-    type: "Documentation",
-    link: "https://flaviocopes.com/book/css/",
-  },
-  {
-    title: "Web Development by Doing: HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
+    title: "Git Complete: The definitive, step-by-step guide to Git",
+    image: "https://img-c.udemycdn.com/course/240x135/221674_1411_4.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    link: "https://www.udemy.com/course/git-complete/",
   },
   {
-    title: "CSS: Zero to Hero in CSS",
-    image: "https://img-c.udemycdn.com/course/480x270/2089476_55a6.jpg",
+    title: "Git Going Fast: One Hour Git Crash Course",
+    image: "https://img-c.udemycdn.com/course/240x135/221696_d05a_4.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/css-zero-to-hero/",
+    link: "https://www.udemy.com/course/git-going-fast/",
   },
 ];
 
 const topics = [
-  { title: "Box Model", storage: "boxmodel" },
-  { title: "Selectors", storage: "cssselectors" },
-  { title: "Cascade & Specificity", storage: "cascadespeficity" },
-  { title: "Inheritance", storage: "cssinheritance" },
-  { title: "Colors", storage: "csscolors" },
-  { title: "Sizing Units", storage: "csssizing" },
-  { title: "Layout & Grid", storage: "layoutgrid" },
-  { title: "Flex Box", storage: "flexbox" },
-  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
-  { title: "Border", storage: "cssborder" },
-  { title: "Z-Index", storage: "csszindex" },
-  { title: "Gradients & Animation", storage: "gradientanimation" },
+  { title: "Open source", storage: "opensource" },
+  { title: "Git", storage: "git" },
+  { title: "GitHub", storage: "gitHub" },
+  { title: "Git fork", storage: "gitfork" },
+  { title: "Git clone", storage: "gitclone" },
+  { title: "Remote origin", storage: "remoteorigin" },
+  { title: "Git upstream", storage: "gitupstream" },
+  { title: "Branches", storage: "branches" },
+  { title: "Commit", storage: "commit" },
+  { title: "Git push", storage: "gitpush" },
+  { title: "Pull requests", storage: "pullrequests" },
+  { title: "Resolving conflits", storage: "resolvingconflits" },
 ];
