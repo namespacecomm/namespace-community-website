@@ -38,37 +38,39 @@ const Container = styled.div`
   }
 `;
 
-export const CSS = () => {
-  const [csstopicsChecked, setCssTopicsChecked] = useState({
-    boxmodel: false,
-    cssselectors: false,
-    cascadespeficity: false,
-    cssinheritance: false,
-    csscolors: false,
-    csssizing: false,
-    layoutgrid: false,
-    flexbox: false,
-    psuedoclasseselements: false,
-    cssborder: false,
-    csszindex: false,
-    gradientanimation: false,
+export const PHP = () => {
+  const [phptopicsChecked, setPhpTopicsChecked] = useState({
+    variablesdatatypes: false,
+    phpoperators: false,
+    phpconditional: false,
+    phploops: false,
+    phpfunctions: false,
+    phparrays: false,
+    phpforms: false,
+    includerequire: false,
+    phpcookiessessions: false,
+    phpfilehandling: false,
+    phpoops: false,
+    phpmysql: false,
+    phpxmp: false,
+    phpajax: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setCssTopicsChecked({
-      ...csstopicsChecked,
-      [topic]: !csstopicsChecked[topic],
+    setPhpTopicsChecked({
+      ...phptopicsChecked,
+      [topic]: !phptopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
-  }, [csstopicsChecked]);
+    localStorage.setItem("phptopicsChecked", JSON.stringify(phptopicsChecked));
+  }, [phptopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("phptopicsChecked");
     if (storedTopicsChecked) {
-      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
+      setPhpTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -82,33 +84,26 @@ export const CSS = () => {
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="css"
-                src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-2323.jpg?w=740&t=st=1696318168~exp=1696318768~hmac=a3467593274ad7d563a0303bb9a0c3bc8b660a580f94bbc3498f4677eae72213"
+                src="https://img.freepik.com/premium-photo/browser-window-with-php-programming-language-icon-code-elements-background-3d_327483-939.jpg?size=626&ext=jpg&ga=GA1.1.613098439.1696317950&semt=sph"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  CSS: Cascading Style Sheets
+                  PHP: Hypertext PreProcessor
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Cascading Style Sheets (CSS) is a stylesheet language used to
-                  describe the presentation of a document written in HTML or XML
-                  (including XML dialects such as SVG, MathML or XHTML). CSS
-                  describes how elements should be rendered on screen, on paper,
-                  in speech, or on other media. CSS is among the core languages
-                  of the open web and is standardized across Web browsers
-                  according to W3C specifications. Previously, the development
-                  of various parts of CSS specification was done synchronously,
-                  which allowed the versioning of the latest recommendations.
-                  You might have heard about CSS1, CSS2.1, or even CSS3. There
-                  will never be a CSS3 or a CSS4; rather, everything is now CSS
-                  without a version number. After CSS 2.1, the scope of the
-                  specification increased significantly and the progress on
-                  different CSS modules started to differ so much, that it
-                  became more effective to develop and release recommendations
-                  separately per module. Instead of versioning the CSS
-                  specification, W3C now periodically takes a snapshot of the
-                  latest stable state of the CSS specification and individual
-                  modules progress. CSS modules now have version numbers, or
-                  levels, such as CSS Color Module Level 5.
+                  The PHP Hypertext Preprocessor (PHP) is a programming language
+                  that allows web developers to create dynamic content that
+                  interacts with databases. PHP is basically used for developing
+                  web based software applications. This tutorial helps you to
+                  build your base with PHP.PHP started out as a small open
+                  source project that evolved as more and more people found out
+                  how useful it was. Rasmus Lerdorf unleashed the first version
+                  of PHP way back in 1994. PHP is a MUST for students and
+                  working professionals to become a great Software Engineer
+                  specially when they are working in Web Development Domain.
+                  Before proceeding with this tutorial you should have at least
+                  basic understanding of computer programming, Internet,
+                  Database, and MySQL etc is very helpful.
                 </p>
               </div>
             </div>
@@ -131,7 +126,7 @@ export const CSS = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={csstopicsChecked[front.storage]}
+                          checked={phptopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -187,71 +182,73 @@ export const CSS = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
-    image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
-    type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    title: "W3Schools - CSS Introduction",
+    title: "W3Schools - PHP Introduction",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://www.w3schools.com/css/css_intro.asp",
+    link: "https://www.w3schools.com/php/php_intro.asp",
   },
   {
-    title: "CSS Tutorial for Beginers",
+    title: "CSS Tutorial Full Course",
     image:
-      "https://i.ytimg.com/vi/I9XRrlOOazo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBpmdn90a5heB5tKwledvuXdJQp6Q",
+      "https://i.ytimg.com/vi/OK_JCtrrv-c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJFYYIVzU6x7-B_W7kDJtxUrUz4Q",
     type: "Youtube video",
-    link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
+    link: "https://www.youtube.com/watch?v=OK_JCtrrv-c",
   },
   {
-    title: "Learn CSS in 20 Minutes",
+    title: "Learn PHP in 100 Seconds",
     image:
-      "https://i.ytimg.com/vi/1PnVor36_40/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4tJ7kbGq-1Vv0pz8nIkiwF5xyQg",
+      "https://i.ytimg.com/vi/a7_WFUlFS94/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXSNWkEq-Us989MAC6AeQmk_03UA",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=1PnVor36_40",
+    link: "https://www.youtube.com/watch?v=a7_WFUlFS94",
   },
   {
-    title: "CSS in 100 Seconds",
+    title: "PHP Glossary",
     image:
-      "https://i.ytimg.com/vi/OEV8gMkCHXQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn8dqDCfy2BjSRSrGCmP2AjR_YDg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    type: "Documentation",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/PHP",
   },
   {
-    title: "The CSS Handbook",
+    title: "PHP in 15 Minutes",
+    image:
+      "https://i.ytimg.com/vi/ZdP0KM49IVk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZhwdXuPRa6T4jBRpQEur-cVdJvA",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=ZdP0KM49IVk",
+  },
+  {
+    title: "The PHP Handbook",
     image: "https://flaviocopes.com/bootcamp.jpg",
     type: "Documentation",
-    link: "https://flaviocopes.com/book/css/",
+    link: "https://flaviocopes.com/book/php/",
   },
   {
-    title: "Web Development by Doing: HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
+    title: "Practical PHP: Master the Basics",
+    image: "https://img-b.udemycdn.com/course/240x135/130064_22b3_12.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    link: "https://www.udemy.com/course/code-dynamic-websites/",
   },
   {
-    title: "CSS: Zero to Hero in CSS",
-    image: "https://img-c.udemycdn.com/course/480x270/2089476_55a6.jpg",
+    title: "Beginner PHP and MySQL Tutorial",
+    image: "https://img-b.udemycdn.com/course/240x135/9711_452b_8.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/css-zero-to-hero/",
+    link: "https://www.udemy.com/course/php-mysql-tutorial/",
   },
 ];
 
 const topics = [
-  { title: "Box Model", storage: "boxmodel" },
-  { title: "Selectors", storage: "cssselectors" },
-  { title: "Cascade & Specificity", storage: "cascadespeficity" },
-  { title: "Inheritance", storage: "cssinheritance" },
-  { title: "Colors", storage: "csscolors" },
-  { title: "Sizing Units", storage: "csssizing" },
-  { title: "Layout & Grid", storage: "layoutgrid" },
-  { title: "Flex Box", storage: "flexbox" },
-  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
-  { title: "Border", storage: "cssborder" },
-  { title: "Z-Index", storage: "csszindex" },
-  { title: "Gradients & Animation", storage: "gradientanimation" },
+  { title: "Variables & Data Types", storage: "variablesdatatypes" },
+  { title: "Operators", storage: "phpoperators" },
+  { title: "Conditional Statements", storage: "phpconditional" },
+  { title: "Loops", storage: "phploops" },
+  { title: "Functions", storage: "phpfunctions" },
+  { title: "Arrays", storage: "phparrays" },
+  { title: "Form Handling", storage: "phpforms" },
+  { title: "Include & Require", storage: "includerequire" },
+  { title: "Cookies & Sessions", storage: "phpcookiessessions" },
+  { title: "File Handling", storage: "phpfilehandling" },
+  { title: "OOP", storage: "phpoops" },
+  { title: "MySQL Database", storage: "phpmysql" },
+  { title: "PHP XMP", storage: "phpxmp" },
+  { title: "PHP AJAX", storage: "phpajax" },
 ];

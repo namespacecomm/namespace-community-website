@@ -4,6 +4,7 @@ import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Github } from "./Pages/AllResources/webALL/github";
+import { PHP } from "./Pages/AllResources/webALL/php";
 import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
@@ -70,6 +71,7 @@ function App() {
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
+              <Route path="php" element={<PHP />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route
                 path="frontend-framework"
