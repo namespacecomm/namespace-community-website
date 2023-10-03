@@ -21,6 +21,8 @@ import { DevOps } from "./Pages/AllResources/Devops";
 import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 
+import Aws from "./Pages/AllResources/Aws";
+
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -52,6 +54,9 @@ function App() {
               <Route path='android' element={<Android/>} />
               <Route path="flutter" element={<Flutter/>} />
               <Route path='aiml' element={<AIML/>} />
+              <Route path='aws' element={<Aws/>} />
+
+
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
