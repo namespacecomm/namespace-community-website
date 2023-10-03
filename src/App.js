@@ -5,6 +5,7 @@ import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
+import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import AllTeams from "./Pages/AllTeams/AllTeams";
@@ -69,6 +70,7 @@ function App() {
               <Route path='css-framework' element={ <CSSFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='docker' element={<DOCKER/>} />
+              <Route path='kubernetes' element={<KUBERNETES/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
               <Route path='*' element={ <NotFound /> } />
             </Route>
