@@ -1,21 +1,3 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import styled from 'styled-components';
-import AllEvents from './Pages/AllEvents/AllEvents';
-import { Web } from './Pages/AllResources/Web';
-import { HTML } from './Pages/AllResources/webALL/html';
-
-import { Javascript } from './Pages/AllResources/webALL/javascript';
-import AllTeams from './Pages/AllTeams/AllTeams';
-import Projects from './Pages/Projects/Projects';
-import Resources from './Pages/Resources/Resources';
-import Hero from './Sections/Hero/Hero';
-import NotFound from './Pages/Error/NotFound';
-import Android from './Pages/AllResources/Android';
-import ARVR from './Pages/AllResources/ARVR';
-import Programs from './Pages/Programs/Programs';
-import AIML from './Pages/AllResources/AIML';
-import { DevOps } from './Pages/AllResources/Devops';
-import { FrontEndFramework } from './Pages/AllResources/webALL/frontend-framework';
 import { ReactNative } from './Pages/AllResources/androidALL/ReactNative';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
