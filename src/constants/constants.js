@@ -125,28 +125,6 @@ export const members = [
   },
 
   {
-    image:
-      "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
-    name: "Pawas Goyal",
-    position: "Technical Council",
-    github: "https://github.com/pawas108ram",
-    linkedin: "https://www.linkedin.com/in/pawas-goyal/",
-    instagram: "https://www.instagram.com/pawas_licht03/",
-    twitter: "",
-  },
-
-  {
-    image:
-      "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
-    name: "Rishav Raj",
-    position: "Technical Council",
-    github: "https://github.com/Rishav-01",
-    linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
-    instagram: "https://www.instagram.com/rishav_th9/",
-    twitter: "",
-  },
-
-  {
     name: "Khushi Kulshreshtha",
     image: "https://i.postimg.cc/66vvXLD7/IMG-20230124-161335.jpg",
     position: "Senior Council",
