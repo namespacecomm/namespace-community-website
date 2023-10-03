@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Footer from "../../../components/Footer/Footer";
-import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -74,7 +72,6 @@ export const DOCKER = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
@@ -88,7 +85,26 @@ export const DOCKER = () => {
                   DOCKER
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                Docker is a platform that utilizes containers, lightweight and self-contained packages, to develop, package, and run applications consistently across different environments. It comprises components like Docker containers (isolated runtime instances), Docker images (snapshots of containers), a Docker Engine (core management tool), Dockerfiles (instructions for building images), Docker registries (storage and sharing), and Docker Compose (multi-container app management). Docker simplifies deployment, making it popular in DevOps for its consistent, portable, and efficient application management capabilities, although it's worth noting that alternative containerization technologies like Kubernetes and containerd also exist and can be used in conjunction with or instead of Docker, depending on specific needs. Docker's popularity has led to a vast ecosystem of pre-built images and tools that extend its functionality, making it easier to integrate Docker into various development and deployment workflows. It has become a standard tool for many software development and IT operations teams and is widely used in industries ranging from web development to data science.
+                  Docker is a platform that utilizes containers, lightweight and
+                  self-contained packages, to develop, package, and run
+                  applications consistently across different environments. It
+                  comprises components like Docker containers (isolated runtime
+                  instances), Docker images (snapshots of containers), a Docker
+                  Engine (core management tool), Dockerfiles (instructions for
+                  building images), Docker registries (storage and sharing), and
+                  Docker Compose (multi-container app management). Docker
+                  simplifies deployment, making it popular in DevOps for its
+                  consistent, portable, and efficient application management
+                  capabilities, although it's worth noting that alternative
+                  containerization technologies like Kubernetes and containerd
+                  also exist and can be used in conjunction with or instead of
+                  Docker, depending on specific needs. Docker's popularity has
+                  led to a vast ecosystem of pre-built images and tools that
+                  extend its functionality, making it easier to integrate Docker
+                  into various development and deployment workflows. It has
+                  become a standard tool for many software development and IT
+                  operations teams and is widely used in industries ranging from
+                  web development to data science.
                 </p>
               </div>
             </div>
@@ -102,7 +118,12 @@ export const DOCKER = () => {
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
+                        <label
+                          htmlFor={front.storage}
+                          className="text-white title-font font-bold text-xl cursor-pointer"
+                        >
+                          {front.title}
+                        </label>
                         <input
                           type="checkbox"
                           id={front.storage}
@@ -127,7 +148,10 @@ export const DOCKER = () => {
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
+                      <li
+                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
+                        key={resource.title}
+                      >
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -153,7 +177,6 @@ export const DOCKER = () => {
           </section>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
@@ -161,13 +184,15 @@ export const DOCKER = () => {
 const resources = [
   {
     title: "DOCKER - Docs",
-    image: "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
+    image:
+      "https://hsf-training.github.io/hsf-training-docker/fig/Docker_logo.png",
     type: "Documentation",
     link: "https://docs.docker.com/",
   },
   {
     title: "DockerLabs - Getting Started with Docker",
-    image: "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
+    image:
+      "https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg",
     type: "Documentation",
     link: "https://dockerlabs.collabnix.com/",
   },
@@ -185,19 +210,22 @@ const resources = [
   },
   {
     title: "DOCKER - Cheat Sheet",
-    image: "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
+    image:
+      "https://user-images.githubusercontent.com/313480/210130087-62a755f7-499c-4f5a-a91c-9151ac82417e.png",
     type: "Cheat Sheet",
     link: "https://dockerlabs.collabnix.com/docker/cheatsheet/",
   },
   {
     title: "The DOCKER Handbook",
-    image: "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
+    image:
+      "https://www.freecodecamp.org/news/content/images/2020/07/docker-handbook-preview.png",
     type: "Documentation",
     link: "https://www.freecodecamp.org/news/the-docker-handbook/",
   },
   {
     title: "Introduction to Docker",
-    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
+    image:
+      "https://res.cloudinary.com/practicaldev/image/fetch/s--sA57fKnT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/a0gvmzph343m9wvjys6h.png",
     type: "Youtube video",
     link: "https://www.youtube.com/watch?v=3c-iBn73dDE",
   },
@@ -210,7 +238,10 @@ const resources = [
 ];
 
 const topics = [
-  { title: "Introduction to Containers", storage: "introduction-to-containers" },
+  {
+    title: "Introduction to Containers",
+    storage: "introduction-to-containers",
+  },
   { title: "Docker Architecture", storage: "docker-architecture" },
   { title: "Docker Installation", storage: "install-docker" },
   { title: "Docker Images", storage: "docker-images" },
@@ -220,7 +251,10 @@ const topics = [
   { title: "Docker Networking", storage: "docker-networking" },
   { title: "Docker Volumes and Storage", storage: "docker-volume-storage" },
   { title: "Docker Security", storage: "docker-security" },
-  { title: "Docker Registry and Repository", storage: "docker-registry-repository" },
+  {
+    title: "Docker Registry and Repository",
+    storage: "docker-registry-repository",
+  },
   { title: "Docker in CI/CD", storage: "docker-ci-cd" },
   { title: "Monitoring and Logging", storage: "docker-monitor-log" },
   { title: "Scaling and Load Balancing", storage: "docker-scale-load-balance" },

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
@@ -121,6 +122,7 @@ export default function Android() {
 					</div>
 				</section>
 
+
 				<section>
 					<div className="px-5 py-0 mx-auto">
 						<div className="flex flex-col text-left w-full mb-10">
@@ -164,8 +166,6 @@ export default function Android() {
 						</div>
 					</div>
 				</section>
-
-				<Footer />
 			</div>
 		</>
 	);

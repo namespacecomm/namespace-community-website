@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import "./Main.css";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -68,7 +66,6 @@ export const DevOps = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           {/* --------------------------------MAIN HEADING------------------------------------------------------ */}
           <div className=" px-0 py-10 ">
@@ -99,10 +96,14 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                        Infrastructure as Code (IaC)
+                          Infrastructure as Code (IaC)
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                        In DevOps, managing infrastructure becomes code. Tools like Terraform or Ansible are widely used. It involves defining and managing your infrastructure as code, enabling version control, and ensuring consistency in deployment.
+                          In DevOps, managing infrastructure becomes code. Tools
+                          like Terraform or Ansible are widely used. It involves
+                          defining and managing your infrastructure as code,
+                          enabling version control, and ensuring consistency in
+                          deployment.
                         </p>
                       </div>
                     </div>
@@ -125,10 +126,14 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                        CI/CD Automation
+                          CI/CD Automation
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                        Automate code integration (CI) with tools like Jenkins, GitLab CI, or Travis CI, addressing integration issues early. Implement continuous deployment/delivery (CD) for automated testing and streamlined production releases.
+                          Automate code integration (CI) with tools like
+                          Jenkins, GitLab CI, or Travis CI, addressing
+                          integration issues early. Implement continuous
+                          deployment/delivery (CD) for automated testing and
+                          streamlined production releases.
                         </p>
                       </div>
                     </div>
@@ -137,14 +142,31 @@ export const DevOps = () => {
                         <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                       </div>
                       <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
-                      <svg width="19px" height="19px" viewBox="0 0 0.57 0.57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.487 0.173 0.285 0.285m0 0L0.083 0.173M0.285 0.285v0.226m0.214 -0.129V0.188c0 -0.008 0 -0.012 -0.001 -0.016a0.024 0.024 0 0 0 -0.005 -0.009 0.052 0.052 0 0 0 -0.013 -0.009L0.304 0.057C0.297 0.054 0.293 0.052 0.29 0.051a0.024 0.024 0 0 0 -0.01 0 0.057 0.057 0 0 0 -0.014 0.006L0.091 0.155a0.052 0.052 0 0 0 -0.013 0.009 0.024 0.024 0 0 0 -0.005 0.009C0.071 0.176 0.071 0.18 0.071 0.188v0.193c0 0.008 0 0.012 0.001 0.016a0.024 0.024 0 0 0 0.005 0.009 0.052 0.052 0 0 0 0.013 0.009l0.176 0.098a0.057 0.057 0 0 0 0.014 0.006 0.02 0.02 0 0 0 0.01 0 0.057 0.057 0 0 0 0.014 -0.006l0.176 -0.098a0.052 0.052 0 0 0 0.013 -0.009 0.024 0.024 0 0 0 0.005 -0.009c0.001 -0.003 0.001 -0.008 0.001 -0.016Z" stroke="#fff" strokeWidth="0.0475" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                        <svg
+                          width="19px"
+                          height="19px"
+                          viewBox="0 0 0.57 0.57"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.487 0.173 0.285 0.285m0 0L0.083 0.173M0.285 0.285v0.226m0.214 -0.129V0.188c0 -0.008 0 -0.012 -0.001 -0.016a0.024 0.024 0 0 0 -0.005 -0.009 0.052 0.052 0 0 0 -0.013 -0.009L0.304 0.057C0.297 0.054 0.293 0.052 0.29 0.051a0.024 0.024 0 0 0 -0.01 0 0.057 0.057 0 0 0 -0.014 0.006L0.091 0.155a0.052 0.052 0 0 0 -0.013 0.009 0.024 0.024 0 0 0 -0.005 0.009C0.071 0.176 0.071 0.18 0.071 0.188v0.193c0 0.008 0 0.012 0.001 0.016a0.024 0.024 0 0 0 0.005 0.009 0.052 0.052 0 0 0 0.013 0.009l0.176 0.098a0.057 0.057 0 0 0 0.014 0.006 0.02 0.02 0 0 0 0.01 0 0.057 0.057 0 0 0 0.014 -0.006l0.176 -0.098a0.052 0.052 0 0 0 0.013 -0.009 0.024 0.024 0 0 0 0.005 -0.009c0.001 -0.003 0.001 -0.008 0.001 -0.016Z"
+                            stroke="#fff"
+                            strokeWidth="0.0475"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                        Containerization and Orchestration
+                          Containerization and Orchestration
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                        Embrace Docker for containerization, packaging applications into containers. Use Kubernetes for orchestration, managing and scaling containerized applications.
+                          Embrace Docker for containerization, packaging
+                          applications into containers. Use Kubernetes for
+                          orchestration, managing and scaling containerized
+                          applications.
                         </p>
                       </div>
                     </div>
@@ -167,10 +189,14 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                        Monitoring, Security, and Collaboration
+                          Monitoring, Security, and Collaboration
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                        Implement monitoring tools (e.g., Prometheus, Grafana) for system health and logging. Integrate security practices (e.g., SonarQube) throughout the development lifecycle. Foster collaboration through communication tools (e.g., Slack, Microsoft Teams).
+                          Implement monitoring tools (e.g., Prometheus, Grafana)
+                          for system health and logging. Integrate security
+                          practices (e.g., SonarQube) throughout the development
+                          lifecycle. Foster collaboration through communication
+                          tools (e.g., Slack, Microsoft Teams).
                         </p>
                       </div>
                     </div>
@@ -192,10 +218,15 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-                        Build Projects with Cloud Services and Continuous Improvement
+                          Build Projects with Cloud Services and Continuous
+                          Improvement
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
-                        Leverage cloud services (AWS, Azure, Google Cloud) for scalability and flexibility. Cultivate a culture of continuous improvement in DevOps, regularly assessing processes, embracing feedback, and engaging in hands-on projects for mastery.
+                          Leverage cloud services (AWS, Azure, Google Cloud) for
+                          scalability and flexibility. Cultivate a culture of
+                          continuous improvement in DevOps, regularly assessing
+                          processes, embracing feedback, and engaging in
+                          hands-on projects for mastery.
                         </p>
                       </div>
                     </div>
@@ -217,13 +248,17 @@ export const DevOps = () => {
                     1. IaC
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to understand Infrastructure As Code (IaC)
+                    Below are the topics that you need to complete to understand
+                    Infrastructure As Code (IaC)
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
                   {iac.map((front) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={front.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={front.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -256,13 +291,17 @@ export const DevOps = () => {
                     2. CI/CD Automation
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to learn CI/CD Automation
+                    Below are the topics that you need to complete to learn
+                    CI/CD Automation
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
                   {cicd.map((back) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={back.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={back.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -289,21 +328,23 @@ export const DevOps = () => {
                   })}
                 </div>
                 <br />
-
-
 
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     3. Containerization And Orchestration
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to learn about Containerization And Orchestration
+                    Below are the topics that you need to complete to learn
+                    about Containerization And Orchestration
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
                   {container.map((back) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={back.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={back.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -330,20 +371,23 @@ export const DevOps = () => {
                   })}
                 </div>
                 <br />
-
 
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     4. Monitoring, Security, And Collaboration
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to understand Monitoring, Security, And Collaboration
+                    Below are the topics that you need to complete to understand
+                    Monitoring, Security, And Collaboration
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
                   {monitoring.map((back) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={back.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={back.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -370,20 +414,23 @@ export const DevOps = () => {
                   })}
                 </div>
                 <br />
-
 
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     5. Cloud Services and Continuous Improvement
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the topics that you need to complete to complete the devops journey
+                    Below are the topics that you need to complete to complete
+                    the devops journey
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
                   {cloud.map((back) => {
                     return (
-                      <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={back.title}>
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={back.title}
+                      >
                         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                           <img
                             alt="team"
@@ -410,144 +457,134 @@ export const DevOps = () => {
                   })}
                 </div>
                 <br />
-
               </div>
             </section>
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
 
 const iac = [
-    {
-      title: "Ansible",
-      image:
-        "https://www.vectorlogo.zone/logos/ansible/ansible-ar21.svg",
-      to: "/ansible",
-      des: "Ansible is a suite of software tools that enables infrastructure as code",
-    },
-    {
-      title: "Terraform",
-      image:
-        "https://www.vectorlogo.zone/logos/terraformio/terraformio-ar21.svg",
-      to: "/terraform",
-      des: "Terraform is an infrastructure-as-code software tool created by HashiCorp.",
-    }
+  {
+    title: "Ansible",
+    image: "https://www.vectorlogo.zone/logos/ansible/ansible-ar21.svg",
+    to: "/ansible",
+    des: "Ansible is a suite of software tools that enables infrastructure as code",
+  },
+  {
+    title: "Terraform",
+    image: "https://www.vectorlogo.zone/logos/terraformio/terraformio-ar21.svg",
+    to: "/terraform",
+    des: "Terraform is an infrastructure-as-code software tool created by HashiCorp.",
+  },
 ];
 
 const cicd = [
-    {
-      title: "Jenkins",
-      image:
-        "https://www.vectorlogo.zone/logos/jenkins/jenkins-ar21.svg",
-      to: "/jenkins",
-      des: "Jenkins helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and continuous delivery",
-    },
-    {
-      title: "GitLab CI",
-      image:
-        "https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg",
-      to: "/gitlab",
-      des: "GitLab Inc. is an open-core company that operates GitLab, a DevOps software package which can develop, secure, and operate software",
-    },
-    {
-      title: "Github Action",
-      image:
-        "https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
-      to: "/git",
-      des: "GitHub: Web platform for collaborative code management and version control.",
-    }
+  {
+    title: "Jenkins",
+    image: "https://www.vectorlogo.zone/logos/jenkins/jenkins-ar21.svg",
+    to: "/jenkins",
+    des: "Jenkins helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and continuous delivery",
+  },
+  {
+    title: "GitLab CI",
+    image: "https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg",
+    to: "/gitlab",
+    des: "GitLab Inc. is an open-core company that operates GitLab, a DevOps software package which can develop, secure, and operate software",
+  },
+  {
+    title: "Github Action",
+    image:
+      "https://img.freepik.com/premium-psd/3d-social-media-github-icon-rendering-front-view_391890-18330.jpg?w=740",
+    to: "/git",
+    des: "GitHub: Web platform for collaborative code management and version control.",
+  },
 ];
 
 const container = [
-    {
-      title: "Docker",
-      image:
-        "https://www.vectorlogo.zone/logos/docker/docker-ar21.svg",
-      to: "/docker",
-      des: "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers",
-    },
-    {
-      title: "Kubernetes",
-      image:
-        "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg",
-      to: "/kubernetes",
-      des: "Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management",
-    }
+  {
+    title: "Docker",
+    image: "https://www.vectorlogo.zone/logos/docker/docker-ar21.svg",
+    to: "/docker",
+    des: "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers",
+  },
+  {
+    title: "Kubernetes",
+    image: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg",
+    to: "/kubernetes",
+    des: "Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management",
+  },
 ];
 
 const monitoring = [
-    {
-      title: "Prometheus",
-      image:
-        "https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg",
-      to: "/prometheus",
-      des: "An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.",
-    },
-    {
-      title: "New Relic",
-      image:
-        "https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg",
-      to: "/newrelic",
-      des: "New Relic is a US-based web tracking and analytics company",
-    },
-    {
-        title: "Slack",
-        image:
-          "https://www.vectorlogo.zone/logos/slack/slack-ar21.svg",
-        to: "/slack",
-        des: "Slack is a cloud-based freemium cross-platform instant messaging service created by Slack Technologies and currently owned by Salesforce",
-      }
+  {
+    title: "Prometheus",
+    image:
+      "https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg",
+    to: "/prometheus",
+    des: "An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.",
+  },
+  {
+    title: "New Relic",
+    image: "https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg",
+    to: "/newrelic",
+    des: "New Relic is a US-based web tracking and analytics company",
+  },
+  {
+    title: "Slack",
+    image: "https://www.vectorlogo.zone/logos/slack/slack-ar21.svg",
+    to: "/slack",
+    des: "Slack is a cloud-based freemium cross-platform instant messaging service created by Slack Technologies and currently owned by Salesforce",
+  },
 ];
 
 const cloud = [
-    {
-      title: "AWS",
-      image:
-        "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg",
-      to: "/aws",
-      des: "AWS provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis",
-    },
-    {
-      "title": "Microsoft Azure",
-      "image": "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg",
-      "to": "/azure",
-      "des": "Microsoft Azure provides on-demand cloud computing platforms and APIs for individuals, businesses, and governments."
+  {
+    title: "AWS",
+    image: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg",
+    to: "/aws",
+    des: "AWS provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis",
   },
   {
-      "title": "Google Cloud Platform (GCP)",
-      "image": "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg",
-      "to": "/gcp",
-      "des": "Google Cloud Platform is Google's cloud computing offering, providing services for computing, storage, databases, machine learning, and data analytics."
+    title: "Microsoft Azure",
+    image:
+      "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg",
+    to: "/azure",
+    des: "Microsoft Azure provides on-demand cloud computing platforms and APIs for individuals, businesses, and governments.",
   },
   {
-      "title": "IBM Cloud",
-      "image": "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-ar21.svg",
-      "to": "/ibm-cloud",
-      "des": "IBM Cloud offers a comprehensive suite of cloud services, including cloud infrastructure, AI and machine learning, blockchain, and more."
+    title: "Google Cloud Platform (GCP)",
+    image:
+      "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg",
+    to: "/gcp",
+    des: "Google Cloud Platform is Google's cloud computing offering, providing services for computing, storage, databases, machine learning, and data analytics.",
   },
   {
-      "title": "Oracle Cloud",
-      "image": "https://cd.foundation/wp-content/uploads/sites/78/2021/05/oraclecloud.png",
-      "to": "/oracle-cloud",
-      "des": "Oracle Cloud provides cloud services for databases, computing, analytics, and applications. It caters to businesses and offers a variety of cloud solutions."
+    title: "IBM Cloud",
+    image: "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-ar21.svg",
+    to: "/ibm-cloud",
+    des: "IBM Cloud offers a comprehensive suite of cloud services, including cloud infrastructure, AI and machine learning, blockchain, and more.",
   },
   {
-      "title": "DigitalOcean",
-      "image": "https://www.vectorlogo.zone/logos/digitalocean/digitalocean-ar21.svg",
-      "to": "/digitalocean",
-      "des": "DigitalOcean is a developer-friendly cloud infrastructure provider known for its simplicity. It offers virtual private servers (known as Droplets)"
+    title: "Oracle Cloud",
+    image:
+      "https://cd.foundation/wp-content/uploads/sites/78/2021/05/oraclecloud.png",
+    to: "/oracle-cloud",
+    des: "Oracle Cloud provides cloud services for databases, computing, analytics, and applications. It caters to businesses and offers a variety of cloud solutions.",
   },
   {
-      "title": "Heroku",
-      "image": "https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg",
-      "to": "/heroku",
-      "des": "Heroku is a platform as a service (PaaS) that simplifies application deployment and management. It is particularly popular for web application hosting."
-  }
+    title: "DigitalOcean",
+    image:
+      "https://www.vectorlogo.zone/logos/digitalocean/digitalocean-ar21.svg",
+    to: "/digitalocean",
+    des: "DigitalOcean is a developer-friendly cloud infrastructure provider known for its simplicity. It offers virtual private servers (known as Droplets)",
+  },
+  {
+    title: "Heroku",
+    image: "https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg",
+    to: "/heroku",
+    des: "Heroku is a platform as a service (PaaS) that simplifies application deployment and management. It is particularly popular for web application hosting.",
+  },
 ];
-
-
-

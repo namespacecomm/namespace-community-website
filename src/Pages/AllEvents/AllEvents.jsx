@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import Gallery from "../../components/Gallery/Gallery";
 import { Galleryimages } from "../../constants/constants";
 import { PastEvents } from "../../constants/eventsConstants";
 import EventCard from "../../utils/EventCard";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -51,7 +49,6 @@ function AllEvents() {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           <div className=" px-6 py-10 mx-auto">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
@@ -104,7 +101,6 @@ function AllEvents() {
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 }
