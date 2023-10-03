@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { color } from "framer-motion";
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -56,7 +58,9 @@ const NavbarLink = styled(Link)`
   font-size: 20px;
   text-decoration: none;
   @media (max-width: 900px) {
-    display: none;
+     {
+      display: none;
+    }
   }
 `;
 
@@ -122,9 +126,12 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLink to = "/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
+          <Logo src="./img/logo2.png"></Logo>
+          {/* <NavbarLink to="/">
+            <Logo src="./img/logo2.png"></Logo>
+          </NavbarLink> */}
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
-          <NavLinks>
+          <NavLinks className="nav-links">
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/events">Events</NavbarLink>
             <NavbarLink to="/programs">Programs</NavbarLink>
