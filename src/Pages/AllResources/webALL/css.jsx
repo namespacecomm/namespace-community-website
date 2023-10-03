@@ -180,7 +180,6 @@ export const CSS = () => {
           </section>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
