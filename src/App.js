@@ -26,6 +26,7 @@ import { CSSFramework } from "./Pages/AllResources/CSSFramework";
 import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -43,6 +44,7 @@ function App() {
     <>
       <Container>
         <BrowserRouter>
+        <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/">
