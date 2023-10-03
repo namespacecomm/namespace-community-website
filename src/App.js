@@ -3,6 +3,7 @@ import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
+import { Github } from "./Pages/AllResources/webALL/github";
 import { CSS } from "./Pages/AllResources/webALL/css";
 import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
 import { CompProg } from "./Pages/AllResources/CompProg";
@@ -64,6 +65,7 @@ function App() {
               <Route path="aws" element={<Aws />} />
               <Route path="css" element={ <CSS /> } />
               <Route path='html' element={ <HTML /> } />
+              <Route path='git' element={ <Github /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
               <Route path='css-framework' element={ <CSSFramework /> } />
