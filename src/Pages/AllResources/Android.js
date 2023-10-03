@@ -1,22 +1,17 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
+import React from "react";
 import { Link } from "react-router-dom";
-import Footer from '../../components/Footer/Footer';
 
 export default function Android() {
   return (
     <>
-      <Navbar />
       <div>
         <section className="text-gray-600 body-font text">
-
           <div className="px-5 py-24 mx-auto flex flex-wrap">
             <h1 className="text-2xl text-center font-bold leading-tight text-white sm:text-2xl lg:text-4xl">
               ANDROID DEVELOPMENT
             </h1>
 
             <div className="flex flex-wrap w-full">
-
               <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
                 <div className="flex relative pb-12">
                   <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
@@ -42,7 +37,12 @@ export default function Android() {
                       Choose an Android Development Path
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      Android app development offers various paths, including native app development, cross-platform development, and more. Choose the one that aligns with your goals and project requirements. Some popular options include Java and Kotlin for native development and frameworks like Flutter for cross-platform development.
+                      Android app development offers various paths, including
+                      native app development, cross-platform development, and
+                      more. Choose the one that aligns with your goals and
+                      project requirements. Some popular options include Java
+                      and Kotlin for native development and frameworks like
+                      Flutter for cross-platform development.
                     </p>
                   </div>
                 </div>
@@ -68,7 +68,10 @@ export default function Android() {
                       Learn Android UI Design
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      Android UI design is crucial for creating engaging and user-friendly apps. Familiarize yourself with XML layout files, Material Design guidelines, and best practices to create visually appealing user interfaces.
+                      Android UI design is crucial for creating engaging and
+                      user-friendly apps. Familiarize yourself with XML layout
+                      files, Material Design guidelines, and best practices to
+                      create visually appealing user interfaces.
                     </p>
                   </div>
                 </div>
@@ -92,7 +95,11 @@ export default function Android() {
                       Build Android Projects
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      Hands-on experience is key to becoming proficient in Android app development. Start by building small projects to practice your skills. As you progress, you can work on more complex apps and gain a deeper understanding of app architecture, databases, and user interactions.
+                      Hands-on experience is key to becoming proficient in
+                      Android app development. Start by building small projects
+                      to practice your skills. As you progress, you can work on
+                      more complex apps and gain a deeper understanding of app
+                      architecture, databases, and user interactions.
                     </p>
                   </div>
                 </div>
@@ -113,7 +120,12 @@ export default function Android() {
                 Choose An Android Development Path
               </h1>
               <p className="w-full text-left mx-auto leading-relaxed text-base">
-                Android app development offers various paths, including native app development, cross-platform development, and more. Choose the one that aligns with your goals and project requirements. Some popular options include Java and Kotlin for native development and frameworks like Flutter for cross-platform development.
+                Android app development offers various paths, including native
+                app development, cross-platform development, and more. Choose
+                the one that aligns with your goals and project requirements.
+                Some popular options include Java and Kotlin for native
+                development and frameworks like Flutter for cross-platform
+                development.
               </p>
             </div>
             <div className="flex flex-wrap -m-2">
@@ -138,41 +150,46 @@ export default function Android() {
               ))}
             </div>
           </div>
-
         </section>
-
-
-
-        <Footer />
       </div>
     </>
-  )
+  );
 }
 
 const androidDevelopmentPaths = [
   {
     title: "Native Development",
-    image: "https://png.pngtree.com/png-clipart/20230825/original/pngtree-mobile-android-operating-system-with-latest-version-installed-picture-image_8721522.png",
-    description: "Native app development involves building Android apps using platform-specific languages like Java or Kotlin. It provides high performance and access to native device features.",
+    image:
+      "https://png.pngtree.com/png-clipart/20230825/original/pngtree-mobile-android-operating-system-with-latest-version-installed-picture-image_8721522.png",
+    description:
+      "Native app development involves building Android apps using platform-specific languages like Java or Kotlin. It provides high performance and access to native device features.",
   },
   {
     title: "Cross-Platform Development",
-    image: "https://appinventiv.com/wp-content/uploads/sites/1/2019/09/Best-10-Cross-platform-app-frameworks-to-consider-in-2020.png",
-    description: "Cross-platform development allows you to create Android apps using a single codebase that can run on multiple platforms. Popular frameworks include Flutter, React Native, and Xamarin.",
+    image:
+      "https://appinventiv.com/wp-content/uploads/sites/1/2019/09/Best-10-Cross-platform-app-frameworks-to-consider-in-2020.png",
+    description:
+      "Cross-platform development allows you to create Android apps using a single codebase that can run on multiple platforms. Popular frameworks include Flutter, React Native, and Xamarin.",
   },
   {
     title: "Java",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3O6qVi6VFkEDOxPqjKsAHcRPacOfyhmIDEEPocKzmvOqY-RUhrDay7ZCAVAT7D7oaTE&usqp=CAU",
-    description: "Java is a widely used programming language for Android app development. It offers strong community support and a rich ecosystem of libraries and tools.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3O6qVi6VFkEDOxPqjKsAHcRPacOfyhmIDEEPocKzmvOqY-RUhrDay7ZCAVAT7D7oaTE&usqp=CAU",
+    description:
+      "Java is a widely used programming language for Android app development. It offers strong community support and a rich ecosystem of libraries and tools.",
   },
   {
     title: "Kotlin",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kR9W4a2KR6Mg6uJ_Mxe7e_UVIUeoQtIZfdD7EjSTBYWNFWsa2DT0Obrr0uGpP0C7xp8&usqp=CAU",
-    description: "Kotlin is the official language for Android app development. It's known for its conciseness and modern features, making it a preferred choice for many developers.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kR9W4a2KR6Mg6uJ_Mxe7e_UVIUeoQtIZfdD7EjSTBYWNFWsa2DT0Obrr0uGpP0C7xp8&usqp=CAU",
+    description:
+      "Kotlin is the official language for Android app development. It's known for its conciseness and modern features, making it a preferred choice for many developers.",
   },
   {
     title: "Flutter",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymUrbs2H6p32KIMGMRHdLVGRxuLrkUSgJEPbdKnnIBURsnmwezznm6gqXO8nzGm5efO0&usqp=CAU",
-    description: "Flutter is a popular open-source framework for building natively compiled applications for mobile, web, and desktop from a single codebase. It's great for cross-platform Android app development.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymUrbs2H6p32KIMGMRHdLVGRxuLrkUSgJEPbdKnnIBURsnmwezznm6gqXO8nzGm5efO0&usqp=CAU",
+    description:
+      "Flutter is a popular open-source framework for building natively compiled applications for mobile, web, and desktop from a single codebase. It's great for cross-platform Android app development.",
   },
 ];

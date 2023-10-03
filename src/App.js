@@ -24,6 +24,8 @@ import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framewor
 import { CSSFramework } from "./Pages/AllResources/CSSFramework";
 
 import Aws from "./Pages/AllResources/Aws";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -41,6 +43,7 @@ function App() {
     <>
       <Container>
         <BrowserRouter>
+          <Navbar />
           <Routes>
             <Route path="/">
               <Route index element={<Hero />} />
@@ -66,9 +69,9 @@ function App() {
               <Route path='docker' element={<DOCKER/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
               <Route path='*' element={ <NotFound /> } />
-
             </Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
       </Container>
     </>

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
 import "./Main.css";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -71,7 +69,6 @@ export const Web = () => {
   return (
     <>
       <Section>
-        <Navbar />
         <Container>
           {/* --------------------------------MAIN HEADING------------------------------------------------------ */}
           <div className=" px-0 py-10 ">
@@ -305,7 +302,6 @@ export const Web = () => {
           </div>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
