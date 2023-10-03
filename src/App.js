@@ -20,6 +20,7 @@ import Flutter from "./Pages/AllResources/Flutter";
 import { DevOps } from "./Pages/AllResources/Devops";
 import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
+import { CSSFramework } from "./Pages/AllResources/CSSFramework";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -55,6 +56,7 @@ function App() {
               <Route path='html' element={ <HTML /> } />
               <Route path='js' element={ <Javascript /> } />
               <Route path='frontend-framework' element={ <FrontEndFramework /> } />
+              <Route path='css-framework' element={ <CSSFramework /> } />
               <Route path='devops' element={ <DevOps /> } />
               <Route path='docker' element={<DOCKER/>} />
               <Route path='Blockchain' element={ <Blockchain /> } />
