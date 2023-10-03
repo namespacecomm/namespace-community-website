@@ -202,7 +202,7 @@ export const DevOps = () => {
                   </div>
                   <img
                     class="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
-                    src="https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png"
+                    src="https://cdni.iconscout.com/illustration/premium/thumb/male-developer-looking-for-devops-7154205-5805807.png?f=webp"
                     alt="step"
                   />
                 </div>

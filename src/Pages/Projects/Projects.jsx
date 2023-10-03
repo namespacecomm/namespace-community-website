@@ -7,6 +7,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   justify-content: space-between;
   min-height: 100vh; /* Set minimum height to 100% of the viewport height */
   background-color: #010116;

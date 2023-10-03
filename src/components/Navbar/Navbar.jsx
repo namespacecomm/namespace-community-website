@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -58,6 +58,13 @@ const NavbarLink = styled(Link)`
   @media (max-width: 900px) {
     display: none;
   }
+  :hover{
+    color:deepskyblue;
+  }
+  &.active {
+    color: #3a60cf;
+    font-weight: bold;
+  }
 `;
 
 const NavbarLinkExtended = styled(Link)`
@@ -113,25 +120,50 @@ const Button = styled.button`
     margin: 17px 10px 10px 5px;
     ${"" /* display: none; */}
   }
+  :hover{
+    -webkit-box-shadow: 0 0 10px cyan;
+    box-shadow: 0 0 10px cyan;
+  }
 `;
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
+  const [activeNavLink, setActiveNavLink] = useState(null);
+
+  const location = useLocation();
+
+  React.useEffect(() => {
+    setActiveNavLink(location.pathname);
+  }, [location]);
+
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <Logo src="./img/logo2.png" alt="logo"></Logo>
+          <NavbarLink to="/"><Logo src="./img/logo2.png"></Logo></NavbarLink>
           {/* <NavbarLink to="/">NSCC</NavbarLink> */}
           <NavLinks>
-            <NavbarLink to="/"> Home</NavbarLink>
-            <NavbarLink to="/projects">Projects</NavbarLink>
-            <NavbarLink to="/events">Events</NavbarLink>
-            <NavbarLink to="/programs">Programs</NavbarLink>
-            <NavbarLink to="/team">Team</NavbarLink>
-            <NavbarLink to="/resources">Resources</NavbarLink>
-            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank">
+            <NavbarLink
+              to="/projects"
+              className={activeNavLink === '/projects' ? 'active' : ''}
+            >Projects
+            </NavbarLink>
+            <NavbarLink to="/events"
+              className={activeNavLink === '/events' ? 'active' : ''}
+            >Events</NavbarLink>
+            <NavbarLink to="/programs"
+              className={activeNavLink === '/programs' ? 'active' : ''}
+            >Programs</NavbarLink>
+            <NavbarLink to="/team"
+              className={activeNavLink === '/team' ? 'active' : ''}
+            >Team</NavbarLink>
+            <NavbarLink to="/resources"
+              className={activeNavLink === '/resources' ? 'active' : ''}
+            >Resources</NavbarLink>
+            <NavbarLink to="http://blog.nsccbpit.tech/" target="_blank"
+              className={activeNavLink === '/http://blog.nsccbpit.tech/' ? 'active' : ''}
+            >
               Blog
             </NavbarLink>
           </NavLinks>

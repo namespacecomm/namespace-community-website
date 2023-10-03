@@ -2,7 +2,7 @@ import React from "react";
 
 function EventCard({ date, name, img }) {
   return (
-     <div class="px-2 w-full mb-10">
+     <div class="px-2 w-full mb-10 cursor-pointer">
       <div class="flex flex-wrap flex-col-reverse h-full w-full hover:text-black sm:py-24 py-16 sm:px-10 px-6 relative">
         <img
           alt="gallery"
