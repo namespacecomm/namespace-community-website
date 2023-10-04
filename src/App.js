@@ -12,6 +12,7 @@ import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import { Nodejs } from "./Pages/AllResources/webALL/nodejs";
+import { Firebase } from "./Pages/AllResources/webALL/firebase";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -80,6 +81,7 @@ function App() {
               <Route path='nlp' element={ <NLP /> } />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
+              <Route path="firebase" element={<Firebase />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route path="frontend-framework" element={<FrontEndFramework />} />
               <Route path="css-framework" element={<CSSFramework />} />

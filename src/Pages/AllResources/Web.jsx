@@ -396,4 +396,11 @@ const back = [
     to: "/nodejs",
     des: "Node.js: JavaScript runtime for building scalable server-side applications.",
   },
+  {
+    title: "Firebase",
+    image:
+      "https://cdn.icon-icons.com/icons2/691/PNG/512/google_firebase_icon-icons.com_61474.png",
+    to: "/firebase",
+    des: "Firebase: Google's app development platform with authentication, real-time database, and hosting tools.",
+  },
 ];
