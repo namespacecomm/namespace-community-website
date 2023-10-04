@@ -67,8 +67,8 @@ const IconLink = styled.a`
 
 function TeamCard({ image, name, position,github,linkedin, instagram ,twitter }) {
   return (
-    <CardWrapper className="mb-4">
-      <div className="card">
+    <CardWrapper className="my-5">
+      <div className="card flex justify-center">
         <img
           src={image}
           alt="Person"
