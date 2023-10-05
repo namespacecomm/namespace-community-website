@@ -37,7 +37,7 @@ const Title = styled.h1`
   font-size: calc(1rem + 1.5vw);
   font-style: italic;
   margin-top: 1.5rem;
-  border-bottom:3px solid #F5F5F5;
+  border-bottom: 3px solid #f5f5f5;
   position: relative;
   &::before {
     content: "";
@@ -129,7 +129,7 @@ const Testimonials = () => {
                 key={person.name}
               >
                 <figure className="h-full mx-auto">
-                  <div className="h-[10%]">  
+                  <div className="h-[10%]">
                     <svg
                       className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
                       viewBox="0 0 24 27"
@@ -142,16 +142,14 @@ const Testimonials = () => {
                       />
                     </svg>
                   </div>
-                  <div className="h-[70%] overflow-hidden">
+                  <div className="h-[70%] overflow-auto">
                     <blockquote>
-                      <p className="dark:text-white text-justify">
+                      <p className="dark:text-white text-justify overflow-auto h-full pr-2">
                         " {person.text} "
                       </p>
                     </blockquote>
                   </div>
                   <div className="h-[20%]">
-
-                  
                     <figcaption className="flex items-center justify-center mt-6 space-x-9">
                       <img
                         className="w-10 h-10 rounded-full"
