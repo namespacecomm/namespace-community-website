@@ -76,20 +76,24 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   @media only screen and (max-width: 768px) {
     flex: 1;
+    align-items: center;
   }
   @media only screen and (max-width: 1030px) {
     flex: 1;
+    align-items: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     flex: 1;
     width: 50%;
+    align-items: center;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
 
   @media only screen and (max-width: 768px) {
@@ -110,7 +114,7 @@ const WhatWeDo = styled.div`
 `;
 
 const Subtitle = styled.p`
-  font-size: 84px;
+  font-size: 100px;
   font-weight: bold;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -136,10 +140,12 @@ const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
   @media only screen and (max-width: 1030px) {
-    font-size: 30px;
+    font-size: 20px;
+    align-items: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 40px;
+    align-items: center;
   }
 `;
 const ShortDesc = styled.p`
@@ -156,7 +162,7 @@ const ShortDesc = styled.p`
 `;
 
 const Right = styled.div`
-  flex: 3;
+  flex: 2;
   justify-content: center;
   position: relative;
   @media only screen and (max-width: 1030px) {
@@ -206,9 +212,6 @@ const Hero = () => {
             <ShortDesc>GGSIPU, New Delhi, India</ShortDesc>
           </Left>
           <Right>
-            {/* <Img src="./img/logo.png" /> */}
-            {/* <Img src="https://embed.lottiefiles.com/animation/109119"></Img> */}
-
             <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
           </Right>
         </Container>
