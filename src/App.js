@@ -38,7 +38,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ReactNative from "./Pages/AllResources/ReactNative";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
-
+import { Django } from "./Pages/AllResources/webALL/django";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -70,7 +70,7 @@ function App() {
               <Route path="dataScience" element={<DataScience />} />
               <Route path="arvr" element={<ARVR />} />
               <Route path="android" element={<Android />} />
-              <Route path='iot' element={<Iot/>} />
+              <Route path="iot" element={<Iot />} />
               <Route path="flutter" element={<Flutter />} />
               <Route path="reactnative" element={<ReactNative />} />
               <Route path="aiml" element={<AIML />} />
@@ -79,12 +79,15 @@ function App() {
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
-              <Route path='nlp' element={ <NLP /> } />
+              <Route path="nlp" element={<NLP />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
               <Route path="firebase" element={<Firebase />} />
               <Route path="deeplearning" element={<DeepLearning />} />
-              <Route path="frontend-framework" element={<FrontEndFramework />} />
+              <Route
+                path="frontend-framework"
+                element={<FrontEndFramework />}
+              />
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="docker" element={<DOCKER />} />
@@ -94,6 +97,7 @@ function App() {
               <Route path="*" element={<NotFound />} />
               <Route path="mongodb" element={<MongoDB />} />
               <Route path="mysql" element={<MYSQL />} />
+              <Route path="django" element={<Django />} />
             </Route>
           </Routes>
           <Footer />
