@@ -40,6 +40,11 @@ import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 import { Django } from "./Pages/AllResources/webALL/django";
 import { Express } from "./Pages/AllResources/webALL/express";
+import AugmentedReality from "./Pages/AllResources/arvrAll/AugmentedReality";
+import VirtualReality from "./Pages/AllResources/arvrAll/VirtualReality";
+import MixedReality from "./Pages/AllResources/arvrAll/MixedReality";
+import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
+import WebXR from "./Pages/AllResources/arvrAll/WebXR";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -69,7 +74,6 @@ function App() {
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
               <Route path="dataScience" element={<DataScience />} />
-              <Route path="arvr" element={<ARVR />} />
               <Route path="android" element={<Android />} />
               <Route path="iot" element={<Iot />} />
               <Route path="flutter" element={<Flutter />} />
@@ -85,10 +89,7 @@ function App() {
               <Route path="php" element={<PHP />} />
               <Route path="firebase" element={<Firebase />} />
               <Route path="deeplearning" element={<DeepLearning />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
+              <Route path="frontend-framework" element={<FrontEndFramework />} />
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="docker" element={<DOCKER />} />
@@ -100,6 +101,19 @@ function App() {
               <Route path="mysql" element={<MYSQL />} />
               <Route path="django" element={<Django />} />
               <Route path="expressjs" element={<Express />} />
+
+              {/* Routes related to AR/VR Development paths */}
+
+              <Route path="arvr">
+                <Route index element={<ARVR />} />
+                <Route path="augmented-reality" element={<AugmentedReality />} />
+                <Route path="virtual-reality" element={<VirtualReality />} />
+                <Route path="mixed-reality" element={<MixedReality />} />
+                <Route path="unity3d" element={<Unity3D />} />
+                <Route path="webxr" element={<WebXR />} />
+              </Route>
+
+
             </Route>
           </Routes>
           <Footer />
