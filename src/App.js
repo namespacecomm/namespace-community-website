@@ -36,6 +36,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ReactNative from "./Pages/AllResources/ReactNative";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
+import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -90,6 +91,7 @@ function App() {
               <Route path="Blockchain" element={<Blockchain />} />
               <Route path="*" element={<NotFound />} />
               <Route path="mongodb" element={<MongoDB />} />
+              <Route path="mysql" element={<MYSQL />} />
             </Route>
           </Routes>
           <Footer />
