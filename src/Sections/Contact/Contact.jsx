@@ -142,15 +142,15 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setName("");
+          setEmail("");
+          setMessage("");
           console.log(result.text);
           setSuccess(true);
           setFormMessage(
             "Your message has been sent. We'll get back to you soon :)"
           );
-          setName("");
-          setEmail("");
-          setMessage("");
-
+          
           setTimeout(() => {
             setSuccess(null);
             setFormMessage("");
