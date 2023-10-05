@@ -66,7 +66,7 @@ export const CSS = () => {
   }, [csstopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("csstopicsChecked");
     if (storedTopicsChecked) {
       setCssTopicsChecked(JSON.parse(storedTopicsChecked));
     }
