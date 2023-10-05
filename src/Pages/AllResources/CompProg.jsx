@@ -325,6 +325,94 @@ export const CompProg = () => {
                     );
                   })}
                 </div>
+                {/* start from here */}
+                {/* <------------------------------------CP resources-------------------------------------------------------> */}
+                <br />
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                    3. Compitative Programming Resources
+                  </h1>
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
+                    Below are the resources that you can follow to learn more and master yoursel on fcompetitive programming.
+                  </p>
+                </div>
+                <div className="flex flex-wrap -m-2">
+                  {CompProgResources.map((topic) => {
+                    return (
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={topic.title}
+                      >
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                          <img
+                            alt="topic"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            src={topic.image}
+                          />
+                          <div className="flex-grow">
+                            <Link to={topic.to}>
+                              <h2 className="text-white title-font font-bold underline text-xl">
+                                {topic.title}
+                              </h2>
+                            </Link>
+                            <p className="text-white">{topic.des}</p>
+                            <input
+                              type="checkbox"
+                              id={topic.title}
+                              checked={checkedTopics[topic.title]}
+                              onChange={() => handleCheckboxChange(topic.title)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* ends at here */}
+                {/* start from here */}
+                {/* <------------------------------------introduction of cp platforms-------------------------------------------------------> */}
+                <br />
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                  4. Introduction of cp platforms
+                  </h1>
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
+                       Below are the resources where you can practice programming and make yourself master for competitive programming.
+                  </p>
+                </div>
+                <div className="flex flex-wrap -m-2">
+                  {cpPlatforms.map((topic) => {
+                    return (
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={topic.title}
+                      >
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                          <img
+                            alt="topic"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            src={topic.image}
+                          />
+                          <div className="flex-grow">
+                            <Link to={topic.to}>
+                              <h2 className="text-white title-font font-bold underline text-xl">
+                                {topic.title}
+                              </h2>
+                            </Link>
+                            <p className="text-white">{topic.des}</p>
+                            <input
+                              type="checkbox"
+                              id={topic.title}
+                              checked={checkedTopics[topic.title]}
+                              onChange={() => handleCheckboxChange(topic.title)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* ends at here */}
               </div>
             </section>
           </div>
@@ -337,37 +425,37 @@ export const CompProg = () => {
 const algorithmicFoundations = [
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic1",
+    // to: "/algorithmic-topic1",
     title: "Sorting Algorithms",
     des: "Understand various sorting algorithms such as quicksort, mergesort, etc.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic2",
+    // to: "/algorithmic-topic2",
     title: "Searching Algorithms",
     des: "Learn different searching algorithms like binary search, linear search, etc.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic3",
+    // to: "/algorithmic-topic3",
     title: "Dynamic Programming",
     des: "Master the technique of breaking down complex problems into simpler, more manageable subproblems.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic4",
+    // to: "/algorithmic-topic4",
     title: "Graph Algorithms",
     des: "Explore algorithms to solve problems related to graphs, such as shortest paths, minimum spanning tree, etc.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic5",
+    // to: "/algorithmic-topic5",
     title: "Bit Manipulation",
     des: "Understand operations on individual bits of numbers, often used in competitive programming.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/algorithmic-topic6",
+    // to: "/algorithmic-topic6",
     title: "Divide and Conquer",
     des: "Learn the approach of breaking a problem into subproblems, solving them independently, and combining solutions.",
   },
@@ -376,38 +464,177 @@ const algorithmicFoundations = [
 const advancedDataStructures = [
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic1",
+    // to: "/data-structure-topic1",
     title: "Graph Data Structures",
     des: "Explore different graph representations and algorithms like DFS, BFS, etc.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic2",
+    // to: "/data-structure-topic2",
     title: "Tree Data Structures",
     des: "Understand tree-based data structures like BST, AVL tree, etc.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic3",
+    // to: "/data-structure-topic3",
     title: "Trie Data Structure",
     des: "Learn about the trie data structure, useful for efficient string operations.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic4",
+    // to: "/data-structure-topic4",
     title: "Heap Data Structure",
     des: "Understand the heap data structure and its applications in priority queues and heapsort.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic5",
+    // to: "/data-structure-topic5",
     title: "Hash Table",
     des: "Learn about the hash table data structure and its efficient data retrieval operations.",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    to: "/data-structure-topic6",
+    // to: "/data-structure-topic6",
     title: "Disjoint Set (Union-Find)",
     des: "Explore the disjoint-set data structure and its applications, such as in Kruskal's algorithm for minimum spanning trees.",
   },
+];
+
+const CompProgResources = [
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "GeeksforGeeks",
+    des: "Comprehensive tutorials, articles, and coding challenges for data structures, algorithms, and coding interviews."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "LeetCode",
+    des: "Coding challenges, contests, and articles on data structures, algorithms, and programming topics."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "HackerRank",
+    des: "Learn and practice data structures, algorithms, and AI through tutorials and challenges."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "TopCoder",
+    des: "Tutorials, articles, and practice problems for competitive programming and algorithms."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "Coursera",
+    des: "Online courses covering algorithms, data structures, machine learning, and more."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "edX",
+    des: "Online courses from top universities covering data structures, algorithms, and programming topics."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "MIT OpenCourseWare",
+    des: "Free access to MIT course materials on various programming topics."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "Stanford Online",
+    des: "Online courses and resources on algorithms, data structures, and more from Stanford University."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "Khan Academy",
+    des: "Free tutorials and interactive lessons for programming and computer science concepts."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "YouTube",
+    des: "Video tutorials and lectures on data structures, algorithms, and coding interviews."
+  },
+
+];
+
+const cpPlatforms = [
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "LightOJ",
+    des: "An online judge for programming contests and practice problems."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "Codeforces",
+    des: "A competitive programming platform with contests and algorithmic problems."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "UVa (UVa Online Judge)",
+    des: "A classic online judge with a vast collection of algorithmic problems."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "AtCoder",
+    des: "A Japanese competitive programming platform with contests and problems."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "CodeChef",
+    des: "An Indian competitive programming platform for contests and practice."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "HackerRank",
+    des: "An online platform for coding challenges, interviews, and competitions."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "HackerEarth",
+    des: "A platform for coding challenges, hackathons, and hiring assessments."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "CSES Problem Set",
+    des: "A collection of competitive programming problems from the University of Helsinki."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "GeeksforGeeks (GFG)",
+    des: "A resource for coding interviews, data structures, and algorithms."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "LeetCode",
+    des: "An online platform for coding interviews, contests, and algorithm practice."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "ICPC Live Archive",
+    des: "Archived problems from the International Collegiate Programming Contest (ICPC)."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    // to: "/data-structure-topic1",
+    title: "SPOJ (Sphere Online Judge)",
+    des: "An online judge with a wide range of algorithmic and competitive programming problems."
+  }
 ];

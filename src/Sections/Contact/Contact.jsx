@@ -150,7 +150,7 @@ const Contact = () => {
           setFormMessage(
             "Your message has been sent. We'll get back to you soon :)"
           );
-
+          
           setTimeout(() => {
             setSuccess(null);
             setFormMessage("");
