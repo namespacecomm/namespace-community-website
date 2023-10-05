@@ -107,7 +107,7 @@ const DataScience = () => {
                     <h3 className="text-lg font-semibold">
                       Problem Definition
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-slate-400">
                       Begin by clearly defining the problem you want to solve or
                       the question you want to answer. Understand the objectives
                       and goals of your analysis.
@@ -124,7 +124,7 @@ const DataScience = () => {
                     <h3 className="text-lg font-semibold">
                       Data Collection and Preparation
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-slate-400">
                       Collect relevant data from various sources and preprocess
                       it. Data cleaning, transformation, and feature engineering
                       are essential steps to make the data ready for analysis.
@@ -141,7 +141,7 @@ const DataScience = () => {
                     <h3 className="text-lg font-semibold">
                       Exploratory Data Analysis (EDA)
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-slate-400">
                       Explore the data to gain insights, identify patterns, and
                       understand its characteristics. Visualization and
                       statistical techniques are often used in this stage to
@@ -157,7 +157,7 @@ const DataScience = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Modeling</h3>
-                    <p className="text-gray-700">
+                    <p className="text-slate-400">
                       Build predictive or descriptive models depending on the
                       problem. Select appropriate algorithms, train and evaluate
                       models, and fine-tune their parameters.
@@ -174,7 +174,7 @@ const DataScience = () => {
                     <h3 className="text-lg font-semibold">
                       Evaluation and Deployment
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-slate-400">
                       Assess the performance of your models using appropriate
                       metrics. If the model meets the desired criteria, deploy
                       it to make predictions or generate insights. If not,

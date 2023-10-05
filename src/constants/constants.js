@@ -416,8 +416,8 @@ export const allmembers = [
     team: "SC",
     github: "https://github.com/pradeeptosarkar",
     linkedin: "https://www.linkedin.com/in/pradeeptosarkar",
-    instagram: "https://instagram.com/pradeeptosarkar?igshid=YmMyMTA2M2Y=",
-    twitter: "",
+    instagram: "https://instagram.com/pradeeptosarkar",
+    twitter: "https://twitter.com/pradeepto_src",
   },
 
   {

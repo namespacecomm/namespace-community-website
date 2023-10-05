@@ -11,6 +11,8 @@ import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
 import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
 import { CompProg } from "./Pages/AllResources/CompProg";
 import { Javascript } from "./Pages/AllResources/webALL/javascript";
+import { Nodejs } from "./Pages/AllResources/webALL/nodejs";
+import { Firebase } from "./Pages/AllResources/webALL/firebase";
 import AllTeams from "./Pages/AllTeams/AllTeams";
 import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
@@ -35,6 +37,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ReactNative from "./Pages/AllResources/ReactNative";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
+import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -77,7 +80,9 @@ function App() {
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
               <Route path="nlp" element={<NLP />} />
+              <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
+              <Route path="firebase" element={<Firebase />} />
               <Route path="deeplearning" element={<DeepLearning />} />
               <Route
                 path="frontend-framework"
@@ -91,6 +96,7 @@ function App() {
               <Route path="Blockchain" element={<Blockchain />} />
               <Route path="*" element={<NotFound />} />
               <Route path="mongodb" element={<MongoDB />} />
+              <Route path="mysql" element={<MYSQL />} />
             </Route>
           </Routes>
           <Footer />

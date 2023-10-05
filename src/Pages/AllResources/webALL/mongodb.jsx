@@ -40,34 +40,30 @@ const Container = styled.div`
 `;
 
 export const MongoDB = () => {
-  const [jstopicsChecked, setJsTopicsChecked] = useState({
-    syntax: false,
-    dom: false,
-    fetch: false,
-    async: false,
-    event: false,
-    promises: false,
-    classes: false,
-    array: false,
-    hoisting: false,
-    closure: false,
+  const [mongodbtopicsChecked, setMongodbTopicsChecked] = useState({
+    datamodelling: false,
+    crudoperations: false,
+    querying: false,
+    documents: false,
+    collections: false,
+    indexes: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setJsTopicsChecked({
-      ...jstopicsChecked,
-      [topic]: !jstopicsChecked[topic],
+    setMongodbTopicsChecked({
+      ...mongodbtopicsChecked,
+      [topic]: !mongodbtopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
-  }, [jstopicsChecked]);
+    localStorage.setItem("mongodbtopicsChecked", JSON.stringify(mongodbtopicsChecked));
+  }, [mongodbtopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("mongodbtopicsChecked");
     if (storedTopicsChecked) {
-      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
+      setMongodbTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -117,7 +113,7 @@ export const MongoDB = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={jstopicsChecked[front.storage]}
+                          checked={mongodbtopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -227,8 +223,8 @@ const resources = [
 ];
 
 const topics = [
-  { title: "Data Modeling", storage: "data-modelling" },
-  { title: "CRUD Operations", storage: "crud-operations" },
+  { title: "Data Modeling", storage: "datamodelling" },
+  { title: "CRUD Operations", storage: "crudoperations" },
   { title: "Querying", storage: "querying" },
   { title: "Documents", storage: "documents" },
   { title: "Collections", storage: "collections" },

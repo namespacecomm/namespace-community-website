@@ -38,37 +38,41 @@ const Container = styled.div`
   }
 `;
 
-export const CSS = () => {
-  const [csstopicsChecked, setCssTopicsChecked] = useState({
-    boxmodel: false,
-    cssselectors: false,
-    cascadespeficity: false,
-    cssinheritance: false,
-    csscolors: false,
-    csssizing: false,
-    layoutgrid: false,
-    flexbox: false,
-    psuedoclasseselements: false,
-    cssborder: false,
-    csszindex: false,
-    gradientanimation: false,
+export const MYSQL = () => {
+  const [mysqltopicsChecked, setMysqlTopicsChecked] = useState({
+    sqldatatypes: false,
+    sqlcommands: false,
+    sqlconstraints: false,
+    sqloperators: false,
+    sqlclauses: false,
+    sqltransactions: false,
+    sqlstatements: false,
+    sqlgroupingdata: false,
+    sqlfunctions: false,
+    sqljoins: false,
+    sqltriggers: false,
+    dbconnection: false,
+    sqlintegration: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setCssTopicsChecked({
-      ...csstopicsChecked,
-      [topic]: !csstopicsChecked[topic],
+    setMysqlTopicsChecked({
+      ...mysqltopicsChecked,
+      [topic]: !mysqltopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("csstopicsChecked", JSON.stringify(csstopicsChecked));
-  }, [csstopicsChecked]);
+    localStorage.setItem(
+      "mysqltopicsChecked",
+      JSON.stringify(mysqltopicsChecked)
+    );
+  }, [mysqltopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("csstopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("mysqltopicsChecked");
     if (storedTopicsChecked) {
-      setCssTopicsChecked(JSON.parse(storedTopicsChecked));
+      setMysqlTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -82,33 +86,33 @@ export const CSS = () => {
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
                 alt="css"
-                src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-2323.jpg?w=740&t=st=1696318168~exp=1696318768~hmac=a3467593274ad7d563a0303bb9a0c3bc8b660a580f94bbc3498f4677eae72213"
+                src="https://img.freepik.com/free-vector/gradient-sql-illustration_23-2149247491.jpg?size=626&ext=jpg&ga=GA1.1.613098439.1696317950&semt=sph"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  CSS: Cascading Style Sheets
+                  MySQL
                 </h1>
                 <p className="mb-8 leading-relaxed text-justify">
-                  Cascading Style Sheets (CSS) is a stylesheet language used to
-                  describe the presentation of a document written in HTML or XML
-                  (including XML dialects such as SVG, MathML or XHTML). CSS
-                  describes how elements should be rendered on screen, on paper,
-                  in speech, or on other media. CSS is among the core languages
-                  of the open web and is standardized across Web browsers
-                  according to W3C specifications. Previously, the development
-                  of various parts of CSS specification was done synchronously,
-                  which allowed the versioning of the latest recommendations.
-                  You might have heard about CSS1, CSS2.1, or even CSS3. There
-                  will never be a CSS3 or a CSS4; rather, everything is now CSS
-                  without a version number. After CSS 2.1, the scope of the
-                  specification increased significantly and the progress on
-                  different CSS modules started to differ so much, that it
-                  became more effective to develop and release recommendations
-                  separately per module. Instead of versioning the CSS
-                  specification, W3C now periodically takes a snapshot of the
-                  latest stable state of the CSS specification and individual
-                  modules progress. CSS modules now have version numbers, or
-                  levels, such as CSS Color Module Level 5.
+                  MySQL is an open-source relational database management system
+                  (RDBMS). Its name is a combination of "My", the name of
+                  co-founder Michael Widenius's daughter My, and "SQL", the
+                  acronym for Structured Query Language. A relational database
+                  organizes data into one or more data tables in which data may
+                  be related to each other; these relations help structure the
+                  data. SQL is a language that programmers use to create, modify
+                  and extract data from the relational database, as well as
+                  control user access to the database. In addition to relational
+                  databases and SQL, an RDBMS like MySQL works with an operating
+                  system to implement a relational database in a computer's
+                  storage system, manages users, allows for network access and
+                  facilitates testing database integrity and creation of
+                  backups. MySQL is free and open-source software under the
+                  terms of the GNU General Public License, and is also available
+                  under a variety of proprietary licenses. MySQL was owned and
+                  sponsored by the Swedish company MySQL AB, which was bought by
+                  Sun Microsystems (now Oracle Corporation). In 2010, when
+                  Oracle acquired Sun, Widenius forked the open-source MySQL
+                  project to create MariaDB.
                 </p>
               </div>
             </div>
@@ -131,7 +135,7 @@ export const CSS = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={csstopicsChecked[front.storage]}
+                          checked={mysqltopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -187,71 +191,78 @@ export const CSS = () => {
 
 const resources = [
   {
-    title: "MDN Documentation",
-    image:
-      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
-    type: "Documentation",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    title: "W3Schools - CSS Introduction",
+    title: "W3Schools - MySQL Introduction",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1088px-W3Schools_logo.svg.png",
     type: "Documentation",
-    link: "https://www.w3schools.com/css/css_intro.asp",
+    link: "https://www.w3schools.com/mysql/mysql_intro.asp",
   },
   {
-    title: "CSS Tutorial for Beginers",
+    title: "MySQL Tutorial for Beginners[Full Course]",
     image:
-      "https://i.ytimg.com/vi/I9XRrlOOazo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBpmdn90a5heB5tKwledvuXdJQp6Q",
+      "https://i.ytimg.com/vi/7S_tz1z_5bA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQRzwgDiYUwdEuDvClYax7UBqlWA",
     type: "Youtube video",
-    link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
+    link: "https://www.youtube.com/watch?v=7S_tz1z_5bA",
   },
   {
-    title: "Learn CSS in 20 Minutes",
+    title: "MySQL - The Basic // Learn SQL in 23 Easy Steps",
     image:
-      "https://i.ytimg.com/vi/1PnVor36_40/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4tJ7kbGq-1Vv0pz8nIkiwF5xyQg",
+      "https://i.ytimg.com/vi/Cz3WcZLRaWc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTQ6otNeU35mBTSy4SSmblwzkgzg",
     type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=1PnVor36_40",
+    link: "https://www.youtube.com/watch?v=Cz3WcZLRaWc",
   },
   {
-    title: "CSS in 100 Seconds",
+    title: "MySQL Glossary",
     image:
-      "https://i.ytimg.com/vi/OEV8gMkCHXQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn8dqDCfy2BjSRSrGCmP2AjR_YDg",
-    type: "Youtube video",
-    link: "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
+      "https://pbs.twimg.com/profile_images/1511434207079407618/AwzUxnVf_400x400.png",
+    type: "Documentation",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/SQL",
   },
   {
-    title: "The CSS Handbook",
+    title: "SQL Explained in 100 Seconds",
+    image:
+      "https://i.ytimg.com/vi/zsjvFFKOm3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCd3M5-uv-3QGFoVgHpg18Cf1DbNg",
+    type: "Youtube video",
+    link: "https://www.youtube.com/watch?v=zsjvFFKOm3c",
+  },
+  {
+    title: "The SQL Handbook",
     image: "https://flaviocopes.com/bootcamp.jpg",
     type: "Documentation",
-    link: "https://flaviocopes.com/book/css/",
+    link: "https://flaviocopes.com/book/sql/",
   },
   {
-    title: "Web Development by Doing: HTML/CSS From Scratch",
-    image: "https://img-c.udemycdn.com/course/240x135/65330_5f74_10.jpg",
+    title: "Learn SQL/MySQL Basics",
+    image: "https://img-c.udemycdn.com/course/240x135/4538848_d8a6_3.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/web-development-learn-by-doing-html5-css3-from-scratch-introductory/",
+    link: "https://www.udemy.com/course/learn-sqlmysql-database-basics-for-free/",
   },
   {
-    title: "CSS: Zero to Hero in CSS",
-    image: "https://img-c.udemycdn.com/course/480x270/2089476_55a6.jpg",
+    title: "Beginner PHP and MySQL Tutorial",
+    image: "https://img-b.udemycdn.com/course/240x135/9711_452b_8.jpg",
     type: "Course",
-    link: "https://www.udemy.com/course/css-zero-to-hero/",
+    link: "https://www.udemy.com/course/php-mysql-tutorial/",
+  },
+  {
+    title: "MySQL Crash Course",
+    image: "https://img-c.udemycdn.com/course/480x270/5363590_70a5_5.jpg",
+    type: "Course",
+    link: "https://www.udemy.com/course/mysql-course/",
   },
 ];
 
 const topics = [
-  { title: "Box Model", storage: "boxmodel" },
-  { title: "Selectors", storage: "cssselectors" },
-  { title: "Cascade & Specificity", storage: "cascadespeficity" },
-  { title: "Inheritance", storage: "cssinheritance" },
-  { title: "Colors", storage: "csscolors" },
-  { title: "Sizing Units", storage: "csssizing" },
-  { title: "Layout & Grid", storage: "layoutgrid" },
-  { title: "Flex Box", storage: "flexbox" },
-  { title: "Psuedo-Classes & Elements", storage: "psuedoclasseselements" },
-  { title: "Border", storage: "cssborder" },
-  { title: "Z-Index", storage: "csszindex" },
-  { title: "Gradients & Animation", storage: "gradientanimation" },
+  { title: "SQL Data Types", storage: "sqldatatypes" },
+  { title: "SQL Commands", storage: "sqlcommands" },
+  { title: "SQL Constraints", storage: "sqlconstraints" },
+  { title: "SQL Operators", storage: "sqloperators" },
+  { title: "Clauses", storage: "sqlclauses" },
+  { title: "Transactions", storage: "sqltransactions" },
+  { title: "SQL Statements", storage: "sqlstatements" },
+  { title: "Grouping Data", storage: "sqlgroupingdata" },
+  { title: "SQL Functions", storage: "sqlfunctions" },
+  { title: "SQL Joins", storage: "sqljoins" },
+  { title: "Triggers", storage: "sqltriggers" },
+  { title: "Database Connection", storage: "dbconnection" },
+  { title: "SQL Integration", storage: "sqlintegration" },
 ];
