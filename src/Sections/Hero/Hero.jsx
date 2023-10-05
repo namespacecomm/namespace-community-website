@@ -105,6 +105,10 @@ const Title = styled.h1`
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 50px;
   }
+  @media only screen and (max-width: 760px) {
+    font-size: 50px;
+    text-align: center;
+  }
 `;
 
 const WhatWeDo = styled.div`
@@ -142,11 +146,11 @@ const Desc = styled.p`
   @media only screen and (max-width: 1030px) {
     font-size: 20px;
     align-items: center;
+    text-align: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 40px;
     align-items: center;
-  }
 `;
 const ShortDesc = styled.p`
   font-size: 16px;
@@ -158,6 +162,10 @@ const ShortDesc = styled.p`
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 24px;
+  }
+  @media only screen and (max-width: 760px) {
+    font-size: 24px;
+    text-align: center;
   }
 `;
 
