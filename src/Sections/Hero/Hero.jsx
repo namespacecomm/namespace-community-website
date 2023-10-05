@@ -89,17 +89,17 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
 
   @media only screen and (max-width: 768px) {
     font-size: 40px;
   }
   @media only screen and (max-width: 1030px) {
-    font-size: 60px;
+    font-size: 50px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 60px;
+    font-size: 50px;
   }
 `;
 
