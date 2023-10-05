@@ -16,7 +16,7 @@ import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
 import DataScience from "./Pages/dataScience/DataScience";
 import NotFound from "./Pages/Error/NotFound";
-import Android from "./Pages/AllResources/Android";
+import { Android } from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
 import Programs from "./Pages/Programs/Programs";
 import AIML from "./Pages/AllResources/AIML";
