@@ -38,7 +38,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ReactNative from "./Pages/AllResources/ReactNative";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
-
+import { Django } from "./Pages/AllResources/webALL/django";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -97,6 +97,7 @@ function App() {
               <Route path="*" element={<NotFound />} />
               <Route path="mongodb" element={<MongoDB />} />
               <Route path="mysql" element={<MYSQL />} />
+              <Route path="django" element={<Django />} />
             </Route>
           </Routes>
           <Footer />
