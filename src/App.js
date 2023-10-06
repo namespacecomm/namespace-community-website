@@ -45,6 +45,8 @@ import VirtualReality from "./Pages/AllResources/arvrAll/VirtualReality";
 import MixedReality from "./Pages/AllResources/arvrAll/MixedReality";
 import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
 import WebXR from "./Pages/AllResources/arvrAll/WebXR";
+import { ComputerVision } from "./Pages/AllResources/aimlAll/ComputerVision";
+import { UIUX } from "./Pages/AllResources/uiux";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -85,6 +87,7 @@ function App() {
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
               <Route path="nlp" element={<NLP />} />
+              <Route path="computer-vision" element={<ComputerVision />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
               <Route path="firebase" element={<Firebase />} />
@@ -102,6 +105,7 @@ function App() {
               <Route path="django" element={<Django />} />
               <Route path="expressjs" element={<Express />} />
 
+
               {/* Routes related to AR/VR Development paths */}
 
               <Route path="arvr">
@@ -113,6 +117,9 @@ function App() {
                 <Route path="webxr" element={<WebXR />} />
               </Route>
 
+
+
+              <Route path="uiux" element={<UIUX />} />
 
             </Route>
           </Routes>
