@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
@@ -163,7 +162,6 @@ export const MongoDB = () => {
           </section>
         </Container>
       </Section>
-      <Footer />
     </>
   );
 };
