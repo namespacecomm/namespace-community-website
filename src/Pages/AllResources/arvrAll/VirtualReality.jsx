@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Navbar from "../../../components/Navbar/Navbar";
+// import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -67,7 +67,7 @@ export const VirtualReality = () => {
   return (
     <>
       <Section>
-        <Navbar />
+        {/* <Navbar /> */}
         <Container>
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
