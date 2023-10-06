@@ -40,17 +40,18 @@ import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 import { Django } from "./Pages/AllResources/webALL/django";
 import { Express } from "./Pages/AllResources/webALL/express";
-import { ComputerVision } from './Pages/AllResources/aimlAll/ComputerVision';
+import { ComputerVision } from "./Pages/AllResources/aimlAll/ComputerVision";
+import { UIUX } from "./Pages/AllResources/uiux";
 
 const Container = styled.div`
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	overflow-y: auto;
-	color: white;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  color: white;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 function App() {
@@ -83,10 +84,7 @@ function App() {
               <Route path="git" element={<Github />} />
               <Route path="js" element={<Javascript />} />
               <Route path="nlp" element={<NLP />} />
-                <Route
-								path="computer-vision"
-								element={<ComputerVision />}
-							/>
+              <Route path="computer-vision" element={<ComputerVision />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
               <Route path="firebase" element={<Firebase />} />
@@ -106,6 +104,7 @@ function App() {
               <Route path="mysql" element={<MYSQL />} />
               <Route path="django" element={<Django />} />
               <Route path="expressjs" element={<Express />} />
+              <Route path="uiux" element={<UIUX />} />
             </Route>
           </Routes>
           <Footer />
