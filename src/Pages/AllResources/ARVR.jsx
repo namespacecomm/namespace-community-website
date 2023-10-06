@@ -124,21 +124,21 @@ export default function ARVR() {
             </p>
           </div>
           <div className="flex flex-wrap -m-2">
-            {arvrDevelopmentPaths.map((path) => (
-              <div key={path.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+            {arvrDevelopmentPaths.map((item) => (
+              <div key={item.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
-                    alt="path"
+                    alt="item-image"
                     className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
-                    src={path.image}
+                    src={item.image}
                   />
                   <div className="flex-grow">
-                    <Link to={path.to}>
+                    <Link to={item.endpoint}>
                       <h2 className="text-white title-font font-bold underline text-xl">
-                        {path.title}
+                        {item.title}
                       </h2>
                     </Link>
-                    <p className="text-white">{path.description}</p>
+                    <p className="text-white">{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -156,6 +156,7 @@ const arvrDevelopmentPaths = [
     image: "https://cdn-icons-png.flaticon.com/512/4647/4647093.png",
     description:
       "Augmented Reality (AR) development involves overlaying digital information or objects onto the real world. Explore AR development to create interactive and informative experiences.",
+      endpoint: "augmented-reality"
   },
   {
     title: "Virtual Reality (VR)",
@@ -163,6 +164,7 @@ const arvrDevelopmentPaths = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
     description:
       "Virtual Reality (VR) development focuses on creating immersive, computer-generated environments. Dive into VR development to build captivating virtual worlds and experiences.",
+      endpoint: "virtual-reality"
   },
   {
     title: "Mixed Reality (MR)",
@@ -170,6 +172,7 @@ const arvrDevelopmentPaths = [
       "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
     description:
       "Mixed Reality (MR) combines elements of both AR and VR, allowing digital and physical objects to interact. Learn MR development to create hybrid experiences.",
+      endpoint: "mixed-reality"
   },
   {
     title: "Unity 3D",
@@ -177,11 +180,13 @@ const arvrDevelopmentPaths = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
     description:
       "Unity 3D is a popular game engine used for AR and VR development. Explore Unity to build interactive and realistic 3D experiences for various platforms.",
+      endpoint: "unity3d"
   },
   {
     title: "WebXR",
     image: "https://immersiveweb.dev/images/webxrlogo.png",
     description:
       "WebXR enables AR and VR experiences in web browsers. Dive into WebXR development to create web-based AR/VR applications that are accessible to a wide audience.",
+      endpoint: "webXR"
   },
 ];
