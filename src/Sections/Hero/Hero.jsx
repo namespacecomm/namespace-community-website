@@ -128,13 +128,16 @@ const Subtitle = styled.p`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media only screen and (max-width: 768px) {
+   @media screen and (max-width: 424px) {
+    font-size: 37px;
+  }
+  @media screen and (min-width: 425px) and (max-width: 768px) {
     font-size: 40px;
   }
-
-  @media only screen and (max-width: 1030px) {
+  @media screen and (min-width: 769px) and (max-width: 1030px) {
     font-size: 50px;
   }
+
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
     font-size: 50px;
   }
