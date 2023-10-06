@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styled from "styled-components";
-import Footer from "../../components/Footer/Footer";
 
 const Section = styled.div`
   display: flex;
@@ -163,7 +162,6 @@ export const DeepLearning = () => {
                     </section>
                 </Container>
             </Section>
-            <Footer />
         </>
     );
 };
