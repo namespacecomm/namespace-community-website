@@ -40,8 +40,7 @@ function Projects() {
           <p className="max-w-2xl mx-auto my-10 text-center flex justify-center items-center">
           Welcome to our project page! Explore our latest work and innovative creations. 
           Dive into a world of creativity and technology as we showcase our passion for
-          [mention the project's focus, e.g., web development, design, or a specific industry].
-          Discover how we've harnessed our skills to deliver solutions that inspire, captivate, and solve real-world challenges.
+          technology. Discover how we've harnessed our skills to deliver solutions that inspire, captivate, and solve real-world challenges.
           Join us on this exciting journey, and let's make a difference together.
           </p>
           </div>
