@@ -132,9 +132,9 @@ function Teams() {
       <Container>
         <div className="px-6 mx-auto">
           <section className="mb-5 text-white text-center">
-            <h2 className="text-5xl sm:text-xl md:text-5xl font-bold mb-12 mt-12">
+            <h2 className="text-xl  md:text-4xl lg:text-5xl font-bold mb-12 mt-12">
               Meet the{" "}
-              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
+              <span className="text-xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
                 <a href="/team">Team</a>
               </span>{" "}
               2023-24

@@ -238,7 +238,7 @@ export const CyberSecurity = () => {
                   <img
                     className="w-[400px] h-[400px] object-cover rounded-3xl md:mt-0 mt-12"
                     src="https://www.netcov.com/wp-content/pubfiles/2022/07/shutterstock_1092829541.jpg"
-                    alt="step"
+                    alt="Cybersecurity"
                   />
                 </div>
               </div>

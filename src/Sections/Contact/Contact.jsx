@@ -42,7 +42,6 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 50px;
   font-weight: 600;
-  
 `;
 
 const Form = styled.form`
@@ -119,11 +118,11 @@ const Right = styled.div`
 
 const Contact = () => {
   const ref = useRef();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(null);
-  const [formMessage, setFormMessage] = useState('');
+  const [formMessage, setFormMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -143,16 +142,18 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setName("");
+          setEmail("");
+          setMessage("");
           console.log(result.text);
           setSuccess(true);
-          setFormMessage("Your message has been sent. We'll get back to you soon :)");
-          setName('');
-          setEmail('');
-          setMessage('');
-
+          setFormMessage(
+            "Your message has been sent. We'll get back to you soon :)"
+          );
+          
           setTimeout(() => {
             setSuccess(null);
-            setFormMessage('');
+            setFormMessage("");
           }, 2000);
         },
         (error) => {
@@ -167,16 +168,28 @@ const Contact = () => {
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" onChange={(e) => setName(e.target.value)}/>
-            <Input placeholder="Email" name="email" type="email" onChange={(e) => setEmail(e.target.value)}/>
+            <Input
+              placeholder="Name"
+              name="name"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+            <Input
+              placeholder="Email"
+              name="email"
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
             <TextArea
               placeholder="Write your message"
               name="message"
               rows={10}
               onChange={(e) => setMessage(e.target.value)}
+              value={message}
             />
             <Button type="submit">Send</Button>
-            { success && formMessage}
+            {success && formMessage}
           </Form>
         </Left>
         <Right>

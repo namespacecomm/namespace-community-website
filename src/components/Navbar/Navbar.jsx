@@ -67,6 +67,12 @@ const NavbarLink = styled(Link)`
   }
 `;
 
+const NavbarLogo = styled(Link)`
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+`;
+
 const NavbarLinkExtended = styled(Link)`
   color: white;
   font-size: 20px;
@@ -141,9 +147,9 @@ function Navbar() {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <LeftContainer>
-          <NavbarLink to="/">
+          <NavbarLogo to="/">
             <Logo src="./img/logo2.png"></Logo>
-          </NavbarLink>
+          </NavbarLogo>
           <NavLinks>
             <NavbarLink
               to="/projects"
