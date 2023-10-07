@@ -37,7 +37,7 @@ const Container = styled.div`
 `;
 
 export const VirtualReality = () => {
-  const [mongodbtopicsChecked, setMongodbTopicsChecked] = useState({
+  const [virtualrealitytopicsChecked, setvirtualrealityTopicsChecked] = useState({
     datamodelling: false,
     crudoperations: false,
     querying: false,
@@ -47,20 +47,20 @@ export const VirtualReality = () => {
   });
 
   const handleCheckboxChange = (topic) => {
-    setMongodbTopicsChecked({
-      ...mongodbtopicsChecked,
-      [topic]: !mongodbtopicsChecked[topic],
+    setvirtualrealityTopicsChecked({
+      ...virtualrealitytopicsChecked,
+      [topic]: !virtualrealitytopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("mongodbtopicsChecked", JSON.stringify(mongodbtopicsChecked));
-  }, [mongodbtopicsChecked]);
+    localStorage.setItem("virtualrealitytopicsChecked", JSON.stringify(virtualrealitytopicsChecked));
+  }, [virtualrealitytopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("mongodbtopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("virtualrealitytopicsChecked");
     if (storedTopicsChecked) {
-      setMongodbTopicsChecked(JSON.parse(storedTopicsChecked));
+      setvirtualrealityTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -104,7 +104,7 @@ export const VirtualReality = () => {
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={mongodbtopicsChecked[front.storage]}
+                          checked={virtualrealitytopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -188,13 +188,13 @@ const resources = [
 ];
 
 const topics = [
-  { title: "3D Tools", storage: "datamodelling" },
-  { title: "Sound Design", storage: "crudoperations" },
-  { title: "Extended Reality (XR)", storage: "collections" },
-  { title: "Rendering", storage: "indexes" },
-  { title: "Computer Vision", storage: "indexes" },
-  { title: "UI/UX", storage: "documents" },
-  { title: "C#", storage: "querying" },
-  { title: "Machine Learning", storage: "indexes" },
+  { title: "3D Tools", storage: "3dtools" },
+  { title: "Sound Design", storage: "sounddesign" },
+  { title: "Extended Reality (XR)", storage: "extendedreality" },
+  { title: "Rendering", storage: "rendering" },
+  { title: "Computer Vision", storage: "computervision" },
+  { title: "UI/UX", storage: "uiux" },
+  { title: "C#", storage: "c" },
+  { title: "Machine Learning", storage: "machinelearning" },
   
 ];
