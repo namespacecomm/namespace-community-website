@@ -330,10 +330,10 @@ export const CompProg = () => {
                 <br />
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                    3. Compitative Programming Resources
+                    3. Competitive Programming Resources
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                    Below are the resources that you can follow to learn more and master yoursel on fcompetitive programming.
+                    Below are the resources that you can follow to learn more and master competitive programming.
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
@@ -374,10 +374,10 @@ export const CompProg = () => {
                 <br />
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                  4. Populer Youtube channels for compitative programming
+                  4. Populer Youtube channels for competitive programming
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
-                       Below are the populer youtube channels from where you can learn more about compitative programming topics.
+                       Below are the populer youtube channels from where you can learn more about competitive programming topics.
                   </p>
                 </div>
                 <div className="flex flex-wrap -m-2">
