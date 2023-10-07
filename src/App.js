@@ -27,7 +27,6 @@ import Blockchain from "./Pages/AllResources/Blockchain";
 import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
 import { DeepLearning } from "./Pages/AllResources/Deeplearning";
 import { CSSFramework } from "./Pages/AllResources/CSSFramework";
-
 import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
