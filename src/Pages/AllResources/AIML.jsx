@@ -225,46 +225,6 @@ const aiMlDomains = [
         description: "Data Science involves extracting insights and knowledge from data. Learn about data analysis, statistical modeling, and machine learning techniques.",
         to: "/data-science",
     },
-  {
-    title: "Natural Language Processing",
-    image:
-      "https://e7.pngegg.com/pngimages/183/226/png-clipart-artificial-intelligence-deep-learning-machine-learning-chatbot-natural-language-processing-others-miscellaneous-text.png",
-    description:
-      "Natural Language Processing (NLP) involves the interaction between computers and human language. Explore tasks like sentiment analysis, language generation, and chatbots.",
-    to: "/nlp",
-  },
-  {
-    title: "Computer Vision",
-    image:
-      "https://media.istockphoto.com/id/1159595208/vector/computer-vision-icon-simple-element-illustration.jpg?s=612x612&w=0&k=20&c=LsOon1dLqDngBmMYa1XhBTp3V_4NzIf7_eyfhnE38hc=",
-    description:
-      "Computer Vision focuses on teaching machines to interpret and understand the visual world. Dive into image recognition, object detection, and facial recognition.",
-    to: "/computer-vision",
-  },
-  {
-    title: "Reinforcement Learning",
-    image:
-      "https://e7.pngegg.com/pngimages/923/684/png-clipart-chatbot-artificial-intelligence-technology-machine-learning-technology-electronics-logo.png",
-    description:
-      "Reinforcement Learning is about training agents to make sequences of decisions by rewarding them for desired behaviors. Explore applications in gaming and robotics.",
-    to: "/reinforcement-learning",
-  },
-  {
-    title: "Deep Learning",
-    image:
-      "https://miro.medium.com/v2/resize:fit:555/1*gMzDDP1bjMYrzVBBml8Vnw.png",
-    description:
-      "Deep Learning is a subset of machine learning involving neural networks with many layers. Study neural architectures, backpropagation, and applications like image recognition.",
-    to: "/deep-learning",
-  },
-  {
-    title: "Data Science",
-    image:
-      "https://previews.123rf.com/images/essaphear/essaphear1709/essaphear170900001/86808937-data-science-logo-icon-design-vector.jpg",
-    description:
-      "Data Science involves extracting insights and knowledge from data. Learn about data analysis, statistical modeling, and machine learning techniques.",
-    to: "/data-science",
-  },
 ];
 
 const mlFrameworks = [

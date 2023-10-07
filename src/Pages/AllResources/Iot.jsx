@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
 import { Link } from "react-router-dom";
 
 export default function ARVR() {
   return (
     <>
+      <Navbar />
       <section className="text-gray-600 body-font text">
         <div className="px-5 py-24 mx-auto flex flex-wrap">
           <h1 className="text-2xl text-center font-bold leading-tight text-white sm:text-2xl lg:text-4xl">
-            AR/VR DEVELOPMENT
+            Internet of Things
           </h1>
 
           <div className="flex flex-wrap w-full">
@@ -21,9 +23,9 @@ export default function ARVR() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -33,13 +35,10 @@ export default function ARVR() {
 
                 <div className="flex-grow pl-4">
                   <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                    Explore AR/VR Technologies
+                    Explore IoT Technogielos
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    AR (Augmented Reality) and VR (Virtual Reality) technologies
-                    are reshaping how we interact with digital experiences. Dive
-                    into the world of AR/VR to understand their applications,
-                    tools, and possibilities.
+                    Start by gaining a comprehensive understanding of IoT and its core concepts. Learn what IoT is, its components, and how it's transforming various industries. Explore the hardware and software aspects of IoT.
                   </p>
                 </div>
               </div>
@@ -51,9 +50,9 @@ export default function ARVR() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -62,14 +61,10 @@ export default function ARVR() {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                    Develop AR/VR Applications
+                    Experiment with Sensors and Actuators
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    Hands-on experience is key to becoming proficient in AR/VR
-                    development. Start by building simple AR/VR projects to
-                    practice your skills. As you gain expertise, you can work on
-                    more complex immersive applications and explore innovative
-                    use cases.
+                    Start working with sensors (e.g., temperature sensors, motion detectors), actuators (e.g., motors, relays), and other electronic components. Learn how to interface these components with IoT hardware.
                   </p>
                 </div>
               </div>
@@ -78,9 +73,9 @@ export default function ARVR() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -90,13 +85,10 @@ export default function ARVR() {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-                    Stay Updated with AR/VR Trends
+                    Build IoT Projects
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    The field of AR/VR is rapidly evolving. Keep yourself
-                    informed about the latest trends, tools, and best practices
-                    in AR/VR development to create cutting-edge and immersive
-                    experiences.
+                    Practical experience is crucial in IoT learning. Start building small IoT projects that involve sensors, data collection, communication, and data processing. Projects could include smart home automation, weather stations, or simple IoT gadgets.
                   </p>
                 </div>
               </div>
@@ -114,31 +106,28 @@ export default function ARVR() {
         <div className="px-5 py-0 mx-auto">
           <div className="flex flex-col text-left w-full mb-10">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-              Choose an AR/VR Development Path
+            Select an IoT development pathway
             </h1>
             <p className="w-full text-left mx-auto leading-relaxed text-base">
-              AR/VR development offers various paths to explore immersive
-              technologies and create captivating experiences. Choose the one
-              that aligns with your interests and goals. Here are some popular
-              options:
+            Choosing an IoT development pathway is a pivotal step in your journey to becoming proficient in Internet of Things (IoT) technologies.
             </p>
           </div>
           <div className="flex flex-wrap -m-2">
-            {arvrDevelopmentPaths.map((item) => (
-              <div key={item.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+            {iotdevPathway.map((path) => (
+              <div key={path.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
-                    alt="item-image"
+                    alt="path"
                     className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
-                    src={item.image}
+                    src={path.image}
                   />
                   <div className="flex-grow">
-                    <Link to={item.endpoint}>
+                    <Link to={path.to}>
                       <h2 className="text-white title-font font-bold underline text-xl">
-                        {item.title}
+                        {path.title}
                       </h2>
                     </Link>
-                    <p className="text-white">{item.description}</p>
+                    <p className="text-white">{path.description}</p>
                   </div>
                 </div>
               </div>
@@ -146,47 +135,33 @@ export default function ARVR() {
           </div>
         </div>
       </section>
+
+
+
     </>
-  );
+  )
 }
 
-const arvrDevelopmentPaths = [
+const iotdevPathway = [
   {
-    title: "Augmented Reality (AR)",
-    image: "https://cdn-icons-png.flaticon.com/512/4647/4647093.png",
-    description:
-      "Augmented Reality (AR) development involves overlaying digital information or objects onto the real world. Explore AR development to create interactive and informative experiences.",
-      endpoint: "augmented-reality"
+    title: "IoT Hardware Development",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzQ5SS2GnVr559TH4ZNEYmkgp-IRqHNqwBQ&usqp=CAU",
+    description: "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
+},
+  {
+    title: "IoT Software Development",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
+    description: "Develop IoT applications, implement communication protocols, and work with IoT operating systems using languages such as Python, C/C++, or JavaScript.",
   },
   {
-    title: "Virtual Reality (VR)",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
-    description:
-      "Virtual Reality (VR) development focuses on creating immersive, computer-generated environments. Dive into VR development to build captivating virtual worlds and experiences.",
-      endpoint: "virtual-reality"
+    title: "IoT Data Analytics and Cloud Integration",
+    image: "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
+    description: "Learn how to effectively manage IoT data with AWS IoT, Azure IoT, or Google Cloud IoT. Enhance your skills in edge computing and real-time processing.",
   },
   {
-    title: "Mixed Reality (MR)",
-    image:
-      "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
-    description:
-      "Mixed Reality (MR) combines elements of both AR and VR, allowing digital and physical objects to interact. Learn MR development to create hybrid experiences.",
-      endpoint: "mixed-reality"
-  },
-  {
-    title: "Unity 3D",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
-    description:
-      "Unity 3D is a popular game engine used for AR and VR development. Explore Unity to build interactive and realistic 3D experiences for various platforms.",
-      endpoint: "unity3d"
-  },
-  {
-    title: "WebXR",
-    image: "https://immersiveweb.dev/images/webxrlogo.png",
-    description:
-      "WebXR enables AR and VR experiences in web browsers. Dive into WebXR development to create web-based AR/VR applications that are accessible to a wide audience.",
-      endpoint: "webXR"
+    title: "IoT Applications and Industry Specialization",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
+    description: "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
   },
 ];
+
