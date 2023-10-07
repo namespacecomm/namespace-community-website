@@ -11,6 +11,7 @@ import Teams from "../Teams/Teams";
 import Testimonials from "../Testimonials/Testimonials";
 import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 // const Section = styled.div`
 //   background-repeat: no-repeat;
@@ -241,6 +242,7 @@ const Hero = () => {
       <About />
       <Teams />
       <Events />
+      <SocialMedia />
       <Testimonials />
       <Contact />
     </>
