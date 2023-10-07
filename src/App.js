@@ -35,6 +35,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { CyberSecurity } from "./Pages/AllResources/CyberSecurity";
 import ReactNative from "./Pages/AllResources/ReactNative";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
@@ -47,6 +48,7 @@ import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
 import {WebXR} from "./Pages/AllResources/arvrAll/WebXR";
 import { ComputerVision } from "./Pages/AllResources/aimlAll/ComputerVision";
 import { UIUX } from "./Pages/AllResources/uiux";
+
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -82,6 +84,7 @@ function App() {
               <Route path="reactnative" element={<ReactNative />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
+              <Route path="cybersecurity" element={<CyberSecurity />} />
               <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
