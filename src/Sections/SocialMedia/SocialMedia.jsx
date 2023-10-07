@@ -4,21 +4,17 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import TwitterBlockquote from "./Twitter";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 100%;
   background-color: #010116;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
   width: 100%;
-  margin: 5rem 0;
-
-  @media only Screen and (max-width: 40em) {
-    height: 120vh;
-    margin: 0 auto;
-  }
+  margin: 2rem 0;
 `;
 
 const Title = styled.h1`
@@ -42,19 +38,42 @@ const Title = styled.h1`
   }
 `;
 
-const SocialMedia = () => {
+const YoutubeFrame = styled.iframe`
+  width: 30vw;
+  height: 350px;
+  margin-right: 50;
+`;
 
-    return (
-        <Section>
-          {/* <Title>Social Media Pulse</Title> */}
-          <h2 className="text-xl  md:text-4xl lg:text-5xl font-bold">
-              Social Media{" "}
-              <span className="text-xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-                <a href="https://linktr.ee/nscc_bpit">Pulse</a>
-              </span>
-            </h2>
-        </Section>
-      );
+const SocialMedia = () => {
+  return (
+    <>
+      <h2 className="text-xl text-center md:text-4xl lg:text-5xl font-bold">
+        Social Media{" "}
+        <span className="text-xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
+          <a href="https://linktr.ee/nscc_bpit">Pulse</a>
+        </span>
+      </h2>
+      <Section>
+        {/* <Title>Social Media Pulse</Title> */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+          }}
+        >
+          {/* ------------------------------ techaccelarate -------------------------------------- */}
+          <YoutubeFrame src="https://www.youtube.com/embed/eWc6eVcaLyw?si=31OyRSxMHwvNhvUE" />
+          <YoutubeFrame src="https://www.youtube.com/embed/aezbGftYJhA?si=FmWgiuoasWQxyXze" />
+          <YoutubeFrame src="https://www.youtube.com/embed/TrPl1K4UBXI?si=hyQjEEqEAIJE-JxT" />
+          
+        </div>
+      </Section>
+    </>
+  );
 };
 
 export default SocialMedia;
+
+
