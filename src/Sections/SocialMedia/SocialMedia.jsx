@@ -41,7 +41,13 @@ const Title = styled.h1`
 const YoutubeFrame = styled.iframe`
   width: 30vw;
   height: 350px;
-  margin-right: 50;
+
+  @media only screen and (max-width: 768px) {
+    width: 90vw;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 const SocialMedia = () => {
@@ -55,17 +61,10 @@ const SocialMedia = () => {
       </h2>
       <Section>
         {/* <Title>Social Media Pulse</Title> */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: "space-around",
-          }}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
           {/* ------------------------------ techaccelarate -------------------------------------- */}
           <YoutubeFrame src="https://www.youtube.com/embed/eWc6eVcaLyw?si=31OyRSxMHwvNhvUE" />
-          <YoutubeFrame src="https://www.youtube.com/embed/aezbGftYJhA?si=FmWgiuoasWQxyXze" />
+          <YoutubeFrame src="https://www.youtube.com/embed/yUD27BJf5ag?si=D6mMdihaQc5a4h6d" />
           <YoutubeFrame src="https://www.youtube.com/embed/TrPl1K4UBXI?si=hyQjEEqEAIJE-JxT" />
           
         </div>
