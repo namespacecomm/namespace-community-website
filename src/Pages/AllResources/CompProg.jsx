@@ -370,11 +370,55 @@ export const CompProg = () => {
                 </div>
                 {/* ends at here */}
                 {/* start from here */}
+                {/* <------------------------------------introduction of some youtube chanals-------------------------------------------------------> */}
+                <br />
+                <div className="flex flex-col text-left w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+                  4. Populer Youtube channels for compitative programming
+                  </h1>
+                  <p className="w-full text-left mx-auto leading-relaxed text-base">
+                       Below are the populer youtube channels from where you can learn more about compitative programming topics.
+                  </p>
+                </div>
+                <div className="flex flex-wrap -m-2">
+                  {cpYouTubeResource.map((topic) => {
+                    return (
+                      <div
+                        className="p-2 lg:w-1/3 md:w-1/2 w-full"
+                        key={topic.title}
+                      >
+                        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                          <img
+                            alt="topic"
+                            className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+                            src={topic.image}
+                          />
+                          <div className="flex-grow">
+                            <Link to={topic.to}>
+                              <h2 className="text-white title-font font-bold underline text-xl">
+                                {topic.title}
+                              </h2>
+                            </Link>
+                            <p className="text-white">{topic.des}</p>
+                            <input
+                              type="checkbox"
+                              id={topic.title}
+                              checked={checkedTopics[topic.title]}
+                              onChange={() => handleCheckboxChange(topic.title)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/* ends at here */}
+                {/* start from here */}
                 {/* <------------------------------------introduction of cp platforms-------------------------------------------------------> */}
                 <br />
                 <div className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                  4. Introduction of cp platforms
+                  5. Introduction of cp platforms
                   </h1>
                   <p className="w-full text-left mx-auto leading-relaxed text-base">
                        Below are the resources where you can practice programming and make yourself master for competitive programming.
@@ -503,137 +547,195 @@ const advancedDataStructures = [
 const CompProgResources = [
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.geeksforgeeks.org/",
     title: "GeeksforGeeks",
     des: "Comprehensive tutorials, articles, and coding challenges for data structures, algorithms, and coding interviews."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://leetcode.com/",
     title: "LeetCode",
     des: "Coding challenges, contests, and articles on data structures, algorithms, and programming topics."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.hackerrank.com/",
     title: "HackerRank",
     des: "Learn and practice data structures, algorithms, and AI through tutorials and challenges."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.topcoder.com/",
     title: "TopCoder",
     des: "Tutorials, articles, and practice problems for competitive programming and algorithms."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.coursera.org/",
     title: "Coursera",
     des: "Online courses covering algorithms, data structures, machine learning, and more."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.edx.org/",
     title: "edX",
     des: "Online courses from top universities covering data structures, algorithms, and programming topics."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://ocw.mit.edu/",
     title: "MIT OpenCourseWare",
     des: "Free access to MIT course materials on various programming topics."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://online.stanford.edu/",
     title: "Stanford Online",
     des: "Online courses and resources on algorithms, data structures, and more from Stanford University."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.khanacademy.org/",
     title: "Khan Academy",
     des: "Free tutorials and interactive lessons for programming and computer science concepts."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.youtube.com/",
     title: "YouTube",
     des: "Video tutorials and lectures on data structures, algorithms, and coding interviews."
   },
 
 ];
 
+const cpYouTubeResource = [
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@TheCodingTrain",
+    title: "The Coding Train",
+    des: "This channel, hosted by Daniel Shiffman, offers creative coding tutorials, including algorithms and data structures.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@tmwilliamlin168",
+    title: "William Lin",
+    des: "William Lin is a competitive programmer with a substantial following on YouTube. He provides solutions to competitive programming problems, coding contest analysis, and tips.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@Errichto",
+    title: "Errichto Algorithms",
+    des: "Errichto's channel focuses on competitive programming tutorials, explanations, and solutions to algorithmic problems.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@codencode",
+    title: "CodeNCode",
+    des: "CodeNCode provides in-depth explanations of competitive programming concepts and also covers dynamic programming, graphs, and more.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@gkcs",
+    title: "Gaurav Sen",
+    des: "Gaurav Sen's channel offers a mix of computer science topics, interviews, and competitive programming tips.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@TechWithTim",
+    title: "Tech With Tim",
+    des: "While primarily known for Python tutorials, Tech With Tim also has a series on competitive programming and algorithmic problem-solving.",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@iamluv",
+    title: "Luv",
+    des: "You can find almost every topic of compitative programming here",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/@AlgoBot048",
+    title: "AlgoBot",
+    des: "After each round of codeforces round, you can found analysis here.",
+  },
+];
+
+
 const cpPlatforms = [
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://toph.co/",
+    title: "TOPH",
+    des: "This is an online platform that offers a diverse collection of coding challenges and contests, making it an ideal resource for programmers looking to enhance their algorithmic and problem-solving skills through practice and competition."
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://lightoj.com/",
     title: "LightOJ",
     des: "An online judge for programming contests and practice problems."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://codeforces.com/",
     title: "Codeforces",
     des: "A competitive programming platform with contests and algorithmic problems."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://onlinejudge.org/",
     title: "UVa (UVa Online Judge)",
     des: "A classic online judge with a vast collection of algorithmic problems."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://atcoder.jp/",
     title: "AtCoder",
     des: "A Japanese competitive programming platform with contests and problems."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.codechef.com/",
     title: "CodeChef",
     des: "An Indian competitive programming platform for contests and practice."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.hackerrank.com/",
     title: "HackerRank",
     des: "An online platform for coding challenges, interviews, and competitions."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.hackerearth.com/",
     title: "HackerEarth",
     des: "A platform for coding challenges, hackathons, and hiring assessments."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://cses.fi/",
     title: "CSES Problem Set",
     des: "A collection of competitive programming problems from the University of Helsinki."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.geeksforgeeks.org/",
     title: "GeeksforGeeks (GFG)",
     des: "A resource for coding interviews, data structures, and algorithms."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://leetcode.com/",
     title: "LeetCode",
     des: "An online platform for coding interviews, contests, and algorithm practice."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://live.icpc.global/",
     title: "ICPC Live Archive",
     des: "Archived problems from the International Collegiate Programming Contest (ICPC)."
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
-    // to: "/data-structure-topic1",
+    to: "https://www.spoj.com/",
     title: "SPOJ (Sphere Online Judge)",
     des: "An online judge with a wide range of algorithmic and competitive programming problems."
   }
