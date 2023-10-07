@@ -1,7 +1,7 @@
 /* MainProject.css */
 
 .main-project {
-    display: flex;
+    display: grid;
     align-items: center;
     padding: 20px;
     border: 1px solid #e0e0e0;
@@ -9,7 +9,8 @@
     margin: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-  
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1.7fr;
     /* Hover effect */
     &:hover {
       transform: scale(1.02);
@@ -17,21 +18,29 @@
   }
   
   .project-image {
-    flex: 1;
-    max-width: 37.5%;
-    margin-right: 20px;
-  
-    .project-image {
-        flex: 1;
-        max-width: 100%; /* Ensure the image doesn't exceed the container width */
-        height: auto; /* Maintain the aspect ratio while resizing */
-        margin-right: 20px;
-        border-radius: 8px;
-    }
-    
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
-  
-  .project-details {
-    flex: 1;
+
+  .project-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 240px;
+  }
+
+  @media screen and (max-width: 950px){
+    .main-project {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .main-project {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
   }
   
