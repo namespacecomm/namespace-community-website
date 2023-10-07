@@ -213,6 +213,7 @@ const Hero = () => {
           </Right>
         </Container>
       </Section>
+
       <div className="container">
         <Canvas camera={{ position: [0, 0, 1] }}>
           <Suspense fallback={null}>
@@ -222,6 +223,7 @@ const Hero = () => {
           <Preload all />
         </Canvas>
       </div>
+      
       <About />
       <Teams />
       <Events />

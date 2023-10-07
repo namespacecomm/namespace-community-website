@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  box-sizing: border-box;
+}
 body{
     background-color: #010116 ;
 }

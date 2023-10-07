@@ -32,6 +32,7 @@ import Aws from "./Pages/AllResources/Aws";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { CyberSecurity } from "./Pages/AllResources/CyberSecurity";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -67,6 +68,7 @@ function App() {
               <Route path="flutter" element={<Flutter />} />
               <Route path="aiml" element={<AIML />} />
               <Route path="aws" element={<Aws />} />
+              <Route path="cybersecurity" element={<CyberSecurity />} />
               <Route path="css" element={<CSS />} />
               <Route path="html" element={<HTML />} />
               <Route path="git" element={<Github />} />
