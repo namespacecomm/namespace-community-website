@@ -41,7 +41,7 @@ import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 import { Django } from "./Pages/AllResources/webALL/django";
 import { Express } from "./Pages/AllResources/webALL/express";
 import AugmentedReality from "./Pages/AllResources/arvrAll/AugmentedReality";
-import VirtualReality from "./Pages/AllResources/arvrAll/VirtualReality";
+import {VirtualReality} from "./Pages/AllResources/arvrAll/VirtualReality";
 import MixedReality from "./Pages/AllResources/arvrAll/MixedReality";
 import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
 import WebXR from "./Pages/AllResources/arvrAll/WebXR";
