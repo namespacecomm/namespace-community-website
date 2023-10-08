@@ -141,6 +141,53 @@ export default function Flutter() {
             </div>
           </div>
         </section>
+        <section>
+          <div className="px-5 py-14 mx-auto">
+            <div className="flex flex-col text-left w-full mb-2">
+              <h1 className="text-2xl font-bold title-font my-8 text-white tracking-widest">
+                React Native Video Resources
+              </h1>
+            </div>
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+              {videoResources.map((resource, index) => {
+                return (
+                  <div
+                    className="lg:w-full bg-black/20 p-4 rounded-xl transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                    key={index}
+                  >
+                    <div className="h-full flex sm:flex-col flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                      <img
+                        alt="resource"
+                        className="flex-shrink-0 rounded-lg w-75 h-75 object-contain object-center sm:mb-0 mb-1"
+                        src={resource.image}
+                      />
+                      <div className="text-center flex-grow ">
+                        <a
+                          href={resource.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <h2 className="title-font font-medium text-xl pb-1 text-white underline underline-offset-2">
+                            {resource.title}
+                          </h2>
+                        </a>
+                        <h3 className="text-white mb-2">{resource.type}</h3>
+                        <a
+                          href={resource.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 hover:underline"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
@@ -181,5 +228,33 @@ const flutterDevelopmentPaths = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymUrbs2H6p32KIMGMRHdLVGRxuLrkUSgJEPbdKnnIBURsnmwezznm6gqXO8nzGm5efO0&usqp=CAU",
     description:
       "If you enjoy contributing to the developer community, consider this path: Learning Dart and Flutter.Identifying open-source Flutter projects to contribute to on platforms like GitHub.Collaborating with other developers on bug fixes, new features, or documentation,Gaining rcognition in the Flutter community",
+  },
+];
+
+const videoResources = [
+  {
+    title:
+      "Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial",
+    image: "https://img.youtube.com/vi/VPvVD8t02U8/hqdefault.jpg",
+    type: "Youtube Video",
+    link: "https://www.youtube.com/watch?v=VPvVD8t02U8",
+  },
+  {
+    title: "Master Flutter in 8 Hours 2.0 | Full New Course 2023 | Hindi",
+    image: "https://img.youtube.com/vi/jYoALeP3eH8/hqdefault.jpg",
+    type: "Youtube Video",
+    link: "https://www.youtube.com/watch?v=jYoALeP3eH8",
+  },
+  {
+    title: "Flutter Master Class Travel App",
+    image: "https://img.youtube.com/vi/x4DydJKVvQk/hqdefault.jpg",
+    type: "Youtube Video",
+    link: "https://www.youtube.com/watch?v=x4DydJKVvQk",
+  },
+  {
+    title: "Flutter ToDo App Tutorial for Beginners",
+    image: "https://img.youtube.com/vi/K4P5DZ9TRns/hqdefault.jpg",
+    type: "Youtube Video",
+    link: "https://www.youtube.com/watch?v=K4P5DZ9TRns",
   },
 ];
