@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ReactNative() {
+export default function Native() {
   return (
     <>
       <div>
         <section className="text-gray-600 body-font text">
           <div className="px-5 py-24 mx-auto flex flex-wrap">
             <h1 className="text-2xl text-center font-bold leading-tight text-white sm:text-2xl lg:text-4xl">
-              REACT NATIVE DEVELOPMENT
+              NATIVE DEVELOPMENT
             </h1>
 
             <div className="flex flex-wrap w-full">
@@ -32,13 +32,13 @@ export default function ReactNative() {
                   </div>
                   <div className="flex-grow pl-4">
                     <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                      Choose a React Native Development Path
+                      Choose a Native Development Path
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      React Native is a popular framework for building
-                      cross-platform mobile applications. If you're interested
-                      in becoming a React Native developer, you can choose from
-                      various development paths.
+                      Native development is a popular approach for building
+                      platform-specific mobile applications. If you're
+                      interested in becoming a native developer, you can choose
+                      from various development paths.
                     </p>
                   </div>
                 </div>
@@ -61,11 +61,11 @@ export default function ReactNative() {
                   </div>
                   <div className="flex-grow pl-4">
                     <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                      Learn JavaScript and React
+                      Learn Java and Kotlin
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      Begin by mastering JavaScript and React, which are
-                      fundamental for React Native development.
+                      Start with Java or Kotlin, the primary programming
+                      languages for Android app development
                     </p>
                   </div>
                 </div>
@@ -86,19 +86,20 @@ export default function ReactNative() {
                   </div>
                   <div className="flex-grow pl-4">
                     <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-                      React Native Fundamentals
+                      Andorid Studio Fundamentals
                     </h2>
                     <p className="leading-relaxed text-white text-justify">
-                      Build a strong foundation by learning React Native basics,
-                      including components, navigation, and state management.
+                      Lay a solid groundwork in Android Studio by mastering
+                      fundamental concepts like project structure, XML layouts,
+                      activity lifecycle, and handling user input.
                     </p>
                   </div>
                 </div>
               </div>
               <img
                 className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
-                src="https://miro.medium.com/v2/resize:fit:1024/1*QY5S4senfFh-mIViSi5A_Q.png"
-                alt="React Native App Development"
+                src="https://phandroid.com/wp-content/uploads/2023/09/new-android-robot-1200x600.png"
+                alt="Native App Development"
               />
             </div>
           </div>
@@ -108,17 +109,16 @@ export default function ReactNative() {
           <div className="px-5 py-0 mx-auto">
             <div className="flex flex-col text-left w-full mb-10">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-                Choose a React Native Development Path
+                Choose a Native Development Path
               </h1>
               <p className="w-full text-left mx-auto leading-relaxed text-base">
-                React Native development offers various paths, including The
-                Mobile App Developer Path, cross-platform development, and more.
-                Choose the one that aligns with your goals and project
-                requirements.
+                Native development offers various paths, including The android
+                or ios development path, freelance development, and more. Choose
+                the one that aligns with your goals and project requirements.
               </p>
             </div>
             <div className="flex flex-wrap -m-2">
-              {reactNativeDevelopmentPaths.map((path) => (
+              {nativeDevelopmentPaths.map((path) => (
                 <div key={path.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                   <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                     <img
@@ -144,12 +144,12 @@ export default function ReactNative() {
         <section className="text-white body-font">
           <div className="px-5 py-14 mx-auto">
             <div className="flex flex-col text-left w-full mb-2">
-              <h1 className="text-2xl font-bold title-font mb-4 text-white tracking-widest">
-                React Native Resources
+              <h1 className="text-2xl font-bold title-font my-8 text-white tracking-widest">
+                Native Resources
               </h1>
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-              {reactNativeResources.map((resource, index) => {
+              {nativeResources.map((resource, index) => {
                 return (
                   <div
                     className="lg:w-full bg-black/20 p-4 rounded-xl transform hover:scale-105 transition-transform duration-300 ease-in-out"
@@ -186,11 +186,10 @@ export default function ReactNative() {
                 );
               })}
             </div>
-          </div>
-          <div className="px-5 py-14 mx-auto">
+            {/* video resouces starts here */}
             <div className="flex flex-col text-left w-full mb-2">
               <h1 className="text-2xl font-bold title-font my-8 text-white tracking-widest">
-                React Native Video Resources
+                Native Video Resources
               </h1>
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -203,7 +202,7 @@ export default function ReactNative() {
                     <div className="h-full flex sm:flex-col flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                       <img
                         alt="resource"
-                        className="flex-shrink-0 rounded-lg w-75 h-75 object-contain object-center sm:mb-0 mb-1"
+                        className="flex-shrink-0 rounded-lg w-75 h-75 object-cover object-center sm:mb-0 mb-1"
                         src={resource.image}
                       />
                       <div className="text-center flex-grow ">
@@ -238,28 +237,29 @@ export default function ReactNative() {
   );
 }
 
-const reactNativeDevelopmentPaths = [
+const nativeDevelopmentPaths = [
   {
-    title: "The Mobile App Developer Path:",
+    title: "Complete Beginner Path:",
     image:
-      "https://www.postingtree.com/wp-content/uploads/2022/06/7-Key-Differences-Traditional-vs-Mobile-App-Development-1.png",
+      "https://static.vecteezy.com/system/resources/previews/004/865/921/non_2x/programmer-people-concept-use-laptop-and-programming-code-program-icon-spreading-with-modern-flat-style-free-vector.jpg",
     description:
-      "This path focuses on building mobile applications using React Native for both iOS and Android platforms. It includes Learning JavaScript and React, Mastering React Native UI components, Exploring navigation and state management, Integrating APIs for data retrieval, Building and publishing mobile apps.",
-    to: "/mobile-app-developer-path", // Replace with your actual route
+      "This path introduce fundamental programming concepts, the Kotlin or Java, and gradually progress to cover basic Android app development, allowing learners to build their first simple Android apps without prior coding experience. Complementing this with the official Android documentation.",
+    to: "/android-development-path", // Replace with your actual route
   },
   {
-    title: "The Front-End Web Developer Path",
+    title: "Experienced Programmer Path:",
     image:
-      "https://appinventiv.com/wp-content/uploads/sites/1/2019/06/Less-Talked-About-React-Native-App-Development-Considerations.png",
+      "https://i.pinimg.com/736x/90/d9/0a/90d90a2257e54da736f7c7c2a135bb97.jpg",
     description:
-      "If you're a front-end web developer interested in expanding your skills to mobile development, this path is for you: Learning JavaScript and React, Building mobile-friendly web applications using React Native for the web, Understanding responsive design principles, Integrating web APIs and services, Deploying React Native web applications.",
+      "first mastering the Kotlin programming language, which is widely used for Android app development,then they can delve into Android-specific concepts, such as Activities, Fragments, and the Android lifecycle.This allow smooth transition into the world of native Android development.",
     to: "/web-developer-path", // Replace with your actual route
   },
   {
-    title: "The Cross-Platform Developer Path:",
-    image: "https://softflame.in/images/cross2.png",
+    title: "The Freelancer Path:",
+    image:
+      "https://logo.com/image-cdn/images/kts928pd/production/933e173f9a6bc90ac9b3442317bcebff66777cb9-383x384.png?w=1080&q=72",
     description:
-      "If you want to develop for multiple platforms beyond just mobile and web, consider this path: Mastering JavaScript and React, Exploring React Native's cross-platform capabilities, Experimenting with React Native for desktop (Windows, macOS, Linux), Creating cross-platform applications for various devices.",
+      "In the Freelancer Path, individuals refine their mobile app development skills, becoming proficient in languages like Java, Kotlin and Android studio. They learn to market their services, acquire clients, manage projects independently, and adapt to diverse project requirements.",
     to: "/cross-platform-path", // Replace with your actual route
   },
   {
@@ -267,7 +267,7 @@ const reactNativeDevelopmentPaths = [
     image:
       "https://assets-global.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b5538286fbf4_Image%20by%20Freepik%202.jpg",
     description:
-      "If your passion lies in designing user interfaces and experiences, you can specialize in React Native UI/UX design: Learning JavaScript basics, Gaining a deep understanding of React Native components and design principles, Creating visually appealing and user-friendly UIs, Collaborating with developers to bring designs to life.",
+      "UI/UX Designers are experts in crafting the look, feel, and overall user experience of mobile apps.This path involves wireframing, prototyping, usability testing, and collaboration with developers to bring designs to life, ultimately enhancing user satisfaction and app success.",
     to: "/ui-ux-designer-path", // Replace with your actual route
   },
   {
@@ -275,62 +275,65 @@ const reactNativeDevelopmentPaths = [
     image:
       "https://www.suse.com/c/wp-content/uploads/2018/10/Open-Source-Software-.jpg",
     description:
-      "If you enjoy contributing to the developer community, consider this path: Learning JavaScript and React, Identifying open-source React Native projects to contribute to on platforms like GitHub, Collaborating with other developers on bug fixes, new features, or documentation, Gaining recognition in the React Native community.",
+      "If you enjoy contributing to the developer community, consider this path: Learning kotlin and java, Identifying open-source android projects to contribute to on platforms like GitHub, Collaborating with other developers on bug fixes, new features, or documentation, Gaining recognition in the React Native community.",
     to: "/open-source-contributor-path", // Replace with your actual route
   },
 ];
 
-const reactNativeResources = [
+const nativeResources = [
   {
-    title: "React Native Documentation",
+    title: "Android Developer Documentation",
     type: "Official Documentation",
     image:
-      "https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-512.png",
-    link: "https://reactnative.dev/docs/getting-started",
+      "https://www.androidauthority.com/wp-content/uploads/2019/08/new-android-logo-2019-robot-head-reactions-animated-2.gif",
+    link: "https://developer.android.com/docs",
   },
   {
-    title: "React Native GitHub Repository",
+    title: "Kotlin Projects on Github",
     type: "GitHub Repository",
     image:
       "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png",
-    link: "https://github.com/facebook/react-native",
+    link: "https://www.androidauthority.com/wp-content/uploads/2019/08/new-android-logo-2019-robot-head-reactions-animated-2.gif",
   },
   {
-    title: "React Native Community",
+    title: "Java Community",
     type: "Community Resources",
-    image: "https://avatars.githubusercontent.com/u/20269980?v=4",
-    link: "https://www.reactnative.directory/",
+    image:
+      "https://i.pinimg.com/564x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg",
+    link: "https://dev.to/t/java",
   },
   {
-    title: "React Native Expo",
-    type: "Development Environment",
-    image: "https://static.expo.dev/static/brand/square-512x512.png",
-    link: "https://expo.dev/",
+    title: "Kotlin Community",
+    type: "Community Resources",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvxJdtmimu4t82D8aDOjcczzzdYRvrUJPZLqfe29OLA&s",
+    link: "https://kotlinlang.org/community/",
   },
 ];
+
 const videoResources = [
   {
-    title: "React Native Course",
-    image: "https://img.youtube.com/vi/obH0Po_RdWk/hqdefault.jpg",
-    type: "Youtube Video",
-    link: "https://www.youtube.com/watch?v=obH0Po_RdWk",
+    title: "Java Full Course for free ☕",
+    image: "https://img.youtube.com/vi/xk4_1vDrzzo/hqdefault.jpg",
+    type: "video resource",
+    link: "https://www.youtube.com/watch?v=xk4_1vDrzzo",
   },
   {
-    title: "React native tutorial",
-    image: "https://img.youtube.com/vi/z1qG80Jkzi8/hqdefault.jpg",
-    type: "Youtube Playlist",
-    link: "https://www.youtube.com/watch?v=z1qG80Jkzi8&list=PL8p2I9GklV468O2wk-n8Q1KmtMhnHHj4C&index=1",
+    title: "Learn Kotlin Programming – Full Course for Beginners",
+    image: "https://img.youtube.com/vi/EExSSotojVI/hqdefault.jpg",
+    type: "video resource",
+    link: "https://www.youtube.com/watch?v=EExSSotojVI",
   },
   {
-    title: "Building a Health Application with React Native: Step Counter",
-    image: "https://img.youtube.com/vi/VVoXcr18mdo/hqdefault.jpg",
-    type: "Youtube Video",
-    link: "https://www.youtube.com/watch?v=VVoXcr18mdo",
+    title: "Instagram Clone Project",
+    image: "https://img.youtube.com/vi/0LFbPZ3GA7g/hqdefault.jpg",
+    type: "video resource",
+    link: "https://www.youtube.com/watch?v=0LFbPZ3GA7g&list=PLUhfM8afLE_OFEGWaRmQFGizcjJyr_89j&index=1",
   },
   {
-    title: "React Native Tutorial | Travel App 2023 | Beginners Course",
-    image: "https://img.youtube.com/vi/9bFOUJ9MV_s/hqdefault.jpg",
-    type: "Youtube Video",
-    link: "https://www.youtube.com/watch?v=9bFOUJ9MV_s",
+    title: "Weather App",
+    image: "https://img.youtube.com/vi/QFGKV8j2ulY/hqdefault.jpg",
+    type: "video resource",
+    link: "https://www.youtube.com/watch?v=QFGKV8j2ulY&list=PLUhfM8afLE_OFEGWaRmQFGizcjJyr_89j&index=5",
   },
 ];
