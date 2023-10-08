@@ -137,7 +137,7 @@ const resources = [
     link: "https://www.udemy.com/topic/amazon-aws/",
   },
   {
-    title: "Learning Node.js",
+    title: "What is AWS? An Introduction to Amazon Web Services",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/a/ae/Brainhub-logo-dark.jpg",
     type: "Library",
