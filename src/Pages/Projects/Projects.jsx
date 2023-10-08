@@ -49,6 +49,8 @@ function Projects() {
           title: "Flutter Fitness App",
           description: "Develop a fitness tracking app using Flutter, providing users with real-time workout tracking, personalized exercise routines, and nutrition tips. It syncs seamlessly with wearable devices to help users achieve their fitness goals.",
           techUsed: "HTML, CSS, React",
+          ownerName: "NSCC BPIT",
+          deploymentLink: "https://www.nsccbpit.tech/",
           githubLink: "https://github.com/",
           imageUrl: "https://cdn.pixabay.com/photo/2017/02/21/15/51/modern-2086454_1280.png",
 
@@ -60,6 +62,8 @@ function Projects() {
           title: "React Website for Charity",
           description: "Build a responsive website for a charitable organization using React. The site showcases their mission, projects, and donation options, making it easy for visitors to support meaningful causes..",
           techUsed: "HTML, CSS, React",
+          ownerName: "NSCC BPIT",
+          deploymentLink: "https://www.nsccbpit.tech/",
           githubLink: "https://github.com/",
           imageUrl: "https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_1280.jpg",
           }}
@@ -70,6 +74,8 @@ function Projects() {
           title: "Blockchain Voting System",
           description: "Implement a blockchain-based voting system to enhance the security and transparency of elections. This project ensures that votes are securely recorded and can be audited, reducing the risk of fraud.",
           techUsed: "HTML, CSS, React",
+          ownerName: "NSCC BPIT",
+          deploymentLink: "https://www.nsccbpit.tech/",
           githubLink: "https://github.com/",
           imageUrl: "https://cdn.pixabay.com/photo/2017/02/21/15/51/modern-2086454_1280.png",
 
@@ -81,6 +87,8 @@ function Projects() {
           title: "React Native Travel Planner",
           description: "Craft a travel planning app with React Native, allowing users to plan their trips, book accommodations, and discover local attractions. The app provides travel itineraries and integrates with maps for easy navigation.",
           techUsed: "HTML, CSS, React",
+          ownerName: "NSCC BPIT",
+          deploymentLink: "https://www.nsccbpit.tech/",
           githubLink: "https://github.com/",
           imageUrl: "https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_1280.jpg",
 
@@ -92,6 +100,8 @@ function Projects() {
           title: "Cybersecurity Training Platform",
           description: "Create an interactive cybersecurity training platform that educates users on best practices for online security. It offers modules on password management, phishing detection, and network security, helping users protect their digital assets.",
           techUsed: "HTML, CSS, React",
+          ownerName: "NSCC BPIT",
+          deploymentLink: "https://www.nsccbpit.tech/",
           githubLink: "https://github.com/",
           imageUrl: "https://cdn.pixabay.com/photo/2017/02/21/15/51/modern-2086454_1280.png",
 

@@ -32,11 +32,15 @@
     color: #777;
     margin-top: 10px;
   }
+
+  .project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
   
-  .github-link {
-    display: block;
+  .project-links > a {
     font-size: 16px;
-    margin-top: 20px;
     color: #007bff;
     text-decoration: none;
 
@@ -47,5 +51,12 @@
       text-decoration: underline;
     }
   
+  }
+
+  @media screen and (max-width: 450px) {
+    .project-links {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
  

@@ -1,15 +1,21 @@
 import React from 'react';
 import './ProjectDescriptionCard.css'; // Import your CSS file for styling
 
-const ProjectDescriptionCard = ({ title, description, techUsed, githubLink, deploymentLink }) => {
+const ProjectDescriptionCard = ({ title, description, techUsed, ownerName, deploymentLink, githubLink }) => {
   return (
     <div className="project-description-card">
       <h2 className="project-title">{title}</h2>
       <p className="project-description">{description}</p>
       <p className="tech-used">Technologies Used: {techUsed}</p>
-      <a href={githubLink} className="github-link" target="_blank" rel="noopener noreferrer">
-        GitHub Repository
-      </a>
+      <p className="tech-used">Owner: {ownerName}</p>
+      <div className="project-links">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          GitHub Repository
+        </a>
+        <a href={deploymentLink} target="_blank" rel="noopener noreferrer">
+          Deployment Link
+        </a>
+      </div>
 
     </div>
   );
