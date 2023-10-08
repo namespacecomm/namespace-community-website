@@ -52,4 +52,11 @@
     }
   
   }
+
+  @media screen and (max-width: 450px) {
+    .project-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
  
