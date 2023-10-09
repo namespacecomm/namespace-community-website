@@ -61,11 +61,12 @@ const SocialMedia = () => {
       </h2>
       <Section>
         {/* <Title>Social Media Pulse</Title> */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-4 justify-items-center">
           {/* ------------------------------ techaccelarate -------------------------------------- */}
           <YoutubeFrame src="https://www.youtube.com/embed/eWc6eVcaLyw?si=31OyRSxMHwvNhvUE" />
           <YoutubeFrame src="https://www.youtube.com/embed/yUD27BJf5ag?si=D6mMdihaQc5a4h6d" />
           <YoutubeFrame src="https://www.youtube.com/embed/TrPl1K4UBXI?si=hyQjEEqEAIJE-JxT" />
+          <YoutubeFrame src="" />
           
         </div>
       </Section>
