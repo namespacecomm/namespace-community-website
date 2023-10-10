@@ -191,6 +191,7 @@ const blockchainUseCases = [
     description:
       "Cryptocurrencies like Bitcoin and Ethereum are some of the most well-known blockchain use cases. Learn about digital currencies, wallets, and transactions.",
     to: "/cryptocurrency",
+    
   },
   {
     title: "Supply Chain Management",
