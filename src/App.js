@@ -116,9 +116,7 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               
-              <Route path="blockchain" element={<Blockchain />} >
-                
-              </Route>
+              <Route path="blockchain" element={<Blockchain />} />
               
               {/* Routes related to Tasks */}
               <Route path="cryptocurrency" element={<Cryptocurrency/>} />
