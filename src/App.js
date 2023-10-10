@@ -50,6 +50,13 @@ import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
 import {WebXR} from "./Pages/AllResources/arvrAll/WebXR";
 import { ComputerVision } from "./Pages/AllResources/aimlAll/ComputerVision";
 import { UIUX } from "./Pages/AllResources/uiux";
+import Cryptocurrency  from "./Pages/AllResources/blockChainCards/Cryptocurrency";
+import Supplychain from "./Pages/AllResources/blockChainCards/Supplychain"
+import Decentralized from "./Pages/AllResources/blockChainCards/Decentralized"
+import Ethereum from "./Pages/AllResources/blockChainCards/Ethereum"
+import Hyperledger from "./Pages/AllResources/blockChainCards/Hyperledger";
+import Truffle from "./Pages/AllResources/blockChainCards/Truffle";
+
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -108,7 +115,18 @@ function App() {
               <Route path="docker" element={<DOCKER />} />
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
-              <Route path="Blockchain" element={<Blockchain />} />
+              
+              <Route path="blockchain" element={<Blockchain />} />
+              
+              {/* Routes related to Tasks */}
+              <Route path="cryptocurrency" element={<Cryptocurrency/>} />
+              <Route path="supply-chain-management" element={<Supplychain />} />
+              <Route path="defi" element={<Decentralized />} />
+              <Route path="ethereum" element={<Ethereum />} />
+              <Route path="hyperledger-fabric" element={<Hyperledger />} />
+              <Route path="truffle" element={<Truffle />} />
+
+
               <Route path="*" element={<NotFound />} />
               <Route path="mongodb" element={<MongoDB />} />
               <Route path="mysql" element={<MYSQL />} />
@@ -130,6 +148,8 @@ function App() {
               </Route>
 
               <Route path="uiux" element={<UIUX />} />
+
+            
             </Route>
           </Routes>
           <Footer />
