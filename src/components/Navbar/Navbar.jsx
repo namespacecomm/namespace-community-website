@@ -53,17 +53,23 @@ const NavLinks = styled.div`
 
 const NavbarLink = styled(Link)`
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
   text-decoration: none;
+  transition: 200ms ease-in-out;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
   @media (max-width: 900px) {
     display: none;
   }
   :hover {
-    color: deepskyblue;
+    // color: deepskyblue;
+    background-color: rgba(255, 255, 255, 0.3);
   }
   &.active {
-    color: #3a60cf;
-    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &.active:hover {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 `;
 
@@ -120,15 +126,15 @@ const Button = styled.button`
   background-color: #1d28f2;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
+  transition: 200ms ease-in-out;
   @media (max-width: 900px) {
     margin: 17px 10px 10px 5px;
     ${"" /* display: none; */}
   }
   :hover {
-    -webkit-box-shadow: 0 0 10px cyan;
-    box-shadow: 0 0 10px cyan;
+    background-color: #138AF2;
   }
 `;
 
@@ -154,33 +160,58 @@ function Navbar() {
             <NavbarLink
               to="/projects"
               // onClick={handlememu}
-              className={activeNavLink === "/projects" ? "active" : ""}
+              className={activeNavLink === "/projects" ? "active " : ""}
             >
-              Projects
+              <div>
+                Projects
+                {activeNavLink === "/projects" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
             <NavbarLink
               to="/events"
               className={activeNavLink === "/events" ? "active" : ""}
             >
-              Events
+              <div>
+                Events
+                {activeNavLink === "/events" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
             <NavbarLink
               to="/programs"
               className={activeNavLink === "/programs" ? "active" : ""}
             >
-              Programs
+              <div>
+                Programs
+                {activeNavLink === "/programs" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
             <NavbarLink
               to="/team"
               className={activeNavLink === "/team" ? "active" : ""}
             >
-              Team
+              <div>
+                Team
+                {activeNavLink === "/team" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
             <NavbarLink
               to="/resources"
               className={activeNavLink === "/resources" ? "active" : ""}
             >
-              Resources
+              <div>
+                Resources
+                {activeNavLink === "/resources" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
             <NavbarLink
               to="http://blog.nsccbpit.tech/"
@@ -189,7 +220,30 @@ function Navbar() {
                 activeNavLink === "/http://blog.nsccbpit.tech/" ? "active" : ""
               }
             >
-              Blog
+              <div>
+                Blog
+                {activeNavLink === "/http://blog.nsccbpit.tech/" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+            <NavbarLink
+              to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+              target="_blank"
+              className={
+                activeNavLink ===
+                "https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+                  ? "active"
+                  : ""
+              }
+            >
+              <div>
+                Contribute
+                {activeNavLink ===
+                  "https://github.com/NSCC-BPIT/NSCC-BPIT-Website" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
             </NavbarLink>
           </NavLinks>
         </LeftContainer>
