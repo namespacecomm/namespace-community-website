@@ -1,162 +1,178 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import styled from "styled-components";
-import AllEvents from "./Pages/AllEvents/AllEvents";
-import { Web } from "./Pages/AllResources/Web";
-import { HTML } from "./Pages/AllResources/webALL/html";
-import { Github } from "./Pages/AllResources/webALL/github";
-import { PHP } from "./Pages/AllResources/webALL/php";
-import { CSS } from "./Pages/AllResources/webALL/css";
-import { DOCKER } from "./Pages/AllResources/devopsALL/docker";
-import { KUBERNETES } from "./Pages/AllResources/devopsALL/kubernetes";
-import { JENKINS } from "./Pages/AllResources/devopsALL/jenkins";
-import { CompProg } from "./Pages/AllResources/CompProg";
-import { Javascript } from "./Pages/AllResources/webALL/javascript";
-import { Nodejs } from "./Pages/AllResources/webALL/nodejs";
-import { Firebase } from "./Pages/AllResources/webALL/firebase";
-import AllTeams from "./Pages/AllTeams/AllTeams";
-import Projects from "./Pages/Projects/Projects";
-import Resources from "./Pages/Resources/Resources";
-import Hero from "./Sections/Hero/Hero";
-import DataScience from "./Pages/dataScience/DataScience";
-import NotFound from "./Pages/Error/NotFound";
-import Android from "./Pages/AllResources/Android";
-import ARVR from "./Pages/AllResources/ARVR";
-import Programs from "./Pages/Programs/Programs";
-import Iot from "./Pages/AllResources/Iot";
-import AIML from "./Pages/AllResources/AIML";
-import Flutter from "./Pages/AllResources/Flutter";
-import { DevOps } from "./Pages/AllResources/Devops";
-import Blockchain from "./Pages/AllResources/Blockchain";
-import { FrontEndFramework } from "./Pages/AllResources/webALL/frontend-framework";
-import { DeepLearning } from "./Pages/AllResources/Deeplearning";
-import { CSSFramework } from "./Pages/AllResources/CSSFramework";
-import { MongoDB } from "./Pages/AllResources/webALL/mongodb";
-import Aws from "./Pages/AllResources/Aws";
-import Azure from "./Pages/AllResources/Azure";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import { CyberSecurity } from "./Pages/AllResources/CyberSecurity";
-import ReactNative from "./Pages/AllResources/ReactNative";
-import Native from "./Pages/AllResources/Native";
-import { NLP } from "./Pages/AllResources/aimlAll/NLP";
-import { MYSQL } from "./Pages/AllResources/webALL/mysql";
-import { Django } from "./Pages/AllResources/webALL/django";
-import { Express } from "./Pages/AllResources/webALL/express";
-import AugmentedReality from "./Pages/AllResources/arvrAll/AugmentedReality";
-import { VirtualReality } from "./Pages/AllResources/arvrAll/VirtualReality";
-import MixedReality from "./Pages/AllResources/arvrAll/MixedReality";
-import Unity3D from "./Pages/AllResources/arvrAll/Unity3D";
-import {WebXR} from "./Pages/AllResources/arvrAll/WebXR";
-import { ComputerVision } from "./Pages/AllResources/aimlAll/ComputerVision";
-import { UIUX } from "./Pages/AllResources/uiux";
-import Cryptocurrency  from "./Pages/AllResources/blockChainCards/Cryptocurrency";
-import Supplychain from "./Pages/AllResources/blockChainCards/Supplychain"
-import Decentralized from "./Pages/AllResources/blockChainCards/Decentralized"
-import Ethereum from "./Pages/AllResources/blockChainCards/Ethereum"
-import Hyperledger from "./Pages/AllResources/blockChainCards/Hyperledger";
-import Truffle from "./Pages/AllResources/blockChainCards/Truffle";
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
+import AllEvents from './Pages/AllEvents/AllEvents';
+import { Web } from './Pages/AllResources/Web';
+import { HTML } from './Pages/AllResources/webALL/html';
+import { Github } from './Pages/AllResources/webALL/github';
+import { PHP } from './Pages/AllResources/webALL/php';
+import { CSS } from './Pages/AllResources/webALL/css';
+import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
+import { JENKINS } from './Pages/AllResources/devopsALL/jenkins';
+import { CompProg } from './Pages/AllResources/CompProg';
+import { Javascript } from './Pages/AllResources/webALL/javascript';
+import { Nodejs } from './Pages/AllResources/webALL/nodejs';
+import { Firebase } from './Pages/AllResources/webALL/firebase';
+import AllTeams from './Pages/AllTeams/AllTeams';
+import Projects from './Pages/Projects/Projects';
+import Resources from './Pages/Resources/Resources';
+import Hero from './Sections/Hero/Hero';
+import DataScience from './Pages/dataScience/DataScience';
+import NotFound from './Pages/Error/NotFound';
+import Android from './Pages/AllResources/Android';
+import ARVR from './Pages/AllResources/ARVR';
+import Programs from './Pages/Programs/Programs';
+import Iot from './Pages/AllResources/Iot';
+import AIML from './Pages/AllResources/AIML';
+import Flutter from './Pages/AllResources/Flutter';
+import { DevOps } from './Pages/AllResources/Devops';
+import Blockchain from './Pages/AllResources/Blockchain';
+import { FrontEndFramework } from './Pages/AllResources/webALL/frontend-framework';
+import { DeepLearning } from './Pages/AllResources/Deeplearning';
+import { CSSFramework } from './Pages/AllResources/CSSFramework';
+import { MongoDB } from './Pages/AllResources/webALL/mongodb';
+import Aws from './Pages/AllResources/Aws';
+import Azure from './Pages/AllResources/Azure';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import { CyberSecurity } from './Pages/AllResources/CyberSecurity';
+import ReactNative from './Pages/AllResources/ReactNative';
+import Native from './Pages/AllResources/Native';
+import { NLP } from './Pages/AllResources/aimlAll/NLP';
+import { MYSQL } from './Pages/AllResources/webALL/mysql';
+import { Django } from './Pages/AllResources/webALL/django';
+import { Express } from './Pages/AllResources/webALL/express';
+import AugmentedReality from './Pages/AllResources/arvrAll/AugmentedReality';
+import { VirtualReality } from './Pages/AllResources/arvrAll/VirtualReality';
+import MixedReality from './Pages/AllResources/arvrAll/MixedReality';
+import Unity3D from './Pages/AllResources/arvrAll/Unity3D';
+import { WebXR } from './Pages/AllResources/arvrAll/WebXR';
+import { ComputerVision } from './Pages/AllResources/aimlAll/ComputerVision';
+import { UIUX } from './Pages/AllResources/uiux';
+import { Figma } from './Pages/AllResources/uiuxALL/Figma';
+import Cryptocurrency from './Pages/AllResources/blockChainCards/Cryptocurrency';
+import Supplychain from './Pages/AllResources/blockChainCards/Supplychain';
+import Decentralized from './Pages/AllResources/blockChainCards/Decentralized';
+import Ethereum from './Pages/AllResources/blockChainCards/Ethereum';
+import Hyperledger from './Pages/AllResources/blockChainCards/Hyperledger';
+import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 
 const Container = styled.div`
-  scrollbar-width: none;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  color: white;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+	scrollbar-width: none;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+	color: white;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 `;
 
 function App() {
-  return (
-    <>
-      <Container>
-        <BrowserRouter>
-          <ScrollToTop />
-          <Navbar />
-          <Routes>
-            <Route path="/">
-              <Route index element={<Hero />} />
-              <Route path="team" element={<AllTeams />} />
-              <Route path="events" element={<AllEvents />} />
-              <Route path="programs" element={<Programs />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="resources" element={<Resources />} />
-              <Route path="webd" element={<Web />} />
-              <Route path="cp" element={<CompProg />} />
-              <Route path="dataScience" element={<DataScience />} />
-              <Route path="android" element={<Android />} />
-              <Route path="iot" element={<Iot />} />
-              <Route path="flutter" element={<Flutter />} />
-              <Route path="reactnative" element={<ReactNative />} />
-              <Route path="native" element={<Native />} />
-              <Route path="aiml" element={<AIML />} />
-              <Route path="aws" element={<Aws />} />
-              <Route path="azure" element={<Azure />} />
-              <Route path="cybersecurity" element={<CyberSecurity />} />
-              <Route path="css" element={<CSS />} />
-              <Route path="html" element={<HTML />} />
-              <Route path="git" element={<Github />} />
-              <Route path="js" element={<Javascript />} />
-              <Route path="nlp" element={<NLP />} />
-              <Route path="computer-vision" element={<ComputerVision />} />
-              <Route path="nodejs" element={<Nodejs />} />
-              <Route path="php" element={<PHP />} />
-              <Route path="firebase" element={<Firebase />} />
-              <Route path="deeplearning" element={<DeepLearning />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
-              <Route path="css-framework" element={<CSSFramework />} />
-              <Route path="devops" element={<DevOps />} />
-              <Route path="docker" element={<DOCKER />} />
-              <Route path="kubernetes" element={<KUBERNETES />} />
-              <Route path="jenkins" element={<JENKINS />} />
-              
-              <Route path="blockchain" element={<Blockchain />} />
-              
-              {/* Routes related to Tasks */}
-              <Route path="cryptocurrency" element={<Cryptocurrency/>} />
-              <Route path="supply-chain-management" element={<Supplychain />} />
-              <Route path="defi" element={<Decentralized />} />
-              <Route path="ethereum" element={<Ethereum />} />
-              <Route path="hyperledger-fabric" element={<Hyperledger />} />
-              <Route path="truffle" element={<Truffle />} />
+	return (
+		<>
+			<Container>
+				<BrowserRouter>
+					<ScrollToTop />
+					<Navbar />
+					<Routes>
+						<Route path="/">
+							<Route index element={<Hero />} />
+							<Route path="team" element={<AllTeams />} />
+							<Route path="events" element={<AllEvents />} />
+							<Route path="programs" element={<Programs />} />
+							<Route path="projects" element={<Projects />} />
+							<Route path="resources" element={<Resources />} />
+							<Route path="webd" element={<Web />} />
+							<Route path="cp" element={<CompProg />} />
+							<Route path="dataScience" element={<DataScience />} />
+							<Route path="android" element={<Android />} />
+							<Route path="iot" element={<Iot />} />
+							<Route path="flutter" element={<Flutter />} />
+							<Route path="reactnative" element={<ReactNative />} />
+							<Route path="native" element={<Native />} />
+							<Route path="aiml" element={<AIML />} />
+							<Route path="aws" element={<Aws />} />
+							<Route path="azure" element={<Azure />} />
+							<Route path="cybersecurity" element={<CyberSecurity />} />
+							<Route path="css" element={<CSS />} />
+							<Route path="html" element={<HTML />} />
+							<Route path="git" element={<Github />} />
+							<Route path="js" element={<Javascript />} />
+							<Route path="nlp" element={<NLP />} />
+							<Route
+								path="computer-vision"
+								element={<ComputerVision />}
+							/>
+							<Route path="nodejs" element={<Nodejs />} />
+							<Route path="php" element={<PHP />} />
+							<Route path="firebase" element={<Firebase />} />
+							<Route path="deeplearning" element={<DeepLearning />} />
+							<Route
+								path="frontend-framework"
+								element={<FrontEndFramework />}
+							/>
+							<Route path="css-framework" element={<CSSFramework />} />
+							<Route path="devops" element={<DevOps />} />
+							<Route path="docker" element={<DOCKER />} />
+							<Route path="kubernetes" element={<KUBERNETES />} />
+							<Route path="jenkins" element={<JENKINS />} />
 
+							<Route path="blockchain" element={<Blockchain />} />
 
-              <Route path="*" element={<NotFound />} />
-              <Route path="mongodb" element={<MongoDB />} />
-              <Route path="mysql" element={<MYSQL />} />
-              <Route path="django" element={<Django />} />
-              <Route path="expressjs" element={<Express />} />
+							{/* Routes related to Tasks */}
+							<Route
+								path="cryptocurrency"
+								element={<Cryptocurrency />}
+							/>
+							<Route
+								path="supply-chain-management"
+								element={<Supplychain />}
+							/>
+							<Route path="defi" element={<Decentralized />} />
+							<Route path="ethereum" element={<Ethereum />} />
+							<Route
+								path="hyperledger-fabric"
+								element={<Hyperledger />}
+							/>
+							<Route path="truffle" element={<Truffle />} />
 
-              {/* Routes related to AR/VR Development paths */}
+							<Route path="*" element={<NotFound />} />
+							<Route path="mongodb" element={<MongoDB />} />
+							<Route path="mysql" element={<MYSQL />} />
+							<Route path="django" element={<Django />} />
+							<Route path="expressjs" element={<Express />} />
 
-              <Route path="arvr">
-                <Route index element={<ARVR />} />
-                <Route
-                  path="augmented-reality"
-                  element={<AugmentedReality />}
-                />
-                <Route path="virtual-reality" element={<VirtualReality />} />
-                <Route path="mixed-reality" element={<MixedReality />} />
-                <Route path="unity3d" element={<Unity3D />} />
-                <Route path="webxr" element={<WebXR />} />
-              </Route>
+							{/* Routes related to AR/VR Development paths */}
 
-              <Route path="uiux" element={<UIUX />} />
+							<Route path="arvr">
+								<Route index element={<ARVR />} />
+								<Route
+									path="augmented-reality"
+									element={<AugmentedReality />}
+								/>
+								<Route
+									path="virtual-reality"
+									element={<VirtualReality />}
+								/>
+								<Route
+									path="mixed-reality"
+									element={<MixedReality />}
+								/>
+								<Route path="unity3d" element={<Unity3D />} />
+								<Route path="webxr" element={<WebXR />} />
+							</Route>
 
-            
-            </Route>
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </Container>
-    </>
-  );
+							<Route path="uiux" element={<UIUX />} />
+							<Route path="figma" element={<Figma />} />
+						</Route>
+					</Routes>
+					<Footer />
+				</BrowserRouter>
+			</Container>
+		</>
+	);
 }
 
 export default App;
