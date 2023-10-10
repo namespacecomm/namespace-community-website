@@ -270,8 +270,11 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/">
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
             Blog
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website" target="_blank">
+            Contribute
           </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}

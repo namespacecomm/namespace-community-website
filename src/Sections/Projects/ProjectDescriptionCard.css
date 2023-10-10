@@ -1,62 +1,62 @@
 /* ProjectCard.css */
 
 .project-description-card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    word-wrap: break-word;
-  
-    /* Hover effect */
-    &:hover {
+  background-color: #ffffff3e;
+  border: 1px solid #e0e0e081;
+  backdrop-filter: blur(40px);
+  padding: 20px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 200ms ease-in-out;
+
+  /* Hover effect */
+  /* &:hover {
       transform: scale(1.02);
-    }
-  }
-  
-  .project-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #555;
-    font-weight: bold;
-  }
-  
-  .project-description {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .tech-used {
-    font-size: 14px;
-    color: #777;
-    margin-top: 10px;
-  }
+    } */
+}
 
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #fff;
+}
+
+.tech-used {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.project-links > a {
+  font-size: 16px;
+  color: rgb(0, 60, 94);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1px 10px;
+  border-radius: 0.5rem;
+  transition: 200ms ease-in-out;
+  /* Hover effect */
+  &:hover {
+    /* text-decoration: underline; */
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (max-width: 450px) {
   .project-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .project-links > a {
-    font-size: 16px;
-    color: #007bff;
-    text-decoration: none;
-
-  
-  
-    /* Hover effect */
-    &:hover {
-      text-decoration: underline;
-    }
-  
-  }
-
-  @media screen and (max-width: 450px) {
-    .project-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
- 
+}
