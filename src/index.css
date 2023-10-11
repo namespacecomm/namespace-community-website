@@ -6,6 +6,9 @@
 
 *{
   box-sizing: border-box;
+  ::selection{
+    background-color: rgba(0, 204, 255, 0.352);
+  }
 }
 body{
     background-color: #010116 ;
@@ -23,7 +26,7 @@ body{
   }
   
   ::-webkit-scrollbar{
-    width: 0.5rem;
+    width: 0.1rem;
   }
   ::-webkit-scrollbar-track {
     background: rgb(1, 1, 22);
