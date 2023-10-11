@@ -128,7 +128,7 @@ const resources = [
 		link: 'https://designcode.io/figma-handbook',
 	},
 	{
-		title: 'Design Lab Tutorial',
+		title: "Design Lab Beginner's Tutorial",
 		image: 'https://img.freepik.com/premium-vector/tutorial-concept-2-colored-icon-simple-blue-element-illustration-tutorial-concept-symbol-design-can-be-used-web-mobile-ui-ux_159242-4121.jpg',
 		type: 'Online Tutorial',
 		link: 'https://designlab.com/figma-101-course/introduction-to-figma/',
