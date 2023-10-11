@@ -46,7 +46,7 @@ import { Express } from './Pages/AllResources/webALL/express';
 import AugmentedReality from './Pages/AllResources/arvrAll/AugmentedReality';
 import { VirtualReality } from './Pages/AllResources/arvrAll/VirtualReality';
 import MixedReality from './Pages/AllResources/arvrAll/MixedReality';
-import Unity3D from './Pages/AllResources/arvrAll/Unity3D';
+import { Unity3D } from './Pages/AllResources/arvrAll/Unity3D';
 import { WebXR } from './Pages/AllResources/arvrAll/WebXR';
 import { ComputerVision } from './Pages/AllResources/aimlAll/ComputerVision';
 import { UIUX } from './Pages/AllResources/uiux';
