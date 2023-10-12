@@ -46,26 +46,26 @@ function Resources() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
+              <div className="grid grid-cols-1 gap-6 mt-14 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {ResourceMain.map((item) => {
                   return (
                     <div
                       className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 shadow-xl shadow-cyan-300 bg-slate-950 rounded text-white p-4"
                       key={item.name}
                     >
-                      <div className="text-center text-xl md:text-2xl lg:text-3xl font-bold mb-12 mt-8">
+                      <div className="text-center text-xl md:text-2xl lg:text-3xl font-semi-bold mb-14 mt-8">
                         {item.name}
                       </div>
 
                       <div className="program-content flex flex-col md:flex-row">
-                        <div className="program-image md:w-1/2 md:pr-4">
+                        <div className="program-image md:w-3/6 md:pr-4">
                           <img
                             src={item.image}
                             alt={item.name}
                             className="w-full rounded-md"
                           />
                         </div>
-                        <ProgramDescription className="program-description flex items-center border-2 border-slate-600 rounded-md p-4 md:w-1/2 md:h-auto md:text-sm lg:text-xl xl:text-base text-neutral-400">
+                        <ProgramDescription className="program-description flex items-center border-2 border-slate-600 rounded-md p-4 md:w-full md:h-auto md:text-sm lg:text-xl xl:text-base text-neutral-400">
                           <p>{item.description}</p>
                         </ProgramDescription>
                       </div>
