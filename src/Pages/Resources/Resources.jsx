@@ -1,43 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import { ResourceMain } from "../../constants/ResourceMain";
-import { Link } from "react-router-dom";
+
 
 const Section = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: justify-center;
   align-items: center;
   justify-content: space-between;
-  display: flex;
-  ${
-    "" /* background-color: rgb(9, 9, 121);
-  background-repeat: no-repeat;
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
   background-color: #010116;
-  ${
-    "" /* background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg"); */
-  }
 `;
 
 const Container = styled.div`
   scroll-snap-align: center;
-  width: 1400px;
+  width: 95%;
   padding-top: 100px;
-  @media only screen and (max-width: 1024px) {
-    width: 100vw;
-  }
   @media only screen and (max-width: 768px) {
     width: 100%;
-
     flex-direction: column;
-
     justify-content: space-between;
+  }
+`;
+
+const ProgramDescription = styled.div`
+  @media only screen and (max-width: 768px) {
+    margin-top: 1rem;
   }
 `;
 
@@ -59,48 +46,28 @@ function Resources() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
                 {ResourceMain.map((item) => {
                   return (
                     <div
-                      className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 bg-white rounded shadow"
+                      className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 shadow-xl shadow-cyan-300 bg-slate-950 rounded text-white p-4"
                       key={item.name}
                     >
-                      <div className="p-8">
-                        <div className="flex items-center">
+                      <div className="text-center text-xl md:text-2xl lg:text-3xl font-bold mb-12 mt-8">
+                        {item.name}
+                      </div>
+
+                      <div className="program-content flex flex-col md:flex-row">
+                        <div className="program-image md:w-1/2 md:pr-4">
                           <img
-                            className="flex-shrink-0 w-12 h-auto"
                             src={item.image}
-                            alt=""
+                            alt={item.name}
+                            className="w-full rounded-md"
                           />
-                          <div className="ml-5 mr-auto">
-                            <p className="text-xl font-semibold text-black">
-                              {item.name}
-                            </p>
-                            {/* <p className="mt-px text-sm text-gray-600">
-                        Direct Integration
-                      </p> */}
-                          </div>
-                          <Link to={item.to}>
-                            <svg
-                              className="block w-6 h-6 text-blue-600 cursor-pointer"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"
-                              />
-                            </svg>
-                          </Link>
                         </div>
-                        <p className="text-base leading-relaxed text-gray-600 mt-7">
-                          {item.description}
-                        </p>
+                        <ProgramDescription className="program-description flex items-center border-2 border-slate-600 rounded-md p-4 md:w-1/2 md:h-auto md:text-sm lg:text-xl xl:text-base text-neutral-400">
+                          <p>{item.description}</p>
+                        </ProgramDescription>
                       </div>
                     </div>
                   );
