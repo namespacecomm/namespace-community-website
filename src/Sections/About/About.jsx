@@ -20,7 +20,7 @@ const Section = styled.div`
   ${"" /* background: no-repeat url("./img/bg.jpg"); */}
   background-color: #010116;
   @media only screen and (max-width: 768px) {
-    height: 160vh;
+    height: 80vh;
   }
 `;
 
