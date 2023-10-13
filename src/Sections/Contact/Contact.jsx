@@ -173,6 +173,7 @@ const Contact = () => {
               name="name"
               onChange={(e) => setName(e.target.value)}
               value={name}
+              autoComplete="off"
             />
             <Input
               placeholder="Email"
@@ -180,6 +181,7 @@ const Contact = () => {
               type="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              autoComplete="off"
             />
             <TextArea
               placeholder="Write your message"
