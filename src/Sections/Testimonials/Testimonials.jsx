@@ -32,12 +32,18 @@ const Section = styled.div`
 `;
 
 const Title = styled.h1`
-  color: white;
+  font-weight: bold;
   display: inline-block;
+  background: repeating-radial-gradient(
+    circle farthest-side at center center,
+    #3530cf 0%,
+    #44cfcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom:3px solid white;
+  padding: 10px;
   font-size: calc(1rem + 1.5vw);
-  font-style: italic;
-  margin-top: 1.5rem;
-  border-bottom: 3px solid #f5f5f5;
   position: relative;
   &::before {
     content: "";
