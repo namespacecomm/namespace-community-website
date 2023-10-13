@@ -57,7 +57,7 @@ import Decentralized from './Pages/AllResources/blockChainCards/Decentralized';
 import Ethereum from './Pages/AllResources/blockChainCards/Ethereum';
 import Hyperledger from './Pages/AllResources/blockChainCards/Hyperledger';
 import Truffle from './Pages/AllResources/blockChainCards/Truffle';
-
+import Dsa from './Pages/AllResources/Dsa/Dsa';
 const Container = styled.div`
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -167,6 +167,8 @@ function App() {
 							<Route path="uiux" element={<UIUX />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
+
+						<Route path="dsa" element={<Dsa />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
