@@ -46,7 +46,7 @@ function Resources() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-6 mt-14 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-6 mt-14 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
                 {ResourceMain.map((item) => {
                   return (
                     <div
