@@ -49,8 +49,7 @@ function Resources() {
               <div className="grid grid-cols-1 gap-6 mt-14 lg:mt-16 xl:gap-10 md:grid-cols-2 lg:grid-cols-2">
                 {ResourceMain.map((item) => {
                   return (
-                    <a href={item.to} key={item.name} className="card-link">
-                      <div
+                      <a href={item.to}
                         className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 shadow-xl shadow-cyan-300 bg-slate-950 rounded text-white p-4"
                         key={item.name}
                       >
@@ -70,8 +69,7 @@ function Resources() {
                             <p>{item.description}</p>
                           </ProgramDescription>
                         </div>
-                      </div>
-                    </a>
+                      </a>
                   );
                 })}
               </div>
