@@ -119,7 +119,7 @@ const WhatWeDo = styled.div`
 `;
 
 const Subtitle = styled.p`
-  font-size: 100px;
+  font-size: 70px;
   font-weight: bold;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -168,7 +168,6 @@ const ShortDesc = styled.p`
     font-size: 24px;
   }
   @media only screen and (max-width: 760px) {
-    font-size: 24px;
     text-align: center;
   }
 `;

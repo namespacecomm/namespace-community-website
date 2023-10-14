@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import {Squash as Hamburger} from 'hamburger-react'
 const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
@@ -13,6 +13,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  transition: all 3s ease-in-out;
   @media (min-width: 900px) {
     height: 90px;
   }
@@ -82,27 +83,24 @@ const NavbarLogo = styled(Link)`
 const NavbarLinkExtended = styled(Link)`
   color: white;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+  :hover {
+    color: #3a60cf;
+    font-weight: bold;
+  }
 `;
 
 const Logo = styled.img`
-  margin: 10px;
+  margin: 8px;
   max-width: 180px;
   height: 50px;
   align-self: center;
 `;
 
 const OpenLinksButton = styled.button`
-  width: 70px;
-  height: 70px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 50px;
+  padding-top: 5px;
   cursor: pointer;
-
   @media (min-width: 900px) {
     display: none;
     align-self: center;
@@ -110,9 +108,13 @@ const OpenLinksButton = styled.button`
 `;
 
 const NavbarExtendedContainer = styled.div`
+  width:100%;
+  min-height:100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  padding-top:40px;
+  gap:10px;
 
   @media (min-width: 900px) {
     display: none;
@@ -139,18 +141,18 @@ const Button = styled.button`
 `;
 
 function Navbar() {
-  const [extendNavbar, setExtendNavbar] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState(null);
 
   const location = useLocation();
 
   React.useEffect(() => {
-    setExtendNavbar(false);
+    setOpen(false);
     setActiveNavLink(location.pathname);
   }, [location]);
 
   return (
-    <NavbarContainer extendNavbar={extendNavbar}>
+    <NavbarContainer isOpen={isOpen}>
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
@@ -249,20 +251,18 @@ function Navbar() {
         </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
-            <a href="https://linktr.ee/nscc_bpit" className="mr-4">
+            <a href="https://linktr.ee/nscc_bpit" className="mr-6">
               <Button>Connect with us</Button>
             </a>
             <OpenLinksButton
-              onClick={() => {
-                setExtendNavbar((curr) => !curr);
-              }}
             >
-              {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+              {/* {isOpen ? <>&#10005;</> : <> &#8801;</>} */}
+              <Hamburger toggled={isOpen} toggle={setOpen} />
             </OpenLinksButton>
           </NavbarLinkContainer>
         </RightContainer>
       </NavbarInnerContainer>
-      {extendNavbar && (
+      {isOpen && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
