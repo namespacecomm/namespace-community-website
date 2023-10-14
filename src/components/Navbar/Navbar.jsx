@@ -99,7 +99,7 @@ const Logo = styled.img`
 `;
 
 const OpenLinksButton = styled.button`
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
   @media (min-width: 900px) {
     display: none;
