@@ -83,4 +83,11 @@ export const ResourceMain = [
     to: "/uiux",
     image: require("./ResourceIcons/uiux.png"),
   },
+  {
+    name: "Rust",
+    description:
+      "Rust is a modern, statically typed, compiled language with garbage collection and memory safety.",
+    to: "/Rust",
+    image: require("./ResourceIcons/rust.png"),
+  },
 ];

@@ -57,6 +57,8 @@ import Decentralized from './Pages/AllResources/blockChainCards/Decentralized';
 import Ethereum from './Pages/AllResources/blockChainCards/Ethereum';
 import Hyperledger from './Pages/AllResources/blockChainCards/Hyperledger';
 import Truffle from './Pages/AllResources/blockChainCards/Truffle';
+import {Rust} from './Pages/AllResources/Rust';
+
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -165,6 +167,7 @@ function App() {
 							</Route>
 
 							<Route path="uiux" element={<UIUX />} />
+							<Route path="Rust" element={<Rust />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
 					</Routes>
