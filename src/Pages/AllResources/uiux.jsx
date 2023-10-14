@@ -123,7 +123,7 @@ export const UIUX = () => {
 				<div className="px-5 py-0 mx-auto">
 					<div className="flex flex-col text-left w-full mb-10">
 						<h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-							Select an UI / UX Tool
+							Select a UI / UX Tool
 						</h1>
 						<p className="w-full text-left mx-auto leading-relaxed text-base">
 							UI/UX tools empower designers to deliver visually appealing
@@ -159,7 +159,7 @@ export const UIUX = () => {
 				</div>
 			</section>
 
-			<Footer />
+			
 		</>
 	);
 };
