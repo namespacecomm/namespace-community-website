@@ -49,27 +49,29 @@ function Resources() {
               <div className="grid grid-cols-1 gap-6 mt-14 lg:mt-16 xl:gap-10 md:grid-cols-2 lg:grid-cols-2">
                 {ResourceMain.map((item) => {
                   return (
-                    <div
-                      className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 shadow-xl shadow-cyan-300 bg-slate-950 rounded text-white p-4"
-                      key={item.name}
-                    >
-                      <div className="text-center text-xl md:text-2xl lg:text-3xl font-semi-bold mb-14 mt-8">
-                        {item.name}
-                      </div>
-
-                      <div className="program-content flex flex-col md:flex-row">
-                        <div className="program-image md:w-3/6 md:pr-4">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="w-full rounded-md"
-                          />
+                    <a href={item.to} key={item.name} className="card-link">
+                      <div
+                        className="overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 shadow-xl shadow-cyan-300 bg-slate-950 rounded text-white p-4"
+                        key={item.name}
+                      >
+                        <div className="text-center text-xl md:text-2xl lg:text-3xl font-semi-bold mb-14 mt-8">
+                          {item.name}
                         </div>
-                        <ProgramDescription className="program-description flex items-center border-2 border-slate-600 rounded-md p-4 md:w-full md:h-auto md:text-sm lg:text-xl xl:text-base text-neutral-400">
-                          <p>{item.description}</p>
-                        </ProgramDescription>
+
+                        <div className="program-content flex flex-col md:flex-row">
+                          <div className="program-image md:w-3/6 md:pr-4">
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              className="w-full rounded-md"
+                            />
+                          </div>
+                          <ProgramDescription className="program-description flex items-center border-2 border-slate-600 rounded-md p-4 md:w-full md:h-auto md:text-sm lg:text-xl xl:text-base text-neutral-400">
+                            <p>{item.description}</p>
+                          </ProgramDescription>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   );
                 })}
               </div>
