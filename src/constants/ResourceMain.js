@@ -82,5 +82,7 @@ export const ResourceMain = [
       " UI/UX Designing focuses on creating engaging and intuitive user interfaces and experiences. It blends aesthetics with usability, aiming to enhance user satisfaction by crafting designs that are visually appealing and functionally effective for optimal user interaction.",
     to: "/uiux",
     image: require("./ResourceIcons/uiux.png"),
+    
   },
+  
 ];
