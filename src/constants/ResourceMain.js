@@ -84,11 +84,5 @@ export const ResourceMain = [
     image: require("./ResourceIcons/uiux.png"),
     
   },
-  {
-    name: "Rust   ",
-    description:
-      " Rust is an open-source, general-purpose, statically typed, multi-paradigm programming language. Rust is designed to be safe, concurrent, and reliable.",
-    to: "/Rust",
-    image: require("./ResourceIcons/rust.png"),
-  },
+  
 ];

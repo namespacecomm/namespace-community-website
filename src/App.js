@@ -57,8 +57,9 @@ import Decentralized from './Pages/AllResources/blockChainCards/Decentralized';
 import Ethereum from './Pages/AllResources/blockChainCards/Ethereum';
 import Hyperledger from './Pages/AllResources/blockChainCards/Hyperledger';
 import Truffle from './Pages/AllResources/blockChainCards/Truffle';
-import Dsa from './Pages/AllResources/Dsa/Dsa'; 
-import { Rust } from './Pages/AllResources/Rust';
+import Dsa from './Pages/AllResources/Dsa/Dsa';
+import {Rust} from './Pages/AllResources/blockChainCards/Rust';
+
 const Container = styled.div`
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -119,26 +120,22 @@ function App() {
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
-
-							<Route path="blockchain" element={<Blockchain />} />
-
-							{/* Routes related to Tasks */}
-							<Route
-								path="cryptocurrency"
-								element={<Cryptocurrency />}
-							/>
-							<Route
-								path="supply-chain-management"
-								element={<Supplychain />}
-							/>
-							<Route path="defi" element={<Decentralized />} />
-							<Route path="ethereum" element={<Ethereum />} />
-							<Route
-								path="hyperledger-fabric"
-								element={<Hyperledger />}
-							/>
-							<Route path="truffle" element={<Truffle />} />
-
+							
+							
+							{/* Routes related to BLOCKCHAIN PATHS */}	
+							<Route path="blockchain">
+								<Route index element={<Blockchain />} />
+							
+								<Route path="cryptocurrency" element={<Cryptocurrency />}/>
+								<Route path="supply-chain-management" element={<Supplychain />}/>
+								<Route path="defi" element={<Decentralized />} />
+								<Route path="ethereum" element={<Ethereum />} />
+								<Route path="Rust" element={<Rust />} />
+								<Route path="hyperledger-fabric" element={<Hyperledger />}/>
+								<Route path="truffle" element={<Truffle />} />
+							</Route>
+							
+							
 							<Route path="*" element={<NotFound />} />
 							<Route path="mongodb" element={<MongoDB />} />
 							<Route path="mysql" element={<MYSQL />} />
@@ -166,7 +163,7 @@ function App() {
 							</Route>
 
 							<Route path="uiux" element={<UIUX />} />
-							<Route path="Rust" element={<Rust />} />
+
 							<Route path="figma" element={<Figma />} />
 						</Route>
 
