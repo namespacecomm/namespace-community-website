@@ -233,7 +233,7 @@ const blockchainTools = [
   },
   {
     title: "Rust",
-    image: "https://www.trufflesuite.com/img/truffle-logo-dark.svg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9Kn9M4fzjeLXpEaft9bWv3BLPPOdh36wMA&usqp=CAU",
     description:
       "Rust is a memory safe programming language which offers high level simplicity with low level performance.",
     endpoint: "Rust",
