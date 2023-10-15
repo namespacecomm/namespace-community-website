@@ -3,15 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const Section = styled.div`
-  ${
-    "" /* background: rgb(9, 9, 121);
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
-  background-color: #010116;
+  background-color: #010116; /* Dark background color */
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
@@ -42,6 +34,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 50px;
   font-weight: 600;
+  color: #fff; /* White text color */
 `;
 
 const Form = styled.form`
@@ -57,9 +50,9 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #e8e6e6;
+  background-color: #14102E; /* Updated to the desired color */
   border: none;
-  color: black;
+  color: #fff; /* White text color */
   border-radius: 5px;
 `;
 
@@ -67,13 +60,13 @@ const TextArea = styled.textarea`
   padding: 20px;
   border: none;
   border-radius: 5px;
-  color: black;
-  background-color: #e8e6e6;
+  color: #fff; /* White text color */
+  background-color: #14102E; /* Updated to the desired color */
 `;
 
-const Button = styled.button`
-  background-color: #1d28f2; /* fallback for old browsers */
 
+const Button = styled.button`
+  background-color: #1d28f2; /* Blue button background color */
   color: white;
   border: none;
   font-weight: bold;
@@ -116,18 +109,29 @@ const Right = styled.div`
   }
 `;
 
+const SuccessMessage = styled.p`
+  color: green;
+`;
+
+const ErrorMessage = styled.p`
+  color: red;
+`;
+
 const Contact = () => {
   const ref = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [success, setSuccess] = useState(null);
   const [formMessage, setFormMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !message) {
+    if (!formData.name || !formData.email || !formData.message) {
       setSuccess(false);
       setFormMessage("Fields cannot be empty :(");
       return;
@@ -142,15 +146,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setName("");
-          setEmail("");
-          setMessage("");
-          console.log(result.text);
+          setFormData({ name: "", email: "", message: "" });
           setSuccess(true);
-          setFormMessage(
-            "Your message has been sent. We'll get back to you soon :)"
-          );
-          
+          setFormMessage("Your message has been sent. We'll get back to you soon :)");
+
           setTimeout(() => {
             setSuccess(null);
             setFormMessage("");
@@ -162,6 +161,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <Section>
       <Container>
@@ -171,32 +171,32 @@ const Contact = () => {
             <Input
               placeholder="Name"
               name="name"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
+              onChange={handleChange}
+              value={formData.name}
               autoComplete="off"
             />
             <Input
               placeholder="Email"
               name="email"
               type="email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              onChange={handleChange}
+              value={formData.email}
               autoComplete="off"
             />
             <TextArea
               placeholder="Write your message"
               name="message"
               rows={10}
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
+              onChange={handleChange}
+              value={formData.message}
             />
             <Button type="submit">Send</Button>
-            {success && formMessage}
           </Form>
+          {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
+          {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
         </Left>
         <Right>
-          {/* <Img src="https://lottie.host/?file=296dc031-e4f0-41d3-b9ee-6099c53fbd8b/tfupnzO1qe.json"></Img> */}
-          <Img src="./img/contact.svg"></Img>
+          <Img src="./img/contact.svg" alt="Contact Illustration" />
         </Right>
       </Container>
     </Section>
