@@ -101,7 +101,7 @@ export default function Blockchain() {
             <img
               className="lg:w-2/5 md:w-1/2 object-contain object-center rounded-lg md:mt-0 mt-12"
               src="https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg"
-              alt="Blockchain"
+              alt=""
             />
           </div>
         </div>
@@ -123,9 +123,9 @@ export default function Blockchain() {
               <div key={item.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
-                    alt="item-image"
                     className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                     src={item.image}
+                    alt=""
                   />
                   <div className="flex-grow">
                     <Link to={item.endpoint}>
@@ -158,9 +158,9 @@ export default function Blockchain() {
               <div key={tool.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
-                    alt="tool"
                     className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                     src={tool.image}
+                    alt=""
                   />
                   <div className="flex-grow">
                     <Link to={tool.endpoint}>
@@ -176,7 +176,7 @@ export default function Blockchain() {
           </div>
         </div>
       </section>
-    </div >
+    </div>
     </>
   );
 }
@@ -194,7 +194,7 @@ const blockchainUseCases = [
     image:
       "https://media.istockphoto.com/id/1339299049/vector/add-chain-icon.jpg?b=1&s=170x170&k=20&c=Y4h-5Di4EswUqkO-U6xNeQfdRuyQ3c2oW_45XnoV58w=",
     description:
-      "Blockchain is used for transparent and efficient supply chain management. Explore how its used to trace products and verify authenticity.",
+      "Blockchain is used for transparent and efficient supply chain management. Explore how it's used to trace products and verify authenticity.",
     endpoint: "supply-chain-management",
   },
   {
@@ -235,8 +235,7 @@ const blockchainTools = [
     title: "Rust",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9Kn9M4fzjeLXpEaft9bWv3BLPPOdh36wMA&usqp=CAU",
     description:
-      "Rust is a memory safe programming language which offers high level simplicity with low level performance.",
+      "Rust is a memory-safe programming language which offers high-level simplicity with low-level performance.",
     endpoint: "Rust",
   },
 ];
-
