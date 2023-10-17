@@ -156,7 +156,7 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
-            <Logo src="./img/logo2.png"></Logo>
+            <Logo src="../.././img/logo2.png"></Logo>
           </NavbarLogo>
           <NavLinks>
             <NavbarLink
