@@ -12,6 +12,10 @@ const CardWrapper = styled.div`
     transform: scale(1.05);
   }
 
+  ul li{
+    cursor: pointer;
+  }
+
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 350px;
