@@ -128,7 +128,7 @@ export default function ARVR() {
               <div key={item.title} className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
-                    alt="item-image"
+                    alt={item.title}
                     className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
                     src={item.image}
                   />

@@ -1,34 +1,19 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "./Main.css";
-import { Link } from "react-router-dom";
 
 const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  ${
-    "" /* background-color: rgb(9, 9, 121);
-  background-repeat: no-repeat;
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
   background-color: #010116;
-  ${
-    "" /* background-repeat: no-repeat;
-    background: no-repeat url("./img/bg.jpg"); */
-  }
 `;
 
 const Container = styled.div`
   scroll-snap-align: center;
   width: 100%;
   padding-top: 100px;
-  
 `;
 
 export const CyberSecurity = () => {
@@ -38,12 +23,12 @@ export const CyberSecurity = () => {
     Javascript: false,
   });
 
-  const handleCheckboxChange = (topic) => {
-    setCheckedTopics({
-      ...checkedTopics,
-      [topic]: !checkedTopics[topic],
-    });
-  };
+  // const handleCheckboxChange = (topic) => {
+  //   setCheckedTopics({
+  //     ...checkedTopics,
+  //     [topic]: !checkedTopics[topic],
+  //   });
+  // };
 
   useEffect(() => {
     localStorage.setItem("checkedTopics", JSON.stringify(checkedTopics));
@@ -308,4 +293,3 @@ const techUsed = [
       "IoT devices are becoming more prevalent in homes and businesses, and they are often vulnerable to cyberattacks. IoT security technologies include encryption, access controls, and monitoring to protect IoT devices and the data they collect.",
   },
 ];
-
