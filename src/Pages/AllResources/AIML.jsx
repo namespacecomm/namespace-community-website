@@ -219,12 +219,7 @@ const aiMlDomains = [
         description: "Deep Learning is a subset of machine learning involving neural networks with many layers. Study neural architectures, backpropagation, and applications like image recognition.",
         to: "/deeplearning",
     },
-    {
-        title: "Data Science",
-        image: "https://previews.123rf.com/images/essaphear/essaphear1709/essaphear170900001/86808937-data-science-logo-icon-design-vector.jpg",
-        description: "Data Science involves extracting insights and knowledge from data. Learn about data analysis, statistical modeling, and machine learning techniques.",
-        to: "/data-science",
-    },
+    
 ];
 
 const mlFrameworks = [
