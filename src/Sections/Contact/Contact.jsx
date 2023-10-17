@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const Section = styled.div`
-  background-color: #010116; /* Dark background color */
+  background-color: #010116;
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
@@ -34,7 +34,7 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 50px;
   font-weight: 600;
-  color: #fff; /* White text color */
+  color: #fff;
 `;
 
 const Form = styled.form`
@@ -50,9 +50,9 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #14102E; /* Updated to the desired color */
+  background-color: #14102E;
   border: none;
-  color: #fff; /* White text color */
+  color: #fff;
   border-radius: 5px;
 `;
 
@@ -60,13 +60,12 @@ const TextArea = styled.textarea`
   padding: 20px;
   border: none;
   border-radius: 5px;
-  color: #fff; /* White text color */
-  background-color: #14102E; /* Updated to the desired color */
+  color: #fff;
+  background-color: #14102E;
 `;
 
-
 const Button = styled.button`
-  background-color: #1d28f2; /* Blue button background color */
+  background-color: #1d28f2;
   color: white;
   border: none;
   font-weight: bold;
@@ -133,7 +132,7 @@ const Contact = () => {
 
     if (!formData.name || !formData.email || !formData.message) {
       setSuccess(false);
-      setFormMessage("Fields cannot be empty :(");
+      setFormMessage("Input Fields cannot be empty :(");
       return;
     }
 
@@ -191,9 +190,9 @@ const Contact = () => {
               value={formData.message}
             />
             <Button type="submit">Send</Button>
+            {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
           </Form>
           {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
-          {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
         </Left>
         <Right>
           <Img src="./img/contact.svg" alt="Contact Illustration" />
