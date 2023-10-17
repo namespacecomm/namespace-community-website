@@ -59,6 +59,7 @@ import Hyperledger from './Pages/AllResources/blockChainCards/Hyperledger';
 import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
+import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -133,6 +134,7 @@ function App() {
 								<Route path="Rust" element={<Rust />} />
 								<Route path="hyperledger-fabric" element={<Hyperledger />}/>
 								<Route path="truffle" element={<Truffle />} />
+								<Route path="Solidity" element={<Solidity />} />
 							</Route>
 							
 							

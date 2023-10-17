@@ -238,4 +238,11 @@ const blockchainTools = [
       "Rust is a memory-safe programming language which offers high-level simplicity with low-level performance.",
     endpoint: "Rust",
   },
+  {
+    title: "Solidity",
+    image: "https://styles.redditmedia.com/t5_37k24/styles/communityIcon_1etv9auttp181.png?width=256&s=c9fd0fe7ec9e2b0e377dd5198fd033a05674c302",
+    description:
+      "Solidity is an object-oriented programming language for implementing smart contracts on various blockchain platforms.",
+    endpoint: "Solidity",
+  },
 ];
