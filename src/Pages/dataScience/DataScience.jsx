@@ -262,10 +262,12 @@ const dataScienceDomains = [
       to: "/deeplearning",
   },
   {
-    title: "Coding",
+    title: "Python",
     image: "https://media.istockphoto.com/id/1159595208/vector/computer-vision-icon-simple-element-illustration.jpg?s=612x612&w=0&k=20&c=LsOon1dLqDngBmMYa1XhBTp3V_4NzIf7_eyfhnE38hc=",
     description: "In data science, Python is versatile, used for data engineering, machine learning, and visualization, with libraries like Pandas and Matplotlib. R is explicitly for statistics and visualization. SQL is for databases, often learned after Python or R.",
-    to: "/coding",
+    to: "/pyresource",
+    
+
 },
 {
   title: "MLOps",
