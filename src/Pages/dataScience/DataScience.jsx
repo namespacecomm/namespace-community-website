@@ -273,6 +273,12 @@ const dataScienceDomains = [
   description: "MLOps automates machine learning model deployment in production. It blends DevOps and ML for efficient development, testing, and monitoring. MLOps streamlines ML research to real-world applications, fostering collaboration between data scientists and operations teams.",
   to: "/mlops",
 },
+{
+  title: "R (Programming Lanuage)",
+  image: "https://4.bp.blogspot.com/-EvdzIrpMBTg/WWUnDC97QcI/AAAAAAAAFjA/AG3K09V1_iAVbghf97vP0bmtd_kF6knEACLcBGAs/s1600/Top%2B10%2Bbest%2BProgramming%2Bvideo%2Btutorials.png",
+  description: "A solid grasp of probability theory is essential when working with R, especially in the context of machine learning. Probability serves as the foundational framework for many statistical and machine learning algorithms in R, making it a fundamental concept to grasp for anyone looking to excel in data analysis and predictive modeling with this programming language.",
+  to: "/Statistics",
+},
 ];
 
 
