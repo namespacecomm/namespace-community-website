@@ -7,6 +7,7 @@ import { Github } from './Pages/AllResources/webALL/github';
 import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
 import { JENKINS } from './Pages/AllResources/devopsALL/jenkins';
 import { CompProg } from './Pages/AllResources/CompProg';
@@ -18,7 +19,6 @@ import Projects from './Pages/Projects/Projects';
 import Resources from './Pages/Resources/Resources';
 import Hero from './Sections/Hero/Hero';
 import DataScience from './Pages/dataScience/DataScience';
-import Python from './Pages/pyresource/python';
 import NotFound from './Pages/Error/NotFound';
 import Android from './Pages/AllResources/Android';
 import ARVR from './Pages/AllResources/ARVR';
@@ -91,7 +91,6 @@ function App() {
 							<Route path="webd" element={<Web />} />
 							<Route path="cp" element={<CompProg />} />
 							<Route path="dataScience" element={<DataScience />} />
-							<Route path="pyresource" element={<Python />} />
 							<Route path="android" element={<Android />} />
 							<Route path="iot" element={<Iot />} />
 							<Route path="flutter" element={<Flutter />} />
@@ -123,6 +122,8 @@ function App() {
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
+							<Route path="heroku" element={<HEROKU />} />
+
 							
 							
 							{/* Routes related to BLOCKCHAIN PATHS */}	
