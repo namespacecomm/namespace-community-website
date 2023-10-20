@@ -363,15 +363,13 @@ const front = [
 const back = [
   {
     title: "PHP",
-    image:
-      "https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?w=740&t=st=1696148044~exp=1696148644~hmac=2b1042d454d6cdbd63028a652692402e729bd54defc1d62dea7ee48ab21335a0",
+    image: "https://www.php.net/images/logos/new-php-logo.svg",
     to: "/php",
     des: "PHP is a versatile server-side scripting language for web development.",
   },
   {
     title: "MySQL",
-    image:
-      "https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=740&t=st=1696148496~exp=1696149096~hmac=6f53e263b59fc15c3a1a068504ca95ed27e28c1280bbf16e1e5b802a4a2a650c",
+    image: "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
     to: "/mysql",
     des: "MySQL: Popular RDBMS for web databases.",
   },
@@ -384,8 +382,7 @@ const back = [
   },
   {
     title: "Django",
-    image:
-      "https://media.licdn.com/dms/image/D4D12AQE-VEYeJbkang/article-cover_image-shrink_720_1280/0/1685546933475?e=2147483647&v=beta&t=4yE6W6cW91SZtqOR2x-_EH2ztyRctpRiWMJPZdRCQOM",
+    image: "https://static.djangoproject.com/img/logos/django-logo-positive.png",
     to: "/django",
     des: "Django: High-level Python web framework for rapid, secure site development.",
   },
