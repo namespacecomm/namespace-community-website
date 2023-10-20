@@ -60,6 +60,7 @@ import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
+import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -89,7 +90,6 @@ function App() {
 							<Route path="resources" element={<Resources />} />
 							<Route path="webd" element={<Web />} />
 							<Route path="cp" element={<CompProg />} />
-							<Route path="dataScience" element={<DataScience />} />
 							<Route path="android" element={<Android />} />
 							<Route path="iot" element={<Iot />} />
 							<Route path="flutter" element={<Flutter />} />
@@ -111,7 +111,6 @@ function App() {
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
-							<Route path="deeplearning" element={<DeepLearning />} />
 							<Route
 								path="frontend-framework"
 								element={<FrontEndFramework />}
@@ -135,6 +134,14 @@ function App() {
 								<Route path="hyperledger-fabric" element={<Hyperledger />}/>
 								<Route path="truffle" element={<Truffle />} />
 								<Route path="Solidity" element={<Solidity />} />
+							</Route>
+
+							{/* Routes related to DataScience PATHS */}	
+							<Route path="dataScience">
+								<Route index element={<DataScience />} />
+
+								<Route path="deeplearning" element={<DeepLearning />} /> 
+								<Route path="mathematics" element={<Mathematics />} /> 
 							</Route>
 							
 							
