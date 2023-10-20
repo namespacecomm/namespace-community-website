@@ -7,6 +7,7 @@ import { Github } from './Pages/AllResources/webALL/github';
 import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
 import { JENKINS } from './Pages/AllResources/devopsALL/jenkins';
 import { CompProg } from './Pages/AllResources/CompProg';
@@ -123,6 +124,8 @@ function App() {
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
+							<Route path="heroku" element={<HEROKU />} />
+
 							
 							
 							{/* Routes related to BLOCKCHAIN PATHS */}	
