@@ -6,6 +6,7 @@ import { HTML } from './Pages/AllResources/webALL/html';
 import { Github } from './Pages/AllResources/webALL/github';
 import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
+import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
 import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
@@ -121,6 +122,7 @@ function App() {
 							/>
 							<Route path="css-framework" element={<CSSFramework />} />
 							<Route path="devops" element={<DevOps />} />
+							<Route path="ansible" element={<ANSIBLE />} />
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
