@@ -62,6 +62,7 @@ import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
+import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 
 const Container = styled.div`
