@@ -20,8 +20,8 @@ const ImageCarouselArrow = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
   ${'' /* display: flex; */}
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   
@@ -30,18 +30,22 @@ const ImageCarouselArrow = styled.button`
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background-color: rgba(255,255,255, 0.2);
+
+  font-size: 16px;
+  font-weight: bolder;
 
   &:hover {
     transform: translateY(-50%) scale(1.1);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255,255,255, 0.5);
   }
 
   &.left {
-    left: 0;
+    left: 10px;
   }
 
   &.right {
-    right: 0;
+    right: 10px;
   }
 `;
 
