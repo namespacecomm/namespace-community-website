@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Section = styled.div`
     display: flex;
-    flex-direction: justfiy-content;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
  

@@ -109,10 +109,12 @@ const Right = styled.div`
 `;
 
 const SuccessMessage = styled.p`
+  text-align: center;
   color: green;
 `;
 
 const ErrorMessage = styled.p`
+  text-align: center;
   color: red;
 `;
 
@@ -166,6 +168,8 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
+          {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
+          {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
             <Title>Contact Us</Title>
             <Input
               placeholder="Name"
@@ -173,6 +177,7 @@ const Contact = () => {
               onChange={handleChange}
               value={formData.name}
               autoComplete="off"
+              required={true}
             />
             <Input
               placeholder="Email"
@@ -181,6 +186,7 @@ const Contact = () => {
               onChange={handleChange}
               value={formData.email}
               autoComplete="off"
+              required={true}
             />
             <TextArea
               placeholder="Write your message"
@@ -188,11 +194,10 @@ const Contact = () => {
               rows={10}
               onChange={handleChange}
               value={formData.message}
+              required={true}
             />
             <Button type="submit">Send</Button>
-            {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
           </Form>
-          {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
         </Left>
         <Right>
           <Img src="./img/contact.svg" alt="Contact Illustration" />
