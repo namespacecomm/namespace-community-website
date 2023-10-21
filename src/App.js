@@ -7,6 +7,7 @@ import { Github } from './Pages/AllResources/webALL/github';
 import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
 import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
+import { TERRAFORM } from './Pages/AllResources/devopsALL/terraform';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
 import { IBM } from './Pages/AllResources/devopsALL/ibm-cloud';
 import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
@@ -66,7 +67,7 @@ import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
-import { TERRAFORM } from './Pages/AllResources/devopsALL/terraform';
+import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -116,6 +117,7 @@ function App() {
 								path="computer-vision"
 								element={<ComputerVision />}
 							/>
+							<Route path="numpy" element={<Numpy/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
