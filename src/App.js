@@ -67,6 +67,7 @@ import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
+import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -117,6 +118,7 @@ function App() {
 								element={<ComputerVision />}
 							/>
 							<Route path="numpy" element={<Numpy/>} />
+							<Route path="tensorflow" element={<Tensorflow/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
