@@ -6,7 +6,10 @@ import { HTML } from './Pages/AllResources/webALL/html';
 import { Github } from './Pages/AllResources/webALL/github';
 import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
+import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { IBM } from './Pages/AllResources/devopsALL/ibm-cloud';
+import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
 import { JENKINS } from './Pages/AllResources/devopsALL/jenkins';
 import { CompProg } from './Pages/AllResources/CompProg';
@@ -34,6 +37,7 @@ import { CSSFramework } from './Pages/AllResources/CSSFramework';
 import { MongoDB } from './Pages/AllResources/webALL/mongodb';
 import Aws from './Pages/AllResources/Aws';
 import Azure from './Pages/AllResources/Azure';
+import { Gcp } from './Pages/AllResources/devopsALL/Gcp';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -61,6 +65,8 @@ import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
+import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
+import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -90,7 +96,6 @@ function App() {
 							<Route path="resources" element={<Resources />} />
 							<Route path="webd" element={<Web />} />
 							<Route path="cp" element={<CompProg />} />
-							<Route path="dataScience" element={<DataScience />} />
 							<Route path="pyresource" element={<Python />} />
 							<Route path="android" element={<Android />} />
 							<Route path="iot" element={<Iot />} />
@@ -100,6 +105,7 @@ function App() {
 							<Route path="aiml" element={<AIML />} />
 							<Route path="aws" element={<Aws />} />
 							<Route path="azure" element={<Azure />} />
+							<Route path='gcp' element={<Gcp />} />
 							<Route path="cybersecurity" element={<CyberSecurity />} />
 							<Route path="css" element={<CSS />} />
 							<Route path="html" element={<HTML />} />
@@ -110,19 +116,23 @@ function App() {
 								path="computer-vision"
 								element={<ComputerVision />}
 							/>
+							<Route path="numpy" element={<Numpy/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
-							<Route path="deeplearning" element={<DeepLearning />} />
 							<Route
 								path="frontend-framework"
 								element={<FrontEndFramework />}
 							/>
 							<Route path="css-framework" element={<CSSFramework />} />
 							<Route path="devops" element={<DevOps />} />
+							<Route path="ansible" element={<ANSIBLE />} />
 							<Route path="docker" element={<DOCKER />} />
+							<Route path="ibm-cloud" element={<IBM />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
+							<Route path="heroku" element={<HEROKU />} />
+
 							
 							
 							{/* Routes related to BLOCKCHAIN PATHS */}	
@@ -137,6 +147,14 @@ function App() {
 								<Route path="hyperledger-fabric" element={<Hyperledger />}/>
 								<Route path="truffle" element={<Truffle />} />
 								<Route path="Solidity" element={<Solidity />} />
+							</Route>
+
+							{/* Routes related to DataScience PATHS */}	
+							<Route path="dataScience">
+								<Route index element={<DataScience />} />
+
+								<Route path="deeplearning" element={<DeepLearning />} /> 
+								<Route path="mathematics" element={<Mathematics />} /> 
 							</Route>
 							
 							
