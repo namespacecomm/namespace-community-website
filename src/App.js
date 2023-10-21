@@ -62,6 +62,7 @@ import Truffle from './Pages/AllResources/blockChainCards/Truffle';
 import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
+import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -111,6 +112,7 @@ function App() {
 								path="computer-vision"
 								element={<ComputerVision />}
 							/>
+							<Route path="numpy" element={<Numpy/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
