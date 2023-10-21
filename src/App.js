@@ -36,6 +36,7 @@ import { CSSFramework } from './Pages/AllResources/CSSFramework';
 import { MongoDB } from './Pages/AllResources/webALL/mongodb';
 import Aws from './Pages/AllResources/Aws';
 import Azure from './Pages/AllResources/Azure';
+import { Gcp } from './Pages/AllResources/devopsALL/Gcp';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -102,6 +103,7 @@ function App() {
 							<Route path="aiml" element={<AIML />} />
 							<Route path="aws" element={<Aws />} />
 							<Route path="azure" element={<Azure />} />
+							<Route path='gcp' element={<Gcp />} />
 							<Route path="cybersecurity" element={<CyberSecurity />} />
 							<Route path="css" element={<CSS />} />
 							<Route path="html" element={<HTML />} />
