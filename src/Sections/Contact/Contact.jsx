@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import Modal from "./Modal";
 
 const Section = styled.div`
   background-color: #010116;
@@ -50,7 +51,7 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #14102E;
+  background-color: #14102e;
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -61,7 +62,7 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-color: #14102E;
+  background-color: #14102e;
 `;
 
 const Button = styled.button`
@@ -118,9 +119,14 @@ const ErrorMessage = styled.p`
 
 const Contact = () => {
   const ref = useRef();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [success, setSuccess] = useState(null);
   const [formMessage, setFormMessage] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -133,6 +139,7 @@ const Contact = () => {
     if (!formData.name || !formData.email || !formData.message) {
       setSuccess(false);
       setFormMessage("Input Fields cannot be empty :(");
+      setShowModal(true); // Show the modal
       return;
     }
 
@@ -147,16 +154,21 @@ const Contact = () => {
         (result) => {
           setFormData({ name: "", email: "", message: "" });
           setSuccess(true);
-          setFormMessage("Your message has been sent. We'll get back to you soon :)");
+          setFormMessage(
+            "Your message has been sent. We'll get back to you soon :)"
+          );
+          setShowModal(true);
 
           setTimeout(() => {
             setSuccess(null);
             setFormMessage("");
+            setShowModal(false); // Hide the modal
           }, 2000);
         },
         (error) => {
           console.log(error.text);
           setSuccess(false);
+          setShowModal(true); // Show the modal
         }
       );
   };
@@ -190,9 +202,16 @@ const Contact = () => {
               value={formData.message}
             />
             <Button type="submit">Send</Button>
-            {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
+            {showModal && (
+              <Modal
+                message={formMessage}
+                onClose={() => setShowModal(false)}
+              />
+            )}
           </Form>
-          {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
+          {showModal && (
+            <Modal message={formMessage} onClose={() => setShowModal(false)} />
+          )}
         </Left>
         <Right>
           <Img src="./img/contact.svg" alt="Contact Illustration" />
