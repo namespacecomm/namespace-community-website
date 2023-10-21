@@ -66,6 +66,7 @@ import Dsa from './Pages/AllResources/Dsa/Dsa';
 import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
+import { TERRAFORM } from './Pages/AllResources/devopsALL/terraform';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -125,6 +126,7 @@ function App() {
 							<Route path="css-framework" element={<CSSFramework />} />
 							<Route path="devops" element={<DevOps />} />
 							<Route path="ansible" element={<ANSIBLE />} />
+							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="ibm-cloud" element={<IBM />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
