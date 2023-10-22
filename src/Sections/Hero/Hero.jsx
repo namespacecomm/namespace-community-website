@@ -12,7 +12,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import SocialMedia from "../SocialMedia/SocialMedia";
-
+import BackToTopButton from "../../components/BackToTop";
 // const Section = styled.div`
 //   background-repeat: no-repeat;
 //   background: no-repeat url("./img/bg.jpg");
@@ -225,6 +225,7 @@ const Hero = () => {
           <Right>
             <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
           </Right>
+          <BackToTopButton />
         </Container>
       </Section>
 
