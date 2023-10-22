@@ -69,6 +69,8 @@ import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
+import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch';
+
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -120,6 +122,7 @@ function App() {
 							/>
 							<Route path="numpy" element={<Numpy/>} />
 							<Route path="tensorflow" element={<Tensorflow/>} />
+							<Route path="PyTorch" element={<PyTorch/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
