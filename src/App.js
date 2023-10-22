@@ -70,8 +70,8 @@ import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
-import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch';
-
+import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
+import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -138,6 +138,7 @@ function App() {
 							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="ibm-cloud" element={<IBM />} />
+							<Route path="iotappindus" element={<IOTappindus />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
 							<Route path="heroku" element={<HEROKU />} />

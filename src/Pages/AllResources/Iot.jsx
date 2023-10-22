@@ -162,6 +162,7 @@ const iotdevPathway = [
     title: "IoT Applications and Industry Specialization",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
     description: "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+    to:"/iotappindus",
   },
 ];
 
