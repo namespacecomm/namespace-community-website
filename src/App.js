@@ -23,6 +23,7 @@ import Resources from './Pages/Resources/Resources';
 import Hero from './Sections/Hero/Hero';
 import DataScience from './Pages/dataScience/DataScience';
 import Python from './Pages/pyresource/python';
+import MLOps from './Pages/mlops/mlops';
 import NotFound from './Pages/Error/NotFound';
 import Android from './Pages/AllResources/Android';
 import ARVR from './Pages/AllResources/ARVR';
@@ -99,6 +100,7 @@ function App() {
 							<Route path="webd" element={<Web />} />
 							<Route path="cp" element={<CompProg />} />
 							<Route path="pyresource" element={<Python />} />
+							<Route path="mlops" element={<MLOps />} />
 							<Route path="android" element={<Android />} />
 							<Route path="iot" element={<Iot />} />
 							<Route path="flutter" element={<Flutter />} />
