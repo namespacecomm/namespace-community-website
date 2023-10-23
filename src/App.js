@@ -72,6 +72,7 @@ import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
 import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
+import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -162,7 +163,7 @@ function App() {
 							{/* Routes related to DataScience PATHS */}	
 							<Route path="dataScience">
 								<Route index element={<DataScience />} />
-
+								<Route path="statistics" element={<Statistics />} />
 								<Route path="deeplearning" element={<DeepLearning />} /> 
 								<Route path="mathematics" element={<Mathematics />} /> 
 							</Route>
