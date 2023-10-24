@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -38,107 +39,97 @@ const Container = styled.div`
 `;
 
 export const HTML = () => {
-  const [htmltopicsChecked, setHtmlTopicsChecked] = useState({
-    htmlstructure: false,
-    htmlelements: false,
-    htmlattributes: false,
-    textformatting: false,
-    htmlimages: false,
-    htmllinks: false,
-    htmllists: false,
-    htmlforms: false,
-    semantichtml: false,
-    documentstructure: false,
-    htmlcomments: false,
-    devtools: false,
+  const [jstopicsChecked, setJsTopicsChecked] = useState({
+    syntax: false,
+    dom: false,
+    fetch: false,
+    async: false,
+    event: false,
+    promises: false,
+    classes: false,
+    array: false,
+    hoisting: false,
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setHtmlTopicsChecked({
-      ...htmltopicsChecked,
-      [topic]: !htmltopicsChecked[topic],
+    setJsTopicsChecked({
+      ...jstopicsChecked,
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "htmltopicsChecked",
-      JSON.stringify(htmltopicsChecked)
-    );
-  }, [htmltopicsChecked]);
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
+  }, [jstopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("htmltopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setHtmlTopicsChecked(JSON.parse(storedTopicsChecked));
+      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
   return (
     <>
       <Section>
-        <Container>
+        <Navbar />
+        <Container className="w-screen">
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
+                alt="HTML"
                 src="https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-1161.jpg?w=826&t=st=1696142260~exp=1696142860~hmac=0023559da96b5349b1452cf23667ac25b74a8e365a5d0b4074c1f9847b911e85"
               />
               <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  HTML: HyperText Markup Language
+                HTML
                 </h1>
-                <p className="mb-8 leading-relaxed text-justify">
-                  HTML (HyperText Markup Language) is the most basic building
+                <p className="mb-8 text-center mx-4">
+                HTML (HyperText Markup Language) is the most basic building
                   block of the Web. It defines the meaning and structure of web
-                  content. Other technologies besides HTML are generally used to
+                  content. <br></br>Other technologies besides HTML are generally used to
                   describe a web page's appearance/presentation (CSS) or
-                  functionality/behavior (JavaScript). "Hypertext" refers to
+                  functionality/behavior (JavaScript). <br></br>"Hypertext" refers to
                   links that connect web pages to one another, either within a
                   single website or between websites. Links are a fundamental
-                  aspect of the Web. By uploading content to the Internet and
+                  aspect of the Web.<br></br> By uploading content to the Internet and
                   linking it to pages created by other people, you become an
-                  active participant in the World Wide Web. HTML uses "markup"
+                  active participant in the World Wide Web.<br></br> HTML uses "markup"
                   to annotate text, images, and other content for display in a
-                  Web browser. HTML markup includes special "elements" such as
-                  &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
-                  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
-                  &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
-                  &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
-                  &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;,
-                  &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;,
-                  &lt;ol&gt;, &lt;li&gt; and many others. An HTML element is set
+                  Web browser.<br></br> <br></br><b>HTML markup includes special "elements" such as:</b>
+                  <br></br> &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
+                  <br></br>  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
+                  <br></br> &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
+                  <br></br> &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
+                  <br></br> &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;,
+                  <br></br> &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;,
+                  <br></br> &lt;ol&gt;, &lt;li&gt; and many others.<br></br><br></br> An HTML element is set
                   off from other text in a document by "tags", which consist of
-                  the element name surrounded by "&lt;" and "&gt;". The name of
+                  the element name surrounded by "&lt;" and "&gt;". <br></br>The name of
                   an element inside a tag is case-insensitive. That is, it can
-                  be written in uppercase, lowercase, or a mixture. For example,
+                  be written in uppercase, lowercase, or a mixture. <br></br>For example,
                   the &lt;title&gt; tag can be written as &lt;Title&gt;,
-                  &lt;TITLE&gt;, or in any other way. However, the convention
-                  and recommended practice are to write tags in lowercase.
-                </p>
+                  &lt;TITLE&gt;, or in any other way. <br></br>However, the convention
+                  and recommended practice are to write tags in lowercase. </p>
               </div>
             </div>
             {/* <-------------------------------Topics Section ----------------------------------------------> */}
-            <h2 className="mb-2 text-lg font-semibold text-white">
+            <h2 className="mb-2 mx-4 text-center text-lg font-semibold text-white">
               Topics you need to cover:
             </h2>
-            <ul className="flex flex-wrap m-2">
+            <ul className="flex flex-wrap m-4">
               {topics.map((front) => {
                 return (
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label
-                          htmlFor={front.storage}
-                          className="text-white title-font font-bold text-xl cursor-pointer"
-                        >
-                          {front.title}
-                        </label>
+                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={htmltopicsChecked[front.storage]}
+                          checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -150,19 +141,16 @@ export const HTML = () => {
             </ul>
             {/* <-----------------------------------------------RESOURCES SECTION---------------------------------------------------> */}
             <section className="text-white body-font">
-              <div className=" px-0 py-14 mx-auto">
+              <div className=" px-4 py-14 mx-auto">
                 <div className="flex flex-col text-left w-full mb-2">
-                  <h1 className="text-xl font-bold title-font mb-4 text-white-900 tracking-widest">
+                  <h1 className="text-xl font-bold text-center title-font mb-4 text-white-900 tracking-widest">
                     Resources:
                   </h1>
                 </div>
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li
-                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
-                        key={resource.title}
-                      >
+                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -259,3 +247,4 @@ const topics = [
   { title: "HTML Comments", storage: "htmlcomments" },
   { title: "Browser Developer Tools", storage: "devtools" },
 ];
+
