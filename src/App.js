@@ -74,6 +74,7 @@ import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
+import IOThd from './Pages/AllResources/IOTall/iothd';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -140,6 +141,7 @@ function App() {
 							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="ibm-cloud" element={<IBM />} />
+							<Route path="iothd" element={<IOThd />} />
 							<Route path="iotappindus" element={<IOTappindus />} />
 							<Route path="iotdaci" element={<IOTdaci />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
