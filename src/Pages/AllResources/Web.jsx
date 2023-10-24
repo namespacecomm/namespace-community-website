@@ -130,7 +130,7 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Frontend Development
+                          <Link to="#frontend-development" onClick={() => document.querySelector("#frontend-development").scrollIntoView()} >Frontend Development</Link>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           Front-End is the UI (User Interface), it deals with
@@ -159,7 +159,7 @@ export const Web = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Backend Development
+                          <Link to="#backend-development" onClick={() => document.querySelector("#backend-development").scrollIntoView()}>Backend Development</Link>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           The code that runs on the server, has logic to send
@@ -213,7 +213,7 @@ export const Web = () => {
             {/* <------------------------------------Frontend Development-------------------------------------------------------> */}
             <section className="text-white body-font">
               <div className="px-5 py-0 mx-auto">
-                <div className="flex flex-col text-left w-full mb-10">
+                <div className="flex flex-col text-left w-full mb-10" id="frontend-development">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     1. Frontend Development
                   </h1>
@@ -256,7 +256,7 @@ export const Web = () => {
                 </div>
 
                 <br />
-                <div className="flex flex-col text-left w-full mb-10">
+                <div className="flex flex-col text-left w-full mb-10" id="backend-development">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     2. Backend Development
                   </h1>
