@@ -74,6 +74,7 @@ import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import {Keras} from './Pages/AllResources/aimlAll/Keras' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
+import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -142,6 +143,7 @@ function App() {
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="ibm-cloud" element={<IBM />} />
 							<Route path="iotappindus" element={<IOTappindus />} />
+							<Route path="iotdaci" element={<IOTdaci />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
 							<Route path="heroku" element={<HEROKU />} />
