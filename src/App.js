@@ -78,6 +78,7 @@ import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
 import IOThd from './Pages/AllResources/IOTall/iothd';
 import Pandas from './Pages/AllResources/aimlAll/Pandas';
 import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
+import {ReinforcementLearning} from './Pages/AllResources/aimlAll/ReinforcementLearning';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -124,6 +125,7 @@ function App() {
 							<Route path="git" element={<Github />} />
 							<Route path="js" element={<Javascript />} />
 							<Route path="nlp" element={<NLP />} />
+							<Route path="ReinforcementLearning" element={<ReinforcementLearning />} />
 							<Route path="pandas" element={<Pandas />} />
 							<Route
 								path="computer-vision"

@@ -211,7 +211,7 @@ const aiMlDomains = [
         title: "Reinforcement Learning",
         image: "https://e7.pngegg.com/pngimages/923/684/png-clipart-chatbot-artificial-intelligence-technology-machine-learning-technology-electronics-logo.png",
         description: "Reinforcement Learning is about training agents to make sequences of decisions by rewarding them for desired behaviors. Explore applications in gaming and robotics.",
-        to: "/reinforcement-learning",
+        to: "/ReinforcementLearning",
     },
     {
         title: "Deep Learning",
