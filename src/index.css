@@ -39,6 +39,16 @@ body{
     background: rgb(90, 168, 151);
   }
 
+  #leuiux-section {
+    scroll-margin-top: 100px; 
+  }
+  #stuiux-section {
+    scroll-margin-top: 100px; 
+  }
+  #seuiux-section {
+    scroll-margin-top: 100px; 
+  }
+      
   #iac-section {
     scroll-margin-top: 100px;
   }
@@ -60,4 +70,3 @@ body{
   }
   
 
-  
