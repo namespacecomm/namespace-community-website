@@ -147,7 +147,8 @@ const iotdevPathway = [
     title: "IoT Hardware Development",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzQ5SS2GnVr559TH4ZNEYmkgp-IRqHNqwBQ&usqp=CAU",
     description: "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
-},
+    to:"/iothd",
+  },
   {
     title: "IoT Software Development",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
@@ -157,6 +158,7 @@ const iotdevPathway = [
     title: "IoT Data Analytics and Cloud Integration",
     image: "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
     description: "Learn how to effectively manage IoT data with AWS IoT, Azure IoT, or Google Cloud IoT. Enhance your skills in edge computing and real-time processing.",
+    to:"/iotdaci",
   },
   {
     title: "IoT Applications and Industry Specialization",

@@ -9,6 +9,7 @@ import { CSS } from './Pages/AllResources/webALL/css';
 import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
 import { TERRAFORM } from './Pages/AllResources/devopsALL/terraform';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { DigitalOcean } from './Pages/AllResources/devopsALL/digitalocean';
 import { IBM } from './Pages/AllResources/devopsALL/ibm-cloud';
 import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
@@ -72,9 +73,16 @@ import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
 import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
+import {Keras} from './Pages/AllResources/aimlAll/Keras' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
+import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
+import IOThd from './Pages/AllResources/IOTall/iothd';
+import Pandas from './Pages/AllResources/aimlAll/Pandas';
+import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
+import Matplotlib from './Pages/AllResources/aimlAll/Matplotlib';
 
 import { ADOBE } from './Pages/AllResources/uiuxALL/adobe';
+
 
 
 const Container = styled.div`
@@ -122,6 +130,7 @@ function App() {
 							<Route path="git" element={<Github />} />
 							<Route path="js" element={<Javascript />} />
 							<Route path="nlp" element={<NLP />} />
+							<Route path="pandas" element={<Pandas />} />
 							<Route
 								path="computer-vision"
 								element={<ComputerVision />}
@@ -129,6 +138,8 @@ function App() {
 							<Route path="numpy" element={<Numpy/>} />
 							<Route path="tensorflow" element={<Tensorflow/>} />
 							<Route path="PyTorch" element={<PyTorch/>} />
+							<Route path="matplotlib" element={<Matplotlib/>} />
+							<Route path="Keras" element={<Keras/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
@@ -139,10 +150,14 @@ function App() {
 							<Route path="css-framework" element={<CSSFramework />} />
 							<Route path="devops" element={<DevOps />} />
 							<Route path="ansible" element={<ANSIBLE />} />
+							<Route path="gitlab" element={<GITLAB />} />
 							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
+							<Route path="digitalocean" element={<DigitalOcean />} />
 							<Route path="ibm-cloud" element={<IBM />} />
+							<Route path="iothd" element={<IOThd />} />
 							<Route path="iotappindus" element={<IOTappindus />} />
+							<Route path="iotdaci" element={<IOTdaci />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
 							<Route path="heroku" element={<HEROKU />} />
