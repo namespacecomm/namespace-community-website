@@ -76,6 +76,8 @@ import {Keras} from './Pages/AllResources/aimlAll/Keras' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
 import IOThd from './Pages/AllResources/IOTall/iothd';
+import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
+
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -140,6 +142,7 @@ function App() {
 							<Route path="css-framework" element={<CSSFramework />} />
 							<Route path="devops" element={<DevOps />} />
 							<Route path="ansible" element={<ANSIBLE />} />
+							<Route path="gitlab" element={<GITLAB />} />
 							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
 							<Route path="ibm-cloud" element={<IBM />} />
