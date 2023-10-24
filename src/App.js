@@ -80,6 +80,9 @@ import Pandas from './Pages/AllResources/aimlAll/Pandas';
 import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
 import Matplotlib from './Pages/AllResources/aimlAll/Matplotlib';
 
+import { ADOBE } from './Pages/AllResources/uiuxALL/adobe';
+
+
 const Container = styled.div`
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -208,7 +211,7 @@ function App() {
 							</Route>
 
 							<Route path="uiux" element={<UIUX />} />
-
+							<Route path="adobe" element={<ADOBE />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
 
