@@ -118,7 +118,7 @@ const FrameWorks = [
     description:
       "Tailwind CSS is a utility-first CSS framework that helps you quickly build modern and responsive web interfaces.",
     image:
-      "https://tailwindcss.com/_next/static/media/twitter-square.daf3c23deca356f8d5bc1b0977c1e88b.png",
+      "https://miro.medium.com/v2/resize:fit:644/1*d7Xs5RnaqcQtKzbNrAOAYA.png",
     resources: [
       {
         title: "Official Documentation",
@@ -190,7 +190,7 @@ const FrameWorks = [
     name: "Chakra UI",
     description:
       "Chakra UI is a popular React UI framework that provides a set of accessible and customizable UI components to help you build elegant and responsive web applications.",
-    image: "https://chakra-ui.com/logo.svg",
+    image: "https://chakra-ui.com/og-image.png",
     resources: [
       {
         title: "Official Documentation",
