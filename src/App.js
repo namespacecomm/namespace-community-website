@@ -76,8 +76,8 @@ import {Keras} from './Pages/AllResources/aimlAll/Keras' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
 import IOThd from './Pages/AllResources/IOTall/iothd';
+import Pandas from './Pages/AllResources/aimlAll/Pandas';
 import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
-
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -124,6 +124,7 @@ function App() {
 							<Route path="git" element={<Github />} />
 							<Route path="js" element={<Javascript />} />
 							<Route path="nlp" element={<NLP />} />
+							<Route path="pandas" element={<Pandas />} />
 							<Route
 								path="computer-vision"
 								element={<ComputerVision />}
