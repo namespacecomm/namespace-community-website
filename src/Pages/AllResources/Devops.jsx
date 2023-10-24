@@ -493,6 +493,7 @@ const cicd = [
     image: "https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg",
     to: "/gitlab",
     des: "GitLab Inc. is an open-core company that operates GitLab, a DevOps software package which can develop, secure, and operate software",
+  
   },
   {
     title: "Github Action",
