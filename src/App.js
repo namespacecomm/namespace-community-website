@@ -78,6 +78,7 @@ import IOTdaci from './Pages/AllResources/IOTall/iotdaci';
 import IOThd from './Pages/AllResources/IOTall/iothd';
 import Pandas from './Pages/AllResources/aimlAll/Pandas';
 import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
+import Matplotlib from './Pages/AllResources/aimlAll/Matplotlib';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -132,6 +133,7 @@ function App() {
 							<Route path="numpy" element={<Numpy/>} />
 							<Route path="tensorflow" element={<Tensorflow/>} />
 							<Route path="PyTorch" element={<PyTorch/>} />
+							<Route path="matplotlib" element={<Matplotlib/>} />
 							<Route path="Keras" element={<Keras/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
