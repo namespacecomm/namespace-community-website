@@ -8,6 +8,7 @@ import { PHP } from './Pages/AllResources/webALL/php';
 import { CSS } from './Pages/AllResources/webALL/css';
 import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { DigitalOcean } from './Pages/AllResources/devopsALL/digitalocean';
 import { IBM } from './Pages/AllResources/devopsALL/ibm-cloud';
 import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
@@ -67,6 +68,7 @@ import {Rust} from './Pages/AllResources/blockChainCards/Rust';
 import {Solidity} from './Pages/AllResources/blockChainCards/Solidity';
 import Mathematics from './Pages/AllResources/datasciencecards/Mathematics';
 import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
+
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -128,6 +130,7 @@ function App() {
 							<Route path="devops" element={<DevOps />} />
 							<Route path="ansible" element={<ANSIBLE />} />
 							<Route path="docker" element={<DOCKER />} />
+							<Route path="digitalocean" element={<DigitalOcean />} />
 							<Route path="ibm-cloud" element={<IBM />} />
 							<Route path="kubernetes" element={<KUBERNETES />} />
 							<Route path="jenkins" element={<JENKINS />} />
