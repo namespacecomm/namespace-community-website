@@ -147,7 +147,8 @@ const iotdevPathway = [
     title: "IoT Hardware Development",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzQ5SS2GnVr559TH4ZNEYmkgp-IRqHNqwBQ&usqp=CAU",
     description: "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
-},
+    to:"/iothd",
+  },
   {
     title: "IoT Software Development",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
