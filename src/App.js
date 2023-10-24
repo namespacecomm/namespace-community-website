@@ -75,6 +75,7 @@ import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 
 import { ADOBE } from './Pages/AllResources/uiuxALL/adobe';
+import { SKETCH } from './Pages/AllResources/uiuxALL/sketch';
 
 
 const Container = styled.div`
@@ -200,6 +201,7 @@ function App() {
 
 							<Route path="uiux" element={<UIUX />} />
 							<Route path="adobe" element={<ADOBE />} />
+							<Route path="sketch" element={<SKETCH />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
 
