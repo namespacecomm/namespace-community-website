@@ -72,6 +72,7 @@ import { Numpy } from './Pages/AllResources/aimlAll/Numpy';
 import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
 import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
+import {Keras} from './Pages/AllResources/aimlAll/Keras' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 
 const Container = styled.div`
@@ -126,6 +127,7 @@ function App() {
 							<Route path="numpy" element={<Numpy/>} />
 							<Route path="tensorflow" element={<Tensorflow/>} />
 							<Route path="PyTorch" element={<PyTorch/>} />
+							<Route path="Keras" element={<Keras/>} />
 							<Route path="nodejs" element={<Nodejs />} />
 							<Route path="php" element={<PHP />} />
 							<Route path="firebase" element={<Firebase />} />
