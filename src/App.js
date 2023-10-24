@@ -9,6 +9,7 @@ import { CSS } from './Pages/AllResources/webALL/css';
 import { ANSIBLE } from './Pages/AllResources/devopsALL/ansible';
 import { TERRAFORM } from './Pages/AllResources/devopsALL/terraform';
 import { DOCKER } from './Pages/AllResources/devopsALL/docker';
+import { DigitalOcean } from './Pages/AllResources/devopsALL/digitalocean';
 import { IBM } from './Pages/AllResources/devopsALL/ibm-cloud';
 import { HEROKU } from './Pages/AllResources/devopsALL/heroku';
 import { KUBERNETES } from './Pages/AllResources/devopsALL/kubernetes';
@@ -83,6 +84,7 @@ import Matplotlib from './Pages/AllResources/aimlAll/Matplotlib';
 import { ADOBE } from './Pages/AllResources/uiuxALL/adobe';
 
 
+
 const Container = styled.div`
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -151,6 +153,7 @@ function App() {
 							<Route path="gitlab" element={<GITLAB />} />
 							<Route path="terraform" element={<TERRAFORM />} />
 							<Route path="docker" element={<DOCKER />} />
+							<Route path="digitalocean" element={<DigitalOcean />} />
 							<Route path="ibm-cloud" element={<IBM />} />
 							<Route path="iothd" element={<IOThd />} />
 							<Route path="iotappindus" element={<IOTappindus />} />
