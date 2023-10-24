@@ -73,6 +73,7 @@ import {Tensorflow} from './Pages/AllResources/aimlAll/Tensorflow';
 import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
+import { ADOBE } from './Pages/AllResources/uiuxALL/Adobe';
 
 const Container = styled.div`
 	scrollbar-width: none;
@@ -196,7 +197,7 @@ function App() {
 							</Route>
 
 							<Route path="uiux" element={<UIUX />} />
-
+							<Route path="adobe" element={<ADOBE />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
 
