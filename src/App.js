@@ -74,6 +74,9 @@ import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 
+import { ADOBE } from './Pages/AllResources/uiuxALL/adobe';
+
+
 const Container = styled.div`
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -196,7 +199,7 @@ function App() {
 							</Route>
 
 							<Route path="uiux" element={<UIUX />} />
-
+							<Route path="adobe" element={<ADOBE />} />
 							<Route path="figma" element={<Figma />} />
 						</Route>
 
