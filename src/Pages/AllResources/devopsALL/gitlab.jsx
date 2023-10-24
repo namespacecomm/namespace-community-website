@@ -88,7 +88,7 @@ export const GITLAB = () => {
                 </h1>
                 <p className="mb-8 text-center mx-4">
                 GitLab Inc. is an open-core company that operates GitLab, a DevOps software package that can develop, secure, and operate software. 
-                <br/>The open source software project was created by Ukrainian developer Dmytro Zaporozhets and Dutch developer Sytse Sijbrandij. Wikipedia                
+                <br/>The open source software project was created by Ukrainian developer Dmytro Zaporozhets and Dutch developer Sytse Sijbrandij.                
                 </p>
               </div>
             </div>
