@@ -58,6 +58,7 @@ import { WebXR } from './Pages/AllResources/arvrAll/WebXR';
 import { ComputerVision } from './Pages/AllResources/aimlAll/ComputerVision';
 import { UIUX } from './Pages/AllResources/uiux';
 import { Figma } from './Pages/AllResources/uiuxALL/Figma';
+import {ADOBE} from './Pages/AllResources/uiuxALL/adobe';
 import Cryptocurrency from './Pages/AllResources/blockChainCards/Cryptocurrency';
 import Supplychain from './Pages/AllResources/blockChainCards/Supplychain';
 import Decentralized from './Pages/AllResources/blockChainCards/Decentralized';
@@ -203,6 +204,7 @@ function App() {
               <Route path="uiux" element={<UIUX />} />
               
               <Route path="figma" element={<Figma />} />
+			  <Route path="adobe" element={<ADOBE />} />
             </Route>
 
             <Route path="dsa" element={<Dsa />} />
