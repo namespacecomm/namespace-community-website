@@ -39,6 +39,8 @@
 
 .project-image img {
   flex: 1;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   transition: transform 0.4s ease-in-out;
 }
 .project-image img:hover {
@@ -100,6 +102,8 @@
     width: 100%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
 
   .project-image img {
