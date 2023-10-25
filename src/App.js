@@ -81,14 +81,14 @@ import { GITLAB } from './Pages/AllResources/devopsALL/gitlab';
 import {ReinforcementLearning} from './Pages/AllResources/aimlAll/ReinforcementLearning';
 
 const Container = styled.div`
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	overflow-y: auto;
-	color: white;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  color: white;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 function App() {
@@ -125,8 +125,8 @@ function App() {
 							<Route path="git" element={<Github />} />
 							<Route path="js" element={<Javascript />} />
 							<Route path="nlp" element={<NLP />} />
-							<Route path="ReinforcementLearning" element={<ReinforcementLearning />} />
 							<Route path="pandas" element={<Pandas />} />
+              				<Route path="ReinforcementLearning" element={<ReinforcementLearning />} />
 							<Route
 								path="computer-vision"
 								element={<ComputerVision />}
@@ -172,53 +172,46 @@ function App() {
 								<Route path="Solidity" element={<Solidity />} />
 							</Route>
 
-							{/* Routes related to DataScience PATHS */}	
-							<Route path="dataScience">
-								<Route index element={<DataScience />} />
-								<Route path="statistics" element={<Statistics />} />
-								<Route path="deeplearning" element={<DeepLearning />} /> 
-								<Route path="mathematics" element={<Mathematics />} /> 
-							</Route>
-							
-							
-							<Route path="*" element={<NotFound />} />
-							<Route path="mongodb" element={<MongoDB />} />
-							<Route path="mysql" element={<MYSQL />} />
-							<Route path="django" element={<Django />} />
-							<Route path="expressjs" element={<Express />} />
+              {/* Routes related to DataScience PATHS */}
+              <Route path="dataScience">
+                <Route index element={<DataScience />} />
+                <Route path="statistics" element={<Statistics />} />
+                <Route path="deeplearning" element={<DeepLearning />} />
+                <Route path="mathematics" element={<Mathematics />} />
+              </Route>
 
-							{/* Routes related to AR/VR Development paths */}
+              <Route path="*" element={<NotFound />} />
+              <Route path="mongodb" element={<MongoDB />} />
+              <Route path="mysql" element={<MYSQL />} />
+              <Route path="django" element={<Django />} />
+              <Route path="expressjs" element={<Express />} />
 
-							<Route path="arvr">
-								<Route index element={<ARVR />} />
-								<Route
-									path="augmented-reality"
-									element={<AugmentedReality />}
-								/>
-								<Route
-									path="virtual-reality"
-									element={<VirtualReality />}
-								/>
-								<Route
-									path="mixed-reality"
-									element={<MixedReality />}
-								/>
-								<Route path="unity3d" element={<Unity3D />} />
-								<Route path="webxr" element={<WebXR />} />
-							</Route>
+              {/* Routes related to AR/VR Development paths */}
 
-							<Route path="uiux" element={<UIUX />} />
+              <Route path="arvr">
+                <Route index element={<ARVR />} />
+                <Route
+                  path="augmented-reality"
+                  element={<AugmentedReality />}
+                />
+                <Route path="virtual-reality" element={<VirtualReality />} />
+                <Route path="mixed-reality" element={<MixedReality />} />
+                <Route path="unity3d" element={<Unity3D />} />
+                <Route path="webxr" element={<WebXR />} />
+              </Route>
 
-							<Route path="figma" element={<Figma />} />
-						</Route>
+              <Route path="uiux" element={<UIUX />} />
+              
+              <Route path="figma" element={<Figma />} />
+            </Route>
 
-						<Route path="dsa" element={<Dsa />} />
-					</Routes>
-					<Footer />
-				</BrowserRouter>
-			</Container>
-		</>
-	);
+            <Route path="dsa" element={<Dsa />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </Container>
+    </>
+  );
 }
 
 export default App;

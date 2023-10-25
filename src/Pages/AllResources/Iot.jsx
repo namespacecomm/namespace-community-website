@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
+import React from "react";
+import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 export default function ARVR() {
@@ -38,7 +38,10 @@ export default function ARVR() {
                     Explore IoT Technogielos
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    Start by gaining a comprehensive understanding of IoT and its core concepts. Learn what IoT is, its components, and how it's transforming various industries. Explore the hardware and software aspects of IoT.
+                    Start by gaining a comprehensive understanding of IoT and
+                    its core concepts. Learn what IoT is, its components, and
+                    how it's transforming various industries. Explore the
+                    hardware and software aspects of IoT.
                   </p>
                 </div>
               </div>
@@ -64,7 +67,10 @@ export default function ARVR() {
                     Experiment with Sensors and Actuators
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    Start working with sensors (e.g., temperature sensors, motion detectors), actuators (e.g., motors, relays), and other electronic components. Learn how to interface these components with IoT hardware.
+                    Start working with sensors (e.g., temperature sensors,
+                    motion detectors), actuators (e.g., motors, relays), and
+                    other electronic components. Learn how to interface these
+                    components with IoT hardware.
                   </p>
                 </div>
               </div>
@@ -88,7 +94,11 @@ export default function ARVR() {
                     Build IoT Projects
                   </h2>
                   <p className="leading-relaxed text-white text-justify">
-                    Practical experience is crucial in IoT learning. Start building small IoT projects that involve sensors, data collection, communication, and data processing. Projects could include smart home automation, weather stations, or simple IoT gadgets.
+                    Practical experience is crucial in IoT learning. Start
+                    building small IoT projects that involve sensors, data
+                    collection, communication, and data processing. Projects
+                    could include smart home automation, weather stations, or
+                    simple IoT gadgets.
                   </p>
                 </div>
               </div>
@@ -106,10 +116,12 @@ export default function ARVR() {
         <div className="px-5 py-0 mx-auto">
           <div className="flex flex-col text-left w-full mb-10">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
-            Select an IoT development pathway
+              Select an IoT development pathway
             </h1>
             <p className="w-full text-left mx-auto leading-relaxed text-base">
-            Choosing an IoT development pathway is a pivotal step in your journey to becoming proficient in Internet of Things (IoT) technologies.
+              Choosing an IoT development pathway is a pivotal step in your
+              journey to becoming proficient in Internet of Things (IoT)
+              technologies.
             </p>
           </div>
           <div className="flex flex-wrap -m-2">
@@ -135,36 +147,41 @@ export default function ARVR() {
           </div>
         </div>
       </section>
-
-
-
     </>
-  )
+  );
 }
 
 const iotdevPathway = [
   {
     title: "IoT Hardware Development",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzQ5SS2GnVr559TH4ZNEYmkgp-IRqHNqwBQ&usqp=CAU",
-    description: "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
-    to:"/iothd",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzQ5SS2GnVr559TH4ZNEYmkgp-IRqHNqwBQ&usqp=CAU",
+    description:
+      "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
+    to: "/iothd",
   },
   {
     title: "IoT Software Development",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
-    description: "Develop IoT applications, implement communication protocols, and work with IoT operating systems using languages such as Python, C/C++, or JavaScript.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/VR_Logo_Virtual_Reality_Logo.svg/512px-VR_Logo_Virtual_Reality_Logo.svg.png",
+    description:
+      "Develop IoT applications, implement communication protocols, and work with IoT operating systems using languages such as Python, C/C++, or JavaScript.",
+    to: "/iotsd",
   },
   {
     title: "IoT Data Analytics and Cloud Integration",
-    image: "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
-    description: "Learn how to effectively manage IoT data with AWS IoT, Azure IoT, or Google Cloud IoT. Enhance your skills in edge computing and real-time processing.",
-    to:"/iotdaci",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.30079.13588442905826814.67f42e38-aee2-4a56-a78c-4c4a6d6b7b94.569f01eb-2590-4d84-9106-85e2c17110ce",
+    description:
+      "Learn how to effectively manage IoT data with AWS IoT, Azure IoT, or Google Cloud IoT. Enhance your skills in edge computing and real-time processing.",
+    to: "/iotdaci",
   },
   {
     title: "IoT Applications and Industry Specialization",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
-    description: "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
-    to:"/iotappindus",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS265x0TaRrles_hFc4yGkDtgwpc8TnXZz42Qpt-nPM-Y3TUsH1Oa-XNecfrUSzDENc4HY&usqp=CAU",
+    description:
+      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+    to: "/iotappindus",
   },
 ];
-

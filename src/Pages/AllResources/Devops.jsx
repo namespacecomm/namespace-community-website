@@ -96,7 +96,7 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Infrastructure as Code (IaC)
+                        <a href="#iac-section">Infrastructure as Code (IaC)</a>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           In DevOps, managing infrastructure becomes code. Tools
@@ -126,7 +126,7 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          CI/CD Automation
+                          <a href="#cicd-section">CI/CD Automation </a>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           Automate code integration (CI) with tools like
@@ -160,7 +160,7 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Containerization and Orchestration
+                           <a href="#co-section">Containerization and Orchestration</a>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           Embrace Docker for containerization, packaging
@@ -189,7 +189,7 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-                          Monitoring, Security, and Collaboration
+                           <a href="#msc-section">Monitoring, Security, and Collaboration </a>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           Implement monitoring tools (e.g., Prometheus, Grafana)
@@ -218,8 +218,8 @@ export const DevOps = () => {
                       </div>
                       <div className="flex-grow pl-4">
                         <h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-                          Build Projects with Cloud Services and Continuous
-                          Improvement
+                           <a href="#csci-section">Build Projects with Cloud Services and Continuous
+                          Improvement </a>
                         </h2>
                         <p className="leading-relaxed text-white text-justify">
                           Leverage cloud services (AWS, Azure, Google Cloud) for
@@ -243,7 +243,7 @@ export const DevOps = () => {
             {/* <------------------------------------Frontend Development-------------------------------------------------------> */}
             <section className="text-white body-font">
               <div className="px-5 py-0 mx-auto">
-                <div className="flex flex-col text-left w-full mb-10">
+                <div id="iac-section" className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     1. IaC
                   </h1>
@@ -286,7 +286,7 @@ export const DevOps = () => {
                 </div>
                 <br />
 
-                <div className="flex flex-col text-left w-full mb-10">
+                <div id="cicd-section" className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     2. CI/CD Automation
                   </h1>
@@ -329,7 +329,7 @@ export const DevOps = () => {
                 </div>
                 <br />
 
-                <div className="flex flex-col text-left w-full mb-10">
+                <div id="co-section" className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     3. Containerization And Orchestration
                   </h1>
@@ -372,7 +372,7 @@ export const DevOps = () => {
                 </div>
                 <br />
 
-                <div className="flex flex-col text-left w-full mb-10">
+                <div id="msc-section" className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     4. Monitoring, Security, And Collaboration
                   </h1>
@@ -415,7 +415,7 @@ export const DevOps = () => {
                 </div>
                 <br />
 
-                <div className="flex flex-col text-left w-full mb-10">
+                <div id="csci-section" className="flex flex-col text-left w-full mb-10">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
                     5. Cloud Services and Continuous Improvement
                   </h1>

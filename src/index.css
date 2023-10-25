@@ -38,3 +38,35 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(90, 168, 151);
   }
+
+  #leuiux-section {
+    scroll-margin-top: 100px; 
+  }
+  #stuiux-section {
+    scroll-margin-top: 100px; 
+  }
+  #seuiux-section {
+    scroll-margin-top: 100px; 
+  }
+      
+  #iac-section {
+    scroll-margin-top: 100px;
+  }
+
+  #cicd-section {
+    scroll-margin-top: 100px; 
+  }
+
+  #co-section {
+    scroll-margin-top: 100px; 
+  }
+
+  #msc-section {
+    scroll-margin-top: 100px; 
+  }
+
+  #csci-section {
+    scroll-margin-top: 100px; 
+  }
+  
+
