@@ -75,139 +75,144 @@ import IOTappindus from './Pages/AllResources/IOTall/iotappindus';
 import {PyTorch} from './Pages/AllResources/aimlAll/PyTorch' ;
 import Statistics from './Pages/AllResources/datasciencecards/Statistics';
 
+
+
 const Container = styled.div`
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	overflow-y: auto;
-	color: white;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  color: white;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 function App() {
-	return (
-		<>
-			<Container>
-				<BrowserRouter>
-					<ScrollToTop />
-					<Navbar />
-					<Routes>
-						<Route path="/">
-							<Route index element={<Hero />} />
-							<Route path="team" element={<AllTeams />} />
-							<Route path="events" element={<AllEvents />} />
-							<Route path="programs" element={<Programs />} />
-							<Route path="projects" element={<Projects />} />
-							<Route path="resources" element={<Resources />} />
-							<Route path="webd" element={<Web />} />
-							<Route path="cp" element={<CompProg />} />
-							<Route path="pyresource" element={<Python />} />
-							<Route path="mlops" element={<MLOps />} />
-							<Route path="android" element={<Android />} />
-							<Route path="iot" element={<Iot />} />
-							<Route path="flutter" element={<Flutter />} />
-							<Route path="reactnative" element={<ReactNative />} />
-							<Route path="native" element={<Native />} />
-							<Route path="aiml" element={<AIML />} />
-							<Route path="aws" element={<Aws />} />
-							<Route path="azure" element={<Azure />} />
-							<Route path='gcp' element={<Gcp />} />
-							<Route path="cybersecurity" element={<CyberSecurity />} />
-							<Route path="css" element={<CSS />} />
-							<Route path="html" element={<HTML />} />
-							<Route path="git" element={<Github />} />
-							<Route path="js" element={<Javascript />} />
-							<Route path="nlp" element={<NLP />} />
-							<Route
-								path="computer-vision"
-								element={<ComputerVision />}
-							/>
-							<Route path="numpy" element={<Numpy/>} />
-							<Route path="tensorflow" element={<Tensorflow/>} />
-							<Route path="PyTorch" element={<PyTorch/>} />
-							<Route path="nodejs" element={<Nodejs />} />
-							<Route path="php" element={<PHP />} />
-							<Route path="firebase" element={<Firebase />} />
-							<Route
-								path="frontend-framework"
-								element={<FrontEndFramework />}
-							/>
-							<Route path="css-framework" element={<CSSFramework />} />
-							<Route path="devops" element={<DevOps />} />
-							<Route path="ansible" element={<ANSIBLE />} />
-							<Route path="terraform" element={<TERRAFORM />} />
-							<Route path="docker" element={<DOCKER />} />
-							<Route path="ibm-cloud" element={<IBM />} />
-							<Route path="iotappindus" element={<IOTappindus />} />
-							<Route path="kubernetes" element={<KUBERNETES />} />
-							<Route path="jenkins" element={<JENKINS />} />
-							<Route path="heroku" element={<HEROKU />} />
+  return (
+    <>
+      <Container>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Navbar />
+          <Routes>
+            <Route path="/">
+              <Route index element={<Hero />} />
+              <Route path="team" element={<AllTeams />} />
+              <Route path="events" element={<AllEvents />} />
+              <Route path="programs" element={<Programs />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="resources" element={<Resources />} />
+              <Route path="webd" element={<Web />} />
+              <Route path="cp" element={<CompProg />} />
+              <Route path="pyresource" element={<Python />} />
+              <Route path="mlops" element={<MLOps />} />
+              <Route path="android" element={<Android />} />
+              <Route path="iot" element={<Iot />} />
+              <Route path="flutter" element={<Flutter />} />
+              <Route path="reactnative" element={<ReactNative />} />
+              <Route path="native" element={<Native />} />
+              <Route path="aiml" element={<AIML />} />
+              <Route path="aws" element={<Aws />} />
+              <Route path="azure" element={<Azure />} />
+              <Route path="gcp" element={<Gcp />} />
+              <Route path="cybersecurity" element={<CyberSecurity />} />
+              <Route path="css" element={<CSS />} />
+              <Route path="html" element={<HTML />} />
+              <Route path="git" element={<Github />} />
+              <Route path="js" element={<Javascript />} />
+              <Route path="nlp" element={<NLP />} />
+              <Route path="RL" element={<RL />} />
+              <Route path="pandas" element={<Pandas />} />
+              <Route path="computer-vision" element={<ComputerVision />} />
+              <Route path="numpy" element={<Numpy />} />
+              <Route path="tensorflow" element={<Tensorflow />} />
+              <Route path="PyTorch" element={<PyTorch />} />
+              <Route path="matplotlib" element={<Matplotlib />} />
+              <Route path="Keras" element={<Keras />} />
+              <Route path="nodejs" element={<Nodejs />} />
+              <Route path="php" element={<PHP />} />
+              <Route path="firebase" element={<Firebase />} />
+              <Route
+                path="frontend-framework"
+                element={<FrontEndFramework />}
+              />
+              <Route path="css-framework" element={<CSSFramework />} />
+              <Route path="devops" element={<DevOps />} />
+              <Route path="ansible" element={<ANSIBLE />} />
+              <Route path="gitlab" element={<GITLAB />} />
+              <Route path="terraform" element={<TERRAFORM />} />
+              <Route path="docker" element={<DOCKER />} />
+              <Route path="digitalocean" element={<DigitalOcean />} />
+              <Route path="ibm-cloud" element={<IBM />} />
+              <Route path="iothd" element={<IOThd />} />
+              <Route path="iotsd" element={<IOTsd />} />
+              <Route path="iotappindus" element={<IOTappindus />} />
+              <Route path="iotdaci" element={<IOTdaci />} />
+              <Route path="kubernetes" element={<KUBERNETES />} />
+              <Route path="jenkins" element={<JENKINS />} />
+              <Route path="heroku" element={<HEROKU />} />
 
-							
-							
-							{/* Routes related to BLOCKCHAIN PATHS */}	
-							<Route path="blockchain">
-								<Route index element={<Blockchain />} />
-							
-								<Route path="cryptocurrency" element={<Cryptocurrency />}/>
-								<Route path="supply-chain-management" element={<Supplychain />}/>
-								<Route path="defi" element={<Decentralized />} />
-								<Route path="ethereum" element={<Ethereum />} />
-								<Route path="Rust" element={<Rust />} />
-								<Route path="hyperledger-fabric" element={<Hyperledger />}/>
-								<Route path="truffle" element={<Truffle />} />
-								<Route path="Solidity" element={<Solidity />} />
-							</Route>
+              {/* Routes related to BLOCKCHAIN PATHS */}
+              <Route path="blockchain">
+                <Route index element={<Blockchain />} />
 
-							{/* Routes related to DataScience PATHS */}	
-							<Route path="dataScience">
-								<Route index element={<DataScience />} />
-								<Route path="statistics" element={<Statistics />} />
-								<Route path="deeplearning" element={<DeepLearning />} /> 
-								<Route path="mathematics" element={<Mathematics />} /> 
-							</Route>
-							
-							
-							<Route path="*" element={<NotFound />} />
-							<Route path="mongodb" element={<MongoDB />} />
-							<Route path="mysql" element={<MYSQL />} />
-							<Route path="django" element={<Django />} />
-							<Route path="expressjs" element={<Express />} />
+                <Route path="cryptocurrency" element={<Cryptocurrency />} />
+                <Route
+                  path="supply-chain-management"
+                  element={<Supplychain />}
+                />
+                <Route path="defi" element={<Decentralized />} />
+                <Route path="ethereum" element={<Ethereum />} />
+                <Route path="Rust" element={<Rust />} />
+                <Route path="hyperledger-fabric" element={<Hyperledger />} />
+                <Route path="truffle" element={<Truffle />} />
+                <Route path="Solidity" element={<Solidity />} />
+              </Route>
 
-							{/* Routes related to AR/VR Development paths */}
+              {/* Routes related to DataScience PATHS */}
+              <Route path="dataScience">
+                <Route index element={<DataScience />} />
+                <Route path="statistics" element={<Statistics />} />
+                <Route path="deeplearning" element={<DeepLearning />} />
+                <Route path="mathematics" element={<Mathematics />} />
+              </Route>
 
-							<Route path="arvr">
-								<Route index element={<ARVR />} />
-								<Route
-									path="augmented-reality"
-									element={<AugmentedReality />}
-								/>
-								<Route
-									path="virtual-reality"
-									element={<VirtualReality />}
-								/>
-								<Route
-									path="mixed-reality"
-									element={<MixedReality />}
-								/>
-								<Route path="unity3d" element={<Unity3D />} />
-								<Route path="webxr" element={<WebXR />} />
-							</Route>
+              <Route path="*" element={<NotFound />} />
+              <Route path="mongodb" element={<MongoDB />} />
+              <Route path="mysql" element={<MYSQL />} />
+              <Route path="django" element={<Django />} />
+              <Route path="expressjs" element={<Express />} />
 
-							<Route path="uiux" element={<UIUX />} />
-							<Route path="sketch" element={<SKETCH />} />
-							<Route path="figma" element={<Figma />} />
-						</Route>
+              {/* Routes related to AR/VR Development paths */}
 
-						<Route path="dsa" element={<Dsa />} />
-					</Routes>
-					<Footer />
-				</BrowserRouter>
-			</Container>
-		</>
-	);
+
+              <Route path="arvr">
+                <Route index element={<ARVR />} />
+                <Route
+                  path="augmented-reality"
+                  element={<AugmentedReality />}
+                />
+                <Route path="virtual-reality" element={<VirtualReality />} />
+                <Route path="mixed-reality" element={<MixedReality />} />
+                <Route path="unity3d" element={<Unity3D />} />
+                <Route path="webxr" element={<WebXR />} />
+              </Route>
+
+              <Route path="uiux" element={<UIUX />} />
+              <Route path="sketch" element={<SKETCH />} />
+              <Route path="adobe" element={<ADOBE />} />
+              <Route path="figma" element={<Figma />} />
+            </Route>
+
+
+            <Route path="dsa" element={<Dsa />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </Container>
+    </>
+  );
 }
 
 export default App;

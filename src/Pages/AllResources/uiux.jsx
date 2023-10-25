@@ -35,15 +35,10 @@ export const UIUX = () => {
 
 								<div className="flex-grow pl-4">
 									<h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-										Learn the basics of design
+									<a href="#leuiux-section">Learn the basics of design</a>
 									</h2>
 									<p className="leading-relaxed text-white text-justify">
-										Start by learning the foundational design
-										principles such as color theory, typography,
-										layout, visual hierarchy, and composition. There
-										are many resources available online, such as
-										books, blogs, and online courses that can help you
-										learn these basics.
+									Learning the basics of UI/UX (User Interface/User Experience) design is a great skill to have, whether you're interested in web development, app design, or creating a more user-friendly experience for any digital product. 
 									</p>
 								</div>
 							</div>
@@ -66,7 +61,7 @@ export const UIUX = () => {
 								</div>
 								<div className="flex-grow pl-4">
 									<h2 className="font-bold title-font capitalize text-xl text-white mb-1 tracking-wider">
-										Select an UI/UX tool
+										  <a href="#seuiux-section">Select an UI/UX tool</a>
 									</h2>
 									<p className="leading-relaxed text-white text-justify">
 										These tools simplify prototyping, making it
@@ -97,7 +92,7 @@ export const UIUX = () => {
 								</div>
 								<div className="flex-grow pl-4">
 									<h2 className="font-bold title-font text-xl text-white mb-1 tracking-wider">
-										Study UI/UX design
+										 <a href="#stuiux-section">Study UI/UX design</a>
 									</h2>
 									<p className="leading-relaxed text-white text-justify">
 										Once you have a strong foundation in design
@@ -120,7 +115,43 @@ export const UIUX = () => {
 
 			<section>
 				<div className="px-5 py-0 mx-auto">
-					<div className="flex flex-col text-left w-full mb-10">
+					<div id="leuiux-section" className="flex flex-col text-left w-full mb-10">
+						<h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+						Learn the basics of design
+						</h1>
+						<p className="w-full text-left mx-auto leading-relaxed text-base">
+						Learning the basics of UI/UX (User Interface/User Experience) design is a great skill to have, whether you're interested in web development, app design, or creating a more user-friendly experience for any digital product. 
+						</p>
+					</div>
+					<div className="flex flex-wrap -m-2">
+						{LeUiux.map((tools) => (
+							<div
+								key={tools.title}
+								className="p-2 lg:w-1/3 md:w-1/2 w-full"
+							>
+								<div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+									<img
+										alt="tools"
+										className="w-16 h-16 bg-gray-100 object-contain object-center flex-shrink-0 rounded-full mr-4"
+										src={tools.image}
+									/>
+									<div className="flex-grow">
+										<Link to={tools.to}>
+											<h2 className="text-white title-font font-bold underline text-xl">
+												{tools.title}
+											</h2>
+										</Link>
+										<p className="text-white">{tools.description}</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+<br></br>
+<br></br>
+				<div className="px-5 py-0 mx-auto">
+					<div id="seuiux-section" className="flex flex-col text-left w-full mb-10">
 						<h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
 							Select a UI / UX Tool
 						</h1>
@@ -163,7 +194,36 @@ export const UIUX = () => {
 	);
 };
 
+const LeUiux = [
+	
+	
+	{
+		title: 'HTML5',
+		image: 'https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-1161.jpg?w=826&t=st=1696142260~exp=1696142860~hmac=0023559da96b5349b1452cf23667ac25b74a8e365a5d0b4074c1f9847b911e85',
+		description:
+			'HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.',
+		to: '/html',
+	},
+	{
+		title: 'CSS3',
+		image: 'https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg',
+		description:
+			'CSS is used to control the presentation and layout of your web page. CSS3 introduces advanced styling capabilities.You can use CSS3 for defining colors, fonts, spacing, borders, and animations to create an attractive and responsive design.',
+		to: '/css',
+	},
+	{
+		title: 'JavaScript',
+		image: 'https://cms.azure.styava.dev/api/assets/styavacommunities/092f9741-4c89-4cd4-aac9-9b3ca76a2bf5/javascript-39395.png',
+		description:
+			'JavaScript is a programming language used to make web pages interactive. With JavaScript, you can add behavior to your web design. You can create things like image sliders, interactive forms, and more.',
+		to: '/javascript',
+	},
+	
+];
+
 const uiuxTools = [
+	
+	
 	{
 		title: 'Figma',
 		image: 'https://tadviser.com/images/2/28/Figma2.png',
