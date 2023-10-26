@@ -1,25 +1,18 @@
 /* MainProject.css */
 
 .main-project {
-    align-items: center;
-    border: 2px solid #e0e0e0;
+    width: 80%;
+    height: 22rem;
     margin: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-    
   }
 
 
-  @media screen and (max-width: 950px){
-    .main-project {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 700px) {
     .main-project {
-      grid-template-columns: 1fr;
-      /* row-gap: 20px; */
+      height: auto;
     }
   }
   
