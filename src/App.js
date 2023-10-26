@@ -117,7 +117,7 @@ function App() {
 							<Route path="css" element={<CSS />} />
 							<Route path="html" element={<HTML />} />
 							<Route path="git" element={<Github />} />
-							<Route path="js" element={<Javascript />} />
+							<Route path="javascript" element={<Javascript />} />
 							<Route path="nlp" element={<NLP />} />
 							<Route
 								path="computer-vision"
