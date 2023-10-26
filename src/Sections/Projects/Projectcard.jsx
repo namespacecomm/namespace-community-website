@@ -11,13 +11,11 @@ const ProjectCard = ({ projectData }) => {
     deploymentLink,
     githubLink,
     imageUrl,
+    projectImage,
   } = projectData;
 
   return (
-    <div
-      style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: "cover" }}
-      className="main-project p-3 rounded-2xl"
-    >
+    <div className="main-project">
       <ProjectDescriptionCard
         title={title}
         description={description}
@@ -25,6 +23,7 @@ const ProjectCard = ({ projectData }) => {
         ownerName={ownerName}
         deploymentLink={deploymentLink}
         githubLink={githubLink}
+        projectImage={projectImage}
       />
     </div>
   );
