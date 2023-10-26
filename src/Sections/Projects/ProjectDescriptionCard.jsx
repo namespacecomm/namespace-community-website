@@ -1,23 +1,65 @@
-import React from 'react';
-import './ProjectDescriptionCard.css'; // Import your CSS file for styling
+import React from "react";
+import "./ProjectDescriptionCard.css"; // Import your CSS file for styling'
 
-const ProjectDescriptionCard = ({ title, description, techUsed, ownerName, deploymentLink, githubLink }) => {
+const ProjectDescriptionCard = ({
+  title,
+  description,
+  techUsed,
+  ownerName,
+  deploymentLink,
+  githubLink,
+  projectImage,
+}) => {
   return (
-    <div className="project-description-card rounded-2xl">
-      <h2 className="project-title">{title}</h2>
-      <p className="project-description">{description}</p>
-      <p className="tech-used">Technologies Used: {techUsed}</p>
-      <p className="tech-used">Owner: {ownerName}</p>
-      <div className="project-links">
-        <a className="text-center" href={githubLink} target="_blank" rel="noopener noreferrer">
-          GitHub Repository
-        </a>
-        <a className="text-center" href={deploymentLink} target="_blank" rel="noopener noreferrer">
-          Deployment Link
-        </a>
+    <>
+      <div className="project-description-card rounded-2xl">
+        <div className="project-image">
+          <img src={projectImage} alt="project oulook" />
+        </div>
+        <div className="project-details">
+          <h2 className="project-title">{title}</h2>
+          <p className="project-description">{description}</p>
+          <p className="tech-used">
+            Technologies Used:{" "}
+            {techUsed.split(" ").map((word, index) => (
+              <span
+                key={index}
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  color: "#fff",
+                  padding: "0.2em",
+                  margin: "0.2em",
+                }}
+              >
+                {word}
+              </span>
+            ))}
+          </p>
+          <p className="tech-used">Owner: {ownerName}</p>
+          <div className="project-links">
+            <a
+              className="text-center"
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/img/project-images/github-icon.png"
+                alt="github-icon"
+              />
+            </a>
+            <a
+              className="text-center"
+              href={deploymentLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/img/project-images/link-icon.png" alt="link-icon" />
+            </a>
+          </div>
+        </div>
       </div>
-
-    </div>
+    </>
   );
 };
 
