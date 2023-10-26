@@ -82,7 +82,7 @@ import IOTsd from "./Pages/AllResources/IOTall/iotsd";
 import Pandas from "./Pages/AllResources/aimlAll/Pandas";
 import { GITLAB } from "./Pages/AllResources/devopsALL/gitlab";
 import Matplotlib from "./Pages/AllResources/aimlAll/Matplotlib";
-
+import { SKETCH } from "./Pages/AllResources/uiuxALL/sketch";
 import { ADOBE } from "./Pages/AllResources/uiuxALL/adobe";
 
 const Container = styled.div`
@@ -209,6 +209,7 @@ function App() {
               <Route path="uiux" element={<UIUX />} />
               <Route path="adobe" element={<ADOBE />} />
               <Route path="figma" element={<Figma />} />
+              <Route path="sketch" element={<SKETCH />} />
             </Route>
 
             <Route path="dsa" element={<Dsa />} />
