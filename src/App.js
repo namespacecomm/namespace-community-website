@@ -84,6 +84,7 @@ import { GITLAB } from "./Pages/AllResources/devopsALL/gitlab";
 import Matplotlib from "./Pages/AllResources/aimlAll/Matplotlib";
 import { SKETCH } from "./Pages/AllResources/uiuxALL/sketch";
 import { ADOBE } from "./Pages/AllResources/uiuxALL/adobe";
+import Scikit from "./Pages/AllResources/aimlAll/Scikit-learn";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -137,6 +138,7 @@ function App() {
               <Route path="tensorflow" element={<Tensorflow />} />
               <Route path="PyTorch" element={<PyTorch />} />
               <Route path="matplotlib" element={<Matplotlib />} />
+              <Route path="scikit-learn" element={<Scikit />} />
               <Route path="Keras" element={<Keras />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
