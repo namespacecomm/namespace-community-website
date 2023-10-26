@@ -9,8 +9,20 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
+  ${
+    "" /* background-color: rgb(9, 9, 121);
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    262deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 1%
+  ); */
   }
   background-color: #010116;
+  ${
+    "" /* background-repeat: no-repeat;
+    background: no-repeat url("./img/bg.jpg"); */
+  }
 `;
 
 const Container = styled.div`
@@ -27,39 +39,34 @@ const Container = styled.div`
 `;
 
 export const Github = () => {
-  const [githubtopicsChecked, setGithubTopicsChecked] = useState({
-    opensource: false,
-    git: false,
-    gitHub: false,
-    gitfork: false,
-    gitclone: false,
-    remoteorigin: false,
-    gitupstream: false,
-    branches: false,
-    commit: false,
-    gitpush: false,
-    pullrequests: false,
-    resolvingconflits: false,
+  const [jstopicsChecked, setJsTopicsChecked] = useState({
+    syntax: false,
+    dom: false,
+    fetch: false,
+    async: false,
+    event: false,
+    promises: false,
+    classes: false,
+    array: false,
+    hoisting: false,
+    closure: false,
   });
 
   const handleCheckboxChange = (topic) => {
-    setGithubTopicsChecked({
-      ...githubtopicsChecked,
-      [topic]: !githubtopicsChecked[topic],
+    setJsTopicsChecked({
+      ...jstopicsChecked,
+      [topic]: !jstopicsChecked[topic],
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(
-      "githubtopicsChecked",
-      JSON.stringify(githubtopicsChecked)
-    );
-  }, [githubtopicsChecked]);
+    localStorage.setItem("jstopicsChecked", JSON.stringify(jstopicsChecked));
+  }, [jstopicsChecked]);
 
   useEffect(() => {
-    const storedTopicsChecked = localStorage.getItem("githubtopicsChecked");
+    const storedTopicsChecked = localStorage.getItem("jstopicsChecked");
     if (storedTopicsChecked) {
-      setGithubTopicsChecked(JSON.parse(storedTopicsChecked));
+      setJsTopicsChecked(JSON.parse(storedTopicsChecked));
     }
   }, []);
 
@@ -67,20 +74,19 @@ export const Github = () => {
     <>
       <Section>
         <Navbar />
-        <Container>
+        <Container className="w-screen">
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
-                src="https://www.zbw-mediatalk.eu/wp-content/uploads/2015/09/github-cover.jpg"
-              />
-              <div className="text-center lg:w-full w-full">
+                alt="Adobe"
+                src="https://play-lh.googleusercontent.com/kaox1VteLsWAuNxPxhm8t4llaoyFhxzDjo9g4Hdf92bKdT_Sn6Yrdku6rApuc5ktirw"              />
+                <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  Github: Cloud based version control service
+                Github: Cloud based version control service
                 </h1>
-                <p className="mb-8 leading-relaxed text-justify">
-                  Git is a specific open-source version control system created
+                <p className="mb-8 text-center mx-4">
+                Git is a specific open-source version control system created
                   by Linus Torvalds in 2005. Specifically, Git is a distributed
                   version control system, which means that the entire codebase
                   and history is available on every developer’s computer, which
@@ -95,29 +101,24 @@ export const Github = () => {
                   GitHub also serves as a social networking site where
                   developers can openly network, collaborate, and pitch their
                   work.
-                </p>
+                   </p>
               </div>
             </div>
             {/* <-------------------------------Topics Section ----------------------------------------------> */}
-            <h2 className="mb-2 text-lg font-semibold text-white">
+            <h2 className="mb-2 mx-4 text-center text-lg font-semibold text-white">
               Topics you need to cover:
             </h2>
-            <ul className="flex flex-wrap m-2">
+            <ul className="flex flex-wrap m-4">
               {topics.map((front) => {
                 return (
                   <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label
-                          htmlFor={front.storage}
-                          className="text-white title-font font-bold text-xl cursor-pointer"
-                        >
-                          {front.title}
-                        </label>
+                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
                         <input
                           type="checkbox"
                           id={front.storage}
-                          checked={githubtopicsChecked[front.storage]}
+                          checked={jstopicsChecked[front.storage]}
                           onChange={() => handleCheckboxChange(front.storage)}
                           className="w-4 h-4"
                         />
@@ -129,19 +130,16 @@ export const Github = () => {
             </ul>
             {/* <-----------------------------------------------RESOURCES SECTION---------------------------------------------------> */}
             <section className="text-white body-font">
-              <div className=" px-0 py-14 mx-auto">
+              <div className=" px-4 py-14 mx-auto">
                 <div className="flex flex-col text-left w-full mb-2">
-                  <h1 className="text-xl font-bold title-font mb-4 text-white-900 tracking-widest">
+                  <h1 className="text-xl font-bold text-center title-font mb-4 text-white-900 tracking-widest">
                     Resources:
                   </h1>
                 </div>
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li
-                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
-                        key={resource.title}
-                      >
+                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
