@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Navbar from "../../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const Section = styled.div`
@@ -72,20 +73,21 @@ export const Javascript = () => {
   return (
     <>
       <Section>
-        <Container>
+        <Navbar />
+        <Container className="w-screen">
           <section className="text-white body-font">
             <div className="mx-auto flex px-2 mt-8 mb-4 items-center justify-center flex-col">
               <img
                 className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-contain object-center rounded"
-                alt="hero"
+                alt="JavaScript"
                 src="https://img.freepik.com/free-vector/javascript-frameworks-concept-illustration_114360-743.jpg?w=1060&t=st=1696096333~exp=1696096933~hmac=edaa5f833257356433e278024ea7c526b8820db7887da3a6e2d602d3c0239294"
-              />
-              <div className="text-center lg:w-full w-full">
+         />
+                <div className="text-center lg:w-full w-full">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                  JavaScript
+                JavaScript
                 </h1>
-                <p className="mb-8 leading-relaxed text-justify">
-                  JavaScript (JS) is a lightweight interpreted (or just-in-time
+                <p className="mb-8 text-center mx-4">
+                JavaScript (JS) is a lightweight interpreted (or just-in-time
                   compiled) programming language with first-class functions.
                   While it is most well-known as the scripting language for Web
                   pages, many non-browser environments also use it, such as
@@ -98,26 +100,20 @@ export const Javascript = () => {
                   creation (via eval), object introspection (via for...in and
                   Object utilities), and source-code recovery (JavaScript
                   functions store their source text and can be retrieved through
-                  toString()).
-                </p>
+                  toString()).    </p>
               </div>
             </div>
             {/* <-------------------------------Topics Section ----------------------------------------------> */}
-            <h2 className="mb-2 text-lg font-semibold text-white">
+            <h2 className="mb-2 mx-4 text-center text-lg font-semibold text-white">
               Topics you need to cover:
             </h2>
-            <div className="flex flex-wrap m-2">
+            <ul className="flex flex-wrap m-4">
               {topics.map((front) => {
                 return (
-                  <div className="p-2 lg:w-max md:w-1/2" key={front.title}>
+                  <li className="p-2 lg:w-max md:w-1/2" key={front.title}>
                     <div className="h-full flex items-center border-gray-200 border px-4 py-2 rounded-lg hover:scale-105 transition-all">
                       <div className="flex items-center gap-3">
-                        <label
-                          htmlFor={front.storage}
-                          className="text-white title-font font-bold text-xl cursor-pointer"
-                        >
-                          {front.title}
-                        </label>
+                        <label htmlFor={front.storage} className="text-white title-font font-bold text-xl cursor-pointer">{front.title}</label>
                         <input
                           type="checkbox"
                           id={front.storage}
@@ -127,25 +123,22 @@ export const Javascript = () => {
                         />
                       </div>
                     </div>
-                  </div>
+                  </li>
                 );
               })}
-            </div>
+            </ul>
             {/* <-----------------------------------------------RESOURCES SECTION---------------------------------------------------> */}
             <section className="text-white body-font">
-              <div className=" px-0 py-14 mx-auto">
+              <div className=" px-4 py-14 mx-auto">
                 <div className="flex flex-col text-left w-full mb-2">
-                  <h1 className="text-xl font-bold title-font mb-4 text-white-900 tracking-widest">
-                    Resources
+                  <h1 className="text-xl font-bold text-center title-font mb-4 text-white-900 tracking-widest">
+                    Resources:
                   </h1>
                 </div>
                 <ul className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {resources.map((resource) => {
                     return (
-                      <li
-                        className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out"
-                        key={resource.title}
-                      >
+                      <li className="lg:w-full bg-black/20 p-4 rounded-xl hover:scale-[102%] transition-all duration-200 ease-in-out" key={resource.title}>
                         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                           <img
                             alt="team"
@@ -258,7 +251,6 @@ const resources = [
     link: "https://www.youtube.com/watch?v=lkIFF4maKMU",
   },
 ];
-
 const topics = [
   {
     title: "Basic Syntax",
@@ -301,3 +293,5 @@ const topics = [
     storage: "closure",
   },
 ];
+
+  

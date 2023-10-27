@@ -98,6 +98,7 @@ const Container = styled.div`
 `;
 
 function App() {
+
   return (
     <>
       <Container>
@@ -162,6 +163,7 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="heroku" element={<HEROKU />} />
+
 
               {/* Routes related to BLOCKCHAIN PATHS */}
               <Route path="blockchain">
