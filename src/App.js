@@ -85,6 +85,7 @@ import Matplotlib from "./Pages/AllResources/aimlAll/Matplotlib";
 import { SKETCH } from "./Pages/AllResources/uiuxALL/sketch";
 import { ADOBE } from "./Pages/AllResources/uiuxALL/adobe";
 import Scikit from "./Pages/AllResources/aimlAll/Scikit-learn";
+import { NETLIFY } from "./Pages/AllResources/webALL/netlify";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -143,6 +144,7 @@ function App() {
               <Route path="Keras" element={<Keras />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
+			  <Route path="netlify" element={<NETLIFY />} />
               <Route path="firebase" element={<Firebase />} />
               <Route
                 path="frontend-framework"
