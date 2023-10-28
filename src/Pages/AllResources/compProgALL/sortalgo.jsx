@@ -150,7 +150,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "Learn to design and build IoT devices with sensor-equipped components, microcontroller programming, and hardware prototyping. Select the right sensors, actuators, and communication modules for specific IoT applications.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
    
   },
   {
@@ -158,7 +158,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "Develop IoT applications, implement communication protocols, and work with IoT operating systems using languages such as Python, C/C++, or JavaScript.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
    
   },
   {
@@ -166,7 +166,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "Learn how to effectively manage IoT data with AWS IoT, Azure IoT, or Google Cloud IoT. Enhance your skills in edge computing and real-time processing.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
    
   },
   {
@@ -174,7 +174,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -182,7 +182,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -190,7 +190,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -198,7 +198,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -206,7 +206,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -214,7 +214,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -222,7 +222,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -230,7 +230,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -238,7 +238,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -246,7 +246,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -254,7 +254,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -262,7 +262,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -270,7 +270,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -278,7 +278,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
   {
@@ -286,7 +286,7 @@ const iotdevPathway = [
     image:
       "https://www.devopsschool.com/blog/wp-content/uploads/2021/06/Complete-Tutorials-of-Introduction-to-Algorithm.png",
     description:
-      "IoT has many applications in different industries. Choose a specialty like smart homes, healthcare, agriculture, industrial automation, or smart cities. Develop IoT solutions that meet specific needs.",
+      "Sorting algorithms reorder a dataset to achieve a specified order (e.g., ascending or descending) based on a defined criteria, enhancing data accessibility and processing efficiency. They vary in efficiency and stability.",
     
   },
 ];
