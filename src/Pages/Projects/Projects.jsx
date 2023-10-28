@@ -31,11 +31,12 @@ function Projects() {
       <Section>
         <Container>
           <div>
-            <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl">
-              Projects
+            <h1 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl text-center">
+              PROJECTS
             </h1>
+            
 
-            <p className="max-w-2xl px-3 mx-auto my-10 text-center flex justify-center items-center">
+            <p className="max-w-2xl px-3 mx-auto my-10 text-center flex justify-center items-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500">
               Welcome to our project page! Explore our latest work and
               innovative creations. Dive into a world of creativity and
               technology as we showcase our passion for technology. Discover how

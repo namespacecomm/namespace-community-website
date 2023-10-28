@@ -33,13 +33,15 @@ function Programs() {
         <>
             <Section>
                 <Container>
-                    <section className="py-10 bg-blue sm:py-16 lg:py-12">
+                    <section className="py-10 px-6 mx-auto bg-blue sm:py-16 lg:py-12">
                         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                             <div className="max-w-2xl mx-auto text-center">
-                                <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-                                    Internal Programs
+                                <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl">
+                                        
+                                    INTERNAL PROGRAM
                                 </h2>
-                                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white-600">
+                                <br></br>
+                                <p className="text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 " >
                                     NSCC BPIT Conducts multiple internal
                                     programs exclusively for its members. They
                                     focus on the technical development of all

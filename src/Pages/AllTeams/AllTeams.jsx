@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
@@ -48,41 +48,16 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
-
-  const [showScrollButton, setShowScrollButton] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Add smooth scrolling animation
-    });
-  };
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 200) {
-      setShowScrollButton(true);
-    } else {
-      setShowScrollButton(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <Section>
         <Container>
           <div className=" px-6 py-10 ">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
-              Our Team
+            <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl text-center">
+              OUR TEAM
             </h2>
 
-            <p className="max-w-2xl mx-auto my-10 text-center flex justify-center items-center">
+            <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
               In the last one year NSCC BPIT has grown on to become a vibrant
               and thriving collection of tech enthusiasts and problem solvers.
               Given below are few of the club members who make the community
@@ -123,15 +98,6 @@ function AllTeams() {
               </div>
             </div>
           </div>
-
-          {showScrollButton && (
-            <button
-              onClick={scrollToTop}
-              className="fixed bottom-4 right-4 bg-yellow-400 text-white font-medium rounded-full p-2.5"
-            >
-            ▲
-            </button>
-          )}
         </Container>
       </Section>
     </>
