@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
@@ -48,6 +48,31 @@ const Container = styled.div`
 `;
 
 function AllTeams() {
+
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Add smooth scrolling animation
+    });
+  };
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 200) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Section>
@@ -98,6 +123,15 @@ function AllTeams() {
               </div>
             </div>
           </div>
+
+          {showScrollButton && (
+            <button
+              onClick={scrollToTop}
+              className="fixed bottom-4 right-4 bg-yellow-400 text-white font-medium rounded-full p-2.5"
+            >
+            ▲
+            </button>
+          )}
         </Container>
       </Section>
     </>
