@@ -51,11 +51,11 @@ function AllEvents() {
       <Section>
         <Container>
           <div className=" px-6 py-10 mx-auto">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl text-center">
-              Our Events
+            <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl text-center">
+              OUR EVENTS
             </h2>
 
-            <p className="max-w-2xl mx-auto my-10 text-center ">
+            <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
               NSCC BPIT conducts various events and initiatives all year round
               for the betterment and growth of the community. Given below are
               some of the selected events conducted in the current tenure.
