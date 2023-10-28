@@ -486,6 +486,7 @@ const algorithmicFoundations = [
     // to: "/algorithmic-topic3",
     title: "Dynamic Programming",
     des: "Master the technique of breaking down complex problems into simpler, more manageable subproblems.",
+    to:"/dynamicpro",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",

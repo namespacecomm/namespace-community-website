@@ -88,6 +88,7 @@ import Scikit from "./Pages/AllResources/aimlAll/Scikit-learn";
 import { NETLIFY } from "./Pages/AllResources/webALL/netlify";
 import SortAlgo from "./Pages/AllResources/compProgALL/sortalgo";
 import SearchAlgo from "./Pages/AllResources/compProgALL/searchalgo";
+import DpAlgo from "./Pages/AllResources/compProgALL/dynamicpro";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -120,6 +121,7 @@ function App() {
               <Route path="cp" element={<CompProg />} />
               <Route path="sortalgo" element={<SortAlgo />} />
               <Route path="searchalgo" element={<SearchAlgo />} />
+              <Route path="dynamicpro" element={<DpAlgo />} />
 
               <Route path="pyresource" element={<Python />} />
               <Route path="mlops" element={<MLOps />} />
