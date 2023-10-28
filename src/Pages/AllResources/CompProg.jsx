@@ -472,6 +472,7 @@ const algorithmicFoundations = [
     // to: "/algorithmic-topic1",
     title: "Sorting Algorithms",
     des: "Understand various sorting algorithms such as quicksort, mergesort, etc.",
+    to:"/sortalgo",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
