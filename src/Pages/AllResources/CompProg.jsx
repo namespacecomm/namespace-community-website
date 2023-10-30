@@ -479,12 +479,14 @@ const algorithmicFoundations = [
     // to: "/algorithmic-topic2",
     title: "Searching Algorithms",
     des: "Learn different searching algorithms like binary search, linear search, etc.",
+    to:"/searchalgo",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
     // to: "/algorithmic-topic3",
     title: "Dynamic Programming",
     des: "Master the technique of breaking down complex problems into simpler, more manageable subproblems.",
+    to:"/dynamicpro",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
