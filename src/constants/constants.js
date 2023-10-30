@@ -106,7 +106,7 @@ export const members = [
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
     name: "Daxh Khatreja",
-    position: "Vice President",
+    position: "-",
     github: "https://github.com/khatrejadaxh04",
     linkedIn: "https://linkedin.com/in/daxh-khatreja-885641227",
     instagram: "https://www.instagram.com/_khatrejadaxh4_/",
@@ -117,7 +117,7 @@ export const members = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658748-0dd5a22a-52eb-471c-8662-36efa310a38e.jpg",
     name: "Vaibhav Goyal",
-    position: "Director of Operations",
+    position: "Vice President",
     github: "https://github.com/vaiibhav75",
     linkedin: "https://www.linkedin.com/in/vaibhav-goyal-0a5b91235",
     instagram: "https://www.instagram.com/vaiibhav_goyal",
@@ -218,7 +218,7 @@ export const members = [
     instagram: "https://www.instagram.com/klynweto",
   },
 
-  {
+  /* {
     image:
       "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
     name: "Pawas Goyal",
@@ -227,7 +227,7 @@ export const members = [
     linkedin: "https://www.linkedin.com/in/pawas-goyal/",
     instagram: "https://www.instagram.com/pawas_licht03/",
     twitter: "",
-  },
+  }, */
 
   {
     image:
@@ -519,7 +519,7 @@ export const allmembers = [
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143855/WhatsApp_Image_2023-08-27_at_19.13.49_njoj6r.jpg",
     name: "Daxh Khatreja",
-    position: "Vice President",
+    position: "-",
     github: "https://github.com/khatrejadaxh04",
     linkedIn: "https://linkedin.com/in/daxh-khatreja-885641227",
     instagram: "https://www.instagram.com/_khatrejadaxh4_/",
@@ -530,7 +530,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236658748-0dd5a22a-52eb-471c-8662-36efa310a38e.jpg",
     name: "Vaibhav Goyal",
-    position: "Director of Operations",
+    position: "Vice President",
     github: "https://github.com/vaiibhav75",
     linkedin: "https://www.linkedin.com/in/vaibhav-goyal-0a5b91235",
     instagram: "https://www.instagram.com/vaiibhav_goyal",
