@@ -86,6 +86,7 @@ import { SKETCH } from "./Pages/AllResources/uiuxALL/sketch";
 import { ADOBE } from "./Pages/AllResources/uiuxALL/adobe";
 import Scikit from "./Pages/AllResources/aimlAll/Scikit-learn";
 import { NETLIFY } from "./Pages/AllResources/webALL/netlify";
+import SortAlgo from "./Pages/AllResources/compProgALL/sortalgo";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -116,6 +117,8 @@ function App() {
               <Route path="resources" element={<Resources />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
+              <Route path="sortalgo" element={<SortAlgo />} />
+
               <Route path="pyresource" element={<Python />} />
               <Route path="mlops" element={<MLOps />} />
               <Route path="android" element={<Android />} />
@@ -144,7 +147,7 @@ function App() {
               <Route path="Keras" element={<Keras />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
-			  <Route path="netlify" element={<NETLIFY />} />
+			        <Route path="netlify" element={<NETLIFY />} />
               <Route path="firebase" element={<Firebase />} />
               <Route
                 path="frontend-framework"
@@ -211,7 +214,9 @@ function App() {
                 <Route path="unity3d" element={<Unity3D />} />
                 <Route path="webxr" element={<WebXR />} />
               </Route>
-
+              
+              {/* competitive programming  */}
+             
               <Route path="uiux" element={<UIUX />} />
               <Route path="adobe" element={<ADOBE />} />
               <Route path="figma" element={<Figma />} />
