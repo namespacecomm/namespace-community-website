@@ -4,69 +4,79 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
-  ::selection{
+
+  ::selection {
     background-color: rgba(0, 204, 255, 0.352);
   }
 }
-body{
-    background-color: #010116 ;
+
+body {
+  background-color: #010116;
 }
+
 .my-grid {
-    
-      @apply grid grid-cols-1 gap-0 mt-8 xl:mt-8;
-  
-      @apply md:grid-cols-2;
-    
-      @apply lg:grid-cols-3;
-    
-      @apply xl:grid-cols-4 gap-10 xl:mt-16;
-    
-  }
-  
-  ::-webkit-scrollbar{
-    width: 0.1rem;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgb(1, 1, 22);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgb(108, 178, 211);
-    border-radius: 0.3rem;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(90, 168, 151);
-  }
 
-  #leuiux-section {
-    scroll-margin-top: 100px; 
-  }
-  #stuiux-section {
-    scroll-margin-top: 100px; 
-  }
-  #seuiux-section {
-    scroll-margin-top: 100px; 
-  }
-      
-  #iac-section {
-    scroll-margin-top: 100px;
-  }
+  @apply grid grid-cols-1 gap-0 mt-8 xl:mt-8;
 
-  #cicd-section {
-    scroll-margin-top: 100px; 
-  }
+  @apply md:grid-cols-2;
 
-  #co-section {
-    scroll-margin-top: 100px; 
-  }
+  @apply lg:grid-cols-3;
 
-  #msc-section {
-    scroll-margin-top: 100px; 
-  }
+  @apply xl:grid-cols-4 gap-10 xl:mt-16;
 
-  #csci-section {
-    scroll-margin-top: 100px; 
-  }
-  
+}
 
+::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(1, 1, 22);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(108, 178, 211);
+  border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(90, 168, 151);
+}
+
+#leuiux-section {
+  scroll-margin-top: 100px;
+}
+
+#stuiux-section {
+  scroll-margin-top: 100px;
+}
+
+#seuiux-section {
+  scroll-margin-top: 100px;
+}
+
+#iac-section {
+  scroll-margin-top: 100px;
+}
+
+#cicd-section {
+  scroll-margin-top: 100px;
+}
+
+#co-section {
+  scroll-margin-top: 100px;
+}
+
+#msc-section {
+  scroll-margin-top: 100px;
+}
+
+#csci-section {
+  scroll-margin-top: 100px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
