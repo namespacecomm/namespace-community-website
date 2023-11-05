@@ -5,13 +5,11 @@ import {Squash as Hamburger} from 'hamburger-react'
 const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
-  background-color: #010116;
+  background-color: transparent;
   display: flex;
   z-index: 99999999;
-  padding: 5px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   position: fixed;
   transition: all 3s ease-in-out;
   @media (min-width: 900px) {
@@ -23,18 +21,14 @@ const LeftContainer = styled.div`
   flex: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 50px;
+  justify-content: space-around;
+  backdrop-filter: blur(8px); 
+  transition: backdrop-filter 0.5s ease;
+  z-index: 999;
+  box-shadow: inset 0px -1px #1d2d44;
   @media (max-width: 900px) {
     flex: 30%;
   }
-`;
-
-const RightContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 2%;
 `;
 
 const NavbarInnerContainer = styled.div`
@@ -55,10 +49,11 @@ const NavLinks = styled.div`
 const NavbarLink = styled(Link)`
   color: white;
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
   transition: 200ms ease-in-out;
-  padding: 0 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px 0 10px 0;
   @media (max-width: 900px) {
     display: none;
   }
@@ -248,8 +243,7 @@ function Navbar() {
               </div>
             </NavbarLink>
           </NavLinks>
-        </LeftContainer>
-        <RightContainer>
+
           <NavbarLinkContainer>
             <a href="https://linktr.ee/nscc_bpit" className="mr-6">
               <Button>Connect with us</Button>
@@ -260,7 +254,7 @@ function Navbar() {
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </OpenLinksButton>
           </NavbarLinkContainer>
-        </RightContainer>
+        </LeftContainer>
       </NavbarInnerContainer>
       {isOpen && (
         <NavbarExtendedContainer>
