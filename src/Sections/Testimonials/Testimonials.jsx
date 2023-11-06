@@ -10,8 +10,7 @@ import { testimonials } from "../../constants/constants";
 const Section = styled.div`
   height: 100vh;
   background-color: #010116;
-  ${
-    "" /* background: rgb(9, 9, 121);
+  ${"" /* background: rgb(9, 9, 121);
   background: linear-gradient(
     262deg,
     rgba(9, 9, 121, 1) 0%,
@@ -134,7 +133,7 @@ const Testimonials = () => {
                 className="px-4 py-10 mx-auto text-center lg:py-16 lg:px-4 h-[38rem]"
                 key={person.name}
               >
-                <figure className="h-full mx-auto">
+                <figure className="h-full mx-auto border rounded-lg p-3">
                   <div className="h-[10%]">
                     <svg
                       className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
@@ -148,7 +147,7 @@ const Testimonials = () => {
                       />
                     </svg>
                   </div>
-                  <div className="h-[70%] overflow-auto">
+                  <div className="h-[70%] overflow-auto no-scrollbar">
                     <blockquote>
                       <p className="dark:text-white text-justify overflow-auto h-full pr-2">
                         " {person.text} "
