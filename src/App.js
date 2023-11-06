@@ -89,6 +89,7 @@ import { NETLIFY } from "./Pages/AllResources/webALL/netlify";
 import SortAlgo from "./Pages/AllResources/compProgALL/sortalgo";
 import SearchAlgo from "./Pages/AllResources/compProgALL/searchalgo";
 import DpAlgo from "./Pages/AllResources/compProgALL/dynamicpro";
+import { ORACLECLOUD } from "./Pages/AllResources/devopsALL/oracle-cloud";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -153,6 +154,7 @@ function App() {
               <Route path="php" element={<PHP />} />
 			        <Route path="netlify" element={<NETLIFY />} />
               <Route path="firebase" element={<Firebase />} />
+              <Route path="oracle-cloud" element={<ORACLECLOUD />} />
               <Route
                 path="frontend-framework"
                 element={<FrontEndFramework />}
@@ -172,6 +174,7 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="heroku" element={<HEROKU />} />
+             
 
 
               {/* Routes related to BLOCKCHAIN PATHS */}
