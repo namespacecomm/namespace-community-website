@@ -217,7 +217,7 @@ const aiMlDomains = [
         title: "Deep Learning",
         image: "https://miro.medium.com/v2/resize:fit:555/1*gMzDDP1bjMYrzVBBml8Vnw.png",
         description: "Deep Learning is a subset of machine learning involving neural networks with many layers. Study neural architectures, backpropagation, and applications like image recognition.",
-        to: "/deeplearning",
+        to: "/DL",
     },
     
 ];
