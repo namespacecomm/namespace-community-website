@@ -49,6 +49,7 @@ import ReactNative from "./Pages/AllResources/ReactNative";
 import Native from "./Pages/AllResources/Native";
 import { NLP } from "./Pages/AllResources/aimlAll/NLP";
 import { RL } from "./Pages/AllResources/aimlAll/RL";
+import { DL } from "./Pages/AllResources/aimlAll/DL";
 import { MYSQL } from "./Pages/AllResources/webALL/mysql";
 import { Django } from "./Pages/AllResources/webALL/django";
 import { Express } from "./Pages/AllResources/webALL/express";
@@ -142,6 +143,7 @@ function App() {
               <Route path="js" element={<Javascript />} />
               <Route path="nlp" element={<NLP />} />
               <Route path="RL" element={<RL />} />
+              <Route path="DL" element={<DL />} />
               <Route path="pandas" element={<Pandas />} />
               <Route path="computer-vision" element={<ComputerVision />} />
               <Route path="numpy" element={<Numpy />} />
