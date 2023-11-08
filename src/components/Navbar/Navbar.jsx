@@ -110,6 +110,7 @@ const NavbarExtendedContainer = styled.div`
   align-items:center;
   padding-top:40px;
   gap:10px;
+  backdrop-filter: blur(20px);
 
   @media (min-width: 900px) {
     display: none;
