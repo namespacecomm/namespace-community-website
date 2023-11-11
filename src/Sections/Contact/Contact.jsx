@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 
@@ -63,6 +63,8 @@ const TextArea = styled.textarea`
   border-radius: 5px;
   color: #fff;
   background-color: #14102e;
+  //  [Feature]: Hover effect while cursor is on SEND button #484 
+  resize: none;
 `;
 
 const Button = styled.button`
@@ -73,6 +75,11 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 20px;
+  //  [Feature]: Hover effect while cursor is on SEND button #484
+  transition: 200ms ease-in-out;
+  :hover {
+    background-color: #138AF2;
+  }
 `;
 
 const Img = styled.img`
