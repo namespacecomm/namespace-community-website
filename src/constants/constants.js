@@ -708,64 +708,6 @@ export const allmembers = [
     twitter: "",
   },
 
-  /* {
-		image: "https://user-images.githubusercontent.com/75252077/236658653-d05fa062-283e-4520-9a71-4d01d7f2b4f4.jpg",
-		name: "Rishav Raj",
-    team: "JC",
-		github: "https://github.com/Rishav-01",
-		linkedin: "https://www.linkedin.com/in/rishav-raj-8128bb228/",
-		instagram: "https://www.instagram.com/rishav_th9/",
-		twitter: "",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236658748-0dd5a22a-52eb-471c-8662-36efa310a38e.jpg",
-		name: "Vaibhav Goyal",
-    team: "JC",
-		github: "https://github.com/vaiibhav75",
-		linkedin: "https://www.linkedin.com/in/vaibhav-goyal-0a5b91235",
-		instagram: "https://www.instagram.com/vaiibhav_goyal",
-		twitter: "",
-	},
-
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236658826-fd7aec96-8585-4b60-bf6f-8affdbf04d84.jpg",
-		name: "Pawas Goyal",
-    team: "JC",
-		github: "https://github.com/pawas108ram",
-		linkedin: "https://www.linkedin.com/in/pawas-goyal/",
-		instagram: "https://www.instagram.com/pawas_licht03/",
-		twitter: "",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236658852-9df7d052-1fdf-43cb-99f0-efba6809643d.JPG",
-		name: "Daxh khatreja",
-    team: "JC",
-		github: "https://github.com/khatrejadaxh04",
-		linkedin: "https://linkedin.com/in/daxh-khatreja-885641227",
-		instagram: "https://www.instagram.com/_khatrejadaxh4_/",
-		twitter: "https://twitter.com/_khatrejadaxh4_",
-	}, */
-
-  // {
-  // 	image: "",
-  // 	name: "Tanish Saini",
-  //   team: "JC",
-  // 	github: "https://github.com/TaniKroos",
-  // 	linkedIn: "https://www.linkedin.com/in/tanish-saini-90410822a/",
-  // 	instagram: "",
-  // 	twitter: "https://twitter.com/Tanish2731",
-  // },
-
-  /* {
-		image: "https://user-images.githubusercontent.com/75252077/236658902-912d6d6c-6790-41ee-b65b-5ccd4e2eea40.jpeg",
-		name: "Raj Verma",
-    team: "JC",
-		github: "https://github.com/raj18verma",
-		linkedin: "https://www.linkedin.com/in/raj-verma-a68356255/",
-		instagram: "https://www.instagram.com/raj18verma/",
-		twitter: "https://twitter.com/RajVerm51468503",
-	}, */
-
   {
     image:
       "https://user-images.githubusercontent.com/75252077/236658954-0ace632b-cdb7-470d-a50c-d474f1ab32ce.jpg",
@@ -790,33 +732,7 @@ export const allmembers = [
   },
 
 
-  /* {
-		image: "https://i.postimg.cc/ZRMn0Z9g/Anushka-Singh.jpg",
-		name: "Anushka Singh",
-    team: "JC",
-		github: "https://github.com/anu30singh",
-		linkedin: "https://www.linkedin.com/in/anushka30singh/",
-		instagram: "https://instagram.com/anu_30singh?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/Anushka3007",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236658980-c59934e8-c9db-4a9d-82a3-93ebb76c5156.jpg",
-		name: "Ayush Jaswal",
-    team: "JC",
-		github: "https://github.com/ayushjaswal",
-		linkedin: "https://www.linkedin.com/in/ayushjaswal",
-		instagram: "https://instagram.com/ayujaswal?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/ayujas",
-	},
-	{
-		image: "https://user-images.githubusercontent.com/75252077/236659017-3bdddc9a-1494-4d65-b48d-1a0fa07596df.jpg",
-		name: "Gracy Dhamija",
-    team: "JC",
-		github: "https://github.com/gracy27",
-		linkedin: " https://www.linkedin.com/in/gracy-dhamija-4b2261239     ",
-		instagram: "https://instagram.com/dhamijagracy?igshid=ZDdkNTZiNTM=",
-		twitter: "https://twitter.com/dhamija_gracy?t=y0V-IH-0CrxhI-ZybbYc2w&s=09",
-	}, */
+  
   {
     image:
       "https://user-images.githubusercontent.com/75252077/236659046-c3449307-bed6-4419-b28f-db75499506b6.jpg",
