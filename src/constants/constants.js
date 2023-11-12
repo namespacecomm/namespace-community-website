@@ -778,17 +778,6 @@ export const allmembers = [
     twitter: "https://twitter.com/__vxibhxv",
   },
 
- 
-  /* {
-		image: "https://user-images.githubusercontent.com/75252077/236659081-d0dff70f-522d-4bad-bb67-2ab050ec8802.jpg",
-		name: "Vaibhav Bhardwaj",
-    team: "JC",
-		github: "https://github.com/vaibhavx42",
-		linkedin: "https://www.linkedin.com/in/bhardwajvaibhav42/",
-		instagram: "null",
-		twitter: "https://twitter.com/__vxibhxv",
-	}, */
-
   // {
   // 	image: "",
   // 	name:"Muskan Arora",
