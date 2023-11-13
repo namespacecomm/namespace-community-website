@@ -579,7 +579,7 @@ export const allmembers = [
   {
     name: "Diksha Sharma",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/Diksha_Sharma_ins2c5.jpg",
     position: "Junior Council",
     github: "https://github.com/DikshaDhasmana",
     linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
@@ -589,7 +589,7 @@ export const allmembers = [
   {
     name: "Pranav Barthwal",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/PranavBarthwal_1_ycli1h.jpg",
     position: "Junior Council",
     github: "https://github.com/PranavBarthwal",
     linkedin: "https://www.linkedin.com/in/pranav-barthwal-b1a3631ba",
@@ -599,7 +599,7 @@ export const allmembers = [
   {
     name: "Himanshi Hans",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Himanshi_Hans_1_p8xxtj.jpg",
     position: "Junior Council",
     github: "https://github.com/Himanshihans/",
     linkedin: "https://www.linkedin.com/in/himanshi-hans-23b895234",
@@ -609,7 +609,7 @@ export const allmembers = [
   {
     name: "Yuvan Grover",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Yuvan_pic_2_1_wtwurh.jpg",
     position: "Junior Council",
     github: "https://github.com/coderyuvan",
     linkedin: "https://www.linkedin.com/in/yuvan-grover-85b03526a",
@@ -619,7 +619,7 @@ export const allmembers = [
   {
     name: "Niharika Khanna",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/NiharikaKhanna_pzwkmx.jpg",
     position: "Junior Council",
     github: "https://github.com/nkhanna94",
     linkedin: "https://www.linkedin.com/in/niharika-khanna-197236248/",
@@ -630,7 +630,7 @@ export const allmembers = [
   {
     name: "Sahil Tyagi",
     image:
-      "",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Sahil_Tyagi_1_pe2crg.jpg",
     position: "Junior Council",
     github: "https://github.com/SahilTyagii",
     linkedin: "https://www.linkedin.com/in/sahil-tyagi-b4a02325a/",
