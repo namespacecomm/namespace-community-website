@@ -21,9 +21,8 @@ const Section = styled.footer`
     width: 100vw;
     flex-direction: column;
     align-items: center;
-    padding: 30px 5px;
-    line-height: 30px;
-    font-size: 16px;
+    margin-top: 16px;
+    font-size: 14px;
     justify-content: center;
     ${
       "" /* div {

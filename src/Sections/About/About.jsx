@@ -76,7 +76,7 @@ const Right = styled.div`
 `;
 
 const Desc = styled.p`
-  font-size: 22px;
+  font-size: 18px;
   text-align: justify;
   color: lightgray;
   margin: auto 10%;

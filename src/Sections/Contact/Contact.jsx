@@ -36,6 +36,9 @@ const Title = styled.h1`
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Form = styled.form`
@@ -72,7 +75,9 @@ const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0.5em;
 `;
 
 const Img = styled.img`
