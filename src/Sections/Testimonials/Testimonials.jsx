@@ -149,7 +149,7 @@ const Testimonials = () => {
                   </div>
                   <div className="h-[70%] overflow-auto no-scrollbar">
                     <blockquote>
-                      <p className="dark:text-white text-justify overflow-auto h-full pr-2">
+                      <p className="dark:text-white text-center overflow-auto h-full pr-2">
                         " {person.text} "
                       </p>
                     </blockquote>
@@ -161,9 +161,9 @@ const Testimonials = () => {
                         src={person.image}
                         alt={`Testimonial author ${person.name}`}
                       />
-                      <div>
-                        <div className="dark:text-white">{person.name}</div>
-                        <div className="dark:text-gray-400">
+                      <div className="m-1">
+                        <div className="dark:text-white text-sm">{person.name}</div>
+                        <div className="dark:text-gray-400 text-xs">
                           {person.position}
                         </div>
                       </div>

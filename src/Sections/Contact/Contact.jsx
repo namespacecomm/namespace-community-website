@@ -36,6 +36,9 @@ const Title = styled.h1`
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Form = styled.form`
@@ -74,8 +77,9 @@ const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  padding: 20px;
-  //  [Feature]: Hover effect while cursor is on SEND button #484
+  margin: 0 auto;
+  width: 90%;
+  padding: 0.5em;
   transition: 200ms ease-in-out;
   :hover {
     background-color: #138AF2;
