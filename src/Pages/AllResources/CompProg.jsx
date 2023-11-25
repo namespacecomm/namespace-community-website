@@ -650,9 +650,15 @@ const cpYouTubeResource = [
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
+    to: "https://www.youtube.com/channel/UCqL-fzHtN3NQPbYqGymMbTA",
+    title: "TLE Eliminators",
+    des: "A popular community for Competitive Programming enthusiasts, TLE Eminators is run and mentored by Priyansh Aggarwal",
+  },
+  {
+    image: "https://i.ibb.co/KDmVCHq/3014296.png",
     to: "https://www.youtube.com/@iamluv",
     title: "Luv",
-    des: "You can find almost every topic of compitative programming here",
+    des: "You can find almost every topic of competitive programming here",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
