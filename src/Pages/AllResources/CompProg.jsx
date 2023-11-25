@@ -658,7 +658,7 @@ const cpYouTubeResource = [
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
     to: "https://www.youtube.com/@iamluv",
     title: "Luv",
-    des: "You can find almost every topic of compitative programming here",
+    des: "You can find almost every topic of competitive programming here",
   },
   {
     image: "https://i.ibb.co/KDmVCHq/3014296.png",
