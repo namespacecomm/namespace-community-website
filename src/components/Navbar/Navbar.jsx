@@ -246,7 +246,7 @@ function Navbar() {
           </NavLinks>
 
           <NavbarLinkContainer>
-            <a href="https://linktr.ee/nscc_bpit" className="mr-6">
+            <a href="https://linktr.ee/nscc_bpit" target="_blank" className="mr-6">
               <Button>Connect with us</Button>
             </a>
             <OpenLinksButton
