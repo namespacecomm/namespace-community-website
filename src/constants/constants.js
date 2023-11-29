@@ -161,7 +161,7 @@ export const members = [
 
   {
     image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143933/WhatsApp_Image_2023-08-27_at_19.15.17_xg2f0b.jpg",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1701273886/Sneha_Nautiyal_qeuhfe.jpg",
     name: "Sneha Nautiyal",
     position: "Social Media Head",
     github: "https://github.com/Klynweto",
@@ -391,7 +391,7 @@ export const allmembers = [
 
   {
     image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693143933/WhatsApp_Image_2023-08-27_at_19.15.17_xg2f0b.jpg",
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1701273886/Sneha_Nautiyal_qeuhfe.jpg",
     name: "Sneha Nautiyal",
     position: "Social Media Head",
     github: "https://github.com/Klynweto",
