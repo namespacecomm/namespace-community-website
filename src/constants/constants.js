@@ -224,7 +224,156 @@ export const members = [
     github: "https://github.com/Akay-Code",
     "linkedin": "https://www.linkedin.com//in//akshit-shroff",
     "instagram": ""
- },
+   },
+   
+   {
+    name: "Aanya Sharma",
+    image: "https://i.postimg.cc/hGsHhd6T/IMG-20221027-120758.jpg",
+    position: "Junior Council",
+    github: "https://github.com/Aanyaa26",
+    linkedin: "https://www.linkedin.com/in/aanya-sharma-2841b2248",
+    instagram: "https://www.instagram.com/aannyaasharma",
+  },
+
+  {
+    name: "Aryan Pillai",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238093/aryan_cwtlgr.jpg",
+    position: "Junior Council",
+    github: "https://github.com/aryanpillai103",
+    linkedin: "https://www.linkedin.com/in/aryanpillai/",
+    instagram: "https://www.instagram.com/a.pillai_19",
+    twitter: "https://twitter.com/a_pillai103",
+  },
+
+  {
+    name: "Gauransh Goel",
+    image: "https://i.postimg.cc/ZRrzvH3s/Gauransh-pic.png",
+    position: "Junior Council",
+    github: "https://github.com/Gauranshgoel123",
+    linkedin: "https://www.linkedin.com/in/gauranshgoel123/",
+    instagram: "https://www.instagram.com/gauranshhh_",
+  },
+
+  {
+    name: "Jyoti Ahuja",
+    image: "https://i.postimg.cc/L5mdsV6t/IMG-20230507-WA0029.jpg",
+    position: "Junior Council",
+    linkedin: "https://www.linkedin.com/in/jyoti-ahuja-331228248",
+    instagram: "https://www.instagram.com/_jyoti040",
+  },
+
+  {
+    name: "Mokshit",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693237985/mokshit_mf8xx7.jpg",
+    position: "Junior Council",
+    github: "https://github.com/Mokshit-123",
+    linkedin: "https://www.linkedin.com/in/mokshit-garg-283b27247",
+    instagram: "https://www.instagram.com/mokshu_123",
+    twitter:
+      "https://twitter.com/Mokshit0068",
+  },
+
+  {
+    name: "Navya Fulfagar",
+    image: "https://i.postimg.cc/sfMHp8bM/IMG-9850.jpg",
+    position: "Junior Council",
+    linkedin: "https://www.linkedin.com/in/navya-jain-559198259",
+    instagram: "https://www.instagram.com/navyaajainnn",
+  },
+
+  {
+    name: "Prerna Jha",
+    image: "https://i.postimg.cc/RVRtqCGK/pi2.jpg",
+    position: "Junior Council",
+    linkedin: "https://www.linkedin.com/in/prerna-jha-6080a9253",
+    instagram: "https://www.instagram.com/_prerna.____",
+    twitter: "https://twitter.com/PrernaJha04"
+  },
+
+  {
+    name: "Shivank Kapur",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238094/shivank_hglloc.jpg",
+    position: "Junior Council",
+    github: "https://github.com/ShivankK26",
+    linkedin: "https://www.linkedin.com/in/shivankkapur",
+    instagram: "https://www.instagram.com/Kapur.shivank2",
+    twitter: "https://twitter.com/ShivankK26",
+  },
+
+  {
+    name: "Sujal Gupta",
+    image:
+      "https://i.ibb.co/FxGpRGS/Whats-App-Image-2022-07-13-at-8-55-19-PM.jpg",
+    position: "Junior Council",
+    github: "https://github.com/sgmna",
+    linkedin: "https://www.linkedin.com/in/sujal-gupta-117154247/",
+    instagram: "https://www.instagram.com/sujalgupta1214",
+  },
+
+  {
+    name: "Diksha Sharma",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/Diksha_Sharma_ins2c5.jpg",
+    position: "Junior Council",
+    github: "https://github.com/DikshaDhasmana",
+    linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
+    instagram: "",
+  },
+
+  {
+    name: "Pranav Barthwal",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/PranavBarthwal_1_ycli1h.jpg",
+    position: "Junior Council",
+    github: "https://github.com/PranavBarthwal",
+    linkedin: "https://www.linkedin.com/in/pranav-barthwal-b1a3631ba",
+    instagram: "https://instagram.com/pranavbarthwal",
+  },
+
+  {
+    name: "Himanshi Hans",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Himanshi_Hans_1_p8xxtj.jpg",
+    position: "Junior Council",
+    github: "https://github.com/Himanshihans/",
+    linkedin: "https://www.linkedin.com/in/himanshi-hans-23b895234",
+    instagram: "",
+  },
+
+  {
+    name: "Yuvan Grover",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Yuvan_pic_2_1_wtwurh.jpg",
+    position: "Junior Council",
+    github: "https://github.com/coderyuvan",
+    linkedin: "https://www.linkedin.com/in/yuvan-grover-85b03526a",
+    instagram: "",
+  },
+
+  {
+    name: "Niharika Khanna",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/NiharikaKhanna_pzwkmx.jpg",
+    position: "Junior Council",
+    github: "https://github.com/nkhanna94",
+    linkedin: "https://www.linkedin.com/in/niharika-khanna-197236248/",
+    instagram: "",
+    twitter: "https://www.twitter.com/nkhanna94"
+  },
+
+  {
+    name: "Sahil Tyagi",
+    image:
+      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/Sahil_Tyagi_1_pe2crg.jpg",
+    position: "Junior Council",
+    github: "https://github.com/SahilTyagii",
+    linkedin: "https://www.linkedin.com/in/sahil-tyagi-b4a02325a/",
+    instagram: "https://www.instagram.com/sahil.tyagii/",
+  },
+
 ];
 
 export const allmembers = [
@@ -454,7 +603,7 @@ export const allmembers = [
     github: "https://github.com/Akay-Code",
     "linkedin": "https://www.linkedin.com//in//akshit-shroff",
     "instagram": ""
- },
+  },
 
   {
     name: "Aanya Sharma",
