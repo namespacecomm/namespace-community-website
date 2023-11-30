@@ -219,7 +219,7 @@ export const members = [
 
    {
     "name": "Akshit Shroff",
-    "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.37_f778fcc2_m1gihp.jpg",
+    "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1701314230/Akshit_Shroff_mgbxhf.jpg",
     position: "Technical Head",
     github: "https://github.com/Akay-Code",
     "linkedin": "https://www.linkedin.com//in//akshit-shroff",
@@ -449,7 +449,7 @@ export const allmembers = [
 
    {
     "name": "Akshit Shroff",
-    "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.37_f778fcc2_m1gihp.jpg",
+    "image": "https://res.cloudinary.com/df5hitkbj/image/upload/v1701314230/Akshit_Shroff_mgbxhf.jpg",
     position: "Technical Head",
     github: "https://github.com/Akay-Code",
     "linkedin": "https://www.linkedin.com//in//akshit-shroff",
