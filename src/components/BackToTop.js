@@ -15,6 +15,7 @@ const StyledBackToTopButton = styled.button`
   display: ${({ show }) => (show ? 'block' : 'none')};
   font-size: 18px; /* Adjust font size as needed */
   outline: none; /* Remove focus outline for better aesthetics */
+  z-index: 1000;
 
   &:hover {
     background-color: #0056b3;
