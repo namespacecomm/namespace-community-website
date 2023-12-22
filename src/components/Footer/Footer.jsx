@@ -87,7 +87,7 @@ const Footer = () => {
 
   return (
     <Section>
-      <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
+      {/* <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
 
       <CenterText>
         Made with ❤️ and 🧠 by{" "}
@@ -97,7 +97,7 @@ const Footer = () => {
         >
           Team nameSpace
         </a>
-      </CenterText>
+      </CenterText> */}
 
       {/* <RightText>
 
