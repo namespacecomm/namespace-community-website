@@ -7,9 +7,10 @@ const Section = styled.div`
   background-color: #010116;
   height: 100vh;
   width: 100%;
+  margin-top: 40vh ;
   scroll-snap-align: center;
   @media only screen and (min-width: 1080px) {
-    margin-top: 2rem 0;
+    
   }
 `;
 

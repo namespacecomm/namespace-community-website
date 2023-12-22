@@ -149,7 +149,7 @@ function Navbar() {
 
   return (
     <NavbarContainer isOpen={isOpen}>
-      <NavbarInnerContainer>
+      {/* <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
             <Logo src="../.././img/logo2.png"></Logo>
@@ -251,12 +251,11 @@ function Navbar() {
             </a>
             <OpenLinksButton
             >
-              {/* {isOpen ? <>&#10005;</> : <> &#8801;</>} */}
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </OpenLinksButton>
           </NavbarLinkContainer>
         </LeftContainer>
-      </NavbarInnerContainer>
+      </NavbarInnerContainer> */}
       {isOpen && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>

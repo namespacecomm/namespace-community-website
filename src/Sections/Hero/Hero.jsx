@@ -61,7 +61,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 9% 14%;
   @media only screen and (max-width: 1030px) {
     width: 100%;
@@ -94,17 +94,18 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 45px;
+  font-size: 125px;
   font-weight: 700;
+  text-align: center;
 
   @media only screen and (max-width: 768px) {
     font-size: 40px;
   }
   @media only screen and (max-width: 1030px) {
-    font-size: 50px;
+    font-size: 125px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 50px;
+    font-size: 125px;
   }
   @media only screen and (max-width: 760px) {
     font-size: 50px;
@@ -119,7 +120,9 @@ const WhatWeDo = styled.div`
 `;
 
 const Subtitle = styled.p`
-  font-size: 70px;
+  margin-top:5px;
+  text-align:center;
+  font-size: 40px;
   font-weight: bold;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -130,34 +133,39 @@ const Subtitle = styled.p`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
    @media screen and (max-width: 424px) {
-    font-size: 37px;
+    font-size: 22px;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 23px;
   }
   @media screen and (min-width: 769px) and (max-width: 1030px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 `;
 
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  text-align:center;
+  
   @media only screen and (max-width: 1030px) {
-    font-size: 20px;
+    font-size: 17px;
+    margin-top:5px;
     align-items: center;
     text-align: center;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 40px;
+    margin-top:10px;
+    font-size: 22px;
     align-items: center;
 `;
 const ShortDesc = styled.p`
   font-size: 16px;
+  text-align:center;
   color: lightgray;
   padding-top: 4px;
 
@@ -165,7 +173,7 @@ const ShortDesc = styled.p`
     font-size: 16px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 24px;
+    font-size: 22px;
   }
   @media only screen and (max-width: 760px) {
     text-align: center;
@@ -212,22 +220,28 @@ const Img = styled.iframe`
 const Hero = () => {
   return (
     <>
-      <Section>
+      {/* <Section>
         <Container>
           <Left>
-            <Title>Newton School</Title>
+            <Title>nameSpace</Title>
             <WhatWeDo>
-              <Subtitle>Coding Club</Subtitle>
+              <Subtitle>formerly NSCC BPIT</Subtitle>
             </WhatWeDo>
             <Desc>Bhagwan Parshuram Institute of Technology</Desc>
             <ShortDesc>GGSIPU, New Delhi, India</ShortDesc>
           </Left>
           <Right>
-            <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
-          </Right>
+             <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
+            <Img src="https://res.cloudinary.com/df5hitkbj/image/upload/v1703252462/Public_groups111_c5kyj1.png"></Img>
+          </Right> 
+          
           <BackToTopButton />
         </Container>
-      </Section>
+        
+      </Section> */}
+      <div>
+      <img src="https://res.cloudinary.com/df5hitkbj/image/upload/v1703252462/Public_groups111_c5kyj1.png" alt="" className="image"/>
+      </div>
 
       <div className="container">
         <Canvas camera={{ position: [0, 0, 1] }}>
@@ -239,12 +253,12 @@ const Hero = () => {
         </Canvas>
       </div>
       
-      <About />
+      {/* <About />
       <Teams />
       <Events />
       <SocialMedia />
       <Testimonials />
-      <Contact />
+      <Contact /> */}
     </>
   );
 };

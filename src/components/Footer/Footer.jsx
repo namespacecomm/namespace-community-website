@@ -87,7 +87,7 @@ const Footer = () => {
 
   return (
     <Section>
-      <LeftText>© {year} Newton School Coding Club BPIT</LeftText>
+      {/* <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
 
       <CenterText>
         Made with ❤️ and 🧠 by{" "}
@@ -95,9 +95,9 @@ const Footer = () => {
           style={{ color: "pink" }}
           href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
         >
-          Team NSCC BPIT
+          Team nameSpace
         </a>
-      </CenterText>
+      </CenterText> */}
 
       {/* <RightText>
 

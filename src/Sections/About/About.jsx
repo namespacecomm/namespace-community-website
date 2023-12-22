@@ -43,9 +43,9 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-font-size:40px;
+  font-size: 40px;
   font-weight: bold;
-  border-bottom:3px solid #F5F5F5;
+  border-bottom: 3px solid #f5f5f5;
   margin: auto 10%;
   background: #3530cf;
   background: repeating-radial-gradient(
@@ -91,16 +91,16 @@ const About = () => {
             <ImageCarousel images={images} />
           </Left>
           <Right>
-            <Title>About NSCC BPIT</Title>
+            <Title>About nameSpace</Title>
             <Desc>
-              NSCC BPIT is a community of like-minded individuals who share a
-              passion for technology and are committed to helping each other
-              become the best developers they can be. Whether you're just
-              starting out in your coding journey or a seasoned pro, our society
-              is a place where you can connect with other tech enthusiasts,
-              share your knowledge, and grow your skills. Founded in 2022, NSCC
-              BPIT has quickly grown to become one of the leading NSCC chapters
-              in India.
+              nameSpace formerly NSCC BPIT is a community of like-minded
+              individuals who share a passion for technology and are committed
+              to helping each other become the best developers they can be.
+              Whether you're just starting out in your coding journey or a
+              seasoned pro, our society is a place where you can connect with
+              other tech enthusiasts, share your knowledge, and grow your
+              skills. Founded in 2022, nameSpace formerly NSCC BPIT has quickly grown to become one
+              of the largest technical community.
             </Desc>
           </Right>
         </Container>

@@ -58,7 +58,7 @@ function AllTeams() {
             </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              In the last one year NSCC BPIT has grown on to become a vibrant
+              In the last one year nameSpace has grown on to become a vibrant
               and thriving collection of tech enthusiasts and problem solvers.
               Given below are few of the club members who make the community
               amazing.
