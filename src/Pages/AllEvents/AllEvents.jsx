@@ -56,7 +56,7 @@ function AllEvents() {
             </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              NSCC BPIT conducts various events and initiatives all year round
+              nameSpace conducts various events and initiatives all year round
               for the betterment and growth of the community. Given below are
               some of the selected events conducted in the current tenure.
             </p>

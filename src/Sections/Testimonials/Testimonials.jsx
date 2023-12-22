@@ -32,6 +32,7 @@ const Section = styled.div`
 
 const Title = styled.h1`
   font-weight: bold;
+  margin-top:100px;
   display: inline-block;
   background: repeating-radial-gradient(
     circle farthest-side at center center,

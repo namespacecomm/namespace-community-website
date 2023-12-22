@@ -53,7 +53,7 @@ function Projects() {
                 description:
                   "Develop a fitness tracking app using Flutter, providing users with real-time workout tracking, personalized exercise routines, and nutrition tips. It syncs seamlessly with wearable devices to help users achieve their fitness goals.",
                 techUsed: "HTML CSS React",
-                ownerName: "NSCC BPIT",
+                ownerName: "nameSpace",
                 deploymentLink: "https://www.nsccbpit.tech/",
                 githubLink: "https://github.com/",
                 imageUrl:
@@ -68,7 +68,7 @@ function Projects() {
                 description:
                   "Build a responsive website for a charitable organization using React. The site showcases their mission, projects, and donation options, making it easy for visitors to support meaningful causes..",
                 techUsed: "HTML CSS React",
-                ownerName: "NSCC BPIT",
+                ownerName: "nameSpace",
                 deploymentLink: "https://www.nsccbpit.tech/",
                 githubLink: "https://github.com/",
                 imageUrl:
@@ -83,7 +83,7 @@ function Projects() {
                 description:
                   "Implement a blockchain-based voting system to enhance the security and transparency of elections. This project ensures that votes are securely recorded and can be audited, reducing the risk of fraud.",
                 techUsed: "HTML CSS React",
-                ownerName: "NSCC BPIT",
+                ownerName: "nameSpace",
                 deploymentLink: "https://www.nsccbpit.tech/",
                 githubLink: "https://github.com/",
                 imageUrl:
@@ -99,7 +99,7 @@ function Projects() {
                 description:
                   "Craft a travel planning app with React Native, allowing users to plan their trips, book accommodations, and discover local attractions. The app provides travel itineraries and integrates with maps for easy navigation.",
                 techUsed: "HTML CSS React",
-                ownerName: "NSCC BPIT",
+                ownerName: "nameSpace",
                 deploymentLink: "https://www.nsccbpit.tech/",
                 githubLink: "https://github.com/",
                 imageUrl:
@@ -114,7 +114,7 @@ function Projects() {
                 description:
                   "Create an interactive cybersecurity training platform that educates users on best practices for online security. It offers modules on password management, phishing detection, and network security, helping users protect their digital assets.",
                 techUsed: "HTML CSS React",
-                ownerName: "NSCC BPIT",
+                ownerName: "nameSpace",
                 deploymentLink: "https://www.nsccbpit.tech/",
                 githubLink: "https://github.com/",
                 imageUrl:
