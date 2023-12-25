@@ -212,15 +212,15 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
-              to="http://blog.nsccbpit.tech/"
+              to="http://blog.namespacecomm.in/"
               target="_blank"
               className={
-                activeNavLink === "/http://blog.nsccbpit.tech/" ? "active" : ""
+                activeNavLink === "/http://blog.namespacecomm.in/" ? "active" : ""
               }
             >
               <div>
                 Blog
-                {activeNavLink === "/http://blog.nsccbpit.tech/" && (
+                {activeNavLink === "/http://blog.namespacecomm.in/" && (
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
