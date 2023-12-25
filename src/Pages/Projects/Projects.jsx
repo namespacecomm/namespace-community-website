@@ -54,8 +54,8 @@ function Projects() {
                   "Develop a fitness tracking app using Flutter, providing users with real-time workout tracking, personalized exercise routines, and nutrition tips. It syncs seamlessly with wearable devices to help users achieve their fitness goals.",
                 techUsed: "HTML CSS React",
                 ownerName: "nameSpace",
-                deploymentLink: "https://www.nsccbpit.tech/",
-                githubLink: "https://github.com/",
+                deploymentLink: "#",
+                githubLink: "https://github.com/NSCC-BPIT",
                 imageUrl:
                   "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 projectImage: "/img/project-images/fitness.jpg",
@@ -69,8 +69,8 @@ function Projects() {
                   "Build a responsive website for a charitable organization using React. The site showcases their mission, projects, and donation options, making it easy for visitors to support meaningful causes..",
                 techUsed: "HTML CSS React",
                 ownerName: "nameSpace",
-                deploymentLink: "https://www.nsccbpit.tech/",
-                githubLink: "https://github.com/",
+                deploymentLink: "#",
+                githubLink: "https://github.com/NSCC-BPIT",
                 imageUrl:
                   "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 projectImage: "/img/project-images/react-website-charity.jpg",
@@ -84,8 +84,8 @@ function Projects() {
                   "Implement a blockchain-based voting system to enhance the security and transparency of elections. This project ensures that votes are securely recorded and can be audited, reducing the risk of fraud.",
                 techUsed: "HTML CSS React",
                 ownerName: "nameSpace",
-                deploymentLink: "https://www.nsccbpit.tech/",
-                githubLink: "https://github.com/",
+                deploymentLink: "#",
+                githubLink: "https://github.com/NSCC-BPIT",
                 imageUrl:
                   "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
                 projectImage:
@@ -100,8 +100,8 @@ function Projects() {
                   "Craft a travel planning app with React Native, allowing users to plan their trips, book accommodations, and discover local attractions. The app provides travel itineraries and integrates with maps for easy navigation.",
                 techUsed: "HTML CSS React",
                 ownerName: "nameSpace",
-                deploymentLink: "https://www.nsccbpit.tech/",
-                githubLink: "https://github.com/",
+                deploymentLink: "#",
+                githubLink: "https://github.com/NSCC-BPIT",
                 imageUrl:
                   "https://images.unsplash.com/photo-1456425731181-2152d80d946c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80",
                 projectImage: "/img/project-images/travel-planner.jpeg",
@@ -115,8 +115,8 @@ function Projects() {
                   "Create an interactive cybersecurity training platform that educates users on best practices for online security. It offers modules on password management, phishing detection, and network security, helping users protect their digital assets.",
                 techUsed: "HTML CSS React",
                 ownerName: "nameSpace",
-                deploymentLink: "https://www.nsccbpit.tech/",
-                githubLink: "https://github.com/",
+                deploymentLink: "#",
+                githubLink: "https://github.com/NSCC-BPIT",
                 imageUrl:
                   "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
                 projectImage: "/img/project-images/cybersecurity-training.jpeg",
