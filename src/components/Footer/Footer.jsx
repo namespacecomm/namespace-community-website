@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { Linkedin, Instagram, Github, Twitter, Mail, Youtube } from "lucide-react";
 
 const Section = styled.footer`
   padding: 1.2rem;
@@ -37,15 +38,18 @@ const Section = styled.footer`
 const RightText = styled.div`
   display: flex;
   align-items: center;
-  width:25rem;
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 1rem;
-    color: white;
-    transition: all 0.2s ease-in-out;
+  width: 25rem;
+
+  p {
+    margin-right: 1rem; /* Add margin to the right of the paragraph */
   }
+
   a {
+    margin-right: 1rem; /* Add margin between icons */
+    &:last-child {
+      margin-right: 0; /* Remove margin for the last icon */
+    }
+
     &:hover {
       img {
         transform: scale(1.5);
@@ -53,15 +57,22 @@ const RightText = styled.div`
           brightness(100%) contrast(97%);
       }
     }
+
     @media only Screen and (max-width: 48em) {
-     text-align: center;
-     align-self: end;
-     
-     justify-self:center;
-  }
+      text-align: center;
+      align-self: end;
+      justify-self: center;
+    }
   }
 
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
 `;
+
 const LeftText = styled.div`
   text-align: left;
   width: 20rem;
@@ -83,7 +94,7 @@ const Footer = () => {
   const [year, setYear] = useState(2023);
   useEffect(() => {
     setYear(new Date().getFullYear());
-  },[])
+  }, []);
 
   return (
     <Section>
@@ -100,27 +111,29 @@ const Footer = () => {
       </CenterText>
 
       <RightText>
-
         <p>Reach out to us via </p>
-     
-        <a href="http://www.linkedin.com/company/namespacecomm/">
-          <img src="./img/linkedin.svg" alt="LinkedIn" />
+        <a href="http://instagram.com/namespacecomm">
+          <Instagram size={24} />
         </a>
         &nbsp;
-        <a href="http://instagram.com/namespacecomm">
-          <img src="./img/insta.svg" alt="Instagram" />
+        <a href="http://www.linkedin.com/company/namespacecomm/">
+          <Linkedin size={24} />
+        </a>
+        &nbsp;
+        <a href="https://www.youtube.com/@namespacecomm">
+          <Youtube size={24} />
         </a>
         &nbsp;
         <a href="https://github.com/NSCC-BPIT">
-          <img src="./img/github.svg" alt="GitHub" />
+          <Github size={24} />
         </a>
         &nbsp;
         <a href="https://twitter.com/namespacecomm">
-          <img src="./img/icons8-twitter.svg" alt="Twitter" />
+          <Twitter size={24} />
         </a>
         &nbsp;
         <a href="mailto:namespace@bpitindia.com">
-          <img src="./img/email.svg" alt="Gmail" />
+          <Mail size={24} />
         </a>
       </RightText>
     </Section>
