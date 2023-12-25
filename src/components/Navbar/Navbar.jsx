@@ -149,7 +149,7 @@ function Navbar() {
 
   return (
     <NavbarContainer isOpen={isOpen}>
-      {/* <NavbarInnerContainer>
+      <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
             <Logo src="../.././img/logo5.png"></Logo>
@@ -246,7 +246,7 @@ function Navbar() {
           </NavLinks>
 
           <NavbarLinkContainer>
-            <a href="https://linktr.ee/nscc_bpit" target="_blank" className="mr-6">
+            <a href="https://linktr.ee/namespacecomm" target="_blank" className="mr-6">
               <Button>Connect with us</Button>
             </a>
             <OpenLinksButton
@@ -255,7 +255,7 @@ function Navbar() {
             </OpenLinksButton>
           </NavbarLinkContainer>
         </LeftContainer>
-      </NavbarInnerContainer> */}
+      </NavbarInnerContainer>
       {isOpen && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>

@@ -34,7 +34,7 @@ const Section = styled.footer`
   }
 `;
 
-/* const RightText = styled.div`
+const RightText = styled.div`
   display: flex;
   align-items: center;
   width:25rem;
@@ -61,7 +61,7 @@ const Section = styled.footer`
   }
   }
 
-`; */
+`;
 const LeftText = styled.div`
   text-align: left;
   width: 20rem;
@@ -87,7 +87,7 @@ const Footer = () => {
 
   return (
     <Section>
-      {/* <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
+      <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
 
       <CenterText>
         Made with ❤️ and 🧠 by{" "}
@@ -97,17 +97,17 @@ const Footer = () => {
         >
           Team nameSpace
         </a>
-      </CenterText> */}
+      </CenterText>
 
-      {/* <RightText>
+      <RightText>
 
         <p>Reach out to us via </p>
      
-        <a href="http://www.linkedin.com/company/nsccbpit/://twitter.com/nscc_bpit">
+        <a href="http://www.linkedin.com/company/namespacecomm/">
           <img src="./img/linkedin.svg" alt="LinkedIn" />
         </a>
         &nbsp;
-        <a href="http://instagram.com/nscc_bpit">
+        <a href="http://instagram.com/namespacecomm">
           <img src="./img/insta.svg" alt="Instagram" />
         </a>
         &nbsp;
@@ -115,14 +115,14 @@ const Footer = () => {
           <img src="./img/github.svg" alt="GitHub" />
         </a>
         &nbsp;
-        <a href="https://twitter.com/nscc_bpit">
-          <img src="./img/twit.svg" alt="Twitter" />
+        <a href="https://twitter.com/namespacecomm">
+          <img src="./img/icons8-twitter.svg" alt="Twitter" />
         </a>
         &nbsp;
-        <a href="mailto:nscc@bpitindia.com">
+        <a href="mailto:namespace@bpitindia.com">
           <img src="./img/email.svg" alt="Gmail" />
         </a>
-      </RightText> */}
+      </RightText>
     </Section>
   );
 };
