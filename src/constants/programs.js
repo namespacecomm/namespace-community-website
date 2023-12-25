@@ -1,7 +1,7 @@
 export const programsList = [
     {
         name: "AlgoRumble",
-        description:"AlgoRumble is NSCC's bi-weekly Data Structures and Algorithms contest, an engaging event designed to test participants' problem-solving skills and algorithmic ability. The problems are set by the members themselves on a rotating basis while the others participate in it and try to solve in the minimum time. This program fosters the spirit of healthy competition among the members.",
+        description:"AlgoRumble is nameSpace's bi-weekly Data Structures and Algorithms contest, an engaging event designed to test participants' problem-solving skills and algorithmic ability. The problems are set by the members themselves on a rotating basis while the others participate in it and try to solve in the minimum time. This program fosters the spirit of healthy competition among the members.",
         image: "./img/internal-programs/algorumble.png",
     },
     {
@@ -11,7 +11,7 @@ export const programsList = [
     },
     {
         name: "TechTrek",
-        description:"TechTrek is a series of interactive sessions on various technology topics to enrich knowledge and skills taken by seniors of NSCC. From cutting-edge advancements to practical applications, each session is carefully curated to enrich knowledge and expand horizons.",
+        description:"TechTrek is a series of interactive sessions on various technology topics to enrich knowledge and skills taken by seniors of nameSpace. From cutting-edge advancements to practical applications, each session is carefully curated to enrich knowledge and expand horizons.",
         image: "./img/internal-programs/techtrek.png"
     },
 ];
