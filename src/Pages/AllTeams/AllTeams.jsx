@@ -66,7 +66,7 @@ function AllTeams() {
 
             <div className="flex items-center justify-center">
               <a
-                href="https://drive.google.com/file/d/1A-VyrV37sfBCl9OJ_0FYSlwMsYM-sBvG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1zvfboD5gVlyCwf3LVGRGYaqpwe2MtPLC/view"
                 target="_blank"
                 rel="noreferrer"
               >

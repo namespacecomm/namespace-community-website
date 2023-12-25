@@ -63,7 +63,7 @@ function AllEvents() {
 
             <div className="flex items-center justify-center pb-12">
               <a
-                href="https://drive.google.com/file/d/1CcTMB0-GI-5iLARLcG-HRfxNrxp2m8jC/view?usp=sharing"
+                href="https://drive.google.com/file/d/18CDQ8mmNEZ23BU2lLYmAx-6azjTcZaHi/view"
                 target="_blank"
                 rel="noreferrer"
               >
