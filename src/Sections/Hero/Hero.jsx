@@ -220,7 +220,7 @@ const Img = styled.iframe`
 const Hero = () => {
   return (
     <>
-      {/* <Section>
+      <Section>
         <Container>
           <Left>
             <Title>nameSpace</Title>
@@ -229,19 +229,12 @@ const Hero = () => {
             </WhatWeDo>
             <Desc>Bhagwan Parshuram Institute of Technology</Desc>
             <ShortDesc>GGSIPU, New Delhi, India</ShortDesc>
-          </Left>
-          <Right>
-             <Img src="https://lottie.host/?file=fe1d3145-79b7-4182-80dd-1423ad43a711/7RadpBKtoe.json"></Img>
-            <Img src="https://res.cloudinary.com/df5hitkbj/image/upload/v1703252462/Public_groups111_c5kyj1.png"></Img>
-          </Right> 
-          
+          </Left>          
           <BackToTopButton />
         </Container>
         
-      </Section> */}
-      <div>
-      <img src="https://res.cloudinary.com/df5hitkbj/image/upload/v1703252462/Public_groups111_c5kyj1.png" alt="" className="image"/>
-      </div>
+      </Section>
+      
 
       <div className="container">
         <Canvas camera={{ position: [0, 0, 1] }}>
@@ -253,12 +246,12 @@ const Hero = () => {
         </Canvas>
       </div>
       
-      {/* <About />
+      <About />
       <Teams />
       <Events />
       <SocialMedia />
       <Testimonials />
-      <Contact /> */}
+      <Contact />
     </>
   );
 };
