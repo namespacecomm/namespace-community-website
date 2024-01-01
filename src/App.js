@@ -91,6 +91,7 @@ import SortAlgo from "./Pages/AllResources/compProgALL/sortalgo";
 import SearchAlgo from "./Pages/AllResources/compProgALL/searchalgo";
 import DpAlgo from "./Pages/AllResources/compProgALL/dynamicpro";
 import { ORACLECLOUD } from "./Pages/AllResources/devopsALL/oracle-cloud";
+import TechX from "./Pages/TechXcelerate/Techx";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -119,6 +120,7 @@ function App() {
               <Route path="programs" element={<Programs />} />
               <Route path="projects" element={<Projects />} />
               <Route path="resources" element={<Resources />} />
+              <Route path="techx" element={<TechX />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
               <Route path="sortalgo" element={<SortAlgo />} />
