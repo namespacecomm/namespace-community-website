@@ -226,6 +226,17 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
+              to="/techx"
+              className={activeNavLink === "/techx" ? "active" : ""}
+            >
+              <div>
+                TechXcelerate
+                {activeNavLink === "/techx" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+            <NavbarLink
               to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
               target="_blank"
               className={
@@ -267,6 +278,7 @@ function Navbar() {
           <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
             Blog
           </NavbarLinkExtended>
+          <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website" target="_blank">
             Contribute
           </NavbarLinkExtended>

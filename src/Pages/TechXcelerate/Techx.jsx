@@ -79,7 +79,7 @@ function TechX() {
             </h2>
 
             <p className="max-w-4xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              Our society launched TechXcelerate, in April this year, a series
+              Our society launched TechXcelerate, in April of last year, a series
               of interactive sessions aimed at first and second year students.
               These sessions feature beginner level topics and the necessary
               tips and tricks to learn the various technical domains covering
