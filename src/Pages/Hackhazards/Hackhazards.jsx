@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
+import CounterUp from "../../components/CounterUp";
 
 const Section = styled.div`
   display: flex;
@@ -102,9 +103,7 @@ function Hackhazards() {
                 </span>
               </h2>
 
-              
-
-              
+              <CounterUp />
               
             </>
           </div>
