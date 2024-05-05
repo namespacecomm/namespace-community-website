@@ -237,6 +237,17 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
+              to="/hackhazards"
+              className={activeNavLink === "/hackhazards" ? "active" : ""}
+            >
+              <div>
+                HACKHAZARDS
+                {activeNavLink === "/hackhazards" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+            <NavbarLink
               to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
               target="_blank"
               className={
