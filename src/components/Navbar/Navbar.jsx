@@ -290,6 +290,7 @@ function Navbar() {
             Blog
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
+          <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
           <NavbarLinkExtended to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website" target="_blank">
             Contribute
           </NavbarLinkExtended>
