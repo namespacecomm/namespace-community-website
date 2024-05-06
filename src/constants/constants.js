@@ -704,6 +704,7 @@ export const allmembers = [
     github: "https://github.com/PranavBarthwal",
     linkedin: "https://www.linkedin.com/in/pranav-barthwal-b1a3631ba",
     instagram: "https://instagram.com/pranavbarthwal_",
+    twitter: "https://twitter.com/pranavbarthwal_",
   },
 
   {
