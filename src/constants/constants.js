@@ -14,6 +14,18 @@ export const Galleryimages = [
   { src: "./img/5.jpg", alt: "Image 6" },
 ];
 
+export const hackhazardsImages=[
+  {src:"./img/hackhazards-images/img4.jpg",alt:"Image 4"},
+  {src:"./img/hackhazards-images/img1.jpg",alt:"Image 1"},
+  {src:"./img/hackhazards-images/img6.jpg",alt:"Image 6"},
+  {src:"./img/hackhazards-images/img3.jpg",alt:"Image 3"},
+  {src:"./img/hackhazards-images/img5.jpg",alt:"Image 5"},
+  {src:"./img/hackhazards-images/img2.jpg",alt:"Image 2"},
+  
+]
+
+
+
 export const testimonials = [
   {
     text: "It is great to be a part of such a great society. Here I got to work with many different individuals and learnt a lot of new skills both technical and non-technical such as how to manage a huge event like GeekTalk and knowing how much management and planning really goes into when organizing a event. The best society I have ever been a part of.",

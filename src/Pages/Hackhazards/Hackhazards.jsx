@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
 import CounterUp from "../../components/CounterUp";
+import Hackgallery from "../../components/Gallery/Hackgallery"
+import { hackhazardsImages } from "../../constants/constants";
 
 const Section = styled.div`
   display: flex;
@@ -32,7 +34,9 @@ const Section2 = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 2rem 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const YoutubeFrame = styled.iframe`
@@ -51,6 +55,28 @@ const Container = styled.div`
   scroll-snap-align: center;
   width: 1440px;
   padding-top: 100px;
+  @media only screen and (max-width: 738px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 1030px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Container2 = styled.div`
+  scroll-snap-align: center;
+  width: 1440px;
+  padding-top:20px;
   @media only screen and (max-width: 738px) {
     width: 100vw;
     justify-content: center;
@@ -107,8 +133,19 @@ function Hackhazards() {
               
             </>
           </div>
+          <h2 className=" pb-[130px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
+                Capturing{" "}
+                <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
+                  Innovation
+                </span>
+              </h2>
+          <div>
+          <Hackgallery images={hackhazardsImages} />
+          </div>
+  
         </Container>
       </Section>
+
     </>
   );
 }
