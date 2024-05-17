@@ -2,7 +2,7 @@ export const PastEvents = [
     {
         "date": "16/03/2024 - 17/03/2024",
         "name": "HACKHAZARDS '24",
-        "image": "./img/events/NSCC_62_Poster.jpg"
+        "image": "./img/events/NSCC_62_Poster.png"
     },
     {
         "date": "03/03/2024",
@@ -12,47 +12,47 @@ export const PastEvents = [
     {
         "date": "27/01/2024",
         "name": "TechX 2.0 : DevOps",
-        "image": "./img/events/techx2_8.jpg"
+        "image": "./img/events/techx2_8.png"
     },
     {
         "date": "26/01/2024",
         "name": "TechX 2.0 : Cyber Security",
-        "image": "./img/events/techx2_7.jpg"
+        "image": "./img/events/techx2_7.png"
     },
     {
         "date": "25/01/2024",
         "name": "TechX 2.0 : Web Development",
-        "image": "./img/events/techx2_6.jpg"
+        "image": "./img/events/techx2_6.png"
     },
     {
         "date": "24/01/2024",
         "name": "TechX 2.0 : AI & ML",
-        "image": "./img/events/techx2_5.jpg"
+        "image": "./img/events/techx2_5.png"
     },
     {
         "date": "23/01/2024",
         "name": "TechX 2.0 : Blockchain",
-        "image": "./img/events/techx2_4.jpg"
+        "image": "./img/events/techx2_4.png"
     },
     {
         "date": "22/01/2024",
         "name": "TechX 2.0 : App Development",
-        "image": "./img/events/techx2_3.jpg"
+        "image": "./img/events/techx2_3.png"
     },
     {
         "date": "21/01/2024",
         "name": "TechX 2.0 : Open Source",
-        "image": "./img/events/techx2_2.jpg"
+        "image": "./img/events/techx2_2.png"
     },
     {
         "date": "20/01/2024",
         "name": "TechX 2.0 : DSA & CP",
-        "image": "./img/events/techx2_1.jpg"
+        "image": "./img/events/techx2_1.png"
     },
     {
         "date": "17/11/2023",
         "name": "Internal Meet",
-        "image": "./img/events/NSCC_52_Poster.jpg"
+        "image": "./img/events/NSCC_52_Poster.png"
     },
     {
         "date": "22/10/2023",
