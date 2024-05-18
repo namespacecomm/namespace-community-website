@@ -1,9 +1,70 @@
 export const PastEvents = [
     {
-        "date": "24/09/2023",
-        "name": "NSCC BPIT Orientation",
-        "image": "./img/events/NSCC_49_Poster.jpg"
+        "date": "16/03/2024 - 17/03/2024",
+        "name": "HACKHAZARDS '24",
+        "image": "./img/events/NSCC_62_Poster.png"
     },
+    {
+        "date": "03/03/2024",
+        "name": "Placement Session by Taruvar Mittal",
+        "image": "./img/events/NSCC_61_Poster.jpg"
+    },
+    {
+        "date": "27/01/2024",
+        "name": "TechX 2.0 : DevOps",
+        "image": "./img/events/techx2_8.png"
+    },
+    {
+        "date": "26/01/2024",
+        "name": "TechX 2.0 : Cyber Security",
+        "image": "./img/events/techx2_7.png"
+    },
+    {
+        "date": "25/01/2024",
+        "name": "TechX 2.0 : Web Development",
+        "image": "./img/events/techx2_6.png"
+    },
+    {
+        "date": "24/01/2024",
+        "name": "TechX 2.0 : AI & ML",
+        "image": "./img/events/techx2_5.png"
+    },
+    {
+        "date": "23/01/2024",
+        "name": "TechX 2.0 : Blockchain",
+        "image": "./img/events/techx2_4.png"
+    },
+    {
+        "date": "22/01/2024",
+        "name": "TechX 2.0 : App Development",
+        "image": "./img/events/techx2_3.png"
+    },
+    {
+        "date": "21/01/2024",
+        "name": "TechX 2.0 : Open Source",
+        "image": "./img/events/techx2_2.png"
+    },
+    {
+        "date": "20/01/2024",
+        "name": "TechX 2.0 : DSA & CP",
+        "image": "./img/events/techx2_1.png"
+    },
+    {
+        "date": "17/11/2023",
+        "name": "Internal Meet",
+        "image": "./img/events/NSCC_52_Poster.png"
+    },
+    {
+        "date": "22/10/2023",
+        "name": "API 101 using Postman",
+        "image": "./img/events/NSCC_51_Poster.jpg"
+    },
+    {
+        "date": "21/10/2023",
+        "name": "Game of Codes 3.0",
+        "image": "./img/events/NSCC_50_Poster.jpg"
+    }
+    ,
     {
         "date": "17/09/2023",
         "name": "SIH Guidance Session",
