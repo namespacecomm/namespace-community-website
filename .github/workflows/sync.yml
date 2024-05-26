@@ -1,0 +1,28 @@
+name: Sync Fork with Main
+
+on:
+  push:
+    branches:
+      - master  # Trigger on pushes to the main repository's master branch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout main repo
+      uses: actions/checkout@v2
+      with:
+        repository: namespacecomm/NSCC-BPIT-Website
+        ref: master
+
+    - name: Checkout fork
+      uses: actions/checkout@v2
+      with:
+        repository: pradeeptosarkar/NSCC-BPIT-Website
+
+    - name: Merge changes from main repo
+      run: git merge main/master
+
+    - name: Push changes to fork
+      run: git push origin HEAD
