@@ -22,7 +22,7 @@ jobs:
         repository: pradeeptosarkar/NSCC-BPIT-Website
 
     - name: Merge changes from main repo
-      run: git merge main/master
+      run: git merge master
 
     - name: Push changes to fork
       run: git push origin HEAD
