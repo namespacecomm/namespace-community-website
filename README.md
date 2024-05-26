@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h1 align="center"> The nameSpace Community (previously NSCC BPIT) WEBSITE </h1>
+<h1 align="center"> The nameSpace Community (formerly NSCC BPIT) WEBSITE </h1>
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
