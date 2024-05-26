@@ -10,26 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Use Node.js version 20
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.x'
+
     - name: Checkout main repo
       uses: actions/checkout@v2
       with:
         repository: namespacecomm/NSCC-BPIT-Website
         ref: master
-      # Update the Node.js version
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: [20.x]
-    
+
     - name: Checkout fork
       uses: actions/checkout@v2
       with:
         repository: pradeeptosarkar/NSCC-BPIT-Website
-      # Update the Node.js version
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: [20.x]
 
     - name: Merge changes from main repo
       run: git merge master
