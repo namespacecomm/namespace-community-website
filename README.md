@@ -120,14 +120,16 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 ### Screenshots of Website
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/75252077/e2cd56e6-d766-4ae7-9846-b5552b6cb609)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/75252077/24381947-21c6-4441-95a5-f36344030614)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/75252077/dd9bdb32-aa7b-442f-bcff-27e3a57214a8)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/91420120/b2ffde37-7da8-410e-9514-403f9bc683ed)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/91420120/478a1b13-77d7-45dd-b4a1-72d54f0b77a8)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/91420120/5da88f86-157a-44db-85f1-c3c6ce9e1e15)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/91420120/57af714a-97c6-4311-b23d-48c8523561c3)
-# ![image](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/assets/91420120/0ac3e6b6-3d54-4840-aa7d-11b8d819cbb4)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/4cf2ac82-532b-4725-a4ff-e952fedbc436)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/73564568-0db7-4c8b-9e2b-88eb072c6e7f)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b837d62a-89b1-44df-b6f3-f88327f27beb)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/ed89fd52-06eb-4990-8cb7-5c16439a643c)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/3cb257ab-e82e-439a-a0b3-37aece34c1ed)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/dad350ba-74a3-471e-b199-5da8bdb7df75)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/efa5c692-685c-490c-983e-d2c7ca023cc3)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/a9485906-641a-459d-b644-5f21d483e867)
+# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b05575d1-c830-47f3-8345-bae3388305d8)
+
   <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
