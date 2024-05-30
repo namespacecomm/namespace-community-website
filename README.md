@@ -262,7 +262,8 @@ You can refer to the following articles on the basics of Git and Github and also
 
 If you have any feedback or suggestions please reach out to maintainers.  
 * [Manan khandelwal](https://github.com/mnnkhndlwl)
-* [Pradeepto Sarkar](https://github.com/pradeeptosarkar) 
+* [Pradeepto Sarkar](https://github.com/pradeeptosarkar)
+* [Pranav Barthwal](https://github.com/PranavBarthwal)  
   
 Or you can create a  <a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">issue</a> and mention there , which features can make this Project more good.
 
