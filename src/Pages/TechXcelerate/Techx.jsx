@@ -92,7 +92,9 @@ function TechX() {
               from that.
             </p>
 
-            <div className="mx-auto flex flex-col gap-3">
+            {/* Embedded Luma registration form */}
+
+            {/* <div className="mx-auto flex flex-col gap-3">
               <div className="flex items-center justify-between flex-wrap gap-5">
                 <h4 className="font-bold md:text-[64px] text-[44px] text-white mt-[100px]">
                   Register for TechXcelerate 2.0
@@ -116,7 +118,7 @@ function TechX() {
                 allowfullscreen=""
                 aria-hidden="false"
               />
-            </div>
+            </div> */}
 
             <>
               <h2 className="mt-[100px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
@@ -126,7 +128,7 @@ function TechX() {
                 </span>
               </h2>
 
-              <div className="flex items-center justify-center mt-4">
+              {/* <div className="flex items-center justify-center mt-4">
                 <a
                   href="https://drive.google.com/drive/folders/1eVfG4LUVbiEJ02F46odyqiRfhX342PXW?usp=sharing"
                   target="_blank"
@@ -139,9 +141,9 @@ function TechX() {
                     Access Previous Year PPTs
                   </button>
                 </a>
-              </div>
+              </div> */}
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center mt-4">
                 <a
                   href="https://www.youtube.com/@namespacecomm"
                   target="_blank"
@@ -157,19 +159,14 @@ function TechX() {
               </div>
               <Section2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
-                  <YoutubeFrame src="https://www.youtube.com/embed/eWc6eVcaLyw?si=QA9_CUfmkNKABWT0" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/aezbGftYJhA?si=8JrrimqBNSNcmiaW" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/M6ZLkN-Hvww?si=8CZSs0VrLxFtSYlE" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/qS8K2hVPfm0?si=-az_q1omrXTmO5vJ" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/I2AvuoJVpIo?si=SfEHF17CkvlcOoxn" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/Lu5l4THO5GM?si=MtrbhG8czkmBFMSi" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/MWXZCJJbdk4?si=qacDkoxUnLPo_G5G" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/SLT30RUO-2I?si=2EsMnq-vwz9hSRvl" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/36cxpDBBHlU?si=n_T_kW6Hk49qyxSx" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/PzAiSJdDO7o?si=vgyQslC7TS0vQh1I" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/hXA1l1by-vE?si=Fnw8tcAuj85TetR2" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/ZPc-MAv-6Kk?si=qpWXMKQAJ-mu7ACS" />
-                  <YoutubeFrame src="https://www.youtube.com/embed/dnSgiQffc6o?si=jvnDkPUgx_jRXpWK" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/yw_5wT0OTfE?si=dLhthxsHjwVNt0AR" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/3P836wOGiJM?si=1ytAtyA-py_NJ7dU" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/GtFKD7S2DGY?si=Ibo54vY63ewepwa_" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/hP5s45CRFP8?si=D7-R3NmNZYmKV0_1" />
+                  <YoutubeFrame src="" />
+                  <YoutubeFrame src="" />
+                  <YoutubeFrame src="" />
+                  <YoutubeFrame src="" />
                 </div>
               </Section2>
             </>
