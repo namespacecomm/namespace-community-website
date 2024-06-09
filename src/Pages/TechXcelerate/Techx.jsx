@@ -79,17 +79,13 @@ function TechX() {
             </h2>
 
             <p className="max-w-4xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              Our society launched TechXcelerate, in April of last year, a series
-              of interactive sessions aimed at first and second year students.
-              These sessions feature beginner level topics and the necessary
-              tips and tricks to learn the various technical domains covering
-              Competitive Programming, web development, app development, data
-              science etc. The very first edition saw participation from 1,200
-              unique students from various colleges across India, with 15+ hours
-              of live interaction. TechXcelerate 2023 generated more than 5,000
-              impressions across social media channels in only 10 days and the
-              upcoming edition in Jan 2024 will surely be a huge improvement
-              from that.
+            Our society launched TechXcelerate in April 2023, a series of interactive sessions aimed at first and second-year 
+            students. These sessions feature beginner-level topics and the necessary tips and tricks to learn various technical 
+            domains, covering Competitive Programming, web development, app development, data science, and more. This year's 
+            sessions were delivered by some of the most prominent figures in the industry. We witnessed participation 
+            from 1,800+ unique students from various colleges across India, with 9+ hours of live interaction. TechXcelerate 
+            2.0 generated more than 7,500 impressions across social media channels in only 10 days, and the upcoming editions will 
+            surely see even greater success.
             </p>
 
             {/* Embedded Luma registration form */}
@@ -163,10 +159,10 @@ function TechX() {
                   <YoutubeFrame src="https://www.youtube.com/embed/3P836wOGiJM?si=1ytAtyA-py_NJ7dU" />
                   <YoutubeFrame src="https://www.youtube.com/embed/GtFKD7S2DGY?si=Ibo54vY63ewepwa_" />
                   <YoutubeFrame src="https://www.youtube.com/embed/hP5s45CRFP8?si=D7-R3NmNZYmKV0_1" />
-                  <YoutubeFrame src="" />
-                  <YoutubeFrame src="" />
-                  <YoutubeFrame src="" />
-                  <YoutubeFrame src="" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/0S7-9D5emFM?si=81uAyTDD7SfmrBk4" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/0E-tI0M9eXY?si=0FC5N6inUazL5sZE" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/1DaSopBmZAk?si=1fZWAN8tqEQCcU21" />
+                  <YoutubeFrame src="https://www.youtube.com/embed/jJScsZOrdzw?si=ODK4_oIOHlH6G13O" />
                 </div>
               </Section2>
             </>
