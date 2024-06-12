@@ -223,12 +223,13 @@ const Hero = () => {
       <Section>
         <Container>
           <Left>
+            <Subtitle>THE</Subtitle>
             <Title>nameSpace</Title>
             <WhatWeDo>
-              <Subtitle>formerly NSCC BPIT</Subtitle>
+              <Subtitle>COMMUNITY</Subtitle>
             </WhatWeDo>
-            <Desc>Bhagwan Parshuram Institute of Technology</Desc>
-            <ShortDesc>GGSIPU, New Delhi, India</ShortDesc>
+            <Desc>Guru Gobind Singh Indraprastha University</Desc>
+            <ShortDesc>New Delhi, India</ShortDesc>
           </Left>          
           <BackToTopButton />
         </Container>
