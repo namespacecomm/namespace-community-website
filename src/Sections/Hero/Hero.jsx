@@ -223,7 +223,7 @@ const Hero = () => {
       <Section>
         <Container>
           <Left>
-            <Subtitle>The</Subtitle>
+            <Subtitle>THE</Subtitle>
             <Title>nameSpace</Title>
             <WhatWeDo>
               <Subtitle>COMMUNITY</Subtitle>
