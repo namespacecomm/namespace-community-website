@@ -100,18 +100,6 @@ export const members = [
 
   {
     image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141355/WhatsApp_Image_2023-08-27_at_18.31.44_bcdpq4.jpg",
-    name: "Pradeepto Sarkar",
-    position: "Founder & Ex-President",
-    team: "SC",
-    github: "https://github.com/pradeeptosarkar",
-    linkedin: "https://www.linkedin.com/in/pradeeptosarkar",
-    instagram: "https://instagram.com/pradeeptosarkar",
-    twitter: "https://twitter.com/pradeepto_src",
-  },
-
-  {
-    image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1693144357/WhatsApp_Image_2023-08-27_at_19.22.07_aar0ka.jpg",
     name: "Anushka Singh",
     position: "President",
