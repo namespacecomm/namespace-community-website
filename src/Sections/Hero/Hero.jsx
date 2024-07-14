@@ -228,8 +228,9 @@ const Hero = () => {
             <WhatWeDo>
               <Subtitle>COMMUNITY</Subtitle>
             </WhatWeDo>
-            <Desc>Guru Gobind Singh Indraprastha University</Desc>
-            <ShortDesc>New Delhi, India</ShortDesc>
+            <Desc><p><i>Infinite Horizons, One Community</i></p></Desc>
+            
+            
           </Left>          
           <BackToTopButton />
         </Container>
