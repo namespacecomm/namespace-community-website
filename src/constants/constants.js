@@ -290,7 +290,7 @@ export const members = [
   },
 
   {
-    name: "Vang Garg",
+    name: "Vansh Garg",
     image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720980985/Vansh_Garg_aqqpmv.jpg",
     position: "Junior Council",
     github: "https://github.com/VANSHG2005",
