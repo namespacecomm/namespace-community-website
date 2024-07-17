@@ -124,7 +124,8 @@ export const members = [
   {
     name: "Diksha Sharma",
     image:
-      "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1721118974/WhatsApp_Image_2024-07-16_at_1.23.42_PM_ikufnp.jpg",
+      "https://res.cloudinary.com/dbffy7v9s/image/upload/v1721230258/xcu3r48yugyf0zht68fx.jpg",
+
     position: "President",
     github: "https://github.com/DikshaDhasmana",
     linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
@@ -663,7 +664,7 @@ export const allmembers = [
   {
     name: "Diksha Sharma",
     image:
-      "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1721118974/WhatsApp_Image_2024-07-16_at_1.23.42_PM_ikufnp.jpg",
+      "https://res.cloudinary.com/dbffy7v9s/image/upload/v1721230258/xcu3r48yugyf0zht68fx.jpg",
     position: "Junior Council",
     github: "https://github.com/DikshaDhasmana",
     linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
