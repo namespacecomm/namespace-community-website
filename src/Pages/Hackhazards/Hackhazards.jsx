@@ -141,10 +141,9 @@ function Hackhazards() {
           <div>
           <Hackgallery images={hackhazardsImages} />
           </div>
-  
         </Container>
       </Section>
-
+    
     </>
   );
 }
