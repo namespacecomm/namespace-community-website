@@ -120,30 +120,23 @@ const WhatWeDo = styled.div`
 `;
 
 const Subtitle = styled.p`
-  margin-top:5px;
-  text-align:center;
+  margin-top: 5px;
+  text-align: center;
   font-size: 40px;
   font-weight: bold;
-  background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
     #3530cf 0%,
     #44cfcf 100%
-  );
+  ); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   @media screen and (max-width: 424px) {
+  -webkit-text-fill-color: transparent; 
+  
+  @media screen and (max-width: 424px) {
     font-size: 22px;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
     font-size: 23px;
-  }
-  @media screen and (min-width: 769px) and (max-width: 1030px) {
-    font-size: 40px;
-  }
-
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 40px;
   }
 `;
 
