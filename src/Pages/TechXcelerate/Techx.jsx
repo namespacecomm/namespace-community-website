@@ -153,6 +153,17 @@ function TechX() {
                   </button>
                 </a>
               </div>
+
+              <div className="w-full flex justify-center">
+                <a href="https://techx.namespacecomm.in" target="_blank" className="">
+                    <button
+                    type="button"
+                    className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
+                    >
+                            Visit Our Website
+                    </button>
+                </a>    
+            </div>
               <Section2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
                   <YoutubeFrame src="https://www.youtube.com/embed/yw_5wT0OTfE?si=dLhthxsHjwVNt0AR" />
