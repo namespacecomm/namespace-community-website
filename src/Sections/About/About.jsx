@@ -93,14 +93,15 @@ const About = () => {
           <Right>
             <Title>About nameSpace</Title>
             <Desc>
-              nameSpace formerly NSCC BPIT is a community of like-minded
+              The nameSpace Community is an organization of like-minded
               individuals who share a passion for technology and are committed
               to helping each other become the best developers they can be.
               Whether you're just starting out in your coding journey or a
-              seasoned pro, our society is a place where you can connect with
+              seasoned pro, our community is a place where you can connect with
               other tech enthusiasts, share your knowledge, and grow your
-              skills. Founded in 2022, nameSpace formerly NSCC BPIT has quickly grown to become one
-              of the largest technical community.
+              skills. Founded in 2022, nameSpace has quickly grown to become one
+              of the largest technical communities in Delhi-NCR and is racing towards
+              further expansion and deeper penetration in its core segments. 
             </Desc>
           </Right>
         </Container>
