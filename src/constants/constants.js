@@ -105,18 +105,6 @@ export const testimonials = [
 export const members = [
 
   {
-    image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1693141355/WhatsApp_Image_2023-08-27_at_18.31.44_bcdpq4.jpg",
-    name: "Pradeepto Sarkar",
-    position: "Founder & Advisor",
-    team: "SC",
-    github: "https://github.com/pradeeptosarkar",
-    linkedin: "https://www.linkedin.com/in/pradeeptosarkar",
-    instagram: "https://instagram.com/pradeeptosarkar",
-    twitter: "https://twitter.com/pradeepto_src",
-  },
-
-  {
     name: "Pranav Barthwal",
     image:
       "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/PranavBarthwal_1_ycli1h.jpg",
@@ -367,7 +355,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236656995-6815699e-d7bd-49d0-b0c9-2df920d57884.jpg",
     name: "Rajat Gupta",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "https://github.com/guptraj",
     linkedin: "https://www.linkedin.com/in/rajat-gupta-9a0a80175",
@@ -379,7 +367,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236657010-53641de3-591f-4a61-87c6-c94d2209d52f.jpg",
     name: "Kartik Sharma",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "https://github.com/krtk-097",
     linkedin: "https://www.linkedin.com/in/kartiksharma01/",
@@ -391,7 +379,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236657113-d0c60da5-7df8-442f-940f-72454982f671.jpg",
     name: "Isha Bansal",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/isha-bansal-439a51215",
@@ -403,7 +391,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236657135-1edb8cab-c347-4be5-ae9c-506555c699eb.jpeg",
     name: "Prasuk Jain",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "https://github.com/JPrasuk31",
     linkedin: "https://www.linkedin.com/in/prasuk-jain-52bb55203/",
@@ -415,7 +403,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236657164-56f95fb6-2a4b-49de-901b-fdfe4d1b5b97.jpg",
     name: "Deepika",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "https://github.com/deepika-sys",
     linkedin: "https://www.linkedin.com/in/deepika-583a1b209",
@@ -427,7 +415,7 @@ export const allmembers = [
     image:
       "https://github-production-user-asset-6210df.s3.amazonaws.com/50446690/241362588-f5980a33-1a02-482d-9c3c-d5bf1575bada.jpg",
     name: "Prishita Aggarwal",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "",
     linkedin: "https://www.linkedin.com/in/prishita-aggarwal",
@@ -439,7 +427,7 @@ export const allmembers = [
     image:
       "https://user-images.githubusercontent.com/75252077/236657406-e6b46519-5a51-4be0-ac68-1ead8f42b56c.jpg",
     name: "Vishesh Khare",
-    position: "Founder",
+    position: "Co-Founder",
     team: "SC",
     github: "https://github.com/visheshkhare",
     linkedin: "https://www.linkedin.com/in/vishesh-khare-4a8869185",
