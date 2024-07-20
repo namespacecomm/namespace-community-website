@@ -246,7 +246,7 @@ const Hero = () => {
       
       <About />
       <Teams />
-      <Founder />
+      {/* <Founder /> */}
       <Events />
       <SocialMedia />
       <Testimonials />
