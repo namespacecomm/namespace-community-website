@@ -5,6 +5,11 @@ export const images = [
   { src: "./img/5.jpg", alt: "Image 4" },
 ];
 
+export const founderImages = [
+  {src: "./img/founder1.png", alt: "Pradeepto 1"},
+  {src: "./img/founder2.png", alt: "Pradeepto 2"}
+];
+
 export const Galleryimages = [
   { src: "./img/1.jfif", alt: "Image 1" },
   { src: "./img/4.jpg", alt: "Image 2" },
