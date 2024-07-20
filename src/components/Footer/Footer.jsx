@@ -85,7 +85,7 @@ const CenterText = styled.div`
 
 const TrademarkText = styled.div`
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 0.8rem;
   color: #888;
   @media only Screen and (max-width: 48em) {
