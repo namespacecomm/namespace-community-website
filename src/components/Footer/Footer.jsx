@@ -5,33 +5,26 @@ import { Linkedin, Instagram, Github, Twitter, Mail, Youtube } from "lucide-reac
 const Section = styled.footer`
   padding: 1.2rem;
   font-size: 1rem;
-  ${
-    "" /* background: rgb(9, 9, 121);
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
   background-color: #010116;
   display: flex;
-  padding: 30px 60px;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  padding: 30px 60px;
   @media only Screen and (max-width: 48em) {
     width: 100vw;
-    flex-direction: column;
-    align-items: center;
     margin-top: 16px;
     font-size: 14px;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only Screen and (max-width: 48em) {
+    flex-direction: column;
     justify-content: center;
-    ${
-      "" /* div {
-      &:first-child {
-        margin-bottom: 1rem;
-      }
-    } */
-    }
   }
 `;
 
@@ -41,13 +34,13 @@ const RightText = styled.div`
   width: 25rem;
 
   p {
-    margin-right: 1rem; /* Add margin to the right of the paragraph */
+    margin-right: 1rem;
   }
 
   a {
-    margin-right: 1rem; /* Add margin between icons */
+    margin-right: 1rem;
     &:last-child {
-      margin-right: 0; /* Remove margin for the last icon */
+      margin-right: 0;
     }
 
     &:hover {
@@ -84,7 +77,17 @@ const LeftText = styled.div`
 const CenterText = styled.div`
   text-align: center;
   align-items: center;
-  width: 25 rem;
+  width: 25rem;
+  @media only Screen and (max-width: 48em) {
+    text-align: center;
+  }
+`;
+
+const TrademarkText = styled.div`
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #888;
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
@@ -98,44 +101,49 @@ const Footer = () => {
 
   return (
     <Section>
-      <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
+      <ContentWrapper>
+        <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
 
-      <CenterText>
-        Made with ❤️ and 🧠 by{" "}
-        <a
-          style={{ color: "pink" }}
-          href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-        >
-          Team nameSpace
-        </a>
-      </CenterText>
+        <CenterText>
+          Made with ❤️ and 🧠 by{" "}
+          <a
+            style={{ color: "pink" }}
+            href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+          >
+            Team nameSpace
+          </a>
+        </CenterText>
 
-      <RightText>
-        <p>Reach out to us via </p>
-        <a href="http://instagram.com/namespacecomm">
-          <Instagram size={24} />
-        </a>
-        &nbsp;
-        <a href="http://www.linkedin.com/company/namespacecomm/">
-          <Linkedin size={24} />
-        </a>
-        &nbsp;
-        <a href="https://www.youtube.com/@namespacecomm">
-          <Youtube size={24} />
-        </a>
-        &nbsp;
-        <a href="https://github.com/NSCC-BPIT">
-          <Github size={24} />
-        </a>
-        &nbsp;
-        <a href="https://twitter.com/namespacecomm">
-          <Twitter size={24} />
-        </a>
-        &nbsp;
-        <a href="mailto:namespace@bpitindia.com">
-          <Mail size={24} />
-        </a>
-      </RightText>
+        <RightText>
+          <p>Reach out to us via </p>
+          <a href="http://instagram.com/namespacecomm">
+            <Instagram size={24} />
+          </a>
+          &nbsp;
+          <a href="http://www.linkedin.com/company/namespacecomm/">
+            <Linkedin size={24} />
+          </a>
+          &nbsp;
+          <a href="https://www.youtube.com/@namespacecomm">
+            <Youtube size={24} />
+          </a>
+          &nbsp;
+          <a href="https://github.com/namespacecomm">
+            <Github size={24} />
+          </a>
+          &nbsp;
+          <a href="https://twitter.com/namespacecomm">
+            <Twitter size={24} />
+          </a>
+          &nbsp;
+          <a href="mailto:namespace@bpitindia.com">
+            <Mail size={24} />
+          </a>
+        </RightText>
+      </ContentWrapper>
+      <TrademarkText>
+        "HACKHAZARDS", "TechXcelerate", "TechTrek", "AlgoRumble", "TechRumble", "Game of Codes", "nameSpace" and "The nameSpace Community" are the registered trademarks of The nameSpace Community Organization and its affiliates. All rights reserved.
+      </TrademarkText>
     </Section>
   );
 };
