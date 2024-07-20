@@ -158,13 +158,10 @@ function App() {
               <Route path="Keras" element={<Keras />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
-			        <Route path="netlify" element={<NETLIFY />} />
+              <Route path="netlify" element={<NETLIFY />} />
               <Route path="firebase" element={<Firebase />} />
               <Route path="oracle-cloud" element={<ORACLECLOUD />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
+              <Route path="frontend-framework" element={<FrontEndFramework />} />
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="ansible" element={<ANSIBLE />} />
@@ -180,7 +177,7 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="heroku" element={<HEROKU />} />
-             
+
 
 
               {/* Routes related to BLOCKCHAIN PATHS */}
@@ -227,9 +224,9 @@ function App() {
                 <Route path="unity3d" element={<Unity3D />} />
                 <Route path="webxr" element={<WebXR />} />
               </Route>
-              
+
               {/* competitive programming  */}
-             
+
               <Route path="uiux" element={<UIUX />} />
               <Route path="adobe" element={<ADOBE />} />
               <Route path="figma" element={<Figma />} />

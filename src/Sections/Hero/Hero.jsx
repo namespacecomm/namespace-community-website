@@ -13,6 +13,7 @@ import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import BackToTopButton from "../../components/BackToTop";
+import Founder from "../Founder/Founder";
 // const Section = styled.div`
 //   background-repeat: no-repeat;
 //   background: no-repeat url("./img/bg.jpg");
@@ -245,6 +246,7 @@ const Hero = () => {
       
       <About />
       <Teams />
+      <Founder />
       <Events />
       <SocialMedia />
       <Testimonials />

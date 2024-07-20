@@ -20,7 +20,7 @@ const Section = styled.div`
   ${"" /* background: no-repeat url("./img/bg.jpg"); */}
   background-color: #010116;
   @media only screen and (max-width: 768px) {
-    height: 80vh;
+    height: 100vh;
   }
 `;
 
@@ -30,16 +30,16 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
   flex: 1.5;
   align-items: center;
   justify-content: center;
-
-  @media only screen and (max-width: 1030px) {
-    display: none;
-  }
 `;
 
 const Title = styled.h1`
