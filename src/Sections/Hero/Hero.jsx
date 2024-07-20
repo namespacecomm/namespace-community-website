@@ -164,19 +164,21 @@ const Desc = styled.p`
     align-items: center;
 `;
 const ShortDesc = styled.p`
-  font-size: 16px;
+  font-size: 32px;
   text-align:center;
   color: lightgray;
-  padding-top: 4px;
+  padding-top: 8px;
+  margin-top: 4px;
 
   @media only screen and (max-width: 1030px) {
-    font-size: 16px;
+    font-size: 26px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 22px;
+    font-size: 28px;
   }
   @media only screen and (max-width: 760px) {
-    text-align: center;
+  font-size: 16px;  
+  text-align: center;
   }
 `;
 
@@ -228,7 +230,7 @@ const Hero = () => {
             <WhatWeDo>
               <Subtitle>COMMUNITY</Subtitle>
             </WhatWeDo>
-            <Desc><p><i>Infinite Horizons, One Community</i></p></Desc>
+            <ShortDesc><p><i>Infinite Horizons, One Community</i></p></ShortDesc>
             
             
           </Left>          
