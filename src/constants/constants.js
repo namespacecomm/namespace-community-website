@@ -124,7 +124,8 @@ export const members = [
   {
     name: "Diksha Sharma",
     image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/Diksha_Sharma_ins2c5.jpg",
+      "https://res.cloudinary.com/dbffy7v9s/image/upload/v1721230258/xcu3r48yugyf0zht68fx.jpg",
+
     position: "President",
     github: "https://github.com/DikshaDhasmana",
     linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
@@ -213,7 +214,7 @@ export const members = [
     instagram: "",
   },
 
-//  new
+
   {
     name: "Chetan Chauhan",
     image:
@@ -224,7 +225,7 @@ export const members = [
     instagram: "",
   },
 
-// new
+
   {
     name: "Garv Khurana",
     image:
@@ -235,7 +236,7 @@ export const members = [
     instagram: "",
   },
   
-  // new
+  
   {
     name: "Jatin Gera",
     image:
@@ -269,7 +270,7 @@ export const members = [
     position: "Junior Council",
     github: "https://github.com/shreyajaiswal17",
     linkedin: "http://www.linkedin.com/in/shreya-jaiswal17",
-    instagram: "https://www.instagram.com/shreya.j17/",
+    instagram: "",
   },
   {
     name: "Lavanya Varshney",
@@ -290,7 +291,7 @@ export const members = [
   },
 
   {
-    name: "Vang Garg",
+    name: "Vansh Garg",
     image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720980985/Vansh_Garg_aqqpmv.jpg",
     position: "Junior Council",
     github: "https://github.com/VANSHG2005",
@@ -588,7 +589,7 @@ export const allmembers = [
     linkedin: "https://www.linkedin.com/in/sujal-gupta-117154247/",
     instagram: "https://www.instagram.com/sujalgupta1214",
   },
- 
+
   {
     name: "Yuvan Grover",
     image:
@@ -598,8 +599,6 @@ export const allmembers = [
     linkedin: "https://www.linkedin.com/in/yuvan-grover-85b03526a",
     instagram: "",
   },
-
-
 
   {
   name : "Chetan Chauhan",
