@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Linkedin, Instagram, Github, Twitter, Mail, Youtube } from "lucide-react";
+import {
+  Linkedin,
+  Instagram,
+  Github,
+  Twitter,
+  Mail,
+  Youtube,
+} from "lucide-react";
 
 const Section = styled.footer`
   padding: 1.2rem;
@@ -68,7 +75,7 @@ const RightText = styled.div`
 
 const LeftText = styled.div`
   text-align: left;
-  width: 20rem;
+  width: 25rem;
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
@@ -77,7 +84,8 @@ const LeftText = styled.div`
 const CenterText = styled.div`
   text-align: center;
   align-items: center;
-  width: 25rem;
+  width: 100%; /* Ensure it spans the full width */
+  margin: 20px 0; /* Add margin to separate it from other content */
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
@@ -101,19 +109,17 @@ const Footer = () => {
 
   return (
     <Section>
+      <CenterText>
+        Made with ❤️ and 🧠 by{" "}
+        <a
+          style={{ color: "pink" }}
+          href="https://github.com/namespacecomm/NSCC-BPIT-Website"
+        >
+          Team nameSpace
+        </a>
+      </CenterText>
       <ContentWrapper>
         <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
-
-        <CenterText>
-          Made with ❤️ and 🧠 by{" "}
-          <a
-            style={{ color: "pink" }}
-            href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-          >
-            Team nameSpace
-          </a>
-        </CenterText>
-
         <RightText>
           <p>Reach out to us via </p>
           <a href="http://instagram.com/namespacecomm">
@@ -142,7 +148,10 @@ const Footer = () => {
         </RightText>
       </ContentWrapper>
       <TrademarkText>
-        "HACKHAZARDS", "TechXcelerate", "TechTrek", "AlgoRumble", "TechRumble", "Game of Codes", "nameSpace" and "The nameSpace Community" are the registered trademarks of The nameSpace Community Organization and its affiliates. All rights reserved.
+        "HACKHAZARDS", "TechXcelerate", "TechTrek", "AlgoRumble", "TechRumble",
+        "Game of Codes", "nameSpace" and "The nameSpace Community" are the
+        registered trademarks of The nameSpace Community Organization and its
+        affiliates. All rights reserved.
       </TrademarkText>
     </Section>
   );
