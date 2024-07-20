@@ -247,24 +247,6 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
-            <NavbarLink
-              to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-              target="_blank"
-              className={
-                activeNavLink ===
-                "https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-                  ? "active"
-                  : ""
-              }
-            >
-              <div>
-                Contribute
-                {activeNavLink ===
-                  "https://github.com/NSCC-BPIT/NSCC-BPIT-Website" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
           </NavLinks>
 
           <NavbarLinkContainer>
@@ -286,14 +268,9 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
-            Blog
-          </NavbarLinkExtended>
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">Blog</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
-          <NavbarLinkExtended to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website" target="_blank">
-            Contribute
-          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
