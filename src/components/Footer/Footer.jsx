@@ -119,7 +119,7 @@ const Footer = () => {
         </a>
       </CenterText>
       <ContentWrapper>
-        <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
+        <LeftText>© {year} The nameSpace Community and Organization</LeftText>
         <RightText>
           <p>Reach out to us via </p>
           <a href="http://instagram.com/namespacecomm">
