@@ -272,6 +272,21 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
+            <NavbarLink
+              to="/communityevangelist"
+              className={activeNavLink === "/communityevangelist" ? "active" : ""}
+            >
+              <div className="flex">
+                Community Evangelist
+                <span class="relative flex h-2 w-2 mx-1">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3636CF]/40 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-[#3b3b98]"></span>
+                </span>
+                {activeNavLink === "/communityevangelist" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
             {/* <NavbarLink
               to="/techx"
               className={activeNavLink === "/techx" ? "active" : ""}
