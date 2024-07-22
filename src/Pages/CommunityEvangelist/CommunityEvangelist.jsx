@@ -43,25 +43,8 @@ function CommunityEvangelist() {
             </h2>
 
             <p className="max-w-4xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-pink-500">
-              We are excited to announce the opening of applications for passionate and driven individuals to become Community Evangelists for nameSpace. This is a unique opportunity to play a pivotal role in expanding and enhancing our dynamic tech community.
+            We are excited to introduce the role of Community Evangelists, who will play a vital part in expanding our reach, strengthening our network, promoting engagement, and fostering leadership within the community. As a Community Evangelist, you will have the opportunity to create public groups for nameSpace, market public events and meetups, and lead initiatives that align with our mission.
             </p>
-
-            <h3 className="text-2xl font-bold leading-tight text-center text-white">
-              Why We Need
-              <span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800 m-1">
-                Community Evangelists
-            </span>
-              
-            </h3>
-            <p className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white">
-              As nameSpace continues to grow, Community Evangelists are essential to:
-            </p>
-            <ul className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white list-disc list-inside">
-              <li>Expand Our Reach: Connect with more students and professionals across various colleges and regions.</li>
-              <li>Strengthen Our Network: Foster connections within and outside the community, building a robust network of tech enthusiasts and professionals.</li>
-              <li>Promote Engagement: Ensure high participation and visibility for our events and meetups.</li>
-              <li>Foster Leadership: Lead initiatives and contribute to the strategic direction of nameSpace.</li>
-            </ul>
 
             <h3 className="text-2xl font-bold leading-tight text-center text-white">
               Role and
@@ -69,7 +52,7 @@ function CommunityEvangelist() {
                 Responsibilities
                 </span>
             </h3>
-            <ul className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white list-disc list-inside">
+            <ul className="max-w-4xl mx-auto my-5 text-left text-lg leading-tight text-white list-disc list-inside">
               <li>Create and Manage Public Groups: Foster a collaborative environment for members.</li>
               <li>Promote Public Events and Meetups: Actively market our events, ensuring high participation.</li>
               <li>Expand Community Reach: Engage students from various colleges to build a diverse network.</li>
@@ -82,9 +65,9 @@ function CommunityEvangelist() {
               Benefits
               </span>
             </h3>
-            <ul className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white list-disc list-inside">
+            <ul className="max-w-4xl mx-auto my-5 text-left text-lg leading-tight text-white list-disc list-inside">
               <li>Selection Letter and Completion Certificate</li>
-              <li>Connect with passionate developers! Expand your network and exchange ideas within a dynamic community.</li>
+              <li>Expand your network and exchange ideas within a dynamic community.</li>
               <li>Leadership Experience: Work under the established brand of the nameSpace Community.</li>
               <li>Exclusive Invitations: Attend all public meetups and flagship events.</li>
             </ul>
@@ -95,7 +78,7 @@ function CommunityEvangelist() {
                     Great Deal for You
                 </span>
             </h3>
-            <ul className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white list-disc list-inside">
+            <ul className="max-w-4xl mx-auto my-5 text-left text-lg leading-tight text-white list-disc list-inside">
               <li>Career Advancement: Boost your resume with valuable experience.</li>
               <li>Skill Development: Enhance leadership, project management, and marketing skills.</li>
               <li>Mentorship: Receive guidance from experienced professionals.</li>
@@ -108,7 +91,7 @@ function CommunityEvangelist() {
               Criteria
               </span>
             </h3>
-            <ul className="max-w-4xl mx-auto my-5 text-center text-lg leading-tight text-white list-disc list-inside">
+            <ul className="max-w-4xl mx-auto my-5 text-left text-lg leading-tight text-white list-disc list-inside">
               <li>Current Enrollment: 2nd or 3rd-year bachelor’s degree student.</li>
               <li>Community Passion: Genuine interest in building and supporting tech communities.</li>
               <li>Leadership Qualities: Ability to inspire and guide others.</li>
