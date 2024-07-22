@@ -272,7 +272,7 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
-            <NavbarLink
+            {/* <NavbarLink
               to="/communityevangelist"
               className={activeNavLink === "/communityevangelist" ? "active" : ""}
             >
@@ -286,7 +286,7 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink>
+            </NavbarLink> */}
             {/* <NavbarLink
               to="/techx"
               className={activeNavLink === "/techx" ? "active" : ""}
@@ -310,6 +310,12 @@ function Navbar() {
               </div>
             </NavbarLink> */}
           </NavLinks>
+
+          <NavbarLinkContainer>
+            <a href="/communityevangelist" target="" className="mr-6">
+              <Button>Become a Community Evangelist</Button>
+            </a>
+          </NavbarLinkContainer>
 
           <NavbarLinkContainer>
             <a href="https://linktr.ee/namespacecomm" target="_blank" className="mr-6">
