@@ -38,10 +38,11 @@ const ContentWrapper = styled.div`
 const RightText = styled.div`
   display: flex;
   align-items: center;
-  width: 25rem;
+  
 
   p {
     margin-right: 1rem;
+    width: 
   }
 
   a {
@@ -75,7 +76,6 @@ const RightText = styled.div`
 
 const LeftText = styled.div`
   text-align: left;
-  width: 25rem;
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
