@@ -120,10 +120,21 @@ function CommunityEvangelist() {
           We are excited to introduce the role of Community Evangelists, who will play a vital part in expanding our reach, strengthening our network, promoting engagement, and fostering leadership within the community. As a Community Evangelist, you will have the opportunity to create public groups for nameSpace, market public events and meetups, and lead initiatives that align with our mission.
         </Description>
 
+        <div className="w-full flex justify-center mt-8 mb-4">
+          <a href="https://forms.gle/nqDJcL73ESYYge6X8" target="_blank" rel="noopener noreferrer">
+            <button
+              type="button"
+              className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
+            >
+              Register Now
+            </button>
+          </a>
+        </div>
+
         <Card>
           <LeftSection>
             <h3>
-              Role and <GradientText>Responsibilities</GradientText>
+              Roles and <GradientText>Responsibilities</GradientText>
             </h3>
             <Graphic emoji="👥" />
           </LeftSection>
@@ -192,7 +203,7 @@ function CommunityEvangelist() {
           <a href="https://forms.gle/nqDJcL73ESYYge6X8" target="_blank" rel="noopener noreferrer">
             <button
               type="button"
-              className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
+              className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
             >
               Register Now
             </button>
