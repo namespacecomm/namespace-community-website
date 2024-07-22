@@ -116,12 +116,23 @@ function CommunityEvangelist() {
     <Section>
       <Container>
         <Title>Become a Community Evangelist</Title>
-        <Description>
-          We are excited to introduce the role of Community Evangelists, who will play a vital part in expanding our reach, strengthening our network, promoting engagement, and fostering leadership within the community. As a Community Evangelist, you will have the opportunity to create public groups for nameSpace, market public events and meetups, and lead initiatives that align with our mission.
-        </Description>
+        <div style={{ width: '80%' }}>
+          <Description>
+            We are excited to introduce the role of Community Evangelists, who
+            will play a vital part in expanding our reach, strengthening our
+            network, promoting engagement, and fostering leadership within the
+            community. As a Community Evangelist, you will have the opportunity
+            to create public groups for nameSpace, market public events and
+            meetups, and lead initiatives that align with our mission.
+          </Description>
+        </div>
 
         <div className="w-full flex justify-center mt-8 mb-4">
-          <a href="https://forms.gle/nqDJcL73ESYYge6X8" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://forms.gle/nqDJcL73ESYYge6X8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               type="button"
               className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
@@ -140,10 +151,22 @@ function CommunityEvangelist() {
           </LeftSection>
           <RightSection>
             <ul>
-              <li>Create and Manage Public Groups: Foster a collaborative environment for members.</li>
-              <li>Promote Public Events and Meetups: Actively market our events, ensuring high participation.</li>
-              <li>Expand Community Reach: Engage students from various colleges to build a diverse network.</li>
-              <li>Collaboration Opportunities: Collaborate with other tech communities in upcoming events.</li>
+              <li>
+                Create and Manage Public Groups: Foster a collaborative
+                environment for members.
+              </li>
+              <li>
+                Promote Public Events and Meetups: Actively market our events,
+                ensuring high participation.
+              </li>
+              <li>
+                Expand Community Reach: Engage students from various colleges to
+                build a diverse network.
+              </li>
+              <li>
+                Collaboration Opportunities: Collaborate with other tech
+                communities in upcoming events.
+              </li>
             </ul>
           </RightSection>
         </Card>
@@ -158,9 +181,18 @@ function CommunityEvangelist() {
           <RightSection>
             <ul>
               <li>Selection Letter and Completion Certificate</li>
-              <li>Expand your network and exchange ideas within a dynamic community.</li>
-              <li>Leadership Experience: Work under the established brand of the nameSpace Community.</li>
-              <li>Exclusive Invitations: Attend all public meetups and flagship events.</li>
+              <li>
+                Expand your network and exchange ideas within a dynamic
+                community.
+              </li>
+              <li>
+                Leadership Experience: Work under the established brand of the
+                nameSpace Community.
+              </li>
+              <li>
+                Exclusive Invitations: Attend all public meetups and flagship
+                events.
+              </li>
             </ul>
           </RightSection>
         </Card>
@@ -174,10 +206,20 @@ function CommunityEvangelist() {
           </LeftSection>
           <RightSection>
             <ul>
-              <li>Career Advancement: Boost your resume with valuable experience.</li>
-              <li>Skill Development: Enhance leadership, project management, and marketing skills.</li>
-              <li>Mentorship: Receive guidance from experienced professionals.</li>
-              <li>Be a Changemaker: Shape the future of one of the largest tech communities in Delhi-NCR.</li>
+              <li>
+                Career Advancement: Boost your resume with valuable experience.
+              </li>
+              <li>
+                Skill Development: Enhance leadership, project management, and
+                marketing skills.
+              </li>
+              <li>
+                Mentorship: Receive guidance from experienced professionals.
+              </li>
+              <li>
+                Be a Changemaker: Shape the future of one of the largest tech
+                communities in Delhi-NCR.
+              </li>
             </ul>
           </RightSection>
         </Card>
@@ -191,16 +233,27 @@ function CommunityEvangelist() {
           </LeftSection>
           <RightSection>
             <ul>
-              <li>Current Enrollment: 2nd or 3rd-year bachelor’s degree student.</li>
-              <li>Community Passion: Genuine interest in building and supporting tech communities.</li>
-              <li>Leadership Qualities: Ability to inspire and guide others.</li>
+              <li>
+                Current Enrollment: 2nd or 3rd-year bachelor’s degree student.
+              </li>
+              <li>
+                Community Passion: Genuine interest in building and supporting
+                tech communities.
+              </li>
+              <li>
+                Leadership Qualities: Ability to inspire and guide others.
+              </li>
               <li>Technical Proficiency: Strong development skills.</li>
             </ul>
           </RightSection>
         </Card>
 
         <div className="w-full flex justify-center mt-8">
-          <a href="https://forms.gle/nqDJcL73ESYYge6X8" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://forms.gle/nqDJcL73ESYYge6X8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               type="button"
               className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
