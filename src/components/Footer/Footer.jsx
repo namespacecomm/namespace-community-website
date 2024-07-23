@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
-  Linkedin,
-  Instagram,
-  Github,
-  Twitter,
-  Mail,
-  Youtube,
-} from "lucide-react";
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+  FaTwitter,
+  FaEnvelope,
+  FaYoutube,
+  FaWhatsapp,
+  FaTelegram,
+} from "react-icons/fa";
 
 const Section = styled.footer`
   padding: 1.2rem;
@@ -38,11 +40,9 @@ const ContentWrapper = styled.div`
 const RightText = styled.div`
   display: flex;
   align-items: center;
-  
 
   p {
     margin-right: 1rem;
-    width: 
   }
 
   a {
@@ -118,35 +118,44 @@ const Footer = () => {
           Team nameSpace
         </a>
       </CenterText>
-      <ContentWrapper>
-        <LeftText>© {year} The nameSpace Community and Organization</LeftText>
-        <RightText>
-          <p>Reach out to us via </p>
-          <a href="http://instagram.com/namespacecomm">
-            <Instagram size={24} />
-          </a>
-          &nbsp;
-          <a href="http://www.linkedin.com/company/namespacecomm/">
-            <Linkedin size={24} />
-          </a>
-          &nbsp;
-          <a href="https://www.youtube.com/@namespacecomm">
-            <Youtube size={24} />
-          </a>
-          &nbsp;
-          <a href="https://github.com/namespacecomm">
-            <Github size={24} />
-          </a>
-          &nbsp;
-          <a href="https://twitter.com/namespacecomm">
-            <Twitter size={24} />
-          </a>
-          &nbsp;
-          <a href="mailto:namespace@bpitindia.com">
-            <Mail size={24} />
-          </a>
-        </RightText>
-      </ContentWrapper>
+      <CenterText>
+        <p className="text-2xl">Reach out to us via </p>
+        <div className="flex items-center justify-center space-x-4 mt-2">
+        <a href="http://instagram.com/namespacecomm">
+          <FaInstagram size={24} />
+        </a>
+        &nbsp;
+        <a href="http://www.linkedin.com/company/namespacecomm/">
+          <FaLinkedin size={24} />
+        </a>
+        &nbsp;
+        <a href="https://www.youtube.com/@namespacecomm">
+          <FaYoutube size={24} />
+        </a>
+        &nbsp;
+        <a href="https://github.com/namespacecomm">
+          <FaGithub size={24} />
+        </a>
+        &nbsp;
+        <a href="https://twitter.com/namespacecomm">
+          <FaTwitter size={24} />
+        </a>
+        <a href="https://wa.me/your-whatsapp-number">
+          <FaWhatsapp size={24} />
+        </a>
+        &nbsp;
+        <a href="https://t.me/your-telegram-username">
+          <FaTelegram size={24} />
+        </a>
+        &nbsp;
+        <a href="mailto:namespace@bpitindia.com">
+          <FaEnvelope size={24} />
+        </a>
+        &nbsp;
+        </div>
+        
+      </CenterText>
+      <CenterText>© {year} The nameSpace Community and Organization</CenterText>
       <TrademarkText>
         "HACKHAZARDS", "TechXcelerate", "TechTrek", "AlgoRumble", "TechRumble",
         "Game of Codes", "nameSpace" and "The nameSpace Community" are the
