@@ -116,14 +116,17 @@ function CommunityEvangelist() {
     <Section>
       <Container>
         <Title>Become a Community Evangelist</Title>
-        <div style={{ width: '80%' }}>
+        <div style={{ width: "80%" }}>
           <Description>
-            We are excited to introduce the role of Community Evangelists, who
-            will play a vital part in expanding our reach, strengthening our
-            network, promoting engagement, and fostering leadership within the
-            community. As a Community Evangelist, you will have the opportunity
-            to create public groups for nameSpace, market public events and
-            meetups, and lead initiatives that align with our mission.
+            We are excited to introduce the role of Community Evangelists as
+            part of our extended core team, who will play a vital part in
+            expanding our reach, strengthening our network, promoting
+            engagement, and fostering leadership within the community. As a
+            Community Evangelist, you will have the opportunity to create public
+            groups for nameSpace, market public events and meetups, and lead
+            initiatives that align with our mission. In return you learn crucial
+            technical and non-technical skills which become a stepping stone for
+            your succcesful career in future.
           </Description>
         </div>
 

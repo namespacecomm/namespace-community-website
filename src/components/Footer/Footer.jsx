@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaWhatsapp,
   FaTelegram,
+  FaDiscord
 } from "react-icons/fa";
 
 const Section = styled.footer`
@@ -140,11 +141,14 @@ const Footer = () => {
         <a href="https://twitter.com/namespacecomm">
           <FaTwitter size={24} />
         </a>
-        <a href="https://wa.me/your-whatsapp-number">
+        <a href="https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f">
           <FaWhatsapp size={24} />
         </a>
+        <a href="https://discord.gg/z2fTnXjKMm">
+          <FaDiscord size={24} />
+        </a>
         &nbsp;
-        <a href="https://t.me/your-telegram-username">
+        <a href="https://t.me/namespacecomm">
           <FaTelegram size={24} />
         </a>
         &nbsp;
