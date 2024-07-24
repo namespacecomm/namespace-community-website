@@ -312,8 +312,8 @@ function Navbar() {
           </NavLinks>
 
           <NavbarLinkContainer>
-            <a href="/communityevangelist" target="" className="mr-6">
-              <Button>Become a Community Evangelist</Button>
+            <a href="/campusevangelist" target="" className="mr-6">
+              <Button>Become a Campus Evangelist</Button>
             </a>
           </NavbarLinkContainer>
 
