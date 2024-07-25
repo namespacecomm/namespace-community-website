@@ -131,7 +131,6 @@ const IframeWrapper = styled.div`
   }
 `;
 
-
 function CampusEvangelist() {
   const formRef = useRef(null);
 
@@ -330,6 +329,21 @@ function CampusEvangelist() {
             Loading…
           </iframe>
         </IframeWrapper>
+
+        <div className="w-full flex justify-center mt-8">
+          <button
+            type="button"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdPV56Mxv10dj2rqYXGmQHUpa9H-8bgoc6AomecRFQVOxdbDg/viewform",
+                "_blank"
+              )
+            }
+            className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
+          >
+            Click here if the embedded form is not working
+          </button>
+        </div>
       </Container>
     </Section>
   );
