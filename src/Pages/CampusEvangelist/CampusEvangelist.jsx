@@ -25,7 +25,7 @@ const Card = styled.div`
   background-color: #1c1c2b;
   border-radius: 10px;
   padding: 20px;
-  width: 80%;
+  width: 82%;
   max-width: 800px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -47,7 +47,7 @@ const LeftSection = styled.div`
   h3 {
     color: white;
     margin-bottom: 15px;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
   }
 
