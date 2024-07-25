@@ -111,19 +111,24 @@ const Graphic = ({ emoji }) => (
   </svg>
 );
 
-function CommunityEvangelist() {
+function CampusEvangelist() {
   return (
     <Section>
       <Container>
-        <Title>Become a Community Evangelist</Title>
-        <div style={{ width: '80%' }}>
+        <Title>Become a Campus Evangelist</Title>
+        <div style={{ width: "80%" }}>
           <Description>
-            We are excited to introduce the role of Community Evangelists, who
-            will play a vital part in expanding our reach, strengthening our
-            network, promoting engagement, and fostering leadership within the
-            community. As a Community Evangelist, you will have the opportunity
-            to create public groups for nameSpace, market public events and
-            meetups, and lead initiatives that align with our mission.
+            We are thrilled to introduce the role of Campus Evangelists as a
+            crucial part of our extended core team. As a Campus Evangelist, you
+            will play a vital role in expanding our presence on campus,
+            strengthening our network, promoting engagement, and fostering
+            leadership within your college community. You will have the
+            opportunity to create public groups for nameSpace, market public
+            events and meetups, and lead initiatives that align with our
+            mission. In return, you'll gain essential technical and
+            non-technical skills, paving the way for a successful career in the
+            future. Join us in making a significant impact on your campus and
+            beyond!
           </Description>
         </div>
 
@@ -267,4 +272,4 @@ function CommunityEvangelist() {
   );
 }
 
-export default CommunityEvangelist;
+export default CampusEvangelist;
