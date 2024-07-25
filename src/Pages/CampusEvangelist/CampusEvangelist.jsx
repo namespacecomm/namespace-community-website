@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -111,7 +111,34 @@ const Graphic = ({ emoji }) => (
   </svg>
 );
 
+const IframeWrapper = styled.div`
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  position: relative;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 150%; /* Further increase the height for smaller screens */
+  }
+`;
+
+
 function CampusEvangelist() {
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    formRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Section>
       <Container>
@@ -120,31 +147,29 @@ function CampusEvangelist() {
           <Description>
             We are thrilled to introduce the role of Campus Evangelists as a
             crucial part of our extended core team. As a Campus Evangelist, you
-            will play a vital role in expanding our presence on campus,
+            will play a vital role in expanding our presence on your campus,
             strengthening our network, promoting engagement, and fostering
             leadership within your college community. You will have the
             opportunity to create public groups for nameSpace, market public
             events and meetups, and lead initiatives that align with our
             mission. In return, you'll gain essential technical and
             non-technical skills, paving the way for a successful career in the
-            future. Join us in making a significant impact on your campus and
-            beyond!
+            future, network with other like-minded and highly qualified peers,
+            and become the face of the fastest growing tech community in the
+            country. Join us in making a significant impact on your campus and
+            beyond. We are more than excited to welcome you in the inner circle
+            of the nameSpace family.!
           </Description>
         </div>
 
         <div className="w-full flex justify-center mt-8 mb-4">
-          <a
-            href="https://forms.gle/nqDJcL73ESYYge6X8"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={scrollToForm}
+            className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
           >
-            <button
-              type="button"
-              className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
-            >
-              Register Now
-            </button>
-          </a>
+            Register Now
+          </button>
         </div>
 
         <Card>
@@ -165,12 +190,21 @@ function CampusEvangelist() {
                 ensuring high participation.
               </li>
               <li>
-                Expand Community Reach: Engage students from various colleges to
+                Expand Community Reach: Engage students from various branches to
                 build a diverse network.
               </li>
               <li>
                 Collaboration Opportunities: Collaborate with other tech
                 communities in upcoming events.
+              </li>
+              <li>
+                Active Involvement: Work with the nameSpace core team to
+                formulate commmunity policies and initiatives.
+              </li>
+              <li>
+                Lead the pack: Become a leader by guiding your campus community,
+                conencting them with the larger nameSpace Community and derive
+                mutual benefits.
               </li>
             </ul>
           </RightSection>
@@ -187,16 +221,33 @@ function CampusEvangelist() {
             <ul>
               <li>Selection Letter and Completion Certificate</li>
               <li>
-                Expand your network and exchange ideas within a dynamic
-                community.
+                Expand your network, interact with other evangelists and
+                exchange ideas within a dynamic community.
               </li>
               <li>
-                Leadership Experience: Work under the established brand of the
-                nameSpace Community.
+                Leadership Experience: Work under the established brand of The
+                nameSpace Community and join an exclusive club of hand-picked
+                individuals
               </li>
               <li>
                 Exclusive Invitations: Attend all public meetups and flagship
                 events.
+              </li>
+              <li>
+                Dedicated training on soft skills and guidance from seniors to
+                improve your technical and non-technical skills.
+              </li>
+              <li>
+                Access to community resources and member only initiatives such
+                as TechTrek, AlgoRumble, TechRumble etc.
+              </li>
+              <li>
+                Become a part of organizing teams of national-level technical
+                events such as HACKHAZARDS, TechXcelerate, nameSpace Winter of
+                Code, nameSpace ICPC and make an impact on thousands of others.
+              </li>
+              <li>
+                Work on community open source projects and improve your CV
               </li>
             </ul>
           </RightSection>
@@ -223,7 +274,12 @@ function CampusEvangelist() {
               </li>
               <li>
                 Be a Changemaker: Shape the future of one of the largest tech
-                communities in Delhi-NCR.
+                communities in Delhi-NCR and the fastest growing in India.
+              </li>
+              <li>
+                Open a chapter: Highly performing Campus Evangelists will be
+                given high priority and dedicated mentorship to open nameSpace
+                chapters on their campus.
               </li>
             </ul>
           </RightSection>
@@ -249,24 +305,31 @@ function CampusEvangelist() {
                 Leadership Qualities: Ability to inspire and guide others.
               </li>
               <li>Technical Proficiency: Strong development skills.</li>
+              <li>Enthusiasm to learn and contribute towards the society.</li>
             </ul>
           </RightSection>
         </Card>
 
         <div className="w-full flex justify-center mt-8">
-          <a
-            href="https://forms.gle/nqDJcL73ESYYge6X8"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={scrollToForm}
+            className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
           >
-            <button
-              type="button"
-              className="text-white mt-1 bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-3xl px-8 py-2.5 text-center mr-0 mb-2"
-            >
-              Register Now
-            </button>
-          </a>
+            Register Now
+          </button>
         </div>
+
+        <IframeWrapper ref={formRef}>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdPV56Mxv10dj2rqYXGmQHUpa9H-8bgoc6AomecRFQVOxdbDg/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
+        </IframeWrapper>
       </Container>
     </Section>
   );
