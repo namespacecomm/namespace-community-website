@@ -63,7 +63,7 @@ function AllTeams() {
               amazing.
             </p>
 
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <a
                 href="https://drive.google.com/file/d/15nEWZGLarBacck4u7F8MUoJ_0YyV5EuG/view"
                 target="_blank"
@@ -76,7 +76,7 @@ function AllTeams() {
                   View all the members
                 </button>
               </a>
-            </div>
+            </div> */}
 
             <div className="flex items-center justify-center">
               <a
