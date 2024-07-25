@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Squash as Hamburger } from 'hamburger-react';
+import { Squash as Hamburger } from "hamburger-react";
 
 const NavbarContainer = styled.nav`
   width: 100%;
@@ -23,7 +23,7 @@ const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   transition: backdrop-filter 0.5s ease;
   z-index: 999;
   box-shadow: inset 0px -1px #1d2d44;
@@ -34,7 +34,7 @@ const LeftContainer = styled.div`
 
 const NavbarInnerContainer = styled.div`
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
 `;
 
@@ -76,7 +76,7 @@ const DropdownMenu = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 0 0 10px 10px;
-  display: ${({ show }) => (show ? 'block' : 'none')};
+  display: ${({ show }) => (show ? "block" : "none")};
   z-index: 1000;
   width: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -262,7 +262,9 @@ function Navbar() {
               to="http://blog.namespacecomm.in/"
               target="_blank"
               className={
-                activeNavLink === "/http://blog.namespacecomm.in/" ? "active" : ""
+                activeNavLink === "/http://blog.namespacecomm.in/"
+                  ? "active"
+                  : ""
               }
             >
               <div>
@@ -311,20 +313,26 @@ function Navbar() {
             </NavbarLink> */}
           </NavLinks>
 
-          <NavbarLinkContainer>
-            <a href="/campusevangelist" target="" className="mr-6">
-              <Button>Become a Campus Evangelist</Button>
-            </a>
-          </NavbarLinkContainer>
+          <div className="flex flex-row">
+            <NavbarLinkContainer>
+              <a href="/campusevangelist" target="" className="mr-6">
+                <Button>Become a Campus Evangelist</Button>
+              </a>
+            </NavbarLinkContainer>
 
-          <NavbarLinkContainer>
-            <a href="https://linktr.ee/namespacecomm" target="_blank" className="mr-6">
-              <Button>Connect with us</Button>
-            </a>
-            <OpenLinksButton>
-              <Hamburger toggled={isOpen} toggle={setOpen} />
-            </OpenLinksButton>
-          </NavbarLinkContainer>
+            <NavbarLinkContainer>
+              <a
+                href="https://linktr.ee/namespacecomm"
+                target="_blank"
+                className="mr-6"
+              >
+                <Button>Connect with us</Button>
+              </a>
+              <OpenLinksButton>
+                <Hamburger toggled={isOpen} toggle={setOpen} />
+              </OpenLinksButton>
+            </NavbarLinkContainer>
+          </div>
         </LeftContainer>
       </NavbarInnerContainer>
       {isOpen && (
@@ -335,7 +343,9 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">Blog</NavbarLinkExtended>
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
+            Blog
+          </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
         </NavbarExtendedContainer>
