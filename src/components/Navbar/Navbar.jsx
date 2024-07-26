@@ -313,22 +313,22 @@ function Navbar() {
             </NavbarLink> */}
           </NavLinks>
 
-          <div className="flex flex-row">
-            <NavbarLinkContainer>
-              <a href="/campusevangelist" target="" className="mr-6">
-                <Button>Become a Campus Evangelist</Button>
+          <div className="flex flex-row md:flex-col md:space-x-6">
+            <NavbarLinkContainer className="w-full md:w-auto mb-4 mr-4 md:mb-0 ">
+              <a href="/campusevangelist" target="" className="w-full">
+                <Button className="w-full">Become a Campus Evangelist</Button>
               </a>
             </NavbarLinkContainer>
 
-            <NavbarLinkContainer>
+            <NavbarLinkContainer className="w-full md:w-auto ">
               <a
                 href="https://linktr.ee/namespacecomm"
                 target="_blank"
-                className="mr-6"
+                className="w-full"
               >
-                <Button>Connect with us</Button>
+                <Button className="w-full">Connect with us</Button>
               </a>
-              <OpenLinksButton>
+              <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
                 <Hamburger toggled={isOpen} toggle={setOpen} />
               </OpenLinksButton>
             </NavbarLinkContainer>
