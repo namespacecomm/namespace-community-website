@@ -93,6 +93,7 @@ import DpAlgo from "./Pages/AllResources/compProgALL/dynamicpro";
 import { ORACLECLOUD } from "./Pages/AllResources/devopsALL/oracle-cloud";
 import TechX from "./Pages/TechXcelerate/Techx";
 import Hackhazards from "./Pages/Hackhazards/Hackhazards";
+import CampusEvangelist from "./Pages/CampusEvangelist/CampusEvangelist";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -123,6 +124,7 @@ function App() {
               <Route path="resources" element={<Resources />} />
               <Route path="techx" element={<TechX />} />
               <Route path="hackhazards" element={<Hackhazards />} />
+              <Route path="campusevangelist" element={<CampusEvangelist />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
               <Route path="sortalgo" element={<SortAlgo />} />
@@ -158,13 +160,10 @@ function App() {
               <Route path="Keras" element={<Keras />} />
               <Route path="nodejs" element={<Nodejs />} />
               <Route path="php" element={<PHP />} />
-			        <Route path="netlify" element={<NETLIFY />} />
+              <Route path="netlify" element={<NETLIFY />} />
               <Route path="firebase" element={<Firebase />} />
               <Route path="oracle-cloud" element={<ORACLECLOUD />} />
-              <Route
-                path="frontend-framework"
-                element={<FrontEndFramework />}
-              />
+              <Route path="frontend-framework" element={<FrontEndFramework />} />
               <Route path="css-framework" element={<CSSFramework />} />
               <Route path="devops" element={<DevOps />} />
               <Route path="ansible" element={<ANSIBLE />} />
@@ -180,7 +179,7 @@ function App() {
               <Route path="kubernetes" element={<KUBERNETES />} />
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="heroku" element={<HEROKU />} />
-             
+
 
 
               {/* Routes related to BLOCKCHAIN PATHS */}
@@ -227,9 +226,9 @@ function App() {
                 <Route path="unity3d" element={<Unity3D />} />
                 <Route path="webxr" element={<WebXR />} />
               </Route>
-              
+
               {/* competitive programming  */}
-             
+
               <Route path="uiux" element={<UIUX />} />
               <Route path="adobe" element={<ADOBE />} />
               <Route path="figma" element={<Figma />} />

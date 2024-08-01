@@ -35,15 +35,8 @@ const Section2 = styled.div`
 `;
 
 const YoutubeFrame = styled.iframe`
-  width: 30vw;
-  height: 350px;
-
-  @media only screen and (max-width: 768px) {
-    width: 90vw;
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 const Container = styled.div`
@@ -79,13 +72,18 @@ function TechX() {
             </h2>
 
             <p className="max-w-4xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-            Our society launched TechXcelerate in April 2023, a series of interactive sessions aimed at first and second-year 
-            students. These sessions feature beginner-level topics and the necessary tips and tricks to learn various technical 
-            domains, covering Competitive Programming, web development, app development, data science, and more. This year's 
-            sessions were delivered by some of the most prominent figures in the industry. We witnessed participation 
-            from 1,800+ unique students from various colleges across India, with 9+ hours of live interaction. TechXcelerate 
-            2.0 generated more than 7,500 impressions across social media channels in only 10 days, and the upcoming editions will 
-            surely see even greater success.
+              Our society launched TechXcelerate in April 2023, a series of
+              interactive sessions aimed at first and second-year students.
+              These sessions feature beginner-level topics and the necessary
+              tips and tricks to learn various technical domains, covering
+              Competitive Programming, web development, app development, data
+              science, and more. This year's sessions were delivered by some of
+              the most prominent figures in the industry. We witnessed
+              participation from 1,800+ unique students from various colleges
+              across India, with 9+ hours of live interaction. TechXcelerate 2.0
+              generated more than 7,500 impressions across social media channels
+              in only 10 days, and the upcoming editions will surely see even
+              greater success.
             </p>
 
             {/* Embedded Luma registration form */}
@@ -150,6 +148,21 @@ function TechX() {
                     className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
                   >
                     Our YouTube Channel
+                  </button>
+                </a>
+              </div>
+
+              <div className="w-full flex justify-center">
+                <a
+                  href="https://techx.namespacecomm.in"
+                  target="_blank"
+                  className=""
+                >
+                  <button
+                    type="button"
+                    className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
+                  >
+                    Visit Our Website
                   </button>
                 </a>
               </div>

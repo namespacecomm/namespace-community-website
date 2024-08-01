@@ -28,7 +28,6 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1440px;
   padding-top: 100px;
   scroll-snap-align: center;
   @media only screen and (max-width: 768px) {

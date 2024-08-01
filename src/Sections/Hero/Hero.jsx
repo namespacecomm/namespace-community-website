@@ -13,6 +13,7 @@ import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import BackToTopButton from "../../components/BackToTop";
+import Founder from "../Founder/Founder";
 // const Section = styled.div`
 //   background-repeat: no-repeat;
 //   background: no-repeat url("./img/bg.jpg");
@@ -120,30 +121,23 @@ const WhatWeDo = styled.div`
 `;
 
 const Subtitle = styled.p`
-  margin-top:5px;
-  text-align:center;
+  margin-top: 5px;
+  text-align: center;
   font-size: 40px;
   font-weight: bold;
-  background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
     #3530cf 0%,
     #44cfcf 100%
-  );
+  ); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   @media screen and (max-width: 424px) {
+  -webkit-text-fill-color: transparent; 
+  
+  @media screen and (max-width: 424px) {
     font-size: 22px;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
     font-size: 23px;
-  }
-  @media screen and (min-width: 769px) and (max-width: 1030px) {
-    font-size: 40px;
-  }
-
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 40px;
   }
 `;
 
@@ -164,19 +158,21 @@ const Desc = styled.p`
     align-items: center;
 `;
 const ShortDesc = styled.p`
-  font-size: 16px;
+  font-size: 32px;
   text-align:center;
   color: lightgray;
-  padding-top: 4px;
+  padding-top: 8px;
+  margin-top: 4px;
 
   @media only screen and (max-width: 1030px) {
-    font-size: 16px;
+    font-size: 26px;
   }
   @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 22px;
+    font-size: 28px;
   }
   @media only screen and (max-width: 760px) {
-    text-align: center;
+  font-size: 16px;  
+  text-align: center;
   }
 `;
 
@@ -228,7 +224,7 @@ const Hero = () => {
             <WhatWeDo>
               <Subtitle>COMMUNITY</Subtitle>
             </WhatWeDo>
-            <Desc><p><i>Infinite Horizons, One Community</i></p></Desc>
+            <ShortDesc><p><i>Infinite Horizons, One Community</i></p></ShortDesc>
             
             
           </Left>          
@@ -250,6 +246,7 @@ const Hero = () => {
       
       <About />
       <Teams />
+      <Founder />
       <Events />
       <SocialMedia />
       <Testimonials />

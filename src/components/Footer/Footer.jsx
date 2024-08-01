@@ -1,53 +1,55 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Linkedin, Instagram, Github, Twitter, Mail, Youtube } from "lucide-react";
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+  FaTwitter,
+  FaEnvelope,
+  FaYoutube,
+  FaWhatsapp,
+  FaTelegram,
+  FaDiscord
+} from "react-icons/fa";
 
 const Section = styled.footer`
   padding: 1.2rem;
   font-size: 1rem;
-  ${
-    "" /* background: rgb(9, 9, 121);
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
   background-color: #010116;
   display: flex;
-  padding: 30px 60px;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  padding: 30px 60px;
   @media only Screen and (max-width: 48em) {
     width: 100vw;
-    flex-direction: column;
-    align-items: center;
     margin-top: 16px;
     font-size: 14px;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only Screen and (max-width: 48em) {
+    flex-direction: column;
     justify-content: center;
-    ${
-      "" /* div {
-      &:first-child {
-        margin-bottom: 1rem;
-      }
-    } */
-    }
   }
 `;
 
 const RightText = styled.div`
   display: flex;
   align-items: center;
-  width: 25rem;
 
   p {
-    margin-right: 1rem; /* Add margin to the right of the paragraph */
+    margin-right: 1rem;
   }
 
   a {
-    margin-right: 1rem; /* Add margin between icons */
+    margin-right: 1rem;
     &:last-child {
-      margin-right: 0; /* Remove margin for the last icon */
+      margin-right: 0;
     }
 
     &:hover {
@@ -75,7 +77,6 @@ const RightText = styled.div`
 
 const LeftText = styled.div`
   text-align: left;
-  width: 20rem;
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
@@ -84,7 +85,18 @@ const LeftText = styled.div`
 const CenterText = styled.div`
   text-align: center;
   align-items: center;
-  width: 25 rem;
+  width: 100%; /* Ensure it spans the full width */
+  margin: 20px 0; /* Add margin to separate it from other content */
+  @media only Screen and (max-width: 48em) {
+    text-align: center;
+  }
+`;
+
+const TrademarkText = styled.div`
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #888;
   @media only Screen and (max-width: 48em) {
     text-align: center;
   }
@@ -98,44 +110,62 @@ const Footer = () => {
 
   return (
     <Section>
-      <LeftText>© {year} nameSpace formerly NSCC BPIT</LeftText>
-
       <CenterText>
         Made with ❤️ and 🧠 by{" "}
         <a
           style={{ color: "pink" }}
-          href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+          href="https://github.com/namespacecomm/NSCC-BPIT-Website"
         >
           Team nameSpace
         </a>
       </CenterText>
-
-      <RightText>
-        <p>Reach out to us via </p>
+      <CenterText>
+        <p className="text-2xl">Reach out to us via </p>
+        <div className="flex items-center justify-center space-x-4 mt-2">
         <a href="http://instagram.com/namespacecomm">
-          <Instagram size={24} />
+          <FaInstagram size={24} />
         </a>
         &nbsp;
         <a href="http://www.linkedin.com/company/namespacecomm/">
-          <Linkedin size={24} />
+          <FaLinkedin size={24} />
         </a>
         &nbsp;
         <a href="https://www.youtube.com/@namespacecomm">
-          <Youtube size={24} />
+          <FaYoutube size={24} />
         </a>
         &nbsp;
-        <a href="https://github.com/NSCC-BPIT">
-          <Github size={24} />
+        <a href="https://github.com/namespacecomm">
+          <FaGithub size={24} />
         </a>
         &nbsp;
         <a href="https://twitter.com/namespacecomm">
-          <Twitter size={24} />
+          <FaTwitter size={24} />
+        </a>
+        <a href="https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f">
+          <FaWhatsapp size={24} />
+        </a>
+        <a href="https://discord.gg/z2fTnXjKMm">
+          <FaDiscord size={24} />
+        </a>
+        &nbsp;
+        <a href="https://t.me/namespacecomm">
+          <FaTelegram size={24} />
         </a>
         &nbsp;
         <a href="mailto:namespace@bpitindia.com">
-          <Mail size={24} />
+          <FaEnvelope size={24} />
         </a>
-      </RightText>
+        &nbsp;
+        </div>
+        
+      </CenterText>
+      <CenterText>© {year} The nameSpace Community and Organization</CenterText>
+      <TrademarkText>
+        "HACKHAZARDS", "TechXcelerate", "TechTrek", "AlgoRumble", "TechRumble",
+        "Game of Codes", "nameSpace" and "The nameSpace Community" are the
+        registered trademarks of The nameSpace Community Organization and its
+        affiliates. All rights reserved.
+      </TrademarkText>
     </Section>
   );
 };
