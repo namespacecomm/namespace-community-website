@@ -208,6 +208,18 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
+
+            <NavbarLink
+              to="/achievements"
+              className={activeNavLink === "/achievements" ? "active" : ""}
+            >
+              <div>
+                Achievements
+                {activeNavLink === "/achievements" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
             <NavbarLink
               to="#"
               className={activeNavLink === "/events" ? "active" : ""}
@@ -260,7 +272,7 @@ function Navbar() {
             </NavbarLink>
             <NavbarLink
               to="http://blog.namespacecomm.in/"
-              target="_blank"
+              target="_blank" without rel="noreferrer" 
               className={
                 activeNavLink === "/http://blog.namespacecomm.in/"
                   ? "active"
@@ -324,6 +336,7 @@ function Navbar() {
               <a
                 href="https://linktr.ee/namespacecomm"
                 target="_blank"
+                without rel="noreferrer" 
                 className="w-full"
               >
                 <Button className="w-full">Connect with us</Button>
@@ -343,7 +356,7 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank" without rel="noreferrer" >
             Blog
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>

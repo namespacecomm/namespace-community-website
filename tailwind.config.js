@@ -4,7 +4,7 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./pages/**/*.{js,jsx}",
     "./components/**/*.{js,jsx}",
- 
+   
     // Or if using `src` directory:
     "./src/**/*.{js,jsx}",
   ],
@@ -20,6 +20,11 @@ module.exports = {
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+       // 'glow-blue': '0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5), 0 0 30px rgba(0, 0, 255, 0.5), 0 0 40px rgba(0, 0, 255, 0.5)', // custom shadow
+
+     
+
+       
       },
       fontFamily :{
         Inter : ['Inter', 'sans-serif'],
@@ -30,6 +35,12 @@ module.exports = {
        
       },
     },
+    variants: {
+      extend: {
+        boxShadow: ['hover'], // ensure hover variant is enabled for boxShadow
+        transform: ['hover'], // ensure hover variant is enabled for transform
+      },
   },
   plugins: [],
+}
 }

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
+import Achievements from "./Pages/Achievements/Achievements";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Github } from "./Pages/AllResources/webALL/github";
@@ -118,6 +119,7 @@ function App() {
             <Route path="/">
               <Route index element={<Hero />} />
               <Route path="team" element={<AllTeams />} />
+              <Route path="achievements" element={<Achievements />} />
               <Route path="events" element={<AllEvents />} />
               <Route path="programs" element={<Programs />} />
               <Route path="projects" element={<Projects />} />
