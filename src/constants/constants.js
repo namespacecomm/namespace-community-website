@@ -208,15 +208,6 @@ export const members1 = [
   },
 
 
-  {
-    name: "Chetan Chauhan",
-    image:
-      "",
-    position: "Competitive Programming Head",
-    github: "",
-    linkedin: "",
-    instagram: "",
-  },
 
 
   {
@@ -775,15 +766,7 @@ export const allmembers = [
     instagram: "",
   },
 
-  {
-    name: "Chetan Chauhan",
-    image:
-      "",
-    position: "Competitive Programming Head",
-    github: "https://github.com/chetan3327",
-    linkedin: "http://linkedin.com/in/chetan3327",
-    instagram: "",
-  },
+
   {
     name: "Jatin Gera",
     image:
