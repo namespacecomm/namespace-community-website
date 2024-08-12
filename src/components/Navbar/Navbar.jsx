@@ -351,6 +351,7 @@ function Navbar() {
       {isOpen && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/achievements">Achievements</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
