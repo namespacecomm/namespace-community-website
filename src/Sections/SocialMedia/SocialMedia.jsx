@@ -11,12 +11,9 @@ const Section = styled.div`
 `;
 
 const YoutubeFrame = styled.iframe`
-  width: 30vw;
-  height: 350px;
+  
 
   @media only screen and (max-width: 768px) {
-    width: 90vw;
-    height: 250px;
     margin-top: 10px;
     margin-bottom: 10px;
   }

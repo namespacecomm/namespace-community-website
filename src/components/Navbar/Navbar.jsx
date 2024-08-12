@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import {Squash as Hamburger} from 'hamburger-react'
+import { Squash as Hamburger } from "hamburger-react";
+
 const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
@@ -22,7 +23,7 @@ const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   transition: backdrop-filter 0.5s ease;
   z-index: 999;
   box-shadow: inset 0px -1px #1d2d44;
@@ -33,7 +34,7 @@ const LeftContainer = styled.div`
 
 const NavbarInnerContainer = styled.div`
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
 `;
 
@@ -54,11 +55,11 @@ const NavbarLink = styled(Link)`
   transition: 200ms ease-in-out;
   padding: 0.5rem;
   border-radius: 10px 0 10px 0;
+  position: relative;
   @media (max-width: 900px) {
     display: none;
   }
   :hover {
-    // color: deepskyblue;
     background-color: rgba(255, 255, 255, 0.3);
   }
   &.active {
@@ -66,6 +67,29 @@ const NavbarLink = styled(Link)`
   }
   &.active:hover {
     background-color: rgba(255, 255, 255, 0.3);
+  }
+`;
+
+const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 10px 10px;
+  display: ${({ show }) => (show ? "block" : "none")};
+  z-index: 1000;
+  width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+`;
+
+const DropdownItem = styled(Link)`
+  color: white;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  display: block;
+  transition: background-color 200ms ease-in-out;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 `;
 
@@ -103,13 +127,13 @@ const OpenLinksButton = styled.button`
 `;
 
 const NavbarExtendedContainer = styled.div`
-  width:100%;
-  min-height:100vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  padding-top:40px;
-  gap:10px;
+  align-items: center;
+  padding-top: 40px;
+  gap: 10px;
   backdrop-filter: blur(20px);
 
   @media (min-width: 900px) {
@@ -129,36 +153,53 @@ const Button = styled.button`
   transition: 200ms ease-in-out;
   @media (max-width: 900px) {
     margin: 17px 10px 10px 5px;
-    ${"" /* display: none; */}
   }
   :hover {
-    background-color: #138AF2;
+    background-color: #138af2;
   }
 `;
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const location = useLocation();
 
-  React.useEffect(() => {
+  useEffect(() => {
     setOpen(false);
     setActiveNavLink(location.pathname);
   }, [location]);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <NavbarContainer isOpen={isOpen}>
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
-            <Logo src="../.././img/logo5.png"></Logo>
+            <Logo src="../.././img/logo5.png" alt="Logo" />
           </NavbarLogo>
           <NavLinks>
             <NavbarLink
               to="/projects"
-              // onClick={handlememu}
-              className={activeNavLink === "/projects" ? "active " : ""}
+              className={activeNavLink === "/projects" ? "active" : ""}
             >
               <div>
                 Projects
@@ -167,9 +208,22 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
+
             <NavbarLink
-              to="/events"
+              to="/achievements"
+              className={activeNavLink === "/achievements" ? "active" : ""}
+            >
+              <div>
+                Achievements
+                {activeNavLink === "/achievements" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+            <NavbarLink
+              to="#"
               className={activeNavLink === "/events" ? "active" : ""}
+              onClick={handleDropdownToggle}
             >
               <div>
                 Events
@@ -177,6 +231,11 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
+              <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
+                <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
+                <DropdownItem to="/techx">TechXcelerate</DropdownItem>
+                <DropdownItem to="/events">All Events</DropdownItem>
+              </DropdownMenu>
             </NavbarLink>
             <NavbarLink
               to="/programs"
@@ -213,9 +272,11 @@ function Navbar() {
             </NavbarLink>
             <NavbarLink
               to="http://blog.namespacecomm.in/"
-              target="_blank"
+              target="_blank" without rel="noreferrer" 
               className={
-                activeNavLink === "/http://blog.namespacecomm.in/" ? "active" : ""
+                activeNavLink === "/http://blog.namespacecomm.in/"
+                  ? "active"
+                  : ""
               }
             >
               <div>
@@ -225,7 +286,22 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
-            <NavbarLink
+            {/* <NavbarLink
+              to="/communityevangelist"
+              className={activeNavLink === "/communityevangelist" ? "active" : ""}
+            >
+              <div className="flex">
+                Community Evangelist
+                <span class="relative flex h-2 w-2 mx-1">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3636CF]/40 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-[#3b3b98]"></span>
+                </span>
+                {activeNavLink === "/communityevangelist" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink> */}
+            {/* <NavbarLink
               to="/techx"
               className={activeNavLink === "/techx" ? "active" : ""}
             >
@@ -246,54 +322,45 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink>
-            <NavbarLink
-              to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-              target="_blank"
-              className={
-                activeNavLink ===
-                "https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
-                  ? "active"
-                  : ""
-              }
-            >
-              <div>
-                Contribute
-                {activeNavLink ===
-                  "https://github.com/NSCC-BPIT/NSCC-BPIT-Website" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
+            </NavbarLink> */}
           </NavLinks>
 
-          <NavbarLinkContainer>
-            <a href="https://linktr.ee/namespacecomm" target="_blank" className="mr-6">
-              <Button>Connect with us</Button>
-            </a>
-            <OpenLinksButton
-            >
-              <Hamburger toggled={isOpen} toggle={setOpen} />
-            </OpenLinksButton>
-          </NavbarLinkContainer>
+          <div className="flex flex-row md:flex-col md:space-x-6">
+            <NavbarLinkContainer className="w-full md:w-auto mb-4 mr-4 md:mb-0 ">
+              <a href="/campusevangelist" target="" className="w-full">
+                <Button className="w-full">Become a Campus Evangelist</Button>
+              </a>
+            </NavbarLinkContainer>
+
+            <NavbarLinkContainer className="w-full md:w-auto ">
+              <a
+                href="https://linktr.ee/namespacecomm"
+                target="_blank"
+                without rel="noreferrer" 
+                className="w-full"
+              >
+                <Button className="w-full">Connect with us</Button>
+              </a>
+              <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
+                <Hamburger toggled={isOpen} toggle={setOpen} />
+              </OpenLinksButton>
+            </NavbarLinkContainer>
+          </div>
         </LeftContainer>
       </NavbarInnerContainer>
       {isOpen && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
+          <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
-          <NavbarLinkExtended to="/Team">Team</NavbarLinkExtended>
+          <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank">
+          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank" without rel="noreferrer" >
             Blog
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
-          <NavbarLinkExtended to="https://github.com/NSCC-BPIT/NSCC-BPIT-Website" target="_blank">
-            Contribute
-          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

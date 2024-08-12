@@ -114,14 +114,15 @@ function Hackhazards() {
             </p>
 
             <div className="w-full flex justify-center">
-              <a href="https://s24.hackhazards.namespacecomm.in" target="_blank" className="">
-                <button
-                  type="button"
-                  className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
-                >
-                  Visit Our Website
-                </button>
-              </a>
+
+                <a href="https://s24.hackhazards.namespacecomm.in" target="_blank" className="">
+                    <button
+                    type="button"
+                    className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
+                    >
+                            Visit Our Website
+                    </button>
+                </a>    
             </div>
 
             <>
@@ -340,6 +341,7 @@ function Hackhazards() {
 
         </SponsorsSection>
       </Section2>
+
     </>
   );
 }

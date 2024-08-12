@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import { members } from "../../constants/constants";
+import { members1, members2 } from "../../constants/constants";
 import TeamCard from "./TeamCard";
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
@@ -8,7 +8,7 @@ import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const Section = styled.div`
-  height: 100vh;
+  
   width: 100%;
   background-color: #010116;
   ${
@@ -20,7 +20,7 @@ const Section = styled.div`
   ); */
   }
   @media only screen and (max-width: 768px) {
-    height: 100vh;
+    
   }
 `;
 
@@ -38,11 +38,11 @@ const Container = styled.div`
 
 const Carousal = styled.div`
   width: 85vw;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-bottom: 40px;
+  
   @media only Screen and (max-width: 40em) {
     width: 85vw;
     .slick-slider .slick-arrow {
@@ -137,12 +137,37 @@ function Teams() {
               <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
                 <a href="/team">Team</a>
               </span>{" "}
-              2024-25
             </h2>
-            {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 lg:gap-xl-10"> */}
+
+            <h4 className="text-xl md:text-2xl font-bold pt-8">
+              Senior and Junior Councils for 2024-25
+            </h4>
+            
             <Carousal ref={ref}>
               <Slider ref={sliderRef} {...settings}>
-                {members.map((member) => {
+                {members1.map((member) => {
+                  return (
+                    <TeamCard
+                      key={member.name}
+                      image={member.image}
+                      name={member.name}
+                      position={member.position}
+                      linkedin={member.linkedin}
+                      github={member.github}
+                      instagram={member.instagram}
+                      twitter={member.twitter}
+                    />
+                  );
+                })}
+              </Slider>
+            </Carousal>
+
+            <h4 className="text-xl md:text-2xl font-bold pt-8">
+              Founders and Advisors
+            </h4>
+            <Carousal ref={ref}>
+              <Slider ref={sliderRef} {...settings}>
+                {members2.map((member) => {
                   return (
                     <TeamCard
                       key={member.name}
