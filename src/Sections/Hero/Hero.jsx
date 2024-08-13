@@ -249,7 +249,7 @@ const Hero = () => {
       <Founder />
       <Events />
       <SocialMedia />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </>
   );

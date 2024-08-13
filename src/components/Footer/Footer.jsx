@@ -152,7 +152,7 @@ const Footer = () => {
           <FaTelegram size={24} />
         </a>
         &nbsp;
-        <a href="mailto:namespace@bpitindia.com">
+        <a href="mailto:contact@namespacecomm.in">
           <FaEnvelope size={24} />
         </a>
         &nbsp;
