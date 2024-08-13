@@ -360,16 +360,13 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended
-            to="http://blog.namespacecomm.in/"
-            target="_blank"
-            without
-            rel="noreferrer"
-          >
-            Blog
-          </NavbarLinkExtended>
+          <NavbarLinkExtended to="http://blog.namespacecomm.in/" target="_blank" without rel="noreferrer">Blog</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
+          <NavbarLinkExtended to="/nsos">nameSpace Season of Open Source</NavbarLinkExtended>
+          <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
+          <NavbarLinkExtended to="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" without rel="noreferrer">Become a Community Partner</NavbarLinkExtended>
+          <NavbarLinkExtended to="/hackhazards">Become a Campus Evangelist</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

@@ -210,7 +210,7 @@ export const members1 = [
     name: "Garv Khurana",
     image:
       "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981315/Garv_khurana_dqljz2.jpg",
-    position: "AI/ML Head",
+    position: "AI and ML Head",
     github: "https://github.com/garvkhurana",
     linkedin: "https://www.linkedin.com/in/garv-khurana-07a8a92a4/",
     instagram: "",
@@ -230,7 +230,16 @@ export const members1 = [
     name: "Ankur Sharma",
     image:
       "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981326/IMG20240120170745_h2s0ev.jpg",
-    position: "Cyber Security Head",
+    position: "Cybersecurity Head",
+    github: "https://github.com/ankursagar020",
+    linkedin: "https://www.linkedin.com/in/ankur-sharma-674526268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: ""
+  },
+  {
+    name: "Prabal Aggarwal",
+    image:
+      "",
+    position: "UI and UX Head",
     github: "",
     linkedin: "",
     instagram: "",
@@ -781,6 +790,15 @@ export const allmembers = [
     instagram: ""
   },
   {
+    name: "Prabal Aggarwal",
+    image:
+      "",
+    position: "UI and UX Head",
+    github: "",
+    linkedin: "",
+    instagram: "",
+  },
+  {
     name: "Arsh Tiwari",
     image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981064/Arsh_Tiwari_oocqph.jpg",
     position: "Junior Council",
@@ -1141,7 +1159,7 @@ export const achievements = [
     `
   },
   {
-    img:"https://user-images.githubusercontent.com/75252077/236657010-53641de3-591f-4a61-87c6-c94d2209d52f.jpg",
+    img: "https://user-images.githubusercontent.com/75252077/236657010-53641de3-591f-4a61-87c6-c94d2209d52f.jpg",
     name: "Kartik Sharma",
     batch: "2020-24",
     achievements: `
@@ -1154,7 +1172,7 @@ export const achievements = [
     `
   },
   {
-    img:"https://user-images.githubusercontent.com/75252077/236658748-0dd5a22a-52eb-471c-8662-36efa310a38e.jpg",
+    img: "https://user-images.githubusercontent.com/75252077/236658748-0dd5a22a-52eb-471c-8662-36efa310a38e.jpg",
     name: "Vaibhav Goyal",
     batch: "2021-25",
     achievements: `
@@ -1194,7 +1212,7 @@ export const achievements = [
     `
   },
   {
-    img:"https://res.cloudinary.com/df5hitkbj/image/upload/v1693238094/shivank_hglloc.jpg",
+    img: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693238094/shivank_hglloc.jpg",
     name: "Shivank Kapur",
     batch: "2022-26",
     achievements: `

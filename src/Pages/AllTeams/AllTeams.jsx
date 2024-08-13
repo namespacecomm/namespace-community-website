@@ -57,9 +57,9 @@ function AllTeams() {
             </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              In the last one year nameSpace has grown on to become a vibrant
+              In the last two years nameSpace has grown on to become a vibrant
               and thriving collection of tech enthusiasts and problem solvers.
-              Given below are few of the club members who make the community
+              Given below are few of the members who make the community
               amazing.
             </p>
 
@@ -78,7 +78,7 @@ function AllTeams() {
               </a>
             </div> */}
 
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <a
                 href="https://drive.google.com/file/d/1Q7mriaawFWWKyiOmUVOGInszPCgQoVl5/view"
                 target="_blank"
@@ -91,7 +91,7 @@ function AllTeams() {
                   Position Holders 2024-25
                 </button>
               </a>
-            </div>
+            </div> */}
 
             <div className="flex justify-center items-center">
               <div className="my-grid">
