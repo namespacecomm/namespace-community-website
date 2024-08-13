@@ -97,7 +97,7 @@ const Founder = () => {
           Looking ahead, we are excited to continue expanding our reach and impact. We are exploring new initiatives, enhancing our existing programs, and constantly seeking ways to better serve our community members. Your feedback and participation are invaluable to us, and I encourage you to stay engaged, share your ideas, and help us shape the future of the nameSpace Community. Thank you for being an integral part of this journey. Together, we will continue to learn, grow, and make a difference in the tech world.
           <br />
           <br />
-          ~ <a href="https://pradeeptosarkar.netlify.app/" target="_blank" without rel="noreferrer"  style={{ color: 'lightblue', textDecoration: 'underline', fontSize: '18px' }}>Pradeepto Sarkar</a>
+          ~ <a href="https://pradeeptosarkar.vercel.app/" target="_blank" without rel="noreferrer"  style={{ color: 'lightblue', textDecoration: 'underline', fontSize: '18px' }}>Pradeepto Sarkar</a>
 
           </Desc>
         </Left>

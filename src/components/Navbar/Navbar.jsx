@@ -163,7 +163,9 @@ function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const partnersDropdownRef = useRef(null);
 
   const location = useLocation();
 
@@ -176,9 +178,19 @@ function Navbar() {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const handlePartnersDropdownToggle = () => {
+    setPartnersDropdownOpen(!partnersDropdownOpen);
+  };
+
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setDropdownOpen(false);
+    }
+    if (
+      partnersDropdownRef.current &&
+      !partnersDropdownRef.current.contains(event.target)
+    ) {
+      setPartnersDropdownOpen(false);
     }
   };
 
@@ -232,8 +244,11 @@ function Navbar() {
                 )}
               </div>
               <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
-                <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
+                
                 <DropdownItem to="/techx">TechXcelerate</DropdownItem>
+                <DropdownItem to="/nsos">nameSpace Season of Open Source</DropdownItem>
+                <DropdownItem to="/algorena">Algorena</DropdownItem>
+                <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
                 <DropdownItem to="/events">All Events</DropdownItem>
               </DropdownMenu>
             </NavbarLink>
@@ -272,7 +287,9 @@ function Navbar() {
             </NavbarLink>
             <NavbarLink
               to="http://blog.namespacecomm.in/"
-              target="_blank" without rel="noreferrer" 
+              target="_blank"
+              without
+              rel="noreferrer"
               className={
                 activeNavLink === "/http://blog.namespacecomm.in/"
                   ? "active"
@@ -286,57 +303,44 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
-            {/* <NavbarLink
-              to="/communityevangelist"
-              className={activeNavLink === "/communityevangelist" ? "active" : ""}
-            >
-              <div className="flex">
-                Community Evangelist
-                <span class="relative flex h-2 w-2 mx-1">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3636CF]/40 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-[#3b3b98]"></span>
-                </span>
-                {activeNavLink === "/communityevangelist" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink> */}
-            {/* <NavbarLink
-              to="/techx"
-              className={activeNavLink === "/techx" ? "active" : ""}
-            >
-              <div>
-                TechXcelerate
-                {activeNavLink === "/techx" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
             <NavbarLink
-              to="/hackhazards"
-              className={activeNavLink === "/hackhazards" ? "active" : ""}
+              to="#"
+              className={activeNavLink === "/partners" ? "active" : ""}
+              onClick={handlePartnersDropdownToggle}
             >
               <div>
-                HACKHAZARDS
-                {activeNavLink === "/hackhazards" && (
+                Partner with us
+                {activeNavLink === "/partners" && (
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink> */}
+              <DropdownMenu
+                ref={partnersDropdownRef}
+                show={partnersDropdownOpen}
+              >
+                <DropdownItem
+                  as="a"
+                  href="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Become a Community Partner
+                </DropdownItem>
+
+                <DropdownItem to="/campusevangelist">
+                  Become a Campus Evangelist
+                </DropdownItem>
+              </DropdownMenu>
+            </NavbarLink>
           </NavLinks>
 
-          <div className="flex flex-row md:flex-col md:space-x-6">
-            <NavbarLinkContainer className="w-full md:w-auto mb-4 mr-4 md:mb-0 ">
-              <a href="/campusevangelist" target="" className="w-full">
-                <Button className="w-full">Become a Campus Evangelist</Button>
-              </a>
-            </NavbarLinkContainer>
-
+          <div className="flex flex-row md:flex-col md:space-x-6 items-center">
             <NavbarLinkContainer className="w-full md:w-auto ">
               <a
                 href="https://linktr.ee/namespacecomm"
                 target="_blank"
-                without rel="noreferrer" 
+                without
+                rel="noreferrer"
                 className="w-full"
               >
                 <Button className="w-full">Connect with us</Button>
@@ -356,7 +360,12 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.nsccbpit.tech/" target="_blank" without rel="noreferrer" >
+          <NavbarLinkExtended
+            to="http://blog.namespacecomm.in/"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
             Blog
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
