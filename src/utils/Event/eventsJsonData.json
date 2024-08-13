@@ -38,7 +38,7 @@
     },
     {
       "date": "14/04/2023 - 23/04/2023",
-      "title": "TechXcelerate 2023 - Series of 12 power-packed sessions aimed at fresher students",
+      "title": "TechXcelerate - Series of 12 power-packed sessions aimed at fresher students",
       "extraTitle": "",
       "subtitle": ""
     },
@@ -74,7 +74,13 @@
     },
     {
       "date": "16/03/2024 - 17/03/2024",
-      "title": "HACKHAZARDS '24 : IPU's Largest Offline Hackathon " ,
+      "title": "HACKHAZARDS '24 : IPU's Largest Hackathon " ,
+      "extraTitle": "",
+      "subtitle": ""
+    },
+    {
+      "date": "31/03/2024",
+      "title": "Game of Codes 4.0 organized with over 200 participants " ,
       "extraTitle": "",
       "subtitle": ""
     }

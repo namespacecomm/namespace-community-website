@@ -206,19 +206,6 @@ export const members1 = [
     linkedin: "https://www.linkedin.com/in/yuvan-grover-85b03526a",
     instagram: "",
   },
-
-
-  {
-    name: "Chetan Chauhan",
-    image:
-      "",
-    position: "Competitive Programming Head",
-    github: "",
-    linkedin: "",
-    instagram: "",
-  },
-
-
   {
     name: "Garv Khurana",
     image:
@@ -679,7 +666,7 @@ export const allmembers = [
   {
     name: "Diksha Sharma",
     image:
-      "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865733/Diksha_Sharma_ins2c5.jpg",
+      "https://res.cloudinary.com/dbffy7v9s/image/upload/v1721230258/xcu3r48yugyf0zht68fx.jpg",
     position: "President",
     github: "https://github.com/DikshaDhasmana",
     linkedin: "https://www.linkedin.com/in/diksha-sharma-1650b1258",
@@ -776,18 +763,9 @@ export const allmembers = [
   },
 
   {
-    name: "Chetan Chauhan",
-    image:
-      "",
-    position: "Competitive Programming Head",
-    github: "https://github.com/chetan3327",
-    linkedin: "http://linkedin.com/in/chetan3327",
-    instagram: "",
-  },
-  {
     name: "Jatin Gera",
     image:
-      "",
+      "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981301/Jatin_Gera.JPG_cxptou.jpg",
     position: "Cloud and Devops Head",
     github: "https://github.com/JatinGera27aug",
     linkedin: "https://www.linkedin.com/in/jatin-gera-27aug",
@@ -796,7 +774,7 @@ export const allmembers = [
   {
     name: "Ankur Sharma",
     image:
-      "",
+      "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981326/IMG20240120170745_h2s0ev.jpg",
     position: "Cybersecurity Head",
     github: "https://github.com/ankursagar020",
     linkedin: "https://www.linkedin.com/in/ankur-sharma-674526268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
