@@ -350,18 +350,6 @@ export const members2 = [
 
   {
     image:
-      "https://user-images.githubusercontent.com/75252077/236656995-6815699e-d7bd-49d0-b0c9-2df920d57884.jpg",
-    name: "Rajat Gupta",
-    position: "Co-Founder",
-    team: "SC",
-    github: "",
-    linkedin: "",
-    instagram: "",
-    twitter: "",
-  },
-
-  {
-    image:
       "https://user-images.githubusercontent.com/75252077/236657010-53641de3-591f-4a61-87c6-c94d2209d52f.jpg",
     name: "Kartik Sharma",
     position: "Co-Founder",
@@ -515,18 +503,6 @@ export const allmembers = [
     linkedin: "https://www.linkedin.com/in/pradeeptosarkar",
     instagram: "https://instagram.com/pradeeptosarkar",
     twitter: "https://twitter.com/pradeepto_src",
-  },
-
-  {
-    image:
-      "https://user-images.githubusercontent.com/75252077/236656995-6815699e-d7bd-49d0-b0c9-2df920d57884.jpg",
-    name: "Rajat Gupta",
-    position: "Co-Founder",
-    team: "SC",
-    github: "",
-    linkedin: "",
-    instagram: "",
-    twitter: "",
   },
 
   {
