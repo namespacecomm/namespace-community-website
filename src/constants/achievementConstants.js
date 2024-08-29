@@ -25,7 +25,7 @@ export const achievements = [
     },
     {
       img: "",
-      name: "Rishi",
+      name: "Rishi Jha",
       batch: "2021-25",
       achievements: `
         ICPC Regionalist 2023-24 | Expert @ Codeforces | [Dont know] Codechef | Ex- JC @ The nameSpace Community
@@ -247,12 +247,6 @@ export const achievements = [
     {
       img: "",
       name: "Pawas Goyal",
-      batch: "2021-25",
-      achievements: "",
-    },
-    {
-      img: "",
-      name: "Rishi Jha",
       batch: "2021-25",
       achievements: "",
     },
