@@ -9,7 +9,7 @@ export const achievements = [
     img: "https://media.licdn.com/dms/image/v2/C4D03AQEatv7P9Aso-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651746196592?e=1730332800&v=beta&t=_WKkn9_qse81Uauxp3pOBvWAxKF0rfVO-ZWGSaEFHXA",
     name: "Deepti Mittal",
     batch: "2020-24",
-    achievements: "SDE @Xeno",
+    achievements: "SDE @Xeno | Offered Juspay, Josh Technologies",
   },
   {
     img: "https://media.licdn.com/dms/image/v2/D5635AQGjh-QoZIKR5w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1703348681758?e=1725631200&v=beta&t=HK7AQEFGQboS-uldiGiWWlpYRevHr8lM4REJ53jUm3s",
