@@ -95,6 +95,7 @@ import { ORACLECLOUD } from "./Pages/AllResources/devopsALL/oracle-cloud";
 import TechX from "./Pages/TechXcelerate/Techx";
 import Hackhazards from "./Pages/Hackhazards/Hackhazards";
 import CampusEvangelist from "./Pages/CampusEvangelist/CampusEvangelist";
+import CodingChallenge from "./Pages/CodingChallenge/CodingChallenge";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -127,6 +128,7 @@ function App() {
               <Route path="techx" element={<TechX />} />
               <Route path="hackhazards" element={<Hackhazards />} />
               <Route path="campusevangelist" element={<CampusEvangelist />} />
+              <Route path="CodingChallenge" element={<CodingChallenge />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
               <Route path="sortalgo" element={<SortAlgo />} />

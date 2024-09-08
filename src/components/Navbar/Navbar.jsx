@@ -332,7 +332,20 @@ function Navbar() {
                 </DropdownItem>
               </DropdownMenu>
             </NavbarLink>
-          </NavLinks>
+
+          <NavbarLink
+              to="/CodingChallenge"
+              className={activeNavLink === "/CodingChallenge" ? "active" : ""}
+            >
+              <div>
+                Coding Challenge
+                {activeNavLink === "/CodingChallenge" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+
+            </NavLinks>
 
           <div className="flex flex-row md:flex-col md:space-x-6 items-center">
             <NavbarLinkContainer className="w-full md:w-auto ">

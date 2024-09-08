@@ -293,7 +293,7 @@ export const achievements = [
     img: "https://res.cloudinary.com/df5hitkbj/image/upload/v1699865734/PranavBarthwal_1_ycli1h.jpg",
     name: "Pranav Barthwal",
     batch: "2022-26",
-    achievements: "DevRel @Decentraclasses | ex-Intern @C-DOT",
+    achievements: "Developer Advocate @Quira.sh | DevRel @Decentraclasses | ex-Intern @C-DOT",
   },
   {
     img: "https://media.licdn.com/dms/image/v2/D4D03AQHg8RUReWY8Sg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690084304947?e=1730937600&v=beta&t=buRQzNINEFH0jT2iWd0gHej3dupXUGYgUg2rRkyXo5E",
