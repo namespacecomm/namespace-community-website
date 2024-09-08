@@ -49,8 +49,8 @@ const NavLinks = styled.div`
 
 const NavbarLink = styled(Link)`
   color: white;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-decoration: none;
   transition: 200ms ease-in-out;
   padding: 0.5rem;
@@ -101,9 +101,9 @@ const NavbarLogo = styled(Link)`
 
 const NavbarLinkExtended = styled(Link)`
   color: white;
-  font-size: 20px;
+  font-size: 12px;
   text-decoration: none;
-  margin: 10px;
+  margin: 5px;
   :hover {
     color: #3a60cf;
     font-weight: bold;
@@ -380,6 +380,7 @@ function Navbar() {
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
           <NavbarLinkExtended to="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" without rel="noreferrer">Become a Community Partner</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">Become a Campus Evangelist</NavbarLinkExtended>
+          <NavbarLinkExtended to="/codingchallenge">Coding Challenge</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
