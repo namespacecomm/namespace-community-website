@@ -181,7 +181,7 @@ export const achievements = [
     img: "https://media.licdn.com/dms/image/v2/D5603AQGiAdAyhvHTrQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715278957439?e=1730332800&v=beta&t=sFUzbspHzWHJQR2xmFIaArW4rTX8IVQYS8WVutZiwgk",
     name: "Akkul Gautam",
     batch: "2021-25",
-    achievements: "Specialist @codeforces || Knight @Leetcode(1923 rated) || 3⭐ Codechef",
+    achievements: "SDE Intern @Juspay || Specialist @codeforces || Knight @Leetcode(1923 rated) || 3⭐ Codechef",
   },
   {
     img: "https://res.cloudinary.com/df5hitkbj/image/upload/v1693144357/WhatsApp_Image_2023-08-27_at_19.22.07_aar0ka.jpg",
@@ -247,7 +247,7 @@ export const achievements = [
     img: "https://res.cloudinary.com/df5hitkbj/image/upload/v1696347467/WhatsApp_Image_2023-10-03_at_19.48.38_9b68ab3a_pdkmkv.jpg",
     name: "Gautam Gupta",
     batch: "2021-25",
-    achievements: "",
+    achievements: "SDE Intern @Juspay",
   },
   {
     img: "https://media.licdn.com/dms/image/v2/D4E03AQG9Y7N6DK36Hw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1702396261744?e=1730332800&v=beta&t=hHEEQbrNZintR0rgKNqGIYN0d5XDxElqM0s566TO4hk",
