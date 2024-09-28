@@ -1,26 +1,26 @@
 <div id="top"></div>
 
-<h1 align="center"> The nameSpace Community (previously NSCC BPIT) WEBSITE </h1>
+<h1 align="center"> The nameSpace Community WEBSITE </h1>
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub forks](https://img.shields.io/github/forks/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub watchers](https://img.shields.io/github/watchers/NSCC-BPIT/NSCC-BPIT-Website?)
-![Repo. Size](https://img.shields.io/github/repo-size/NSCC-BPIT/NSCC-BPIT-Website?)
+![GitHub stars](https://img.shields.io/github/stars/namespacecomm/namespace-community-website?)
+![GitHub forks](https://img.shields.io/github/forks/namespacecomm/namespace-community-website?)
+![GitHub watchers](https://img.shields.io/github/watchers/namespacecomm/namespace-community-website?)
+![Repo. Size](https://img.shields.io/github/repo-size/namespacecomm/namespace-community-website?)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)
     
-![GitHub contributors](https://img.shields.io/github/contributors/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub language count](https://img.shields.io/github/languages/count/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub top language](https://img.shields.io/github/languages/top/NSCC-BPIT/NSCC-BPIT-Website?)
-![GitHub last commit](https://img.shields.io/github/last-commit/NSCC-BPIT/NSCC-BPIT-Website?)
+![GitHub contributors](https://img.shields.io/github/contributors/namespacecomm/namespace-community-website?)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/namespacecomm/namespace-community-website?)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/namespacecomm/namespace-community-website?)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/namespacecomm/namespace-community-website?)
+![GitHub language count](https://img.shields.io/github/languages/count/namespacecomm/namespace-community-website?)
+![GitHub top language](https://img.shields.io/github/languages/top/namespacecomm/namespace-community-website?)
+![GitHub last commit](https://img.shields.io/github/last-commit/namespacecomm/namespace-community-website?)
    
 
 </div>
@@ -32,13 +32,13 @@
    <br>
  
   <br />
-    <strong> <a href="https://www.nsccbpit.tech/">Visit the Official Website » </strong></a> 
+    <strong> <a href="https://www.namespacecomm.in/">Visit the Official Website » </strong></a> 
     <br />
-    <a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/issues/new?assignees=&labels=bug%2CPriority-High%2Cwant+fix%2CReview+Required&template=bug_report.yml&title=%5BBug%5D%3A+">Report Bug</a>
+    <a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=bug%2CPriority-High%2Cwant+fix%2CReview+Required&template=bug_report.yml&title=%5BBug%5D%3A+">Report Bug</a>
     ·
-    <a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/issues/new?assignees=&labels=documentation%2Cenhancement%2Cgood+first+issue&template=doc_report.yml&title=%5BDoc%5D%3A+">Documentation Request</a>
+    <a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=documentation%2Cenhancement%2Cgood+first+issue&template=doc_report.yml&title=%5BDoc%5D%3A+">Documentation Request</a>
 	.
-	<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">Feature Request</a>
+	<a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">Feature Request</a>
   </p>
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
@@ -78,7 +78,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 ## Open Source programs this repo has been part of
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
 
 
 <div align="center">
@@ -86,7 +86,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 </div>
 
 <div align="center">
-    <a href="https://hacktoberfest.com/">HACTOBERFEST 2023</a>
+    <a href="https://hacktoberfest.com/">HACTOBERFEST 2024</a>
 
 </div>
 <br>
@@ -99,7 +99,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 ## Overview of Project
 
-<p align="center">   The goal of this project is to help beginners with their contributions to Open Source. We aim to achieve this collaboratively, so feel free to contribute in any way you want, just make sure to follow the contribution guidelines.
+<p align="center">   The goal of this project is to help beginners with their contributions to Open Source. We aim to achieve this collaboratively, so feel free to contribute in any way you want, make sure to follow the contribution guidelines, and contribute strictly according to the requirements mentioned in the issue assigned to you.
 </p>
 
 <!--  .............................................................................................................................................  -->
@@ -135,23 +135,24 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 ## Contribution Guidelines
 
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=royalblue"></a>
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://img.shields.io/github/contributors/NSCC-BPIT/NSCC-BPIT-Website?color=royalblue&style=flat-square"></a>
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?color=royalblue&style=flat-square"></a>
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=royalblue"></a>
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/github/contributors/NSCC-BPIT/NSCC-BPIT-Website?color=royalblue&style=flat-square"></a>
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?color=royalblue&style=flat-square"></a>
+
 #### 🔑Guidelines
 
-Here are some set of guidelines to follow while contributing to `NSCC_BPIT_WEBSITE` :
+Here are some set of guidelines to follow while contributing to `NAMESPACE_COMMUNITY_WEBSITE` :
 ```
 1. Welcome to this repository, if you are here as an open-source program participant/contributor.
 2. Participants/contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
-4. Participants/contributors can also **open their issues**, but it needs to be verified and labelled by a mentor. We respect all your contributions, whether 
+4. Participants/contributors can also **open their issues**, but it needs to be verified and labeled by a mentor. We respect all your contributions, whether 
 it is an Issue or a Pull Request.
 5. When you raise an issue, make sure you get it assigned to you before you start working on that project.
 6. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
 7. Don't create issues that are **already listed**.
 8. Please don't pick up an issue already assigned to someone else. Work on the issues after it gets **assigned to you**.
-9. Create your file in an appropriate folder with appropriate name and extension.
+9. Create your file in an appropriate folder with the appropriate name and extension.
 10. Pull requests will be merged after being **reviewed** by  maintainers.
 11. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
 ```
@@ -159,20 +160,20 @@ it is an Issue or a Pull Request.
 ### How to Contribute: 
 
 
-- Before Contribute Please read [CONTRIBUTING.md](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/NSCC-BPIT/NSCC-BPIT-Website/blob/master/CODE_OF_CONDUCT.md)
+- Before Contribute Please read [CONTRIBUTING.md](https://github.com/namespacecomm/namespace-community-website/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/namespacecomm/namespace-community-website/blob/master/CODE_OF_CONDUCT.md)
 - Fork the repo to your Github.<br/>
 
 - Clone the Forked Repository to your local machine.
 	```
-	git clone https://github.com/<username>/NSCC-BPIT-Website.
+	git clone https://github.com/<username>/namespace-community-website
 	```
 - Change the directory to NSCC-BPIT-Website.
 	```bash
-	cd NSCC-BPIT-Website
+	cd namespace-community-website
 	```
 - Add remote to the Original Repository.
 	```
-	git remote add upstream https://github.com/NSCC-BPIT/NSCC-BPIT-Website
+	git remote add upstream https://github.com/namespacecomm/namespace-community-website
 	```
 - Check the remotes for this repository.
         ```
@@ -216,7 +217,7 @@ it is an Issue or a Pull Request.
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 ### Install dependencies
 ```
-cd NSCC-BPIT-Website
+cd namespace-community-website
 npm install
 npm start
 ```
@@ -226,16 +227,16 @@ npm start
 
 ## Contributors
 <div align="center">
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
 </div>
 <br>
 <div>
 <h1 align="center">
  <b>Thanks to these amazing people
 <h1>
-<a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/contributors">
-  <img src="https://contrib.rocks/image?repo=NSCC-BPIT/NSCC-BPIT-Website&&max=817" />
+<a href="https://github.comnamespacecomm/namespace-community-website/contributors">
+  <img src="https://contrib.rocks/image?repo=namespacecomm/namespace-community-website&&max=817" />
 </a>
 </div>
 
@@ -261,11 +262,11 @@ You can refer to the following articles on the basics of Git and Github and also
 ## Feedback
 
 If you have any feedback or suggestions please reach out to maintainers.  
-* [Manan khandelwal](https://github.com/mnnkhndlwl)
 * [Pradeepto Sarkar](https://github.com/pradeeptosarkar)
+* [Manan khandelwal](https://github.com/mnnkhndlwl)
 * [Pranav Barthwal](https://github.com/PranavBarthwal)  
   
-Or you can create a  <a href="https://github.com/NSCC-BPIT/NSCC-BPIT-Website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">issue</a> and mention there , which features can make this Project more good.
+Or you can create a  <a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">issue</a> and mention there, which features can make this Project better.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
