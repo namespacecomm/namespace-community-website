@@ -139,7 +139,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 ## Contribution Guidelines
 
 <a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=royalblue"></a>
-<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/github/contributors/NSCC-BPIT/NSCC-BPIT-Website?color=royalblue&style=flat-square"></a>
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/github/contributors/namespacecomm/namespace-community-website?color=royalblue&style=flat-square"></a>
 <a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?color=royalblue&style=flat-square"></a>
 
 #### 🔑Guidelines
@@ -170,7 +170,7 @@ it is an Issue or a Pull Request.
   ```
   git clone https://github.com/<username>/namespace-community-website
   ```
-- Change the directory to NSCC-BPIT-Website.
+- Change the directory to namespace-community-website.
   ```bash
   cd namespace-community-website
   ```
