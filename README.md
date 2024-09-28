@@ -186,7 +186,7 @@ it is an Issue or a Pull Request.
   `    git checkout -b <your_branch_name>`
 - Perform your desired changes to the code base.
 - Track your changes:heavy_check_mark: .
-  `    git add . `
+  `   git add .`
 - Commit your changes .
   `    git commit -m "Relevant message"`
 - Push the committed changes in your feature branch to your remote repo.
