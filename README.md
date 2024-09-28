@@ -78,7 +78,7 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 <a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
 
 <div align="center">
-<img src="https://miro.medium.com/v2/resize:fit:1400/0*McOGR_vW3LivYNor.png" width="500px">
+	<img width="500" alt="DO-HFest-EmailBanner-600px-2-@2x" src="https://github.com/user-attachments/assets/35fac2ec-bc00-435d-b834-610cf41ffae3">
 </div>
 
 <div align="center">
