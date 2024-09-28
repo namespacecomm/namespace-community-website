@@ -4,16 +4,15 @@
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
-
 <div align="center">
 
 ![GitHub stars](https://img.shields.io/github/stars/namespacecomm/namespace-community-website?)
 ![GitHub forks](https://img.shields.io/github/forks/namespacecomm/namespace-community-website?)
 ![GitHub watchers](https://img.shields.io/github/watchers/namespacecomm/namespace-community-website?)
+
 ![Repo. Size](https://img.shields.io/github/repo-size/namespacecomm/namespace-community-website?)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)
-    
 ![GitHub contributors](https://img.shields.io/github/contributors/namespacecomm/namespace-community-website?)
 ![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/namespacecomm/namespace-community-website?)
 ![GitHub PR Open](https://img.shields.io/github/issues-pr/namespacecomm/namespace-community-website?)
@@ -21,16 +20,14 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/namespacecomm/namespace-community-website?)
 ![GitHub top language](https://img.shields.io/github/languages/top/namespacecomm/namespace-community-website?)
 ![GitHub last commit](https://img.shields.io/github/last-commit/namespacecomm/namespace-community-website?)
-   
 
 </div>
 
 <!-- ---------------------------------------------------------------------------------------------------------------------- -->
 
 <p align="center">
- <strong> A beginner-friendly project to help you in open source contributions. </strong>
+ <strong> The official website of The nameSpace Community and Organization </strong>
    <br>
- 
   <br />
     <strong> <a href="https://www.namespacecomm.in/">Visit the Official Website » </strong></a> 
     <br />
@@ -45,6 +42,7 @@
 <!-- TABLE OF CONTENTS -->
 
 ### 📌Table of Contents :
+
 - [What is Open Source?](#What-is-Open-Source?)
 - [Open Source programs this repo has been part of](#Open-Source-programs-this-repo-has-been-part-of)
 - [Overview of Project](#Overview-of-Project)
@@ -57,8 +55,6 @@
 - [Github Beginner Guide](#Github-Beginner-Guide)
 - [Feedback](#Feedback)
 
-
-  
 <p align="right">(<a href="#Bottom">Bottom</a>)</p>
 
 <br>
@@ -66,8 +62,8 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 ## What is Open Source?
-  
-  <p align="center">   The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. When you contribute to something you already know and love, it can have so much more meaning, because you know how the tool is used and the good it does for you. Being part of an open source community opens you up to a broader range of people to interact with. 
+
+  <p align="center">   The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. When you contribute to something you already know and love, it can have so much more meaning, because you know how the tool is used and the good it does for you. Being part of an open source community opens you up to a broader range of people to interact with.
 
 Read more about it <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source"> here. </a>
 
@@ -78,8 +74,8 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 ## Open Source programs this repo has been part of
-<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
 
+<a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
 
 <div align="center">
 <img src="https://miro.medium.com/v2/resize:fit:1400/0*McOGR_vW3LivYNor.png" width="500px">
@@ -103,31 +99,38 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 </p>
 
 <!--  .............................................................................................................................................  -->
-### Tech Stacks used 
 
+### Tech Stacks used
 
-  ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  ![React](https://img.shields.io/badge/React-323330?style=for-the-badge&logo=react&logoColor=F7DF1E)
-  ![MaterialUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=F7DF1E)
-  ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
-  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
-  ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) 
-  
-
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React](https://img.shields.io/badge/React-323330?style=for-the-badge&logo=react&logoColor=F7DF1E)
+![MaterialUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=F7DF1E)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 ### Screenshots of Website
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/4cf2ac82-532b-4725-a4ff-e952fedbc436)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/73564568-0db7-4c8b-9e2b-88eb072c6e7f)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b837d62a-89b1-44df-b6f3-f88327f27beb)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/ed89fd52-06eb-4990-8cb7-5c16439a643c)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/3cb257ab-e82e-439a-a0b3-37aece34c1ed)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/dad350ba-74a3-471e-b199-5da8bdb7df75)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/efa5c692-685c-490c-983e-d2c7ca023cc3)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/a9485906-641a-459d-b644-5f21d483e867)
+
 # ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b05575d1-c830-47f3-8345-bae3388305d8)
 
   <p align="right">(<a href="#top">back to top</a>)</p>
@@ -142,11 +145,12 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 #### 🔑Guidelines
 
 Here are some set of guidelines to follow while contributing to `NAMESPACE_COMMUNITY_WEBSITE` :
+
 ```
 1. Welcome to this repository, if you are here as an open-source program participant/contributor.
 2. Participants/contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
-4. Participants/contributors can also **open their issues**, but it needs to be verified and labeled by a mentor. We respect all your contributions, whether 
+4. Participants/contributors can also **open their issues**, but it needs to be verified and labeled by a mentor. We respect all your contributions, whether
 it is an Issue or a Pull Request.
 5. When you raise an issue, make sure you get it assigned to you before you start working on that project.
 6. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
@@ -157,75 +161,62 @@ it is an Issue or a Pull Request.
 11. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
 ```
 
-### How to Contribute: 
-
+### How to Contribute:
 
 - Before Contribute Please read [CONTRIBUTING.md](https://github.com/namespacecomm/namespace-community-website/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/namespacecomm/namespace-community-website/blob/master/CODE_OF_CONDUCT.md)
 - Fork the repo to your Github.<br/>
 
 - Clone the Forked Repository to your local machine.
-	```
-	git clone https://github.com/<username>/namespace-community-website
-	```
+  ```
+  git clone https://github.com/<username>/namespace-community-website
+  ```
 - Change the directory to NSCC-BPIT-Website.
-	```bash
-	cd namespace-community-website
-	```
+  ```bash
+  cd namespace-community-website
+  ```
 - Add remote to the Original Repository.
-	```
-	git remote add upstream https://github.com/namespacecomm/namespace-community-website
-	```
+  ```
+  git remote add upstream https://github.com/namespacecomm/namespace-community-website
+  ```
 - Check the remotes for this repository.
-        ```
-        git remote -v
-        ```
+  `    git remote -v`
 - Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
-        ```
-        git pull upstream main
-        ```
+  `    git pull upstream main`
 - Create a new branch.
-        ```
-        git checkout -b <your_branch_name>
-        ```
+  `    git checkout -b <your_branch_name>`
 - Perform your desired changes to the code base.
 - Track your changes:heavy_check_mark: .
-        ```
-        git add . 
-        ```
+  `    git add . `
 - Commit your changes .
-        ```
-        git commit -m "Relevant message"
-        ```
+  `    git commit -m "Relevant message"`
 - Push the committed changes in your feature branch to your remote repo.
-        ```
-        git push -u origin <your_branch_name>
-        ```
+  `    git push -u origin <your_branch_name>`
 - To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
 
 - Add appropriate title and description to your pull request explaining your changes and efforts done.
 
-
 - Click on `Create Pull Request`.
 
-
 - Voila! You have made a PR to this repo. Sit back patiently and relax while your PR is reviewed
-
-	
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 ### Install dependencies
+
 ```
 cd namespace-community-website
 npm install
 npm start
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 ## Contributors
+
 <div align="center">
 <a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://forthebadge.com/images/badges/built-by-developers.svg"  ></a> 
 <a href="https://github.com/namespacecomm/namespace-community-website"><img src="https://forthebadge.com/images/badges/built-with-love.svg"  ></a> 
@@ -243,34 +234,35 @@ npm start
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
 ## Github Beginner Guide
+
 #### Are you a beginner in using Github?
 
 You can refer to the following articles on the basics of Git and Github and also contact me, in case you are stuck:
+
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
-	
-	 
-	 <p align="right">(<a href="#top">back to top</a>)</p>
 
+ <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-  
+
 ## Feedback
 
-If you have any feedback or suggestions please reach out to maintainers.  
-* [Pradeepto Sarkar](https://github.com/pradeeptosarkar)
-* [Manan khandelwal](https://github.com/mnnkhndlwl)
-* [Pranav Barthwal](https://github.com/PranavBarthwal)  
-  
-Or you can create a  <a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">issue</a> and mention there, which features can make this Project better.
+If you have any feedback or suggestions please reach out to maintainers.
+
+- [Pradeepto Sarkar](https://github.com/pradeeptosarkar)
+- [Manan khandelwal](https://github.com/mnnkhndlwl)
+- [Pranav Barthwal](https://github.com/PranavBarthwal)
+
+Or you can create a <a href="https://github.com/namespacecomm/namespace-community-website/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">issue</a> and mention there, which features can make this Project better.
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-  
 <br>
 	 
 <div align="center">
@@ -278,6 +270,5 @@ Or you can create a  <a href="https://github.com/namespacecomm/namespace-communi
 </div>
 
 ### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Thanks+for+contributing!;&size=30;align=center)](https://git.io/typing-svg)
-  
-  
+
 <div id="Bottom"></div>
