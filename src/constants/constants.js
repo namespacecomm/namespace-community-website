@@ -1,8 +1,19 @@
 export const images = [
-  { src: "./img/2.jpg", alt: "Image 1" },
-  { src: "./img/3.jpeg", alt: "Image 2" },
+  { src: "./img/8.jpg", alt: "Image 7" },
+  { src: "./img/10.jpg", alt: "Image 9" },
   { src: "./img/4.jpg", alt: "Image 3" },
+  { src: "./img/11.jpg", alt: "Image 10" },
+  { src: "./img/3.jpeg", alt: "Image 2" },
+  { src: "./img/3.jpg", alt: "Image 3" },
   { src: "./img/5.jpg", alt: "Image 4" },
+  { src: "./img/16.jpg", alt: "Image 15" },
+  { src: "./img/6.jpeg", alt: "Image 5" },
+  { src: "./img/9.jpg", alt: "Image 8" },
+  { src: "./img/12.jpg", alt: "Image 11" },
+  { src: "./img/13.jpg", alt: "Image 12" },
+  { src: "./img/14.jpg", alt: "Image 13" },
+  { src: "./img/15.jpg", alt: "Image 14" },
+
 ];
 
 export const founderImages = [
