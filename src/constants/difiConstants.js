@@ -1,4 +1,4 @@
-export const cryptoCurrency = [
+export const difiContents = [
   {
     name: "Web Development",
     to: "/webd",
