@@ -245,7 +245,7 @@ const reactNativeDevelopmentPaths = [
       "https://www.postingtree.com/wp-content/uploads/2022/06/7-Key-Differences-Traditional-vs-Mobile-App-Development-1.png",
     description:
       "This path focuses on building mobile applications using React Native for both iOS and Android platforms. It includes Learning JavaScript and React, Mastering React Native UI components, Exploring navigation and state management, Integrating APIs for data retrieval, Building and publishing mobile apps.",
-    to: "/mobile-app-developer-path", // Replace with your actual route
+    // to: "/mobile-app-developer-path", // Replace with your actual route
   },
   {
     title: "The Front-End Web Developer Path",
@@ -253,14 +253,14 @@ const reactNativeDevelopmentPaths = [
       "https://appinventiv.com/wp-content/uploads/sites/1/2019/06/Less-Talked-About-React-Native-App-Development-Considerations.png",
     description:
       "If you're a front-end web developer interested in expanding your skills to mobile development, this path is for you: Learning JavaScript and React, Building mobile-friendly web applications using React Native for the web, Understanding responsive design principles, Integrating web APIs and services, Deploying React Native web applications.",
-    to: "/web-developer-path", // Replace with your actual route
+    // to: "/web-developer-path", // Replace with your actual route
   },
   {
     title: "The Cross-Platform Developer Path:",
     image: "https://softflame.in/images/cross2.png",
     description:
       "If you want to develop for multiple platforms beyond just mobile and web, consider this path: Mastering JavaScript and React, Exploring React Native's cross-platform capabilities, Experimenting with React Native for desktop (Windows, macOS, Linux), Creating cross-platform applications for various devices.",
-    to: "/cross-platform-path", // Replace with your actual route
+    // to: "/cross-platform-path", // Replace with your actual route
   },
   {
     title: "The UI/UX Designer Path",
@@ -268,7 +268,7 @@ const reactNativeDevelopmentPaths = [
       "https://assets-global.website-files.com/6410ebf8e483b5bb2c86eb27/6410ebf8e483b5538286fbf4_Image%20by%20Freepik%202.jpg",
     description:
       "If your passion lies in designing user interfaces and experiences, you can specialize in React Native UI/UX design: Learning JavaScript basics, Gaining a deep understanding of React Native components and design principles, Creating visually appealing and user-friendly UIs, Collaborating with developers to bring designs to life.",
-    to: "/ui-ux-designer-path", // Replace with your actual route
+    // to: "/ui-ux-designer-path", // Replace with your actual route
   },
   {
     title: "The Open-Source Contributor Path:",
@@ -276,7 +276,7 @@ const reactNativeDevelopmentPaths = [
       "https://www.suse.com/c/wp-content/uploads/2018/10/Open-Source-Software-.jpg",
     description:
       "If you enjoy contributing to the developer community, consider this path: Learning JavaScript and React, Identifying open-source React Native projects to contribute to on platforms like GitHub, Collaborating with other developers on bug fixes, new features, or documentation, Gaining recognition in the React Native community.",
-    to: "/open-source-contributor-path", // Replace with your actual route
+    // to: "/open-source-contributor-path", // Replace with your actual route
   },
 ];
 
