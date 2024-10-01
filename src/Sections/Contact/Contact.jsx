@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
-
+import Faq from "../Faq/Faq"
 const Section = styled.div`
   background-color: #010116;
   height: 100vh;
@@ -188,6 +188,10 @@ const Contact = () => {
   };
 
   return (
+    <div className="mt-[105px] !important">
+    <Title>Frequently Asked Questions</Title>
+      <Faq/>
+
     <Section>
       <Container>
         <Left>
@@ -237,6 +241,7 @@ const Contact = () => {
         </Right>
       </Container>
     </Section>
+    </div>
   );
 };
 
