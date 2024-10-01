@@ -329,7 +329,7 @@ function Hackhazards() {
   Interested in sponsoring HACKHAZARDS?
 </h2>
 <div className="w-full flex justify-center mt-4">
-  <a href="https://sponsor.hackhazards.namespacecomm.in" target="_blank" rel="noopener noreferrer">
+  <a href="mailto:contact@namespacecomm.in" target="_blank" rel="noopener noreferrer">
     <button
       type="button"
       className="text-white mt-1 bg-blue-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-0 mb-2"
@@ -338,6 +338,7 @@ function Hackhazards() {
     </button>
   </a>
 </div>
+
 
         </SponsorsSection>
       </Section2>
