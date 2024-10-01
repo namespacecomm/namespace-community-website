@@ -1,34 +1,21 @@
-import styled from "styled-components";
-import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Squash as Hamburger } from "hamburger-react";
+import React, { useState, useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import { Link, useLocation } from 'react-router-dom';
+import { Squash as Hamburger } from 'hamburger-react';
 
 const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
-  background-color: transparent;
+  backdrop-filter: blur(8px);
   display: flex;
   z-index: 99999999;
   flex-direction: column;
   align-items: center;
   position: fixed;
-  transition: all 3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   @media (min-width: 900px) {
     height: 90px;
-  }
-`;
-
-const LeftContainer = styled.div`
-  flex: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  backdrop-filter: blur(8px);
-  transition: backdrop-filter 0.5s ease;
-  z-index: 999;
-  box-shadow: inset 0px -1px #1d2d44;
-  @media (max-width: 900px) {
-    flex: 30%;
   }
 `;
 
@@ -36,15 +23,46 @@ const NavbarInnerContainer = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 `;
 
-const NavbarLinkContainer = styled.div`
+const LeftContainer = styled.div`
   display: flex;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  transition: backdrop-filter 0.5s ease;
+  z-index: 999;
 `;
 
-const NavLinks = styled.div`
+const NavbarLogo = styled(Link)`
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+`;
+
+const Logo = styled.img`
+  margin: 8px;
+  max-width: 180px;
+  height: 60px;
+`;
+
+const NavItemsContainer = styled.div`
   display: flex;
+  align-items: center;
   gap: 20px;
+  
+  @media (max-width: 899px) {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    overflow: hidden;
+    height: ${({ isVisible }) => (isVisible ? '100%' : '0')};
+    opacity: ${({ isVisible }) => (isVisible ? '1' : '0')};
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 const NavbarLink = styled(Link)`
@@ -56,15 +74,15 @@ const NavbarLink = styled(Link)`
   padding: 0.5rem;
   border-radius: 10px 0 10px 0;
   position: relative;
-  @media (max-width: 900px) {
-    display: none;
-  }
-  :hover {
+
+  &:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
+
   &.active {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
   &.active:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
@@ -76,7 +94,7 @@ const DropdownMenu = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 0 0 10px 10px;
-  display: ${({ show }) => (show ? "block" : "none")};
+  display: ${({ show }) => (show ? 'block' : 'none')};
   z-index: 1000;
   width: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -93,36 +111,55 @@ const DropdownItem = styled(Link)`
   }
 `;
 
-const NavbarLogo = styled(Link)`
+const Button = styled.button`
+  padding: 10px 20px;
+  background-color: #1d28f2;
   color: white;
-  font-size: 20px;
-  text-decoration: none;
-`;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 
-const NavbarLinkExtended = styled(Link)`
-  color: white;
-  font-size: 12px;
-  text-decoration: none;
-  margin: 5px;
-  :hover {
-    color: #3a60cf;
-    font-weight: bold;
+  &:hover {
+    background-color: #138af2;
   }
 `;
 
-const Logo = styled.img`
-  margin: 8px;
-  max-width: 180px;
-  height: 60px;
-  align-self: center;
+const ToggleButton = styled.button`
+  background: none;
+  border: 2px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  &:hover {
+  border: 2px #1d28f2;
+  }  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: radial-gradient(circle, #ffffff 3px, transparent 3px);
+    background-size: 8px 8px;
+    background-position: 0 0, 8px 8px;
+  }
+
+  @media (max-width: 899px) {
+    display: none;
+  }
 `;
 
-const OpenLinksButton = styled.button`
-  padding-top: 5px;
-  cursor: pointer;
-  @media (min-width: 900px) {
-    display: none;
-    align-self: center;
+const HamburgerContainer = styled.div`
+  display: none;
+  @media (max-width: 899px) {
+    display: block;
+    margin-left: 10px;
   }
 `;
 
@@ -138,29 +175,23 @@ const NavbarExtendedContainer = styled.div`
 
   @media (min-width: 900px) {
     display: none;
-    align-items: center;
   }
 `;
 
-const Button = styled.button`
-  width: 100%;
-  padding: 10px;
-  background-color: #1d28f2;
+const NavbarLinkExtended = styled(Link)`
   color: white;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: 200ms ease-in-out;
-  @media (max-width: 900px) {
-    margin: 17px 10px 10px 5px;
-  }
-  :hover {
-    background-color: #138af2;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  &:hover {
+    color: #3a60cf;
+    font-weight: bold;
   }
 `;
 
-function Navbar() {
+export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
+  const [navItemsVisible, setNavItemsVisible] = useState(true);
   const [activeNavLink, setActiveNavLink] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
@@ -186,185 +217,71 @@ function Navbar() {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setDropdownOpen(false);
     }
-    if (
-      partnersDropdownRef.current &&
-      !partnersDropdownRef.current.contains(event.target)
-    ) {
+    if (partnersDropdownRef.current && !partnersDropdownRef.current.contains(event.target)) {
       setPartnersDropdownOpen(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
+  const toggleNavItems = () => {
+    setNavItemsVisible(!navItemsVisible);
+  };
+
   return (
-    <NavbarContainer isOpen={isOpen}>
+    <NavbarContainer>
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
             <Logo src="../.././img/logo5.png" alt="Logo" />
           </NavbarLogo>
-          <NavLinks>
-            <NavbarLink
-              to="/projects"
-              className={activeNavLink === "/projects" ? "active" : ""}
-            >
-              <div>
-                Projects
-                {activeNavLink === "/projects" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-
-            <NavbarLink
-              to="/achievements"
-              className={activeNavLink === "/achievements" ? "active" : ""}
-            >
-              <div>
-                Achievements
-                {activeNavLink === "/achievements" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
-              to="#"
-              className={activeNavLink === "/events" ? "active" : ""}
-              onClick={handleDropdownToggle}
-            >
-              <div>
-                Events
-                {activeNavLink === "/events" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-              <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
-                
-                <DropdownItem to="/techx">TechXcelerate</DropdownItem>
-                <DropdownItem to="/nsos">nameSpace Season of Open Source</DropdownItem>
-                <DropdownItem to="/algorena">Algorena</DropdownItem>
-                <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
-                <DropdownItem to="/events">All Events</DropdownItem>
-              </DropdownMenu>
-            </NavbarLink>
-            <NavbarLink
-              to="/programs"
-              className={activeNavLink === "/programs" ? "active" : ""}
-            >
-              <div>
-                Programs
-                {activeNavLink === "/programs" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
-              to="/team"
-              className={activeNavLink === "/team" ? "active" : ""}
-            >
-              <div>
-                Team
-                {activeNavLink === "/team" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
-              to="/resources"
-              className={activeNavLink === "/resources" ? "active" : ""}
-            >
-              <div>
-                Resources
-                {activeNavLink === "/resources" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
-              to="http://blog.namespacecomm.in/"
-              target="_blank"
-              without
-              rel="noreferrer"
-              className={
-                activeNavLink === "/http://blog.namespacecomm.in/"
-                  ? "active"
-                  : ""
-              }
-            >
-              <div>
-                Blog
-                {activeNavLink === "/http://blog.namespacecomm.in/" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
-              to="#"
-              className={activeNavLink === "/partners" ? "active" : ""}
-              onClick={handlePartnersDropdownToggle}
-            >
-              <div>
-                Partner with us
-                {activeNavLink === "/partners" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-              <DropdownMenu
-                ref={partnersDropdownRef}
-                show={partnersDropdownOpen}
-              >
-                <DropdownItem
-                  as="a"
-                  href="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Become a Community Partner
-                </DropdownItem>
-
-                <DropdownItem to="/campusevangelist">
-                  Become a Campus Evangelist
-                </DropdownItem>
-              </DropdownMenu>
-            </NavbarLink>
-
-          <NavbarLink
-              to="/CodingChallenge"
-              className={activeNavLink === "/CodingChallenge" ? "active" : ""}
-            >
-              <div>
-                Coding Challenge
-                {activeNavLink === "/CodingChallenge" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-
-            </NavLinks>
-
-          <div className="flex flex-row md:flex-col md:space-x-6 items-center">
-            <NavbarLinkContainer className="w-full md:w-auto ">
-              <a
-                href="https://linktr.ee/namespacecomm"
-                target="_blank"
-                without
-                rel="noreferrer"
-                className="w-full"
-              >
-                <Button className="w-full">Connect with us</Button>
-              </a>
-              <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
-                <Hamburger toggled={isOpen} toggle={setOpen} />
-              </OpenLinksButton>
-            </NavbarLinkContainer>
-          </div>
         </LeftContainer>
+
+        <NavItemsContainer isVisible={navItemsVisible}>
+          <NavbarLink to="/projects" className={activeNavLink === "/projects" ? "active" : ""}>Projects</NavbarLink>
+          <NavbarLink to="/achievements" className={activeNavLink === "/achievements" ? "active" : ""}>Achievements</NavbarLink>
+          <NavbarLink to="#" className={activeNavLink === "/events" ? "active" : ""} onClick={handleDropdownToggle}>
+            Events
+            <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
+              <DropdownItem to="/techx">TechXcelerate</DropdownItem>
+              <DropdownItem to="/nsos">nameSpace Season of Open Source</DropdownItem>
+              <DropdownItem to="/algorena">Algorena</DropdownItem>
+              <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
+              <DropdownItem to="/events">All Events</DropdownItem>
+            </DropdownMenu>
+          </NavbarLink>
+          <NavbarLink to="/programs" className={activeNavLink === "/programs" ? "active" : ""}>Programs</NavbarLink>
+          <NavbarLink to="/team" className={activeNavLink === "/team" ? "active" : ""}>Team</NavbarLink>
+          <NavbarLink to="/resources" className={activeNavLink === "/resources" ? "active" : ""}>Resources</NavbarLink>
+          <NavbarLink to="http://blog.namespacecomm.in/" target="_blank" rel="noreferrer" className={activeNavLink === "/http://blog.namespacecomm.in/" ? "active" : ""}>Blog</NavbarLink>
+          <NavbarLink to="#" className={activeNavLink === "/partners" ? "active" : ""} onClick={handlePartnersDropdownToggle}>
+            Partner with us
+            <DropdownMenu ref={partnersDropdownRef} show={partnersDropdownOpen}>
+              <DropdownItem as="a" href="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" rel="noopener noreferrer">
+                Become a Community Partner
+              </DropdownItem>
+              <DropdownItem to="/campusevangelist">Become a Campus Evangelist</DropdownItem>
+            </DropdownMenu>
+          </NavbarLink>
+          <NavbarLink to="/CodingChallenge" className={activeNavLink === "/CodingChallenge" ? "active" : ""}>Coding Challenge</NavbarLink>
+        </NavItemsContainer>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <a href="https://linktr.ee/namespacecomm" target="_blank" rel="noreferrer">
+            <Button>Connect with us</Button>
+          </a>
+          <ToggleButton onClick={toggleNavItems} className={navItemsVisible ? 'active' : ''} />
+          <HamburgerContainer>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+          </HamburgerContainer>
+        </div>
       </NavbarInnerContainer>
+
       {isOpen && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
@@ -373,18 +290,16 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.namespacecomm.in/" target="_blank" without rel="noreferrer">Blog</NavbarLinkExtended>
+          <NavbarLinkExtended to="http://blog.namespacecomm.in/" target="_blank" rel="noreferrer">Blog</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="/nsos">nameSpace Season of Open Source</NavbarLinkExtended>
           <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
-          <NavbarLinkExtended to="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" without rel="noreferrer">Become a Community Partner</NavbarLinkExtended>
-          <NavbarLinkExtended to="/hackhazards">Become a Campus Evangelist</NavbarLinkExtended>
+          <NavbarLinkExtended to="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" rel="noreferrer">Become a Community Partner</NavbarLinkExtended>
+          <NavbarLinkExtended to="/campusevangelist">Become a Campus Evangelist</NavbarLinkExtended>
           <NavbarLinkExtended to="/codingchallenge">Coding Challenge</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
   );
 }
-
-export default Navbar;
