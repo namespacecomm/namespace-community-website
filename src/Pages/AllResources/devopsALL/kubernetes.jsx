@@ -159,7 +159,7 @@ export const KUBERNETES = () => {
 const resources = [
   {
     title: "Kubernetes - Docs",
-    image: "https://kubernetes.io/images/favicon.png",
+    image: "https://cdn2.iconfinder.com/data/icons/mixd/512/20_kubernetes-1024.png",
     type: "Documentation",
     link: "https://kubernetes.io/docs/home/",
   },
