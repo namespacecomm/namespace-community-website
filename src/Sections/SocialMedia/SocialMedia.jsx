@@ -1,5 +1,7 @@
 import React from "react";
+import { YouTubeEmbed } from "react-social-media-embed";
 import styled from "styled-components";
+import { socialMediaUrls } from "../../utils/constants";
 
 const Section = styled.div`
   height: 100%;
@@ -10,7 +12,7 @@ const Section = styled.div`
   margin: 2rem 0;
 `;
 
-const YoutubeFrame = styled.iframe`
+const YoutubeFrame = styled(YouTubeEmbed)`
   
 
   @media only screen and (max-width: 768px) {
@@ -29,10 +31,24 @@ const SocialMedia = () => {
         </span>
       </h2>
       <Section>
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
-          <YoutubeFrame src="https://www.youtube.com/embed/eWc6eVcaLyw?si=31OyRSxMHwvNhvUE"/>
-          <YoutubeFrame src="https://www.youtube.com/embed/yUD27BJf5ag?si=D6mMdihaQc5a4h6d" />
-          <YoutubeFrame src="https://www.youtube.com/embed/TrPl1K4UBXI?si=hyQjEEqEAIJE-JxT" />
+        <div className="flex flex-col">
+          {socialMediaUrls.map(social => {
+            const Component = social.component
+
+            return (
+              <div className="my-5 flex flex-col gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+                  <h3 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
+                    {social.name}
+                  </h3>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+                  {social.embedUrls.map(item => <Component width={350} height={250} {...item} />)}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </Section>
     </>
