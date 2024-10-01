@@ -9,7 +9,6 @@ import "./hero.css";
 import About from "../About/About";
 import Teams from "../Teams/Teams";
 import Testimonials from "../Testimonials/Testimonials";
-import Events from "../Events/Events";
 import Contact from "../Contact/Contact";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import BackToTopButton from "../../components/BackToTop";
@@ -247,7 +246,6 @@ const Hero = () => {
       <About />
       <Teams />
       <Founder />
-      <Events />
       <SocialMedia />
       {/* <Testimonials /> */}
       <Contact />
