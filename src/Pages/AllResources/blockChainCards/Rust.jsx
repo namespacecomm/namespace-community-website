@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from '../../../components/Navbar/Navbar';
-import Footer from '../../../components/Footer/Footer';
 
 export const Rust = () => {
 	return (
 		<>
-			<Navbar />
 			<section className="text-gray-600 body-font text">
 				<div className="px-5 py-24 mx-auto flex flex-wrap">
 					<h1 className="text-2xl text-center font-bold leading-tight text-white sm:text-2xl lg:text-4xl">
@@ -191,7 +188,6 @@ export const Rust = () => {
 				</div>
 			</section>
 
-			<Footer />
 		</>
 	);
 };
