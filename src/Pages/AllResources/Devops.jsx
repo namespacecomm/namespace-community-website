@@ -512,7 +512,7 @@ const container = [
     des: "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers",
   },
   {
-    title: "Kubernetes",
+    title: "netes",
     image: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg",
     to: "/kubernetes",
     des: "Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management",
