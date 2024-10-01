@@ -216,7 +216,7 @@ const LeUiux = [
 		image: 'https://cms.azure.styava.dev/api/assets/styavacommunities/092f9741-4c89-4cd4-aac9-9b3ca76a2bf5/javascript-39395.png',
 		description:
 			'JavaScript is a programming language used to make web pages interactive. With JavaScript, you can add behavior to your web design. You can create things like image sliders, interactive forms, and more.',
-		to: '/javascript',
+		to: '/js',
 	},
 	
 ];
