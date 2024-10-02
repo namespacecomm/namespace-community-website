@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../../Sections/Projects/Projectcard";
+import  {ProjectDetails}  from "../../constants/ProjectDetails.ts";
 
 const Section = styled.div`
   display: flex;
@@ -11,6 +12,10 @@ const Section = styled.div`
   min-height: 100vh; /* Set minimum height to 100% of the viewport height */
   background-color: #010116;
 `;
+
+ProjectDetails.map(({k})=>{
+  console.log({k});
+})
 
 const Container = styled.div`
   scroll-snap-align: center;
@@ -35,7 +40,7 @@ function Projects() {
               PROJECTS
             </h1>
             
-
+   
             <p className="max-w-2xl px-3 mx-auto my-10 text-center flex justify-center items-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500">
               Welcome to our project page! Explore our latest work and
               innovative creations. Dive into a world of creativity and
@@ -46,80 +51,27 @@ function Projects() {
             </p>
           </div>
 
+
           <div className="center-block">
-            <ProjectCard
-              projectData={{
-                title: "Flutter Fitness App",
-                description:
-                  "Develop a fitness tracking app using Flutter, providing users with real-time workout tracking, personalized exercise routines, and nutrition tips. It syncs seamlessly with wearable devices to help users achieve their fitness goals.",
-                techUsed: "HTML CSS React",
-                ownerName: "nameSpace",
-                deploymentLink: "#",
-                githubLink: "https://github.com/NSCC-BPIT",
-                projectImage: "/img/project-images/fitness.jpg",
-              }}
-            />
 
-            <ProjectCard
-              projectData={{
-                title: "React Website for Charity",
-                description:
-                  "Build a responsive website for a charitable organization using React. The site showcases their mission, projects, and donation options, making it easy for visitors to support meaningful causes..",
-                techUsed: "HTML CSS React",
-                ownerName: "nameSpace",
-                deploymentLink: "#",
-                githubLink: "https://github.com/NSCC-BPIT",
-                imageUrl:
-                  "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                projectImage: "/img/project-images/react-website-charity.jpg",
-              }}
-            />
+              {
+                ProjectDetails.map((project,index)=>(
+                  
+                  <ProjectCard
+                  key={index}
+                  projectData={{
+                    title: project.title,
+                    description:project.description,
+                    techUsed:project.techUsed,
+                    ownerName:project.ownerName,
+                    deploymentLink:project.deploymentLink,
+                    githubLink:project.githubLink,
+                    projectImage:project.projectImage,
+                  }} />
+                ))
+              }
 
-            <ProjectCard
-              projectData={{
-                title: "Blockchain Voting System",
-                description:
-                  "Implement a blockchain-based voting system to enhance the security and transparency of elections. This project ensures that votes are securely recorded and can be audited, reducing the risk of fraud.",
-                techUsed: "HTML CSS React",
-                ownerName: "nameSpace",
-                deploymentLink: "#",
-                githubLink: "https://github.com/NSCC-BPIT",
-                imageUrl:
-                  "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-                projectImage:
-                  "/img/project-images/blockchain-voting-system.jpeg",
-              }}
-            />
 
-            <ProjectCard
-              projectData={{
-                title: "React Native Travel Planner",
-                description:
-                  "Craft a travel planning app with React Native, allowing users to plan their trips, book accommodations, and discover local attractions. The app provides travel itineraries and integrates with maps for easy navigation.",
-                techUsed: "HTML CSS React",
-                ownerName: "nameSpace",
-                deploymentLink: "#",
-                githubLink: "https://github.com/NSCC-BPIT",
-                imageUrl:
-                  "https://images.unsplash.com/photo-1456425731181-2152d80d946c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80",
-                projectImage: "/img/project-images/travel-planner.jpeg",
-              }}
-            />
-
-            <ProjectCard
-              projectData={{
-                title: "Cybersecurity Training Platform",
-                description:
-                  "Create an interactive cybersecurity training platform that educates users on best practices for online security. It offers modules on password management, phishing detection, and network security, helping users protect their digital assets.",
-                techUsed: "HTML CSS React",
-                ownerName: "nameSpace",
-                deploymentLink: "#",
-                githubLink: "https://github.com/NSCC-BPIT",
-                imageUrl:
-                  "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-                projectImage: "/img/project-images/cybersecurity-training.jpeg",
-              }}
-            />
           </div>
 
           <p className="max-w-2xl mx-auto my-6 text-center "></p>
