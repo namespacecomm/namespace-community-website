@@ -26,7 +26,7 @@ const Section = styled.div`
 
 const Container = styled.div`
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,13 +40,26 @@ const Left = styled.div`
   flex: 1.5;
   align-items: center;
   justify-content: center;
+  margin: auto 5%;
+`;
+
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid #f5f5f5;
-  margin: auto 10%;
+  margin: auto 10% auto 5%;
   background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
@@ -63,23 +76,11 @@ const Title = styled.h1`
   }
 `;
 
-const Right = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  @media only screen and (max-width: 768px) {
-    align-items: center;
-    text-align: center;
-  }
-`;
-
 const Desc = styled.p`
   font-size: 18px;
   text-align: justify;
   color: lightgray;
-  margin: auto 10%;
+  margin: auto 10% auto 5%;
 `;
 
 const About = () => {

@@ -7,7 +7,7 @@ const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
   background-color: transparent;
-  display: flex;
+  display: ${({ isVisible }) => (isVisible ? "flex" : "none")}; /* Control visibility */
   z-index: 99999999;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@ const NavLinks = styled.div`
 
 const NavbarLink = styled(Link)`
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
   text-decoration: none;
   transition: 200ms ease-in-out;
@@ -164,15 +164,28 @@ function Navbar() {
   const [activeNavLink, setActiveNavLink] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false); // Track navbar visibility
   const dropdownRef = useRef(null);
   const partnersDropdownRef = useRef(null);
-
   const location = useLocation();
 
   useEffect(() => {
     setOpen(false);
     setActiveNavLink(location.pathname);
+    if (location.pathname === "/") {
+      setIsVisible(false); // Hide navbar on home page initially
+    }
   }, [location]);
+
+  const handleScroll = () => {
+    const scrollThreshold = window.innerHeight * 0.9; // 90% of the viewport height
+    if (window.scrollY > scrollThreshold) { 
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
@@ -195,6 +208,18 @@ function Navbar() {
   };
 
   useEffect(() => {
+    if (location.pathname === "/") {
+      window.addEventListener("scroll", handleScroll);
+    } else {
+      setIsVisible(true); // Ensure navbar is visible on other pages
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location]);
+
+  useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -202,7 +227,7 @@ function Navbar() {
   }, []);
 
   return (
-    <NavbarContainer isOpen={isOpen}>
+    <NavbarContainer isVisible={isVisible} isOpen={isOpen}>
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLogo to="/">
@@ -244,9 +269,10 @@ function Navbar() {
                 )}
               </div>
               <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
-                
                 <DropdownItem to="/techx">TechXcelerate</DropdownItem>
-                <DropdownItem to="/nsos">nameSpace Season of Open Source</DropdownItem>
+                <DropdownItem to="/nsos">
+                  nameSpace Season of Open Source
+                </DropdownItem>
                 <DropdownItem to="/algorena">Algorena</DropdownItem>
                 <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
                 <DropdownItem to="/events">All Events</DropdownItem>
@@ -309,7 +335,7 @@ function Navbar() {
               onClick={handlePartnersDropdownToggle}
             >
               <div>
-                Partner with us
+                Partners
                 {activeNavLink === "/partners" && (
                   <hr className="border-3 rounded-full" />
                 )}
@@ -318,12 +344,7 @@ function Navbar() {
                 ref={partnersDropdownRef}
                 show={partnersDropdownOpen}
               >
-                <DropdownItem
-                  as="a"
-                  href="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <DropdownItem to="/communitypartner">
                   Become a Community Partner
                 </DropdownItem>
 
@@ -333,7 +354,7 @@ function Navbar() {
               </DropdownMenu>
             </NavbarLink>
 
-          <NavbarLink
+            <NavbarLink
               to="/CodingChallenge"
               className={activeNavLink === "/CodingChallenge" ? "active" : ""}
             >
@@ -344,8 +365,7 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink>
-
-            </NavLinks>
+          </NavLinks>
 
           <div className="flex flex-row md:flex-col md:space-x-6 items-center">
             <NavbarLinkContainer className="w-full md:w-auto ">
@@ -373,14 +393,29 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended to="http://blog.namespacecomm.in/" target="_blank" without rel="noreferrer">Blog</NavbarLinkExtended>
+          <NavbarLinkExtended
+            to="http://blog.namespacecomm.in/"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
+            Blog
+          </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
-          <NavbarLinkExtended to="/nsos">nameSpace Season of Open Source</NavbarLinkExtended>
+          <NavbarLinkExtended to="/nsos">
+            nameSpace Season of Open Source
+          </NavbarLinkExtended>
           <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
-          <NavbarLinkExtended to="https://lush-bugle-f9b.notion.site/The-nameSpace-Community-Partnership-Program-2024-25-03b7367a954e4a96b5a3ced32af14fca" target="_blank" without rel="noreferrer">Become a Community Partner</NavbarLinkExtended>
-          <NavbarLinkExtended to="/hackhazards">Become a Campus Evangelist</NavbarLinkExtended>
-          <NavbarLinkExtended to="/codingchallenge">Coding Challenge</NavbarLinkExtended>
+          <NavbarLinkExtended to="/communitypartner">
+            Become a Community Partner
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/campusevangelist">
+            Become a Campus Evangelist
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/codingchallenge">
+            Coding Challenge
+          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
