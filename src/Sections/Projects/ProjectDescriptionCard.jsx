@@ -12,11 +12,11 @@ const ProjectDescriptionCard = ({
 }) => {
   return (
     <>
-      <div className="project-description-card rounded-2xl">
-        <div className="project-image">
+      <div className="grid grid-cols-3  project-description-card rounded-2xl">
+        <div className="project-image max-w-md">
           <img src={projectImage} alt="project oulook" />
         </div>
-        <div className="project-details">
+        <div className="project-details col-span-2">
           <h2 className="project-title">{title}</h2>
           <p className="project-description">{description}</p>
           <p className="tech-used">

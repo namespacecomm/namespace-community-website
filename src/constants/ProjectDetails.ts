@@ -6,7 +6,7 @@ export const ProjectDetails = [
         ownerName: "K. Riyasat Ali",
         deploymentLink: "https://asli-feedback.vercel.app/",
         githubLink: "https://github.com/Riyasatt/WhisperChat",
-        projectImage: "https://drive.google.com/drive/folders/1bOhP5D2qbVIbcZahtOGfdbCQ4st9CtkK?usp=sharing"
+        projectImage: "none"
     },
     {
         title: "Clinic website",
@@ -15,7 +15,7 @@ export const ProjectDetails = [
         ownerName: "Tanmay",
         deploymentLink: "dpmemorial.com",
         githubLink: "github.com/tanmayGypt",
-        projectImage: ".."
+        projectImage: "none"
     },
     {
         title: "Bubble Game",
@@ -24,7 +24,7 @@ export const ProjectDetails = [
         ownerName: "Sumit Joshi",
         deploymentLink: "https://josum06.github.io/bubble_game/",
         githubLink: "https://github.com/josum06",
-        projectImage: "rb.gy/2w9x6h"
+        projectImage: "none"
     },
     {
         title: "NFT LendSwap",
@@ -96,6 +96,6 @@ export const ProjectDetails = [
         ownerName: "Yash Singh Kuwarbi",
         deploymentLink: "",
         githubLink: "https://github.com/freakyash11/Movie-Recommendation",
-        projectImage: "https://app.gemoo.com/share/image-annotation/666064442810945536?codeId=PaZ1ZKl6pLVqm&origin=imageurlgenerator&card=666064439996567552"
+        projectImage: "none"
     }
 ];

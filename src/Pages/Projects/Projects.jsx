@@ -66,7 +66,7 @@ function Projects() {
                     ownerName:project.ownerName,
                     deploymentLink:project.deploymentLink,
                     githubLink:project.githubLink,
-                    projectImage:project.projectImage,
+                    projectImage:project.projectImage !== "none"?project.projectImage: "/img/default.jpg",
                   }} />
                 ))
               }
