@@ -1,10 +1,3 @@
-// export default function Supplychain() {
-//   return (
-//     <div className="text-black min-h-screen bg-white grid place-items-center">Supplychain</div>
-//   )
-// }
-
-
 import React from "react";
 import styled from "styled-components";
 
@@ -156,18 +149,6 @@ const ResourceCourses = [
     to: "https://www.coursera.org/learn/supply-chain-logistics",
     image: "https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/324970b7-03a4-44d7-b39e-10bbda6f119f-6087e3f8810e.small.jpeg",
   },
-];
-
-const topics = [
-  { title: " IoT Central", to: "https://www.iotcentral.io/" },
-  { title: "IoT Forums ", to: "https://iotforums.com/" },
-  {
-    title: " Industrial Internet Consortium (IIC)",
-    to: "https://www.iiconsortium.org/",
-  },
-  { title: "IoT For All", to: "https://www.iotforall.com/" },
-  { title: "IoT World Today", to: "https://www.iotworldtoday.com/" },
-  { title: "IoT Agenda", to: "https://www.techtarget.com/iotagenda/" },
 ];
 
 export default Supplychain;
