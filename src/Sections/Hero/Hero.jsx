@@ -56,12 +56,12 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  height: 90vh;
+  height: 100vh;
   scroll-snap-align: center;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 9% 14%;
   @media only screen and (max-width: 1030px) {
     width: 100%;
