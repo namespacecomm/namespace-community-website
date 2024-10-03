@@ -43,7 +43,7 @@ const SocialMedia = () => {
                   </h3>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+                <div className="flex justify-center items-center gap-20">
                   {social.embedUrls.map(item => <Component width={350} height={250} {...item} />)}
                 </div>
               </div>
