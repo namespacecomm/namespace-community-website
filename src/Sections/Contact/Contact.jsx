@@ -192,7 +192,7 @@ const Contact = () => {
     <h2 className="mt-[100px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
         Frequenty Asked{" "}
         <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-          <a href="#">Questions . . . . </a>
+          <a href="#">Questions</a>
         </span>
       </h2>
       <Faq/>
