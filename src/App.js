@@ -66,7 +66,7 @@ import Cryptocurrency from "./Pages/AllResources/blockChainCards/Cryptocurrency"
 import Supplychain from "./Pages/AllResources/blockChainCards/Supplychain";
 import Decentralized from "./Pages/AllResources/blockChainCards/Decentralized";
 import Ethereum from "./Pages/AllResources/blockChainCards/Ethereum";
-import Hyperledger from "./Pages/AllResources/blockChainCards/Hyperledger";
+import { Hyperledger } from "./Pages/AllResources/blockChainCards/Hyperledger";
 import Truffle from "./Pages/AllResources/blockChainCards/Truffle";
 import Dsa from "./Pages/AllResources/Dsa/Dsa";
 import { Rust } from "./Pages/AllResources/blockChainCards/Rust";
