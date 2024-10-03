@@ -112,7 +112,7 @@ function App() {
 
   return (
     <>
-      <Container>
+      <Container className="overflow-x-hidden">
         <BrowserRouter>
           <ScrollToTop />
           <Navbar />

@@ -6,7 +6,8 @@ function Faq() {
 const FaqContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: 40px;
+  align-items:center ;
+  margin-top: 60px;
 `;
 
 const FaqCard = styled.div`
@@ -15,7 +16,7 @@ const FaqCard = styled.div`
   padding: 5px;
   
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* adjust the width to your liking */
+  width: 100vw; /* adjust the width to your liking */
 `;
 
 const FaqItem = styled.div`
@@ -24,19 +25,21 @@ const FaqItem = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%; /* adjust the width to your liking */
   margin-bottom: 30px;
+  position : relative ;
+  left : 55vh ;
 `;
 
 const FaqItemButton = styled.button`
 
     
-  background-color: blue;
+  background-color:black;
   color: #fff;
-  border: none;
-  width: 130%;
+  border-bottom: 2px solid #dadada;
+  width: 60%;
   padding: 20px 25px;
   font-size: 20px;
   cursor: pointer;
-   border-radius: 20px;
+  // border-radius: 20px;
   margin: 0 auto; /* add this to center the button horizontally */
   text-align: center; /* add this to center the text inside the button */
  &:hover {
@@ -52,9 +55,12 @@ const FaqItemButtonHover = styled(FaqItemButton)`
 
 const FaqItemDiv = styled.div`
 margin-top: 20px;
+ background: rgb(31,52,141);
+background: linear-gradient(0deg, rgba(31,52,141,1) 2%, rgba(21,21,21,1) 96%);
   padding: 40px;
-   font-size: 20px;
-  border-bottom: 1px solid #ddd;
+  width : 60% ;
+  font-size: 20px;
+  border-bottom: 1px solid #fff;
 
 `;
     const [activeStates, setActiveStates] = useState({});
