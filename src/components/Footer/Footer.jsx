@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { FaXTwitter } from "react-icons/fa6";
+
 import {
   FaLinkedin,
   FaInstagram,
@@ -139,7 +141,7 @@ const Footer = () => {
         </a>
         &nbsp;
         <a href="https://twitter.com/namespacecomm">
-          <FaTwitter size={24} />
+          <FaXTwitter size={24} />
         </a>
         <a href="https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f">
           <FaWhatsapp size={24} />
