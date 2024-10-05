@@ -312,6 +312,17 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
+              to="/chapters"
+              className={activeNavLink === "/chapters" ? "active" : ""}
+            >
+              <div>
+                Chapters
+                {activeNavLink === "/chapters" && (
+                  <hr className="border-3 rounded-full" />
+                )}
+              </div>
+            </NavbarLink>
+            <NavbarLink
               to="http://blog.namespacecomm.in/"
               target="_blank"
               without

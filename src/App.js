@@ -96,6 +96,7 @@ import TechX from "./Pages/TechXcelerate/Techx";
 import Hackhazards from "./Pages/Hackhazards/Hackhazards";
 import CampusEvangelist from "./Pages/CampusEvangelist/CampusEvangelist";
 import CodingChallenge from "./Pages/CodingChallenge/CodingChallenge";
+import Chapters from "./Pages/Chapters/Chapters";
 
 const Container = styled.div`
   scrollbar-width: none;
@@ -134,6 +135,7 @@ function App() {
               <Route path="sortalgo" element={<SortAlgo />} />
               <Route path="searchalgo" element={<SearchAlgo />} />
               <Route path="dynamicpro" element={<DpAlgo />} />
+              <Route path="chapters" element={<Chapters />} />
 
               <Route path="pyresource" element={<Python />} />
               <Route path="mlops" element={<MLOps />} />
