@@ -16,6 +16,7 @@
 
 .card-container:hover .card-inner {
   transform: rotateY(180deg);
+  scale: 0.84;
 }
 
 .card-front,
