@@ -7,7 +7,8 @@ const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
   background-color: transparent;
-  display: ${({ isVisible }) => (isVisible ? "flex" : "none")}; /* Control visibility */
+  display: ${({ isVisible }) =>
+    isVisible ? "flex" : "none"}; /* Control visibility */
   z-index: 99999999;
   flex-direction: column;
   align-items: center;
@@ -18,8 +19,14 @@ const NavbarContainer = styled.nav`
   }
 `;
 
-const LeftContainer = styled.div`
-  flex: 70%;
+const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+`;
+
+const SecondContainer = styled.div`
+  flex: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -30,12 +37,6 @@ const LeftContainer = styled.div`
   @media (max-width: 900px) {
     flex: 30%;
   }
-`;
-
-const NavbarInnerContainer = styled.div`
-  width: 100%;
-  height: 100px;
-  display: flex;
 `;
 
 const NavbarLinkContainer = styled.div`
@@ -179,13 +180,12 @@ function Navbar() {
 
   const handleScroll = () => {
     const scrollThreshold = window.innerHeight * 0.9; // 90% of the viewport height
-    if (window.scrollY > scrollThreshold) { 
+    if (window.scrollY > scrollThreshold) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
   };
-  
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
@@ -229,10 +229,11 @@ function Navbar() {
   return (
     <NavbarContainer isVisible={isVisible} isOpen={isOpen}>
       <NavbarInnerContainer>
-        <LeftContainer>
+        <SecondContainer>
           <NavbarLogo to="/">
             <Logo src="../.././img/logo5.png" alt="Logo" />
           </NavbarLogo>
+
           <NavLinks>
             <NavbarLink
               to="/projects"
@@ -365,7 +366,7 @@ function Navbar() {
               </DropdownMenu>
             </NavbarLink>
 
-            <NavbarLink
+            {/* <NavbarLink
               to="/CodingChallenge"
               className={activeNavLink === "/CodingChallenge" ? "active" : ""}
             >
@@ -375,26 +376,24 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink>
+            </NavbarLink> */}
           </NavLinks>
 
-          <div className="flex flex-row md:flex-col md:space-x-6 items-center">
-            <NavbarLinkContainer className="w-full md:w-auto ">
-              <a
-                href="https://linktr.ee/namespacecomm"
-                target="_blank"
-                without
-                rel="noreferrer"
-                className="w-full"
-              >
-                <Button className="w-full">Connect with us</Button>
-              </a>
-              <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
-                <Hamburger toggled={isOpen} toggle={setOpen} />
-              </OpenLinksButton>
-            </NavbarLinkContainer>
-          </div>
-        </LeftContainer>
+          <NavbarLinkContainer className="flex flex-row md:flex-col md:space-x-6 items-center w-full md:w-auto ">
+            <a
+              href="https://linktr.ee/namespacecomm"
+              target="_blank"
+              without
+              rel="noreferrer"
+              className="w-full"
+            >
+              <Button className="w-full">Connect with us</Button>
+            </a>
+            <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
+              <Hamburger toggled={isOpen} toggle={setOpen} />
+            </OpenLinksButton>
+          </NavbarLinkContainer>
+        </SecondContainer>
       </NavbarInnerContainer>
       {isOpen && (
         <NavbarExtendedContainer>
@@ -404,14 +403,6 @@ function Navbar() {
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
-          <NavbarLinkExtended
-            to="http://blog.namespacecomm.in/"
-            target="_blank"
-            without
-            rel="noreferrer"
-          >
-            Blog
-          </NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
           <NavbarLinkExtended to="/nsos">
             nameSpace Season of Open Source
@@ -424,9 +415,17 @@ function Navbar() {
           <NavbarLinkExtended to="/campusevangelist">
             Become a Campus Evangelist
           </NavbarLinkExtended>
-          <NavbarLinkExtended to="/codingchallenge">
-            Coding Challenge
+          <NavbarLinkExtended
+            to="http://blog.namespacecomm.in/"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
+            Blog
           </NavbarLinkExtended>
+          {/* <NavbarLinkExtended to="/codingchallenge">
+            Coding Challenge
+          </NavbarLinkExtended> */}
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
