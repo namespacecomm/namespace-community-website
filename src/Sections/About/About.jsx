@@ -59,7 +59,7 @@ const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid #f5f5f5;
-  margin: auto 10% auto 5%;
+  margin: auto 10% auto 0%;
   background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
@@ -80,7 +80,7 @@ const Desc = styled.p`
   font-size: 18px;
   text-align: justify;
   color: lightgray;
-  margin: auto 10% auto 5%;
+  margin: auto 10% auto 0%;
 `;
 
 const About = () => {
@@ -102,7 +102,7 @@ const About = () => {
               other tech enthusiasts, share your knowledge, and grow your
               skills. Founded in 2022, nameSpace has quickly grown to become one
               of the largest technical communities in Delhi-NCR and is racing towards
-              further expansion and deeper penetration in its core segments. 
+              further expansion across India. 
             </Desc>
           </Right>
         </Container>
