@@ -255,15 +255,6 @@ export const members1 = [
     linkedin: "",
     instagram: "",
   },
-
-  {
-    name: "Arsh Tiwari",
-    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981064/Arsh_Tiwari_oocqph.jpg",
-    position: "Junior Council",
-    github: "https://github.com/ArshTiwari2004",
-    linkedin: "https://leetcode.com/u/ArshTiwari/",
-    instagram: "https://www.instagram.com/_.arshtiwari/",
-  },
   {
     name: "Shreya Jaiswal",
     image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720980759/WhatsApp_Image_2024-07-14_at_11.33.01_PM_qlbl3b.jpg",
@@ -272,6 +263,15 @@ export const members1 = [
     linkedin: "http://www.linkedin.com/in/shreya-jaiswal17",
     instagram: "",
   },
+  {
+    name: "Arsh Tiwari",
+    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981064/Arsh_Tiwari_oocqph.jpg",
+    position: "Junior Council",
+    github: "https://github.com/ArshTiwari2004",
+    linkedin: "https://leetcode.com/u/ArshTiwari/",
+    instagram: "https://www.instagram.com/_.arshtiwari/",
+  },
+ 
   {
     name: "Lavanya Varshney",
     image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981024/Lavanya_Varshney_cqtqkd.jpg",
@@ -301,7 +301,7 @@ export const members1 = [
 
   {
     name: "Arush Karnatak",
-    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981057/Arush_Karnatak_qyve7t.jpg",
+    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1728229848/IMG_20240408_175646_efb1c2.jpg",
     position: "Junior Council",
     github: "http://github.com/karush2807",
     linkedin: "https://www.linkedin.com/in/arush-karnatak-894bb52a1/",
@@ -796,7 +796,7 @@ export const allmembers = [
   {
 
     name: "Arush Karnatak",
-    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1720981057/Arush_Karnatak_qyve7t.jpg",
+    image: "https://res.cloudinary.com/dyfhx6mqp/image/upload/v1728229848/IMG_20240408_175646_efb1c2.jpg",
     position: "Junior Council",
     github: "http://github.com/karush2807",
     linkedin: "https://www.linkedin.com/in/arush-karnatak-894bb52a1/",
