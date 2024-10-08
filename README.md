@@ -168,7 +168,7 @@ it is an Issue or a Pull Request.
 
 - Clone the Forked Repository to your local machine.
   ```
-  git clone https://github.com/<username>/namespace-community-website
+  git clone https://github.com/namespacecomm/namespace-community-website
   ```
 - Change the directory to namespace-community-website.
   ```bash
