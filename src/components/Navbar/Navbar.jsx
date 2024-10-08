@@ -366,7 +366,7 @@ function Navbar() {
               </DropdownMenu>
             </NavbarLink>
 
-            {/* <NavbarLink
+            <NavbarLink
               to="/CodingChallenge"
               className={activeNavLink === "/CodingChallenge" ? "active" : ""}
             >
@@ -376,7 +376,7 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink> */}
+            </NavbarLink>
           </NavLinks>
 
           <NavbarLinkContainer className="flex flex-row md:flex-col md:space-x-6 items-center w-full md:w-auto ">
@@ -423,9 +423,9 @@ function Navbar() {
           >
             Blog
           </NavbarLinkExtended>
-          {/* <NavbarLinkExtended to="/codingchallenge">
+          <NavbarLinkExtended to="/codingchallenge">
             Coding Challenge
-          </NavbarLinkExtended> */}
+          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
