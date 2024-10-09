@@ -389,7 +389,7 @@ function Navbar() {
             >
               <Button className="w-full">Connect with us</Button>
             </a>
-            <OpenLinksButton className="md:ml-6 mt-4 md:mt-0">
+            <OpenLinksButton className="mx-4">
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </OpenLinksButton>
           </NavbarLinkContainer>
