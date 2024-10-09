@@ -1,11 +1,11 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import Faq from "../Faq/Faq";
 import Modal from "./Modal";
-import Faq from "../Faq/Faq"
 const Section = styled.div`
   background-color: #010116;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   margin-top: 40vh ;
   scroll-snap-align: center;
@@ -16,7 +16,7 @@ const Section = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -43,7 +43,7 @@ const Title = styled.h1`
 `;
 
 const Form = styled.form`
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -79,7 +79,7 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   padding: 0.5em;
   transition: 200ms ease-in-out;
   :hover {

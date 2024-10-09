@@ -1,91 +1,114 @@
-import {React,useState} from "react";
-import faqData from "./faqData";
+import { useState } from "react";
 import styled from "styled-components";
+import faqData from "./faqData";
 
 function Faq() {
-const FaqContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items:center ;
-  margin-top: 60px;
-`;
+  const FaqContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 0 20px;
+    color: #fff; /* Light text color */
+  `;
 
-const FaqCard = styled.div`
+  const FaqCard = styled.div`
+    width: 70%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+    background-color: #0f1823; /* Darker card background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  
-  padding: 5px;
-  
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100vw; /* adjust the width to your liking */
-`;
+    &:hover {
+      transform: translateY(-10px); /* Slight lift on hover */
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    }
+  `;
 
-const FaqItem = styled.div`
- padding:10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%; /* adjust the width to your liking */
-  margin-bottom: 30px;
-  position : relative ;
-  left : 55vh ;
-`;
+  const FaqItem = styled.div`
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #162028; /* Darker background for individual items */
+    transition: all 0.3s ease;
+  `;
 
-const FaqItemButton = styled.button`
+  const FaqItemButton = styled.button`
+    background-color: #1f3a7a; /* Darker button background color */
+    color: #fff; /* Light text color */
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
-    
-  background-color:black;
-  color: #fff;
-  border-bottom: 2px solid #dadada;
-  width: 60%;
-  padding: 20px 25px;
-  font-size: 20px;
-  cursor: pointer;
-  // border-radius: 20px;
-  margin: 0 auto; /* add this to center the button horizontally */
-  text-align: center; /* add this to center the text inside the button */
- &:hover {
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5), 0 0 20px rgba(128, 128, 128, 0.5), 0 0 30px rgba(128, 128, 128, 0.5), 0 0 40px rgba(128, 128, 128, 0.5);
-    transition: box-shadow 0.3s ease-in-out;
-  }
+    &:hover {
+      background-color: #2a4f93; /* Darken on hover */
+      box-shadow: inset 0 0 10px rgba(57, 127, 243, 0.3); /* Glow effect */
+    }
 
-`;
+    &::after {
+      content: "\\25BC"; /* Down arrow */
+      font-size: 12px;
+      transform: rotate(${({ isActive }) => (isActive ? "180deg" : "0deg")});
+      transition: transform 0.3s ease;
+    }
+  `;
 
-const FaqItemButtonHover = styled(FaqItemButton)`
-  background-color: light-blue;
-`;
+  const FaqItemDiv = styled.div`
+    background-color: #1e3c75; /* Darker background color for answer */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    font-size: 16px;
+    border-top: 1px solid #397FF3; /* Keep original border color */
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 0 0 10px 10px;
+    text-align: justify; /* Justify text for the answer */
 
-const FaqItemDiv = styled.div`
-margin-top: 20px;
- background: rgb(31,52,141);
-background: linear-gradient(0deg, rgba(31,52,141,1) 2%, rgba(21,21,21,1) 96%);
-  padding: 40px;
-  width : 60% ;
-  font-size: 20px;
-  border-bottom: 1px solid #fff;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  `;
 
-`;
-    const [activeStates, setActiveStates] = useState({});
-  
-    const toggleAnswer = (id) => {
-      setActiveStates((prevStates) => ({
-        ...prevStates,
-        [id]: !prevStates[id], // Toggle the state for the clicked FAQ
-      }));
-    };
-  
-    return (
-      <FaqContainer>
-        <FaqCard>
-          {faqData.map((faq) => (
-            <FaqItem key={faq.id}>
-              <FaqItemButton onClick={() => toggleAnswer(faq.id)}>
-                {faq.question}
-              </FaqItemButton>
-              {activeStates[faq.id] && <FaqItemDiv>{faq.answer}</FaqItemDiv>}
-            </FaqItem>
-          ))}
-        </FaqCard>
-      </FaqContainer>
-    );
-  }
-  
-  export default Faq;
+  const [activeStates, setActiveStates] = useState({});
+
+  const toggleAnswer = (id) => {
+    setActiveStates((prevStates) => ({
+      ...prevStates,
+      [id]: !prevStates[id], // Toggle the state for the clicked FAQ
+    }));
+  };
+
+  return (
+    <FaqContainer>
+      <FaqCard>
+        {faqData.map((faq) => (
+          <FaqItem key={faq.id}>
+            <FaqItemButton onClick={() => toggleAnswer(faq.id)}>
+              {faq.question}
+            </FaqItemButton>
+            {activeStates[faq.id] && <FaqItemDiv>{faq.answer}</FaqItemDiv>}
+          </FaqItem>
+        ))}
+      </FaqCard>
+    </FaqContainer>
+  );
+}
+
+export default Faq;
