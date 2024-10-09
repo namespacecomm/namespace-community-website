@@ -3,14 +3,14 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import Faq from "../Faq/Faq";
 import Modal from "./Modal";
+
 const Section = styled.div`
   background-color: #010116;
   height: 80vh;
   width: 100%;
-  margin-top: 40vh ;
+  margin-top: 40vh;
   scroll-snap-align: center;
   @media only screen and (min-width: 1080px) {
-    
   }
 `;
 
@@ -67,7 +67,6 @@ const TextArea = styled.textarea`
   border-radius: 5px;
   color: #fff;
   background-color: #14102e;
-  //  [Feature]: Hover effect while cursor is on SEND button #484 
   resize: none;
 `;
 
@@ -83,7 +82,12 @@ const Button = styled.button`
   padding: 0.5em;
   transition: 200ms ease-in-out;
   :hover {
-    background-color: #138AF2;
+    background-color: #138af2;
+  }
+
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
   }
 `;
 
@@ -140,6 +144,7 @@ const Contact = () => {
   });
   const [success, setSuccess] = useState(null);
   const [formMessage, setFormMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
@@ -147,15 +152,43 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.name) {
+      setFormMessage("Name cannot be empty.");
       setSuccess(false);
-      setFormMessage("Input Fields cannot be empty :(");
-      setShowModal(true); // Show the modal
+      setShowModal(true);
       return;
     }
+
+    if (!formData.email) {
+      setFormMessage("Email cannot be empty.");
+      setSuccess(false);
+      setShowModal(true);
+      return;
+    }
+
+    if (!validateEmail(formData.email)) {
+      setFormMessage("Please enter a valid email.");
+      setSuccess(false);
+      setShowModal(true);
+      return;
+    }
+
+    if (!formData.message) {
+      setFormMessage("Message cannot be empty.");
+      setSuccess(false);
+      setShowModal(true);
+      return;
+    }
+
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -172,80 +205,85 @@ const Contact = () => {
             "Your message has been sent. We'll get back to you soon :)"
           );
           setShowModal(true);
+          setLoading(false);
 
           setTimeout(() => {
             setSuccess(null);
             setFormMessage("");
-            setShowModal(false); // Hide the modal
+            setShowModal(false); // Hide the modal after timeout
           }, 2000);
         },
         (error) => {
           console.log(error.text);
           setSuccess(false);
-          setShowModal(true); // Show the modal
+          setFormMessage("There was an error sending your message. Try again.");
+          setShowModal(true);
+          setLoading(false);
         }
       );
   };
 
   return (
     <div className="mt-[105px] !important">
-    <h2 className="mt-[100px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
-        Frequenty Asked{" "}
+      <h2 className="mt-[100px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
+        Frequently Asked{" "}
         <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
           <a href="#">Questions</a>
         </span>
       </h2>
-      <Faq/>
+      <Faq />
 
-    <Section>
-      <Container>
-        <Left>
-          <Form ref={ref} onSubmit={handleSubmit}>
-          {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
-          {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
-            <Title>Contact Us</Title>
-            <Input
-              placeholder="Name"
-              name="name"
-              onChange={handleChange}
-              value={formData.name}
-              autoComplete="off"
-              required={true}
-            />
-            <Input
-              placeholder="Email"
-              name="email"
-              type="email"
-              onChange={handleChange}
-              value={formData.email}
-              autoComplete="off"
-              required={true}
-            />
-            <TextArea
-              placeholder="Write your message"
-              name="message"
-              rows={10}
-              onChange={handleChange}
-              value={formData.message}
-              required={true}
-            />
-            <Button type="submit">Send</Button>
-            {showModal && (
-              <Modal
-                message={formMessage}
-                onClose={() => setShowModal(false)}
+      <Section>
+        <Container>
+          <Left>
+            <Form ref={ref} onSubmit={handleSubmit}>
+              {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
+              {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
+              <Title>Contact Us</Title>
+              <Input
+                placeholder="Name"
+                name="name"
+                onChange={handleChange}
+                value={formData.name}
+                autoComplete="off"
+                required={true}
+                aria-label="Name"
               />
-            )}
-          </Form>
-          {showModal && (
-            <Modal message={formMessage} onClose={() => setShowModal(false)} />
-          )}
-        </Left>
-        <Right>
-          <Img src="./img/contact.svg" alt="Contact Illustration" />
-        </Right>
-      </Container>
-    </Section>
+              <Input
+                placeholder="Email"
+                name="email"
+                type="email"
+                onChange={handleChange}
+                value={formData.email}
+                autoComplete="off"
+                required={true}
+                aria-label="Email"
+              />
+              <TextArea
+                placeholder="Write your message"
+                name="message"
+                rows={10}
+                onChange={handleChange}
+                value={formData.message}
+                required={true}
+                aria-label="Message"
+              />
+              <Button type="submit" disabled={loading}>
+                {loading ? "Sending..." : "Send"}
+              </Button>
+              {showModal && (
+                <Modal
+                  message={formMessage}
+                  onClose={() => setShowModal(false)}
+                />
+              )}
+            </Form>
+          </Left>
+          <Right>
+            <Img src="./img/contact.svg" alt="Contact Illustration" />
+          </Right>
+        </Container>
+      </Section>
     </div>
   );
 };
