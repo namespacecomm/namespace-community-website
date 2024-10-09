@@ -11,6 +11,9 @@ function Faq() {
     flex-direction: column;
     padding: 0 20px;
     color: #fff; /* Light text color */
+    @media (max-width: 768px) {
+      padding: 0 10px;
+    }
   `;
 
   const FaqCard = styled.div`
@@ -25,6 +28,11 @@ function Faq() {
     &:hover {
       transform: translateY(-10px); /* Slight lift on hover */
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+      padding: 15px;
     }
   `;
 
@@ -72,7 +80,7 @@ function Faq() {
     border-top: 1px solid #397FF3; /* Keep original border color */
     animation: fadeIn 0.5s ease-in-out;
     border-radius: 0 0 10px 10px;
-    text-align: justify; /* Justify text for the answer */
+    text-align: left; /* Justify text for the answer */
 
     @keyframes fadeIn {
       from {
@@ -83,6 +91,10 @@ function Faq() {
         opacity: 1;
         transform: translateY(0);
       }
+    }
+      @media (max-width: 768px) {
+      padding: 15px;
+      font-size: 14px;
     }
   `;
 

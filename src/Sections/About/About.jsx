@@ -78,9 +78,13 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
   color: lightgray;
-  margin: auto 10% auto 0%;
+  margin: auto 0% auto 0%;
+   @media (max-width: 768px) {
+      padding-left: 10px;
+      font-size: 16px;
+    }
 `;
 
 const About = () => {
