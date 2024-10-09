@@ -1,43 +1,68 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import './AnimatedCard.css'; // Import custom CSS file
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import "./AnimatedCard.css"; // Import custom CSS file
 
 const AnimatedCard = ({ img, title, date, description }) => {
+  const [loading, setLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
   return (
     <motion.div
-      className="card-container bg-blue-1000 rounded-lg shadow-lg overflow-hidden"
+      className="overflow-hidden rounded-lg shadow-lg card-container bg-blue-1000"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0 }}
-      whileHover={{ rotate: 0, scale: 1.05, y: -5 }} 
+      whileHover={{ rotate: 0, scale: 1.05, y: -5 }}
     >
-      <div className="card-inner relative">
+      <div className="relative card-inner">
         {/* Front Side of the Card */}
         <div className="card-front">
           {/* Image with Glow Effect */}
-          <div className="image-container relative w-full">
-            {img ? (
-              <img src={img} alt={`${title} - achiever image`} className="card-image w-full h-auto object-cover" />
+          <div className="relative w-full image-container">
+            {img && !hasError ? (
+              <img
+                src={img}
+                alt={`${title} - achiever image`}
+                className="object-cover w-full h-auto card-image"
+                onLoad={() => setLoading(false)}
+                onError={() => {
+                  setLoading(false);
+                  setHasError(true);
+                }}
+                style={{ display: loading ? "none" : "block" }}
+              />
+            ) : null}
+            {loading && !hasError ? (
+              <div className="flex items-center justify-center h-40 bg-gray-300 ">
+                <span>No Image</span>
+              </div>
+            ) : hasError ? (
+              <div className="flex items-center justify-center h-40 bg-gray-300 ">
+                <span>Loading ...</span>
+              </div>
             ) : (
-              <div className="no-image bg-gray-300 flex justify-center items-center h-40">
+              <div
+                className="flex items-center justify-center h-40 bg-gray-300 "
+                style={{ display: img ? "none" : "flex" }}
+              >
                 <span>No Image</span>
               </div>
             )}
-            <div className="image-overlay absolute top-0 left-0 right-0 bottom-0"></div>
+
+            <div className="absolute top-0 bottom-0 left-0 right-0 image-overlay"></div>
           </div>
 
           {/* Name with Enhanced Typography */}
-          <h3 className="card-title text-white text-center mt-2">{title}</h3>
+          <h3 className="mt-2 text-center text-white card-title">{title}</h3>
 
           {/* Batch */}
-          <p className="card-batch text-white text-center mb-2">{date}</p>
+          <p className="mb-2 text-center text-white card-batch">{date}</p>
         </div>
 
         {/* Back Side of the Card */}
-        <div className="card-back absolute top-0 left-0 w-full h-full bg-blue-1000 p-4 flex items-center justify-center">
+        <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full p-4 card-back bg-blue-1000">
           {/* Achievements with Styling */}
-          <div className="achievements text-white">
-            {description.split('|').map((achievement, index) => (
+          <div className="text-white achievements">
+            {description.split("|").map((achievement, index) => (
               <p key={index} className="achievement">
                 {achievement.trim()}
               </p>
