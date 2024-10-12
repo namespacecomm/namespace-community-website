@@ -112,9 +112,8 @@ const NavbarLinkExtended = styled(Link)`
 `;
 
 const Logo = styled.img`
-  margin: 8px;
   max-width: 180px;
-  height: 60px;
+  height: 100px;
   align-self: center;
 `;
 
@@ -231,7 +230,7 @@ function Navbar() {
       <NavbarInnerContainer>
         <SecondContainer>
           <NavbarLogo to="/">
-            <Logo src="../.././img/logo5.png" alt="Logo" />
+            <Logo src="../.././img/horizontal-5.png" alt="Logo" />
           </NavbarLogo>
 
           <NavLinks>
