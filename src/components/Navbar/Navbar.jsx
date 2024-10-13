@@ -7,8 +7,7 @@ const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
   background-color: transparent;
-  display: ${({ isVisible }) =>
-    isVisible ? "flex" : "none"}; /* Control visibility */
+
   z-index: 99999999;
   flex-direction: column;
   align-items: center;
@@ -41,6 +40,11 @@ const SecondContainer = styled.div`
 
 const NavbarLinkContainer = styled.div`
   display: flex;
+  padding: 0 20px;
+
+  @media (max-width: 900px) {
+    padding: 0 1px;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -54,7 +58,7 @@ const NavbarLink = styled(Link)`
   font-weight: 400;
   text-decoration: none;
   transition: 200ms ease-in-out;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 10px 0 10px 0;
   position: relative;
   @media (max-width: 900px) {
@@ -112,9 +116,11 @@ const NavbarLinkExtended = styled(Link)`
 `;
 
 const Logo = styled.img`
-  max-width: 180px;
-  height: 100px;
+  height: 120px;
   align-self: center;
+  @media (max-width: 900px) {
+    height: 100px;
+  }
 `;
 
 const OpenLinksButton = styled.button`
@@ -128,7 +134,6 @@ const OpenLinksButton = styled.button`
 
 const NavbarExtendedContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +157,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: 200ms ease-in-out;
   @media (max-width: 900px) {
-    margin: 17px 10px 10px 5px;
+    margin: 5px 5px 5px 5px;
   }
   :hover {
     background-color: #138af2;
@@ -164,7 +169,7 @@ function Navbar() {
   const [activeNavLink, setActiveNavLink] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false); // Track navbar visibility
+  //const [isVisible, setIsVisible] = useState(false); // Track navbar visibility
   const dropdownRef = useRef(null);
   const partnersDropdownRef = useRef(null);
   const location = useLocation();
@@ -172,19 +177,7 @@ function Navbar() {
   useEffect(() => {
     setOpen(false);
     setActiveNavLink(location.pathname);
-    if (location.pathname === "/") {
-      setIsVisible(false); // Hide navbar on home page initially
-    }
   }, [location]);
-
-  const handleScroll = () => {
-    const scrollThreshold = window.innerHeight * 0.9; // 90% of the viewport height
-    if (window.scrollY > scrollThreshold) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
@@ -207,18 +200,6 @@ function Navbar() {
   };
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-    } else {
-      setIsVisible(true); // Ensure navbar is visible on other pages
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [location]);
-
-  useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -226,7 +207,7 @@ function Navbar() {
   }, []);
 
   return (
-    <NavbarContainer isVisible={isVisible} isOpen={isOpen}>
+    <NavbarContainer isOpen={isOpen}>
       <NavbarInnerContainer>
         <SecondContainer>
           <NavbarLogo to="/">
@@ -365,7 +346,7 @@ function Navbar() {
               </DropdownMenu>
             </NavbarLink>
 
-            <NavbarLink
+            {/* <NavbarLink
               to="/CodingChallenge"
               className={activeNavLink === "/CodingChallenge" ? "active" : ""}
             >
@@ -375,10 +356,10 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-            </NavbarLink>
+            </NavbarLink> */}
           </NavLinks>
 
-          <NavbarLinkContainer className="flex flex-row md:flex-col md:space-x-6 items-center w-full md:w-auto ">
+          <NavbarLinkContainer className="flex flex-row md:flex-col md:space-x-1 items-center w-auto">
             <a
               href="https://linktr.ee/namespacecomm"
               target="_blank"
@@ -388,7 +369,7 @@ function Navbar() {
             >
               <Button className="w-full">Connect with us</Button>
             </a>
-            <OpenLinksButton className="mx-4">
+            <OpenLinksButton className="mx-2">
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </OpenLinksButton>
           </NavbarLinkContainer>
@@ -422,9 +403,9 @@ function Navbar() {
           >
             Blog
           </NavbarLinkExtended>
-          <NavbarLinkExtended to="/codingchallenge">
+          {/* <NavbarLinkExtended to="/codingchallenge">
             Coding Challenge
-          </NavbarLinkExtended>
+          </NavbarLinkExtended> */}
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
