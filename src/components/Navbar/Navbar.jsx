@@ -49,7 +49,7 @@ const NavbarLinkContainer = styled.div`
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 15px;
 `;
 
 const NavbarLink = styled(Link)`
@@ -271,6 +271,14 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
+              to="https://namespacecomm.substack.com/"
+              target="_blank"
+              without
+              rel="noreferrer"
+            >
+              <div>Newsletter</div>
+            </NavbarLink>
+            <NavbarLink
               to="/team"
               className={activeNavLink === "/team" ? "active" : ""}
             >
@@ -304,24 +312,6 @@ function Navbar() {
               </div>
             </NavbarLink>
             <NavbarLink
-              to="http://blog.namespacecomm.in/"
-              target="_blank"
-              without
-              rel="noreferrer"
-              className={
-                activeNavLink === "/http://blog.namespacecomm.in/"
-                  ? "active"
-                  : ""
-              }
-            >
-              <div>
-                Blog
-                {activeNavLink === "/http://blog.namespacecomm.in/" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink>
-            <NavbarLink
               to="#"
               className={activeNavLink === "/partners" ? "active" : ""}
               onClick={handlePartnersDropdownToggle}
@@ -344,6 +334,14 @@ function Navbar() {
                   Become a Campus Evangelist
                 </DropdownItem>
               </DropdownMenu>
+            </NavbarLink>
+            <NavbarLink
+              to="http://blog.namespacecomm.in/"
+              target="_blank"
+              without
+              rel="noreferrer"
+            >
+              <div>Blog</div>
             </NavbarLink>
 
             {/* <NavbarLink
@@ -381,6 +379,14 @@ function Navbar() {
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
+          <NavbarLinkExtended 
+          to="https://namespacecomm.substack.com/"
+          target="_blank"
+          without
+          rel="noreferrer">
+            Newsletter
+          </NavbarLinkExtended>
+          
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>

@@ -38,7 +38,7 @@ function Programs() {
                             <div className="max-w-2xl mx-auto text-center">
                                 <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl">
                                         
-                                    INTERNAL PROGRAM
+                                    Internal Programs
                                 </h2>
                                 <br></br>
                                 <p className="text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 " >

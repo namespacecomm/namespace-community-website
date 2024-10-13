@@ -7,9 +7,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   justify-content: space-between;
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
   background-color: #010116;
 `;
 
@@ -35,9 +33,9 @@ function Projects() {
     <>
       <Section>
         <Container>
-          <div>
+          <div className="p-12">
             <h1 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl text-center">
-              PROJECTS
+              Projects
             </h1>
             
    
