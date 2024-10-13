@@ -48,6 +48,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto 5%;
   gap: 20px;
   @media only screen and (max-width: 768px) {
     align-items: center;
@@ -59,7 +60,7 @@ const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid #f5f5f5;
-  margin: auto 10% auto 0%;
+  
   background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
@@ -68,9 +69,6 @@ const Title = styled.h1`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media only screen and (max-width: 768px) {
-    font-size: 30px;
-  }
   @media only screen and (max-width: 1030px) {
     font-size: 30px;
   }
@@ -78,9 +76,9 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   font-size: 18px;
-  text-align: left;
+  text-align: justify;
   color: lightgray;
-  margin: auto 0% auto 0%;
+  
    @media (max-width: 768px) {
       padding-left: 10px;
       font-size: 16px;
