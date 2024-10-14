@@ -78,6 +78,10 @@ const SocialIcons = styled.div`
       transform: scale(1.2);
     }
   }
+
+  @media (max-width: 768px) {
+    gap: 0.8rem;
+  }
 `;
 
 const TrademarkText = styled.div`
