@@ -19,7 +19,6 @@ const Section = styled.div`
 
 const Container = styled.div`
   scroll-snap-align: center;
-  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +32,7 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   align-items: center;
+  margin: 0 5%;
   justify-content: center;
 
   @media only screen and (max-width: 1030px) {
@@ -44,6 +44,7 @@ const Left = styled.div`
 const Right = styled.div`
   flex: 1;
   display: flex;
+  margin: 0 5%;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -57,7 +58,6 @@ const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
   border-bottom: 3px solid #f5f5f5;
-  margin: auto 10%;
   background: #3530cf;
   background: repeating-radial-gradient(
     circle farthest-side at center center,
@@ -78,7 +78,6 @@ const Desc = styled.p`
   font-size: 14px;
   text-align: justify;
   color: lightgray;
-  margin: auto 10%;
 `;
 
 const Founder = () => {
