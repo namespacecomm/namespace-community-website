@@ -365,7 +365,7 @@ function Navbar() {
               rel="noreferrer"
               className="w-full"
             >
-              <Button className="w-full">Connect with us</Button>
+              <Button className="w-full">Connect</Button>
             </a>
             <OpenLinksButton className="mx-2">
               <Hamburger toggled={isOpen} toggle={setOpen} />
