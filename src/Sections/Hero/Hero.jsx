@@ -56,13 +56,13 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  height: 100vh;
+  height: 90vh;
   scroll-snap-align: center;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  padding: 9% 14%;
+  margin-top: 50px;
+  padding: 10% 20%;
   @media only screen and (max-width: 1030px) {
     width: 100%;
     height: 100vh;
@@ -244,8 +244,8 @@ const Hero = () => {
       </div>
       
       <About />
-      <Teams />
-      <Founder />
+      {/* <Teams />
+      <Founder /> */}
       <SocialMedia />
       {/* <Testimonials /> */}
       <Contact />

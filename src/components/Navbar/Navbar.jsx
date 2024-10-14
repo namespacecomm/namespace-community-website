@@ -20,7 +20,7 @@ const NavbarContainer = styled.nav`
 
 const NavbarInnerContainer = styled.div`
   width: 100%;
-  height: 100px;
+  height: 12vh;
   display: flex;
 `;
 

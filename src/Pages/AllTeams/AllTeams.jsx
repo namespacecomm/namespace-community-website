@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { allmembers } from "../../constants/constants";
 import TeamCard from "../../Sections/Teams/TeamCard";
+import Teams from "../../Sections/Teams/Teams";
+import Founder from "../../Sections/Founder/Founder";
 
 const Section = styled.div`
   display: flex;
@@ -9,20 +11,9 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   display: flex;
-  ${
-    "" /* background-color: rgb(9, 9, 121);
-  background-repeat: no-repeat;
-  background: linear-gradient(
-    262deg,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(2, 0, 36, 1) 1%
-  ); */
-  }
+  ${""}
   background-color: #010116;
-  ${
-    "" /* background-repeat: no-repeat;
-  background: no-repeat url("./img/bg.jpg"); */
-  }
+  ${""}
 `;
 
 const Container = styled.div`
@@ -50,17 +41,19 @@ function AllTeams() {
   return (
     <>
       <Section>
+        
         <Container>
+        <Founder />
+        <Teams />
           <div className=" px-6 py-10 ">
             <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-teal-400 to-yellow-200 sm:text-4xl lg:text-5xl text-center">
-              Our Team
+              Whole Team
             </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
               In the last two years nameSpace has grown on to become a vibrant
               and thriving collection of tech enthusiasts and problem solvers.
-              Given below are few of the members who make the community
-              amazing.
+              Given below are few of the members who make the community amazing.
             </p>
 
             {/* <div className="flex items-center justify-center">
