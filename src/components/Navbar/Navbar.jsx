@@ -167,9 +167,8 @@ const Button = styled.button`
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState(null);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [eventsDropdownOpen, setEventsDropdownOpen] = useState(false);
   const [partnersDropdownOpen, setPartnersDropdownOpen] = useState(false);
-  //const [isVisible, setIsVisible] = useState(false); // Track navbar visibility
   const dropdownRef = useRef(null);
   const partnersDropdownRef = useRef(null);
   const location = useLocation();
@@ -179,8 +178,8 @@ function Navbar() {
     setActiveNavLink(location.pathname);
   }, [location]);
 
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
+  const handleEventsDropdownToggle = () => {
+    setEventsDropdownOpen(!eventsDropdownOpen);
   };
 
   const handlePartnersDropdownToggle = () => {
@@ -189,7 +188,7 @@ function Navbar() {
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setDropdownOpen(false);
+      setEventsDropdownOpen(false);
     }
     if (
       partnersDropdownRef.current &&
@@ -241,7 +240,7 @@ function Navbar() {
             <NavbarLink
               to="#"
               className={activeNavLink === "/events" ? "active" : ""}
-              onClick={handleDropdownToggle}
+              onClick={handleEventsDropdownToggle}
             >
               <div>
                 Events
@@ -249,7 +248,7 @@ function Navbar() {
                   <hr className="border-3 rounded-full" />
                 )}
               </div>
-              <DropdownMenu ref={dropdownRef} show={dropdownOpen}>
+              <DropdownMenu ref={dropdownRef} show={eventsDropdownOpen}>
                 <DropdownItem to="/techx">TechXcelerate</DropdownItem>
                 <DropdownItem to="/nsos">
                   nameSpace Season of Open Source
