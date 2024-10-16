@@ -129,7 +129,7 @@ function Hackhazards() {
               <h2 className="mt-[80px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
                 Official{" "}
                 <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-                  <a href="https://linktr.ee/nscc_bpit">Stats</a>
+                  <a href="https://linktr.ee/namespacecomm">Stats</a>
                 </span>
               </h2>
 

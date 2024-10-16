@@ -104,7 +104,7 @@ const Footer = () => {
       <CenterText>
         Made with ❤️ and 🧠 by{" "}
         <a
-          href="https://github.com/namespacecomm/NSCC-BPIT-Website"
+          href="https://github.com/namespacecomm/namespacecomm-community-website"
           target="_blank"
           rel="noopener noreferrer"
         >
