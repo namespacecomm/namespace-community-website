@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "collegeName": "Example University",
+      "evangelistName": "John Doe",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "instagram": "https://www.instagram.com/johndoe"
+    },
+    {
+      "id": 2,
+      "collegeName": "Another College",
+      "evangelistName": "Jane Smith",
+      "evangelistImage": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg4fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY1ODE&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/janesmith",
+      "github": "https://github.com/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "instagram": "https://www.instagram.com/janesmith"
+    },
+    {
+      "id": 3,
+      "collegeName": "Tech Institute",
+      "evangelistName": "Emily Johnson",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/emilyjohnson",
+      "github": "https://github.com/emilyjohnson",
+      "twitter": "https://twitter.com/emilyjohnson",
+      "instagram": "https://www.instagram.com/emilyjohnson"
+    },
+    {
+      "id": 4,
+      "collegeName": "Science Academy",
+      "evangelistName": "Michael Brown",
+      "evangelistImage": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg4fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY1ODE&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/michaelbrown",
+      "github": "https://github.com/michaelbrown",
+      "twitter": "https://twitter.com/michaelbrown",
+      "instagram": "https://www.instagram.com/michaelbrown"
+    },
+    {
+      "id": 5,
+      "collegeName": "Business School",
+      "evangelistName": "Sarah Davis",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/sarahdavis",
+      "github": "https://github.com/sarahdavis",
+      "twitter": "https://twitter.com/sarahdavis",
+      "instagram": "https://www.instagram.com/sarahdavis"
+    },
+    {
+      "id": 6,
+      "collegeName": "Art Institute",
+      "evangelistName": "David Wilson",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/davidwilson",
+      "github": "https://github.com/davidwilson",
+      "twitter": "https://twitter.com/davidwilson",
+      "instagram": "https://www.instagram.com/davidwilson"
+    },
+    {
+      "id": 7,
+      "collegeName": "Engineering College",
+      "evangelistName": "Jessica Taylor",
+      "evangelistImage": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg4fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY1ODE&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/jessicataylor",
+      "github": "https://github.com/jessicataylor",
+      "twitter": "https://twitter.com/jessicataylor",
+      "instagram": "https://www.instagram.com/jessicataylor"
+    },
+    {
+      "id": 8,
+      "collegeName": "Healthcare Academy",
+      "evangelistName": "James Martinez",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/jamesmartinez",
+      "github": "https://github.com/jamesmartinez",
+      "twitter": "https://twitter.com/jamesmartinez",
+      "instagram": "https://www.instagram.com/jamesmartinez"
+    },
+    {
+      "id": 9,
+      "collegeName": "Design School",
+      "evangelistName": "Emily Garcia",
+      "evangelistImage": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDg4fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY1ODE&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/emilygarcia",
+      "github": "https://github.com/emilygarcia",
+      "twitter": "https://twitter.com/emilygarcia",
+      "instagram": "https://www.instagram.com/emilygarcia"
+    },
+    {
+      "id": 10,
+      "collegeName": "Culinary Institute",
+      "evangelistName": "Matthew Rodriguez",
+      "evangelistImage": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHx3b21hbiUyMG1lbnxlbnwwfHx8fDE2OTY0NjY0ODg&ixlib=rb-4.0.3&q=80&w=400",
+      "linkedin": "https://www.linkedin.com/in/matthewrodriguez",
+      "github": "https://github.com/matthewrodriguez",
+      "twitter": "https://twitter.com/matthewrodriguez",
+      "instagram": "https://www.instagram.com/matthewrodriguez"
+    }
+  ]
+  
