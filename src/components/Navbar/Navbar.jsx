@@ -50,6 +50,10 @@ const NavbarLinkContainer = styled.div`
 const NavLinks = styled.div`
   display: flex;
   gap: 15px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const NavbarLink = styled(Link)`
@@ -61,7 +65,7 @@ const NavbarLink = styled(Link)`
   padding: 0.3rem;
   border-radius: 10px 0 10px 0;
   position: relative;
-  @media (max-width: 900px) {
+  @media (max-width: 1024px) {
     display: none;
   }
   :hover {
@@ -106,7 +110,7 @@ const NavbarLogo = styled(Link)`
 
 const NavbarLinkExtended = styled(Link)`
   color: white;
-  font-size: 12px;
+  font-size: 30px;
   text-decoration: none;
   margin: 5px;
   :hover {
@@ -116,17 +120,17 @@ const NavbarLinkExtended = styled(Link)`
 `;
 
 const Logo = styled.img`
-  height: 120px;
+  height: 60px;
   align-self: center;
   @media (max-width: 900px) {
-    height: 100px;
+    height: 50px;
   }
 `;
 
 const OpenLinksButton = styled.button`
   padding-top: 5px;
   cursor: pointer;
-  @media (min-width: 900px) {
+  @media (min-width: 1024px) {
     display: none;
     align-self: center;
   }
@@ -136,12 +140,17 @@ const NavbarExtendedContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
+  align-items: left;
+  padding-top: 10px;
   gap: 10px;
+  height: 80vh;
   backdrop-filter: blur(20px);
+  overflow-y: auto;
+  position: fixed;
+  top: 10;
+  left: 0;
 
-  @media (min-width: 900px) {
+  @media (min-width: 1024px) {
     display: none;
     align-items: center;
   }
@@ -156,7 +165,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 200ms ease-in-out;
-  @media (max-width: 900px) {
+  @media (max-width: 1024px) {
     margin: 5px 5px 5px 5px;
   }
   :hover {
@@ -210,7 +219,10 @@ function Navbar() {
       <NavbarInnerContainer>
         <SecondContainer>
           <NavbarLogo to="/">
-            <Logo src="../.././img/horizontal-5.png" alt="Logo" />
+            <Logo
+              src="../.././img/logo-white-blackoutline-3x4.png"
+              alt="Logo"
+            />
           </NavbarLogo>
 
           <NavLinks>
@@ -342,18 +354,6 @@ function Navbar() {
             >
               <div>Blog</div>
             </NavbarLink>
-
-            {/* <NavbarLink
-              to="/CodingChallenge"
-              className={activeNavLink === "/CodingChallenge" ? "active" : ""}
-            >
-              <div>
-                Coding Challenge
-                {activeNavLink === "/CodingChallenge" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink> */}
           </NavLinks>
 
           <NavbarLinkContainer className="flex flex-row md:flex-col md:space-x-1 items-center w-auto">
@@ -378,14 +378,15 @@ function Navbar() {
           <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
           <NavbarLinkExtended to="/programs">Programs</NavbarLinkExtended>
-          <NavbarLinkExtended 
-          to="https://namespacecomm.substack.com/"
-          target="_blank"
-          without
-          rel="noreferrer">
+          <NavbarLinkExtended
+            to="https://namespacecomm.substack.com/"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
             Newsletter
           </NavbarLinkExtended>
-          
+
           <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
           <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
