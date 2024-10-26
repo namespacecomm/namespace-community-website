@@ -246,29 +246,6 @@ function Navbar() {
 
           {isOpen && (
             <NavLinks>
-              {/* <NavbarLink
-              to="/projects"
-              className={activeNavLink === "/projects" ? "active" : ""}
-            >
-              <div>
-                Projects
-                {activeNavLink === "/projects" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink> */}
-
-              {/* <NavbarLink
-              to="/achievements"
-              className={activeNavLink === "/achievements" ? "active" : ""}
-            >
-              <div>
-                Achievements
-                {activeNavLink === "/achievements" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink> */}
               <NavbarLink
                 to="#"
                 className={activeNavLink === "/events" ? "active" : ""}
@@ -291,47 +268,6 @@ function Navbar() {
                 </DropdownMenu>
               </NavbarLink>
               <NavbarLink
-                to="https://namespacecomm.substack.com/"
-                target="_blank"
-                without
-                rel="noreferrer"
-              >
-                <div>Newsletter</div>
-              </NavbarLink>
-              <NavbarLink
-                to="/team"
-                className={activeNavLink === "/team" ? "active" : ""}
-              >
-                <div>
-                  Team
-                  {activeNavLink === "/team" && (
-                    <hr className="border-3 rounded-full" />
-                  )}
-                </div>
-              </NavbarLink>
-              {/* <NavbarLink
-              to="/resources"
-              className={activeNavLink === "/resources" ? "active" : ""}
-            >
-              <div>
-                Resources
-                {activeNavLink === "/resources" && (
-                  <hr className="border-3 rounded-full" />
-                )}
-              </div>
-            </NavbarLink> */}
-              {/* <NavbarLink
-                to="/chapters"
-                className={activeNavLink === "/chapters" ? "active" : ""}
-              >
-                <div>
-                  Chapters
-                  {activeNavLink === "/chapters" && (
-                    <hr className="border-3 rounded-full" />
-                  )}
-                </div>
-              </NavbarLink> */}
-              <NavbarLink
                 to="#"
                 className={activeNavLink === "/partners" ? "active" : ""}
                 onClick={handlePartnersDropdownToggle}
@@ -346,6 +282,9 @@ function Navbar() {
                   ref={partnersDropdownRef}
                   show={partnersDropdownOpen}
                 >
+                  <DropdownItem to="/sponsor">
+                    Sponsor Us
+                  </DropdownItem>
                   <DropdownItem to="/communitypartner">
                     Become a Community Partner
                   </DropdownItem>
@@ -354,6 +293,25 @@ function Navbar() {
                     Become a Campus Evangelist
                   </DropdownItem>
                 </DropdownMenu>
+              </NavbarLink>
+              <NavbarLink
+                to="/team"
+                className={activeNavLink === "/team" ? "active" : ""}
+              >
+                <div>
+                  Team
+                  {activeNavLink === "/team" && (
+                    <hr className="border-3 rounded-full" />
+                  )}
+                </div>
+              </NavbarLink>
+              <NavbarLink
+                to="https://namespacecomm.substack.com/"
+                target="_blank"
+                without
+                rel="noreferrer"
+              >
+                <div>Newsletter</div>
               </NavbarLink>
               <NavbarLink
                 to="http://blog.namespacecomm.in/"

@@ -460,17 +460,71 @@ const Hero = () => {
                   </div>
 
                   <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mb-8"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-center mb-12 relative"
                   >
-                    <h2 className="text-2xl md:text-3xl font-bold mb-2">
+                    {/* Decorative background element */}
+                    <motion.div
+                      initial={{ scale: 0.9, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 1 }}
+                      className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 blur-3xl -z-10 transform -rotate-1"
+                    />
+
+                    {/* Main heading with gradient text */}
+                    <motion.h2
+                      initial={{ y: 20, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight"
+                    >
                       Building India's largest tech community
-                    </h2>
-                    <h3 className="text-xl md:text-2xl text-gray-400">
-                      One event at a time
-                    </h3>
+                    </motion.h2>
+
+                    {/* Subheading with animated typing effect */}
+                    <motion.h3
+                      initial={{ y: 20, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      className="text-xl md:text-3xl font-medium text-gray-400 relative inline-block"
+                    >
+                      <span className="relative">
+                        One event at a time
+                        <motion.span
+                          initial={{ width: "100%" }}
+                          whileInView={{ width: "0%" }}
+                          transition={{ duration: 0.8, delay: 0.8 }}
+                          className="absolute inset-0 bg-white"
+                        />
+                      </span>
+                      <motion.span
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 1.2 }}
+                        className="absolute -right-4 top-0 text-blue-500"
+                      >
+                        _
+                      </motion.span>
+                    </motion.h3>
+
+                    {/* Optional decorative dots */}
+                    <div className="absolute -right-8 -top-8 w-24 h-24 text-gray-200">
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 0.2 }}
+                        transition={{ duration: 0.6, delay: 0.6 }}
+                        className="grid grid-cols-3 gap-2"
+                      >
+                        {[...Array(9)].map((_, i) => (
+                          <div
+                            key={i}
+                            className="w-2 h-2 rounded-full bg-current"
+                          />
+                        ))}
+                      </motion.div>
+                    </div>
                   </motion.div>
 
                   <motion.p
@@ -781,6 +835,36 @@ const Hero = () => {
                 transform: scaleX(1);
               }
             `}</style>
+
+            <div className="relative z-10 mt-16 text-center">
+              <a
+                href="/events"
+                className="group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white transition-all duration-300 
+                   bg-gradient-to-r from-transparent via-slate-800 to-transparent hover:via-slate-700
+                   border border-slate-700 rounded-full
+                   hover:border-slate-600 hover:scale-105"
+              >
+                <span className="relative">
+                  <span className="block transition-all duration-300 group-hover:translate-x-1">
+                    Explore All Events
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-0 h-px bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <svg
+                  className="w-4 h-4 transition-transform duration-300 transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div

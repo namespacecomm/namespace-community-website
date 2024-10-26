@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Gallery from "../../components/Gallery/Gallery";
+import AdvancedGallery from "../../components/Gallery/AdvancedGallery";
 import {
   Galleryimages,
   images,

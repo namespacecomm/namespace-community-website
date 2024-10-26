@@ -41,7 +41,7 @@ const Footer = () => {
     <footer className={`bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Left Section - Logo, Description, and Social Links */}
           <div className="space-y-8">
             {/* Logo and Description */}
@@ -96,8 +96,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Section - Quick Links */}
-          <div className="space-y-4">
+          {/* Middle Section - Quick Links */}
+          <div className="space-y-4 lg:ml-12">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
@@ -111,6 +111,18 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Right Section - Tagline */}
+          <div className="flex flex-col justify-start items-center md:items-end space-y-4">
+            <div className="text-right">
+              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+                Building India's largest tech community
+              </h2>
+              <p className="text-lg md:text-xl text-gray-300 mt-2 italic">
+                One event at a time
+              </p>
+            </div>
           </div>
         </div>
 

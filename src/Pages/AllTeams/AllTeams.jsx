@@ -9,12 +9,9 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-// Dummy data for founder images
 const founderImages = [
-  { id: 1, url: "/api/placeholder/800/600", alt: "Founder at workspace" },
-  { id: 2, url: "/api/placeholder/800/600", alt: "Founder at event" },
-  { id: 3, url: "/api/placeholder/800/600", alt: "Founder speaking" },
-  { id: 4, url: "/api/placeholder/800/600", alt: "Founder with team" },
+  { url: "./img/founder1.png", alt: "Pradeepto 1" },
+  { url: "./img/founder2.png", alt: "Pradeepto 2" }
 ];
 
 // Dummy data for core team members
@@ -157,7 +154,7 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="relative w-full max-w-xl mx-auto">
-      <div className="relative h-96 overflow-hidden rounded-xl shadow-2xl shadow-pink-500/20">
+      <div className="relative h-auto overflow-hidden rounded-xl shadow-2xl shadow-pink-500/20">
         <img
           src={images[currentIndex].url}
           alt={images[currentIndex].alt}
@@ -184,7 +181,7 @@ const ImageSlider = ({ images }) => {
 const AllTeams = () => {
   return (
     <div className="min-h-screen bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto mb-24">
+      <div className="max-w-7xl mt-20 mx-auto mb-24">
         <h1 className="text-4xl font-bold text-center mb-16 text-white">
           Meet Our Team
         </h1>
@@ -206,6 +203,7 @@ const AllTeams = () => {
                 build on that vision, driven by our core values of inclusivity,
                 collaboration, and innovation.
               </p>
+              <br />
               <p>
                 Our goal is to provide a clear path for those just starting
                 their tech journeys, helping them navigate through the diverse
@@ -216,6 +214,7 @@ const AllTeams = () => {
                 resources are testaments to our collective efforts and shared
                 passion for technology.
               </p>
+              <br />
               <p>
                 Looking ahead, we are excited to continue expanding our reach
                 and impact. We are exploring new initiatives, enhancing our
@@ -227,6 +226,7 @@ const AllTeams = () => {
                 Together, we will continue to learn, grow, and make a difference
                 in the tech world.
               </p>
+              <br />
               <p className="font-semibold flex items-center gap-2">
                 ~{" "}
                 <a

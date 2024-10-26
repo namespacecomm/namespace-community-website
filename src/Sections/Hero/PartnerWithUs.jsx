@@ -14,7 +14,10 @@ import {
   Award,
   UserPlus,
   ChevronDown,
+  Mail,
+  ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PartnerWithUs = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -25,6 +28,7 @@ const PartnerWithUs = () => {
       icon: Building2,
       gradient: "from-indigo-600 via-purple-600 to-pink-600",
       accentColor: "purple",
+      path: "/sponsor",
       benefits: [
         {
           title: "Brand Visibility",
@@ -63,6 +67,7 @@ const PartnerWithUs = () => {
       icon: HeartHandshake,
       gradient: "from-blue-600 via-cyan-600 to-teal-600",
       accentColor: "blue",
+      path: "/communitypartner",
       benefits: [
         {
           title: "Collaborative Initiatives",
@@ -92,10 +97,11 @@ const PartnerWithUs = () => {
       ],
     },
     {
-      title: "Campus Evangelist",
+      title: "Campus Evangelists",
       icon: UserCheck,
       gradient: "from-emerald-600 via-green-600 to-lime-600",
       accentColor: "emerald",
+      path: "/campusevangelist",
       benefits: [
         {
           title: "Leadership Opportunities",
@@ -190,7 +196,7 @@ const PartnerWithUs = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-6">
                     <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
-                      <type.icon className="w-6 h-6 lg:w-10 lg:h-10 text-white "/>
+                      <type.icon className="w-6 h-6 lg:w-10 lg:h-10 text-white" />
                     </div>
                     <div className="">
                       <h3 className="text-xl lg:text-2xl font-bold text-white text-left">
@@ -235,12 +241,61 @@ const PartnerWithUs = () => {
                         </motion.div>
                       ))}
                     </div>
+                    
+                    {/* Added Navigation Link */}
+                    <div className="px-8 pb-8">
+                      <Link to={type.path}>
+                        <motion.button
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.98 }}
+                          className={`w-full bg-gradient-to-r ${type.gradient} text-white py-4 px-6 rounded-xl font-semibold 
+                          flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-300`}
+                        >
+                          <span>Learn more about becoming a {type.title.slice(0, -1)}</span>
+                          <ArrowRight className="w-5 h-5" />
+                        </motion.button>
+                      </Link>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
             </motion.div>
           ))}
         </div>
+
+        {/* CTA Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-20 text-center"
+        >
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 p-8 relative overflow-hidden">
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32 blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full translate-y-24 -translate-x-24 blur-2xl"></div>
+
+              <div className="relative z-10 space-y-6">
+                <div className="mx-auto w-16 h-16 bg-white/10 rounded-2xl backdrop-blur-sm flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold text-white">Ready to Get Started?</h3>
+                <p className="text-white/90 text-lg max-w-2xl mx-auto">
+                  Connect with us to explore partnership opportunities and join our community of innovators
+                </p>
+                <motion.a
+                  href="mailto:contact@namespacecomm.in"
+                  className="inline-block bg-white text-gray-800 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Write to us at contact@namespacecomm.in
+                </motion.a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );
