@@ -320,7 +320,7 @@ function Navbar() {
                 )}
               </div>
             </NavbarLink> */}
-              <NavbarLink
+              {/* <NavbarLink
                 to="/chapters"
                 className={activeNavLink === "/chapters" ? "active" : ""}
               >
@@ -330,7 +330,7 @@ function Navbar() {
                     <hr className="border-3 rounded-full" />
                   )}
                 </div>
-              </NavbarLink>
+              </NavbarLink> */}
               <NavbarLink
                 to="#"
                 className={activeNavLink === "/partners" ? "active" : ""}
