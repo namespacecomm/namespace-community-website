@@ -53,22 +53,28 @@ const SecondContainer = styled.div`
   }
 `;
 
-const NavbarLinkContainer = styled.div`
-  display: flex;
-  padding: 0 0px;
-  gap: 20px;
-
-  @media (max-width: 900px) {
-    padding: 0 0px;
-  }
+const NavbarLogo = styled(Link)`
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  flex=40%
 `;
 
 const NavLinks = styled.div`
   display: flex;
   gap: 15px;
-
   @media (max-width: 1024px) {
     display: none;
+  }
+`;
+
+const NavbarLinkContainer = styled.div`
+  display: flex;
+  padding: 0 0px;
+  gap: 10px;
+
+  @media (max-width: 900px) {
+    padding: 0 0px;
   }
 `;
 
@@ -116,12 +122,6 @@ const DropdownItem = styled(Link)`
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
-`;
-
-const NavbarLogo = styled(Link)`
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
 `;
 
 const NavbarLinkExtended = styled(Link)`

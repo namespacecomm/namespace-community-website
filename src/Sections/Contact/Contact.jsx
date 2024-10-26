@@ -24,7 +24,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   @media only screen and (max-width: 1030px) {
     justify-content: center;
     margin-bottom: 20px;
@@ -48,6 +48,11 @@ const Form = styled.form`
 
   @media only screen and (max-width: 768px) {
     width: 300px;
+  }
+
+  @media only screen and (min-width: 1030px) {
+  flex-direction: row;
+  justify-content: center;
   }
 `;
 
@@ -228,38 +233,43 @@ const Contact = () => {
           <Form ref={ref} onSubmit={handleSubmit}>
             {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
             {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
-            <Title>Contact Us</Title>
-            <Input
-              placeholder="Name"
-              name="name"
-              onChange={handleChange}
-              value={formData.name}
-              autoComplete="off"
-              required={true}
-              aria-label="Name"
-            />
-            <Input
-              placeholder="Email"
-              name="email"
-              type="email"
-              onChange={handleChange}
-              value={formData.email}
-              autoComplete="off"
-              required={true}
-              aria-label="Email"
-            />
-            <TextArea
-              placeholder="Write your message"
-              name="message"
-              rows={10}
-              onChange={handleChange}
-              value={formData.message}
-              required={true}
-              aria-label="Message"
-            />
-            <Button type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send"}
-            </Button>
+
+            <div className="flex flex-col gap-8">
+              <Title>Contact Us</Title>
+              <Input
+                placeholder="Name"
+                name="name"
+                onChange={handleChange}
+                value={formData.name}
+                autoComplete="off"
+                required={true}
+                aria-label="Name"
+              />
+              <Input
+                placeholder="Email"
+                name="email"
+                type="email"
+                onChange={handleChange}
+                value={formData.email}
+                autoComplete="off"
+                required={true}
+                aria-label="Email"
+              />
+            </div>
+            <div className="flex flex-col gap-8">
+              <TextArea
+                placeholder="Write your message"
+                name="message"
+                rows={10}
+                onChange={handleChange}
+                value={formData.message}
+                required={true}
+                aria-label="Message"
+              />
+              <Button type="submit" disabled={loading}>
+                {loading ? "Sending..." : "Sent"}
+              </Button>
+            </div>
             {showModal && (
               <Modal
                 message={formMessage}
@@ -268,9 +278,9 @@ const Contact = () => {
             )}
           </Form>
         </Left>
-        <Right>
+        {/* <Right>
           <Img src="./img/contact.svg" alt="Contact Illustration" />
-        </Right>
+        </Right> */}
       </Container>
     </Section>
   );

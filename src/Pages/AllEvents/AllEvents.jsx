@@ -6,6 +6,9 @@ import { PastEvents } from "./eventsConstants";
 import EventCard from "../../utils/EventCard";
 import { useState } from "react";
 import css from "./AllEvents.css";
+import { images } from "../../constants/constants";
+import { hackhazardsImages } from "../../constants/constants";
+import Hackgallery from "../../components/Gallery/Hackgallery";
 
 const Section = styled.div`
   display: flex;
@@ -121,12 +124,15 @@ function AllEvents() {
             </h2>
 
             <p className="max-w-2xl mx-auto my-10 text-center text-xl font-bold leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-amber-500 to-pink-500 ">
-              nameSpace conducts various events and initiatives all year round
-              for the betterment and growth of the community. Given below are
-              some of the selected events conducted in the current tenure.
+              The nameSpace Community conducts various events and initiatives
+              all year round for the betterment and growth of the community.
             </p>
 
-            <Gallery images={Galleryimages} />
+            <div className="flex flex-col w-[80%] gap-3 mx-auto">
+              <Hackgallery images={images} />
+              <Hackgallery images={Galleryimages} />
+              <Hackgallery images={hackhazardsImages} />
+            </div>
           </div>
         </Container>
       </Section>
