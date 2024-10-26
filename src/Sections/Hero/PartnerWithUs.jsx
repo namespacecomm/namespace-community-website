@@ -187,13 +187,13 @@ const PartnerWithUs = () => {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32 blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full translate-y-24 -translate-x-24 blur-2xl"></div>
 
-                <div className="relative flex items-center justify-between">
+                <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-6">
                     <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
-                      <type.icon className="w-10 h-10 text-white" />
+                      <type.icon className="w-6 h-6 lg:w-10 lg:h-10 text-white "/>
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white">
+                    <div className="">
+                      <h3 className="text-xl lg:text-2xl font-bold text-white text-left">
                         {type.title}
                       </h3>
                       <div className="w-20 h-1 bg-white/50 rounded-full mt-2"></div>

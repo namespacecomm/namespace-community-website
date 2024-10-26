@@ -80,6 +80,141 @@ const UpperContainer = styled.div`
   align-items: center;
   height: 100vh;
   padding: 5% 5%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60vmax;
+    height: 60vmax;
+    border-radius: 50%;
+    background: linear-gradient(
+      45deg,
+      rgba(65, 88, 208, 0.15) 0%,
+      rgba(200, 80, 192, 0.15) 50%,
+      rgba(255, 204, 112, 0.15) 100%
+    );
+    animation: rotate 20s linear infinite;
+    z-index: 1;
+  }
+
+  &::before {
+    top: -30%;
+    left: -10%;
+  }
+
+  &::after {
+    bottom: -30%;
+    right: -10%;
+    animation-direction: reverse;
+  }
+
+  /* Animated gradient orbs */
+  .orb {
+    position: absolute;
+    width: 40vmax;
+    height: 40vmax;
+    border-radius: 50%;
+    background: linear-gradient(
+      45deg,
+      rgba(76, 136, 255, 0.1) 0%,
+      rgba(116, 58, 213, 0.1) 100%
+    );
+    animation: float 15s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  .orb:nth-child(1) {
+    top: -20%;
+    right: -10%;
+    animation-delay: -5s;
+  }
+
+  .orb:nth-child(2) {
+    bottom: -20%;
+    left: -10%;
+    animation-delay: -2.5s;
+  }
+
+  /* Add a subtle grid pattern */
+  .grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 1;
+  }
+
+  .hero-logo {
+    position: relative;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+    animation: fadeInUp 0.8s ease-out;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  /* Animations */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-50px) scale(1.05);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    padding: 3% 3%;
+
+    .hero-logo {
+      max-width: 95%;
+    }
+
+    &::before,
+    &::after {
+      width: 80vmax;
+      height: 80vmax;
+    }
+  }
 `;
 
 const LowerContainer = styled.div`
@@ -95,83 +230,6 @@ const LowerContainer = styled.div`
     flex: 1;
     align-items: center;
     width: 100%;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 60px;
-  font-weight: 700;
-  text-align: center;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 1030px) {
-    font-size: 60px;
-  }
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 60px;
-  }
-`;
-
-const WhatWeDo = styled.div`
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 50px;
-  }
-`;
-
-const Subtitle = styled.p`
-  margin-top: 5px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  background: repeating-radial-gradient(
-    circle farthest-side at center center,
-    #3530cf 0%,
-    #44cfcf 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @media screen and (max-width: 424px) {
-    font-size: 24px;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
-
-const Desc = styled.p`
-  font-size: 24px;
-  color: lightgray;
-  text-align:justify;
-  
-  @media only screen and (max-width: 1030px) {
-    font-size: 17px;
-    margin-top:5px;
-    align-items: center;
-  }
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    margin-top:10px;
-    font-size: 22px;
-    align-items: center;
-`;
-const ShortDesc = styled.p`
-  font-size: 32px;
-  text-align: center;
-  color: lightgray;
-  padding-top: 8px;
-  margin-top: 4px;
-
-  @media only screen and (max-width: 1030px) {
-    font-size: 26px;
-  }
-  @media only screen and (min-width: 1030px) and (max-width: 1400px) {
-    font-size: 28px;
-  }
-  @media only screen and (max-width: 760px) {
-    font-size: 16px;
-    text-align: center;
   }
 `;
 
@@ -332,6 +390,9 @@ const Hero = () => {
       <Section>
         <Container>
           <UpperContainer>
+            <div className="grid" />
+            <div className="orb" />
+            <div className="orb" />
             <img className="hero-logo" src={Frame12} alt="Frame12" />
           </UpperContainer>
           <LowerContainer>
@@ -608,7 +669,7 @@ const Hero = () => {
             `}</style>
           </div>
 
-          <div className="w-full max-w-7xl mx-auto px-4 py-16 bg-slate-900 rounded-3xl relative overflow-hidden">
+          <div className="w-full mx-auto px-4 py-16 bg-slate-900 rounded-3xl">
             {/* Background pattern */}
             <div
               className="absolute inset-0 opacity-30"

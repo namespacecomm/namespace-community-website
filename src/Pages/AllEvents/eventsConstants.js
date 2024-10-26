@@ -73,7 +73,7 @@ export const PastEvents = [
     },
     {
         "date": "28/01/2024",
-        "name": "Router Protocal Workshop",
+        "name": "Router Protocol Workshop",
         "image": "",
         "participants": "",
         "location": "IN-PERSON",
