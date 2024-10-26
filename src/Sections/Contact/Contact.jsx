@@ -6,9 +6,7 @@ import Modal from "./Modal";
 
 const Section = styled.div`
   background-color: #010116;
-  height: 80vh;
   width: 100%;
-  margin-top: 40vh;
   scroll-snap-align: center;
   @media only screen and (min-width: 1080px) {
   }
@@ -26,7 +24,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   @media only screen and (max-width: 1030px) {
     justify-content: center;
     margin-bottom: 20px;
@@ -50,6 +48,11 @@ const Form = styled.form`
 
   @media only screen and (max-width: 768px) {
     width: 300px;
+  }
+
+  @media only screen and (min-width: 1030px) {
+  flex-direction: row;
+  justify-content: center;
   }
 `;
 
@@ -224,21 +227,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-[105px] !important">
-      <h2 className="mt-[100px] text-2xl text-center md:text-4xl lg:text-5xl font-bold">
-        Frequently Asked{" "}
-        <span className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800">
-          <a href="#">Questions</a>
-        </span>
-      </h2>
-      <Faq />
+    <Section>
+      <Container>
+        <Left>
+          <Form ref={ref} onSubmit={handleSubmit}>
+            {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
+            {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
 
-      <Section>
-        <Container>
-          <Left>
-            <Form ref={ref} onSubmit={handleSubmit}>
-              {success === false && <ErrorMessage>{formMessage}</ErrorMessage>}
-              {success === true && <SuccessMessage>{formMessage}</SuccessMessage>}
+            <div className="flex flex-col gap-8">
               <Title>Contact Us</Title>
               <Input
                 placeholder="Name"
@@ -259,6 +255,8 @@ const Contact = () => {
                 required={true}
                 aria-label="Email"
               />
+            </div>
+            <div className="flex flex-col gap-8">
               <TextArea
                 placeholder="Write your message"
                 name="message"
@@ -269,22 +267,22 @@ const Contact = () => {
                 aria-label="Message"
               />
               <Button type="submit" disabled={loading}>
-                {loading ? "Sending..." : "Send"}
+                {loading ? "Sending..." : "Sent"}
               </Button>
-              {showModal && (
-                <Modal
-                  message={formMessage}
-                  onClose={() => setShowModal(false)}
-                />
-              )}
-            </Form>
-          </Left>
-          <Right>
-            <Img src="./img/contact.svg" alt="Contact Illustration" />
-          </Right>
-        </Container>
-      </Section>
-    </div>
+            </div>
+            {showModal && (
+              <Modal
+                message={formMessage}
+                onClose={() => setShowModal(false)}
+              />
+            )}
+          </Form>
+        </Left>
+        {/* <Right>
+          <Img src="./img/contact.svg" alt="Contact Illustration" />
+        </Right> */}
+      </Container>
+    </Section>
   );
 };
 

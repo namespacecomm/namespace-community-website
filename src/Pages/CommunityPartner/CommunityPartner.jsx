@@ -1,23 +1,23 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import {
-  GraduationCap,
+  HeartHandshake,
   Users,
   Gift,
   Rocket,
   ClipboardList,
-  ChevronDown,
   Star,
-  Trophy,
+  Globe,
+  Building,
   Target,
   Network,
-  Code,
+  Shield,
   Award,
   Heart,
-  BookOpen,
+  Zap,
 } from "lucide-react";
 
-const CampusEvangelist = () => {
+const CommunityPartner = () => {
   const formRef = useRef(null);
 
   const scrollToForm = () => {
@@ -26,66 +26,70 @@ const CampusEvangelist = () => {
 
   const features = [
     {
-      title: "Roles & Responsibilities",
-      icon: Users,
-      color: "from-violet-600 to-purple-600",
-      items: [
-        "Create and Manage Public Groups: Foster a collaborative environment for members.",
-        "Promote Public Events and Meetups: Actively market our events, ensuring high participation.",
-        "Expand Community Reach: Engage students from various branches to build a diverse network.",
-        "Collaboration Opportunities: Collaborate with other tech communities in upcoming events.",
-        "Active Involvement: Work with the nameSpace core team to formulate community policies and initiatives.",
-        "Lead the pack: Become a leader by guiding your campus community."
-      ]
-    },
-    {
-      title: "Perks & Benefits",
+      title: "Partnership Benefits",
       icon: Gift,
-      color: "from-blue-600 to-cyan-600",
-      items: [
-        "Selection Letter and Completion Certificate",
-        "Expand your network within a dynamic community",
-        "Leadership Experience under the nameSpace Community brand",
-        "Exclusive Invitations to public meetups and flagship events",
-        "Dedicated training on soft skills and technical guidance",
-        "Access to community resources and member-only initiatives",
-        "Organize national-level technical events",
-        "Work on community open source projects"
-      ]
-    },
-    {
-      title: "Why Join Us",
-      icon: Rocket,
       color: "from-emerald-600 to-teal-600",
       items: [
-        "Career Advancement: Boost your resume with valuable experience",
-        "Skill Development: Enhance leadership and project management skills",
-        "Mentorship: Receive guidance from experienced professionals",
-        "Be a Changemaker: Shape the future of tech communities",
-        "Open a chapter: Priority for opening nameSpace chapters"
+        "Co-branded events and workshops",
+        "Access to our diverse tech talent pool",
+        "Exclusive promotional opportunities",
+        "Priority access to nameSpace flagship events",
+        "Joint content creation and knowledge sharing",
+        "Cross-promotion across our social media platforms",
+        "Collaborative community building initiatives",
+        "Strategic networking opportunities"
       ]
     },
     {
-      title: "Eligibility Criteria",
+      title: "Collaboration Areas",
+      icon: Rocket,
+      color: "from-blue-600 to-cyan-600",
+      items: [
+        "Technical Workshops & Training Sessions",
+        "Hackathons & Innovation Challenges",
+        "Industry Expert Speaking Opportunities",
+        "Mentorship Programs",
+        "Research & Development Projects",
+        "Community Events & Meetups",
+        "Student Placement Initiatives",
+        "Open Source Project Collaborations"
+      ]
+    },
+    {
+      title: "Partner Requirements",
       icon: ClipboardList,
+      color: "from-violet-600 to-purple-600",
+      items: [
+        "Commitment to tech community growth",
+        "Alignment with nameSpace's mission and values",
+        "Active participation in community initiatives",
+        "Resources for collaborative events",
+        "Dedicated point of contact",
+        "Regular engagement with community members"
+      ]
+    },
+    {
+      title: "Impact & Reach",
+      icon: Globe,
       color: "from-orange-600 to-red-600",
       items: [
-        "Current Enrollment: 2nd or 3rd-year bachelor's degree student",
-        "Community Passion: Genuine interest in building tech communities",
-        "Leadership Qualities: Ability to inspire and guide others",
-        "Technical Proficiency: Strong development skills",
-        "Enthusiasm to learn and contribute towards society"
+        "Access to 10,000+ tech enthusiasts",
+        "Presence across multiple campuses",
+        "Direct engagement with student innovators",
+        "Industry-academia bridge building",
+        "Contribution to skill development",
+        "Social impact through tech education"
       ]
     }
   ];
 
   const benefits = [
-    { icon: Trophy, text: "Leadership Experience" },
-    { icon: Target, text: "Career Growth" },
-    { icon: Network, text: "Network Building" },
-    { icon: Code, text: "Technical Skills" },
+    { icon: Building, text: "Brand Visibility" },
+    { icon: Target, text: "Market Reach" },
+    { icon: Network, text: "Tech Network" },
+    { icon: Shield, text: "Trust Building" },
     { icon: Award, text: "Recognition" },
-    { icon: Heart, text: "Community Impact" },
+    { icon: Heart, text: "Social Impact" },
   ];
 
   return (
@@ -96,7 +100,7 @@ const CampusEvangelist = () => {
         animate={{ opacity: 1 }}
         className="relative overflow-hidden py-20 px-6"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-blue-600/20 to-purple-600/20" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
@@ -105,21 +109,21 @@ const CampusEvangelist = () => {
             transition={{ delay: 0.2 }}
             className="text-center"
           >
-            <GraduationCap className="w-16 h-16 mx-auto mb-8 text-blue-400" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
-              Become a Campus Evangelist
+            <HeartHandshake className="w-16 h-16 mx-auto mb-8 text-emerald-400" />
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-blue-400 text-transparent bg-clip-text">
+              Become a Community Partner
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
-              Join our elite team of campus leaders and shape the future of tech communities
+              Join forces with nameSpace to empower the next generation of tech innovators
             </p>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToForm}
-              className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Join the Movement
+              Partner With Us
             </motion.button>
           </motion.div>
 
@@ -136,7 +140,7 @@ const CampusEvangelist = () => {
                 whileHover={{ y: -5 }}
                 className="bg-white/5 backdrop-blur-lg rounded-xl p-4 text-center"
               >
-                <benefit.icon className="w-8 h-8 mx-auto mb-3 text-blue-400" />
+                <benefit.icon className="w-8 h-8 mx-auto mb-3 text-emerald-400" />
                 <p className="text-sm font-medium text-gray-300">{benefit.text}</p>
               </motion.div>
             ))}
@@ -190,16 +194,16 @@ const CampusEvangelist = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mt-20 mb-12"
         >
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
-            Ready to Make an Impact?
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-blue-400 text-transparent bg-clip-text">
+            Ready to Transform Tech Education?
           </h2>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={scrollToForm}
-            className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Apply Now
+            Apply for Partnership
           </motion.button>
         </motion.div>
 
@@ -212,9 +216,9 @@ const CampusEvangelist = () => {
           >
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdPV56Mxv10dj2rqYXGmQHUpa9H-8bgoc6AomecRFQVOxdbDg/viewform?embedded=true"
+                src=""
                 className="w-full h-[800px] border-0"
-                title="Application Form"
+                title="Partnership Application Form"
               />
             </div>
           </motion.div>
@@ -223,7 +227,7 @@ const CampusEvangelist = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdPV56Mxv10dj2rqYXGmQHUpa9H-8bgoc6AomecRFQVOxdbDg/viewform", "_blank")}
+              onClick={() => window.open("", "_blank")}
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full text-lg transition-all duration-300"
             >
               Open Form in New Tab
@@ -235,4 +239,4 @@ const CampusEvangelist = () => {
   );
 };
 
-export default CampusEvangelist;
+export default CommunityPartner;

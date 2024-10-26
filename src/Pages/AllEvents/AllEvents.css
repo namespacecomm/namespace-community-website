@@ -1,0 +1,88 @@
+.events-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-header h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .event-header span {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  .event-details p {
+    margin: 8px 0;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .event-footer {
+    margin-top: 16px;
+  }
+  
+  .event-link {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .event-link:hover {
+    background-color: #2980b9;
+  }
+
+  @media (max-width: 768px) {
+    .event-card {
+      padding: 12px;
+    }
+  
+    .event-header h3 {
+      font-size: 1.1rem;
+    }
+  
+    .event-details p {
+      font-size: 0.875rem;
+    }
+  }
+
+  .filter-buttons-tab {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+    height: 20%;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .filter-buttons-tab button {
+    color: white;
+    padding: 4px 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: x-small;
+  }
+  

@@ -19,9 +19,6 @@ const Section = styled.div`
   }
   ${"" /* background: no-repeat url("./img/bg.jpg"); */}
   background-color: #010116;
-  @media only screen and (max-width: 768px) {
-    height: 150vh;
-  }
 `;
 
 const Container = styled.div`
@@ -33,11 +30,12 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 10px;
   }
 `;
 
 const Left = styled.div`
-  flex: 1.5;
+  flex: 1;
   align-items: center;
   justify-content: center;
   margin: auto 5%;
