@@ -78,7 +78,7 @@ const TeamMemberCard = ({ member }) => {
     <div className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/20">
       <div className="relative">
         {/* Profile Image with Overlay */}
-        <div className="relative overflow-hidden h-64">
+        <div className="relative overflow-hidden aspect-square">
           <img
             src={member.image}
             alt={member.name}
