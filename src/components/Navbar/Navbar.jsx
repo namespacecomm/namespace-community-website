@@ -247,9 +247,9 @@ function Navbar() {
           {isOpen && (
             <NavLinks>
               <NavbarLink
-                to="#"
+                to="/events"
                 className={activeNavLink === "/events" ? "active" : ""}
-                onClick={handleEventsDropdownToggle}
+                // onClick={handleEventsDropdownToggle} // Commented out to disable dropdown
               >
                 <div>
                   Events
@@ -257,16 +257,18 @@ function Navbar() {
                     <hr className="border-3 rounded-full" />
                   )}
                 </div>
-                <DropdownMenu ref={dropdownRef} show={eventsDropdownOpen}>
-                  <DropdownItem to="/techx">TechXcelerate</DropdownItem>
-                  <DropdownItem to="/nsos">
-                    nameSpace Season of Open Source
-                  </DropdownItem>
-                  <DropdownItem to="/algorena">Algorena</DropdownItem>
-                  <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
-                  <DropdownItem to="/events">All Events</DropdownItem>
-                </DropdownMenu>
+                {/* Commenting out the dropdown menu */}
+                {/* <DropdownMenu ref={dropdownRef} show={eventsDropdownOpen}>
+    <DropdownItem to="/techx">TechXcelerate</DropdownItem>
+    <DropdownItem to="/nsos">
+      nameSpace Season of Open Source
+    </DropdownItem>
+    <DropdownItem to="/algorena">Algorena</DropdownItem>
+    <DropdownItem to="/hackhazards">HACKHAZARDS</DropdownItem>
+    <DropdownItem to="/events">All Events</DropdownItem>
+  </DropdownMenu> */}
               </NavbarLink>
+
               <NavbarLink
                 to="#"
                 className={activeNavLink === "/partners" ? "active" : ""}
@@ -282,9 +284,7 @@ function Navbar() {
                   ref={partnersDropdownRef}
                   show={partnersDropdownOpen}
                 >
-                  <DropdownItem to="/sponsor">
-                    Sponsor Us
-                  </DropdownItem>
+                  <DropdownItem to="/sponsor">Sponsor Us</DropdownItem>
                   <DropdownItem to="/communitypartner">
                     Become a Community Partner
                   </DropdownItem>
@@ -345,6 +345,22 @@ function Navbar() {
           <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
           {/* <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended> */}
           <NavbarLinkExtended to="/events">Events</NavbarLinkExtended>
+          <NavbarLinkExtended to="/sponsor">Sponsor Us</NavbarLinkExtended>
+          <NavbarLinkExtended to="/communitypartner">
+            Become a Community Partner
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/campusevangelist">
+            Become a Campus Evangelist
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
+
+          {/* <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
+          <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
+          <NavbarLinkExtended to="/nsos">
+            nameSpace Season of Open Source
+          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
+          <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended> */}
           <NavbarLinkExtended
             to="https://namespacecomm.substack.com/"
             target="_blank"
@@ -354,20 +370,6 @@ function Navbar() {
             Newsletter
           </NavbarLinkExtended>
 
-          <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
-          {/* <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended> */}
-          <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
-          <NavbarLinkExtended to="/nsos">
-            nameSpace Season of Open Source
-          </NavbarLinkExtended>
-          <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
-          <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended>
-          <NavbarLinkExtended to="/communitypartner">
-            Become a Community Partner
-          </NavbarLinkExtended>
-          <NavbarLinkExtended to="/campusevangelist">
-            Become a Campus Evangelist
-          </NavbarLinkExtended>
           <NavbarLinkExtended
             to="http://blog.namespacecomm.in/"
             target="_blank"
