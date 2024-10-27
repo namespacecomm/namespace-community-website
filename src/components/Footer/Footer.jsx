@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
-import {
-  Mail,
-  Instagram,
-  Linkedin,
-  Youtube,
-  Github,
-  Twitter,
-  MessageCircle,
-  MessageCircleMore,
-  Send
-} from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { 
+  BsInstagram, 
+  BsLinkedin, 
+  BsYoutube, 
+  BsGithub, 
+  BsTwitterX, 
+  BsWhatsapp, 
+  BsDiscord, 
+  BsTelegram 
+} from 'react-icons/bs';
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -20,14 +20,14 @@ const Footer = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <Instagram className="w-5 h-5" />, href: "http://instagram.com/namespacecomm", label: "Instagram" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "http://www.linkedin.com/company/namespacecomm/", label: "LinkedIn" },
-    { icon: <Youtube className="w-5 h-5" />, href: "https://www.youtube.com/@namespacecomm", label: "YouTube" },
-    { icon: <Github className="w-5 h-5" />, href: "https://github.com/namespacecomm", label: "GitHub" },
-    { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com/namespacecomm", label: "Twitter" },
-    { icon: <MessageCircle className="w-5 h-5" />, href: "https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f", label: "WhatsApp" },
-    { icon: <MessageCircleMore className="w-5 h-5" />, href: "https://discord.gg/z2fTnXjKMm", label: "Discord" },
-    { icon: <Send className="w-5 h-5" />, href: "https://t.me/namespacecomm", label: "Telegram" }
+    { icon: <BsInstagram className="w-5 h-5" />, href: "http://instagram.com/namespacecomm", label: "Instagram" },
+    { icon: <BsLinkedin className="w-5 h-5" />, href: "http://www.linkedin.com/company/namespacecomm/", label: "LinkedIn" },
+    { icon: <BsYoutube className="w-5 h-5" />, href: "https://www.youtube.com/@namespacecomm", label: "YouTube" },
+    { icon: <BsGithub className="w-5 h-5" />, href: "https://github.com/namespacecomm", label: "GitHub" },
+    { icon: <BsTwitterX className="w-5 h-5" />, href: "https://twitter.com/namespacecomm", label: "Twitter" },
+    { icon: <BsWhatsapp className="w-5 h-5" />, href: "https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f", label: "WhatsApp" },
+    { icon: <BsDiscord className="w-5 h-5" />, href: "https://discord.gg/z2fTnXjKMm", label: "Discord" },
+    { icon: <BsTelegram className="w-5 h-5" />, href: "https://t.me/namespacecomm", label: "Telegram" }
   ];
 
   const quickLinks = [

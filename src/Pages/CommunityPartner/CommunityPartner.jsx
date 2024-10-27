@@ -73,7 +73,7 @@ const CommunityPartner = () => {
       icon: Globe,
       color: "from-orange-600 to-red-600",
       items: [
-        "Access to 10,000+ tech enthusiasts",
+        "Access to 16,000+ tech enthusiasts",
         "Presence across multiple campuses",
         "Direct engagement with student innovators",
         "Industry-academia bridge building",
@@ -216,9 +216,9 @@ const CommunityPartner = () => {
           >
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src=""
-                className="w-full h-[800px] border-0"
-                title="Partnership Application Form"
+                src="https://lu.ma/embed/event/evt-MTDWUPGm194wVNu/simple"
+                className="w-full h-[800px] md:h-[600px] border-0"
+                title="Community Partnership Application Form"
               />
             </div>
           </motion.div>
@@ -227,7 +227,7 @@ const CommunityPartner = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.open("", "_blank")}
+              onClick={() => window.open("https://lu.ma/event/evt-MTDWUPGm194wVNu", "_blank")}
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full text-lg transition-all duration-300"
             >
               Open Form in New Tab
