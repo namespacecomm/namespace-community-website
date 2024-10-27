@@ -54,7 +54,7 @@ const Footer = () => {
                 <span className="inline-block mx-1 animate-pulse">❤️</span> 
                 by{' '}
                 <a
-                  href="https://github.com/namespacecomm/namespacecomm-community-website"
+                  href="https://github.com/namespacecomm/namespace-community-website"
                   className="text-pink-400 hover:text-pink-300 transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
