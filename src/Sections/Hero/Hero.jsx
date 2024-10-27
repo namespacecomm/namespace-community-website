@@ -13,8 +13,6 @@ import Testimonials from "../Testimonials/Testimonials";
 import Contact from "../Contact/Contact";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import BackToTopButton from "../../components/BackToTop";
-import Founder from "../Founder/Founder";
-import Frame8 from "../../assets/Frame8.png";
 import Frame12 from "../../assets/Frame12.png";
 import PartnerWithUs from "./PartnerWithUs";
 import { motion, AnimatePresence } from "framer-motion";
@@ -45,6 +43,8 @@ import {
   HeartHandshake,
   ChevronDown,
 } from "lucide-react";
+import { BsDiscord } from "react-icons/bs";
+import Founder from "../../Pages/AllTeams/Founder";
 
 const Section = styled.div`
   display: flex;
@@ -123,20 +123,20 @@ const UpperContainer = styled.div`
       rgba(76, 136, 255, 0.1) 0%,
       rgba(116, 58, 213, 0.1) 100%
     );
-    animation: float 15s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
     z-index: 1;
   }
 
   .orb:nth-child(1) {
     top: -20%;
     right: -10%;
-    animation-delay: -5s;
+    animation-delay: -3s;
   }
 
   .orb:nth-child(2) {
     bottom: -20%;
     left: -10%;
-    animation-delay: -2.5s;
+    animation-delay: -0.5s;
   }
 
   /* Add a subtle grid pattern */
@@ -308,7 +308,7 @@ const benefits = [
     title: "Certification Opportunities",
     description:
       "Earn certifications through various programs, showcasing your skills and enhancing your resume.",
-    icon: Star, // Changed from Certificate to Star
+    icon: Star,
     gradient: "from-blue-600 to-blue-800",
   },
   {
@@ -357,25 +357,35 @@ const events = [
   },
 ];
 
+const getEventSubdomain = (eventTitle) => {
+  const subdomains = {
+    Algorena: "algorena",
+    HACKHAZARDS: "hackhazards",
+    "Season of Open Source": "sos",
+    TechXcelerate: "techx",
+  };
+  return subdomains[eventTitle];
+};
+
 const whatWeDoPoints = [
   {
     text: "We organize national-level events that are attended by thousands of participants and are open to all members of the community.",
     icon: (
-      <Users className="w-8 h-8 mb-4 text-blue-500 group-hover:text-white transition-all duration-300" />
+      <Users className="w-8 h-8 mb-4 text-black group-hover:text-white transition-all duration-300" />
     ),
     gradient: "bg-gradient-to-br from-blue-500 via-indigo-500 to-violet-500",
   },
   {
     text: "We bridge the gap between technical education and industry by promoting learning through various boot-camps, workshops, and initiatives.",
     icon: (
-      <Target className="w-8 h-8 mb-4 text-blue-500 group-hover:text-white transition-all duration-300" />
+      <Target className="w-8 h-8 mb-4 text-black group-hover:text-white transition-all duration-300" />
     ),
     gradient: "bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500",
   },
   {
     text: "We provide tailor-made programs to select members who are students and part of any of our nameSpace chapters.",
     icon: (
-      <Sparkles className="w-8 h-8 mb-4 text-blue-500 group-hover:text-white transition-all duration-300" />
+      <Sparkles className="w-8 h-8 mb-4 text-black group-hover:text-white transition-all duration-300" />
     ),
     gradient: "bg-gradient-to-br from-purple-500 via-pink-500 to-rose-500",
   },
@@ -407,7 +417,7 @@ const Hero = () => {
                   <div className="mb-8">
                     <CountUp
                       start={0}
-                      end={15000}
+                      end={16000}
                       duration={4}
                       suffix="+ "
                       enableScrollSpy={true}
@@ -478,7 +488,7 @@ const Hero = () => {
                       initial={{ y: 20, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
-                      className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight"
+                      className="text-3xl md:text-5xl md:h-16 font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight"
                     >
                       Building India's largest tech community
                     </motion.h2>
@@ -585,7 +595,7 @@ const Hero = () => {
                 </h2>
 
                 <p
-                  className="text-lg md:text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto"
+                  className="text-lg text-justify md:text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto"
                   style={{
                     transform: "translateY(20px)",
                     opacity: 0,
@@ -605,7 +615,7 @@ const Hero = () => {
                 </p>
 
                 <p
-                  className="mt-6 text-lg md:text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto"
+                  className="mt-6 text-justify text-lg md:text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto"
                   style={{
                     transform: "translateY(20px)",
                     opacity: 0,
@@ -692,7 +702,7 @@ const Hero = () => {
                         <div className="flex justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500">
                           {point.icon}
                         </div>
-                        <p className="text-slate-700 group-hover:text-white transition-colors duration-300 text-center">
+                        <p className="text-slate-950 group-hover:text-white transition-colors duration-300 text-center">
                           {point.text}
                         </p>
                       </div>
@@ -737,7 +747,7 @@ const Hero = () => {
             <div className="relative z-10">
               <div className="text-center mb-16">
                 <h2
-                  className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent"
+                  className="text-4xl md:text-5xl md:h-16 font-bold mb-4 bg-clip-text text-transparent"
                   style={{
                     backgroundImage:
                       "linear-gradient(-45deg, #3b82f6, #8b5cf6, #d946ef)",
@@ -747,13 +757,7 @@ const Hero = () => {
                 >
                   Our Flagship National Events
                 </h2>
-                <p
-                  className="text-slate-300 text-lg max-w-2xl mx-auto"
-                  style={{
-                    animation: "fadeIn 1s forwards",
-                    opacity: 0,
-                  }}
-                >
+                <p className="text-slate-300 text-lg max-w-2xl mx-auto">
                   Join us in these transformative experiences that shape the
                   future of technology
                 </p>
@@ -765,11 +769,6 @@ const Hero = () => {
                     key={index}
                     className={`group relative overflow-hidden rounded-2xl p-6 ${event.gradient}
                 transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
-                    style={{
-                      opacity: 0,
-                      animation: `fadeIn 0.5s forwards ${index * 0.15}s`,
-                      transformOrigin: "center",
-                    }}
                   >
                     {/* Glow effect */}
                     <div
@@ -790,9 +789,23 @@ const Hero = () => {
                         {event.title}
                       </h3>
 
-                      <p className="text-slate-100 leading-relaxed transition-colors duration-500 group-hover:text-white">
+                      <p className="text-slate-100 leading-relaxed transition-colors duration-500 group-hover:text-white mb-6">
                         {event.description}
                       </p>
+
+                      {/* Visit Website Button */}
+                      <a
+                        href={`https://${getEventSubdomain(
+                          event.title
+                        )}.namespacecomm.in`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-auto px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full 
+                    transition-all duration-300 backdrop-blur-sm hover:scale-105 
+                    border border-white/20 hover:border-white/30"
+                      >
+                        Visit Website
+                      </a>
 
                       {/* Animated border bottom */}
                       <div
@@ -807,6 +820,35 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="relative z-10 mt-16 text-center">
+              <a
+                href="/events"
+                className="group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white transition-all duration-300 
+            bg-gradient-to-r from-transparent via-slate-800 to-transparent hover:via-slate-700
+            border border-slate-700 rounded-full hover:border-slate-600 hover:scale-105"
+              >
+                <span className="relative">
+                  <span className="block transition-all duration-300 group-hover:translate-x-1">
+                    Explore All Events
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-0 h-px bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <svg
+                  className="w-4 h-4 transition-transform duration-300 transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </a>
             </div>
 
             <style jsx>{`
@@ -835,36 +877,6 @@ const Hero = () => {
                 transform: scaleX(1);
               }
             `}</style>
-
-            <div className="relative z-10 mt-16 text-center">
-              <a
-                href="/events"
-                className="group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white transition-all duration-300 
-                   bg-gradient-to-r from-transparent via-slate-800 to-transparent hover:via-slate-700
-                   border border-slate-700 rounded-full
-                   hover:border-slate-600 hover:scale-105"
-              >
-                <span className="relative">
-                  <span className="block transition-all duration-300 group-hover:translate-x-1">
-                    Explore All Events
-                  </span>
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </span>
-                <svg
-                  className="w-4 h-4 transition-transform duration-300 transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
-            </div>
           </div>
 
           <div
@@ -959,9 +971,45 @@ const Hero = () => {
               </div>
             </div>
           </div>
+          <div className="mt-12 w-full">
+            <div className="max-w-2xl mx-auto bg-gradient-to-br from-indigo-600 to-purple-700 rounded-xl p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+              <div className="flex flex-col items-center text-center space-y-6">
+                {/* Icon with pulse animation */}
+                <div className="relative">
+                  <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
+                  <BsDiscord className="w-16 h-16 text-white relative" />
+                </div>
+
+                {/* Heading */}
+                <h3 className="text-2xl md:text-3xl font-bold text-white">
+                  Join Our Community on Discord
+                </h3>
+
+                {/* Description */}
+                <p className="text-indigo-100 max-w-lg">
+                  Connect with fellow members, get exclusive updates, and be
+                  part of our growing community. Join us today and start
+                  collaborating!
+                </p>
+
+                {/* Button */}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://discord.com/invite/z2fTnXjKMm"
+                  className="group relative inline-flex items-center justify-center px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-indigo-100"
+                >
+                  <BsDiscord className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
+                  Join Our Discord
+                  <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </a>
+              </div>
+            </div>
+          </div>
           <PartnerWithUs />
         </Container>
       </Section>
+      {/* <Founder /> */}
     </>
   );
 };

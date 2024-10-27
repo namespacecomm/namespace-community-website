@@ -20,10 +20,10 @@ import {
 
 const Sponsor = () => {
   const stats = [
-    { icon: Users, value: "10,000+", label: "Active Members" },
-    { icon: Globe, value: "50+", label: "Partner Institutions" },
-    { icon: TrendingUp, value: "100+", label: "Annual Events" },
-    { icon: Trophy, value: "25+", label: "Major Hackathons" },
+    { icon: Users, value: "16,000+", label: "Participants Reached" },
+    { icon: Globe, value: "250+", label: "Institutions Touched" },
+    { icon: TrendingUp, value: "100+", label: "Total Events" },
+    { icon: Trophy, value: "25+", label: "Previous Sponsors" },
   ];
 
   const benefits = [
@@ -227,7 +227,7 @@ const Sponsor = () => {
       </div>
 
       {/* Past Sponsors Section */}
-      <div className="bg-white/5 backdrop-blur-lg py-32 px-6">
+      {/* <div className="bg-white/5 backdrop-blur-lg py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -264,7 +264,7 @@ const Sponsor = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <motion.div

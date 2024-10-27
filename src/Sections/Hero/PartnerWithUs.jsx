@@ -241,7 +241,7 @@ const PartnerWithUs = () => {
                         </motion.div>
                       ))}
                     </div>
-                    
+
                     {/* Added Navigation Link */}
                     <div className="px-8 pb-8">
                       <Link to={type.path}>
@@ -251,7 +251,10 @@ const PartnerWithUs = () => {
                           className={`w-full bg-gradient-to-r ${type.gradient} text-white py-4 px-6 rounded-xl font-semibold 
                           flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-300`}
                         >
-                          <span>Learn more about becoming a {type.title.slice(0, -1)}</span>
+                          <span>
+                            Learn more about becoming a{" "}
+                            {type.title.slice(0, -1)}
+                          </span>
                           <ArrowRight className="w-5 h-5" />
                         </motion.button>
                       </Link>
@@ -264,7 +267,7 @@ const PartnerWithUs = () => {
         </div>
 
         {/* CTA Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -280,18 +283,23 @@ const PartnerWithUs = () => {
                 <div className="mx-auto w-16 h-16 bg-white/10 rounded-2xl backdrop-blur-sm flex items-center justify-center">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Ready to Get Started?</h3>
+                <h3 className="text-3xl font-bold text-white">
+                  Ready to Get Started?
+                </h3>
                 <p className="text-white/90 text-lg max-w-2xl mx-auto">
-                  Connect with us to explore partnership opportunities and join our community of innovators
+                  Connect with us to explore partnership opportunities and join
+                  our community of innovators
                 </p>
-                <motion.a
-                  href="mailto:contact@namespacecomm.in"
-                  className="inline-block bg-white text-gray-800 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Write to us at contact@namespacecomm.in
-                </motion.a>
+                <div className="flex justify-center items-center">
+                  <motion.a
+                    href="mailto:contact@namespacecomm.in"
+                    className="inline-block bg-white text-gray-800 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Write to us at contact@namespacecomm.in
+                  </motion.a>
+                </div>
               </div>
             </div>
           </div>

@@ -8,19 +8,15 @@ import {
   Instagram,
   ExternalLink,
 } from "lucide-react";
-
-const founderImages = [
-  { url: "./img/founder1.png", alt: "Pradeepto 1" },
-  { url: "./img/founder2.png", alt: "Pradeepto 2" }
-];
+import Founder from "./AllTeams";
 
 // Dummy data for core team members
 const coreTeamMembers = [
   {
     id: 1,
     name: "Sarah Johnson",
-    role: "Technical Lead",
-    image: "/api/placeholder/400/400",
+    role: "Chief Organizer",
+    image: "",
     bio: "Full-stack developer with 5 years of experience in building scalable applications.",
     social: {
       github: "https://github.com",
@@ -32,8 +28,8 @@ const coreTeamMembers = [
   {
     id: 2,
     name: "Michael Chen",
-    role: "Community Manager",
-    image: "/api/placeholder/400/400",
+    role: "Community Lead Organizer",
+    image: "",
     bio: "Passionate about building inclusive tech communities and fostering collaboration.",
     social: {
       github: "https://github.com",
@@ -45,8 +41,8 @@ const coreTeamMembers = [
   {
     id: 3,
     name: "Priya Patel",
-    role: "Content Lead",
-    image: "/api/placeholder/400/400",
+    role: "Community Lead Organizer",
+    image: "",
     bio: "Content strategist with expertise in technical writing and documentation.",
     social: {
       github: "https://github.com",
@@ -58,9 +54,230 @@ const coreTeamMembers = [
   {
     id: 4,
     name: "Alex Rodriguez",
-    role: "Event Coordinator",
-    image: "/api/placeholder/400/400",
+    role: "Director - Outreach",
+    image: "",
     bio: "Experienced in organizing tech conferences and community meetups.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 5,
+    name: "Jessica Lee",
+    role: "Director - Operations",
+    image: "",
+    bio: "Creative designer skilled in visual communication and branding.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 6,
+    name: "Rajesh Kumar",
+    role: "Director - Technical",
+    image: "",
+    bio: "Backend expert with a knack for building efficient data systems.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 7,
+    name: "Emma Brown",
+    role: "Director - Events",
+    image: "",
+    bio: "Digital marketer passionate about engagement and brand growth.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 8,
+    name: "Tommy Nguyen",
+    role: "Lead - Marketing",
+    image: "",
+    bio: "Frontend enthusiast focused on creating interactive web experiences.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 9,
+    name: "Sophia Kim",
+    role: "Lead - Collaborations",
+    image: "",
+    bio: "Analyst who loves turning data into actionable insights.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 10,
+    name: "Carlos Rivera",
+    role: "Lead - Design",
+    image: "",
+    bio: "Product visionary with experience in launching successful tech solutions.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 11,
+    name: "Laura Sanchez",
+    role: "Lead - Logistics",
+    image: "",
+    bio: "User-centered designer skilled in wireframing and prototyping.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 12,
+    name: "John Green",
+    role: "Lead - Public Relations",
+    image: "",
+    bio: "Cybersecurity expert focused on risk assessment and protection.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 13,
+    name: "Linda Park",
+    role: "Lead - Social Media",
+    image: "",
+    bio: "Efficient operations lead with experience in project management.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 14,
+    name: "Akash Mehta",
+    role: "Lead - Webmaster",
+    image: "",
+    bio: "DevOps specialist passionate about automation and CI/CD.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 15,
+    name: "Hannah White",
+    role: "Lead - Event",
+    image: "",
+    bio: "Skilled content creator with a background in video editing and animation.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 16,
+    name: "David Kim",
+    role: "Program Manager",
+    image: "",
+    bio: "Experienced in cross-functional program management and project delivery.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 17,
+    name: "Rachel Adams",
+    role: "Program Manager",
+    image: "",
+    bio: "Specialist in agile project management and team coordination.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 18,
+    name: "Mark Wilson",
+    role: "Program Manager",
+    image: "",
+    bio: "Background in resource planning and execution across multiple teams.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 19,
+    name: "Sophie Turner",
+    role: "Program Manager",
+    image: "",
+    bio: "Enthusiastic about bringing structure and focus to innovative projects.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 20,
+    name: "Ethan Brooks",
+    role: "Program Manager",
+    image: "",
+    bio: "Proven success in managing budgets and timelines for tech programs.",
+    social: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      instagram: "https://instagram.com",
+    },
+  },
+  {
+    id: 21,
+    name: "Isabella Garcia",
+    role: "Program Manager",
+    image: "",
+    bio: "Experienced in facilitating communication and alignment across teams.",
     social: {
       github: "https://github.com",
       linkedin: "https://linkedin.com",
@@ -137,47 +354,6 @@ const TeamMemberCard = ({ member }) => {
   );
 };
 
-const ImageSlider = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  return (
-    <div className="relative w-full max-w-xl mx-auto">
-      <div className="relative h-auto overflow-hidden rounded-xl shadow-2xl shadow-pink-500/20">
-        <img
-          src={images[currentIndex].url}
-          alt={images[currentIndex].alt}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-50" />
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-pink-600 transition-colors duration-300"
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-pink-600 transition-colors duration-300"
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
-      </div>
-    </div>
-  );
-};
-
 const AllTeams = () => {
   return (
     <div className="min-h-screen bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
@@ -185,65 +361,6 @@ const AllTeams = () => {
         <h1 className="text-4xl font-bold text-center mb-16 text-white">
           Meet Our Team
         </h1>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-white">
-              A Note From Our Founder
-            </h2>
-            <div className="prose prose-lg text-gray-300 text-justify">
-              <p>
-                It is always exciting to witness the growth and vibrancy of our
-                community. What started as a small group of tech enthusiasts has
-                blossomed into a dynamic and supportive network of learners,
-                innovators, and professionals from around the Delhi-NCR region.
-                Our journey began with a simple yet powerful vision: to create a
-                space where budding technologists could explore, learn, and
-                excel in various domains of technology. Today, we continue to
-                build on that vision, driven by our core values of inclusivity,
-                collaboration, and innovation.
-              </p>
-              <br />
-              <p>
-                Our goal is to provide a clear path for those just starting
-                their tech journeys, helping them navigate through the diverse
-                fields of competitive programming, web development, machine
-                learning, and more. I am immensely proud of what we have
-                achieved together. Our community website, our flagship events,
-                various internal programs and all our online events and
-                resources are testaments to our collective efforts and shared
-                passion for technology.
-              </p>
-              <br />
-              <p>
-                Looking ahead, we are excited to continue expanding our reach
-                and impact. We are exploring new initiatives, enhancing our
-                existing programs, and constantly seeking ways to better serve
-                our community members. Your feedback and participation are
-                invaluable to us, and I encourage you to stay engaged, share
-                your ideas, and help us shape the future of the nameSpace
-                Community. Thank you for being an integral part of this journey.
-                Together, we will continue to learn, grow, and make a difference
-                in the tech world.
-              </p>
-              <br />
-              <p className="font-semibold flex items-center gap-2">
-                ~{" "}
-                <a
-                  href="https://pradeeptosarkar.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-pink-400 hover:text-pink-300 transition-colors duration-300 flex items-center gap-1"
-                >
-                  Pradeepto Sarkar
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <ImageSlider images={founderImages} />
-        </div>
 
         <div className="space-y-12">
           <div className="text-center">
