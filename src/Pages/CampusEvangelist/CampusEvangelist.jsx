@@ -98,15 +98,15 @@ const CampusEvangelist = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20" />
         
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl my-12 md:my-4 mx-auto relative z-10">
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }} 
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-center"
           >
             <GraduationCap className="w-16 h-16 mx-auto mb-8 text-blue-400" />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+            <h1 className="text-5xl md:text-6xl h-40 md:h-20 font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
               Become a Campus Evangelist
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
