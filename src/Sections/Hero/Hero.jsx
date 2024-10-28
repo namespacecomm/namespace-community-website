@@ -44,7 +44,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { BsDiscord } from "react-icons/bs";
-import Founder from "../../Pages/AllTeams/Founder";
+import Founder from "../../components/Founder/Founder";
 
 const Section = styled.div`
   display: flex;
@@ -83,6 +83,10 @@ const UpperContainer = styled.div`
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 10%;
+  }
 
   &::before,
   &::after {
@@ -1009,7 +1013,7 @@ const Hero = () => {
           <PartnerWithUs />
         </Container>
       </Section>
-      {/* <Founder /> */}
+      <Founder />
     </>
   );
 };
