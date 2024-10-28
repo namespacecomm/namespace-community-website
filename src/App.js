@@ -99,6 +99,8 @@ import CodingChallenge from "./Pages/CodingChallenge/CodingChallenge";
 import Chapters from "./Pages/Chapters/Chapters";
 import CommunityPartner from "./Pages/CommunityPartner/CommunityPartner";
 import Sponsor from "./Pages/Sponsor/Sponsor";
+import Certificates from "./Pages/Certificates/Certificates";
+import CertificateGenerator from "./Pages/Certificates/CertificateGenerator";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -189,7 +191,8 @@ function App() {
               <Route path="jenkins" element={<JENKINS />} />
               <Route path="heroku" element={<HEROKU />} />
 
-
+              <Route path="certificate" element={<Certificates />} />
+              <Route path="certificate/:eventId" element={<CertificateGenerator/>} />
 
               {/* Routes related to BLOCKCHAIN PATHS */}
               <Route path="blockchain">

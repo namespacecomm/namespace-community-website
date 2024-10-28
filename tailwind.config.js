@@ -41,6 +41,13 @@ module.exports = {
         transform: ['hover'], // ensure hover variant is enabled for transform
       },
   },
+
+  extend: {
+    animation: {
+      'spin-slow': 'spin 20s linear infinite',
+      'pulse-slow': 'pulse 4s ease-in-out infinite',
+    },
+  },
   plugins: [],
 }
 }
