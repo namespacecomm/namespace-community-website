@@ -97,7 +97,8 @@ import Hackhazards from "./Pages/Hackhazards/Hackhazards";
 import CampusEvangelist from "./Pages/CampusEvangelist/CampusEvangelist";
 import CodingChallenge from "./Pages/CodingChallenge/CodingChallenge";
 import Chapters from "./Pages/Chapters/Chapters";
-
+import CommunityPartner from "./Pages/CommunityPartner/CommunityPartner";
+import Sponsor from "./Pages/Sponsor/Sponsor";
 const Container = styled.div`
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
@@ -128,7 +129,9 @@ function App() {
               <Route path="resources" element={<Resources />} />
               <Route path="techx" element={<TechX />} />
               <Route path="hackhazards" element={<Hackhazards />} />
+              <Route path="sponsor" element={<Sponsor />} />
               <Route path="campusevangelist" element={<CampusEvangelist />} />
+              <Route path="communitypartner" element={<CommunityPartner />} />
               <Route path="CodingChallenge" element={<CodingChallenge />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />

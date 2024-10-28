@@ -30,7 +30,7 @@ function Chapters () {
   return (
     <Section>
       <Container>
-        <Title>namespace Chapters</Title>
+        <Title>The nameSpace Community Chapters</Title>
       </Container>
     </Section>
   );
