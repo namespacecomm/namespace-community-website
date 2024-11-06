@@ -20,7 +20,6 @@ import { Javascript } from "./Pages/AllResources/webALL/javascript";
 import { Nodejs } from "./Pages/AllResources/webALL/nodejs";
 import { Firebase } from "./Pages/AllResources/webALL/firebase";
 import AllTeams from "./Pages/AllTeams/AllTeams";
-import Projects from "./Pages/Projects/Projects";
 import Resources from "./Pages/Resources/Resources";
 import Hero from "./Sections/Hero/Hero";
 import DataScience from "./Pages/dataScience/DataScience";
@@ -127,7 +126,6 @@ function App() {
               <Route path="achievements" element={<Achievements />} />
               <Route path="events" element={<AllEvents />} />
               <Route path="programs" element={<Programs />} />
-              <Route path="projects" element={<Projects />} />
               <Route path="resources" element={<Resources />} />
               <Route path="techx" element={<TechX />} />
               <Route path="hackhazards" element={<Hackhazards />} />

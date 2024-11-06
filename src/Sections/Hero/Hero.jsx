@@ -558,6 +558,8 @@ const Hero = () => {
               </motion.div>
             </div>
           </LowerContainer>
+
+          {/* Who we are and what we do section */}
           <div className="w-full max-w-7xl mx-auto p-4 space-y-8">
             {/* Who We Are Section */}
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-12">
@@ -738,6 +740,7 @@ const Hero = () => {
             `}</style>
           </div>
 
+          {/* Flagship Events Section */}
           <div className="w-full mx-auto px-4 py-16 bg-slate-900 rounded-3xl">
             {/* Background pattern */}
             <div
@@ -884,6 +887,7 @@ const Hero = () => {
             `}</style>
           </div>
 
+          {/* Why join us section with benefits */}
           <div
             className="join-container"
             style={{
@@ -977,6 +981,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Discord and Newsletter Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12 w-full max-w-7xl mx-auto px-4">
             {/* Discord Section */}
             <div className="w-full">
