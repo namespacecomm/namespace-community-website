@@ -150,14 +150,38 @@ const Footer = () => {
           </div>
 
           {/* Right Section - Tagline */}
-          <div className="flex flex-col justify-start items-center md:items-end space-y-4">
-            <div className="text-right">
-              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+          <div className="flex flex-col justify-between text-center space-y-4">
+            <div className="">
+              <h2 className="text-2xl md:text-3xl md:text-right font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
                 Building India's largest tech community
               </h2>
-              <p className="text-lg md:text-xl text-gray-300 mt-2 italic">
+              <p className="text-lg md:text-xl md:text-right text-gray-300 mt-2 italic">
                 One event at a time
               </p>
+            </div>
+
+            <div className="">
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-semibold md:text-right">
+                    Join Our Newsletter
+                  </h4>
+                  <p className="text-gray-300 text-sm md:text-right">
+                    Join 16,000+ readers for weekly tech updates
+                  </p>
+                </div>
+
+                <div className="md:text-right">
+                  <a
+                    href="https://namespacecomm.substack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25"
+                  >
+                    Subscribe Now
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

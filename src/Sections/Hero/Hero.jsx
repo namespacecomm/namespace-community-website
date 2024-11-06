@@ -34,6 +34,7 @@ import {
   Rocket,
   Target,
   Sparkles,
+  Newspaper,
   Building2,
   UserCheck,
   Network,
@@ -557,6 +558,8 @@ const Hero = () => {
               </motion.div>
             </div>
           </LowerContainer>
+
+          {/* Who we are and what we do section */}
           <div className="w-full max-w-7xl mx-auto p-4 space-y-8">
             {/* Who We Are Section */}
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-12">
@@ -737,6 +740,7 @@ const Hero = () => {
             `}</style>
           </div>
 
+          {/* Flagship Events Section */}
           <div className="w-full mx-auto px-4 py-16 bg-slate-900 rounded-3xl">
             {/* Background pattern */}
             <div
@@ -883,6 +887,7 @@ const Hero = () => {
             `}</style>
           </div>
 
+          {/* Why join us section with benefits */}
           <div
             className="join-container"
             style={{
@@ -975,38 +980,88 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="mt-12 w-full">
-            <div className="max-w-2xl mx-auto bg-gradient-to-br from-indigo-600 to-purple-700 rounded-xl p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
-              <div className="flex flex-col items-center text-center space-y-6">
-                {/* Icon with pulse animation */}
-                <div className="relative">
-                  <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
-                  <BsDiscord className="w-16 h-16 text-white relative" />
+
+          {/* Discord and Newsletter Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12 w-full max-w-7xl mx-auto px-4">
+            {/* Discord Section */}
+            <div className="w-full">
+              <div className="h-full bg-gradient-to-br from-indigo-600 to-purple-700 rounded-xl p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="flex flex-col items-center text-center space-y-8">
+                  {/* Icon with pulse animation */}
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
+                    <div className="relative bg-white/10 p-4 rounded-full">
+                      <BsDiscord className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white">
+                      Join Our Community on Discord
+                    </h3>
+                    <p className="text-white/90 text-lg max-w-lg mx-auto">
+                      Connect with fellow members, get exclusive updates, and be
+                      part of our growing community. Join us today and start
+                      collaborating!
+                    </p>
+                  </div>
+
+                  {/* Button */}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.com/invite/z2fTnXjKMm"
+                    className="group relative inline-flex items-center justify-center px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-indigo-50"
+                  >
+                    <span className="flex items-center">
+                      <BsDiscord className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
+                      Join Our Discord
+                    </span>
+                    <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                  </a>
                 </div>
+              </div>
+            </div>
 
-                {/* Heading */}
-                <h3 className="text-2xl md:text-3xl font-bold text-white">
-                  Join Our Community on Discord
-                </h3>
+            {/* Newsletter Section */}
+            <div className="w-full">
+              <div className="h-full bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="flex flex-col items-center text-center space-y-8">
+                  {/* Icon with pulse animation */}
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
+                    <div className="relative bg-white/10 p-4 rounded-full">
+                      <Newspaper className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
 
-                {/* Description */}
-                <p className="text-indigo-100 max-w-lg">
-                  Connect with fellow members, get exclusive updates, and be
-                  part of our growing community. Join us today and start
-                  collaborating!
-                </p>
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white">
+                      Subscribe to Our Newsletter
+                    </h3>
+                    <p className="text-white/90 text-lg max-w-lg mx-auto">
+                      Get exclusive insights, latest updates, and expert content
+                      delivered straight to your inbox. Join our growing list of
+                      readers who stay ahead of the curve!
+                    </p>
+                  </div>
 
-                {/* Button */}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://discord.com/invite/z2fTnXjKMm"
-                  className="group relative inline-flex items-center justify-center px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-indigo-100"
-                >
-                  <BsDiscord className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
-                  Join Our Discord
-                  <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                </a>
+                  {/* Button */}
+                  <a
+                    href="https://namespacecomm.substack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative inline-flex items-center justify-center px-8 py-3 bg-white text-emerald-600 font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-emerald-50"
+                  >
+                    <span className="flex items-center">
+                      <Newspaper className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
+                      Subscribe Now
+                    </span>
+                    <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
