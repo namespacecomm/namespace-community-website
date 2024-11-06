@@ -39,8 +39,6 @@ const Footer = () => {
 
   return (
     <footer className={`bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      <div id="custom-substack-embed"></div>
-
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -125,6 +123,8 @@ const Footer = () => {
                 One event at a time
               </p>
             </div>
+
+            <div id="custom-substack-embed" className="pt-2"></div>
           </div>
         </div>
 
