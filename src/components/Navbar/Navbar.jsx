@@ -294,7 +294,7 @@ function Navbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </NavbarLink>
-              <NavbarLink
+              {/* <NavbarLink
                 to="/team"
                 className={activeNavLink === "/team" ? "active" : ""}
               >
@@ -304,7 +304,7 @@ function Navbar() {
                     <hr className="border-3 rounded-full" />
                   )}
                 </div>
-              </NavbarLink>
+              </NavbarLink> */}
               <NavbarLink
                 to="https://namespacecomm.substack.com/"
                 target="_blank"
@@ -352,7 +352,7 @@ function Navbar() {
           <NavbarLinkExtended to="/campusevangelist">
             Become a Campus Evangelist
           </NavbarLinkExtended>
-          <NavbarLinkExtended to="/team">Team</NavbarLinkExtended>
+          {/* <NavbarLinkExtended to="/team">Team</NavbarLinkExtended> */}
 
           {/* <NavbarLinkExtended to="/resources">Resources</NavbarLinkExtended>
           <NavbarLinkExtended to="/techx">TechXcelerate</NavbarLinkExtended>
