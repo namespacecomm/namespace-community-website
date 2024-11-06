@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/img/logo-white-blackoutline-3x4.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="The nameSpace Community is an organization of like-minded individuals who share a passion for technology and are committed to helping each other become the best developers they can be. Whether you're just starting out in your coding journey or a seasoned pro, our community is a place where you can connect with other tech enthusiasts, share your knowledge, and grow your skills. Founded in 2022, nameSpace has quickly grown to become one of the largest technical communities in Delhi-NCR and is racing towards further expansion and deeper penetration in its core segments."
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/logo-white-blackoutline-3x4.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <style>
-      *{
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/img/logo-white-blackoutline-3x4.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="The nameSpace Community is an organization of like-minded individuals who share a passion for technology and are committed to helping each other become the best developers they can be. Whether you're just starting out in your coding journey or a seasoned pro, our community is a place where you can connect with other tech enthusiasts, share your knowledge, and grow your skills. Founded in 2022, nameSpace has quickly grown to become one of the largest technical communities in Delhi-NCR and is racing towards further expansion and deeper penetration in its core segments." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/logo-white-blackoutline-3x4.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <style>
+    * {
       padding: 0;
       margin: 0;
-      box-sizing: border-box; 
-      }
+      box-sizing: border-box;
+    }
 
-      body {
+    body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       scroll-behavior: smooth;
       max-width: 100%;
       overflow-x: hidden;
-      }
+    }
 
-      section {
-        scroll-snap-align: start;
-      }
-    </style>
-    <title>nameSpace</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-  </body>
+    section {
+      scroll-snap-align: start;
+    }
+  </style>
+  <title>nameSpace</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+
+  <script>
+    window.CustomSubstackWidget = {
+      substackUrl: "namespacecomm.substack.com",
+      placeholder: "example@gmail.com",
+      buttonText: "Subscribe",
+      theme: "purple",
+    };
+  </script>
+  <script src="https://substackapi.com/widget.js" async></script>
+</body>
+
 </html>
