@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react';
-import { Mail } from 'lucide-react';
-import { 
-  BsInstagram, 
-  BsLinkedin, 
-  BsYoutube, 
-  BsGithub, 
-  BsTwitterX, 
-  BsWhatsapp, 
-  BsDiscord, 
-  BsTelegram 
-} from 'react-icons/bs';
+import { useState, useEffect } from "react";
+import { Mail } from "lucide-react";
+import {
+  BsInstagram,
+  BsLinkedin,
+  BsYoutube,
+  BsGithub,
+  BsTwitterX,
+  BsWhatsapp,
+  BsDiscord,
+  BsTelegram,
+} from "react-icons/bs";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -20,25 +20,61 @@ const Footer = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <BsInstagram className="w-5 h-5" />, href: "http://instagram.com/namespacecomm", label: "Instagram" },
-    { icon: <BsLinkedin className="w-5 h-5" />, href: "http://www.linkedin.com/company/namespacecomm/", label: "LinkedIn" },
-    { icon: <BsYoutube className="w-5 h-5" />, href: "https://www.youtube.com/@namespacecomm", label: "YouTube" },
-    { icon: <BsGithub className="w-5 h-5" />, href: "https://github.com/namespacecomm", label: "GitHub" },
-    { icon: <BsTwitterX className="w-5 h-5" />, href: "https://twitter.com/namespacecomm", label: "Twitter" },
-    { icon: <BsWhatsapp className="w-5 h-5" />, href: "https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f", label: "WhatsApp" },
-    { icon: <BsDiscord className="w-5 h-5" />, href: "https://discord.gg/z2fTnXjKMm", label: "Discord" },
-    { icon: <BsTelegram className="w-5 h-5" />, href: "https://t.me/namespacecomm", label: "Telegram" }
+    {
+      icon: <BsInstagram className="w-5 h-5" />,
+      href: "http://instagram.com/namespacecomm",
+      label: "Instagram",
+    },
+    {
+      icon: <BsLinkedin className="w-5 h-5" />,
+      href: "http://www.linkedin.com/company/namespacecomm/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <BsYoutube className="w-5 h-5" />,
+      href: "https://www.youtube.com/@namespacecomm",
+      label: "YouTube",
+    },
+    {
+      icon: <BsGithub className="w-5 h-5" />,
+      href: "https://github.com/namespacecomm",
+      label: "GitHub",
+    },
+    {
+      icon: <BsTwitterX className="w-5 h-5" />,
+      href: "https://twitter.com/namespacecomm",
+      label: "Twitter",
+    },
+    {
+      icon: <BsWhatsapp className="w-5 h-5" />,
+      href: "https://whatsapp.com/channel/0029VabtgrVKLaHjzSXEL52f",
+      label: "WhatsApp",
+    },
+    {
+      icon: <BsDiscord className="w-5 h-5" />,
+      href: "https://discord.gg/z2fTnXjKMm",
+      label: "Discord",
+    },
+    {
+      icon: <BsTelegram className="w-5 h-5" />,
+      href: "https://t.me/namespacecomm",
+      label: "Telegram",
+    },
   ];
 
   const quickLinks = [
     { text: "Partner with us", href: "#" },
     { text: "Brand Guidelines", href: "#" },
     { text: "Code of Conduct", href: "#" },
-    { text: "Privacy Policy", href: "#" }
+    { text: "Privacy Policy", href: "#" },
   ];
 
   return (
-    <footer className={`bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <footer
+      className={`bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6 transition-opacity duration-1000 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -50,9 +86,9 @@ const Footer = () => {
                 nameSpace
               </h3>
               <p className="text-gray-300">
-                Made with 
-                <span className="inline-block mx-1 animate-pulse">❤️</span> 
-                by{' '}
+                Made with
+                <span className="inline-block mx-1 animate-pulse">❤️</span>
+                by{" "}
                 <a
                   href="https://github.com/namespacecomm/namespace-community-website"
                   className="text-pink-400 hover:text-pink-300 transition-colors duration-300"
@@ -123,8 +159,6 @@ const Footer = () => {
                 One event at a time
               </p>
             </div>
-
-            <div id="custom-substack-embed" className="pt-2"></div>
           </div>
         </div>
 
