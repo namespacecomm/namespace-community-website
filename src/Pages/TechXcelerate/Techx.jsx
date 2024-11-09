@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { allmembers } from "../../constants/constants";
-import TeamCard from "../../Sections/Teams/TeamCard";
 
 const Section = styled.div`
   display: flex;

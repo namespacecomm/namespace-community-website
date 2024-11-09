@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { allmembers } from "../../constants/constants";
-import TeamCard from "../../Sections/Teams/TeamCard";
 import CounterUp from "../../components/CounterUp";
 import Hackgallery from "../../components/Gallery/Hackgallery";
 import { hackhazardsImages } from "../../constants/constants";
@@ -24,18 +22,6 @@ const Section2 = styled.div`
   margin: 0;
   align-items: center;
   justify-content: space-between;
-`;
-
-const YoutubeFrame = styled.iframe`
-  width: 30vw;
-  height: 350px;
-
-  @media only screen and (max-width: 768px) {
-    width: 90vw;
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 `;
 
 const Container = styled.div`

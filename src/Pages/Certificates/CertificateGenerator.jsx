@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Download, AlertCircle, ArrowLeft, CheckCircle2, Mail, Loader2 } from 'lucide-react';
 import { useEventStore } from '../../store/eventStore';
@@ -12,16 +12,48 @@ export default function CertificateGenerator() {
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   
-  const { events, getNameByEmail } = useEventStore();
-  const event = events.find(e => e.id === eventId);
+  const { 
+    events, 
+    fetchEvents, 
+    getNameByEmail, 
+    isLoading: isLoadingEvents, 
+    error: eventsError 
+  } = useEventStore();
+  
+  useEffect(() => {
+    console.log('Component mounted, fetching events...');
+    fetchEvents().catch(console.error);
+  }, []); // Remove fetchEvents from dependency array
 
-  if (!event) {
+  useEffect(() => {
+    console.log('Current events:', events); // Debug current events
+  }, [events]);
+
+  const event = events.find(e => e.id === eventId);  if (isLoadingEvents) {
+    return (
+      <div className="min-h-screen bg-[#0A0118] flex items-center justify-center">
+        <div className="text-center bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl">
+          <Loader2 className="mx-auto h-16 w-16 text-purple-400 animate-spin" />
+          <h2 className="mt-4 text-xl font-semibold text-white">
+            Loading event details...
+          </h2>
+        </div>
+      </div>
+    );
+  }
+
+  if (eventsError || !event) {
     return (
       <div className="min-h-screen bg-[#0A0118] flex items-center justify-center">
         <div className="text-center bg-white/5 backdrop-blur-xl border border-red-500/20 p-8 rounded-2xl">
           <AlertCircle className="mx-auto h-16 w-16 text-red-400" />
-          <h2 className="mt-4 text-xl font-semibold text-white">Event not found</h2>
-          <a href="/certificate" className="mt-4 inline-flex items-center text-purple-400 hover:text-purple-300">
+          <h2 className="mt-4 text-xl font-semibold text-white">
+            {eventsError || "Event not found"}
+          </h2>
+          <a
+            href="/certificate"
+            className="mt-4 inline-flex items-center text-purple-400 hover:text-purple-300"
+          >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Events
           </a>
@@ -31,54 +63,54 @@ export default function CertificateGenerator() {
   }
 
   const generateCertificate = async () => {
-    const name = getNameByEmail(eventId, email);
-    
-    if (!name) {
-      setError('Email not registered for this event');
-      return;
-    }
-
     setIsLoading(true);
-    setError('');
+    setError("");
 
     try {
+      const name = await getNameByEmail(eventId, email);
+
+      if (!name) {
+        setError("Email not registered for this event");
+        return;
+      }
+
       // Create PDF document
       const doc = new jsPDF({
-        orientation: 'landscape',
-        unit: 'px',
-        format: [800, 600]
+        orientation: "landscape",
+        unit: "px",
+        format: [800, 600],
       });
 
       // Load and add template image
       const img = new Image();
       img.src = event.templateImage;
-      
+
       await new Promise((resolve, reject) => {
         img.onload = resolve;
-        img.onerror = () => reject(new Error('Failed to load template image'));
+        img.onerror = () => reject(new Error("Failed to load template image"));
       });
 
-      doc.addImage(img, 'JPEG', 0, 0, 800, 600);
+      doc.addImage(img, "JPEG", 0, 0, 800, 600);
 
       // Add participant name
-      doc.setFont('helvetica', 'bold');
+      doc.setFont("helvetica", "bold");
       doc.setFontSize(event.namePosition.fontSize);
       doc.setTextColor(event.namePosition.fontColor);
-      doc.text(name, event.namePosition.x, event.namePosition.y, { 
-        align: 'center',
-        baseline: 'middle'
+      doc.text(name, event.namePosition.x, event.namePosition.y, {
+        align: "center",
+        baseline: "middle",
       });
 
       // Format QR code text
-      const qrText = 
+      const qrText =
         `This certificate is verified by nameSpace with the below details:\n\n` +
         `Email: ${email}\n` +
         `Name: ${name}\n` +
         `Event name: ${event.name}\n` +
-        `Date: ${new Date(event.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
+        `Date: ${new Date(event.date).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
         })}`;
 
       // Generate QR code
@@ -86,19 +118,19 @@ export default function CertificateGenerator() {
         width: event.qrPosition.size,
         margin: 0,
         color: {
-          dark: '#000000',
-          light: '#ffffff'
+          dark: "#000000",
+          light: "#ffffff",
         },
-        errorCorrectionLevel: 'H' // Highest error correction level for better readability
+        errorCorrectionLevel: "H",
       });
 
       // Add QR code to the certificate
       doc.addImage(
-        qrCodeDataURL, 
-        'PNG', 
-        event.qrPosition.x, 
-        event.qrPosition.y, 
-        event.qrPosition.size, 
+        qrCodeDataURL,
+        "PNG",
+        event.qrPosition.x,
+        event.qrPosition.y,
+        event.qrPosition.size,
         event.qrPosition.size
       );
 
@@ -107,7 +139,9 @@ export default function CertificateGenerator() {
       setTimeout(() => setSuccess(false), 3000);
     } catch (err) {
       console.error(err);
-      setError('Failed to generate certificate. Please try again.');
+      setError(
+        err.message || "Failed to generate certificate. Please try again."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -117,18 +151,25 @@ export default function CertificateGenerator() {
     <div className="min-h-screen bg-[#0A0118] bg-gradient-to-b from-purple-900/20 to-blue-900/20 py-36 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Animated background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-conic from-purple-500/20 via-purple-500/0 to-purple-500/20 animate-spin-slow" 
-             style={{ borderRadius: '40%' }} />
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-conic from-blue-500/20 via-blue-500/0 to-blue-500/20 animate-spin-slow" 
-             style={{ borderRadius: '40%' }} />
+        <div
+          className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-conic from-purple-500/20 via-purple-500/0 to-purple-500/20 animate-spin-slow"
+          style={{ borderRadius: "40%" }}
+        />
+        <div
+          className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-conic from-blue-500/20 via-blue-500/0 to-blue-500/20 animate-spin-slow"
+          style={{ borderRadius: "40%" }}
+        />
       </div>
-      
+
       <div className="absolute inset-0 backdrop-blur-3xl" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full filter blur-[128px] animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full filter blur-[128px] animate-pulse-slow delay-700" />
-    
+
       <div className="max-w-lg mx-auto relative">
-        <a href="/certificate" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8 transition-colors">
+        <a
+          href="/certificate"
+          className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-8 transition-colors"
+        >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back to Events
         </a>
@@ -142,12 +183,18 @@ export default function CertificateGenerator() {
             <p className="mt-2 text-gray-400">Certificate Generator</p>
           </div>
 
-          <form className="space-y-6" onSubmit={(e) => {
-            e.preventDefault();
-            generateCertificate();
-          }}>
+          <form
+            className="space-y-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              generateCertificate();
+            }}
+          >
             <div className="relative">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
                 Email address
               </label>
               <div className="relative">
@@ -170,7 +217,9 @@ export default function CertificateGenerator() {
                 <div className="flex">
                   <AlertCircle className="h-5 w-5 text-red-400" />
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-red-300">{error}</h3>
+                    <h3 className="text-sm font-medium text-red-300">
+                      {error}
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -181,7 +230,9 @@ export default function CertificateGenerator() {
                 <div className="flex">
                   <CheckCircle2 className="h-5 w-5 text-green-400" />
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-green-300">Certificate generated successfully!</h3>
+                    <h3 className="text-sm font-medium text-green-300">
+                      Certificate generated successfully!
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -191,17 +242,18 @@ export default function CertificateGenerator() {
               type="submit"
               disabled={isLoading}
               className={`w-full flex justify-center items-center gap-2 py-3 px-4 rounded-lg font-medium text-white 
-                ${isLoading 
-                  ? 'bg-purple-500/70 cursor-not-allowed' 
-                  : 'bg-purple-500 hover:bg-purple-600 transition-colors'}`
-              }
+                ${
+                  isLoading
+                    ? "bg-purple-500/70 cursor-not-allowed"
+                    : "bg-purple-500 hover:bg-purple-600 transition-colors"
+                }`}
             >
               {isLoading ? (
                 <Loader2 className="h-5 w-5 animate-spin" />
               ) : (
                 <Download className="h-5 w-5" />
               )}
-              {isLoading ? 'Generating...' : 'Generate Certificate'}
+              {isLoading ? "Generating..." : "Generate Certificate"}
             </button>
           </form>
         </div>
