@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import AllEvents from "./Pages/AllEvents/AllEvents";
-import Achievements from "./Pages/Achievements/Achievements";
 import { Web } from "./Pages/AllResources/Web";
 import { HTML } from "./Pages/AllResources/webALL/html";
 import { Github } from "./Pages/AllResources/webALL/github";
@@ -28,7 +27,6 @@ import MLOps from "./Pages/mlops/mlops";
 import NotFound from "./Pages/Error/NotFound";
 import Android from "./Pages/AllResources/Android";
 import ARVR from "./Pages/AllResources/ARVR";
-import Programs from "./Pages/Programs/Programs";
 import Iot from "./Pages/AllResources/Iot";
 import AIML from "./Pages/AllResources/AIML";
 import Flutter from "./Pages/AllResources/Flutter";
@@ -94,8 +92,6 @@ import { ORACLECLOUD } from "./Pages/AllResources/devopsALL/oracle-cloud";
 import TechX from "./Pages/TechXcelerate/Techx";
 import Hackhazards from "./Pages/Hackhazards/Hackhazards";
 import CampusEvangelist from "./Pages/CampusEvangelist/CampusEvangelist";
-import CodingChallenge from "./Pages/CodingChallenge/CodingChallenge";
-import Chapters from "./Pages/Chapters/Chapters";
 import CommunityPartner from "./Pages/CommunityPartner/CommunityPartner";
 import Sponsor from "./Pages/Sponsor/Sponsor";
 import Certificates from "./Pages/Certificates/Certificates";
@@ -123,23 +119,18 @@ function App() {
             <Route path="/">
               <Route index element={<Hero />} />
               <Route path="team" element={<AllTeams />} />
-              <Route path="achievements" element={<Achievements />} />
               <Route path="events" element={<AllEvents />} />
-              <Route path="programs" element={<Programs />} />
               <Route path="resources" element={<Resources />} />
               <Route path="techx" element={<TechX />} />
               <Route path="hackhazards" element={<Hackhazards />} />
               <Route path="sponsor" element={<Sponsor />} />
               <Route path="campusevangelist" element={<CampusEvangelist />} />
               <Route path="communitypartner" element={<CommunityPartner />} />
-              <Route path="CodingChallenge" element={<CodingChallenge />} />
               <Route path="webd" element={<Web />} />
               <Route path="cp" element={<CompProg />} />
               <Route path="sortalgo" element={<SortAlgo />} />
               <Route path="searchalgo" element={<SearchAlgo />} />
               <Route path="dynamicpro" element={<DpAlgo />} />
-              <Route path="chapters" element={<Chapters />} />
-
               <Route path="pyresource" element={<Python />} />
               <Route path="mlops" element={<MLOps />} />
               <Route path="android" element={<Android />} />

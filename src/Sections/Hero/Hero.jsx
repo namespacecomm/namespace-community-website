@@ -7,11 +7,6 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import "./hero.css";
 import CountUp from "react-countup";
-import About from "../About/About";
-import Teams from "../Teams/Teams";
-import Testimonials from "../Testimonials/Testimonials";
-import Contact from "../Contact/Contact";
-import SocialMedia from "../SocialMedia/SocialMedia";
 import BackToTopButton from "../../components/BackToTop";
 import Frame12 from "../../assets/Frame12.png";
 import PartnerWithUs from "./PartnerWithUs";
@@ -84,6 +79,10 @@ const UpperContainer = styled.div`
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+  @media only screen and (min-width: 1024px) {
+    padding: 2% 5%;
+  }
 
   @media only screen and (max-width: 1024px) {
     margin-top: 10%;
@@ -327,13 +326,13 @@ const benefits = [
 
 const events = [
   {
-    title: "Algorena",
+    title: "TechXcelerate",
     description:
-      "A multiple round competitive programming contest for all skill levels.",
+      "A 10-day long programme focused on accelerating tech skills for beginners.",
     icon: (
-      <Code className="w-12 h-12 mb-4 text-blue-100 group-hover:text-yellow-300 transition-all duration-500" />
+      <Calendar className="w-12 h-12 mb-4 text-emerald-100 group-hover:text-yellow-300 transition-all duration-500" />
     ),
-    gradient: "bg-gradient-to-br from-blue-600 via-indigo-700 to-violet-800",
+    gradient: "bg-gradient-to-br from-emerald-600 via-teal-700 to-cyan-800",
   },
   {
     title: "HACKHAZARDS",
@@ -344,21 +343,21 @@ const events = [
     gradient: "bg-gradient-to-br from-purple-600 via-pink-700 to-rose-800",
   },
   {
+    title: "Algorena",
+    description:
+      "A multiple round competitive programming contest for all skill levels.",
+    icon: (
+      <Code className="w-12 h-12 mb-4 text-blue-100 group-hover:text-yellow-300 transition-all duration-500" />
+    ),
+    gradient: "bg-gradient-to-br from-blue-600 via-indigo-700 to-violet-800",
+  },
+  {
     title: "Season of Open Source",
     description: "A celebration of open-source projects and collaboration.",
     icon: (
       <Globe className="w-12 h-12 mb-4 text-teal-100 group-hover:text-yellow-300 transition-all duration-500" />
     ),
     gradient: "bg-gradient-to-br from-teal-600 via-cyan-700 to-blue-800",
-  },
-  {
-    title: "TechXcelerate",
-    description:
-      "A 10-day long programme focused on accelerating tech skills for beginners.",
-    icon: (
-      <Calendar className="w-12 h-12 mb-4 text-emerald-100 group-hover:text-yellow-300 transition-all duration-500" />
-    ),
-    gradient: "bg-gradient-to-br from-emerald-600 via-teal-700 to-cyan-800",
   },
 ];
 
@@ -404,7 +403,7 @@ const Hero = () => {
       <BackToTopButton />
       <Section>
         <Container>
-          <UpperContainer>
+          <UpperContainer className="rounded-tl-[40px] rounded-br-[40px] overflow-hidden">
             <div className="grid" />
             <div className="orb" />
             <div className="orb" />
