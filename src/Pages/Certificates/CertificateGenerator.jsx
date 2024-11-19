@@ -46,11 +46,12 @@ export default function CertificateGenerator() {
       const doc = new jsPDF({
         orientation: 'landscape',
         unit: 'px',
-        format: [800, 600]
+        format: [2000, 1500]
       });
 
-      // Load and add template image
+      // Load template image
       const img = new Image();
+      img.crossOrigin = "Anonymous";  // Add this line to handle CORS
       img.src = event.templateImage;
       
       await new Promise((resolve, reject) => {
@@ -58,7 +59,7 @@ export default function CertificateGenerator() {
         img.onerror = () => reject(new Error('Failed to load template image'));
       });
 
-      doc.addImage(img, 'JPEG', 0, 0, 800, 600);
+      doc.addImage(img, 'JPEG', 0, 0, 2000, 1500);
 
       // Add participant name
       doc.setFont('helvetica', 'bold');
@@ -70,43 +71,63 @@ export default function CertificateGenerator() {
       });
 
       // Format QR code text
-      const qrText = 
-        `This certificate is verified by nameSpace with the below details:\n\n` +
-        `Email: ${email}\n` +
-        `Name: ${name}\n` +
-        `Event name: ${event.name}\n` +
-        `Date: ${new Date(event.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })}`;
+      const qrText = JSON.stringify({
+        verification: "nameSpace Certificate Verification",
+        details: {
+          email: email,
+          name: name,
+          eventName: event.name,
+          date: new Date(event.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          }),
+          certificateId: `${eventId}-${Date.now()}`  // Add unique identifier
+        }
+      });
 
-      // Generate QR code
+      // Generate QR code with proper error handling
       const qrCodeDataURL = await QRCode.toDataURL(qrText, {
-        width: event.qrPosition.size,
-        margin: 0,
+        width: 300,  // Increased size for better quality
+        margin: 1,
         color: {
           dark: '#000000',
           light: '#ffffff'
         },
-        errorCorrectionLevel: 'H' // Highest error correction level for better readability
+        errorCorrectionLevel: 'H',
+        type: 'image/jpeg',  // Specify image type
+        rendererOpts: {
+          quality: 1.0  // Highest quality
+        }
       });
 
+      // Create a temporary image to ensure QR code is fully loaded
+      const qrImage = new Image();
+      await new Promise((resolve, reject) => {
+        qrImage.onload = resolve;
+        qrImage.onerror = reject;
+        qrImage.src = qrCodeDataURL;
+      });
+
+      // Calculate QR code position (convert from event.qrPosition coordinates if needed)
+      const qrSize = event.qrPosition.size || 150;  // Default size if not specified
+      
       // Add QR code to the certificate
       doc.addImage(
-        qrCodeDataURL, 
-        'PNG', 
-        event.qrPosition.x, 
-        event.qrPosition.y, 
-        event.qrPosition.size, 
-        event.qrPosition.size
+        qrImage, 
+        'JPEG', 
+        event.qrPosition.x,
+        event.qrPosition.y,
+        qrSize,
+        qrSize
       );
 
+      // Save the PDF
       doc.save(`${event.name}-${name}-certificate.pdf`);
       setSuccess(true);
       setTimeout(() => setSuccess(false), 3000);
     } catch (err) {
-      console.error(err);
+      console.error('Certificate generation error:', err);
       setError('Failed to generate certificate. Please try again.');
     } finally {
       setIsLoading(false);
