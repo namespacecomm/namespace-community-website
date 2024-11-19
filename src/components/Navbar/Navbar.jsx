@@ -321,6 +321,17 @@ function Navbar() {
               >
                 <div>Blog</div>
               </NavbarLink>
+              <NavbarLink
+                to="/certificate"
+                className={activeNavLink === "/certificate" ? "active" : ""}
+              >
+                <div>
+                  Certificate
+                  {activeNavLink === "/certificate" && (
+                    <hr className="border-3 rounded-full" />
+                  )}
+                </div>
+              </NavbarLink>
             </NavLinks>
           )}
 
@@ -361,6 +372,7 @@ function Navbar() {
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/algorena">Algorena</NavbarLinkExtended>
           <NavbarLinkExtended to="/hackhazards">HACKHAZARDS</NavbarLinkExtended> */}
+          <NavbarLinkExtended to="/certificate">Certificate</NavbarLinkExtended>
           <NavbarLinkExtended
             to="https://namespacecomm.substack.com/"
             target="_blank"
