@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Download, AlertCircle, ArrowLeft, CheckCircle2, Mail, Loader2 } from 'lucide-react';
+import { Download, AlertCircle, ArrowLeft, CheckCircle2, Mail, Loader2, Share2 } from 'lucide-react';
 import { useEventStore } from '../../store/eventStore';
 import { jsPDF } from 'jspdf';
 import QRCode from 'qrcode';
@@ -125,7 +125,7 @@ export default function CertificateGenerator() {
       // Save the PDF
       doc.save(`${event.name}-${name}-certificate.pdf`);
       setSuccess(true);
-      setTimeout(() => setSuccess(false), 3000);
+      setTimeout(() => setSuccess(false), 30000); // Increased timeout to give more time to read the share message
     } catch (err) {
       console.error('Certificate generation error:', err);
       setError('Failed to generate certificate. Please try again.');
@@ -198,11 +198,27 @@ export default function CertificateGenerator() {
             )}
 
             {success && (
-              <div className="rounded-lg bg-green-900/50 border border-green-500/50 p-4 backdrop-blur-xl">
-                <div className="flex">
-                  <CheckCircle2 className="h-5 w-5 text-green-400" />
-                  <div className="ml-3">
-                    <h3 className="text-sm font-medium text-green-300">Certificate generated successfully!</h3>
+              <div className="space-y-4">
+                <div className="rounded-lg bg-green-900/50 border border-green-500/50 p-4 backdrop-blur-xl">
+                  <div className="flex">
+                    <CheckCircle2 className="h-5 w-5 text-green-400" />
+                    <div className="ml-3">
+                      <h3 className="text-sm font-medium text-green-300">Certificate generated successfully!</h3>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="rounded-lg bg-purple-900/50 border border-purple-500/50 p-6 backdrop-blur-xl animate-fade-in">
+                  <div className="flex items-start space-x-4">
+                    <Share2 className="h-6 w-6 text-purple-400 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-purple-300 mb-2">🎉 Share Your Achievement!</h3>
+                      <p className="text-gray-300 text-sm text-justify leading-relaxed">
+                        Proud of your accomplishment? Share your certificate on LinkedIn, Twitter, or Instagram! 
+                        Don't forget to tag us <span className="text-purple-400">@namespacecomm</span> and use 
+                        <span className="text-purple-400"> #namespacecomm</span> to inspire others on their learning journey! 
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
