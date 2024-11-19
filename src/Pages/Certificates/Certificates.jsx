@@ -26,7 +26,7 @@ const EventCard = ({ event }) => (
     <div className="p-6 relative z-10">
       <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/80 pointer-events-none" />
       <div className="relative">
-        <h3 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
+        <h3 className="text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
           {event.name}
         </h3>
 
