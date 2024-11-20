@@ -115,23 +115,16 @@ Read more about it <a href="https://www.digitalocean.com/community/tutorial_seri
 
 ### Screenshots of Website
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/4cf2ac82-532b-4725-a4ff-e952fedbc436)
+![image](https://github.com/user-attachments/assets/27eb56dd-070f-4ae1-8129-6a4a74a83633)
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/73564568-0db7-4c8b-9e2b-88eb072c6e7f)
+![image](https://github.com/user-attachments/assets/a3655386-4fe7-49fa-bef4-880af07839db)
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b837d62a-89b1-44df-b6f3-f88327f27beb)
+![image](https://github.com/user-attachments/assets/be574a83-190f-4c8f-a73e-c7c77b7fd78b)
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/ed89fd52-06eb-4990-8cb7-5c16439a643c)
+![image](https://github.com/user-attachments/assets/f2d3956a-83c4-4ff5-bbcb-ca317929e5c2)
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/3cb257ab-e82e-439a-a0b3-37aece34c1ed)
+![image](https://github.com/user-attachments/assets/d18a1891-7c06-42cc-ad26-42b56433794f)
 
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/dad350ba-74a3-471e-b199-5da8bdb7df75)
-
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/efa5c692-685c-490c-983e-d2c7ca023cc3)
-
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/a9485906-641a-459d-b644-5f21d483e867)
-
-# ![image](https://github.com/Gauranshgoel123/NSCC-BPIT-Website/assets/121503835/b05575d1-c830-47f3-8345-bae3388305d8)
 
   <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
