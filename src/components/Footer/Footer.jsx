@@ -83,7 +83,7 @@ const Footer = () => {
             {/* Logo and Description */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                nameSpace
+                NAMESPACE
               </h3>
               <p className="text-gray-300">
                 Made with
@@ -95,7 +95,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Team nameSpace
+                  Team NAMESPACE
                 </a>
               </p>
             </div>
@@ -190,7 +190,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              © {year} The nameSpace Community and Organization
+              © {year} The NAMESPACE Community
             </p>
           </div>
         </div>
