@@ -612,7 +612,7 @@ const Hero = () => {
                   }}
                 >
                   <span className="font-semibold text-blue-600">
-                    The nameSpace Community
+                    The NAMESPACE Community
                   </span>{" "}
                   is an events driven and community focused organization of tech
                   enthusiasts, developers, innovators, professionals, and
